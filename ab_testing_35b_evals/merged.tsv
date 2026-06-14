@@ -1,0 +1,89 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	2	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	judge did not provide concrete evidence	1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.1s	12570	8	FAIL	Provides structured test plan output	judge did not provide concrete evidence	1	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	1	FAIL	Triggers on casual phrasing	The model output does not explicitly acknowledge or react to any 'casual phrasing' from the user. It jumps straight into answering the hypothetical scenario ('Testing 4 button colors...'). There is n…	2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	5	FAIL	Questions whether button color alone is high-impact	The model explicitly states: 'Color is a **high-impact variable**'. It does not question that it is high-impact; rather, it questions the feasibility of testing it due to traffic/sample size constrai…	2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.5s	12366	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.8s	11784	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	6	FAIL	Builds hypotheses for each element	The model asks the user for specific variations ('What are the specific variations you want to test...') but does not generate or build specific hypotheses itself. It lists examples but does not form…	4	1
+ab-testing	eval-4	with_skill	FAIL	8.5s	11976	7	FAIL	Provides structured test plan	The model does not provide a structured test plan. It explicitly states: 'If You Still Want to Proceed with MVT Please provide the answers to the 4 questions above, and I will... Provide a pre-launch…	4	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	3	FAIL	Identifies lead quality as secondary metric	The output explicitly defines Secondary Metrics as 'Funnel Drop-off Points' (Form Start Rate, Field-level Drop-off, Time to Complete). Lead quality metrics (Activation, Trial-to-Paid) are categorized…	5	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.5s	12160	6	FAIL	Notes need for longer observation window for downstream metrics	The output mentions 'Activation Rate within N Days' (specifically 7 days) and 'Trial-to-Paid Conversion Rate', but does not explicitly discuss the 'observation window' duration required to capture do…	5	1
+ab-testing	eval-6	with_skill	FAIL	4.2s	11488	1	FAIL	Recognizes this as primarily a copywriting task	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	4.2s	11488	2	FAIL	References or defers to copywriting skill	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	4.2s	11488	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.2s	11488	4	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	12.6s	12423	6	FAIL	Suggests segment analysis or follow-up if borderline	Model suggests running the test longer (Option A) or lowering confidence (Option B), but does not mention segment analysis, further follow-up experiments, or deeper qualitative/segmental investigatio…	7	1
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	2	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	The output provides a hypothesis: 'Because users care about outcomes... we believe a benefit-focused headline will increase signup clicks by 20%+.' It does not explicitly structure this into Observat…	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	5	FAIL	Defines primary metric (signup rate)	The output asks the user: 'What is your primary metric? Is it 'Signup Clicks'... or 'Signups Completed'...?' It does not define the primary metric itself; it requests this information from the user.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	6	FAIL	Defines secondary and guardrail metrics	The output lists no secondary or guardrail metrics.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	7	FAIL	Warns about the peeking problem	The output text contains no mention of 'peeking', 'peeking problem', 'early stopping', or 'statistical validity risks related to checking results early'.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	12206	8	FAIL	Provides structured test plan output	The output ends with 'Once you answer these, I can generate the specific variants and the full test plan template,' indicating the structured test plan has not yet been provided.	1	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	1	FAIL	Triggers on casual phrasing	The output directly addresses the technical question about testing 4 variants without any introductory acknowledgement or reaction to 'casual phrasing'. It jumps straight into the analysis.	2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.3s	11822	7	FAIL	Provides hypothesis framework	The model provides execution strategies (A/B test, Sequential, Multivariate) but does not provide a structured hypothesis framework (e.g., 'If we change X, then Y will happen because Z'). It question…	2	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.8s	11867	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	6	FAIL	Builds hypotheses for each element	The model provides a generic template for the combined hypothesis: 'Because [observation], we believe that combining [stronger value prop headline] with... will increase conversions by [X]%...' It do…	4	2
+ab-testing	eval-4	with_skill	FAIL	11.6s	12260	7	FAIL	Provides structured test plan	The model explicitly states in Section 5: 'Based on this, I will: ... Draft the full test plan with hypotheses and variant descriptions.' This indicates the final structured test plan has not been pr…	4	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	3	FAIL	Identifies lead quality as secondary metric	Lead quality metrics (Trial Activation Rate, Free-to-Paid Conversion) are listed under section '3. Business Outcome Metrics', which is distinct from the '2. Secondary Metrics' section (which lists Fo…	5	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.0s	12423	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	11687	1	FAIL	Recognizes this as primarily a copywriting task	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	11687	2	FAIL	References or defers to copywriting skill	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	11687	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	11687	4	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	2	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	3	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	4	FAIL	Distinguishes statistical significance from practical significance	The model asks 'if this difference is statistically significant' and mentions 'meaningful business win' in the intro, but fails to explicitly distinguish between the two concepts or explain the diffe…	7	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	5	FAIL	Provides clear recommendation on shipping	The output ends with three questions asking for more data ('What is the specific conversion metric...', 'How many unique visitors...', 'What was the Minimum Detectable Effect...'). It does not provid…	7	2
+ab-testing	eval-7	with_skill	FAIL	3.2s	11411	6	FAIL	Suggests segment analysis or follow-up if borderline	While it suggests follow-up questions to clarify inputs (metric, traffic volume, MDE), it does not suggest 'segment analysis' (e.g., breaking down by user type, device, etc.) or specific follow-up ac…	7	2

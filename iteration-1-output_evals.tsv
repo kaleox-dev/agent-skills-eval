@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run
+ads	eval-1	with_skill	FAIL	17.4s	21186	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have actual file access in this context' - no actual file check performed	1
+ads	eval-1	with_skill	FAIL	17.4s	21186	2	FAIL	Applies platform selection guide	No evidence of applying a platform selection guide; only general recommendations provided	1
+ads	eval-1	with_skill	FAIL	17.4s	21186	3	PASS			1
+ads	eval-1	with_skill	FAIL	17.4s	21186	4	PASS			1
+ads	eval-1	with_skill	FAIL	17.4s	21186	5	FAIL	Defines audience targeting per platform	LinkedIn mentions job title targeting, but Google and Meta lack specific audience definitions	1
+ads	eval-1	with_skill	FAIL	17.4s	21186	6	PASS			1
+ads	eval-1	with_skill	FAIL	17.4s	21186	7	PASS			1
+ads	eval-1	with_skill	FAIL	17.4s	21186	8	PASS			1
+ads	eval-2	with_skill	FAIL	11.4s	20667	1	PASS			2
+ads	eval-2	with_skill	FAIL	11.4s	20667	2	FAIL	Compares CPL against LTV considerations	Asks 'What's the average customer value? What's the average deal size or LTV?' but no actual comparison made - LTV data not provided in conversation	2
+ads	eval-2	with_skill	FAIL	11.4s	20667	3	FAIL	Applies campaign optimization framework	Mentions 'Platform Selection Guide' and 'how to improve it if needed' but no specific optimization framework applied to the campaign data	2
+ads	eval-2	with_skill	FAIL	11.4s	20667	4	FAIL	Recommends specific optimization levers	Only asks questions ('What I Need to Help You Optimize') - no specific levers like bid adjustments, ad copy, landing page, targeting changes recommended	2
+ads	eval-2	with_skill	FAIL	11.4s	20667	5	PASS			2
+ads	eval-2	with_skill	FAIL	11.4s	20667	6	FAIL	Provides industry context for benchmarking	Provides hypothetical scenarios table but no actual industry benchmark data (e.g., 'typical B2B CPL is $X', 'average conversion rate is Y%')	2
+ads	eval-3	with_skill	FAIL	17.2s	21134	1	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	2	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	3	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	4	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	5	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	6	PASS			3
+ads	eval-3	with_skill	FAIL	17.2s	21134	7	PASS			3
+ads	eval-4	with_skill	FAIL	12.0s	20687	1	FAIL	Applies platform selection guide for TikTok	Model asks for context first before making recommendation; no platform selection guide applied in output.	4
+ads	eval-4	with_skill	FAIL	12.0s	20687	2	PASS			4
+ads	eval-4	with_skill	FAIL	12.0s	20687	3	PASS			4
+ads	eval-4	with_skill	FAIL	12.0s	20687	4	FAIL	Discusses when TikTok can work for B2B	No specific scenarios discussed when TikTok can work; only general 'Can build brand awareness' listed as pro	4
+ads	eval-4	with_skill	FAIL	12.0s	20687	5	FAIL	Suggests small test budget if proceeding	Asks 'What's your test budget available?' but does not suggest a small test budget amount or approach	4
+ads	eval-4	with_skill	FAIL	12.0s	20687	6	FAIL	Compares to their existing Google/Meta performance	Asks for current performance metrics but does not compare to user's actual existing performance data	4
+ads	eval-5	with_skill	FAIL	22.4s	21612	1	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	2	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	3	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	4	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	5	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	6	PASS			5
+ads	eval-5	with_skill	FAIL	22.4s	21612	7	PASS			5
+ads	eval-6	with_skill	FAIL	7.0s	20323	1	FAIL	Recognizes this as ad creative generation	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…	6
+ads	eval-6	with_skill	FAIL	7.0s	20323	2	FAIL	References or defers to ad-creative skill	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…	6
+ads	eval-6	with_skill	FAIL	7.0s	20323	3	FAIL	Does not attempt bulk ad copy generation using campaign strategy patterns	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…	6
