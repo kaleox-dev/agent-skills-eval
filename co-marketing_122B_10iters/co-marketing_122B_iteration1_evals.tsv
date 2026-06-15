@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	1	FAIL	Checks for product-marketing.md	Model states: "I won't check for product-marketing context since this is a general co-marketing question and the user hasn't indicated they have that file set up."	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	4	FAIL	Mentions Crossbeam or account overlap data	No mention of "Crossbeam" or "account overlap data" in output. Only mentions "Audience overlap" as scoring criterion.	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	5	FAIL	Lists multiple sources to find partners	Model only mentions "Check their blog/case studies" and "look for case studies, blog posts" - no multiple distinct sources provided.	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	5	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	1	FAIL	Includes subject with both company names	Subject: [Your Company] + [Their Company] co-marketing idea - uses placeholders, not actual company names	3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	6	FAIL	Mentions what to prepare for the call	No mention in the email draft about what the recipient should prepare for the call	3	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	1	FAIL	Applies partner scoring criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. "Applies partner scoring…	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	2	FAIL	Includes all 6 scoring dimensions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. "Applies partner scoring…	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	3	FAIL	Weights by goal	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. "Applies partner scoring…	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	4	FAIL	Considers ease of execution / partnership history	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. "Applies partner scoring…	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	5	FAIL	Recommends starting with low-effort format	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. "Applies partner scoring…	4	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	4	FAIL	Mentions measuring lead quality not just volume	No explicit mention of measuring lead quality vs volume distinction; only mentions sharing engagement metrics and MQL/SQL outcomes without contrasting quality vs volume	5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	5	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	4	PASS			6	1

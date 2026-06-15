@@ -1,0 +1,361 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	1	FAIL	Checks for product-marketing.md	No output files were captured; model provided conversational text, not a file check or reference.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	2764	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	6	FAIL	Mentions the 1% / 90% power user dynamic	Model mentions '2–3 regular posters' and 'lurkers', but never uses the terms '1%', '90%', 'power user dynamic', or the specific 1-9-90 metric framework. It describes the phenomenon qualitatively but …	2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3495	7	FAIL	Mentions warning sign of company-dominated posts	The model mentions 'People follow peers, not brands' and suggests empowering regular posters over 'a brand account', but it does not explicitly identify 'company-dominated posts' as a specific warnin…	2	1
+ab-testing	eval-3	with_skill	FAIL	11.9s	3272	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.9s	3272	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.9s	3272	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.9s	3272	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.9s	3272	5	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.6s	3454	6	FAIL	May cross-reference referrals skill	The model output does not explicitly reference 'referrals' as a distinct skill, nor does it cross-reference a 'referrals skill' document or concept. It focuses on 'Ambassador Program', 'Champions', a…	4	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	1	FAIL	Uses Health Audit Report format	The output is structured as an advisory response with headers like 'Phase 1: The Diagnostic' and 'Phase 2: The Salvage Plan'. It lacks standard 'Health Audit Report' elements such as an executive sum…	5	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	2	FAIL	References specific health metrics with benchmarks	The output uses qualitative descriptions ('High view counts', 'Low posts') and generic thresholds ('more than 2 are red flags', 'Churn is >95%') rather than referencing specific, quantifiable health …	5	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	15.0s	3519	6	FAIL	Proposes top 3 priorities	The output proposes a '90-Day Resurrection Protocol' with 4 distinct steps (Cleanup, Identify Sleepers, Reset Core Loop, Change Identity). It does not explicitly limit or highlight exactly three prio…	5	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	4	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	5	FAIL	Warns about unanswered questions threshold	Section 1 mentions an SLA for escalation: 'If no peer answers in 4 hours, the system escalates.' However, it does not explicitly 'warn about unanswered questions threshold' as a risk or failure condi…	6	1
+ab-testing	eval-6	with_skill	FAIL	13.1s	3502	6	FAIL	Notes peer support must feel valued, not used	Section 4 states: 'Make it clear that help is voluntary from peers, but guaranteed from the company... This prevents burnout among helpers who might feel pressured to be 24/7.' While this addresses b…	6	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' and the model output contains no reference to a file named product-marketing.md.	1	2
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	3	FAIL	Notes Slack free tier limitations	The model output discusses user mindset, searchability, onboarding, retention, and use cases, but does not mention pricing, free tiers, or specific limitations of Slack's free plan.	1	2
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	5	FAIL	Mentions Circle or other alternatives	The model compares Slack and Discord. It mentions 'The Hidden Third Option: Discord for Support, Slack for Networking' or using 'a forum', but does not explicitly name 'Circle' or other specific alte…	1	2
+ab-testing	eval-1	with_skill	FAIL	9.4s	3033	6	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.3s	3324	7	FAIL	Mentions warning sign of company-dominated posts	The model output does not mention 'company-dominated posts' or advise on the risks of brand-centric content. It focuses on lurkers, power users, and channel architecture.	2	2
+ab-testing	eval-3	with_skill	FAIL	11.5s	3245	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.5s	3245	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.5s	3245	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.5s	3245	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.5s	3245	5	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.6s	3334	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	1	FAIL	Uses Health Audit Report format	The output uses a narrative diagnostic framework with sections like 'The Salvageability Test' and 'Immediate Action: The Autopsy Audit'. It lacks the formal structure, headers, or standardized layout…	5	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	14.5s	3657	6	FAIL	Proposes top 3 priorities	The section titled 'The Salvageability Test: 3 Hard Questions' lists diagnostic questions, not priorities. The 'Immediate Action' section lists 3 audit steps, not strategic priorities. The 'Re-launch…	5	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	4	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	5	FAIL	Warns about unanswered questions threshold	The output mentions tracking 'Sentiment Score' and 'Community Ticket Deflection Rate', but contains no specific warning, metric, or guideline regarding a threshold for unanswered questions (e.g., 're…	6	2
+ab-testing	eval-6	with_skill	FAIL	10.1s	3177	6	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured.' The model output is a direct text response, not a file named product-marketing.md.	1	3
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.6s	3445	6	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	6	FAIL	Mentions the 1% / 90% power user dynamic	"Model mentions: ""If the same 3 people post every time: You are not recruiting new voices."" It does not mention 1% / 90% dynamics."	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	3283	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	11.6s	3255	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.6s	3255	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.6s	3255	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.6s	3255	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.6s	3255	5	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	4	FAIL	Mentions tools/assets to enable advocates	The output lists benefits (swag, badges, invites) but does not provide tools or assets to help advocates promote or perform their duties (e.g., referral links, social media kits, content libraries). …	4	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.1s	3119	6	FAIL	May cross-reference referrals skill	The output does not explicitly cross-reference a 'referrals skill' or link to external referral resources. It mentions 'Conversion' as a metric but does not name a specific referral skill or module.	4	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	3551	6	FAIL	Proposes top 3 priorities	The output provides a 3-step 'Immediate Action Plan' (Days 1-3, Day 7, Week 2-4), but these are presented as sequential execution steps for a 'Save' strategy, not explicitly as a prioritized list of …	5	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	4	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	5	FAIL	Warns about unanswered questions threshold	The model recommends a response time SLA of 1-2 hours, but does not explicitly state a specific 'unanswered questions threshold' (e.g., a number of unanswered questions before escalation) or warn abo…	6	3
+ab-testing	eval-6	with_skill	FAIL	12.0s	3389	6	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	6	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions '90%+ of your members are lurkers' but does not mention the '1% / 90% power user dynamic' or reference the 1% of active users driving the majority of content. It only mentions '2-3…	2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	7	FAIL	Mentions warning sign of company-dominated posts	"The model warns against 'Missing ""Identity"" Hook' (feeling like a 'corporate support ticket queue') and advises to 'Stop posting updates from the brand' in the seeding section. However, it does not e…"	2	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	5	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	6	FAIL	May cross-reference referrals skill	The output focuses entirely on community ambassadorships, recognition, and engagement. It makes no mention of referral programs, referral codes, or cross-referencing a specific 'referrals skill'.	4	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	1	FAIL	Uses Health Audit Report format	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	2	FAIL	References specific health metrics with benchmarks	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	3	FAIL	Lists warning signs	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	4	FAIL	Recommends concrete audit steps	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	5	FAIL	Considers that some communities can't be saved	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	6	FAIL	Proposes top 3 priorities	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Uses Health Audit Report format"", ""passed"": true, ""evidence"": ""The output is structured as a diagnostic framework with distinc…"	5	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	4	FAIL	Mentions closing the loop with product	The output focuses on deflecting tickets, community engagement, and metrics like 'Deflection Rate' and 'Response Time'. It does not mention sharing community insights or data with the product team to…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	5	FAIL	Warns about unanswered questions threshold	The model recommends aiming for a '<15 minute response time' in the community, but does not explicitly warn about a specific threshold of unanswered questions or the negative consequences of a backlo…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	6	PASS			6	4
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	1	FAIL	Checks for product-marketing.md	The model output contains no reference to 'product-marketing.md'. The output is a direct conversational response recommending Slack vs Discord.	1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	6	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions '2-3 posters' and 'superusers', but never uses the specific terminology '1%', '90%', or references the specific 1/90/90 power user rule.	2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	5	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	4	FAIL	Mentions tools/assets to enable advocates	The output mentions badges, roles, and private channels for communication, but does not provide specific tools, assets, or resources (such as content templates, media kits, or specific software integ…	4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	1	FAIL	Uses Health Audit Report format	The output is structured as a strategic guide/advice article ('Salvageability Audit') rather than a formal 'Health Audit Report'. It lacks the standard components of a health report such as an execut…	5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	6	FAIL	Proposes top 3 priorities	The 'Immediate Action Plan' outlines a 30-day sprint with multiple actions per week (Poll, DMs, Pinning, Rituals, Spotlights, Killing dead channels). It does not explicitly identify or rank a 'top 3 …	5	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	4	FAIL	Mentions closing the loop with product	Section 4 mentions 'Close the Loop with Support Team' by feeding insights to community, but there is no mention of closing the loop with the Product team. The assertion specifically requires 'product…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	5	FAIL	Warns about unanswered questions threshold	The model discusses 'Time to First Answer' as a metric but does not warn about a specific threshold for unanswered questions or the risks of unanswered questions (e.g., user churn) based on a thresho…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	6	PASS			6	5
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured'.	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	5	FAIL	Mentions Circle or other alternatives	The model output only discusses Discord and Slack; no mention of Circle or other third-party community platforms.	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	3034	6	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions '2-3 power users' but does not mention the '1% / 90%' dynamic or ratio.	2	6
+ab-testing	eval-2	with_skill	FAIL	13.0s	3382	7	FAIL	Mentions warning sign of company-dominated posts	The model advises 'Don’t post generic announcements' but does not explicitly warn about 'company-dominated posts' as a specific dynamic.	2	6
+ab-testing	eval-3	with_skill	FAIL	11.6s	3247	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	11.6s	3247	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	11.6s	3247	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	11.6s	3247	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	11.6s	3247	5	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.5s	3337	6	FAIL	May cross-reference referrals skill	Section 4 explicitly excludes referrals: 'They are not sales reps (do not expect referral quotas).' The text does not mention or cross-reference a referral skill or program.	4	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	1	FAIL	Uses Health Audit Report format	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	12.7s	3457	6	FAIL	Proposes top 3 priorities	judge did not provide concrete evidence	5	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	4	FAIL	Mentions closing the loop with product	The text focuses on closing the loop between support, community, and the customer (e.g., 'Ticket-to-Community Loop'). It does not mention closing the loop with the *product* team (e.g., using communi…	6	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	5	FAIL	Warns about unanswered questions threshold	The text sets a response *time* target ('respond to technical questions within 4 hours', 'every new post gets a response within 4 hours'). It does not mention a threshold for *unanswered questions* (…	6	6
+ab-testing	eval-6	with_skill	FAIL	11.5s	3318	6	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	3	FAIL	Notes Slack free tier limitations	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	7	FAIL	Mentions warning sign of company-dominated posts	"The model advises to ""Stop 'Managing,' Start 'Hosting'"" and ""Never ask: 'Please post more'"", but does not explicitly identify or warn against ""company-dominated posts"" as a specific warning sign. It …"	2	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	5	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	4	FAIL	Mentions tools/assets to enable advocates	The model focuses on recognition, structure, and communication templates. It does not mention specific tools or assets for advocates to use to promote the product, such as referral links, shareable g…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	6	FAIL	May cross-reference referrals skill	The output does not mention 'referrals', 'referral skill', or cross-reference any other specific skill. It focuses solely on an 'Ambassador Program' or 'Champions Program' based on community help.	4	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	1	FAIL	Uses Health Audit Report format	The output is structured as a narrative guide with diagnostic questions and a 'Rescue Plan', not a formal 'Health Audit Report' document or template.	5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	2	FAIL	References specific health metrics with benchmarks	The output uses qualitative signals (e.g., 'Dead signal', 'Salvageable signal') and vague counts ('3-10 super users', '50 members') but does not provide specific quantitative health metrics with defi…	5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	6	FAIL	Proposes top 3 priorities	The output outlines a 4-phase rescue plan. It does not explicitly list or prioritize a 'top 3' set of priorities; instead, it provides a sequential workflow of four phases.	5	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	4	FAIL	Mentions closing the loop with product	The model mentions 'Incentivize Helping: Non-monetary: Early access to features, direct line to product managers'. It does not explicitly mention closing the loop *with* product management regarding …	6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	5	FAIL	Warns about unanswered questions threshold	The model recommends an SLA ('maximum response time... e.g., 4 hours') but does not provide a specific warning or threshold regarding the volume of *unanswered* questions (e.g., if X questions remain…	6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	6	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	1	FAIL	Checks for product-marketing.md	The model output is a direct text response. No file named 'product-marketing.md' was created or referenced. Output files section states: 'No output files were captured.'	1	8
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	3	FAIL	Notes Slack free tier limitations	The model mentions Slack's professional context, integrations, and searchability. It does not mention the free tier, paid tiers, or any limitations associated with the free version of Slack.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.7s	2962	6	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	4	FAIL	Recommends new member journey design	Output suggests tactical fixes like 'binary or multiple-choice questions' and 'DMs', but does not explicitly design or recommend a structured 'new member journey' or onboarding flow/sequence for memb…	2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	6	FAIL	Mentions the 1% / 90% power user dynamic	Output mentions '40 members with 2-3 posters' and 'latent demand', but never explicitly mentions the terms '1%', '90%', or the specific Pareto/power user dynamic.	2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	3400	7	FAIL	Mentions warning sign of company-dominated posts	Output does not mention 'company-dominated posts' or warnings about admins/companies dominating the conversation.	2	8
+ab-testing	eval-3	with_skill	FAIL	15.2s	3611	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.2s	3611	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.2s	3611	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.2s	3611	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.2s	3611	5	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	3338	6	FAIL	May cross-reference referrals skill	The output focuses on an 'Ambassador Program' driven by community health and recognition. There is no mention of a specific 'referrals skill', referral tracking, or cross-referencing a referrals modu…	4	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.4s	3503	6	FAIL	Proposes top 3 priorities	The model provides a 7-day action plan and a 'Salvage Playbook' with four distinct tactics (Win-Back Segment, 1:1 Re-Engagement, Low-Friction Re-Launch, Kill Noise). It does not explicitly categorize…	5	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	5	FAIL	Warns about unanswered questions threshold	The model recommends an 'SLA... responds within 4 business hours' and tracking a 'Community Resolution Rate' vs 'Tickets Closed'. It does not explicitly warn about a specific threshold of *unanswered…	6	8
+ab-testing	eval-6	with_skill	FAIL	11.0s	3257	6	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output is direct text, not a file reference or link to 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	3	FAIL	Notes Slack free tier limitations	The model discusses 'Onboarding Friction' and 'Search & Retrieval' for Slack, but does not mention 'free tier', pricing limits, or specific feature caps associated with a free tier.	1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	6	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions 'typically 80-90% are lurkers' but does not mention the '1%' statistic or explicitly frame the dynamic as '1% / 90%' or '1-9-90'. It discusses '2-3 people' as posters out of 40 mem…	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	7	FAIL	Mentions warning sign of company-dominated posts	The output does not mention 'company-dominated posts' or warnings about brand voices dominating the conversation. It focuses on lurkers and low engagement.	2	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	5	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	1	FAIL	Uses Health Audit Report format	Output is a narrative guide with headers like 'Diagnostic', 'Triage', 'Rescue Plan', and 'When to Pivot'. It lacks standard 'Health Audit Report' structural elements such as an Executive Summary, Met…	5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	6	FAIL	Proposes top 3 priorities	The output proposes a 4-week plan with multiple steps (Identify Sleeping Giants, Create Micro-Event, Seed New Standard, Introduce Ritual) and diagnostic checks. It does not explicitly define or list …	5	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	5	FAIL	Warns about unanswered questions threshold	The model mentions monitoring 'Community Question Answer Rate' (Section 5) and checking in after 24 hours if no response (Section 6.1), but does not issue a warning about a specific 'unanswered quest…	6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	6	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	2	FAIL	Recommends Slack for B2B context	Model explicitly asks for more context ('To give you the right recommendation, I need to know a bit more...') rather than providing a direct recommendation.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	3	FAIL	Notes Slack free tier limitations	Model does not mention Slack's free tier or its limitations; it mentions 'work email' requirement and searchability but not pricing/tiers.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	5	FAIL	Mentions Circle or other alternatives	Model only discusses Discord and Slack. No mention of Circle or other platforms.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	6	FAIL	Mentions the 1% / 90% power user dynamic	The output mentions '90% lurker rate' but does not mention the '1%' or 'power user dynamic' concept explicitly, nor does it frame the small active group as 'power users' in that specific terminology.…	2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	7	FAIL	Mentions warning sign of company-dominated posts	The output discusses '2-3 people are active' and 'artificially inflating the response rate', but does not explicitly identify 'company-dominated posts' or a similar dynamic as a specific warning sign…	2	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	5	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	4	FAIL	Mentions tools/assets to enable advocates	The output suggests 'Use your existing community platform’s badge/role system' and 'Simple spreadsheet' for tracking. It does not provide specific tools or assets (like a swipe file, resource kit, or…	4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	1	FAIL	Uses Health Audit Report format	The output provides a diagnostic framework and decision matrix, but does not use the specific 'Health Audit Report' format implied by the assertion, which typically requires a structured, standardize…	5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	6	FAIL	Proposes top 3 priorities	The 'Immediate Actions to Take Today' section lists 4 numbered items (Pulse Check, Reactivate Power Users, Launch Ritual, Clean Slate), not a top 3. There is no explicit ranking or selection of exact…	5	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	4	FAIL	Mentions closing the loop with product	The model mentions 'Close the Loop: Show Customers Their Voice Matters' but defines this as sharing support trends and thanking users, not feeding insights back to the product team (e.g., reporting b…	6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	5	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	6	FAIL	Notes peer support must feel valued, not used	The model suggests 'Celebrating Community Heroes' to 'reduce staff workload' and 'encourages peer-to-peer help'. It does not explicitly warn that peer support must be valued or not exploited/used by …	6	10

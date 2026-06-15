@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	1	FAIL	Checks for product-marketing.md	Model states: 'I don't have access to the file system to check this' - did not verify file existence	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Only firecrawl_map tool calls shown; no evidence of scraping, SEO data, or synthesis phases completed	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Output states: 'No output files were captured'	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	4	FAIL	Produces individual profile per competitor	No individual competitor profiles generated; only tool calls initiated	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	5	FAIL	Produces _summary.md after individual profiles	No _summary.md file produced or referenced in output	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	6	FAIL	Uses consistent metrics across competitors	No profiles produced to verify metric consistency across competitors	1	6
+ab-testing	eval-1	with_skill	FAIL	7.6s	13178	7	FAIL	Parallelizes scraping when possible	Three firecrawl_map calls shown but no evidence they executed in parallel; 'No output files were captured'	1	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	13022	1	FAIL	Recommends prioritization over profiling all 12	Model states: 'I'm ready to profile your 12 competitors!' and 'Map and scrape all 12 competitor sites in parallel' - no prioritization recommended	2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	13022	2	FAIL	Suggests top 5 based on relevance	No mention of selecting top 5; model commits to profiling all 12 competitors	2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	13022	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	13022	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	13022	5	FAIL	Asks user to prioritize	Model asks for URLs, product, depth level, and focus areas but does not ask user to prioritize which competitors to profile	2	6
+ab-testing	eval-3	with_skill	FAIL	9.6s	13323	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.6s	13323	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.6s	13323	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.6s	13323	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to a new date folder in output	3	6
+ab-testing	eval-3	with_skill	FAIL	9.6s	13323	5	FAIL	Says never overwrite prior date's data	No explicit statement about not overwriting prior date's data in output	3	6
+ab-testing	eval-4	with_skill	FAIL	10.4s	13371	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	10.4s	13371	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	10.4s	13371	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	10.4s	13371	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	10.4s	13371	5	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	6.1s	13067	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.1s	13067	2	FAIL	Runs Phase 1 and Phase 3	No output files were captured. Agent only confirmed intent, did not execute scraping.	5	6
+ab-testing	eval-5	with_skill	FAIL	6.1s	13067	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.1s	13067	4	FAIL	Flags SEO section as skipped, not blank	No deliverable exists to flag. Agent only stated "no SEO metrics" without a structured output showing skipped section.	5	6
+ab-testing	eval-5	with_skill	FAIL	6.1s	13067	5	FAIL	Still saves raw data	Output files: "No output files were captured." Agent claimed "I'll still save the raw scrape data" but no evidence of actual save.	5	6
+ab-testing	eval-6	with_skill	FAIL	13.9s	13784	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.9s	13784	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.9s	13784	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.9s	13784	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.9s	13784	5	FAIL	Notes including date pulled	No mention of recording data collection date in methodology guidance	6	6

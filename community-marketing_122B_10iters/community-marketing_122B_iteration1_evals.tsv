@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output. Model mentions 'check if there's product marketing context available' in thinking but no actual file check shown.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	5	FAIL	Mentions Circle or other alternatives	No mention of Circle or any alternatives beyond Discord and Slack in output	1	1
+ab-testing	eval-1	with_skill	FAIL	9.4s	2773	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	2	FAIL	Applies 'launching from zero' playbook	No explicit reference to 'launching from zero' playbook in the output; mentions 'Growing an Existing Community' playbook in thinking section only	2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	6	FAIL	Mentions the 1% / 90% power user dynamic	No mention of 1%/90% power user dynamic or 1-9-90 rule; only mentions '5-person problem' with 2-3 regular posters	2	1
+ab-testing	eval-2	with_skill	FAIL	13.6s	3143	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	3375	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	3375	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	3375	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	3375	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	3375	5	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	18.2s	3499	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	1	FAIL	Uses Health Audit Report format	Output uses 'Quick Diagnostic', 'Immediate Audit', 'Likely Scenarios & Next Steps' headers - no formal Health Audit Report format present	5	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	2	FAIL	References specific health metrics with benchmarks	Mentions metrics (30 days, 7 days, 90 days) but as diagnostic questions, not actual audit data with benchmarks	5	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	12.8s	3093	6	FAIL	Proposes top 3 priorities	No top 3 priorities list provided - only promises 'First 3 actions to take this week' after more information is provided	5	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	4	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	5	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	3175	6	PASS			6	1

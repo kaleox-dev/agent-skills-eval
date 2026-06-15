@@ -1,0 +1,311 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	1	FAIL	Checks for product-marketing.md	"Model states: ""I won't check for product-marketing context since this is a general co-marketing question and the user hasn't indicated they have that file set up."""	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	4	FAIL	Mentions Crossbeam or account overlap data	"No mention of ""Crossbeam"" or ""account overlap data"" in output. Only mentions ""Audience overlap"" as scoring criterion."	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	5	FAIL	Lists multiple sources to find partners	"Model only mentions ""Check their blog/case studies"" and ""look for case studies, blog posts"" - no multiple distinct sources provided."	1	1
+ab-testing	eval-1	with_skill	FAIL	18.2s	3922	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.1s	3596	5	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	1	FAIL	Includes subject with both company names	Subject: [Your Company] + [Their Company] co-marketing idea - uses placeholders, not actual company names	3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	10.9s	3209	6	FAIL	Mentions what to prepare for the call	No mention in the email draft about what the recipient should prepare for the call	3	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	1	FAIL	Applies partner scoring criteria	"judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. ""Applies partner scoring…"	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	2	FAIL	Includes all 6 scoring dimensions	"judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. ""Applies partner scoring…"	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	3	FAIL	Weights by goal	"judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. ""Applies partner scoring…"	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	4	FAIL	Considers ease of execution / partnership history	"judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. ""Applies partner scoring…"	4	1
+ab-testing	eval-4	with_skill	FAIL	11.4s	3362	5	FAIL	Recommends starting with low-effort format	"judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 items): 1. ""Applies partner scoring…"	4	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	4	FAIL	Mentions measuring lead quality not just volume	No explicit mention of measuring lead quality vs volume distinction; only mentions sharing engagement metrics and MQL/SQL outcomes without contrasting quality vs volume	5	1
+ab-testing	eval-5	with_skill	FAIL	13.4s	3557	5	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.4s	3193	4	PASS			6	1
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	1	FAIL	Checks for product-marketing.md	I don't see any product-marketing context file mentioned, so I'll proceed without checking for that first.	1	2
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.1s	3754	6	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	12.5s	3471	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.5s	3471	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.5s	3471	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.5s	3471	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.5s	3471	5	FAIL	Uses brainstorming prompts	Model asks clarifying questions ('What does your company do?', 'Do you have an existing integration?') but these are information-gathering questions, not brainstorming prompts to generate ideas	2	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	1	FAIL	Includes subject with both company names	Subject line uses placeholders: 'Subject: [Your Company] + [Content Platform] co-marketing idea' - no actual company names included	3	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.0s	3105	6	FAIL	Mentions what to prepare for the call	No mention of what to prepare for the call in the email or output sections	3	2
+ab-testing	eval-4	with_skill	FAIL	9.1s	3172	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.1s	3172	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.1s	3172	3	FAIL	Weights by goal	"Model asks about goals (""What's your primary goal this quarter?"") but does not demonstrate how scoring weights change based on goal type"	4	2
+ab-testing	eval-4	with_skill	FAIL	9.1s	3172	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.1s	3172	5	FAIL	Recommends starting with low-effort format	"Model asks ""What type of campaign are you considering?"" but does not recommend a specific low-effort format to start with"	4	2
+ab-testing	eval-5	with_skill	FAIL	11.8s	3448	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.8s	3448	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.8s	3448	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.8s	3448	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.8s	3448	5	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	6.6s	2902	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.6s	2902	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.6s	2902	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.6s	2902	4	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to their product marketing context file' - no actual file check performed	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	4	FAIL	Mentions Crossbeam or account overlap data	No mention of 'Crossbeam' or 'account overlap data' in output	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	5	FAIL	Lists multiple sources to find partners	Output lists partner categories but not specific sources to find partners (e.g., integration ecosystems, directories, communities)	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	6	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	5	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	1	FAIL	Includes subject with both company names	Subject line uses placeholders '[Your Company] + [Their Company]' rather than actual company names	3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	6	FAIL	Mentions what to prepare for the call	Email body contains no mention of call preparation; 'Next Steps to Prepare' section is outside the email draft	3	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	3	FAIL	Weights by goal	No weighting mechanism shown; asks about goals but does not apply goal-based scoring weights	4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	5	FAIL	Recommends starting with low-effort format	No explicit recommendation for low-effort format; only suggests 'webinar, content, integration launch' without prioritizing low-effort first	4	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	2	FAIL	Recommends documenting in agreement	No explicit recommendation to document lead split in written agreement; only asks 'Do you have a written agreement on lead splitting?' as a question	5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	5	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	4	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	2	FAIL	Identifies same persona / different problem characteristic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	3	FAIL	Suggests specific partner categories in workflow	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	4	FAIL	Mentions Crossbeam or account overlap data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	5	FAIL	Lists multiple sources to find partners	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-1	with_skill	FAIL	18.1s	3929	6	FAIL	Applies scoring criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	3521	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	3521	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	3521	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	3521	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	3521	5	FAIL	Uses brainstorming prompts	Output asks clarifying questions ('What does your company do?', 'Do you have an integration?') but does not use brainstorming prompts to guide idea generation	2	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	3221	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	10.2s	3273	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.2s	3273	2	FAIL	Includes all 6 scoring dimensions	Only 5 dimensions shown: Audience overlap, Audience size, Reciprocity potential, Ease of execution, Brand alignment. No 6th dimension present.	4	4
+ab-testing	eval-4	with_skill	FAIL	10.2s	3273	3	FAIL	Weights by goal	Static weights provided (25%, 20%, 20%, 20%, 15%) but not adjusted by user's goal. Model asks about goal but doesn't apply weight changes.	4	4
+ab-testing	eval-4	with_skill	FAIL	10.2s	3273	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.2s	3273	5	FAIL	Recommends starting with low-effort format	No recommendation for low-effort format. Asks 'What campaign type are you leaning toward?' but does not advise starting with low-effort.	4	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	3434	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	3434	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	3434	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	3434	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	3434	5	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	2916	1	FAIL	Recognizes this is customer referral, not co-marketing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…	6	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	2916	2	FAIL	Defers to referrals skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…	6	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	2916	3	FAIL	Distinguishes co-marketing from referral programs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…	6	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	2916	4	FAIL	Does not attempt full co-marketing strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…	6	4
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	2	FAIL	Identifies same persona / different problem characteristic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	3	FAIL	Suggests specific partner categories in workflow	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	4	FAIL	Mentions Crossbeam or account overlap data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	5	FAIL	Lists multiple sources to find partners	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	3449	6	FAIL	Applies scoring criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	5
+ab-testing	eval-2	with_skill	FAIL	11.6s	3391	1	FAIL	Applies brainstorming framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 5 assertions, a model output (text), and no output…	2	5
+ab-testing	eval-2	with_skill	FAIL	11.6s	3391	2	FAIL	Proposes campaigns across multiple types (content, events, integration, community)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 5 assertions, a model output (text), and no output…	2	5
+ab-testing	eval-2	with_skill	FAIL	11.6s	3391	3	FAIL	Suggests specific actionable ideas	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 5 assertions, a model output (text), and no output…	2	5
+ab-testing	eval-2	with_skill	FAIL	11.6s	3391	4	FAIL	Mentions integration or 'better together' angle	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 5 assertions, a model output (text), and no output…	2	5
+ab-testing	eval-2	with_skill	FAIL	11.6s	3391	5	FAIL	Uses brainstorming prompts	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 5 assertions, a model output (text), and no output…	2	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	1	FAIL	Includes subject with both company names	Subject lines use placeholders: '[Your Company] + [Their Company] co-marketing idea' - no actual company names from task (marketing analytics tool, content management platform)	3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3348	6	FAIL	Mentions what to prepare for the call	No mention of what recipient should prepare. 'Before You Send' section is sender guidance, not part of the email to recipient	3	5
+ab-testing	eval-4	with_skill	FAIL	9.3s	3203	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.3s	3203	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.3s	3203	3	FAIL	Weights by goal	"No weighting by goal mentioned; only ""Total score out of 30 — highest wins"" with no goal-based differentiation"	4	5
+ab-testing	eval-4	with_skill	FAIL	9.3s	3203	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.3s	3203	5	FAIL	Recommends starting with low-effort format	No recommendation about low-effort formats; asks about campaign type but does not recommend starting with low-effort options	4	5
+ab-testing	eval-5	with_skill	FAIL	12.9s	3502	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.9s	3502	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.9s	3502	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.9s	3502	4	FAIL	Mentions measuring lead quality not just volume	"Model mentions ""Lead quality"" as a factor to consider (""Does one partner have better data on lead intent?"") but does not explicitly mention measuring lead quality not just volume"	5	5
+ab-testing	eval-5	with_skill	FAIL	12.9s	3502	5	FAIL	Recommends post-campaign debrief	No mention of post-campaign debrief, review, or retrospective in the output	5	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	2987	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	2987	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	2987	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	2987	4	PASS			6	5
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	1	FAIL	Checks for product-marketing.md	Model states: 'I don't need to check for product-marketing context files'	1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	4	FAIL	Mentions Crossbeam or account overlap data	No mention of 'Crossbeam' or 'account overlap data' in output	1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	4020	6	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	14.2s	3616	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.2s	3616	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.2s	3616	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.2s	3616	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.2s	3616	5	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.5s	3059	6	FAIL	Mentions what to prepare for the call	No preparation instructions in email; follow-up questions are separate section	3	6
+ab-testing	eval-4	with_skill	FAIL	7.3s	3035	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	7.3s	3035	2	FAIL	Includes all 6 scoring dimensions	Framework shows only 5 criteria in table, not 6 dimensions	4	6
+ab-testing	eval-4	with_skill	FAIL	7.3s	3035	3	FAIL	Weights by goal	Asks about goals ('What's your primary goal this quarter?') but framework does not weight scoring by goal	4	6
+ab-testing	eval-4	with_skill	FAIL	7.3s	3035	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	7.3s	3035	5	FAIL	Recommends starting with low-effort format	No explicit recommendation to start with low-effort format; only mentions '4-6 weeks' timeline	4	6
+ab-testing	eval-5	with_skill	FAIL	11.2s	3350	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.2s	3350	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.2s	3350	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.2s	3350	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.2s	3350	5	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	2917	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	2917	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	2917	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	2917	4	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; model mentions 'the skill' and 'framework in the skill' but no file check	1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	5	FAIL	Uses brainstorming prompts	Framework elements listed but no actual brainstorming prompts used in output; ideas generated directly without prompt-based techniques	2	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	1	FAIL	Includes subject with both company names	Subject: [Your Company] + [Content Platform] co-marketing idea (uses placeholders, not actual company names)	3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	6	FAIL	Mentions what to prepare for the call	Email body does not mention preparation; Follow-Up Notes section exists but is separate from email content	3	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	3	FAIL	Weights by goal	No weighting mechanism shown; uses simple sum to 30 points max without goal-based weights	4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	5	FAIL	Recommends starting with low-effort format	No explicit recommendation to start with low-effort format; only mentions 'Fastest Win Test' for speed to launch	4	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	5	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	4	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	2	FAIL	Identifies same persona / different problem characteristic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	3	FAIL	Suggests specific partner categories in workflow	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	4	FAIL	Mentions Crossbeam or account overlap data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	5	FAIL	Lists multiple sources to find partners	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-1	with_skill	FAIL	16.8s	3811	6	FAIL	Applies scoring criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	8
+ab-testing	eval-2	with_skill	FAIL	8.6s	3141	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.6s	3141	2	FAIL	Proposes campaigns across multiple types (content, events, integration, community)	Content (#1 ebook, #4 case study, #5 newsletter), Events (#2 webinar), Integration (#3) covered; no explicit community campaign type identified	2	8
+ab-testing	eval-2	with_skill	FAIL	8.6s	3141	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.6s	3141	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.6s	3141	5	FAIL	Uses brainstorming prompts	Model asks 5 clarifying context questions (product type, co-marketing interest, integration status, audience size, timeline) but does not use brainstorming prompts	2	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	1	FAIL	Includes subject with both company names	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	2	FAIL	Specific observation about audience overlap	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	3	FAIL	Includes one concrete campaign idea	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	4	FAIL	Includes clear ask for a call	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	5	FAIL	Keeps it short and personal	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	3304	6	FAIL	Mentions what to prepare for the call	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (6 specific criteria). * Model Output (The tex…	3	8
+ab-testing	eval-4	with_skill	FAIL	9.6s	3211	1	FAIL	Applies partner scoring criteria	Model provides a scoring framework but does not apply criteria to actual partners - asks for partner names instead of scoring them	4	8
+ab-testing	eval-4	with_skill	FAIL	9.6s	3211	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.6s	3211	3	FAIL	Weights by goal	No mention of weighting criteria by goal; only provides simple 1-5 scale with 'Total score: 6-30'	4	8
+ab-testing	eval-4	with_skill	FAIL	9.6s	3211	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.6s	3211	5	FAIL	Recommends starting with low-effort format	No recommendation for low-effort format; asks 'What type of campaign are you leaning toward?' without guidance	4	8
+ab-testing	eval-5	with_skill	FAIL	11.6s	3394	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.6s	3394	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.6s	3394	3	FAIL	Lists agreement components	No explicit list of agreement components provided in output	5	8
+ab-testing	eval-5	with_skill	FAIL	11.6s	3394	4	FAIL	Mentions measuring lead quality not just volume	Output mentions 'Score each lead on fit' and 'conversion metrics' but does not explicitly contrast lead quality vs volume	5	8
+ab-testing	eval-5	with_skill	FAIL	11.6s	3394	5	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	6.4s	2969	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	6.4s	2969	2	FAIL	Defers to referrals skill	No tool call or explicit reference to a 'referrals skill' in output. Output says 'I'd recommend connecting with a growth/marketing specialist' instead of deferring to a specific skill.	6	8
+ab-testing	eval-6	with_skill	FAIL	6.4s	2969	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	6.4s	2969	4	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	2	FAIL	Identifies same persona / different problem characteristic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	3	FAIL	Suggests specific partner categories in workflow	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	4	FAIL	Mentions Crossbeam or account overlap data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	5	FAIL	Lists multiple sources to find partners	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-1	with_skill	FAIL	16.0s	3748	6	FAIL	Applies scoring criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	1	9
+ab-testing	eval-2	with_skill	FAIL	12.9s	3496	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.9s	3496	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.9s	3496	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.9s	3496	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.9s	3496	5	FAIL	Uses brainstorming prompts	"No brainstorming prompts used; only clarifying questions (""What type of product do you have?"") and direct idea presentation"	2	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	1	FAIL	Includes subject with both company names	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	2	FAIL	Specific observation about audience overlap	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	3	FAIL	Includes one concrete campaign idea	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	4	FAIL	Includes clear ask for a call	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	5	FAIL	Keeps it short and personal	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.0s	3346	6	FAIL	Mentions what to prepare for the call	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 6 assertions against the model output provided. Let me go through each assertion: …	3	9
+ab-testing	eval-4	with_skill	FAIL	8.2s	3108	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	8.2s	3108	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	8.2s	3108	3	FAIL	Weights by goal	Asks about goals but no weighting methodology demonstrated in scoring framework	4	9
+ab-testing	eval-4	with_skill	FAIL	8.2s	3108	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	8.2s	3108	5	FAIL	Recommends starting with low-effort format	Pro tip focuses on partner prioritization, not low-effort format recommendation	4	9
+ab-testing	eval-5	with_skill	FAIL	11.6s	3396	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	11.6s	3396	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	11.6s	3396	3	FAIL	Lists agreement components	No agreement components listed in output; only mentions 'lead ownership' as a topic	5	9
+ab-testing	eval-5	with_skill	FAIL	11.6s	3396	4	FAIL	Mentions measuring lead quality not just volume	No mention of lead quality vs volume measurement in output	5	9
+ab-testing	eval-5	with_skill	FAIL	11.6s	3396	5	FAIL	Recommends post-campaign debrief	No post-campaign debrief recommendation in output	5	9
+ab-testing	eval-6	with_skill	FAIL	8.5s	3110	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.5s	3110	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.5s	3110	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.5s	3110	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have the product marketing context file (.agents/product-marketing.md)' - acknowledges missing file but does not demonstrate checking for it	1	10
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	4	FAIL	Mentions Crossbeam or account overlap data	No mention of Crossbeam or account overlap data in output	1	10
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.5s	3874	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	14.3s	3625	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.3s	3625	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.3s	3625	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.3s	3625	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.3s	3625	5	FAIL	Uses brainstorming prompts	Model asks clarifying questions (What does your product do?, Do you have existing integration?) but no explicit brainstorming prompts used	2	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.1s	3188	6	FAIL	Mentions what to prepare for the call	Email body does not mention what to prepare; prep checklist is separate guidance, not part of the call request	3	10
+ab-testing	eval-4	with_skill	FAIL	8.5s	3130	1	FAIL	Applies partner scoring criteria	Model states 'Guide them through the partner scoring framework from the skill' but creates its own 5-criteria table rather than applying documented partner scoring criteria.	4	10
+ab-testing	eval-4	with_skill	FAIL	8.5s	3130	2	FAIL	Includes all 6 scoring dimensions	Model shows only 5 criteria: 'Audience fit, Audience size, Reciprocity potential, Ease of execution, Strategic value' - missing 1 dimension.	4	10
+ab-testing	eval-4	with_skill	FAIL	8.5s	3130	3	FAIL	Weights by goal	Model asks 'What's your primary goal this quarter?' but does not demonstrate how to weight scoring by goal in the framework.	4	10
+ab-testing	eval-4	with_skill	FAIL	8.5s	3130	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	8.5s	3130	5	FAIL	Recommends starting with low-effort format	Model asks 'What campaign type are you leaning toward?' but does not recommend starting with a low-effort format.	4	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	3501	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	3501	2	FAIL	Recommends documenting in agreement	No explicit recommendation to document lead split arrangement in written agreement; only mentions checking existing agreement or negotiating	5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	3501	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	3501	4	FAIL	Mentions measuring lead quality not just volume	No explicit mention of measuring lead quality over volume; only asks about MQL/SQL definitions without quality vs volume comparison	5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	3501	5	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	9.1s	3047	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	9.1s	3047	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	9.1s	3047	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	9.1s	3047	4	PASS			6	10

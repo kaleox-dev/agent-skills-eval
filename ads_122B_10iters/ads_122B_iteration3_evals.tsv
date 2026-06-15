@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	1	FAIL	Checks for product-marketing.md	Model states: 'I don't have access to your file system, so I'll work with the information you've provided.' No actual file check performed.	1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.5s	30497	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.9s	28882	6	FAIL	Provides industry context for benchmarking	No industry benchmarks provided. Only states '6.4% CVR is decent, but can you push to 8-10%' without citing industry standards or sources	2	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	6	FAIL	Recommends retargeting platforms	Only lists platforms as options ('What platform(s) are you using? (Google, Meta, LinkedIn, etc.)') without making specific recommendations	3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	28422	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	17.3s	29137	6	FAIL	Compares to their existing Google/Meta performance	Model states "I don't have access to their actual performance data from Google or Meta. I need to ask them for this information" - no actual comparison made, only framework provided	4	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	6	FAIL	Includes negative keyword lists	Only mentions 'Add at campaign level (free, jobs, careers, open source, pdf, etc.)' - no actual negative keyword list provided	5	3
+ab-testing	eval-5	with_skill	FAIL	17.3s	29072	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	7.2s	28335	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.2s	28335	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.2s	28335	3	PASS			6	3

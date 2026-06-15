@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output. Model states: 'I have enough information to write a strong email' without checking files.	1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	3	FAIL	Uses a structure framework from the skill	Model mentions 'PAS or QVC' but no evidence of using a specific skill framework. States: 'I'll use a proven framework' without citing skill.	1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	6	FAIL	Personalization connects to prospect's problem	No specific prospect personalization. Model admits: 'What you'd need to improve this: Specific trigger event... A relevant customer logo in their space'.	1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	8	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	13.0s	19321	9	FAIL	Provides 2-3 variations	Only 1 main email provided with 3 follow-ups. No 2-3 email variations shown.	1	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.6s	19432	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in model output. User input shown is formal request for follow-up sequence.	3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	7	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	21.5s	19982	8	FAIL	Follow-ups get progressively shorter	Email lengths vary inconsistently: Email 2 (~80 words) < Email 3 (~90 words) > Email 4 (~60 words) < Email 5 (~80 words). No progressive shortening pattern.	3	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	1	FAIL	Identifies lack of personalization	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	2	FAIL	Identifies filler phrases	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	3	FAIL	Identifies jargon and buzzwords	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	4	FAIL	Identifies vendor language vs peer language	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	5	FAIL	Identifies CTA as too high-friction	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	6	FAIL	Notes email is sender-focused not prospect-focused	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	7	FAIL	Provides a rewritten version	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.1s	19508	8	FAIL	Rewrite follows cold email principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	1
+ab-testing	eval-5	with_skill	FAIL	10.6s	19088	1	FAIL	Applies subject line guidelines (2-4 words, lowercase, internal-looking)	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 5 assertions and provide JSON-formatted results. Le…	5	1
+ab-testing	eval-5	with_skill	FAIL	10.6s	19088	2	FAIL	Provides specific examples	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 5 assertions and provide JSON-formatted results. Le…	5	1
+ab-testing	eval-5	with_skill	FAIL	10.6s	19088	3	FAIL	Explains why the format works	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 5 assertions and provide JSON-formatted results. Le…	5	1
+ab-testing	eval-5	with_skill	FAIL	10.6s	19088	4	FAIL	Warns against common bad subject line patterns	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 5 assertions and provide JSON-formatted results. Le…	5	1
+ab-testing	eval-5	with_skill	FAIL	10.6s	19088	5	FAIL	Notes distinction between open rate and reply rate	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 5 assertions and provide JSON-formatted results. Le…	5	1
+ab-testing	eval-6	with_skill	FAIL	7.8s	18900	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.8s	18900	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.8s	18900	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.8s	18900	4	PASS			6	1

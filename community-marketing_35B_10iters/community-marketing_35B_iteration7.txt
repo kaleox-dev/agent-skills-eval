@@ -1,0 +1,85 @@
+
+[1m▶ community-marketing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We're a B2B SaaS that wants to start a community. Should we use Discord or Slack?
+    [90moutput:[0m  To give you the right answer, I need to narrow down the "who" and the "why." B2B SaaS is too broad—Discord can be perfect for developer tools, while Slack is standard for enterprise software. Before …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Notes Slack free tier limitations
+         [90mevidence:[0m judge did not provide concrete evidence
+    5.5s · 2603 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Help me write community guidelines for our Discord. We're building a community for indie game developers.
+    [90moutput:[0m  This is a great niche. Indie game development communities are high-energy but can quickly become toxic if boundaries aren't set around **scope creep** (critiquing work nobody asked to see) and **gate…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    12.3s · 3326 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We just launched our community 3 weeks ago. We have 40 members but only 2-3 people post regularly. Everyone else just lurks. What do we do?
+    [90moutput:[0m  This is a classic "Cold Start" problem. **You are exactly where you should be at 3 weeks with 40 members.** The fact that only 2–3 people post regularly is normal. In community building, this is know…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions warning sign of company-dominated posts
+         [90mevidence:[0m The model advises to "Stop 'Managing,' Start 'Hosting'" and "Never ask: 'Please post more'", but does not explicitly identify or warn against "company-dominated posts" as a specific warning sign. It …
+    13.2s · 3426 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Design an ambassador program for our community. We have about 5,000 members and a few that always help others. Want to give them more recognition.
+    [90moutput:[0m  Based on your context (5,000 members, existing organic helpers, goal: recognition), here is a tailored **Ambassador Program Brief**. Since you already have "natural leaders" helping others, you don’t…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions tools/assets to enable advocates
+         [90mevidence:[0m The model focuses on recognition, structure, and communication templates. It does not mention specific tools or assets for advocates to use to promote the product, such as referral links, shareable g…
+      [31m#6[0m [31mFAIL[0m [90m—[0m May cross-reference referrals skill
+         [90mevidence:[0m The output does not mention 'referrals', 'referral skill', or cross-reference any other specific skill. It focuses solely on an 'Ambassador Program' or 'Champions Program' based on community help.
+    16.0s · 3711 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Our community feels dead. Members joined 6 months ago but most haven't posted in months. How do I tell if it's salvageable?
+    [90moutput:[0m  To determine if your community is salvageable, we need to diagnose *why* it stopped moving. A "dead" community usually suffers from one of three things: **lack of identity**, **lack of value**, or **…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Uses Health Audit Report format
+         [90mevidence:[0m The output is structured as a narrative guide with diagnostic questions and a 'Rescue Plan', not a formal 'Health Audit Report' document or template.
+      [31m#2[0m [31mFAIL[0m [90m—[0m References specific health metrics with benchmarks
+         [90mevidence:[0m The output uses qualitative signals (e.g., 'Dead signal', 'Salvageable signal') and vague counts ('3-10 super users', '50 members') but does not provide specific quantitative health metrics with defi…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Proposes top 3 priorities
+         [90mevidence:[0m The output outlines a 4-phase rescue plan. It does not explicitly list or prioritize a 'top 3' set of priorities; instead, it provides a sequential workflow of four phases.
+    12.4s · 3304 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We use our community mainly for support. How do we reduce ticket volume without making customers feel ignored?
+    [90moutput:[0m  This is a classic community dilemma. To reduce ticket volume without making customers feel ignored, you must shift from viewing community as a **"dumping ground for complaints"** to viewing it as **"…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions closing the loop with product
+         [90mevidence:[0m The model mentions 'Incentivize Helping: Non-monetary: Early access to features, direct line to product managers'. It does not explicitly mention closing the loop *with* product management regarding …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about unanswered questions threshold
+         [90mevidence:[0m The model recommends an SLA ('maximum response time... e.g., 4 hours') but does not provide a specific warning or threshold regarding the volume of *unanswered* questions (e.g., if X questions remain…
+    12.3s · 3405 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 72.6%[0m  [90m· 11.94s avg · 3296 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-547/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "community-marketing",
+      "slug": "community-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7222222222222222,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-547/benchmark.json"
+    }
+  ],
+  "iteration": 547,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-547",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-547/report/index.html"
+}

@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	1	FAIL	Checks for product-marketing.md	Output mentions /pricing.md and /pricing.txt but never references product-marketing.md	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	2	FAIL	Applies three pillars framework (Structure, Authority, Presence)	No mention of 'three pillars framework' or 'Structure, Authority, Presence' in output	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	3	FAIL	Runs AI Visibility Audit across platforms	Model asks 'Have you tested what ChatGPT and Perplexity show' but does not perform an actual audit	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	4	FAIL	Checks content extractability	Output mentions 'content written for humans only, not extractable passages' as a general concept but does not check specific content	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	5	FAIL	References Princeton GEO research findings	Output says 'Based on the research' but never cites Princeton GEO research specifically	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	6	FAIL	Checks AI bot access in robots.txt	Output asks 'Have you checked your robots.txt' but does not actually check it	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	22164	7	FAIL	Provides prioritized action plan	Output provides '3 quick wins' but they are conditional checks, not a complete prioritized action plan based on audit findings	1	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.7s	22709	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	5	FAIL	References Princeton GEO research	No mention of Princeton or GEO research in output	3	7
+ab-testing	eval-3	with_skill	FAIL	17.2s	22747	6	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	1	FAIL	Triggers on casual phrasing	No casual phrasing detected or mentioned in output. User input not shown as casual.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.8s	22221	7	FAIL	Suggests monitoring approach	No monitoring approach suggested. Output asks for information but provides no tracking/monitoring guidance.	4	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	1	FAIL	Runs full AI Visibility Audit	Model output: 'I need to gather some context about your business and current visibility before I can provide a meaningful audit' - No audit executed yet	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	2	FAIL	Checks multiple AI platforms	Model mentions 'ChatGPT, Perplexity, Google AI Overviews' only as questions to user, not actual checks performed	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	No pillar evaluation conducted; output only asks 'What type of content do you produce? What's your domain authority/SEO strength?' without analyzing	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	4	FAIL	Checks content extractability	No content extractability check performed; model output contains no analysis of content structure or extractability	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	5	FAIL	Checks AI bot access	Model asks 'Do you have access to check your robots.txt file?' but does not actually check bot access	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	6	FAIL	Provides findings organized by pillar	No findings provided; output is question-gathering phase with no audit results or findings	5	7
+ab-testing	eval-5	with_skill	FAIL	7.9s	22001	7	FAIL	Provides prioritized action plan	No action plan provided; model states 'Once I have this information, I can...' indicating future intent, not delivered output	5	7
+ab-testing	eval-6	with_skill	FAIL	10.7s	22257	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.7s	22257	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.7s	22257	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.7s	22257	4	PASS			6	7

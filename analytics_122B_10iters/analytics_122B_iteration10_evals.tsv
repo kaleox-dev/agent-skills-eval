@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	1	FAIL	Checks for product-marketing.md	Model states: "I don't have access to check for those files in this context." No file check performed.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	2	FAIL	Applies 'track for decisions' principle	Model asks "What specific decisions will this data inform?" but does not apply the principle to the tracking plan output.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	5	FAIL	Provides GA4 implementation details	GA4 section only lists "GA4 Conversions" with 3 events. No GA4-specific implementation details provided.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.1s	20964	7	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	1	FAIL	Applies UTM parameter strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	2	FAIL	Defines source, medium, and campaign conventions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	3	FAIL	Provides specific UTM examples for each channel	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	4	FAIL	Uses consistent naming conventions (lowercase)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	5	FAIL	Warns about common UTM mistakes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-2	with_skill	FAIL	23.0s	21597	6	FAIL	Recommends tracking documentation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * 6 Assertions to evaluate. * Model Output (a guide…	2	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	1	FAIL	Triggers on casual phrasing	User input was structured technical language ('The user is experiencing analytics tracking issues - specifically: 1. Duplicate events 2. Conversion numbers in GA4 don't match their database'), not ca…	3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.4s	21134	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.5s	20601	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	6	FAIL	Provides consent hierarchy	No explicit consent hierarchy structure provided. Consent object shows categories (analytics, marketing, essential) but no hierarchy or priority relationship defined.	5	10
+ab-testing	eval-5	with_skill	FAIL	26.9s	21969	7	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	8.3s	20394	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.3s	20394	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.3s	20394	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.3s	20394	4	PASS			6	10

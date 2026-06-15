@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	1	FAIL	Checks for product-marketing.md	The output contains no file system interactions, no mention of 'product-marketing.md', and no indication that such a file was checked or created. The assertion requires concrete evidence of checking …	1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	4	FAIL	Scores all 6 dimensions with weights	The output lists 6 dimensions (Title & Subtitle, Description, Visual Assets, Ratings & Reviews, Metadata & Freshness, Conversion Signals) with individual scores (e.g., 8/10, 6/10). However, it does n…	1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	27.5s	32868	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	2	FAIL	Classifies as Challenger tier	The model lists actions to take (fix rating, refresh metadata) but never explicitly states or classifies the app as 'Challenger tier'. It only mentions a 2.8 rating.	2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	5	FAIL	Notes Google Play indexes full description	The model advises on how to write the full description ('Rewrite your full description... with 2-3% natural keyword density'), but it does not explicitly state or note that Google Play *indexes* the …	2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.6s	30522	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	30770	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	30770	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	30770	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	30770	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.3s	30770	5	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	2.0s	30045	1	FAIL	Scores all 3 apps with same framework	No scores or framework application is present in the output; only tool calls are shown.	4	4
+ab-testing	eval-4	with_skill	FAIL	2.0s	30045	2	FAIL	Builds comparison table	No comparison table is present in the output.	4	4
+ab-testing	eval-4	with_skill	FAIL	2.0s	30045	3	FAIL	Identifies where user's app is weaker	No analysis of weaknesses is present in the output.	4	4
+ab-testing	eval-4	with_skill	FAIL	2.0s	30045	4	FAIL	Identifies keyword gaps vs competitors	No keyword gap analysis is present in the output.	4	4
+ab-testing	eval-4	with_skill	FAIL	2.0s	30045	5	FAIL	Produces competitor-informed action list	No action list is present in the output.	4	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	The output mentions 'benefit-driven with large, readable overlay text' but does not contain the specific phrase 'screenshot caption indexing', 'Apple', or '2025'.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	6	FAIL	Recommends specific screenshot count and video specs	The output recommends adding screenshots ('Add 2 more screenshots immediately', 'They use 5-8 screenshots') but does not provide specific 'video specs' (e.g., resolution, duration, format, aspect rat…	5	4
+ab-testing	eval-5	with_skill	FAIL	5.5s	30400	7	FAIL	Flags <5 screenshots as always-flag issue	The output critiques having only 3 screenshots as a risk ('caps the Visual Assets score at 5/10 (C-grade)'), but it does not state that <5 screenshots is an 'always-flag issue'. It frames it as a per…	5	4
+ab-testing	eval-6	with_skill	FAIL	4.9s	30369	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.9s	30369	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.9s	30369	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.9s	30369	4	FAIL	Cross-references ab-testing or ads skill	No mention of 'ab-testing', 'A/B testing', or any specific 'ads skill' external reference. Only general advice to 'Test continuously' and 'Run them in your ads'.	6	4
+ab-testing	eval-6	with_skill	FAIL	4.9s	30369	5	FAIL	Notes Google Play equivalents	The output contains no mention of Google Play, Android, or equivalents to Custom Product Pages on other platforms.	6	4

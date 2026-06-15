@@ -1,0 +1,99 @@
+
+[1m▶ ai-seo[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    we noticed our competitors are showing up in google AI overviews but we're not. what do we need to change?
+    [90moutput:[0m  The user is asking about why their competitors are appearing in Google AI Overviews but they're not. This is a classic AI SEO question that falls under my skill. I need to help them understand what c…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No casual phrasing detected in user query; model does not demonstrate specific trigger mechanism for casual language.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Suggests monitoring approach
+         [90mevidence:[0m No monitoring approach suggested; only mentions "Refresh competitive content quarterly" which is an action, not monitoring
+    12.5s · 22287 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Should we block AI crawlers like GPTBot and PerplexityBot in our robots.txt? We're worried about content theft.
+    [90moutput:[0m  The user is asking about whether they should block AI crawlers like GPTBot and PerplexityBot in their robots.txt file. They're concerned about content theft. This is a common concern for businesses, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.8s · 22638 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    What kind of content gets cited most by AI systems? We want to create content specifically optimized for AI search.
+    [90moutput:[0m  The user is asking about what content gets cited most by AI systems and wants to create content optimized for AI search. This is exactly what the AI SEO skill is designed for. Let me synthesize the k…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research
+         [90mevidence:[0m No mention of Princeton or Princeton GEO research found in output
+    17.7s · 22699 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Our organic search traffic has dropped 30% this quarter. Can you do a full SEO audit to figure out what's going on?
+    [90moutput:[0m  The user is asking for a full SEO audit to investigate a 30% drop in organic search traffic. This is a traditional technical and on-page SEO audit request, NOT an AI search optimization request. Acco…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    8.4s · 22047 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Can you audit our website for AI search readiness? We want to know how visible we are across ChatGPT, Perplexity, Google AI Overviews, and other AI platforms.
+    [90moutput:[0m  The user wants an AI search readiness audit. This is exactly what the ai-seo skill is designed for. I need to gather context first before I can provide a meaningful audit. According to the skill inst…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Runs full AI Visibility Audit
+         [90mevidence:[0m Model states: 'Before I dive into the audit, I need to gather some context' - no audit was actually run, only questions asked
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks multiple AI platforms
+         [90mevidence:[0m Model only mentions platforms in questions: 'Have you manually checked ChatGPT, Perplexity, or Google AI Overviews' - no actual checks performed
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates all three pillars (Structure, Authority, Presence)
+         [90mevidence:[0m No pillar evaluation present in output - model only asks context questions without any Structure, Authority, or Presence analysis
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m Model promises 'A content extractability audit' but states 'Once I have this information, I can provide you with' - no actual check performed
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks AI bot access
+         [90mevidence:[0m Model asks 'Can you verify if AI bots (GPTBot, PerplexityBot, ClaudeBot, Google-Extended) are allowed or blocked?' - does not check itself
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides findings organized by pillar
+         [90mevidence:[0m No findings provided in output - entire response is question-gathering, not findings delivery
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m Model states 'Once I have this information, I can provide you with... A prioritized action plan' - action plan not delivered
+    8.3s · 21985 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    How do I make sure our SaaS product shows up in AI search results? We're a project management tool and we keep getting left out of ChatGPT and Perplexity recommendations when people ask about project…
+    [90moutput:[0m  The user is asking about getting their SaaS product (a project management tool) to show up in AI search results, specifically ChatGPT and Perplexity. This is a clear AI SEO/LLMO request, so I should …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies three pillars framework (Structure, Authority, Presence)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Runs AI Visibility Audit across platforms
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research findings
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Checks AI bot access in robots.txt
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…
+    10.5s · 22144 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 59.1%[0m  [90m· 12.37s avg · 22300 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-411/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 17,
+  "skills": [
+    {
+      "skill": "ai-seo",
+      "slug": "ai-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5405405405405406,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-411/benchmark.json"
+    }
+  ],
+  "iteration": 411,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-411",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-411/report/index.html"
+}

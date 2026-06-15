@@ -1,0 +1,83 @@
+
+[1m▶ cold-email[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Help me write a cold email to CTOs at enterprise companies. I sell cybersecurity training. My current email has a 2% open rate and 0% reply rate.
+    [90moutput:[0m  The user wants help writing a cold email to CTOs at enterprise companies. They sell cybersecurity training and are getting terrible metrics (2% open rate, 0% reply rate). This is clearly a cold email…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.0s · 19434 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Write a cold email to VP of Marketing at mid-size B2B SaaS companies. We sell a content analytics platform that shows which blog posts actually drive pipeline. Our main proof point: customers see 3x …
+    [90moutput:[0m  The user wants me to write a cold email to VP of Marketing at mid-size B2B SaaS companies. They've provided: 1. Target: VP of Marketing at mid-size B2B SaaS companies 2. Product: Content analytics pl…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md file in output. Model mentions 'skill reference materials' but does not check for or cite product-marketing.md.
+    14.6s · 19491 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    write me a follow-up sequence. prospect didn't reply to my first email about our HR software. how many should I send and how far apart?
+    [90moutput:[0m  The user is asking for a follow-up sequence for a cold email about HR software where the prospect didn't reply to the first email. They want to know how many emails to send and the spacing between th…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing detection in output; user request was formal and structured.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not use 'just bumping' or 'checking in' language
+         [90mevidence:[0m Follow-up 1 subject line says "Bumping this in case it got buried." - violates the assertion.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Follow-ups get progressively shorter
+         [90mevidence:[0m Follow-up 1 (~80 words) vs Follow-up 2 (~85 words) - not progressively shorter.
+    19.2s · 19804 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Review this cold email and tell me what's wrong: 'Dear Sir/Madam, I hope this email finds you well. I wanted to reach out to introduce our innovative cloud-based platform that leverages AI to streaml…
+    [90moutput:[0m  The user wants me to review a cold email and identify what's wrong with it. This is a classic cold email critique task. I need to use the cold-email skill I have access to, which contains detailed re…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    20.5s · 20002 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Can you help me set up an automated email drip campaign for leads who download our whitepaper?
+    [90moutput:[0m  The user is asking about setting up an automated email drip campaign for leads who download a whitepaper. This is actually a lifecycle/nurture email sequence, NOT a cold email campaign. Looking at th…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    11.6s · 19309 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    What are the best subject lines for cold emails? I want to maximize open rates.
+    [90moutput:[0m  The user is asking about the best subject lines for cold emails to maximize open rates. This is a direct question about cold email subject lines, which falls squarely within my cold-email skill. I ha…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies subject line guidelines (2-4 words, lowercase, internal-looking)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (text). * Constrain…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Provides specific examples
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (text). * Constrain…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains why the format works
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (text). * Constrain…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Warns against common bad subject line patterns
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (text). * Constrain…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes distinction between open rate and reply rate
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (text). * Constrain…
+    13.7s · 19433 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 75.2%[0m  [90m· 15.60s avg · 19579 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-494/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "cold-email",
+      "slug": "cold-email",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7804878048780488,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-494/benchmark.json"
+    }
+  ],
+  "iteration": 494,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-494",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-494/report/index.html"
+}

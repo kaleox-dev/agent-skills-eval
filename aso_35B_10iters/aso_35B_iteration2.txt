@@ -1,0 +1,99 @@
+
+[1m▶ aso[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Here's our app on the App Store: https://apps.apple.com/us/app/example/id123456789. Can you audit our listing and tell me what to fix?
+    [90moutput:[0m  I'll audit your App Store listing now. Let me fetch the listing data and take a screenshot for a complete analysis. </think> <asolist>https://apps.apple.com/us/app/example/id123456789</asolist>
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output does not contain product-marketing.md; states 'I'll audit your App Store listing now' and 'No output files were captured'.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Classifies brand maturity tier
+         [90mevidence:[0m No text classifying brand maturity tier is present in the output.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Scores all 6 dimensions with weights
+         [90mevidence:[0m No scoring or dimensions are present in the output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides scorecard with grade
+         [90mevidence:[0m No scorecard or grade is provided in the output.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Lists top 3 quick wins
+         [90mevidence:[0m No quick wins are listed in the output.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommendations include character counts
+         [90mevidence:[0m No recommendations or character counts are present in the output.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommendations are specific (X to Y format)
+         [90mevidence:[0m No specific recommendations in X to Y format are present in the output.
+    1.4s · 29964 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Compare our app https://apps.apple.com/us/app/ourapp/id111 against these two competitors: https://apps.apple.com/us/app/competitor1/id222 and https://apps.apple.com/us/app/competitor2/id333
+    [90moutput:[0m  I notice you've provided placeholder URLs (`ourapp`, `competitor1`, `competitor2`). To run a proper ASO audit and competitor comparison, I need the **actual App Store URLs**. Could you share the real…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Scores all 3 apps with same framework
+         [90mevidence:[0m Model refused to score, stating 'I notice you've provided placeholder URLs... I need the actual App Store URLs' and asked for real links.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Builds comparison table
+         [90mevidence:[0m Model stated 'Once I have these, I'll... Build a side-by-side comparison table', indicating no table was built in this output.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies where user's app is weaker
+         [90mevidence:[0m Model did not perform the audit, stating 'To run a proper ASO audit... I need the actual App Store URLs'.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Identifies keyword gaps vs competitors
+         [90mevidence:[0m Model promised to 'Identify keyword gaps' in the future, but did not identify any gaps in the current output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces competitor-informed action list
+         [90mevidence:[0m Model stated 'Deliver a prioritized action plan' as a future step, but did not produce an action list.
+    3.4s · 30179 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Instagram's App Store listing has just 'Instagram' as the title and barely any keywords. Should they fix that?
+    [90moutput:[0m  Based on the ASO auditing framework, **no, Instagram should not fix this.** Doing so would be a strategic mistake that would likely harm their performance. Here is the analysis based on the **Brand M…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    7.3s · 30552 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We're a small fintech startup with about 5,000 downloads. Our Play Store listing has a 2.8 rating and we haven't updated the description in 8 months. Help us figure out what to fix first.
+    [90moutput:[0m  I can certainly help with that. To perform a precise ASO audit and give you specific keyword and copy recommendations, I need to know which app we're looking at. **Please reply with your Google Play …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play indexes full description
+         [90mevidence:[0m The model discusses optimizing the description but never states that Google Play indexes the full description. It mentions missing keywords and rebuilding a description, but lacks the specific assert…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions feature graphic requirement
+         [90mevidence:[0m The model mentions "Visuals" in the deliverables list but does not explicitly mention "feature graphic" or any specific requirement regarding it in the provided text.
+    7.6s · 30589 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Should I run a Custom Product Page experiment on iOS for our paid search campaigns?
+    [90moutput:[0m  Yes. Custom Product Pages are one of the highest-ROI levers for paid search campaigns on iOS. They're specifically designed for this use case. **Why they work for paid search:** - **+5.9% average con…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play equivalents
+         [90mevidence:[0m The model output does not mention Google Play, Android, or any equivalent concept. It focuses exclusively on iOS/App Store.
+    4.4s · 30275 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We only have 3 screenshots and no preview video. Does this really matter that much?
+    [90moutput:[0m  Yes, this matters significantly. Here's why: **Screenshots:** - **90% of users** never scroll past the 3rd screenshot, so you're actually showing what most people see. That's good. - But with only 3,…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Notes Visual Assets is 25% of score
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#7[0m [31mFAIL[0m [90m—[0m Flags <5 screenshots as always-flag issue
+         [90mevidence:[0m judge did not provide concrete evidence
+    4.2s · 30255 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 56.5%[0m  [90m· 4.71s avg · 30302 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-462/benchmark.json[0m
+{
+  "passed": 21,
+  "failed": 17,
+  "skills": [
+    {
+      "skill": "aso",
+      "slug": "aso",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5526315789473685,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-462/benchmark.json"
+    }
+  ],
+  "iteration": 462,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-462",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-462/report/index.html"
+}

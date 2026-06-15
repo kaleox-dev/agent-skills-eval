@@ -1,0 +1,401 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	1	FAIL	Checks for product-marketing.md	No output files were captured; model output is a text response, not a file named product-marketing.md.	1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	16.9s	23536	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	6	FAIL	Recommends grace period before cancellation	Output specifies a 10-day sequence ending in 'Final Warning' but does not explicitly mention a mandatory 'grace period' post-final warning or pre-cancellation logic, nor does it define the exact time…	2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	7	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.3s	22749	8	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	5	FAIL	Includes copy recommendations	While it offers to 'draft the specific copy' at the end and gives examples like 'Save $21.75/month', it does not provide full copy recommendations for the entire flow in this output. It provides prin…	3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.1s	23037	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	6	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.0s	23217	7	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	4	FAIL	Notes that 'too expensive' often masks other issues	Model output states: 'Price-sensitive cancellations are among the most salvageable because the customer usually likes the product but can't justify the cost right now.' It does not state that the rea…	5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	5	FAIL	Suggests deeper follow-up questions	Model output does not suggest asking deeper follow-up questions; it suggests mapping the exit survey selection directly to an offer or adding a 'Pay Over Time' option.	5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	23018	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	13.2s	23291	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.2s	23291	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.2s	23291	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.2s	23291	4	FAIL	Does not attempt to write a full email sequence	The model provides full draft templates for 4 distinct emails: 'Email 1: The Listening Email', 'Email 2: The What's New Email', 'Email 3: The Value Recap Email', and 'Email 4: The Final Gate Email', …	6	1
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	1	FAIL	Checks for product-marketing.md	Output files explicitly states: 'No output files were captured.' and model text contains no mention of creating or referencing a 'product-marketing.md' file.	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	6	FAIL	Addresses dunning stack for payment recovery	The model mentions enabling 'Card Updater' and implies a dunning sequence exists but states: 'I will then provide: A dunning email sequence (if you use Stripe/Chargebee).' It does not actually provid…	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	7	FAIL	Recommends health score model	The model states: 'I will then provide: A health score model to predict churn *before* they cancel.' It references the need for usage data to build it later but does not recommend or describe the mod…	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	23075	8	FAIL	Provides prioritized implementation plan	While it lists 'Immediate Action' and 'Next Steps', it does not provide a prioritized implementation plan for the *entire* solution (including dunning and health scores) as those are deferred to a fu…	1	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	7	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.4s	22991	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.0s	22518	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.9s	23113	7	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	2	FAIL	Suggests multiple offer types (discount, downgrade, pause)	Model suggests 'The Discount (Primary Offer)' and 'The Downgrade (Fallback Offer)'. However, it does not suggest a 'pause' offer. It only lists discount and downgrade as the core offer types.	5	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	4	FAIL	Notes that 'too expensive' often masks other issues	The model states 'Too expensive... is the most common churn reason and also one with the highest recovery potential'. It does not explicitly state or provide evidence that 'too expensive' often masks…	5	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.9s	22671	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	22373	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	22373	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	22373	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	22373	4	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	1	FAIL	Checks for product-marketing.md	The model output is a text response containing strategic advice and questions. No file named 'product-marketing.md' was generated or referenced in the output files section (which is empty).	1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.9s	22944	8	FAIL	Provides prioritized implementation plan	While the model provides strategic sections, it does not provide a prioritized implementation plan (e.g., Step 1, Step 2, Timeline, or Priority ranking). Instead, it explicitly states at the end: 'Ne…	1	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	6	FAIL	Recommends grace period before cancellation	The model mentions 'Your account will be paused in 3 days' in the Day 7 email example, but does not explicitly recommend a standard grace period before cancellation; it focuses on pausing/access inte…	2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	7	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.3s	22947	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	1	FAIL	Triggers on casual phrasing	Model immediately provides a standard framework and asks for business metrics rather than demonstrating a specific trigger mechanism for casual phrasing. No evidence of interpreting or reacting to ca…	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	5	FAIL	Includes copy recommendations	Model describes the logic of the steps (e.g., 'Ask why they're cancelling') but does not provide specific marketing copy or text recommendations for the user interface elements.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	22674	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	6	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.3s	23146	7	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.6s	22863	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	13.1s	23280	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	13.1s	23280	2	FAIL	References or defers to emails skill	The model provides generic advice and template drafts directly without referencing any specific internal tool, plugin, 'emails skill', or system capability. It acts as a generalist content generator …	6	3
+ab-testing	eval-6	with_skill	FAIL	13.1s	23280	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	13.1s	23280	4	FAIL	Does not attempt to write a full email sequence	The model provides a complete 'generic 4-email win-back sequence' including specific subjects, bodies, and timing for Email 1, Email 2, Email 3, and Email 4. This constitutes writing a full sequence,…	6	3
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' Model provided text summary only.	1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	8	FAIL	Includes recovery benchmarks	"Model mentions ""reduce hard declines by 30-50%"" for card updates and ""recovering ~15% more"" for smart retries. However, it does not provide specific recovery benchmarks for the user's current 15% chu…"	2	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	7	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	4	FAIL	Notes that 'too expensive' often masks other issues	The output claims 'Price-sensitive churn is often recoverable because the customer likes the product but feels the ROI doesn't justify the cost *right now*.' It does not explicitly state that 'too ex…	5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	5	FAIL	Suggests deeper follow-up questions	The output suggests a flow with an 'Exit Survey' where the user selects the reason, followed by automated offers. It does not explicitly advise the agent or system to ask deeper, qualitative follow-u…	5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	4	PASS			6	4
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.'	1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	3	FAIL	Designs cancel flow with proper stages	Model only suggests implementing a flow ('Implement a No-Dark-Pattern Cancel Flow') and states 'Once I have the details above, I can provide a specific Cancel Flow Design'. It does not provide the de…	1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	4	FAIL	Includes exit survey with multiple categories	Model suggests 'A simple flow with an exit survey' but does not list any specific categories for the survey.	1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	5	FAIL	Maps save offers to cancellation reasons	Model mentions 'targeted save offer (like a pause or a discount)' but does not provide a mapping between specific cancellation reasons and specific offers.	1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	7	FAIL	Recommends health score model	Model asks 'Do you track login frequency or feature usage?' but does not explicitly recommend a health score model.	1	5
+ab-testing	eval-1	with_skill	FAIL	7.1s	22573	8	FAIL	Provides prioritized implementation plan	Model provides a 'game plan' but explicitly states 'Once I have the details above, I can provide a specific Cancel Flow Design or a Dunning Setup Guide tailored to your stack', indicating the final p…	1	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	6	FAIL	Recommends grace period before cancellation	The output mentions pausing access and saving data ('Data is safe for 90 days') but never explicitly recommends a grace period before actual account cancellation/churn.	2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.0s	22976	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	23067	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	14.7s	23330	7	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	3	FAIL	Recommends testing different offers	"The output does not explicitly recommend A/B testing or experimentation. The final question asks ""Would you like me... help you design the A/B test"", indicating the test design is not yet done or rec…"	5	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	4	FAIL	Notes that 'too expensive' often masks other issues	"The output states price-sensitive users have ""budget constraints"" and just need the ""right pricing structure"". It does not mention that the reason might mask other issues like product fit or satisfac…"	5	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	5	FAIL	Suggests deeper follow-up questions	The output provides a logic flow based on the reason 'Too expensive' and immediate offer alternatives (discount/downgrade/pause). It does not suggest asking follow-up questions to diagnose the root c…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.0s	22857	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	22866	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	22866	2	FAIL	References or defers to emails skill	The model does not mention any specific 'email skill', 'email agent', or defer to a specialized tool/module for email writing. It acts as a general assistant.	6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	22866	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	22866	4	FAIL	Does not attempt to write a full email sequence	The model explicitly provides full draft content for a 3-email sequence: 'Email 1', 'Email 2', and 'Email 3' including subject lines and body copy.	6	5
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The text body also asks for documents if available.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	7	FAIL	Recommends health score model	The text lists under 'Next Steps': 'Once you provide the answers above, I can help you... Build a health score model'. It does not recommend or provide a model in the current output; it is deferred t…	1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	3	FAIL	Includes exit survey with 7 categories	The model lists 8 categories: 'Too expensive', 'Not using it enough', 'Missing a feature I need', 'Switching to a competitor', 'Technical issues / bugs', 'Temporary / seasonal need', 'Business closed…	3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	4	FAIL	Notes that 'too expensive' often masks other issues	The output explicitly states 'the data shows they love the product but are price-sensitive' and treats the reason as a direct pricing constraint. No mention of 'masking other issues' or hidden churn …	5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	5	FAIL	Suggests deeper follow-up questions	The output prescribes a fixed flow based on segment (Step 2). It does not suggest asking open-ended follow-up questions to uncover root causes; it relies on exit survey selection and tenure/plan data.	5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	4	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	7	FAIL	Recommends health score model	The output asks the user to define their activation moment ('What is your 'aha!' moment?') and suggests triggering nudges for dormant users, but it does not provide or recommend a specific health sco…	1	7
+ab-testing	eval-1	with_skill	FAIL	12.3s	23135	8	FAIL	Provides prioritized implementation plan	The output provides a list of tactics ('Immediate Wins') but does not provide a structured, prioritized implementation plan (e.g., a roadmap, timeline, or phased execution plan) for these items.	1	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	17.4s	23627	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	1	FAIL	Triggers on casual phrasing	The output provides a technical implementation plan and copy for a cancel flow. It does not analyze input for 'casual phrasing' nor does it demonstrate triggering on such phrasing. The output is a pr…	3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.2s	23194	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.1s	23276	7	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	4	FAIL	Notes that 'too expensive' often masks other issues	Output never mentions that 'too expensive' might mask other issues; it treats the reason literally and addresses price sensitivity directly.	5	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	5	FAIL	Suggests deeper follow-up questions	Output suggests a discount, pause, or downgrade, but does not explicitly suggest asking deeper follow-up questions to uncover root causes before making an offer.	5	7
+ab-testing	eval-5	with_skill	FAIL	4.9s	22333	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	11.6s	23153	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	11.6s	23153	2	FAIL	References or defers to emails skill	The model mentions the 'ab-testing' skill and 'Customer.io or Mailchimp' but does not explicitly reference a specific 'emails skill' by name, nor does it defer to a skill named 'emails'. It relies on…	6	7
+ab-testing	eval-6	with_skill	FAIL	11.6s	23153	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	11.6s	23153	4	FAIL	Does not attempt to write a full email sequence	The model explicitly states 'here’s a proven 5-email win-back sequence' and then proceeds to draft the full content for 5 distinct emails (Email 1: Day 7–14 through Email 5: Day 90), directly contrad…	6	7
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.'	1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	7	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.1s	23080	8	FAIL	Provides prioritized implementation plan	The output presents a 'Strategic Framework' with phases (Phase 1, 2, 3, 4) but explicitly stops short of a prioritized implementation plan, stating 'Once I have that [more context], I will: ... Outli…	1	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	6	FAIL	Recommends grace period before cancellation	Model suggests pausing access (Email 3: 'Your account will be paused in 3 days') but does not explicitly recommend a 'grace period before cancellation' or maintaining access with service limitations …	2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	7	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.0s	22641	8	FAIL	Includes recovery benchmarks	Model states 'fixing this could recover a significant portion of your revenue' but provides no specific benchmarks, percentages, or KPIs for recovery.	2	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	6	FAIL	Warns against dark patterns	The model mentions 'Don't make it feel like a guilt trip' in best practices, but it does not explicitly use the term 'dark patterns' or warn against specific manipulative tactics (e.g., roach motels,…	3	8
+ab-testing	eval-3	with_skill	FAIL	14.0s	23248	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	6	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	23257	7	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	4	FAIL	Notes that 'too expensive' often masks other issues	Output states 'product value is already proven — they just can't justify the current price' but does not mention that 'too expensive' might mask other issues.	5	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	5	FAIL	Suggests deeper follow-up questions	Output provides copy for offers but does not suggest asking deeper diagnostic follow-up questions beyond 'What if we could make [Product] fit your budget?' which is a closing statement, not a diagnos…	5	8
+ab-testing	eval-5	with_skill	FAIL	8.1s	22676	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	7.6s	22623	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.6s	22623	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.6s	22623	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.6s	22623	4	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	2	FAIL	Addresses both voluntary and involuntary churn	Model output states: 'I'll focus on both voluntary churn (people choosing to leave) and involuntary churn (payment failures)' but immediately follows up with questions ('What's your approximate split…	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	3	FAIL	Designs cancel flow with proper stages	Model output states: 'Once we have this, we can map out a custom cancel flow'. No design was provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	4	FAIL	Includes exit survey with multiple categories	No mention of an exit survey or survey categories in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	5	FAIL	Maps save offers to cancellation reasons	No mapping of offers to reasons provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	6	FAIL	Addresses dunning stack for payment recovery	Model output states: 'Once we have this, we can map out a custom ... dunning strategy'. No strategy provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	7	FAIL	Recommends health score model	No health score model recommended.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	22129	8	FAIL	Provides prioritized implementation plan	No implementation plan provided.	1	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	5	FAIL	Provides dunning email sequence with escalating urgency	The output provides examples for pre-dunning (T-30, T-7) and manual retry schedules, but explicitly asks the user if they want drafts for the 'dunning email sequence' in point 2 of the final offer, i…	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	22704	8	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	1	FAIL	Triggers on casual phrasing	The model output is a generic guide starting with 'Since you currently have no save attempt...'. It does not demonstrate handling of specific casual user phrasing (e.g., 'I want out'), but rather pro…	3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.2s	23333	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.7s	23193	7	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	4	FAIL	Notes that 'too expensive' often masks other issues	"The model states '""Too expensive"" can mean ""I don't need it right now""' under Pause Subscription, but does not explicitly state or imply that 'too expensive' is a mask for other unrelated issues (e.g…"	5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	5	FAIL	Suggests deeper follow-up questions	The output provides pre-scripted offers and copy examples. It does not suggest asking the user deeper diagnostic follow-up questions to uncover the root cause before offering a solution.	5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	22737	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	15.0s	23436	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	15.0s	23436	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	15.0s	23436	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	15.0s	23436	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. Model text discusses general strategy but no file named 'product-marketing.md' was generated or referenced as a deliverable.	1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	23074	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	6	FAIL	Recommends grace period before cancellation	The output describes pausing service ('Account will be paused in 3 days') and updating cards, but does not explicitly recommend or define a 'grace period' specifically *before* cancellation or accoun…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	23066	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	10.6s	22884	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	6	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.0s	23532	7	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.7s	22838	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	8.7s	22744	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.7s	22744	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.7s	22744	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	8.7s	22744	4	PASS			6	10

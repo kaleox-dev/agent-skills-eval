@@ -1,0 +1,75 @@
+
+[1m▶ cold-email[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Write a cold email to VP of Marketing at mid-size B2B SaaS companies. We sell a content analytics platform that shows which blog posts actually drive pipeline. Our main proof point: customers see 3x …
+    [90moutput:[0m  Before writing, I need a bit more context to make this effective: 1. **What do you want?** (meeting, reply, demo, intro to someone else?) 2. **Any research signals?** — Did this specific person post …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [31m✗ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is a conversational text block, not the requested file.
+      [31m#9[0m [31mFAIL[0m [90m—[0m Provides 2-3 variations
+         [90mevidence:[0m The output provides only one email draft. The model explicitly stated in the intro: 'here's a draft based on what you've shared' (singular). It did not generate multiple subject lines or body variati…
+    4.6s · 18761 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Help me write a cold email to CTOs at enterprise companies. I sell cybersecurity training. My current email has a 2% open rate and 0% reply rate.
+    [90moutput:[0m  A 2% open rate is critically low. It means your emails are likely landing in spam, or your sending domain has poor reputation. Even a perfect body copy won't save a 2% open rate. A 0% reply rate is e…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies subject line as likely open rate issue
+         [90mevidence:[0m The model attributes the low open rate to technical deliverability ('landing in spam', 'poor reputation') and domain issues, rather than the subject line. It states: 'Even a perfect body copy won't s…
+    11.6s · 19497 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Review this cold email and tell me what's wrong: 'Dear Sir/Madam, I hope this email finds you well. I wanted to reach out to introduce our innovative cloud-based platform that leverages AI to streaml…
+    [90moutput:[0m  This email is a textbook example of everything that *shouldn’t* be in a cold email. It checks every single box on the "Top 15 Mistakes" list. Here is a breakdown of what’s wrong, why it fails, and ho…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    11.5s · 19534 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    write me a follow-up sequence. prospect didn't reply to my first email about our HR software. how many should I send and how far apart?
+    [90moutput:[0m  Here is the strategy and the actual email drafts. ### The Strategy **How many:** Send **3 more follow-ups** (4 total touches). **Why:** Data shows ~55% of replies come from follow-ups, but response r…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The output provides a pre-packaged strategy and email drafts without any indication that it waited for or responded to user input containing casual phrasing. It assumes the user already has a context…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Follow-ups get progressively shorter
+         [90mevidence:[0m The 'Critical Rules' section states: 'Keep it short — Each email should be readable in under 5 seconds.' While it suggests brevity, it does not provide evidence that the drafts are *progressively* sh…
+    12.9s · 19603 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    Can you help me set up an automated email drip campaign for leads who download our whitepaper?
+    [90moutput:[0m  Before I start writing, I need to clarify a few details to make this effective. **Quick check:** The `cold-email` skill covers outbound (unsolicited) emails. Your use case—leads who downloaded a whit…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    3.0s · 18567 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="cold-email"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns,…
+    [90muser:[0m    What are the best subject lines for cold emails? I want to maximize open rates.
+    [90moutput:[0m  The best subject lines for cold emails follow one counterintuitive rule: **they should be boring.** Data from 85M+ emails (Gong) and millions of cold outreach campaigns (Belkins, Lavender) consistent…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    9.4s · 19247 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 89.7%[0m  [90m· 8.83s avg · 19202 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-509/benchmark.json[0m
+{
+  "passed": 36,
+  "failed": 5,
+  "skills": [
+    {
+      "skill": "cold-email",
+      "slug": "cold-email",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8780487804878049,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-509/benchmark.json"
+    }
+  ],
+  "iteration": 509,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-509",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-509/report/index.html"
+}

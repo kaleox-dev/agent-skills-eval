@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	1	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	3	FAIL	Classifies brand maturity tier	No brand maturity tier classification found in output	1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	4	FAIL	Scores all 6 dimensions with weights	No dimension scores or weights present in output	1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	5	FAIL	Provides scorecard with grade	No scorecard or grade visible in output	1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	6	FAIL	Lists top 3 quick wins	No quick wins listed in output	1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	7	FAIL	Recommendations include character counts	No recommendations with character counts present	1	6
+ab-testing	eval-1	with_skill	FAIL	4.1s	30175	8	FAIL	Recommendations are specific (X to Y format)	No X to Y format recommendations found	1	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.4s	31344	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	30959	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	30959	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	30959	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	30959	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	30959	5	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	4.2s	30192	1	FAIL	Scores all 3 apps with same framework	No scoring framework or scores visible in output; output files: 'No output files were captured'	4	6
+ab-testing	eval-4	with_skill	FAIL	4.2s	30192	2	FAIL	Builds comparison table	No comparison table present in model output; only tool calls shown with 'No output files were captured'	4	6
+ab-testing	eval-4	with_skill	FAIL	4.2s	30192	3	FAIL	Identifies where user's app is weaker	No weakness analysis provided; output files section states 'No output files were captured'	4	6
+ab-testing	eval-4	with_skill	FAIL	4.2s	30192	4	FAIL	Identifies keyword gaps vs competitors	No keyword gap analysis visible; model only made tool calls without retrieving data ('No output files were captured')	4	6
+ab-testing	eval-4	with_skill	FAIL	4.2s	30192	5	FAIL	Produces competitor-informed action list	No action list present in output; only planning text and failed tool calls	4	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	1	FAIL	Notes Visual Assets is 25% of score	No mention of 25% score weight in output. Output states '3-4/10 on Visual Assets (vs. 8-10/10 for 8-10 screenshots)' but no 25% reference.	5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	No mention of 'caption indexing' or '(Apple, 2025)' in output. Only mentions 'clear captions (5-7 words max each)'	5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.1s	30896	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	19.0s	31428	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	19.0s	31428	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	19.0s	31428	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	19.0s	31428	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	19.0s	31428	5	FAIL	Notes Google Play equivalents	No mention of Google Play, Android, or equivalent features found in output	6	6

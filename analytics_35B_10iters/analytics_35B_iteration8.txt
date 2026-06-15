@@ -1,0 +1,81 @@
+
+[1m▶ analytics[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We're launching an e-commerce store and need to set up tracking from scratch. What events do we absolutely need?
+    [90moutput:[0m  Let me ask a few clarifying questions first to tailor this to your specific situation: 1. **What tools are you planning to use?** (GA4, Mixpanel, etc.) 2. **What's your tech stack?** (Shopify, WooCom…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines full e-commerce event taxonomy
+         [90mevidence:[0m Provides a 'Minimum Viable' set of events. Explicitly lists only 9 core events and suggests 'Recommended Additions' as secondary, failing to define a 'full' taxonomy.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes enhanced e-commerce parameters
+         [90mevidence:[0m While it lists parameters like `transaction_id`, `value`, `currency`, `items[]`, it does not explicitly structure them as 'enhanced e-commerce' parameters or reference the specific standard schema (e…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Follows object_action naming convention
+         [90mevidence:[0m Uses underscore_separated_snake_case (e.g., `product_viewed`, `checkout_started`) rather than the camelCase object_action convention (e.g., `ecommerce_productView`, `checkout_start`).
+    7.0s · 20421 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    What UTM parameters should we use? We run ads on Google, Meta, and LinkedIn, plus send a weekly newsletter and post on LinkedIn organically.
+    [90moutput:[0m  Here's a standardized UTM parameter strategy for your campaigns, designed for consistency and clear attribution: ## UTM Parameter Standards ### Standard Parameters | Parameter | Purpose | Format | Ex…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    9.9s · 20743 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    our tracking seems broken — we're seeing duplicate events and our conversion numbers in GA4 don't match what our database shows. help?
+    [90moutput:[0m  I'll help you troubleshoot your GA4 tracking issues. Duplicate events and conversion mismatches are common problems with specific root causes. Let me ask some diagnostic questions first, then we'll w…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    13.1s · 21023 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up analytics tracking for our B2B SaaS product. We use GA4 and GTM. We need to track signups, feature usage, and upgrade events.
+    [90moutput:[0m  I'll help you set up comprehensive analytics tracking for your B2B SaaS product. Let me start by asking a few questions to tailor the implementation to your specific needs. ## Initial Questions Befor…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model text does not reference or generate a file named product-marketing.md.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 'track for decisions' principle
+         [90mevidence:[0m The model output provides a generic tracking plan and then explicitly states: 'Please answer the questions above, and I'll: 1. Refine the event list to match your actual product features'. It does no…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Uses object_action naming convention
+         [90mevidence:[0m The event names used are: 'signup_completed', 'onboarding_started', 'feature_used', 'pricing_viewed', 'plan_selected', 'purchase_completed', 'subscription_upgraded'. These follow a verb_noun or event…
+    17.1s · 21452 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up tracking for our A/B test. We want to measure which version of our pricing page converts better.
+    [90moutput:[0m  I'd be happy to help you set up tracking for your A/B test. To provide the most accurate implementation, I need to understand your current setup and goals. **Before I dive in, I need to check for som…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m May help with tracking implementation specifics
+         [90mevidence:[0m The model states 'Before I dive in, I need to check for some context' and performs a tool check without providing any specific implementation help or details yet.
+    1.1s · 19827 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We need to make sure our tracking is GDPR compliant. We have European users and we're using GA4, Hotjar, and Facebook Pixel.
+    [90moutput:[0m  You're dealing with a classic compliance scenario, but here's the good news: **GA4 is already designed with GDPR in mind** (unlike UA). The challenge is implementing it correctly and managing your no…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides consent hierarchy
+         [90mevidence:[0m The output lists consent types (analytics_storage, ad_storage, etc.) but does not define a prioritization hierarchy (e.g., that functionality storage is granted by default while others are denied, or…
+    17.0s · 21594 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 78.0%[0m  [90m· 10.86s avg · 20843 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-448/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "analytics",
+      "slug": "analytics",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7837837837837838,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-448/benchmark.json"
+    }
+  ],
+  "iteration": 448,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-448",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-448/report/index.html"
+}

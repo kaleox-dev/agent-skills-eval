@@ -1,0 +1,113 @@
+
+[1m▶ ad-creative[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    I need Google Ads copy for our CRM product. We're targeting the keyword 'best CRM for small business'. Need responsive search ads.
+    [90moutput:[0m  I'll generate high-performing RSA copy for your CRM product. Before I write, I need a few quick details to make these actually convert: 1. **Product name** and any brand voice guidelines (e.g., profe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Respects Google RSA character limits (30 char headlines, 90 char descriptions)
+         [90mevidence:[0m No headlines or descriptions were generated in the model output.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Generates 10-15 headline variations
+         [90mevidence:[0m No headlines were generated.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Generates 4+ description variations
+         [90mevidence:[0m No descriptions were generated.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes target keyword in headlines
+         [90mevidence:[0m No headlines were generated.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes pinning should be used sparingly per skill guidance
+         [90mevidence:[0m Model output contains no mention of pinning.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests ad extensions
+         [90mevidence:[0m Model output contains no mention of ad extensions.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Uses angle-based variation approach
+         [90mevidence:[0m Model output contains no angle-based variations or headlines.
+    3.4s · 27938 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    we need linkedin ads for our enterprise security product. audience is CISOs and IT directors.
+    [90moutput:[0m  I can create high-performing LinkedIn ads targeting CISOs and IT Directors for your enterprise security product. To generate the most effective ad copy, I need a few details: 1. **Product specifics:*…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Respects LinkedIn character limits (150/70/100)
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Adapts tone for enterprise security audience
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Uses risk-reduction and compliance language
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides multiple angles relevant to security buyers
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests LinkedIn ad format recommendations
+         [90mevidence:[0m judge did not provide concrete evidence
+    4.2s · 27998 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Here's our ad performance data: Ad A (pain point angle) - CTR 2.1%, CPC $3.20, Conv rate 4.5%. Ad B (social proof angle) - CTR 1.4%, CPC $4.10, Conv rate 6.2%. Ad C (feature angle) - CTR 0.8%, CPC $5…
+    [90moutput:[0m  Thanks for the performance data. Before I generate new creative, I need to establish the full context so the variations are actually usable. ### 1. Platform & Format - Which platform is this data fro…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Activates iteration mode based on performance data
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Generates new variations combining winning elements
+         [90mevidence:[0m The model does not generate new copy/creative variations. It only suggests a strategy ('A/B test pain point + social proof combo') and defers actual generation: 'Once you provide the missing context,…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific iterations on top performers
+         [90mevidence:[0m No specific iterations were provided. The model requested more context ('Platform & Format', 'Product & Offer', etc.) before proceeding.
+    7.9s · 28451 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    I need to generate a big batch of ad variations for a multi-platform campaign launching next week. We're a meal delivery service targeting busy professionals. Need ads for Google, Meta, and TikTok.
+    [90moutput:[0m  Great — let's get this done fast. I'll pull in any existing product context first, then ask for the few specifics needed to generate high-performing variations across all three platforms. **Quick con…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Activates batch generation workflow
+         [90mevidence:[0m The model outputs a request for clarification ('please confirm:') rather than generating the batch content. It states 'Once I have that, I'll deliver' but does not perform the action in this turn.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Generates for all three platforms
+         [90mevidence:[0m No ad copy was generated for Google, Meta, or TikTok. The model only listed placeholders of what it *would* deliver in the future.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Respects each platform's character limits
+         [90mevidence:[0m Since no content was generated, character limits could not be respected. The model mentioned limits in the proposed plan but did not enforce them on actual output.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Identifies angles that work across platforms
+         [90mevidence:[0m The model did not identify or list specific angles. It asked the user to provide context to determine angles later.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes TikTok needs video concepts
+         [90mevidence:[0m The model asked for clarification on whether TikTok needed 'creative direction for the video itself' rather than proactively noting or providing video concepts as part of the generation.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Organizes output by platform
+         [90mevidence:[0m No output was organized because no ads were generated.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Generates multiple variations per angle per platform
+         [90mevidence:[0m No variations were generated.
+    6.1s · 28261 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Help me plan our overall paid advertising strategy. We have a $20k monthly budget and want to figure out which platforms to use and how to allocate spend.
+    [90moutput:[0m  # Paid Advertising Strategy: Platform Selection & Budget Allocation This is a strategic planning question, not a creative execution one. Per the `ad-creative` skill, please refer to the **`ads`** ski…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    9.1s · 28591 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Generate ad creative for our Meta (Facebook/Instagram) campaign. We sell an AI writing assistant for content marketers. Main value prop: write blog posts 5x faster. Target audience: content marketing…
+    [90moutput:[0m  I'll generate high-performing Meta ad creative for your AI writing assistant. Before I finalize, let me note a few assumptions and ask for clarification on missing context. **Assumptions I'm making:*…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' No file named product-marketing.md is present in the output.
+    17.4s · 29394 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 39.6%[0m  [90m· 8.03s avg · 28439 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-387/benchmark.json[0m
+{
+  "passed": 13,
+  "failed": 24,
+  "skills": [
+    {
+      "skill": "ad-creative",
+      "slug": "ad-creative",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.35135135135135137,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-387/benchmark.json"
+    }
+  ],
+  "iteration": 387,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-387",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-387/report/index.html"
+}

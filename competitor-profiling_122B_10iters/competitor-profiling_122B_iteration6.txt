@@ -1,0 +1,97 @@
+
+[1m▶ competitor-profiling[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    We have 12 competitors. Profile all of them.
+    [90moutput:[0m  The user wants me to profile 12 competitors, but they haven't provided the URLs yet. I need to ask for the competitor URLs before I can proceed with the profiling. According to the skill instructions…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends prioritization over profiling all 12
+         [90mevidence:[0m Model states: 'I'm ready to profile your 12 competitors!' and 'Map and scrape all 12 competitor sites in parallel' - no prioritization recommended
+      [31m#2[0m [31mFAIL[0m [90m—[0m Suggests top 5 based on relevance
+         [90mevidence:[0m No mention of selecting top 5; model commits to profiling all 12 competitors
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks user to prioritize
+         [90mevidence:[0m Model asks for URLs, product, depth level, and focus areas but does not ask user to prioritize which competitors to profile
+    6.0s · 13022 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  The user wants me to profile three competitors for sales enablement and positioning gap analysis. They've provided three URLs: - https://competitor1.com - https://competitor2.com - https://competitor…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model states: 'I don't have access to the file system to check this' - did not verify file existence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs all three phases (scraping, SEO data, synthesis)
+         [90mevidence:[0m Only firecrawl_map tool calls shown; no evidence of scraping, SEO data, or synthesis phases completed
+      [31m#3[0m [31mFAIL[0m [90m—[0m Saves raw data to competitor-profiles/raw/ with date subfolder
+         [90mevidence:[0m Output states: 'No output files were captured'
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces individual profile per competitor
+         [90mevidence:[0m No individual competitor profiles generated; only tool calls initiated
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces _summary.md after individual profiles
+         [90mevidence:[0m No _summary.md file produced or referenced in output
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses consistent metrics across competitors
+         [90mevidence:[0m No profiles produced to verify metric consistency across competitors
+      [31m#7[0m [31mFAIL[0m [90m—[0m Parallelizes scraping when possible
+         [90mevidence:[0m Three firecrawl_map calls shown but no evidence they executed in parallel; 'No output files were captured'
+    7.6s · 13178 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  The user is asking about whether to update an existing competitor profile of Notion from 4 months ago or start fresh. This is a reasonable question about profile maintenance. According to the competi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Says to save raw data to new date folder
+         [90mevidence:[0m No mention of saving raw data to a new date folder in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Says never overwrite prior date's data
+         [90mevidence:[0m No explicit statement about not overwriting prior date's data in output
+    9.6s · 13323 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    What pages should I scrape for a competitor profile?
+    [90moutput:[0m  The user is asking about what pages to scrape when creating a competitor profile. This is a question about the competitor-profiling skill I have access to. I should provide a clear, actionable answer…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    10.4s · 13371 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I want a profile but I don't care about SEO data — just pricing, positioning, and customer logos. Can you skip the DataForSEO calls?
+    [90moutput:[0m  The user wants a competitor profile but specifically wants to skip SEO data (DataForSEO calls). They only care about: 1. Pricing 2. Positioning 3. Customer logos This is a modified scope of the norma…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs Phase 1 and Phase 3
+         [90mevidence:[0m No output files were captured. Agent only confirmed intent, did not execute scraping.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Flags SEO section as skipped, not blank
+         [90mevidence:[0m No deliverable exists to flag. Agent only stated "no SEO metrics" without a structured output showing skipped section.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Still saves raw data
+         [90mevidence:[0m Output files: "No output files were captured." Agent claimed "I'll still save the raw scrape data" but no evidence of actual save.
+    6.1s · 13067 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Should I trust the customer logo wall on the competitor's homepage as evidence of who their customers are?
+    [90moutput:[0m  This is a great question about competitive intelligence methodology. The user is asking about the reliability of customer logo walls as evidence of actual customers. This is a nuanced question that d…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes including date pulled
+         [90mevidence:[0m No mention of recording data collection date in methodology guidance
+    13.9s · 13784 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 53.3%[0m  [90m· 8.92s avg · 13291 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-556/benchmark.json[0m
+{
+  "passed": 16,
+  "failed": 16,
+  "skills": [
+    {
+      "skill": "competitor-profiling",
+      "slug": "competitor-profiling",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-556/benchmark.json"
+    }
+  ],
+  "iteration": 556,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-556",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-556/report/index.html"
+}

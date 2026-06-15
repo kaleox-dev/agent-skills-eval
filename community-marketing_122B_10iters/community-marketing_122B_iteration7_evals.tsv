@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	1	FAIL	Checks for product-marketing.md	I should also check if there's a product marketing context file to read first, as instructed. But since I'm an AI, I can't actually access local files - I should note this limitation and work with wh…	1	7
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	5	FAIL	Mentions Circle or other alternatives	No mention of Circle or other alternatives in output	1	7
+ab-testing	eval-1	with_skill	FAIL	10.8s	2897	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	6	FAIL	Mentions the 1% / 90% power user dynamic	Model mentions 'Identify and Invest in Your 2-3 Power Users' but does not reference 1%/90% dynamic	2	7
+ab-testing	eval-2	with_skill	FAIL	14.1s	3195	7	FAIL	Mentions warning sign of company-dominated posts	No mention of company-dominated posts or related warning signs in output	2	7
+ab-testing	eval-3	with_skill	FAIL	22.5s	3865	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	22.5s	3865	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	22.5s	3865	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	22.5s	3865	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	22.5s	3865	5	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	1	FAIL	Identifies candidates from existing helpful behavior	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	2	FAIL	Recommends personal 1:1 ask	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	3	FAIL	Suggests meaningful benefits beyond early access	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	4	FAIL	Mentions tools/assets to enable advocates	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	5	FAIL	Includes measurement plan	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-4	with_skill	FAIL	18.2s	3526	6	FAIL	May cross-reference referrals skill	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …	4	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.1s	3210	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	1	FAIL	Applies community-led support playbook	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	2	FAIL	Recommends searchable knowledge base from community Q&A	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	3	FAIL	Recommends recognizing peer helpers	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	4	FAIL	Mentions closing the loop with product	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	5	FAIL	Warns about unanswered questions threshold	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7
+ab-testing	eval-6	with_skill	FAIL	17.5s	3477	6	FAIL	Notes peer support must feel valued, not used	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…	6	7

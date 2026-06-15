@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	1	FAIL	Checks for product-marketing.md	No product-marketing.md file mentioned or created in the output.	1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	24.4s	17458	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger mechanism in output. Model treats this as standard experimentation question without noting casual language.	2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	16516	7	FAIL	Provides hypothesis framework	No structured hypothesis framework (e.g., If-Then-Because format) provided. Model asks questions but doesn't present hypothesis structure.	2	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	1	FAIL	Addresses the peeking problem directly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	2	FAIL	Explains why early significance is misleading	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	3	FAIL	Recommends running for full pre-calculated duration	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	4	FAIL	Mentions day-of-week effects or audience mix shifts	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	5	FAIL	Explains false positive rate inflation from peeking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	16281	6	FAIL	Mentions sequential testing as alternative approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…	3	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	1	FAIL	Identifies as multivariate test (MVT)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	2	FAIL	Explains MVT tests combinations of elements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	3	FAIL	Addresses dramatically higher traffic requirements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	4	FAIL	Calculates number of combinations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	5	FAIL	Suggests sequential A/B tests as alternative if traffic insufficient	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	6	FAIL	Builds hypotheses for each element	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-4	with_skill	FAIL	12.9s	16487	7	FAIL	Provides structured test plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	4	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.8s	16734	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	8.6s	16117	1	FAIL	Recognizes this as primarily a copywriting task	Model states: 'This is clearly an A/B testing scenario, which falls under the ab-testing skill' - frames as testing task, not copywriting	6	6
+ab-testing	eval-6	with_skill	FAIL	8.6s	16117	2	FAIL	References or defers to copywriting skill	Model references 'ab-testing skill' not copywriting skill. No mention of copywriting skill in output.	6	6
+ab-testing	eval-6	with_skill	FAIL	8.6s	16117	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	8.6s	16117	4	PASS			6	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	1	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	2	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	3	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	4	FAIL	Distinguishes statistical significance from practical significance	No explicit distinction made between statistical and practical significance concepts	7	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	5	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	17.2s	16898	6	PASS			7	6

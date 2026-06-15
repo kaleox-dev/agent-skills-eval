@@ -47,14 +47,15 @@ run_skill() {
         
         local txt_file="$output_folder/${skill}_${model_label}_iteration${i}.txt"
         
-        # ALWAYS use 122B as the judge (JUDGE_MODEL constant)
-        local JUDGE_MODEL="RedHatAI/Qwen3.5-122B-A10B-NVFP4"
-        local JUDGE_URL="https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1"
+        # Use the same model as judge (since --base-url applies to both target and judge)
+        # For 122B runs: judge is 122B
+        # For 35B runs: judge is 35B (we can't use 122B as judge since the tool doesn't support separate URLs)
+        local JUDGE_MODEL="$model_display"
         
+        # OPENAI_BASE_URL is already set above for the target model
         npx agent-skills-eval ./skills/$skill \
             --target "$model_display" \
             --judge "$JUDGE_MODEL" \
-            --base-url "$JUDGE_URL" \
             --strict 2>&1 | tee "$txt_file"
         
         # Generate TSV
@@ -66,7 +67,7 @@ run_skill() {
     python3 merge_tsv.py "$output_folder"/*_evals.tsv -o "$output_folder/merged.tsv"
     python3 aggregate_tsv.py "$output_folder" -o "$output_folder/aggregate.tsv"
     
-    echo "Done with $skill on $model_label (Judged by 122B)"
+    echo "Done with $skill on $model_label (self-judged)"
 }
 
 # Process each skill
@@ -75,17 +76,27 @@ for skill in $SKILLS; do
     echo "Processing skill: $skill"
     echo "========================================="
     
-    # Run on 122B model
-    run_skill "$skill" \
-        "RedHatAI/Qwen3.5-122B-A10B-NVFP4" \
-        "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1" \
-        "122B"
+    # Run on 122B model (skip if folder already exists with merged.tsv)
+    folder_122B="${skill}_122B_${ITERATIONS}iters"
+    if [ -f "$folder_122B/merged.tsv" ]; then
+        echo "Skipping $skill on 122B (already completed)"
+    else
+        run_skill "$skill" \
+            "RedHatAI/Qwen3.5-122B-A10B-NVFP4" \
+            "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1" \
+            "122B"
+    fi
     
-    # Run on 35B model
-    run_skill "$skill" \
-        "Qwen/Qwen3.6-35B-A3B-fp8" \
-        "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-FP8-no-think/v1" \
-        "35B"
+    # Run on 35B model (skip if folder already exists with merged.tsv)
+    folder_35B="${skill}_35B_${ITERATIONS}iters"
+    if [ -f "$folder_35B/merged.tsv" ]; then
+        echo "Skipping $skill on 35B (already completed)"
+    else
+        run_skill "$skill" \
+            "Qwen/Qwen3.6-35B-A3B-fp8" \
+            "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-FP8-no-think/v1" \
+            "35B"
+    fi
     
     echo ""
     echo "========================================="

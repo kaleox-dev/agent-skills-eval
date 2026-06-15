@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The output is conversational text asking clarifying questions.	1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.9s	20851	7	FAIL	Output follows tracking plan format	The output is primarily a conversation starter with questions and a draft structure, rather than a finalized, formal 'tracking plan document'. It explicitly states 'Based on best practices... here's …	1	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	5	FAIL	Warns about common UTM mistakes	No warnings, cautions, or error-prevention advice regarding common UTM mistakes (e.g., capitalization inconsistencies, missing parameters) were found in the text.	2	6
+ab-testing	eval-2	with_skill	FAIL	9.9s	20544	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.4s	20881	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	2	FAIL	Defines full e-commerce event taxonomy	The response provides a subset of events (Browsing, Cart, Checkout, Conversion, Post-Purchase) but does not constitute a 'full' taxonomy (e.g., missing wishlist, search, internal site search analytic…	4	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	4	FAIL	Follows object_action naming convention	The custom events defined in the text use `object_action` format (e.g., `product_viewed`, `product_added_to_cart`). However, the implementation code and GA4 recommendations explicitly use `view_item`…	4	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.8s	21014	6	FAIL	Provides tracking plan format output	The output is structured as a conversational guide with tables, code blocks, and explanatory text ('Why You Need It'). It does not provide a structured tracking plan file (e.g., CSV, JSON, or a stand…	4	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	1	FAIL	Applies privacy and compliance framework	Model failed to read context file and returned 'Error: Failed to read .agents/product-marketing.md: File not found'. No framework application demonstrated.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	2	FAIL	Addresses GDPR requirements specifically	Model only stated 'I'll help you set up GDPR-compliant tracking' and 'Let me first understand your current setup'. No specific GDPR requirements were addressed.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	3	FAIL	Recommends consent management platform	No recommendation for a consent management platform was provided in the output.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	4	FAIL	Covers GA4 consent mode configuration	GA4 consent mode is not mentioned in the output.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	5	FAIL	Addresses conditional loading for each tool	No discussion of conditional loading for tools was included.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	6	FAIL	Provides consent hierarchy	No consent hierarchy was provided.	5	6
+ab-testing	eval-5	with_skill	FAIL	1.2s	19839	7	FAIL	Mentions data retention settings	Data retention settings are not mentioned.	5	6
+ab-testing	eval-6	with_skill	FAIL	4.9s	20288	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.9s	20288	2	FAIL	References or defers to ab-testing skill	The model does not mention an 'ab-testing skill', nor does it defer to a specific named skill or module. It attempts to answer the query directly using general knowledge.	6	6
+ab-testing	eval-6	with_skill	FAIL	4.9s	20288	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.9s	20288	4	PASS			6	6

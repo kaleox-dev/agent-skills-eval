@@ -1,0 +1,110 @@
+
+[1m▶ ab-testing[0m  [90m[0m
+  [90m7 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  The user is asking about testing 4 different CTA button colors on their pricing page. This is a classic A/B testing question where I need to help them think through whether this is a good approach. L…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing trigger mechanism in output. Model treats this as standard experimentation question without noting casual language.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides hypothesis framework
+         [90mevidence:[0m No structured hypothesis framework (e.g., If-Then-Because format) provided. Model asks questions but doesn't present hypothesis structure.
+    13.4s · 16516 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  The user wants to A/B test their homepage headline. They've provided some key information: - Current headline: "The All-in-One Project Management Tool" - Want to test: benefit-focused headline - Traf…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No product-marketing.md file mentioned or created in the output.
+    24.4s · 17458 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  The user is asking about what metrics to track for an A/B test on their trial signup page. They're testing a longer form (adding company size and role fields) against a current short form. This is a …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    15.8s · 16734 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  The user is asking for help writing copy for a new landing page and wants to test it against the current version. This is clearly an A/B testing scenario, which falls under the ab-testing skill. Howe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as primarily a copywriting task
+         [90mevidence:[0m Model states: 'This is clearly an A/B testing scenario, which falls under the ab-testing skill' - frames as testing task, not copywriting
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to copywriting skill
+         [90mevidence:[0m Model references 'ab-testing skill' not copywriting skill. No mention of copywriting skill in output.
+    8.6s · 16117 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  The user is asking whether they should stop an A/B test early because Variant B appears to be winning with 95% confidence after only 3 days. This is a classic "peeking problem" that I have detailed g…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Addresses the peeking problem directly
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Explains why early significance is misleading
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends running for full pre-calculated duration
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions day-of-week effects or audience mix shifts
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Explains false positive rate inflation from peeking
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions sequential testing as alternative approach
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (6 specifi…
+    10.5s · 16281 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  The user wants to set up a multivariate test (MVT) on their landing page, testing three elements simultaneously: headline, hero image, and CTA button. This is a clear A/B testing/experimentation requ…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies as multivariate test (MVT)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Explains MVT tests combinations of elements
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Addresses dramatically higher traffic requirements
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Calculates number of combinations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests sequential A/B tests as alternative if traffic insufficient
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Builds hypotheses for each element
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides structured test plan
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…
+    12.9s · 16487 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  The user is asking about A/B test results and whether they should ship a variant. They've provided: - Test duration: 4 weeks - Control conversion rate: 2.1% - Variant conversion rate: 2.4% - Sample s…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Distinguishes statistical significance from practical significance
+         [90mevidence:[0m No explicit distinction made between statistical and practical significance concepts
+    17.2s · 16898 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 56.0%[0m  [90m· 14.70s avg · 16642 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-355/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 19,
+  "skills": [
+    {
+      "skill": "ab-testing",
+      "slug": "ab-testing",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.5681818181818182,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-355/benchmark.json"
+    }
+  ],
+  "iteration": 355,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-355",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-355/report/index.html"
+}

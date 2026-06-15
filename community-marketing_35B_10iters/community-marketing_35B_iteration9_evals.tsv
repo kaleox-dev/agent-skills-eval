@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output is direct text, not a file reference or link to 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	3	FAIL	Notes Slack free tier limitations	The model discusses 'Onboarding Friction' and 'Search & Retrieval' for Slack, but does not mention 'free tier', pricing limits, or specific feature caps associated with a free tier.	1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	11.7s	3294	6	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions 'typically 80-90% are lurkers' but does not mention the '1%' statistic or explicitly frame the dynamic as '1% / 90%' or '1-9-90'. It discusses '2-3 people' as posters out of 40 mem…	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	3491	7	FAIL	Mentions warning sign of company-dominated posts	The output does not mention 'company-dominated posts' or warnings about brand voices dominating the conversation. It focuses on lurkers and low engagement.	2	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.5s	3648	5	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.8s	3311	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	1	FAIL	Uses Health Audit Report format	Output is a narrative guide with headers like 'Diagnostic', 'Triage', 'Rescue Plan', and 'When to Pivot'. It lacks standard 'Health Audit Report' structural elements such as an Executive Summary, Met…	5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	3592	6	FAIL	Proposes top 3 priorities	The output proposes a 4-week plan with multiple steps (Identify Sleeping Giants, Create Micro-Event, Seed New Standard, Introduce Ritual) and diagnostic checks. It does not explicitly define or list …	5	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	5	FAIL	Warns about unanswered questions threshold	The model mentions monitoring 'Community Question Answer Rate' (Section 5) and checking in after 24 hours if no response (Section 6.1), but does not issue a warning about a specific 'unanswered quest…	6	9
+ab-testing	eval-6	with_skill	FAIL	12.2s	3416	6	PASS			6	9

@@ -1,0 +1,35 @@
+
+[1m▶ competitor-profiling[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  The user wants me to profile three competitors with specific URLs. They mentioned this is for sales enablement and to find positioning gaps. Before I proceed, I need to check: 1. Do I have product ma…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model mentions checking for file but no tool call or file read evidence shown; output is questions only
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs all three phases (scraping, SEO data, synthesis)
+         [90mevidence:[0m No scraping, SEO data extraction, or synthesis performed; model only asks clarifying questions
+      [31m#3[0m [31mFAIL[0m [90m—[0m Saves raw data to competitor-profiles/raw/ with date subfolder
+         [90mevidence:[0m No output files captured; no file save evidence in output
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces individual profile per competitor
+         [90mevidence:[0m No competitor profiles generated; model asks for product details instead of executing
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces _summary.md after individual profiles
+         [90mevidence:[0m No summary file produced; no _summary.md evidence in output files
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses consistent metrics across competitors
+         [90mevidence:[0m No competitor analysis performed; no metrics shown in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Parallelizes scraping when possible
+         [90mevidence:[0m No scraping tool calls made; model did not initiate any scraping
+    6.5s · 13078 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  The user is asking about whether to update an existing Notion competitor profile from 4 months ago or start fresh. This is a reasonable question about profile maintenance. According to the Competitor…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Says to save raw data to new date folder
+         [90mevidence:[0m No mention of saving raw data to date folders in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Says never overwrite prior date's data
+         [90mevidence:[0m No statement about never overwriting prior date's data in output
+    9.3s · 13283 tokens · [31mFAIL[0m

@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	2	FAIL	Recommends Slack for B2B context	Model explicitly asks for more context ('To give you the right recommendation, I need to know a bit more...') rather than providing a direct recommendation.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	3	FAIL	Notes Slack free tier limitations	Model does not mention Slack's free tier or its limitations; it mentions 'work email' requirement and searchability but not pricing/tiers.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	5	FAIL	Mentions Circle or other alternatives	Model only discusses Discord and Slack. No mention of Circle or other platforms.	1	10
+ab-testing	eval-1	with_skill	FAIL	6.2s	2676	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	6	FAIL	Mentions the 1% / 90% power user dynamic	The output mentions '90% lurker rate' but does not mention the '1%' or 'power user dynamic' concept explicitly, nor does it frame the small active group as 'power users' in that specific terminology.…	2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	3090	7	FAIL	Mentions warning sign of company-dominated posts	The output discusses '2-3 people are active' and 'artificially inflating the response rate', but does not explicitly identify 'company-dominated posts' or a similar dynamic as a specific warning sign…	2	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	16.8s	3795	5	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	4	FAIL	Mentions tools/assets to enable advocates	The output suggests 'Use your existing community platform’s badge/role system' and 'Simple spreadsheet' for tracking. It does not provide specific tools or assets (like a swipe file, resource kit, or…	4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	3197	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	1	FAIL	Uses Health Audit Report format	The output provides a diagnostic framework and decision matrix, but does not use the specific 'Health Audit Report' format implied by the assertion, which typically requires a structured, standardize…	5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.0s	3393	6	FAIL	Proposes top 3 priorities	The 'Immediate Actions to Take Today' section lists 4 numbered items (Pulse Check, Reactivate Power Users, Launch Ritual, Clean Slate), not a top 3. There is no explicit ranking or selection of exact…	5	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	4	FAIL	Mentions closing the loop with product	The model mentions 'Close the Loop: Show Customers Their Voice Matters' but defines this as sharing support trends and thanking users, not feeding insights back to the product team (e.g., reporting b…	6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	5	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	3144	6	FAIL	Notes peer support must feel valued, not used	The model suggests 'Celebrating Community Heroes' to 'reduce staff workload' and 'encourages peer-to-peer help'. It does not explicitly warn that peer support must be valued or not exploited/used by …	6	10

@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	3	FAIL	Notes Slack free tier limitations	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.5s	2603	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.2s	3426	7	FAIL	Mentions warning sign of company-dominated posts	The model advises to "Stop 'Managing,' Start 'Hosting'" and "Never ask: 'Please post more'", but does not explicitly identify or warn against "company-dominated posts" as a specific warning sign. It …	2	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	3326	5	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	4	FAIL	Mentions tools/assets to enable advocates	The model focuses on recognition, structure, and communication templates. It does not mention specific tools or assets for advocates to use to promote the product, such as referral links, shareable g…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	3711	6	FAIL	May cross-reference referrals skill	The output does not mention 'referrals', 'referral skill', or cross-reference any other specific skill. It focuses solely on an 'Ambassador Program' or 'Champions Program' based on community help.	4	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	1	FAIL	Uses Health Audit Report format	The output is structured as a narrative guide with diagnostic questions and a 'Rescue Plan', not a formal 'Health Audit Report' document or template.	5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	2	FAIL	References specific health metrics with benchmarks	The output uses qualitative signals (e.g., 'Dead signal', 'Salvageable signal') and vague counts ('3-10 super users', '50 members') but does not provide specific quantitative health metrics with defi…	5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.4s	3304	6	FAIL	Proposes top 3 priorities	The output outlines a 4-phase rescue plan. It does not explicitly list or prioritize a 'top 3' set of priorities; instead, it provides a sequential workflow of four phases.	5	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	4	FAIL	Mentions closing the loop with product	The model mentions 'Incentivize Helping: Non-monetary: Early access to features, direct line to product managers'. It does not explicitly mention closing the loop *with* product management regarding …	6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	5	FAIL	Warns about unanswered questions threshold	The model recommends an SLA ('maximum response time... e.g., 4 hours') but does not provide a specific warning or threshold regarding the volume of *unanswered* questions (e.g., if X questions remain…	6	7
+ab-testing	eval-6	with_skill	FAIL	12.3s	3405	6	PASS			6	7

@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' Model provided text summary only.	1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	20.5s	23941	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	8.3s	22661	8	FAIL	Includes recovery benchmarks	Model mentions "reduce hard declines by 30-50%" for card updates and "recovering ~15% more" for smart retries. However, it does not provide specific recovery benchmarks for the user's current 15% chu…	2	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	15.6s	23433	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	17.4s	23595	7	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	4	FAIL	Notes that 'too expensive' often masks other issues	The output claims 'Price-sensitive churn is often recoverable because the customer likes the product but feels the ROI doesn't justify the cost *right now*.' It does not explicitly state that 'too ex…	5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	5	FAIL	Suggests deeper follow-up questions	The output suggests a flow with an 'Exit Survey' where the user selects the reason, followed by automated offers. It does not explicitly advise the agent or system to ask deeper, qualitative follow-u…	5	4
+ab-testing	eval-5	with_skill	FAIL	11.1s	22965	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	22347	4	PASS			6	4

@@ -1,0 +1,93 @@
+
+[1m▶ ai-seo[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    What kind of content gets cited most by AI systems? We want to create content specifically optimized for AI search.
+    [90moutput:[0m  Based on the AI SEO research, here is what gets cited most by AI systems, along with the specific structural patterns you should use. ### 1. The Highest-Cited Content Types AI systems do not cite pag…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research
+         [90mevidence:[0m The output mentions 'AI SEO research' and 'GPTBot' but contains no mention of 'Princeton', 'GEO', or 'Geoffrey Owen'.
+    11.2s · 22446 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Should we block AI crawlers like GPTBot and PerplexityBot in our robots.txt? We're worried about content theft.
+    [90moutput:[0m  **Short answer: No.** If your goal is to appear in AI search results (Google AI Overviews, ChatGPT, Perplexity, etc.), you **must allow** these crawlers in your `robots.txt`. Blocking them doesn't ju…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Explains what each bot does
+         [90mevidence:[0m The model explains the function of CCBot ('used almost exclusively for collecting data for AI model training') and mentions GPTBot/PerplexityBot perform 'citation' and 'search'. However, it fails to …
+    10.5s · 22407 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    we noticed our competitors are showing up in google AI overviews but we're not. what do we need to change?
+    [90moutput:[0m  To diagnose why competitors are appearing in Google AI Overviews (AIO) while you are not, we need to determine if this is a **technical accessibility issue** (Google can't read you) or a **content qu…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model does not analyze the user's input for casual phrasing; it ignores the input style entirely and provides a generic diagnostic response. The prompt implies a specific 'trigger' behavior which…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Suggests monitoring approach
+         [90mevidence:[0m The model suggests an 'Audit' (Step 1) to diagnose the current state but does not provide a specific monitoring approach or tool recommendation for ongoing tracking of AIO visibility. It ends with a …
+    10.7s · 22422 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    How do I make sure our SaaS product shows up in AI search results? We're a project management tool and we keep getting left out of ChatGPT and Perplexity recommendations when people ask about project…
+    [90moutput:[0m  To get your SaaS project management tool cited in ChatGPT and Perplexity, you need to shift from "SEO" (ranking in a list) to "AI SEO" (being extractable and citable as a source). AI engines don't ju…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The output suggests creating '/pricing.md' and 'pricing.txt', but never mentions 'product-marketing.md'.
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research findings
+         [90mevidence:[0m The output mentions a '2023 Stanford study' regarding visual project management boards, but contains no reference to Princeton GEO research.
+    19.3s · 23302 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Our organic search traffic has dropped 30% this quarter. Can you do a full SEO audit to figure out what's going on?
+    [90moutput:[0m  I can certainly help you diagnose the drop in organic traffic. To perform a thorough audit and identify the root cause, I need to gather specific data about your site, the timeframe, and the nature o…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to seo-audit skill
+         [90mevidence:[0m The output contains no mention of a specific 'seo-audit' skill, plugin, or tool name. It refers generically to 'I can certainly help you' and 'I will run a comprehensive audit'.
+    5.5s · 21910 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Can you audit our website for AI search readiness? We want to know how visible we are across ChatGPT, Perplexity, Google AI Overviews, and other AI platforms.
+    [90moutput:[0m  I can certainly help you conduct that audit. To provide a high-quality assessment, I need to gather some context about your current presence and goals. Please answer the following questions. If you d…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Runs full AI Visibility Audit
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks multiple AI platforms
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates all three pillars (Structure, Authority, Presence)
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks AI bot access
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides findings organized by pillar
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m judge did not provide concrete evidence
+    6.7s · 22016 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 64.1%[0m  [90m· 10.65s avg · 22417 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-428/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 14,
+  "skills": [
+    {
+      "skill": "ai-seo",
+      "slug": "ai-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6216216216216216,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-428/benchmark.json"
+    }
+  ],
+  "iteration": 428,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-428",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-428/report/index.html"
+}

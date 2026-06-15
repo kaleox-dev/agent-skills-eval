@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	7	FAIL	Warns about the peeking problem	Text mentions 'novelty effects wearing off and external factors changing' but does not explicitly mention 'peeking problem' or advise against stopping early based on interim results.	1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	16670	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	5	FAIL	Questions whether button color alone is high-impact	The model advises caution regarding traffic and traffic volume but does not explicitly question the *impact* or *strategic value* of testing button color alone (e.g., 'Is button color worth the test?…	2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	6	FAIL	Suggests alternative higher-impact elements to test	The model suggests 'Test Color + Another Variable' (Option 3), but this is framed as an MVT to test interaction, not as a suggestion to replace the color test entirely with a different high-impact el…	2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	16752	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	4.7s	15896	6	FAIL	Mentions sequential testing as alternative approach	The output advises against early stopping ('No. Do not call it yet.') and does not mention or recommend sequential testing methods (e.g., Group Sequential Design, Alpha Spending Functions) as an alte…	3	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	6	FAIL	Builds hypotheses for each element	The model provides an aggregate hypothesis: '"Because our current landing page has low engagement, we believe that aligning a benefit-driven headline with a contextual hero image and a high-contrast …	4	8
+ab-testing	eval-4	with_skill	FAIL	13.4s	16787	7	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.7s	17012	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	16115	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	16115	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	16115	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	16115	4	PASS			6	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	1	FAIL	Evaluates against statistical significance criteria	judge did not provide concrete evidence	7	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	2	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	3	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	4	FAIL	Distinguishes statistical significance from practical significance	No mention of practical significance or business impact versus statistical noise. Only focuses on sample size and confidence.	7	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	5	FAIL	Provides clear recommendation on shipping	The model asks 'what is your primary metric?' instead of providing a recommendation. No shipping decision is made.	7	8
+ab-testing	eval-7	with_skill	FAIL	3.3s	15790	6	FAIL	Suggests segment analysis or follow-up if borderline	The model does not suggest segment analysis. It asks for the metric definition, which is not the same as suggesting follow-up analysis for borderline results.	7	8

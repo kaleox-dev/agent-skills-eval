@@ -1,0 +1,71 @@
+
+[1m▶ ads[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    Our Google Ads CPC is $12 and our cost per lead is $180. Is that good? We're getting about 80 leads/month from a $15k budget. Ask about downstream conversion rates. Apply the platform selection guide.
+    [90moutput:[0m  To determine if those metrics are "good," we need to calculate your **Customer Acquisition Cost (CAC)** and compare it to your **Customer Lifetime Value (LTV)**. Currently, you are spending **$15,000…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies campaign optimization framework
+         [90mevidence:[0m The output provides static analysis and conditional verdicts but fails to apply a dynamic optimization framework with specific algorithmic steps, bidding strategies, or automated adjustment protocols…
+    9.2s · 28646 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta. Compare to our existing Google/Meta performance.
+    [90moutput:[0m  To give you a strategic answer, I need to understand your current baseline and whether your offer translates to TikTok's user behavior. TikTok has different dynamics than Google (high-intent search) …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests small test budget if proceeding
+         [90mevidence:[0m The model does not suggest a test budget; instead, it asks the user to provide their budget ('What budget would you allocate to a TikTok test?'). It does not advise on the amount.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Compares to their existing Google/Meta performance
+         [90mevidence:[0m The model asks the user to share their specific metrics ('Please share... Current Performance Metrics (Google & Meta)'). It provides only general industry benchmarks, not a comparison to the user's a…
+    10.1s · 28705 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up? use casual phrasing. address frequency capping.
+    [90moutput:[0m  Retargeting is basically the art of being the polite persistent friend. You catch them after they’ve shown interest but bounced, and remind them why they should come back. Here’s how to set it up wit…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    12.9s · 28843 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    Can you write some ad copy for our Facebook ads? We need headlines and descriptions for 5 different angles. Refer to the ad-creative skill.
+    [90moutput:[0m  I'd be happy to write ad copy for your Facebook campaigns. To ensure the headlines and descriptions are high-converting and relevant, I need a bit more context about your product and offer. Could you…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    2.6s · 27993 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    Help me plan a paid advertising strategy. We're a B2B SaaS tool for HR teams, selling at $99/month per seat. We have $15k/month to spend on ads and want to generate demo requests. Where should we adv…
+    [90moutput:[0m  I don't have access to your local `.agents/product-marketing.md` file to check your specific product context, so I'll make some standard assumptions for a B2B SaaS tool and flag where you should fill…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    20.7s · 29841 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    How do we structure our Google Ads campaigns? We have 50+ keywords we want to target for our CRM product. Remember to define naming conventions.
+    [90moutput:[0m  # Google Ads Campaign Structure for CRM Product (50+ Keywords) I'll help you design a scalable, efficient Google Ads structure that leverages the 50+ keywords you have. **Before I finalize this, I ne…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    12.8s · 29127 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 91.7%[0m  [90m· 11.36s avg · 28859 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-401/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "ads",
+      "slug": "ads",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.918918918918919,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-401/benchmark.json"
+    }
+  ],
+  "iteration": 401,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-401",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-401/report/index.html"
+}

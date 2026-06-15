@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	1	FAIL	Checks for product-marketing.md	The output suggests adding '/pricing.md' or '/pricing.txt' and '/llms.txt', but makes no mention of a 'product-marketing.md' file. This specific file is not present.	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	2	FAIL	Applies three pillars framework (Structure, Authority, Presence)	The output organizes advice by 'Core Problem', 'Immediate Wins', 'Platform-Specific Tactics', and 'Authority Signals'. It does not explicitly use or apply a framework defined as 'Structure, Authority…	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	3	FAIL	Runs AI Visibility Audit across platforms	The output provides a 'Quick Audit Checklist' with tasks to perform, but does not claim to have actually run or completed an audit across platforms. It asks for domain authority and existing assets t…	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	4	FAIL	Checks content extractability	While it advises on 'Self-Contained Paragraphs' and 'Machine-Readable Files', it does not provide evidence of checking the user's specific content for extractability.	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	5	FAIL	References Princeton GEO research findings	The output references 'ZipTie’s analysis of 400k pages' but does not mention 'Princeton GEO research findings'.	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	6	FAIL	Checks AI bot access in robots.txt	It instructs the user to 'Allow PerplexityBot in robots.txt' and check for GPTBot, but does not perform the check itself.	1	9
+ab-testing	eval-1	with_skill	FAIL	16.8s	23065	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.0s	22461	6	FAIL	Explains what each bot does	Does not explain all bots individually. Fails to explain 'ChatGPT-User', 'anthropic-ai', or 'Bingbot' specific functions compared to GPTBot/ClaudeBot. Only explains GPTBot, ClaudeBot, and Google-Exte…	2	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	5	FAIL	References Princeton GEO research	Output mentions 'AI SEO research and platform analysis' but does not mention 'Princeton' or 'GEO research'.	3	9
+ab-testing	eval-3	with_skill	FAIL	14.1s	22780	6	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.5s	22324	7	FAIL	Suggests monitoring approach	judge did not provide concrete evidence	4	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	1	FAIL	Runs full AI Visibility Audit	The model output states: 'Please provide the following information... I will generate your full AI Search Readiness Audit.' It asks for input rather than performing the audit.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	2	FAIL	Checks multiple AI platforms	The model lists platforms in a 'What I Will Audit' section (Google AI Overviews, ChatGPT, Perplexity, Claude) but has not performed the checks yet; it is requesting user data.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	The model outlines a plan to check 'Content Extractability', 'Authority Signals', and 'AI Bot Access' in the future, but no evaluation has occurred.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	4	FAIL	Checks content extractability	The model states 'Review your key pages for AI-friendly structure' under 'What I Will Audit', indicating this is a future action, not a completed check.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	5	FAIL	Checks AI bot access	The model states 'Check if your robots.txt allows key AI crawlers' under 'What I Will Audit'. It provides instructions for the user to do it themselves ('Go to yoursite.com/robots.txt') but does not …	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	6	FAIL	Provides findings organized by pillar	No findings or audit results are provided; the output is a questionnaire requesting data to perform the audit later.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.5s	22251	7	FAIL	Provides prioritized action plan	The output contains immediate self-check instructions and a list of what will be audited, but does not provide a prioritized action plan based on actual findings.	5	9
+ab-testing	eval-6	with_skill	FAIL	4.8s	21833	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.8s	21833	2	FAIL	References or defers to seo-audit skill	The model does not mention any specific 'seo-audit' skill or system instruction. It provides a general conversational response offering two audit types without referencing a specific tool or skill na…	6	9
+ab-testing	eval-6	with_skill	FAIL	4.8s	21833	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.8s	21833	4	PASS			6	9

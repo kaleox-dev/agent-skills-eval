@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	1	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	2	FAIL	Addresses both voluntary and involuntary churn	No output file created; agent only asked about voluntary vs involuntary breakdown without addressing it in a document	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	3	FAIL	Designs cancel flow with proper stages	No cancel flow design provided; agent only mentioned 'Build a cancel flow (if you don't have one)' as a suggestion	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	4	FAIL	Includes exit survey with multiple categories	No exit survey with categories present in output	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	5	FAIL	Maps save offers to cancellation reasons	No save offer mapping provided; agent only mentioned 'Save offer mapping' will come later	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	6	FAIL	Addresses dunning stack for payment recovery	Only brief mention: 'Fix dunning (if you have payment failures): Involuntary churn is 30-50% of total and easiest to fix' - no stack or strategy addressed	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	7	FAIL	Recommends health score model	No health score model recommendation present in output	1	6
+ab-testing	eval-1	with_skill	FAIL	11.8s	22792	8	FAIL	Provides prioritized implementation plan	No implementation plan provided; agent stated 'Once I have your answers, I'll give you a complete strategy with: ... Implementation timeline'	1	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	21.8s	23604	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger; model simply states 'The user is asking about what to show users when they click the cancel button.'	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	5	FAIL	Includes copy recommendations	Model promises 'Copy templates you can use immediately' but provides no actual copy templates in output.	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	6	FAIL	Warns against dark patterns	No mention of dark patterns in output. Only mentions 'Some regulations mandate easy cancel' without warning language.	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	22637	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.7s	22758	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	4	FAIL	Notes that 'too expensive' often masks other issues	No mention of 'too expensive' potentially masking other churn reasons in output	5	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.0s	22914	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	22768	1	FAIL	Recognizes overlap with email sequence work	judge returned unparseable response: The user wants me to evaluate an AI model's output against specific assertions. I need to grade each assertion based on the model output provided. Let me analyze …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	22768	2	FAIL	References or defers to emails skill	judge returned unparseable response: The user wants me to evaluate an AI model's output against specific assertions. I need to grade each assertion based on the model output provided. Let me analyze …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	22768	3	FAIL	May provide churn-specific context for the sequence	judge returned unparseable response: The user wants me to evaluate an AI model's output against specific assertions. I need to grade each assertion based on the model output provided. Let me analyze …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	22768	4	FAIL	Does not attempt to write a full email sequence	judge returned unparseable response: The user wants me to evaluate an AI model's output against specific assertions. I need to grade each assertion based on the model output provided. Let me analyze …	6	6

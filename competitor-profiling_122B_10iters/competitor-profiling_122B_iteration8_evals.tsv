@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	No scraping, SEO data collection, or synthesis phases observed in output	1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Output files: No output files were captured.	1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	4	FAIL	Produces individual profile per competitor	No individual competitor profiles generated in output	1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	5	FAIL	Produces _summary.md after individual profiles	No _summary.md file produced in output	1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	6	FAIL	Uses consistent metrics across competitors	No competitor profiles exist to verify metric consistency	1	8
+ab-testing	eval-1	with_skill	FAIL	5.1s	12962	7	FAIL	Parallelizes scraping when possible	No scraping operations performed to verify parallelization	1	8
+ab-testing	eval-2	with_skill	FAIL	5.7s	12982	1	FAIL	Recommends prioritization over profiling all 12	Model says 'With 12 competitors, I recommend quick scans' - still plans all 12, not prioritization over them	2	8
+ab-testing	eval-2	with_skill	FAIL	5.7s	12982	2	FAIL	Suggests top 5 based on relevance	No mention of top 5 or reducing competitor count in output	2	8
+ab-testing	eval-2	with_skill	FAIL	5.7s	12982	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.7s	12982	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.7s	12982	5	FAIL	Asks user to prioritize	Asks for URLs, product, depth, focus areas - does not ask user to prioritize which competitors	2	8
+ab-testing	eval-3	with_skill	FAIL	9.9s	13333	1	FAIL	Recommends updating over starting fresh	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (5 criteria). * Model Output (Text response). …	3	8
+ab-testing	eval-3	with_skill	FAIL	9.9s	13333	2	FAIL	Lists what to re-pull (pricing, SEO, changelog)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (5 criteria). * Model Output (Text response). …	3	8
+ab-testing	eval-3	with_skill	FAIL	9.9s	13333	3	FAIL	Mentions adding Change Log section	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (5 criteria). * Model Output (Text response). …	3	8
+ab-testing	eval-3	with_skill	FAIL	9.9s	13333	4	FAIL	Says to save raw data to new date folder	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (5 criteria). * Model Output (Text response). …	3	8
+ab-testing	eval-3	with_skill	FAIL	9.9s	13333	5	FAIL	Says never overwrite prior date's data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (5 criteria). * Model Output (Text response). …	3	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	13201	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	13201	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	13201	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	13201	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	13201	5	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	3.9s	12899	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	3.9s	12899	2	FAIL	Runs Phase 1 and Phase 3	No mention of Phase 3 execution; only Phase 1 (mapping/scraping) referenced	5	8
+ab-testing	eval-5	with_skill	FAIL	3.9s	12899	3	FAIL	Explains what's missing without SEO data	Lists missing info (URLs, product, depth) but does not tie to SEO data absence	5	8
+ab-testing	eval-5	with_skill	FAIL	3.9s	12899	4	FAIL	Flags SEO section as skipped, not blank	States 'without the SEO sections' but no explicit skip flag in output structure	5	8
+ab-testing	eval-5	with_skill	FAIL	3.9s	12899	5	FAIL	Still saves raw data	No output files captured; no mention of raw data storage	5	8
+ab-testing	eval-6	with_skill	FAIL	12.2s	13576	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.2s	13576	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.2s	13576	3	FAIL	Mentions checking traffic/backlink profile against claim scale	No mention of traffic or backlink profile analysis in output	6	8
+ab-testing	eval-6	with_skill	FAIL	12.2s	13576	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.2s	13576	5	FAIL	Notes including date pulled	No instruction to include date pulled in documentation framework	6	8

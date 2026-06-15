@@ -1,23 +1,43 @@
 
 [1m▶ ads[0m  [90m[0m
-  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill,without_skill[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill,without_skill[0m
 
   [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
     [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
     [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta. Compare to our existing Google/Meta performance.
-    [90moutput:[0m  To give you a data-driven recommendation on TikTok, I need to compare it against your current benchmarks. TikTok has fundamentally different dynamics than Google or Meta—it's less about intent (Googl…
-    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+    [90moutput:[0m  To give you a specific recommendation, I need to understand your current baselines. TikTok is a fundamentally different medium than Google or Meta—it's primarily **demand generation via discovery**, …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
       [31m#1[0m [31mFAIL[0m [90m—[0m Applies platform selection guide for TikTok
-         [90mevidence:[0m judge did not provide concrete evidence
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#2[0m [31mFAIL[0m [90m—[0m Evaluates fit for accounting + small business audience
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides honest assessment of likely weaker fit
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#4[0m [31mFAIL[0m [90m—[0m Discusses when TikTok can work for B2B
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests small test budget if proceeding
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
       [31m#6[0m [31mFAIL[0m [90m—[0m Compares to their existing Google/Meta performance
-         [90mevidence:[0m judge did not provide concrete evidence
-    9.5s · 20768 tokens · [31mFAIL[0m
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+    8.1s · 28549 tokens · [31mFAIL[0m
 
-  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
     [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
-    [90muser:[0m    Our Google Ads CPC is $12 and our cost per lead is $180. Is that good? We're getting about 80 leads/month from a $15k budget. Ask about downstream conversion rates. Apply the platform selection guide.
-    [90moutput:[0m  To determine if this performance is "good," we need to look at the math first, then apply the platform selection logic to see if you're actually on the right channel. ### 1. The Math: Is $180 CPA acc…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
-      [31m#6[0m [31mFAIL[0m [90m—[0m Provides industry context for benchmarking
-         [90mevidence:[0m Model states the CPA is 'high for general leads' but provides no specific industry data, historical benchmarks, or external context to define 'general leads' or validate the CPC/CPC assumptions.
-    12.3s · 21066 tokens · [31mFAIL[0m
+    [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up? use casual phrasing. address frequency capping.
+    [90moutput:[0m  Here is how to set up retargeting so you actually get conversions and don't annoy your visitors into blocking you. ### 1. The Setup (The "Tag" Part) First, make sure you have the tracking pixel insta…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies funnel-based retargeting approach
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends audience segments by intent level
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends different messaging per segment
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses frequency capping
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends retargeting platforms
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes audience duration windows
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure BAD_REQUEST(404)
+    9.7s · 28729 tokens · [31mFAIL[0m

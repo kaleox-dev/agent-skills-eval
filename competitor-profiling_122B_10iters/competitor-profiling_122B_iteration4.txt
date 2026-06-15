@@ -1,0 +1,111 @@
+
+[1m▶ competitor-profiling[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    We have 12 competitors. Profile all of them.
+    [90moutput:[0m  The user wants me to profile 12 competitors, but they haven't provided me with the competitor URLs yet. According to the skill instructions, I need to confirm: 1. **Competitor URLs** — the list of co…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends prioritization over profiling all 12
+         [90mevidence:[0m Model states: 'I'd be happy to profile all 12 competitors for you!' - does not recommend prioritization
+      [31m#2[0m [31mFAIL[0m [90m—[0m Suggests top 5 based on relevance
+         [90mevidence:[0m No mention of top 5; model offers to profile all 12 competitors
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks user to prioritize
+         [90mevidence:[0m Asks for depth level and focus areas, but does not ask user to prioritize among the 12 competitors
+    6.5s · 13008 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  The user wants me to profile three competitors for sales enablement and positioning gap analysis. They've provided three URLs: https://competitor1.com, https://competitor2.com, https://competitor3.co…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model stated: 'Since I don't have access to check for the product-marketing.md file directly, I should ask the user for clarification' - did not check for the file
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs all three phases (scraping, SEO data, synthesis)
+         [90mevidence:[0m Model is asking clarifying questions; no scraping, SEO data collection, or synthesis was performed
+      [31m#3[0m [31mFAIL[0m [90m—[0m Saves raw data to competitor-profiles/raw/ with date subfolder
+         [90mevidence:[0m Output files: 'No output files were captured' - no raw data saved
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces individual profile per competitor
+         [90mevidence:[0m No profiles were produced; model only asked clarifying questions about competitor URLs and product context
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces _summary.md after individual profiles
+         [90mevidence:[0m No summary file was produced; no individual profiles were created either
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses consistent metrics across competitors
+         [90mevidence:[0m No competitor profiles were created, so no metrics were applied or compared
+      [31m#7[0m [31mFAIL[0m [90m—[0m Parallelizes scraping when possible
+         [90mevidence:[0m No scraping was performed; model did not initiate any tool calls for parallel scraping
+    8.8s · 13267 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I want a profile but I don't care about SEO data — just pricing, positioning, and customer logos. Can you skip the DataForSEO calls?
+    [90moutput:[0m  The user wants a competitor profile but specifically wants to skip the SEO/DataForSEO data. They only care about: 1. Pricing 2. Positioning 3. Customer logos This is a valid request - I can do a "lig…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs Phase 1 and Phase 3
+         [90mevidence:[0m No scraping or data collection executed; only asked clarifying questions
+      [31m#4[0m [31mFAIL[0m [90m—[0m Flags SEO section as skipped, not blank
+         [90mevidence:[0m No output files captured; no explicit flag in model output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Still saves raw data
+         [90mevidence:[0m No output files were captured
+    4.3s · 12930 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    What pages should I scrape for a competitor profile?
+    [90moutput:[0m  The user is asking about what pages to scrape for a competitor profile. This is a question about the competitor profiling skill, and I have detailed reference materials that explain the research proc…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    9.3s · 13270 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  The user is asking about whether to update an existing competitor profile of Notion from 4 months ago or start fresh. This is a practical question about competitor profiling workflow. Let me think ab…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends updating over starting fresh
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Lists what to re-pull (pricing, SEO, changelog)
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions adding Change Log section
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Says to save raw data to new date folder
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Says never overwrite prior date's data
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…
+    11.2s · 13442 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Should I trust the customer logo wall on the competitor's homepage as evidence of who their customers are?
+    [90moutput:[0m  The user is asking a strategic question about competitor intelligence - specifically whether they should trust the customer logo wall on a competitor's homepage as evidence of actual customers. This …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Treats logos as positioning claim, not customer breakdown
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends cross-referencing case studies and reviews
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions checking traffic/backlink profile against claim scale
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Distinguishes verifiable named customers from claims
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes including date pulled
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    13.6s · 13691 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 30.0%[0m  [90m· 8.95s avg · 13268 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-554/benchmark.json[0m
+{
+  "passed": 9,
+  "failed": 23,
+  "skills": [
+    {
+      "skill": "competitor-profiling",
+      "slug": "competitor-profiling",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.28125,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-554/benchmark.json"
+    }
+  ],
+  "iteration": 554,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-554",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-554/report/index.html"
+}

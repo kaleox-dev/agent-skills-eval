@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	1	FAIL	Checks for product-marketing.md	The model output is a conversational response requesting discovery questions. There is no file named 'product-marketing.md' generated or referenced. The 'Output files' section explicitly states: 'No …	1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	2	FAIL	Applies 'track for decisions' principle	The output does not mention the phrase 'track for decisions' nor does it explicitly justify event definitions based on specific decision-making scenarios required to satisfy this principle. It lists …	1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	10.7s	20785	7	FAIL	Output follows tracking plan format	While it contains a table of events, the output is primarily a consultation framework asking questions for a future plan. It does not present a final, comprehensive tracking plan document in a standa…	1	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.2s	20654	6	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	20616	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	2	FAIL	Defines full e-commerce event taxonomy	Only provides core and minimal recommended events; explicitly labels output as 'Minimum Viable E-commerce Tracking' and states 'Once the core is working, add these for deeper insights', indicating th…	4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	4	FAIL	Follows object_action naming convention	Event names are single actions (e.g., 'purchase', 'view_item', 'add_to_cart'). The term 'object_action' (typically format like 'product_click' or 'cart_add') is not strictly applied as a naming conve…	4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	20851	6	FAIL	Provides tracking plan format output	The output ends with 'Which analytics tools are you planning to use?' and offers to 'give you... A full tracking plan document' in the 'Next Steps', indicating the current output is not a final track…	4	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	6	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	26.1s	22845	7	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	3.1s	20030	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	3.1s	20030	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	3.1s	20030	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	3.1s	20030	4	PASS			6	10

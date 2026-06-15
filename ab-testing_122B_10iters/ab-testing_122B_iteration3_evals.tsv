@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	1	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	7	FAIL	Warns about the peeking problem	No mention of peeking problem in output	1	3
+ab-testing	eval-1	with_skill	FAIL	13.4s	16524	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	2	FAIL	Identifies as A/B/n test (multiple variants)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	3	FAIL	Cautions about increased traffic needs for 4 variants	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	4	FAIL	References sample size requirements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	5	FAIL	Questions whether button color alone is high-impact	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	6	FAIL	Suggests alternative higher-impact elements to test	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	16476	7	FAIL	Provides hypothesis framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (conversation betwe…	2	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	10.1s	16244	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing found in output	3	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	6	FAIL	Builds hypotheses for each element	No hypotheses built for headline, hero image, or CTA button - only questions asked	4	3
+ab-testing	eval-4	with_skill	FAIL	11.4s	16354	7	FAIL	Provides structured test plan	States 'Please share the answers... and I'll... Give you a complete test plan template' - no plan provided	4	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	1	FAIL	Applies three-tier metric framework (primary, secondary, guardrail)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	2	FAIL	Identifies form completion rate as primary metric	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	3	FAIL	Identifies lead quality as secondary metric	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	4	FAIL	Defines guardrail metrics to protect against negative outcomes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	5	FAIL	Explains quantity vs quality tradeoff	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.0s	16408	6	FAIL	Notes need for longer observation window for downstream metrics	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-6	with_skill	FAIL	9.6s	16216	1	FAIL	Recognizes this as primarily a copywriting task	Model states 'This is clearly an A/B testing scenario, so I should use the ab-testing skill' - frames as testing task, not copywriting task	6	3
+ab-testing	eval-6	with_skill	FAIL	9.6s	16216	2	FAIL	References or defers to copywriting skill	Model explicitly says 'I should use the ab-testing skill' - no copywriting skill referenced or deferred to	6	3
+ab-testing	eval-6	with_skill	FAIL	9.6s	16216	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	9.6s	16216	4	PASS			6	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	1	FAIL	Evaluates against statistical significance criteria	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	2	FAIL	Addresses whether sample size is sufficient for this effect size	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	3	FAIL	References 95% confidence threshold	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	4	FAIL	Distinguishes statistical significance from practical significance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	5	FAIL	Provides clear recommendation on shipping	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3
+ab-testing	eval-7	with_skill	FAIL	21.7s	17237	6	FAIL	Suggests segment analysis or follow-up if borderline	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	7	3

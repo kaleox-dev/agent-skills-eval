@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	7	FAIL	Warns about the peeking problem	The text warns about duration being too long and novelty effects, but does not explicitly mention 'peeking', 'early stopping bias', or the statistical error of checking results before the sample size…	1	10
+ab-testing	eval-1	with_skill	FAIL	12.9s	16757	8	FAIL	Provides structured test plan output	The model explicitly states in Section 5: 'Once you answer these, I can generate a full Test Plan Template for you to execute.' The output itself is a feasibility check and draft, not the final struc…	1	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	16516	7	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.6s	15990	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	6	FAIL	Builds hypotheses for each element	The model asks 'Which elements specifically do you want to test?' and lists elements (Headline, Hero Image, CTA) but does not formulate or propose any specific hypotheses for any of them.	4	10
+ab-testing	eval-4	with_skill	FAIL	6.6s	16093	7	FAIL	Provides structured test plan	The model explicitly states: 'If traffic is high, we can proceed with the MVT design using the Test Plan Template' and 'Once I have this, I'll help you... draft the full test plan.' It does not provi…	4	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	2	FAIL	Identifies form completion rate as primary metric	The output identifies 'Trial-to-Paid Conversion Rate' as the Primary Metric, whereas Form Completion Rate is listed under Secondary Metrics.	5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	3	FAIL	Identifies lead quality as secondary metric	The output lists 'Form Completion Rate', 'Total Trial Signups', 'Time on Page', and 'Data Quality Score' as secondary metrics. 'Lead quality' is discussed in the introduction as a concept to balance,…	5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.6s	16721	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	6.5s	16072	1	FAIL	Recognizes this as primarily a copywriting task	The model explicitly frames the response around A/B testing and experimental design ('I'd be happy to help you design an A/B test', 'This is a classic use case for experimentation') rather than ident…	6	10
+ab-testing	eval-6	with_skill	FAIL	6.5s	16072	2	FAIL	References or defers to copywriting skill	The model does not explicitly state it is using a 'copywriting skill' or defer to that specific domain expertise. Instead, it adopts a generic data analysis/experimental design persona. It mentions d…	6	10
+ab-testing	eval-6	with_skill	FAIL	6.5s	16072	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.5s	16072	4	PASS			6	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	1	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	2	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	3	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	4	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	5	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	9.3s	16458	6	PASS			7	10

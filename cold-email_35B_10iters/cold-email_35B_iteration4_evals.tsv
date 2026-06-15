@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	8	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.7s	19021	9	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	6	FAIL	Uses structure framework from the skill	The model provides a single email draft with a brief rationale. It does not explicitly use or display a named 'structure framework from the skill' as a structural constraint for the output, nor does …	2	4
+ab-testing	eval-2	with_skill	FAIL	7.0s	19036	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	7	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.4s	19490	8	FAIL	Follow-ups get progressively shorter	Comparison of word counts: Email 1 (~90 words), Email 2 (~70 words), Email 3 (~80 words), Email 4 (~80 words). Email 3 and 4 are not strictly shorter than the preceding email, nor is there a monotoni…	3	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	4	FAIL	Identifies vendor language vs peer language	The model criticizes 'Self-Focused' language and 'Every vendor says this' (Point 3), but it does not explicitly contrast 'vendor language' against 'peer language' or provide a rewrite that uses peer-…	4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	7	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.9s	19388	8	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	8.3s	19190	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.3s	19190	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.3s	19190	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.3s	19190	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.3s	19190	5	FAIL	Notes distinction between open rate and reply rate	The model conflates open rates and reply rates in Section 3. For example, it lists 'Pitching Product' as having '-57% replies' but 'Excessive Punctuation' as '-36% opens'. It does not explicitly dist…	5	4
+ab-testing	eval-6	with_skill	FAIL	3.3s	18633	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	3.3s	18633	2	FAIL	References or defers to emails skill	The model responds generally ('I'll use that framework instead') but does not explicitly reference or defer to a specific 'emails' skill/tool. It proceeds to ask for context rather than invoking a de…	6	4
+ab-testing	eval-6	with_skill	FAIL	3.3s	18633	3	FAIL	Explains the distinction between cold email and lifecycle email	The model states it falls under lifecycle/nurture rather than cold outreach, but it does not explain the distinction between the two concepts. It simply categorizes the request.	6	4
+ab-testing	eval-6	with_skill	FAIL	3.3s	18633	4	PASS			6	4

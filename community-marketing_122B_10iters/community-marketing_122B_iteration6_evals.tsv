@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	1	FAIL	Checks for product-marketing.md	No tool call or file read evidence; model only states 'Let me check if there's a product-marketing context file' without actually checking	1	6
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	2	FAIL	Recommends Slack for B2B context	No explicit recommendation made; model states 'I can recommend the right platform' after getting context, does not recommend Slack for B2B	1	6
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	5	FAIL	Mentions Circle or other alternatives	No mention of Circle or alternatives beyond Discord and Slack in output	1	6
+ab-testing	eval-1	with_skill	FAIL	8.4s	2693	6	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	2	FAIL	Applies 'launching from zero' playbook	No explicit reference to 'launching from zero' playbook in output. Only mentions 'the playbook' in thinking, not in actual response.	2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	4	FAIL	Recommends new member journey design	No explicit recommendation for 'new member journey design'. Discusses DMs and first posts but not journey design as a concept.	2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	6	FAIL	Mentions the 1% / 90% power user dynamic	No mention of 1%/90% power user dynamic or similar power user percentage framing.	2	6
+ab-testing	eval-2	with_skill	FAIL	14.6s	3227	7	FAIL	Mentions warning sign of company-dominated posts	No mention of company-dominated posts as a warning sign.	2	6
+ab-testing	eval-3	with_skill	FAIL	21.0s	3722	1	FAIL	Reinforces shared identity (indie game devs)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	6
+ab-testing	eval-3	with_skill	FAIL	21.0s	3722	2	FAIL	Describes vibe, not just rules	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	6
+ab-testing	eval-3	with_skill	FAIL	21.0s	3722	3	FAIL	Includes both rules and aspirational guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	6
+ab-testing	eval-3	with_skill	FAIL	21.0s	3722	4	FAIL	Tone matches audience (indie maker)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	6
+ab-testing	eval-3	with_skill	FAIL	21.0s	3722	5	FAIL	May suggest channel structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.2s	3511	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	16.8s	3424	6	FAIL	Proposes top 3 priorities	No explicit 'top 3 priorities' section found; output provides 5 steps for resurrection or 4 steps for reset, not specifically 3 priorities	5	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	1	FAIL	Applies community-led support playbook	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	2	FAIL	Recommends searchable knowledge base from community Q&A	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	3	FAIL	Recommends recognizing peer helpers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	4	FAIL	Mentions closing the loop with product	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	5	FAIL	Warns about unanswered questions threshold	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6
+ab-testing	eval-6	with_skill	FAIL	11.2s	2812	6	FAIL	Notes peer support must feel valued, not used	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (A response …	6	6

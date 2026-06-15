@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The output is a raw markdown string, not a file named product-marketing.md.	1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	5	FAIL	Generates multiple variations per angle	Each of the 5 angles contains only one set of Primary Text, Headline, and Description. There are no alternative variations provided within each angle.	1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	16.6s	29330	8	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	No ads generated; model requested more context instead.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	2	FAIL	Generates 10-15 headline variations	No headlines generated; model requested more context instead.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	3	FAIL	Generates 4+ description variations	No descriptions generated; model requested more context instead.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	4	FAIL	Includes target keyword in headlines	No headlines generated; model requested more context instead.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	5	FAIL	Notes pinning should be used sparingly per skill guidance	Output contains no mention of pinning or skill guidance.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	6	FAIL	Suggests ad extensions	Output contains no mention of ad extensions.	2	2
+ab-testing	eval-2	with_skill	FAIL	3.9s	27998	7	FAIL	Uses angle-based variation approach	No angle-based variations provided; model requested more context instead.	2	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	1	FAIL	Activates iteration mode based on performance data	Model states: 'Before I generate new variations, I need to understand the product and context to make the iterations relevant.' It does not activate iteration mode; it halts to request more input.	3	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	5	FAIL	Generates new variations combining winning elements	Model explicitly states: 'Before I generate new variations, I need to understand the product and context...' and 'Once you share the product details and current ad copy, I'll generate the new variati…	3	2
+ab-testing	eval-3	with_skill	FAIL	7.4s	28425	6	FAIL	Provides specific iterations on top performers	Model does not provide specific iterations. It provides a strategy plan ('Generate 10-15 new pain point variations...') but explicitly defers generation until more info is provided: 'I'll generate th…	3	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	1	FAIL	Triggers on casual phrasing	Model output begins with 'I'll help you create high-performing LinkedIn ads for CISOs and IT Directors. Let me gather some key details first...' This is professional and task-oriented, not triggered …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	14.0s	29028	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	24.7s	30478	7	FAIL	Generates multiple variations per angle per platform	Under Meta Ads, there are 5 distinct Ad Sets labeled 'Ad Set 1' through 'Ad Set 5'. While the campaign defines 4 angles, the output provides 5 separate ad creatives/sets per platform, which satisfies…	5	2
+ab-testing	eval-6	with_skill	FAIL	6.5s	28293	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.5s	28293	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.5s	28293	3	PASS			6	2

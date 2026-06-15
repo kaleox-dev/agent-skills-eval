@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	1	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	2	FAIL	Applies platform selection guide	No platform selection applied in output	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	3	FAIL	Recommends platforms appropriate for B2B HR audience	No platform recommendations provided	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	4	FAIL	Recommends campaign structure with naming conventions	No campaign structure or naming conventions in output	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	5	FAIL	Defines audience targeting per platform	No audience targeting defined in output	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	6	FAIL	Sets budget allocation across platforms	No budget allocation provided despite $15k/month mentioned in context	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	7	FAIL	Defines success metrics	No success metrics defined in output	1	6
+ab-testing	eval-1	with_skill	FAIL	3.5s	28051	8	FAIL	Recommends starting structure and scaling plan	No scaling plan provided in output	1	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	1	FAIL	Evaluates metrics in context	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	2	FAIL	Compares CPL against LTV considerations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	3	FAIL	Applies campaign optimization framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	4	FAIL	Recommends specific optimization levers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	5	FAIL	Asks about downstream conversion rates	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	16.2s	29110	6	FAIL	Provides industry context for benchmarking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	17.9s	28774	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.8s	29007	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	6	FAIL	Includes negative keyword lists	Only states 'Negative keyword list (8+ entries)' will be provided later, not actually included in output	5	6
+ab-testing	eval-5	with_skill	FAIL	13.4s	28804	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	6.4s	28246	1	FAIL	Recognizes this as ad creative generation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), Assertions …	6	6
+ab-testing	eval-6	with_skill	FAIL	6.4s	28246	2	FAIL	References or defers to ad-creative skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), Assertions …	6	6
+ab-testing	eval-6	with_skill	FAIL	6.4s	28246	3	FAIL	Does not attempt bulk ad copy generation using campaign strategy patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), Assertions …	6	6

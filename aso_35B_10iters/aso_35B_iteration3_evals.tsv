@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	3	FAIL	Classifies brand maturity tier	The model explicitly refuses the task: 'I can't perform an ASO audit on a non-existent app.' No brand maturity tier classification is provided.	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	4	FAIL	Scores all 6 dimensions with weights	The model did not provide any scores, stating: 'I can't perform an ASO audit on a non-existent app.'	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	5	FAIL	Provides scorecard with grade	No scorecard or grade is present in the output; the model refused to run the audit.	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	6	FAIL	Lists top 3 quick wins	The output contains no list of quick wins, only a request for a real URL.	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	7	FAIL	Recommendations include character counts	No recommendations with character counts were provided due to the refusal to audit.	1	3
+ab-testing	eval-1	with_skill	FAIL	5.9s	30436	8	FAIL	Recommendations are specific (X to Y format)	No specific recommendations were provided.	1	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	6	FAIL	Mentions feature graphic requirement	Model asks "do you have one?" regarding the feature graphic but does not explicitly mention or enforce the *requirement* (e.g., dimensions, specific aspect ratio, or mandatory nature) in the text pro…	2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	7	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	9.0s	30737	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	30694	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	30694	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	30694	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	30694	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.6s	30694	5	FAIL	Cites the 'mistake vs deliberate choice' principle	This isn't "waste"; it's **intentional simplicity**... A shorter title is instantly recognizable... Instagram's listing is a textbook example of a Dominant app leveraging brand power. Fixing it would…	3	3
+ab-testing	eval-4	with_skill	FAIL	3.1s	30155	1	FAIL	Scores all 3 apps with same framework	Model did not generate scores; it asked clarifying questions and stated the audit 'will include' scoring in the future.	4	3
+ab-testing	eval-4	with_skill	FAIL	3.1s	30155	2	FAIL	Builds comparison table	No comparison table was generated in the output; only a list of intended audit components was provided.	4	3
+ab-testing	eval-4	with_skill	FAIL	3.1s	30155	3	FAIL	Identifies where user's app is weaker	No analysis was performed; model stated 'Before I fetch and analyze the listings... I have a few questions'.	4	3
+ab-testing	eval-4	with_skill	FAIL	3.1s	30155	4	FAIL	Identifies keyword gaps vs competitors	No keyword gap analysis was performed; output is a pre-flight query asking for permissions and clarifications.	4	3
+ab-testing	eval-4	with_skill	FAIL	3.1s	30155	5	FAIL	Produces competitor-informed action list	No action list was produced; model offered that the audit 'will include' a prioritized action plan later.	4	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	1	FAIL	Notes Visual Assets is 25% of score	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	6	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.1s	30448	7	FAIL	Flags <5 screenshots as always-flag issue	judge did not provide concrete evidence	5	3
+ab-testing	eval-6	with_skill	FAIL	10.0s	30972	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.0s	30972	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.0s	30972	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.0s	30972	4	FAIL	Cross-references ab-testing or ads skill	The output mentions 'Apple Search Ads' and 'Meta, Google UAC' generally but does not explicitly cross-reference or link to a specific 'ab-testing skill' or 'ads skill' as entities or internal referen…	6	3
+ab-testing	eval-6	with_skill	FAIL	10.0s	30972	5	FAIL	Notes Google Play equivalents	The output is exclusively focused on iOS/Apple Search Ads. It mentions 'Google UAC' only in the context of using deep links for third-party platforms, but never mentions or identifies Google Play equ…	6	3

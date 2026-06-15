@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	5	FAIL	Generates multiple variations per angle	Under 'Ad Creative Set 1', there is exactly one primary text option per hook (Speed, Quality, Curiosity, Competitor). There are no multiple variations listed for each angle within the text generation.	1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	29338	8	FAIL	Recommends which angles to test first	The output recommends 'Ad Creative Set 1' for 'broad awareness' and 'Ad Creative Set 2' for 'visual performance against copy', but does not explicitly recommend a specific order or priority among the…	1	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	Model did not generate any ad copy, only asked for clarification.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	2	FAIL	Generates 10-15 headline variations	Model stated it will generate headlines in the future ('Once I have this, I'll generate...'), but generated 0.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	3	FAIL	Generates 4+ description variations	Model stated it will generate descriptions in the future, but generated 0.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	4	FAIL	Includes target keyword in headlines	No headlines were generated.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	5	FAIL	Notes pinning should be used sparingly per skill guidance	No guidance or ad copy was provided.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	6	FAIL	Suggests ad extensions	No ad extensions were suggested.	2	3
+ab-testing	eval-2	with_skill	FAIL	3.5s	27959	7	FAIL	Uses angle-based variation approach	No angle-based variations were generated.	2	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	22.9s	29916	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	4	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	2	FAIL	Respects LinkedIn character limits (150/70/100)	Model states it 'will generate' character-validated copy once details are provided, but no actual ad copy with character counts was produced in the output.	4	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	3	FAIL	Adapts tone for enterprise security audience	Model asks the user to define the brand voice ('Authoritative and technical? Or more conversational/concern-driven?') rather than demonstrating an adapted tone in the final output.	4	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	4	FAIL	Uses risk-reduction and compliance language	While angle examples mention risk and compliance (e.g., 'SOC 2, HIPAA'), these are placeholders provided as part of a request for information, not the final generated asset utilizing this language as…	4	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	6.5s	28264	6	FAIL	Suggests LinkedIn ad format recommendations	Model states it 'will generate' Single Image Ad variations and Carousel Ad concepts once details are provided; it does not provide active recommendations in the current output, only a plan for future…	4	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	1	FAIL	Activates batch generation workflow	Model states: 'Send me the answers above and I'll generate the full batch within one response.' It did not generate the batch; it asked for clarification first.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	2	FAIL	Generates for all three platforms	The output contains a 'Planned Angles' table and a structure outline, but no actual generated ad copies for Google, Meta, or TikTok. It explicitly says 'I'll generate... once I have context'.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	3	FAIL	Respects each platform's character limits	No content was generated. The model listed target limits (e.g., '15 headlines (30 chars each)') but did not produce content that can be evaluated for compliance with these limits.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	4	FAIL	Identifies angles that work across platforms	The model lists 'Planned Angles' but explicitly labels them '(pending your context)' and does not demonstrate which specific angles work across all platforms in a final output.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	5	FAIL	Notes TikTok needs video concepts	The model lists 'Native, conversational tone with strong first 2 seconds hook' and '3-5 variations with trending-style framing' for TikTok, but does not explicitly state or generate video concepts/sc…	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	6	FAIL	Organizes output by platform	While the outline is organized by platform, there is no actual generated output (ads) to be organized. The assertion implies the completion of the generation task.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.6s	28217	7	FAIL	Generates multiple variations per angle per platform	The model stated it 'will include' variations but did not generate them. The output contains no actual variations.	5	3
+ab-testing	eval-6	with_skill	FAIL	3.9s	28029	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	3.9s	28029	2	FAIL	References or defers to ads skill	The model provides a direct response using its own internal knowledge/framework. It does not explicitly reference an 'ads skill', 'ads module', or defer to a specific tool/skill component. It acts as…	6	3
+ab-testing	eval-6	with_skill	FAIL	3.9s	28029	3	PASS			6	3

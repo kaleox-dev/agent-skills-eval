@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	1	FAIL	Checks for product-marketing.md	Model output states: 'Checks for product-marketing.md' is not present; model requests actual URL instead of generating or checking a file.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	2	FAIL	Identifies as Apple App Store URL	Model output states: 'the URL you shared ... appears to be a placeholder' and asks for the 'actual App Store URL', failing to identify/validate the provided URL as a valid target for the audit in thi…	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	3	FAIL	Classifies brand maturity tier	Model output contains no classification of brand maturity; it explicitly states it cannot proceed without the actual URL.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	4	FAIL	Scores all 6 dimensions with weights	Model output contains no scores or weights; it lists areas it *will* cover once it has the URL.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	5	FAIL	Provides scorecard with grade	Model output contains no scorecard or grade; it refuses to perform the audit until valid input is provided.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	6	FAIL	Lists top 3 quick wins	Model output contains no quick wins; it asks for clarification questions.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	7	FAIL	Recommendations include character counts	Model output contains no recommendations with character counts.	1	6
+ab-testing	eval-1	with_skill	FAIL	3.0s	30138	8	FAIL	Recommendations are specific (X to Y format)	Model output contains no specific X to Y recommendations.	1	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	5	FAIL	Notes Google Play indexes full description	The model mentions 'Google's ranking factors treat **update frequency** as a signal' and 'missing fresh indexing signals', but never explicitly states or notes that Google Play indexes the *full desc…	2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	6	FAIL	Mentions feature graphic requirement	The model mentions 'Visuals' in a scorecard dimension and 'screenshot recommendations', but never mentions the specific 'feature graphic' or its requirements.	2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	6.0s	30458	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	8.2s	30650	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.2s	30650	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.2s	30650	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.2s	30650	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.2s	30650	5	FAIL	Cites the 'mistake vs deliberate choice' principle	The model output discusses 'strategic error' and 'fundamental misunderstanding', but does not explicitly cite or name a principle referred to as 'mistake vs deliberate choice'.	3	6
+ab-testing	eval-4	with_skill	FAIL	3.4s	30186	1	FAIL	Scores all 3 apps with same framework	The model explicitly refuses to score, stating: 'I first need to verify these are valid App Store URLs... Please provide the correct, full App Store URLs'. No scoring was performed.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.4s	30186	2	FAIL	Builds comparison table	No table is present in the output. The output consists solely of a request for more information.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.4s	30186	3	FAIL	Identifies where user's app is weaker	No analysis was conducted, so no weaknesses were identified. The model asks for context: 'Do you have access to any data about your app's rating count...?'	4	6
+ab-testing	eval-4	with_skill	FAIL	3.4s	30186	4	FAIL	Identifies keyword gaps vs competitors	No keyword analysis was performed. The model states it needs to retrieve listing data first, which it did not do.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.4s	30186	5	FAIL	Produces competitor-informed action list	No action list is produced. The output ends with a request for URLs and data.	4	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	1	FAIL	Notes Visual Assets is 25% of score	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.6s	30767	7	FAIL	Flags <5 screenshots as always-flag issue	judge did not provide concrete evidence	5	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	30976	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	30976	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	30976	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	30976	4	FAIL	Cross-references ab-testing or ads skill	Output contains no cross-references to other skills, tools, or resources. It only references 'App Store Connect' and 'Apple Search Ads' which are features, not cross-referenced skills.	6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	30976	5	FAIL	Notes Google Play equivalents	The entire response focuses exclusively on iOS, Apple Store Connect, and SKAdNetwork. There is no mention of Google Play, Android, or equivalent features.	6	6

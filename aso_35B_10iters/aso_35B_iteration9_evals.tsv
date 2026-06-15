@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured' and the model text contains no mention of 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	2	FAIL	Identifies as Apple App Store URL	Model output states: 'Note: The URL you provided (id123456789) is a placeholder/example. I can't fetch actual data from this URL since it doesn't correspond to a real app.' It fails to identify it as…	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	3	FAIL	Classifies brand maturity tier	The model output does not contain any classification of brand maturity tier. It only outlines what it *will* check.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	4	FAIL	Scores all 6 dimensions with weights	The model lists 6 dimensions and mentions weights (e.g., 'Title & Subtitle (20% weight)'), but it does not provide scores. It states: 'While you share that, here's what I'll analyze once I have the r…	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	5	FAIL	Provides scorecard with grade	The model states: 'What I'll Deliver - Scorecard with dimension-by-dimension grades', but no scorecard or grades are present in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	6	FAIL	Lists top 3 quick wins	The model lists 'Top 3 quick wins' under the 'What I'll Deliver' section as a future action, but does not provide the actual quick wins.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	7	FAIL	Recommendations include character counts	No specific recommendations with character counts are provided in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	30347	8	FAIL	Recommendations are specific (X to Y format)	No specific recommendations in 'X to Y' format are provided. The model asks for the URL first.	1	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	1	FAIL	Identifies as Google Play app	Output states 'Google Play Store URL' and 'Google Play' but does not identify the specific target app's source or platform context as a Google Play app instance itself; it asks for the URL.	2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	2	FAIL	Classifies as Challenger tier	No mention of 'Challenger' tier or tier classification found in output.	2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	5	FAIL	Notes Google Play indexes full description	Output mentions 'no hidden keyword field on Google Play' and 'everything lives in visible text', but does not explicitly state or note that Google Play indexes the full description text.	2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	6	FAIL	Mentions feature graphic requirement	Output mentions 'Screenshot refresh' and 'visuals', but does not explicitly mention 'feature graphic'.	2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	3.5s	30188	8	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	4.5s	30269	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.5s	30269	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.5s	30269	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.5s	30269	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.5s	30269	5	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	2.2s	30061	1	FAIL	Scores all 3 apps with same framework	judge did not provide concrete evidence	4	9
+ab-testing	eval-4	with_skill	FAIL	2.2s	30061	2	FAIL	Builds comparison table	judge did not provide concrete evidence	4	9
+ab-testing	eval-4	with_skill	FAIL	2.2s	30061	3	FAIL	Identifies where user's app is weaker	judge did not provide concrete evidence	4	9
+ab-testing	eval-4	with_skill	FAIL	2.2s	30061	4	FAIL	Identifies keyword gaps vs competitors	judge did not provide concrete evidence	4	9
+ab-testing	eval-4	with_skill	FAIL	2.2s	30061	5	FAIL	Produces competitor-informed action list	judge did not provide concrete evidence	4	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	1	FAIL	Notes Visual Assets is 25% of score	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	2	FAIL	Cites first 3 screenshots are most important	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	4	FAIL	Cites video conversion lift benchmark	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	5	FAIL	Notes Google Play video has lower ROI	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	6	FAIL	Recommends specific screenshot count and video specs	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.8s	30798	7	FAIL	Flags <5 screenshots as always-flag issue	judge returned unparseable response: { "assertion_results": [ { "text": "Notes Visual Assets is 25% of score", "passed": false, "evidence": "The model output discusses conversion lifts, ROI, and best…	5	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	30925	1	FAIL	Identifies Custom Product Pages as iOS-specific	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	30925	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	30925	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	30925	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	30925	5	FAIL	Notes Google Play equivalents	judge did not provide concrete evidence	6	9

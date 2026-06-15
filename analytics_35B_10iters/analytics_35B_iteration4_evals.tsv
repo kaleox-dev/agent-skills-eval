@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The output is a conversational response asking questions, not a file check.	1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	3	FAIL	Uses object_action naming convention	Events listed are `signup_started`, `signup_completed`, `feature_used`, `first_key_action_completed`, `pricing_viewed`, `plan_selected`, `subscription_upgraded`, `subscription_cancelled`. These do no…	1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	20853	7	FAIL	Output follows tracking plan format	The output begins with 'Initial Questions' and asks for more information ('I'll help you set up... Let me start by asking...'). It does not provide a finalized tracking plan document but rather a dra…	1	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.4s	20692	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.9s	20723	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	2	FAIL	Defines full e-commerce event taxonomy	Output explicitly states: 'Before I build your tracking plan, I need to understand your context first.' and 'Reply with the answers... I'll give you a complete tracking plan'. It provides a partial l…	4	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	4	FAIL	Follows object_action naming convention	Events listed are 'view_item', 'add_to_cart', 'begin_checkout', which follow Google's specific ecommerce event naming conventions (lowercase with underscores or specific verbs), not a generic 'object…	4	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.5s	20381	6	FAIL	Provides tracking plan format output	Output files section is empty ('No output files were captured'). The text is a conversational response asking for context, not a finalized tracking plan document.	4	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.5s	21621	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	20075	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	20075	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	20075	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	20075	4	PASS			6	4

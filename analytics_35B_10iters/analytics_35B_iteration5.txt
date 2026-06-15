@@ -1,0 +1,83 @@
+
+[1m▶ analytics[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    What UTM parameters should we use? We run ads on Google, Meta, and LinkedIn, plus send a weekly newsletter and post on LinkedIn organically.
+    [90moutput:[0m  For your mix of paid ads (Google, Meta, LinkedIn) and organic channels (newsletter, organic LinkedIn), here's the UTM strategy: ## Standard UTMs | Parameter | Purpose | Your Values | |-----------|---…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    6.5s · 20382 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up analytics tracking for our B2B SaaS product. We use GA4 and GTM. We need to track signups, feature usage, and upgrade events.
+    [90moutput:[0m  I'll help you set up analytics tracking for your B2B SaaS product. Before I create a detailed tracking plan, let me understand your specific context. **Key questions:** 1. **What decisions will this …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states 'No output files were captured.' Model output is a conversational request for more info, not a file check or creation.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Uses object_action naming convention
+         [90mevidence:[0m Event names in the table include 'signup_started', 'signup_completed', 'pricing_viewed', 'plan_selected'. These do not follow object_action (e.g., 'user_signup_started' or 'page_pricing_viewed'); the…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides GA4 implementation details
+         [90mevidence:[0m The model output states 'Provide exact GA4/GTM implementation instructions... once I have your details'. It does not provide the implementation details in the current output, only the tracking plan o…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes GTM data layer examples
+         [90mevidence:[0m The model output mentions 'data layer pushes' as something it will do later. The current output contains no code snippets, JSON objects, or JavaScript examples for the data layer.
+    7.4s · 20467 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We're launching an e-commerce store and need to set up tracking from scratch. What events do we absolutely need?
+    [90moutput:[0m  I'll help you set up essential e-commerce tracking. Let me ask a few quick questions to tailor this to your setup: 1. **What platform are you using?** (Shopify, WooCommerce, custom, etc.) 2. **What a…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines full e-commerce event taxonomy
+         [90mevidence:[0m Model output only lists 7 events (view_item, add_to_cart, begin_checkout, purchase, view_item_list, remove_from_cart, checkout_step_completed). It omits critical standard e-commerce events such as vi…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Follows object_action naming convention
+         [90mevidence:[0m Events listed are singular nouns or compound verbs like 'view_item', 'add_to_cart', 'begin_checkout'. The object_action convention typically implies 'object_action' (e.g., 'product_view', 'cart_add')…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides tracking plan format output
+         [90mevidence:[0m The output is a conversational guide with code snippets and tables explaining 'Why It Matters'. It does not provide a structured tracking plan document format (e.g., a table with Event Name, Trigger,…
+    8.2s · 20540 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up tracking for our A/B test. We want to measure which version of our pricing page converts better.
+    [90moutput:[0m  I can help you set up A/B test tracking. However, I need to clarify something important: **A/B test measurement has its own specific skill and requirements** that differ from general analytics tracki…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    3.8s · 20107 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    our tracking seems broken — we're seeing duplicate events and our conversion numbers in GA4 don't match what our database shows. help?
+    [90moutput:[0m  I'll help you debug this. Duplicate events and mismatched conversion data are common GA4 issues, and they're usually solvable with a systematic approach. Let me first ask a few questions to narrow th…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model output begins with 'I'll help you debug this. Duplicate events and mismatched conversion data are common GA4 issues...'. There is no evidence in the text that the input contained 'casual ph…
+    17.3s · 21469 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We need to make sure our tracking is GDPR compliant. We have European users and we're using GA4, Hotjar, and Facebook Pixel.
+    [90moutput:[0m  # GDPR-Compliant Analytics Implementation Great question. GDPR compliance for analytics requires proper consent management and data handling. Let me outline the key requirements and implementation fo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides consent hierarchy
+         [90mevidence:[0m The response lists consent types (`analytics_storage`, `ad_storage`, etc.) but does not define a hierarchy of precedence or default states among different consent categories or tools beyond standard …
+    13.3s · 21114 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 77.4%[0m  [90m· 9.41s avg · 20680 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-445/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "analytics",
+      "slug": "analytics",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7567567567567568,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-445/benchmark.json"
+    }
+  ],
+  "iteration": 445,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-445",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-445/report/index.html"
+}

@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	1	FAIL	Checks for product-marketing.md	Model stated: 'Since I don't have access to check for the product-marketing.md file directly, I should ask the user for clarification' - did not check for the file	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Model is asking clarifying questions; no scraping, SEO data collection, or synthesis was performed	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Output files: 'No output files were captured' - no raw data saved	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	4	FAIL	Produces individual profile per competitor	No profiles were produced; model only asked clarifying questions about competitor URLs and product context	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	5	FAIL	Produces _summary.md after individual profiles	No summary file was produced; no individual profiles were created either	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	6	FAIL	Uses consistent metrics across competitors	No competitor profiles were created, so no metrics were applied or compared	1	4
+ab-testing	eval-1	with_skill	FAIL	8.8s	13267	7	FAIL	Parallelizes scraping when possible	No scraping was performed; model did not initiate any tool calls for parallel scraping	1	4
+ab-testing	eval-2	with_skill	FAIL	6.5s	13008	1	FAIL	Recommends prioritization over profiling all 12	Model states: 'I'd be happy to profile all 12 competitors for you!' - does not recommend prioritization	2	4
+ab-testing	eval-2	with_skill	FAIL	6.5s	13008	2	FAIL	Suggests top 5 based on relevance	No mention of top 5; model offers to profile all 12 competitors	2	4
+ab-testing	eval-2	with_skill	FAIL	6.5s	13008	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.5s	13008	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.5s	13008	5	FAIL	Asks user to prioritize	Asks for depth level and focus areas, but does not ask user to prioritize among the 12 competitors	2	4
+ab-testing	eval-3	with_skill	FAIL	11.2s	13442	1	FAIL	Recommends updating over starting fresh	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.2s	13442	2	FAIL	Lists what to re-pull (pricing, SEO, changelog)	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.2s	13442	3	FAIL	Mentions adding Change Log section	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.2s	13442	4	FAIL	Says to save raw data to new date folder	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.2s	13442	5	FAIL	Says never overwrite prior date's data	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 5 assertions against the model output provided. Let me analyze each assertion agai…	3	4
+ab-testing	eval-4	with_skill	FAIL	9.3s	13270	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.3s	13270	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.3s	13270	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.3s	13270	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.3s	13270	5	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	4.3s	12930	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	4.3s	12930	2	FAIL	Runs Phase 1 and Phase 3	No scraping or data collection executed; only asked clarifying questions	5	4
+ab-testing	eval-5	with_skill	FAIL	4.3s	12930	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	4.3s	12930	4	FAIL	Flags SEO section as skipped, not blank	No output files captured; no explicit flag in model output	5	4
+ab-testing	eval-5	with_skill	FAIL	4.3s	12930	5	FAIL	Still saves raw data	No output files were captured	5	4
+ab-testing	eval-6	with_skill	FAIL	13.6s	13691	1	FAIL	Treats logos as positioning claim, not customer breakdown	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	13.6s	13691	2	FAIL	Recommends cross-referencing case studies and reviews	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	13.6s	13691	3	FAIL	Mentions checking traffic/backlink profile against claim scale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	13.6s	13691	4	FAIL	Distinguishes verifiable named customers from claims	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	13.6s	13691	5	FAIL	Notes including date pulled	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4

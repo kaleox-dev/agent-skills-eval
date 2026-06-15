@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is direct text, not a file check.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	4	FAIL	Mentions Crossbeam or account overlap data	The terms 'Crossbeam' and 'account overlap data' are not present in the output. The model mentions 'Audience Overlap' as a generic scoring criteria but does not reference the specific tool Crossbeam …	1	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	3697	6	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	13.0s	3670	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.0s	3670	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.0s	3670	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.0s	3670	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.0s	3670	5	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	1	FAIL	Includes subject with both company names	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.8s	3107	6	FAIL	Mentions what to prepare for the call	judge did not provide concrete evidence	3	5
+ab-testing	eval-4	with_skill	FAIL	13.9s	3726	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.9s	3726	2	FAIL	Includes all 6 scoring dimensions	The output in Step 2 only lists 4 scoring dimensions: Audience Overlap, Engagement Quality, Brand Synergy, and Reciprocity. The Final Decision Matrix also only uses 3 columns. It does not include 6 d…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.9s	3726	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.9s	3726	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.9s	3726	5	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	13.1s	3877	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.1s	3877	2	FAIL	Recommends documenting in agreement	The model provides a sample email to 'align on the split' (Section 4, Step 1) but does not explicitly recommend writing these terms into a formal agreement document or contract. It focuses on operati…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.1s	3877	3	FAIL	Lists agreement components	The model does not provide a list of standard components for a co-marketing agreement (e.g., liability, IP, payment terms). It lists steps for lead distribution execution, not agreement structure.	5	5
+ab-testing	eval-5	with_skill	FAIL	13.1s	3877	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.1s	3877	5	FAIL	Recommends post-campaign debrief	The model suggests tracking metrics like 'Partner Satisfaction' to determine if they will partner again, but it does not explicitly recommend a structured 'post-campaign debrief' meeting or process.	5	5
+ab-testing	eval-6	with_skill	FAIL	2.2s	2671	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	2.2s	2671	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	2.2s	2671	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	2.2s	2671	4	PASS			6	5

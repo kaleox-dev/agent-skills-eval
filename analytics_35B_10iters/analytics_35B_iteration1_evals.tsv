@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	2	FAIL	Applies 'track for decisions' principle	Model output asks: 'What decisions will this data inform?' but does not apply or define the principle in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	3	FAIL	Uses object_action naming convention	No event definitions or naming conventions are present in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	4	FAIL	Defines essential SaaS events (signup, feature usage, upgrade)	Model output asks about signup, onboarding, and upgrade flows but does not define specific events.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	5	FAIL	Provides GA4 implementation details	Model output asks if GA4 is configured but provides no implementation details.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	6	FAIL	Includes GTM data layer examples	No code snippets or data layer examples are present.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.5s	20033	7	FAIL	Output follows tracking plan format	The output consists of clarifying questions and a promise to provide a plan later, not a tracking plan format.	1	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	5	FAIL	Warns about common UTM mistakes	The output advises omitting utm_id/utm_campaignid but does not warn about common pitfalls like case sensitivity issues in analytics, double slashes, or missing parameters, which are typical 'common m…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	20833	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	1	FAIL	Triggers on casual phrasing	The output begins with 'This is a common but fixable issue' and immediately asks for context. It does not demonstrate that the *trigger* for this response was a casual phrasing (e.g., the user's inpu…	3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.0s	21011	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	2	FAIL	Defines full e-commerce event taxonomy	Provides only a 'Minimum Event Set' and explicitly omits many standard taxonomy events (e.g., `view_cart`, `begin_checkout`, `add_shipping_info`, `add_payment_info`, `remove_from_cart`, `refund`, etc…	4	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	4	FAIL	Follows object_action naming convention	Uses descriptive phrases instead of `object_action` convention. Examples include `product_viewed` (should be `product_view` or similar), `checkout_started` (should be `checkout_start`), `purchase_com…	4	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	5	FAIL	Organizes by priority (must-have vs nice-to-have)	The output organizes events by funnel stage (Browsing, Cart, Checkout, Purchase) but does not explicitly categorize them into a 'must-have' vs 'nice-to-have' hierarchy in a structured list, although …	4	1
+ab-testing	eval-4	with_skill	FAIL	8.7s	20573	6	FAIL	Provides tracking plan format output	Provides a markdown table and code snippets, but lacks a formal tracking plan structure (e.g., unique event names, data types, required vs optional flags, consistent property schemas defined as a sch…	4	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	5	FAIL	Addresses conditional loading for each tool	The response states 'No analytics tools fire until user consents' generally and mentions configuring a CMP to block tools, but it does not provide specific implementation details or code for the cond…	5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	6	FAIL	Provides consent hierarchy	The response lists implementation priorities (Critical, High, Medium, Low) for tasks, but does not define a consent hierarchy (e.g., strict necessary > functional > marketing > analytics) or how user…	5	1
+ab-testing	eval-5	with_skill	FAIL	8.9s	20571	7	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	4.6s	20184	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.6s	20184	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.6s	20184	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.6s	20184	4	PASS			6	1

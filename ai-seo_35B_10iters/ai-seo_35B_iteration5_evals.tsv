@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	1	FAIL	Checks for product-marketing.md	The model output suggests creating specific content structures like 'Definition Block' or 'Comparison Table' and mentions '/pricing.md' or '/llms.txt', but it does not reference or check for a file n…	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	2	FAIL	Applies three pillars framework (Structure, Authority, Presence)	The model identifies gaps in 'structure, authority signals, or bot accessibility' (which loosely maps to Structure and Authority), but it fails to apply a cohesive 'three pillars framework' including…	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	3	FAIL	Runs AI Visibility Audit across platforms	The model asks the user to 'Please answer these questions' and perform the audit themselves ('Search these three queries...'). It does not perform the audit itself, nor does it present results of an …	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	4	FAIL	Checks content extractability	The model discusses 'Extractable Structure' as a concept to fix and advises adding definition blocks, but it does not perform an actual check on the user's content to determine if it is currently ext…	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	5	FAIL	References Princeton GEO research findings	The model output contains no mention of 'Princeton', 'GEO', or any specific research findings from such institutions. It cites general concepts like 'Teams using agile see 30% faster delivery' but at…	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	6	FAIL	Checks AI bot access in robots.txt	The model instructs the user to 'Check your robots.txt file' to see if bots are blocked. It does not perform the check itself, as no files were uploaded or accessed. The assertion requires the agent …	1	5
+ab-testing	eval-1	with_skill	FAIL	10.1s	22400	7	FAIL	Provides prioritized action plan	The model provides a list of fixes under 'Step 2: Immediate Action Plan', but it does not explicitly prioritize them (e.g., by effort, impact, or urgency). It lists three reasons and fixes without a …	1	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.6s	22619	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	5	FAIL	References Princeton GEO research	The output mentions 'GEO (Generative Engine Optimization)' patterns but does not explicitly cite 'Princeton' or any specific university research. It lists general tips like 'AI cites Wikipedia (7.8% …	3	5
+ab-testing	eval-3	with_skill	FAIL	16.1s	22974	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	1	FAIL	Triggers on casual phrasing	The model output begins immediately with a formal diagnostic proposal ('To diagnose why your competitors are appearing...') and provides a structured audit template. There is no evidence of the model…	4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.1s	22579	7	FAIL	Suggests monitoring approach	The model provides an initial audit table to gather data ('If your page is NOT in the top 10... If your page IS in the top 10...') and an 'Immediate Action Plan'. It does not suggest a long-term moni…	4	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	1	FAIL	Runs full AI Visibility Audit	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	2	FAIL	Checks multiple AI platforms	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	4	FAIL	Checks content extractability	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	5	FAIL	Checks AI bot access	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	6	FAIL	Provides findings organized by pillar	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.8s	22075	7	FAIL	Provides prioritized action plan	judge did not provide concrete evidence	5	5
+ab-testing	eval-6	with_skill	FAIL	8.2s	22095	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.2s	22095	2	FAIL	References or defers to seo-audit skill	The model output contains no mention of 'seo-audit skill' or any specific tool name; it proceeds directly with a generic response.	6	5
+ab-testing	eval-6	with_skill	FAIL	8.2s	22095	3	FAIL	Does not attempt a full traditional SEO audit using AI SEO patterns	While it does not provide a full audit, the output explicitly includes AI-specific audit patterns such as 'Robots.txt Blocking ... blocked Googlebot or key crawlers (like GPTBot)' and 'AI Spam Policy…	6	5
+ab-testing	eval-6	with_skill	FAIL	8.2s	22095	4	PASS			6	5

@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in the output.	1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	3	FAIL	Uses a structure framework from the skill	Model mentions frameworks (PAS, QVC, Vanilla Ice Cream) but does not explicitly apply or name one in the output.	1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	6	FAIL	Personalization connects to prospect's problem	Uses placeholder "[First Name]" with no actual prospect-specific personalization or research signal.	1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	8	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	19578	9	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.5s	19954	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	2	FAIL	Recommends 3-5 follow-up emails	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	3	FAIL	Each follow-up adds something new	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	4	FAIL	Does not use 'just bumping' or 'checking in' language	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	5	FAIL	Provides timing between emails	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	6	FAIL	Provides actual copy for each follow-up	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	7	FAIL	Includes a breakup email	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-3	with_skill	FAIL	14.9s	19500	8	FAIL	Follow-ups get progressively shorter	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Input:** Model output text (a follow-up email …	3	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	7	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.6s	19457	8	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	19139	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	19139	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	19139	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	19139	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	19139	5	FAIL	Notes distinction between open rate and reply rate	Model mentions both metrics separately (46% open rates, -12% replies, -57% replies) but does not explicitly note the distinction between them as different metrics	5	5
+ab-testing	eval-6	with_skill	FAIL	16.9s	19693	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	16.9s	19693	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	16.9s	19693	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	16.9s	19693	4	PASS			6	5

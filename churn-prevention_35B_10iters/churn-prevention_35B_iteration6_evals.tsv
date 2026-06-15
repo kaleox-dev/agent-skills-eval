@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The text body also asks for documents if available.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	7	FAIL	Recommends health score model	The text lists under 'Next Steps': 'Once you provide the answers above, I can help you... Build a health score model'. It does not recommend or provide a model in the current output; it is deferred t…	1	6
+ab-testing	eval-1	with_skill	FAIL	11.6s	23066	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.0s	23373	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	3	FAIL	Includes exit survey with 7 categories	The model lists 8 categories: 'Too expensive', 'Not using it enough', 'Missing a feature I need', 'Switching to a competitor', 'Technical issues / bugs', 'Temporary / seasonal need', 'Business closed…	3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	16.3s	23526	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	19.7s	23864	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	4	FAIL	Notes that 'too expensive' often masks other issues	The output explicitly states 'the data shows they love the product but are price-sensitive' and treats the reason as a direct pricing constraint. No mention of 'masking other issues' or hidden churn …	5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	5	FAIL	Suggests deeper follow-up questions	The output prescribes a fixed flow based on segment (Step 2). It does not suggest asking open-ended follow-up questions to uncover root causes; it relies on exit survey selection and tenure/plan data.	5	6
+ab-testing	eval-5	with_skill	FAIL	8.9s	22755	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.2s	22152	4	PASS			6	6

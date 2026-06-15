@@ -1,0 +1,97 @@
+
+[1m▶ community-marketing[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We just launched our community 3 weeks ago. We have 40 members but only 2-3 people post regularly. Everyone else just lurks. What do we do?
+    [90moutput:[0m  The user is asking about a community that's 3 weeks old with 40 members, where only 2-3 people post regularly and the rest are lurkers. This is a classic early-stage community problem. I need to appl…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions the 1% / 90% power user dynamic
+         [90mevidence:[0m Model mentions 'Identify and Invest in Your 2-3 Power Users' but does not reference 1%/90% dynamic
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions warning sign of company-dominated posts
+         [90mevidence:[0m No mention of company-dominated posts or related warning signs in output
+    14.1s · 3195 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We're a B2B SaaS that wants to start a community. Should we use Discord or Slack?
+    [90moutput:[0m  The user is asking about platform selection for a B2B SaaS community - Discord vs Slack. This is a classic community marketing question that falls squarely within my skill area. However, I need more …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m I should also check if there's a product marketing context file to read first, as instructed. But since I'm an AI, I can't actually access local files - I should note this limitation and work with wh…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions Circle or other alternatives
+         [90mevidence:[0m No mention of Circle or other alternatives in output
+    10.8s · 2897 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Our community feels dead. Members joined 6 months ago but most haven't posted in months. How do I tell if it's salvageable?
+    [90moutput:[0m  The user is asking about a community that feels "dead" - members joined 6 months ago but most haven't posted. They want to know if it's salvageable and how to diagnose the situation. This is a commun…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.1s · 3210 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Help me write community guidelines for our Discord. We're building a community for indie game developers.
+    [90moutput:[0m  The user wants help writing community guidelines for a Discord server for indie game developers. This is a community marketing task. Before I start, I need to check if there's any product marketing c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    22.5s · 3865 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We use our community mainly for support. How do we reduce ticket volume without making customers feel ignored?
+    [90moutput:[0m  The user is asking about using their community for support deflection - specifically how to reduce support ticket volume while maintaining customer satisfaction. This is a classic community-led suppo…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies community-led support playbook
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends searchable knowledge base from community Q&A
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends recognizing peer helpers
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions closing the loop with product
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about unanswered questions threshold
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes peer support must feel valued, not used
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run based on the provided assertions and model output. I need to return STRICT JSON only, with no markdown…
+    17.5s · 3477 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Design an ambassador program for our community. We have about 5,000 members and a few that always help others. Want to give them more recognition.
+    [90moutput:[0m  The user wants to design an ambassador program for their community. They have: - 5,000 members - A few members who already help others regularly - Goal: Give them more recognition This is a clear com…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies candidates from existing helpful behavior
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends personal 1:1 ask
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Suggests meaningful benefits beyond early access
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions tools/assets to enable advocates
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes measurement plan
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#6[0m [31mFAIL[0m [90m—[0m May cross-reference referrals skill
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+    18.2s · 3526 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 56.3%[0m  [90m· 16.19s avg · 3362 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-537/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 16,
+  "skills": [
+    {
+      "skill": "community-marketing",
+      "slug": "community-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5555555555555556,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-537/benchmark.json"
+    }
+  ],
+  "iteration": 537,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-537",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-537/report/index.html"
+}

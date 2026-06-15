@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	1	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	2	FAIL	Applies platform selection guide	No platform selection guidance provided in output	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	3	FAIL	Recommends platforms appropriate for B2B HR audience	No platform recommendations made	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	4	FAIL	Recommends campaign structure with naming conventions	No campaign structure or naming conventions provided	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	5	FAIL	Defines audience targeting per platform	No audience targeting defined	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	6	FAIL	Sets budget allocation across platforms	No budget allocation set (user budget was $15k/month but not allocated)	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	7	FAIL	Defines success metrics	No success metrics defined	1	2
+ab-testing	eval-1	with_skill	FAIL	3.6s	28039	8	FAIL	Recommends starting structure and scaling plan	No scaling plan provided	1	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	1	FAIL	Evaluates metrics in context	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	2	FAIL	Compares CPL against LTV considerations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	3	FAIL	Applies campaign optimization framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	4	FAIL	Recommends specific optimization levers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	5	FAIL	Asks about downstream conversion rates	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-2	with_skill	FAIL	14.4s	28902	6	FAIL	Provides industry context for benchmarking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	2	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.7s	28758	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	28812	6	FAIL	Compares to their existing Google/Meta performance	Model explicitly states "However, I don't have access to their actual performance data from Google and Meta" - provides industry benchmarks only, not their specific performance comparison	4	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	23.8s	29693	7	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	7.0s	28291	1	FAIL	Recognizes this as ad creative generation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	2
+ab-testing	eval-6	with_skill	FAIL	7.0s	28291	2	FAIL	References or defers to ad-creative skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	2
+ab-testing	eval-6	with_skill	FAIL	7.0s	28291	3	FAIL	Does not attempt bulk ad copy generation using campaign strategy patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	2

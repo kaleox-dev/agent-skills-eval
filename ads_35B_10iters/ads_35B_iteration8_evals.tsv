@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	1	FAIL	Checks for product-marketing.md	Model output states 'Output files: No output files were captured' and only mentions checking for context internally without producing external evidence or file references.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	2	FAIL	Applies platform selection guide	No platform selection guide or rationale is present in the output. Output is empty.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	3	FAIL	Recommends platforms appropriate for B2B HR audience	No platforms are recommended in the output.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	4	FAIL	Recommends campaign structure with naming conventions	No campaign structure or naming conventions are described.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	5	FAIL	Defines audience targeting per platform	No audience targeting definitions are provided.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	6	FAIL	Sets budget allocation across platforms	No budget allocation is mentioned.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	7	FAIL	Defines success metrics	No success metrics are defined.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.2s	27841	8	FAIL	Recommends starting structure and scaling plan	No starting structure or scaling plan is recommended.	1	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.8s	28811	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.0s	29007	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	1	FAIL	Applies platform selection guide for TikTok	The model does not provide a platform selection guide. It explicitly requests more data ('To give you a proper comparison and recommendation, I need to understand your current performance') before of…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.3s	28548	6	FAIL	Compares to their existing Google/Meta performance	The model does not perform the comparison because it lacks the data. It asks the user to provide data ('Could you share the following from your Google and Meta campaigns?') and offers a hypothetical …	4	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	17.9s	29534	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	28759	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	28759	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	28759	3	PASS			6	8

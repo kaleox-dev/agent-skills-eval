@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	2	FAIL	Identifies as Apple App Store URL	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	3	FAIL	Classifies brand maturity tier	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	4	FAIL	Scores all 6 dimensions with weights	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	5	FAIL	Provides scorecard with grade	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	6	FAIL	Lists top 3 quick wins	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	7	FAIL	Recommendations include character counts	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-1	with_skill	FAIL	9.4s	30504	8	FAIL	Recommendations are specific (X to Y format)	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate whether the model output satisfies each of the 8 assertions provided. Let me a…	1	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	2	FAIL	Classifies as Challenger tier	No mention of tier classification in output	2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	6	FAIL	Mentions feature graphic requirement	No mention of feature graphics in output	2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	7	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	30675	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	14.3s	30987	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.3s	30987	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.3s	30987	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.3s	30987	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.3s	30987	5	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	4.2s	30198	1	FAIL	Scores all 3 apps with same framework	No scores provided; model only made tool calls with no analysis output	4	3
+ab-testing	eval-4	with_skill	FAIL	4.2s	30198	2	FAIL	Builds comparison table	No comparison table visible in output	4	3
+ab-testing	eval-4	with_skill	FAIL	4.2s	30198	3	FAIL	Identifies where user's app is weaker	No weakness analysis provided; output states 'No output files were captured'	4	3
+ab-testing	eval-4	with_skill	FAIL	4.2s	30198	4	FAIL	Identifies keyword gaps vs competitors	No keyword analysis or gaps identified in output	4	3
+ab-testing	eval-4	with_skill	FAIL	4.2s	30198	5	FAIL	Produces competitor-informed action list	No action list generated; model only initiated tool calls	4	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	1	FAIL	Notes Visual Assets is 25% of score	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	2	FAIL	Cites first 3 screenshots are most important	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	4	FAIL	Cites video conversion lift benchmark	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	5	FAIL	Notes Google Play video has lower ROI	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	6	FAIL	Recommends specific screenshot count and video specs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-5	with_skill	FAIL	13.6s	30954	7	FAIL	Flags <5 screenshots as always-flag issue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	3
+ab-testing	eval-6	with_skill	FAIL	13.9s	30974	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	13.9s	30974	2	FAIL	Cites +5.9% conversion lift benchmark	Cites "+2.5-8.6% CVR improvement" not "+5.9%"	6	3
+ab-testing	eval-6	with_skill	FAIL	13.9s	30974	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	13.9s	30974	4	FAIL	Cross-references ab-testing or ads skill	No explicit ab-testing or ads skill reference	6	3
+ab-testing	eval-6	with_skill	FAIL	13.9s	30974	5	PASS			6	3

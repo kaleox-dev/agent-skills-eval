@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	6	FAIL	Personalization connects to prospect's problem	Model asks for context 'Who are you writing to?' and provides draft with placeholders '[Name]' and '[First Name]', explicitly stating it lacks specific personalization.	1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	8	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.0s	18817	9	FAIL	Provides 2-3 variations	Only one draft is provided: 'Here's the draft assuming minimal input'. No other variations are listed.	1	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.4s	19263	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	2	FAIL	Recommends 3-5 follow-up emails	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	3	FAIL	Each follow-up adds something new	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	4	FAIL	Does not use 'just bumping' or 'checking in' language	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	5	FAIL	Provides timing between emails	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	6	FAIL	Provides actual copy for each follow-up	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	7	FAIL	Includes a breakup email	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.0s	19489	8	FAIL	Follow-ups get progressively shorter	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The output provides a generic template and strategy for a follow-u…	3	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	7	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.6s	19427	8	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	8.9s	19181	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	8.9s	19181	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	8.9s	19181	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	8.9s	19181	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	8.9s	19181	5	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	5.8s	18856	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.8s	18856	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.8s	18856	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.8s	18856	4	PASS			6	7

@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	3	FAIL	Classifies brand maturity tier	No brand maturity tier classification in output	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	4	FAIL	Scores all 6 dimensions with weights	No dimension scores or weights provided	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	5	FAIL	Provides scorecard with grade	No scorecard or grade in output	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	6	FAIL	Lists top 3 quick wins	No quick wins listed in output	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	7	FAIL	Recommendations include character counts	No recommendations with character counts provided	1	7
+ab-testing	eval-1	with_skill	FAIL	3.8s	30152	8	FAIL	Recommendations are specific (X to Y format)	No recommendations provided in output	1	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	5	FAIL	Notes Google Play indexes full description	No explicit mention of Google Play indexing the full description found in output.	2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	30866	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	13.6s	30927	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.6s	30927	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.6s	30927	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.6s	30927	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	13.6s	30927	5	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	5.6s	30304	1	FAIL	Scores all 3 apps with same framework	No output files captured. Model only showed planning phase with tool calls, no scoring framework applied.	4	7
+ab-testing	eval-4	with_skill	FAIL	5.6s	30304	2	FAIL	Builds comparison table	No output files captured. No comparison table present in model output.	4	7
+ab-testing	eval-4	with_skill	FAIL	5.6s	30304	3	FAIL	Identifies where user's app is weaker	No output files captured. No weakness analysis provided in model output.	4	7
+ab-testing	eval-4	with_skill	FAIL	5.6s	30304	4	FAIL	Identifies keyword gaps vs competitors	No output files captured. No keyword gap analysis present in model output.	4	7
+ab-testing	eval-4	with_skill	FAIL	5.6s	30304	5	FAIL	Produces competitor-informed action list	No output files captured. No action list provided in model output.	4	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	No mention of caption indexing or Apple 2025 reference found	5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	31058	7	FAIL	Flags <5 screenshots as always-flag issue	No explicit 'always-flag' language for <5 screenshots; model says 3 is 'bare minimum' but no flag terminology	5	7
+ab-testing	eval-6	with_skill	FAIL	13.1s	30947	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	13.1s	30947	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	13.1s	30947	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	13.1s	30947	4	FAIL	Cross-references ab-testing or ads skill	No explicit cross-reference to ab-testing or ads skill found in output	6	7
+ab-testing	eval-6	with_skill	FAIL	13.1s	30947	5	FAIL	Notes Google Play equivalents	No mention of Google Play equivalents in output	6	7

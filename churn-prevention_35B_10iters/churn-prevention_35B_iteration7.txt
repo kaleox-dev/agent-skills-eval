@@ -1,0 +1,81 @@
+
+[1m▶ churn-prevention[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our SaaS product has a 7% monthly churn rate and we need to bring it down. We're a $49/month project management tool with about 2,000 paying customers. Can you help us design a churn prevention strat…
+    [90moutput:[0m  A 7% monthly churn rate is critically high for a B2B SaaS product. At that rate, your customer base halves every two months, meaning you're running on a hamster wheel just to stay flat. For a project…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends health score model
+         [90mevidence:[0m The output asks the user to define their activation moment ('What is your 'aha!' moment?') and suggests triggering nudges for dormant users, but it does not provide or recommend a specific health sco…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Provides prioritized implementation plan
+         [90mevidence:[0m The output provides a list of tactics ('Immediate Wins') but does not provide a structured, prioritized implementation plan (e.g., a roadmap, timeline, or phased execution plan) for these items.
+    12.3s · 23135 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    what should we show users when they click the cancel button? right now they just go straight to cancellation with no attempt to save them
+    [90moutput:[0m  To fix this, you need to implement a **Cancel Flow** with an **Exit Survey** and a **Dynamic Save Offer**. Since you currently have *no* save attempts, your churn is likely higher than necessary (esp…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The output provides a technical implementation plan and copy for a cancel flow. It does not analyze input for 'casual phrasing' nor does it demonstrate triggering on such phrasing. The output is a pr…
+    13.2s · 23194 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    How do we identify which customers are at risk of churning before they actually cancel? We want to be proactive.
+    [90moutput:[0m  To proactively identify at-risk customers, you need to build a **Churn Prediction System** that monitors specific behavioral signals *before* they click "Cancel." This is often called a "Health Score…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    15.1s · 23276 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We keep losing customers because their credit cards expire. About 15% of our churn is from failed payments. How do we fix this?
+    [90moutput:[0m  This is **involuntary churn**, and 15% is actually on the higher side (the target is <0.8-1.5% for mature SaaS). The good news: this is the **easiest type of churn to fix** because it's not a product…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    17.4s · 23627 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our exit survey shows that 40% of cancellations say 'too expensive' as the reason. What save offers should we try?
+    [90moutput:[0m  Based on the "too expensive" reason, here is the optimal save offer strategy: ## Primary Offer: Discount (20-30%) **Why:** This directly addresses price sensitivity. - **Best practice:** 25% off for …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes that 'too expensive' often masks other issues
+         [90mevidence:[0m Output never mentions that 'too expensive' might mask other issues; it treats the reason literally and addresses price sensitivity directly.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests deeper follow-up questions
+         [90mevidence:[0m Output suggests a discount, pause, or downgrade, but does not explicitly suggest asking deeper follow-up questions to uncover root causes before making an offer.
+    4.9s · 22333 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We want to set up a win-back email sequence for customers who already cancelled. Can you help write those emails?
+    [90moutput:[0m  I can certainly help you draft those win-back emails. To make them effective, I need to understand the context of why they left and what we're trying to re-engage them with. Please answer the followi…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to emails skill
+         [90mevidence:[0m The model mentions the 'ab-testing' skill and 'Customer.io or Mailchimp' but does not explicitly reference a specific 'emails skill' by name, nor does it defer to a skill named 'emails'. It relies on…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt to write a full email sequence
+         [90mevidence:[0m The model explicitly states 'here’s a proven 5-email win-back sequence' and then proceeds to draft the full content for 5 distinct emails (Email 1: Day 7–14 through Email 5: Day 90), directly contrad…
+    11.6s · 23153 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 77.5%[0m  [90m· 12.38s avg · 23120 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-487/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "churn-prevention",
+      "slug": "churn-prevention",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-487/benchmark.json"
+    }
+  ],
+  "iteration": 487,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-487",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-487/report/index.html"
+}

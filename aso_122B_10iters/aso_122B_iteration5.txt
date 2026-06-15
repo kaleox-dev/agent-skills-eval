@@ -1,0 +1,113 @@
+
+[1m▶ aso[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Compare our app https://apps.apple.com/us/app/ourapp/id111 against these two competitors: https://apps.apple.com/us/app/competitor1/id222 and https://apps.apple.com/us/app/competitor2/id333
+    [90moutput:[0m  The user wants me to compare their app against two competitors on the Apple App Store. This is an ASO audit request with competitor comparison. According to the skill instructions, I need to: 1. Firs…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Scores all 3 apps with same framework
+         [90mevidence:[0m No scoring results shown in output. Model only stated intent to score: 'Score each dimension' but no actual scores produced.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Builds comparison table
+         [90mevidence:[0m No comparison table present in output. Model stated 'Build a comparison table' as a plan but never executed it.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies where user's app is weaker
+         [90mevidence:[0m No weakness analysis found. Output only shows file read attempts with 'No output files were captured'.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Identifies keyword gaps vs competitors
+         [90mevidence:[0m No keyword gap analysis present. Model did not fetch or analyze any app store data.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces competitor-informed action list
+         [90mevidence:[0m No action list generated. Output ends at file reading phase with no recommendations produced.
+    4.8s · 30252 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We're a small fintech startup with about 5,000 downloads. Our Play Store listing has a 2.8 rating and we haven't updated the description in 8 months. Help us figure out what to fix first.
+    [90moutput:[0m  The user is asking for help with their Google Play Store listing. They've provided some key information: - Fintech startup - ~5,000 downloads - 2.8 rating on Play Store - Description hasn't been upda…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Classifies as Challenger tier
+         [90mevidence:[0m No tier classification found in output
+    12.2s · 30843 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Instagram's App Store listing has just 'Instagram' as the title and barely any keywords. Should they fix that?
+    [90moutput:[0m  The user is asking about Instagram's App Store listing and whether they should optimize their title with more keywords. This is an ASO question, but they're asking about a Dominant-tier app (Instagra…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    17.0s · 31214 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Here's our app on the App Store: https://apps.apple.com/us/app/example/id123456789. Can you audit our listing and tell me what to fix?
+    [90moutput:[0m  The user is asking me to audit their App Store listing. They've provided an App Store URL: https://apps.apple.com/us/app/example/id123456789 This is a clear ASO audit request. According to the skill …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies as Apple App Store URL
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Classifies brand maturity tier
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Scores all 6 dimensions with weights
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides scorecard with grade
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Lists top 3 quick wins
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommendations include character counts
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommendations are specific (X to Y format)
+         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agent evaluation run. I need to evaluate whether the model output satisfies each assertion. The model output appears to be incom…
+    4.6s · 30213 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Should I run a Custom Product Page experiment on iOS for our paid search campaigns?
+    [90moutput:[0m  The user is asking about whether they should run a Custom Product Page (CPP) experiment on iOS for their paid search campaigns. This is a specific ASO-related question that falls within the scope of …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies Custom Product Pages as iOS-specific
+         [90mevidence:[0m No explicit statement identifying CPPs as iOS-specific. Mentions 'iOS 18+' for deep links but does not explicitly state CPPs are iOS-only.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Cross-references ab-testing or ads skill
+         [90mevidence:[0m No explicit cross-reference to ab-testing or ads skill mentioned in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play equivalents
+         [90mevidence:[0m No mention of Google Play, Android, or Google Play equivalents in output
+    15.2s · 31177 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We only have 3 screenshots and no preview video. Does this really matter that much?
+    [90moutput:[0m  The user is asking about whether having only 3 screenshots and no preview video really matters for ASO. This is a common question from app developers who may be resource-constrained. I should provide…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Notes Visual Assets is 25% of score
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Cites first 3 screenshots are most important
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions screenshot caption indexing (Apple, 2025)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Cites video conversion lift benchmark
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play video has lower ROI
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends specific screenshot count and video specs
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#7[0m [31mFAIL[0m [90m—[0m Flags <5 screenshots as always-flag issue
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+    13.2s · 30899 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 37.9%[0m  [90m· 11.15s avg · 30766 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-455/benchmark.json[0m
+{
+  "passed": 14,
+  "failed": 24,
+  "skills": [
+    {
+      "skill": "aso",
+      "slug": "aso",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.3684210526315789,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-455/benchmark.json"
+    }
+  ],
+  "iteration": 455,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-455",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-455/report/index.html"
+}

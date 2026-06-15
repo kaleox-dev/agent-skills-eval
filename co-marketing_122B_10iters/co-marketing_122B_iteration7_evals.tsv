@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; model mentions 'the skill' and 'framework in the skill' but no file check	1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	3868	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	11.4s	3375	5	FAIL	Uses brainstorming prompts	Framework elements listed but no actual brainstorming prompts used in output; ideas generated directly without prompt-based techniques	2	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	1	FAIL	Includes subject with both company names	Subject: [Your Company] + [Content Platform] co-marketing idea (uses placeholders, not actual company names)	3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.2s	3031	6	FAIL	Mentions what to prepare for the call	Email body does not mention preparation; Follow-Up Notes section exists but is separate from email content	3	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	3	FAIL	Weights by goal	No weighting mechanism shown; uses simple sum to 30 points max without goal-based weights	4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.3s	3198	5	FAIL	Recommends starting with low-effort format	No explicit recommendation to start with low-effort format; only mentions 'Fastest Win Test' for speed to launch	4	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.8s	3431	5	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	5.6s	2881	4	PASS			6	7

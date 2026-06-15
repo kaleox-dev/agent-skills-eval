@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	1	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	28.2s	30621	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	28906	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.4s	28986	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	1	FAIL	Applies platform selection guide for TikTok	judge did not provide concrete evidence	4	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	5	FAIL	Suggests small test budget if proceeding	The model mentions 'design a testing strategy with a capped budget to validate' but this is conditional on the user sharing data first ('If you share your current Google/Meta numbers...'). It does no…	4	4
+ab-testing	eval-4	with_skill	FAIL	7.0s	28423	6	FAIL	Compares to their existing Google/Meta performance	The model explicitly asks for the data: 'Please share... Current Performance Data... Google Ads... Meta Ads'. It does not perform the comparison itself because the data was not provided in the prompt.	4	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.4s	29094	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	4.1s	28158	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.1s	28158	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.1s	28158	3	PASS			6	4

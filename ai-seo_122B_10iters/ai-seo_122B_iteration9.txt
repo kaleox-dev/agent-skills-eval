@@ -1,0 +1,115 @@
+
+[1m▶ ai-seo[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    How do I make sure our SaaS product shows up in AI search results? We're a project management tool and we keep getting left out of ChatGPT and Perplexity recommendations when people ask about project…
+    [90moutput:[0m  The user is asking about AI SEO specifically for their SaaS project management tool. They want to appear in AI search results like ChatGPT and Perplexity recommendations. This is exactly what the ai-…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No mention of product-marketing.md in output; model only asks clarifying questions.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies three pillars framework (Structure, Authority, Presence)
+         [90mevidence:[0m Output mentions 'structure and authority signals' once but does not apply a three pillars framework (Structure, Authority, Presence).
+      [31m#3[0m [31mFAIL[0m [90m—[0m Runs AI Visibility Audit across platforms
+         [90mevidence:[0m Model asks questions about AI visibility ('Have you tested what ChatGPT and Perplexity currently show...') but does not run an audit.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m No mention of content extractability checks in the output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research findings
+         [90mevidence:[0m No reference to Princeton GEO research findings in the output.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Checks AI bot access in robots.txt
+         [90mevidence:[0m No mention of robots.txt or AI bot access in the output.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m Model states 'Once I have this context, I can give you a targeted action plan' - no action plan provided yet.
+    5.9s · 21829 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Should we block AI crawlers like GPTBot and PerplexityBot in our robots.txt? We're worried about content theft.
+    [90moutput:[0m  This is a great question about AI SEO strategy. The user is asking about blocking AI crawlers in robots.txt due to concerns about content theft. This is a common dilemma for businesses. Let me think …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides recommended robots.txt configuration
+         [90mevidence:[0m No actual robots.txt syntax or configuration block provided; only mentions which bots to block without configuration example
+    12.4s · 22281 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Can you audit our website for AI search readiness? We want to know how visible we are across ChatGPT, Perplexity, Google AI Overviews, and other AI platforms.
+    [90moutput:[0m  The user wants me to audit their website for AI search readiness across multiple AI platforms. This is exactly what the AI SEO skill is designed for. Before I can provide a meaningful audit, I need t…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Runs full AI Visibility Audit
+         [90mevidence:[0m Model output states 'Before I can provide a meaningful audit, I need to gather context' and asks questions instead of running an audit. No audit results provided.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks multiple AI platforms
+         [90mevidence:[0m Model mentions platforms (ChatGPT, Perplexity, Google AI Overviews) but does not actually check them. Output only says 'I'll provide' findings.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates all three pillars (Structure, Authority, Presence)
+         [90mevidence:[0m Model lists audit areas in a table but states 'Once I have this information, I'll provide' - no actual evaluation of Structure, Authority, or Presence was performed.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m Content extractability mentioned in table ('Self-contained paragraphs, clear definitions') but not actually checked. No website URL was provided or analyzed.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks AI bot access
+         [90mevidence:[0m AI bot access mentioned ('robots.txt allows GPTBot, PerplexityBot...') but no actual check was performed. No robots.txt was analyzed.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides findings organized by pillar
+         [90mevidence:[0m No findings were provided. Output contains only questions and a template table of what 'I'll Check' in the future.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m No action plan was provided. Model states 'I'll run a full AI search readiness audit with specific recommendations' but never delivers them.
+    7.8s · 22008 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    What kind of content gets cited most by AI systems? We want to create content specifically optimized for AI search.
+    [90moutput:[0m  The user is asking about what kind of content gets cited most by AI systems, and they want to create content specifically optimized for AI search. This is a perfect use case for the AI SEO skill I ha…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m References Princeton GEO research
+         [90mevidence:[0m No mention of 'Princeton' or 'GEO research' in output; only references 'AI SEO research and data' generically
+    23.4s · 23250 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Our organic search traffic has dropped 30% this quarter. Can you do a full SEO audit to figure out what's going on?
+    [90moutput:[0m  The user is asking for a full SEO audit to investigate a 30% drop in organic search traffic. This is a traditional technical and on-page SEO audit request, not specifically an AI SEO request. Accordi…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as a traditional SEO audit request
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 4 assertions and return strict JSON only. Let me analyz…
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to seo-audit skill
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 4 assertions and return strict JSON only. Let me analyz…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt a full traditional SEO audit using AI SEO patterns
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 4 assertions and return strict JSON only. Let me analyz…
+      [31m#4[0m [31mFAIL[0m [90m—[0m May mention AI search as one factor to consider
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 4 assertions and return strict JSON only. Let me analyz…
+    10.4s · 22201 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    we noticed our competitors are showing up in google AI overviews but we're not. what do we need to change?
+    [90moutput:[0m  The user is asking about why their competitors are appearing in Google AI Overviews but they're not. This is a classic AI SEO question, and I need to help them understand what changes they need to ma…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing trigger detected in output; model treats input as standard SEO inquiry.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains how AI Overviews selects sources
+         [90mevidence:[0m Lists factors (schema, E-E-A-T, citations) but does not explain the selection mechanism itself.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks Structure pillar (extractability, headings, answer-first)
+         [90mevidence:[0m Mentions 'Content not extractable' and 'clear headings' in recommendations table but does not perform an actual check of the user's content structure.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks Authority signals
+         [90mevidence:[0m Asks about E-E-A-T and author credentials in questions but does not evaluate or check authority signals.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Suggests monitoring approach
+         [90mevidence:[0m No monitoring or tracking approach suggested; output ends with request for more information.
+    12.4s · 22224 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 32.5%[0m  [90m· 12.07s avg · 22299 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-419/benchmark.json[0m
+{
+  "passed": 12,
+  "failed": 25,
+  "skills": [
+    {
+      "skill": "ai-seo",
+      "slug": "ai-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.32432432432432434,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-419/benchmark.json"
+    }
+  ],
+  "iteration": 419,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-419",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-419/report/index.html"
+}

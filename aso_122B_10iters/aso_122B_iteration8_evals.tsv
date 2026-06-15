@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	3	FAIL	Classifies brand maturity tier	No brand maturity tier classification provided in output	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	4	FAIL	Scores all 6 dimensions with weights	No dimension scores or weights provided, only a table of what will be checked	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	5	FAIL	Provides scorecard with grade	No scorecard or grade (A-F) provided in output	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	6	FAIL	Lists top 3 quick wins	No top 3 quick wins listed, only promises to provide them	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	7	FAIL	Recommendations include character counts	No recommendations with character counts provided	1	8
+ab-testing	eval-1	with_skill	FAIL	9.5s	30611	8	FAIL	Recommendations are specific (X to Y format)	No specific X to Y format recommendations provided	1	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	6	FAIL	Mentions feature graphic requirement	No mention of feature graphic in output	2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	7	FAIL	Recommends keyword strategy in description	No explicit keyword strategy recommendation for description; only mentions 'Title/Description - Exact character-counted recommendations'	2	8
+ab-testing	eval-2	with_skill	FAIL	13.3s	30926	8	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	12.3s	30819	1	FAIL	Classifies Instagram as Dominant tier	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 5 assertions: 1. "Classifies Instagram as Dominant ti…	3	8
+ab-testing	eval-3	with_skill	FAIL	12.3s	30819	2	FAIL	Explains brand-only titles are valid for Dominant	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 5 assertions: 1. "Classifies Instagram as Dominant ti…	3	8
+ab-testing	eval-3	with_skill	FAIL	12.3s	30819	3	FAIL	Does NOT flag the title as a problem	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 5 assertions: 1. "Classifies Instagram as Dominant ti…	3	8
+ab-testing	eval-3	with_skill	FAIL	12.3s	30819	4	FAIL	Contrasts Dominant vs Challenger treatment	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 5 assertions: 1. "Classifies Instagram as Dominant ti…	3	8
+ab-testing	eval-3	with_skill	FAIL	12.3s	30819	5	FAIL	Cites the 'mistake vs deliberate choice' principle	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 5 assertions: 1. "Classifies Instagram as Dominant ti…	3	8
+ab-testing	eval-4	with_skill	FAIL	4.0s	30181	1	FAIL	Scores all 3 apps with same framework	No output files were captured - no scoring performed	4	8
+ab-testing	eval-4	with_skill	FAIL	4.0s	30181	2	FAIL	Builds comparison table	No comparison table present in output	4	8
+ab-testing	eval-4	with_skill	FAIL	4.0s	30181	3	FAIL	Identifies where user's app is weaker	No weakness analysis provided in output	4	8
+ab-testing	eval-4	with_skill	FAIL	4.0s	30181	4	FAIL	Identifies keyword gaps vs competitors	No keyword gap analysis present in output	4	8
+ab-testing	eval-4	with_skill	FAIL	4.0s	30181	5	FAIL	Produces competitor-informed action list	No action list produced in output	4	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	1	FAIL	Notes Visual Assets is 25% of score	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	2	FAIL	Cites first 3 screenshots are most important	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	4	FAIL	Cites video conversion lift benchmark	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	5	FAIL	Notes Google Play video has lower ROI	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	6	FAIL	Recommends specific screenshot count and video specs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-5	with_skill	FAIL	13.8s	30961	7	FAIL	Flags <5 screenshots as always-flag issue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's output based on specific assertions. * **Input:…	5	8
+ab-testing	eval-6	with_skill	FAIL	17.0s	31242	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	17.0s	31242	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	17.0s	31242	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	17.0s	31242	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	17.0s	31242	5	FAIL	Notes Google Play equivalents	No mention of Google Play or Android equivalents found in output. Entire output focuses exclusively on Apple/iOS CPPs	6	8

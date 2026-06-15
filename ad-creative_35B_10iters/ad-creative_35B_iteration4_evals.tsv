@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The output is a raw text response, not a markdown file.	1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	4	FAIL	Respects Meta character limits (125/40/30)	Ad Variant 1A Primary Text is ~380 characters (limit 125). Headline 'Write Blog Posts 5x Faster 🚀' is 26 chars. Description 'Free 14-day trial. No credit card.' is 32 chars (exceeds 30).	1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	16.4s	29340	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	5	FAIL	Notes pinning should be used sparingly per skill guidance	The output recommends pinning three specific items: '[Your Brand] CRM', 'Start Your Free Trial', and 'Try It Free — No Card'. It does not explicitly advise that pinning should be used 'sparingly' or …	2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	6	FAIL	Suggests ad extensions	The output focuses on RSA headlines and descriptions and pinning. There is no mention or suggestion of ad extensions (e.g., sitelinks, callouts, structured snippets).	2	4
+ab-testing	eval-2	with_skill	FAIL	16.5s	29320	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	1	FAIL	Activates iteration mode based on performance data	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	5	FAIL	Generates new variations combining winning elements	The output proposes a hybrid strategy ('Pain point + social proof hybrid') in a table but does not generate actual ad copy variations. It states it needs more info to 'produce high-quality ad copy'.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.3s	28439	6	FAIL	Provides specific iterations on top performers	No specific iterations or copy revisions are provided. The output ends by asking for clarification questions rather than delivering iterations.	3	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	2	FAIL	Respects LinkedIn character limits (150/70/100)	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	3	FAIL	Adapts tone for enterprise security audience	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	4	FAIL	Uses risk-reduction and compliance language	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	5	FAIL	Provides multiple angles relevant to security buyers	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-4	with_skill	FAIL	5.9s	28214	6	FAIL	Suggests LinkedIn ad format recommendations	judge returned unparseable response: { "assertion_results": [ { "text": "Triggers on casual phrasing", "passed": false, "evidence": "The model output explicitly states 'I need to gather a few more de…	4	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	27.5s	30765	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	4.7s	28126	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.7s	28126	2	FAIL	References or defers to ads skill	Output contains no mention of specific skill names, file paths like `.agents/ads.md`, or explicit deferrals to an ads agent/skill. It acts as a general assistant asking for context.	6	4
+ab-testing	eval-6	with_skill	FAIL	4.7s	28126	3	PASS			6	4

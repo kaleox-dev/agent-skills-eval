@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	1	FAIL	Checks for product-marketing.md	The model output contains no reference to 'product-marketing.md'. The output is a direct conversational response recommending Slack vs Discord.	1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	10.9s	3202	6	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions '2-3 posters' and 'superusers', but never uses the specific terminology '1%', '90%', or references the specific 1/90/90 power user rule.	2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	3323	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.1s	3315	5	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	4	FAIL	Mentions tools/assets to enable advocates	The output mentions badges, roles, and private channels for communication, but does not provide specific tools, assets, or resources (such as content templates, media kits, or specific software integ…	4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.7s	3365	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	1	FAIL	Uses Health Audit Report format	The output is structured as a strategic guide/advice article ('Salvageability Audit') rather than a formal 'Health Audit Report'. It lacks the standard components of a health report such as an execut…	5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.0s	3601	6	FAIL	Proposes top 3 priorities	The 'Immediate Action Plan' outlines a 30-day sprint with multiple actions per week (Poll, DMs, Pinning, Rituals, Spotlights, Killing dead channels). It does not explicitly identify or rank a 'top 3 …	5	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	4	FAIL	Mentions closing the loop with product	Section 4 mentions 'Close the Loop with Support Team' by feeding insights to community, but there is no mention of closing the loop with the Product team. The assertion specifically requires 'product…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	5	FAIL	Warns about unanswered questions threshold	The model discusses 'Time to First Answer' as a metric but does not warn about a specific threshold for unanswered questions or the risks of unanswered questions (e.g., user churn) based on a thresho…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.8s	3150	6	PASS			6	5

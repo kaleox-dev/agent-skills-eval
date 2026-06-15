@@ -1,0 +1,123 @@
+
+[1m▶ ad-creative[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Generate ad creative for our Meta (Facebook/Instagram) campaign. We sell an AI writing assistant for content marketers. Main value prop: write blog posts 5x faster. Target audience: content marketing…
+    [90moutput:[0m  The user wants me to generate ad creative for a Meta (Facebook/Instagram) campaign. They've provided some context: - Product: AI writing assistant for content marketers - Value prop: Write blog posts…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model states 'Since I don't have access to the file system, I'll need to ask the user for this information or note that I couldn't find it' - no actual file check performed
+      [31m#2[0m [31mFAIL[0m [90m—[0m Uses angle-based generation approach
+         [90mevidence:[0m No angle-based generation in output; model only promises 'I'll organize by creative angles' for future work
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies multiple angles (3-5)
+         [90mevidence:[0m Output mentions 'pain point, benefit, social proof, etc.' but does not identify or generate 3-5 specific angles
+      [31m#4[0m [31mFAIL[0m [90m—[0m Respects Meta character limits (125/40/30)
+         [90mevidence:[0m Model references limits but generates no actual ad copy to verify compliance
+      [31m#5[0m [31mFAIL[0m [90m—[0m Generates multiple variations per angle
+         [90mevidence:[0m No ad variations generated; output is clarifying questions only
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests image or visual direction
+         [90mevidence:[0m No image or visual direction suggested in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes hook, body, and CTA for each
+         [90mevidence:[0m No ad copy generated with hook, body, or CTA elements
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommends which angles to test first
+         [90mevidence:[0m No recommendation made about which angles to prioritize for testing
+    10.4s · 28490 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    I need to generate a big batch of ad variations for a multi-platform campaign launching next week. We're a meal delivery service targeting busy professionals. Need ads for Google, Meta, and TikTok.
+    [90moutput:[0m  The user wants to generate ad variations for a meal delivery service targeting busy professionals across Google, Meta, and TikTok. This is a clear "generate from scratch" use case for the ad-creative…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Activates batch generation workflow
+         [90mevidence:[0m Model states 'Let me ask these clarifying questions before generating the copy' - no workflow activation occurred
+      [31m#2[0m [31mFAIL[0m [90m—[0m Generates for all three platforms
+         [90mevidence:[0m No ad copy was generated for Google, Meta, or TikTok - only questions were asked
+      [31m#3[0m [31mFAIL[0m [90m—[0m Respects each platform's character limits
+         [90mevidence:[0m No content was generated to evaluate character limits
+      [31m#4[0m [31mFAIL[0m [90m—[0m Identifies angles that work across platforms
+         [90mevidence:[0m No angles were identified or generated in the output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes TikTok needs video concepts
+         [90mevidence:[0m Model mentions 'TikTok video ad scripts' but does not explicitly note TikTok needs video concepts as a requirement
+      [31m#6[0m [31mFAIL[0m [90m—[0m Organizes output by platform
+         [90mevidence:[0m No output was organized by platform since no content was generated
+      [31m#7[0m [31mFAIL[0m [90m—[0m Generates multiple variations per angle per platform
+         [90mevidence:[0m No variations were generated - model only promised to generate '15 headlines + 4 descriptions per RSA' for Google, '3-5 ad variations' for Meta, and '3-5 video ad scripts' for TikTok
+    8.8s · 28354 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Here's our ad performance data: Ad A (pain point angle) - CTR 2.1%, CPC $3.20, Conv rate 4.5%. Ad B (social proof angle) - CTR 1.4%, CPC $4.10, Conv rate 6.2%. Ad C (feature angle) - CTR 0.8%, CPC $5…
+    [90moutput:[0m  The user has provided ad performance data for three ads with different angles: - Ad A (pain point): CTR 2.1%, CPC $3.20, Conv rate 4.5% - Ad B (social proof): CTR 1.4%, CPC $4.10, Conv rate 6.2% - Ad…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific iterations on top performers
+         [90mevidence:[0m "Once I have this, I'll generate: - 15 headlines + 4 descriptions" - iterations not yet generated, context requested first
+    13.3s · 28768 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    we need linkedin ads for our enterprise security product. audience is CISOs and IT directors.
+    [90moutput:[0m  The user wants LinkedIn ads for an enterprise security product targeting CISOs and IT directors. This is a clear request for ad creative generation. Before I start generating ad copy, I need to gathe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Respects LinkedIn character limits (150/70/100)
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Adapts tone for enterprise security audience
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Uses risk-reduction and compliance language
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides multiple angles relevant to security buyers
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests LinkedIn ad format recommendations
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…
+    8.7s · 28316 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    Help me plan our overall paid advertising strategy. We have a $20k monthly budget and want to figure out which platforms to use and how to allocate spend.
+    [90moutput:[0m  The user is asking for help with paid advertising strategy - specifically platform selection and budget allocation for a $20k monthly budget. This is a strategic planning question about campaign stra…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    10.7s · 28582 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ad-creative"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platfo…
+    [90muser:[0m    I need Google Ads copy for our CRM product. We're targeting the keyword 'best CRM for small business'. Need responsive search ads.
+    [90moutput:[0m  The user wants Google Ads copy for their CRM product, targeting the keyword "best CRM for small business". They need Responsive Search Ads (RSAs). Before I can generate effective ad copy, I need to g…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Respects Google RSA character limits (30 char headlines, 90 char descriptions)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Generates 10-15 headline variations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Generates 4+ description variations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes target keyword in headlines
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes pinning should be used sparingly per skill guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests ad extensions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Uses angle-based variation approach
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    6.2s · 28118 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 30.6%[0m  [90m· 9.68s avg · 28438 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-378/benchmark.json[0m
+{
+  "passed": 8,
+  "failed": 29,
+  "skills": [
+    {
+      "skill": "ad-creative",
+      "slug": "ad-creative",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.21621621621621623,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-378/benchmark.json"
+    }
+  ],
+  "iteration": 378,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-378",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-378/report/index.html"
+}

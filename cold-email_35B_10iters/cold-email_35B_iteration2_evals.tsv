@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	8	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.1s	18950	9	FAIL	Provides 2-3 variations	Model provided only one full email draft ('Version 1'). While 3 subject line options were provided, the assertion requires 2-3 variations of the email/content, which were not generated.	1	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	3	FAIL	Applies voice calibration for CTO audience	The model fails to apply the calibration in the output because it halts generation to ask clarifying questions ('Please answer these 5 quick questions') rather than demonstrating the calibrated voice…	2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	4	FAIL	Subject line is short, lowercase, internal-looking	The model does not provide a subject line. It provides advice on subject lines ('2–4 words, lowercase') but no generated example fitting this criterion.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	5	FAIL	Adapts tone for enterprise audience	No enterprise-toned content is generated. The output is a request for information, not an adapted piece of copy.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	6	FAIL	Uses structure framework from the skill	No output file was provided to verify framework usage, and the text body is a conversational questionnaire, not a structured email draft applying a skill framework.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.0s	18926	7	FAIL	Explains why each element works	While it explains why the current approach fails, it does not explain why elements of a generated solution work because no solution was generated.	2	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	7	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	10.4s	19385	8	FAIL	Follow-ups get progressively shorter	judge did not provide concrete evidence	3	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	7	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.5s	19444	8	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	8.7s	19202	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.7s	19202	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.7s	19202	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.7s	19202	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.7s	19202	5	FAIL	Notes distinction between open rate and reply rate	The model discusses 'maximize open rates' and '60% more opens'. It mentions 'reduce replies by 12%' only in the context of using the prospect's name in the subject line (Section 3), but it does not e…	5	2
+ab-testing	eval-6	with_skill	FAIL	3.8s	18689	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	3.8s	18689	2	FAIL	References or defers to emails skill	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	3.8s	18689	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	3.8s	18689	4	PASS			6	2

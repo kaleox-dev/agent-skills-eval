@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to the file system, I'll need to ask the user for this information or note that I couldn't find it' - no actual file check performed	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	2	FAIL	Uses angle-based generation approach	No angle-based generation in output; model only promises 'I'll organize by creative angles' for future work	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	3	FAIL	Identifies multiple angles (3-5)	Output mentions 'pain point, benefit, social proof, etc.' but does not identify or generate 3-5 specific angles	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	4	FAIL	Respects Meta character limits (125/40/30)	Model references limits but generates no actual ad copy to verify compliance	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	5	FAIL	Generates multiple variations per angle	No ad variations generated; output is clarifying questions only	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	6	FAIL	Suggests image or visual direction	No image or visual direction suggested in output	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	7	FAIL	Includes hook, body, and CTA for each	No ad copy generated with hook, body, or CTA elements	1	8
+ab-testing	eval-1	with_skill	FAIL	10.4s	28490	8	FAIL	Recommends which angles to test first	No recommendation made about which angles to prioritize for testing	1	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	2	FAIL	Generates 10-15 headline variations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	3	FAIL	Generates 4+ description variations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	4	FAIL	Includes target keyword in headlines	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	5	FAIL	Notes pinning should be used sparingly per skill guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	6	FAIL	Suggests ad extensions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-2	with_skill	FAIL	6.2s	28118	7	FAIL	Uses angle-based variation approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	28768	6	FAIL	Provides specific iterations on top performers	"Once I have this, I'll generate: - 15 headlines + 4 descriptions" - iterations not yet generated, context requested first	3	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	2	FAIL	Respects LinkedIn character limits (150/70/100)	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	3	FAIL	Adapts tone for enterprise security audience	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	4	FAIL	Uses risk-reduction and compliance language	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	5	FAIL	Provides multiple angles relevant to security buyers	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	28316	6	FAIL	Suggests LinkedIn ad format recommendations	judge returned unparseable response: The user wants me to grade an evaluation run for agentskills.io. I need to evaluate the model's output against 6 assertions and return strict JSON. Let me analyze…	4	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	1	FAIL	Activates batch generation workflow	Model states 'Let me ask these clarifying questions before generating the copy' - no workflow activation occurred	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	2	FAIL	Generates for all three platforms	No ad copy was generated for Google, Meta, or TikTok - only questions were asked	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	3	FAIL	Respects each platform's character limits	No content was generated to evaluate character limits	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	4	FAIL	Identifies angles that work across platforms	No angles were identified or generated in the output	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	5	FAIL	Notes TikTok needs video concepts	Model mentions 'TikTok video ad scripts' but does not explicitly note TikTok needs video concepts as a requirement	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	6	FAIL	Organizes output by platform	No output was organized by platform since no content was generated	5	8
+ab-testing	eval-5	with_skill	FAIL	8.8s	28354	7	FAIL	Generates multiple variations per angle per platform	No variations were generated - model only promised to generate '15 headlines + 4 descriptions per RSA' for Google, '3-5 ad variations' for Meta, and '3-5 video ad scripts' for TikTok	5	8
+ab-testing	eval-6	with_skill	FAIL	10.7s	28582	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	10.7s	28582	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	10.7s	28582	3	PASS			6	8

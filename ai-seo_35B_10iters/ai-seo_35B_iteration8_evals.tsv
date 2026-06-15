@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	1	FAIL	Checks for product-marketing.md	The output suggests creating '/pricing.md' and 'pricing.txt', but never mentions 'product-marketing.md'.	1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	5	FAIL	References Princeton GEO research findings	The output mentions a '2023 Stanford study' regarding visual project management boards, but contains no reference to Princeton GEO research.	1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.3s	23302	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.5s	22407	6	FAIL	Explains what each bot does	The model explains the function of CCBot ('used almost exclusively for collecting data for AI model training') and mentions GPTBot/PerplexityBot perform 'citation' and 'search'. However, it fails to …	2	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	5	FAIL	References Princeton GEO research	The output mentions 'AI SEO research' and 'GPTBot' but contains no mention of 'Princeton', 'GEO', or 'Geoffrey Owen'.	3	8
+ab-testing	eval-3	with_skill	FAIL	11.2s	22446	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	1	FAIL	Triggers on casual phrasing	The model does not analyze the user's input for casual phrasing; it ignores the input style entirely and provides a generic diagnostic response. The prompt implies a specific 'trigger' behavior which…	4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	6	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.7s	22422	7	FAIL	Suggests monitoring approach	The model suggests an 'Audit' (Step 1) to diagnose the current state but does not provide a specific monitoring approach or tool recommendation for ongoing tracking of AIO visibility. It ends with a …	4	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	1	FAIL	Runs full AI Visibility Audit	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	2	FAIL	Checks multiple AI platforms	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	4	FAIL	Checks content extractability	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	5	FAIL	Checks AI bot access	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	6	FAIL	Provides findings organized by pillar	judge did not provide concrete evidence	5	8
+ab-testing	eval-5	with_skill	FAIL	6.7s	22016	7	FAIL	Provides prioritized action plan	judge did not provide concrete evidence	5	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	21910	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	21910	2	FAIL	References or defers to seo-audit skill	The output contains no mention of a specific 'seo-audit' skill, plugin, or tool name. It refers generically to 'I can certainly help you' and 'I will run a comprehensive audit'.	6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	21910	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	21910	4	PASS			6	8

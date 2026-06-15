@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in model output	1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	2	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Model mentions 'hypothesis framework' as something to help build but does not demonstrate using observation, belief, outcome, and metric structure	1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	5	FAIL	Defines primary metric (signup rate)	Model asks 'What's your primary metric? Signup rate?' rather than defining it	1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	6	FAIL	Defines secondary and guardrail metrics	Secondary and guardrail metrics listed as 'what I'll help you build' but not defined in output	1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	7	FAIL	Warns about the peeking problem	No mention of peeking, early stopping, or statistical peeking concerns in output	1	1
+ab-testing	eval-1	with_skill	FAIL	15.7s	16664	8	FAIL	Provides structured test plan output	Output is a consultation framework asking for more information, not a complete structured test plan	1	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output	2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.9s	16726	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	14.4s	16418	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	6	FAIL	Builds hypotheses for each element	Model asks 'What variants are you considering for each element?' but does not build actual hypotheses for headline, hero image, or CTA	4	1
+ab-testing	eval-4	with_skill	FAIL	14.5s	16564	7	FAIL	Provides structured test plan	Model states 'Once I Have Your Numbers, I'll Provide... Full test plan template' but does not deliver an actual test plan	4	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	16.3s	16768	6	FAIL	Notes need for longer observation window for downstream metrics	Duration section mentions '2 business cycles if you're B2B' but does not explicitly state downstream metrics (e.g., trial-to-paid conversion) require longer observation windows than primary metrics	5	1
+ab-testing	eval-6	with_skill	FAIL	7.2s	16017	1	FAIL	Recognizes this as primarily a copywriting task	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	1
+ab-testing	eval-6	with_skill	FAIL	7.2s	16017	2	FAIL	References or defers to copywriting skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	1
+ab-testing	eval-6	with_skill	FAIL	7.2s	16017	3	FAIL	Does not attempt to write full page copy using test setup patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	1
+ab-testing	eval-6	with_skill	FAIL	7.2s	16017	4	FAIL	May offer to help with test hypothesis and setup	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	21.0s	17196	6	PASS			7	1

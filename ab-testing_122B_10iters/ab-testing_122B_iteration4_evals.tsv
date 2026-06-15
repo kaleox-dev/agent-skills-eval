@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	6	FAIL	Defines secondary and guardrail metrics	Only guardrail metric defined: 'Guardrail | Bounce rate'. No secondary metrics specified	1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	7	FAIL	Warns about the peeking problem	No mention of peeking, early stopping, or p-hacking in output	1	4
+ab-testing	eval-1	with_skill	FAIL	15.5s	16705	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing detection or trigger mechanism in output	2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.5s	16514	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	1	FAIL	Addresses the peeking problem directly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	2	FAIL	Explains why early significance is misleading	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	3	FAIL	Recommends running for full pre-calculated duration	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	4	FAIL	Mentions day-of-week effects or audience mix shifts	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	5	FAIL	Explains false positive rate inflation from peeking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.8s	16216	6	FAIL	Mentions sequential testing as alternative approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	3	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	6	FAIL	Builds hypotheses for each element	Only provides general hypothesis framework and one example; no specific hypotheses built for headline, hero image, and CTA button individually	4	4
+ab-testing	eval-4	with_skill	FAIL	15.5s	16558	7	FAIL	Provides structured test plan	Model states "Once you provide the information above, I can help you with..." but does not deliver actual test plan; asks for more information first	4	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	3	FAIL	Identifies lead quality as secondary metric	Secondary Metrics include form abandonment/time-to-complete but no explicit 'lead quality' metric.	5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.3s	16426	6	FAIL	Notes need for longer observation window for downstream metrics	Downstream activation rate mentioned but no reference to observation window duration.	5	4
+ab-testing	eval-6	with_skill	FAIL	8.1s	16080	1	FAIL	Recognizes this as primarily a copywriting task	This is clearly an A/B testing request - they want to compare two versions of a landing page.	6	4
+ab-testing	eval-6	with_skill	FAIL	8.1s	16080	2	FAIL	References or defers to copywriting skill	No mention of copywriting skill; only references ab-testing skill instructions.	6	4
+ab-testing	eval-6	with_skill	FAIL	8.1s	16080	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	8.1s	16080	4	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	1	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	3	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	4	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	5	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	18.4s	16977	6	PASS			7	4

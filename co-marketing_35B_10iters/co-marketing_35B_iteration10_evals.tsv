@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a direct text response and does not reference or check for a file named 'product-marketing.md'.	1	10
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	4	FAIL	Mentions Crossbeam or account overlap data	The model output mentions 'audience overlap' qualitatively (e.g., 'audience overlap is nearly 100%') but does not explicitly mention 'Crossbeam' or use 'account overlap data' as a specific mechanism …	1	10
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	16.1s	4086	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	10.4s	3494	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.4s	3494	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.4s	3494	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.4s	3494	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.4s	3494	5	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	1	FAIL	Includes subject with both company names	judge did not provide concrete evidence	3	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	5	FAIL	Keeps it short and personal	judge did not provide concrete evidence	3	10
+ab-testing	eval-3	with_skill	FAIL	3.3s	2767	6	FAIL	Mentions what to prepare for the call	judge did not provide concrete evidence	3	10
+ab-testing	eval-4	with_skill	FAIL	8.9s	3347	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	8.9s	3347	2	FAIL	Includes all 6 scoring dimensions	The output explicitly lists only 4 criteria in Step 1: '1. Execution Ease', '2. Audience Overlap', '3. Asset Readiness', '4. Reciprocity'. It does not include 6 dimensions.	4	10
+ab-testing	eval-4	with_skill	FAIL	8.9s	3347	3	FAIL	Weights by goal	The output instructs to 'Rate each of the 5 partners on these 4 criteria' and take the 'highest total score'. It does not mention applying different weights to criteria based on specific strategic go…	4	10
+ab-testing	eval-4	with_skill	FAIL	8.9s	3347	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	8.9s	3347	5	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	15.0s	3994	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.0s	3994	2	FAIL	Recommends documenting in agreement	The output suggests proposing a split 'based on your previous agreement (or if one wasn’t made, how to propose one now)' and provides an email template to 'align on the follow-up cadence'. It does no…	5	10
+ab-testing	eval-5	with_skill	FAIL	15.0s	3994	3	FAIL	Lists agreement components	The output lists 'lead split models' and 'follow-up cadence' components to agree upon, but it does not list components of a formal 'agreement' document (such as scope, deliverables, legal terms, etc.…	5	10
+ab-testing	eval-5	with_skill	FAIL	15.0s	3994	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.0s	3994	5	FAIL	Recommends post-campaign debrief	The output focuses on immediate post-event actions: data analysis, partner communication, follow-up cadence, and joint nurture offers. It does not recommend a formal 'debrief' meeting or process to r…	5	10
+ab-testing	eval-6	with_skill	FAIL	6.8s	3160	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.8s	3160	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.8s	3160	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.8s	3160	4	PASS			6	10

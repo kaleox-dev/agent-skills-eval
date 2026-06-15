@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	1	FAIL	Checks for product-marketing.md	The model output contains no reference to 'product-marketing.md'. It suggests adding '/pricing.md' but does not mention or check for 'product-marketing.md'.	1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	2	FAIL	Applies three pillars framework (Structure, Authority, Presence)	The output is structured as 'Immediate Actions' and 'Medium-Term Strategy', not explicitly using the 'Structure, Authority, Presence' framework labels or methodology.	1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	3	FAIL	Runs AI Visibility Audit across platforms	The output provides advice but does not actually run an audit or provide results from scanning platforms. It asks the user if they have a Wikipedia page, implying the agent did not perform this check…	1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	5	FAIL	References Princeton GEO research findings	The output mentions 'ChatGPT cites Wikipedia 7.8% of the time' but does not reference 'Princeton GEO research' or any specific academic study by name.	1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.1s	22846	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.2s	22445	6	FAIL	Explains what each bot does	The model explains what GPTBot, PerplexityBot, ClaudeBot, and CCBot do generally, but fails to explain what 'ChatGPT-User', 'anthropic-ai', 'Google-Extended', or 'Bingbot' do specifically, nor does i…	2	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	5	FAIL	References Princeton GEO research	The output references 'Research and citation data' generally in Section 1, but does not mention 'Princeton' or 'GEO' anywhere in the text.	3	1
+ab-testing	eval-3	with_skill	FAIL	19.3s	23242	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	1	FAIL	Triggers on casual phrasing	The model output starts with a direct diagnostic statement 'To fix this, we need to move from...' and does not exhibit any trigger behavior based on casual phrasing (e.g., acknowledging a user's vagu…	4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	6	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.9s	22412	7	FAIL	Suggests monitoring approach	The model suggests a 'Quick Diagnostic Context' and 'Competitive Gap Analysis' but does not suggest a monitoring approach (e.g., using tools to track AI Overview presence over time). It asks for data…	4	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	1	FAIL	Runs full AI Visibility Audit	The model output is a request for user information ('Please provide the following information...') and does not perform an audit.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	2	FAIL	Checks multiple AI platforms	The model mentions checking platforms in the future tense ('Once you provide the details above... I will run a comprehensive audit...') but does not currently check any.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	The model lists what it *will* look for in these pillars in the future, but provides no evaluation of the current site as no site URL was provided or processed.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	4	FAIL	Checks content extractability	No content was analyzed; the model asks 'What do you publish?' instead of checking the actual content.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	5	FAIL	Checks AI bot access	The model asks the user 'Do you know if allow AI bots...' rather than performing the check itself.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	6	FAIL	Provides findings organized by pillar	No findings were provided; the output is a questionnaire.	5	1
+ab-testing	eval-5	with_skill	FAIL	8.0s	22167	7	FAIL	Provides prioritized action plan	No action plan was provided, only a request for data to generate one later.	5	1
+ab-testing	eval-6	with_skill	FAIL	6.3s	21990	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.3s	21990	2	FAIL	References or defers to seo-audit skill	No mention of 'seo-audit skill' or any specific skill name. The model acts as a general assistant without referencing a specialized tool or skill identifier.	6	1
+ab-testing	eval-6	with_skill	FAIL	6.3s	21990	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.3s	21990	4	FAIL	May mention AI search as one factor to consider	The model mentions "AI-generated content" in the context of spam/core updates affecting organic rankings, but does not mention "AI search" (e.g., SGE, AI Overviews) as a factor to consider.	6	1

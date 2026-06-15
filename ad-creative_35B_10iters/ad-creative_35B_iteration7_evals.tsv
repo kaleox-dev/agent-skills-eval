@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' No file named product-marketing.md is present in the output.	1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	17.4s	29394	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	No headlines or descriptions were generated in the model output.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	2	FAIL	Generates 10-15 headline variations	No headlines were generated.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	3	FAIL	Generates 4+ description variations	No descriptions were generated.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	4	FAIL	Includes target keyword in headlines	No headlines were generated.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	5	FAIL	Notes pinning should be used sparingly per skill guidance	Model output contains no mention of pinning.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	6	FAIL	Suggests ad extensions	Model output contains no mention of ad extensions.	2	7
+ab-testing	eval-2	with_skill	FAIL	3.4s	27938	7	FAIL	Uses angle-based variation approach	Model output contains no angle-based variations or headlines.	2	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	1	FAIL	Activates iteration mode based on performance data	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	5	FAIL	Generates new variations combining winning elements	The model does not generate new copy/creative variations. It only suggests a strategy ('A/B test pain point + social proof combo') and defers actual generation: 'Once you provide the missing context,…	3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	28451	6	FAIL	Provides specific iterations on top performers	No specific iterations were provided. The model requested more context ('Platform & Format', 'Product & Offer', etc.) before proceeding.	3	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	2	FAIL	Respects LinkedIn character limits (150/70/100)	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	3	FAIL	Adapts tone for enterprise security audience	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	4	FAIL	Uses risk-reduction and compliance language	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	5	FAIL	Provides multiple angles relevant to security buyers	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	4.2s	27998	6	FAIL	Suggests LinkedIn ad format recommendations	judge did not provide concrete evidence	4	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	1	FAIL	Activates batch generation workflow	The model outputs a request for clarification ('please confirm:') rather than generating the batch content. It states 'Once I have that, I'll deliver' but does not perform the action in this turn.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	2	FAIL	Generates for all three platforms	No ad copy was generated for Google, Meta, or TikTok. The model only listed placeholders of what it *would* deliver in the future.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	3	FAIL	Respects each platform's character limits	Since no content was generated, character limits could not be respected. The model mentioned limits in the proposed plan but did not enforce them on actual output.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	4	FAIL	Identifies angles that work across platforms	The model did not identify or list specific angles. It asked the user to provide context to determine angles later.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	5	FAIL	Notes TikTok needs video concepts	The model asked for clarification on whether TikTok needed 'creative direction for the video itself' rather than proactively noting or providing video concepts as part of the generation.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	6	FAIL	Organizes output by platform	No output was organized because no ads were generated.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.1s	28261	7	FAIL	Generates multiple variations per angle per platform	No variations were generated.	5	7
+ab-testing	eval-6	with_skill	FAIL	9.1s	28591	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.1s	28591	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.1s	28591	3	PASS			6	7

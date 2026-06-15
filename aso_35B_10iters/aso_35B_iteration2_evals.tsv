@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	1	FAIL	Checks for product-marketing.md	Output does not contain product-marketing.md; states 'I'll audit your App Store listing now' and 'No output files were captured'.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	3	FAIL	Classifies brand maturity tier	No text classifying brand maturity tier is present in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	4	FAIL	Scores all 6 dimensions with weights	No scoring or dimensions are present in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	5	FAIL	Provides scorecard with grade	No scorecard or grade is provided in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	6	FAIL	Lists top 3 quick wins	No quick wins are listed in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	7	FAIL	Recommendations include character counts	No recommendations or character counts are present in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	1.4s	29964	8	FAIL	Recommendations are specific (X to Y format)	No specific recommendations in X to Y format are present in the output.	1	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	5	FAIL	Notes Google Play indexes full description	The model discusses optimizing the description but never states that Google Play indexes the full description. It mentions missing keywords and rebuilding a description, but lacks the specific assert…	2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	6	FAIL	Mentions feature graphic requirement	The model mentions "Visuals" in the deliverables list but does not explicitly mention "feature graphic" or any specific requirement regarding it in the provided text.	2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	7	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	30589	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	7.3s	30552	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.3s	30552	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.3s	30552	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.3s	30552	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.3s	30552	5	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	3.4s	30179	1	FAIL	Scores all 3 apps with same framework	Model refused to score, stating 'I notice you've provided placeholder URLs... I need the actual App Store URLs' and asked for real links.	4	2
+ab-testing	eval-4	with_skill	FAIL	3.4s	30179	2	FAIL	Builds comparison table	Model stated 'Once I have these, I'll... Build a side-by-side comparison table', indicating no table was built in this output.	4	2
+ab-testing	eval-4	with_skill	FAIL	3.4s	30179	3	FAIL	Identifies where user's app is weaker	Model did not perform the audit, stating 'To run a proper ASO audit... I need the actual App Store URLs'.	4	2
+ab-testing	eval-4	with_skill	FAIL	3.4s	30179	4	FAIL	Identifies keyword gaps vs competitors	Model promised to 'Identify keyword gaps' in the future, but did not identify any gaps in the current output.	4	2
+ab-testing	eval-4	with_skill	FAIL	3.4s	30179	5	FAIL	Produces competitor-informed action list	Model stated 'Deliver a prioritized action plan' as a future step, but did not produce an action list.	4	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	1	FAIL	Notes Visual Assets is 25% of score	judge did not provide concrete evidence	5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	4.2s	30255	7	FAIL	Flags <5 screenshots as always-flag issue	judge did not provide concrete evidence	5	2
+ab-testing	eval-6	with_skill	FAIL	4.4s	30275	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.4s	30275	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.4s	30275	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.4s	30275	4	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.4s	30275	5	FAIL	Notes Google Play equivalents	The model output does not mention Google Play, Android, or any equivalent concept. It focuses exclusively on iOS/App Store.	6	2

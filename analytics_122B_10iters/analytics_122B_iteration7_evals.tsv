@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. Model mentions 'check if there's product marketing context available' but no file check evidence.	1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	2	FAIL	Applies 'track for decisions' principle	Model asks 'What decisions will this data inform?' but does not apply the principle in the tracking plan itself.	1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.8s	21243	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.2s	21202	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	1	FAIL	Triggers on casual phrasing	No evidence in output of detecting or responding to casual phrasing specifically	3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	21062	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.8s	20677	6	FAIL	Provides tracking plan format output	No formal tracking plan document structure with columns (Event Name, Description, Properties, Data Type, Business Logic) - only event definitions with properties	4	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	6	FAIL	Provides consent hierarchy	No explicit consent hierarchy structure provided; only mentions 'granular consent (analytics vs. marketing)' without defining hierarchy levels or relationships between consent categories	5	7
+ab-testing	eval-5	with_skill	FAIL	22.9s	21619	7	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	6.7s	20264	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.7s	20264	2	FAIL	References or defers to ab-testing skill	Model states "I'll use the analytics skill" instead of ab-testing skill; no ab-testing skill reference in final output	6	7
+ab-testing	eval-6	with_skill	FAIL	6.7s	20264	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.7s	20264	4	PASS			6	7

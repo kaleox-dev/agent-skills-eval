@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to the file system to check for context files' - did not actually check	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Only started firecrawl_map calls; no scraping, SEO data, or synthesis completed	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	No output files were captured	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	4	FAIL	Produces individual profile per competitor	No individual profiles were produced in output files	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	5	FAIL	Produces _summary.md after individual profiles	No summary.md file was produced	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	6	FAIL	Uses consistent metrics across competitors	No competitor profiles or metrics were created	1	5
+ab-testing	eval-1	with_skill	FAIL	8.5s	13240	7	FAIL	Parallelizes scraping when possible	Firecrawl_map calls shown in thought process but not executed as tool calls	1	5
+ab-testing	eval-2	with_skill	FAIL	5.8s	12999	1	FAIL	Recommends prioritization over profiling all 12	Model states 'I can help you profile all 12 competitors' without suggesting prioritization of fewer competitors	2	5
+ab-testing	eval-2	with_skill	FAIL	5.8s	12999	2	FAIL	Suggests top 5 based on relevance	No mention of selecting top 5 competitors; model accepts profiling all 12	2	5
+ab-testing	eval-2	with_skill	FAIL	5.8s	12999	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.8s	12999	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.8s	12999	5	FAIL	Asks user to prioritize	Asks about focus dimensions to prioritize but does not ask user to prioritize/select fewer of the 12 competitors	2	5
+ab-testing	eval-3	with_skill	FAIL	12.2s	13521	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.2s	13521	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.2s	13521	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.2s	13521	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to a new date folder found in output	3	5
+ab-testing	eval-3	with_skill	FAIL	12.2s	13521	5	FAIL	Says never overwrite prior date's data	No explicit statement about never overwriting prior date's data found in output	3	5
+ab-testing	eval-4	with_skill	FAIL	10.2s	13348	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.2s	13348	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.2s	13348	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.2s	13348	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.2s	13348	5	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	4.6s	12951	1	FAIL	Skips Phase 2 (DataForSEO) as requested	Model states intent to skip but no tool calls present to verify Phase 2 was actually skipped.	5	5
+ab-testing	eval-5	with_skill	FAIL	4.6s	12951	2	FAIL	Runs Phase 1 and Phase 3	No output files captured, no tool calls visible for scraping or document generation.	5	5
+ab-testing	eval-5	with_skill	FAIL	4.6s	12951	3	FAIL	Explains what's missing without SEO data	Model asks for inputs but does not explain what insights are missing without SEO data.	5	5
+ab-testing	eval-5	with_skill	FAIL	4.6s	12951	4	FAIL	Flags SEO section as skipped, not blank	No profile document generated yet, no SEO section exists to flag.	5	5
+ab-testing	eval-5	with_skill	FAIL	4.6s	12951	5	FAIL	Still saves raw data	Output files: No output files were captured.	5	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13585	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13585	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13585	3	FAIL	Mentions checking traffic/backlink profile against claim scale	No mention of traffic or backlink profile analysis in output	6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13585	4	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13585	5	FAIL	Notes including date pulled	No mention of including date information when pulling data	6	5

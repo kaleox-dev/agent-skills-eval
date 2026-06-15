@@ -1,0 +1,81 @@
+
+[1m▶ community-marketing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We're a B2B SaaS that wants to start a community. Should we use Discord or Slack?
+    [90moutput:[0m  For a B2B SaaS company, the short answer is: **Start with Slack.** Discord is rarely the right choice for B2B unless you are building a community around developer tools, gaming, or crypto/Web3. Here …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model output is a direct text response. No file named 'product-marketing.md' was created or referenced. Output files section states: 'No output files were captured.'
+      [31m#3[0m [31mFAIL[0m [90m—[0m Notes Slack free tier limitations
+         [90mevidence:[0m The model mentions Slack's professional context, integrations, and searchability. It does not mention the free tier, paid tiers, or any limitations associated with the free version of Slack.
+    8.7s · 2962 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Design an ambassador program for our community. We have about 5,000 members and a few that always help others. Want to give them more recognition.
+    [90moutput:[0m  Based on your current size (5,000 members) and the fact that you already have a few highly active helpers, you are in the **perfect "sweet spot"** to launch a structured Ambassador Program. You have …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m May cross-reference referrals skill
+         [90mevidence:[0m The output focuses on an 'Ambassador Program' driven by community health and recognition. There is no mention of a specific 'referrals skill', referral tracking, or cross-referencing a referrals modu…
+    12.2s · 3338 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We just launched our community 3 weeks ago. We have 40 members but only 2-3 people post regularly. Everyone else just lurks. What do we do?
+    [90moutput:[0m  This is a classic "0 to 1" problem, but **you are actually in a good position.** Having 40 members with 2-3 posters is not a failure; it’s the baseline for a new community. At 3 weeks, the "chicken a…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends new member journey design
+         [90mevidence:[0m Output suggests tactical fixes like 'binary or multiple-choice questions' and 'DMs', but does not explicitly design or recommend a structured 'new member journey' or onboarding flow/sequence for memb…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions the 1% / 90% power user dynamic
+         [90mevidence:[0m Output mentions '40 members with 2-3 posters' and 'latent demand', but never explicitly mentions the terms '1%', '90%', or the specific Pareto/power user dynamic.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions warning sign of company-dominated posts
+         [90mevidence:[0m Output does not mention 'company-dominated posts' or warnings about admins/companies dominating the conversation.
+    12.9s · 3400 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Help me write community guidelines for our Discord. We're building a community for indie game developers.
+    [90moutput:[0m  Building a community for indie game developers is a high-potential play because the pain points are shared (technical bugs, marketing anxiety, burnout) and the passion is high. However, Discord commu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    15.2s · 3611 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Our community feels dead. Members joined 6 months ago but most haven't posted in months. How do I tell if it's salvageable?
+    [90moutput:[0m  This is a classic "zombie community" scenario. It is salvageable, but **not by sending a "We miss you!" email to the whole list.** That usually triggers more silence or mass unsubscriptions. To deter…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Proposes top 3 priorities
+         [90mevidence:[0m The model provides a 7-day action plan and a 'Salvage Playbook' with four distinct tactics (Win-Back Segment, 1:1 Re-Engagement, Low-Friction Re-Launch, Kill Noise). It does not explicitly categorize…
+    13.4s · 3503 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We use our community mainly for support. How do we reduce ticket volume without making customers feel ignored?
+    [90moutput:[0m  This is a classic tension in community-led support: **Efficiency vs. Empathy.** If you simply route everyone to the community, customers feel like you are dumping them on their peers. If you keep ans…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about unanswered questions threshold
+         [90mevidence:[0m The model recommends an 'SLA... responds within 4 business hours' and tracking a 'Community Resolution Rate' vs 'Tickets Closed'. It does not explicitly warn about a specific threshold of *unanswered…
+    11.0s · 3257 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 79.0%[0m  [90m· 12.23s avg · 3345 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-548/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "community-marketing",
+      "slug": "community-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7777777777777778,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-548/benchmark.json"
+    }
+  ],
+  "iteration": 548,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-548",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-548/report/index.html"
+}

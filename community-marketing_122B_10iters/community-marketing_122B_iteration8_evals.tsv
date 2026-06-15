@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; mentions 'skill instructions' but no file check	1	8
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	3	FAIL	Notes Slack free tier limitations	No mention of Slack free tier limitations; only notes "Better (especially paid)" for searchability without free tier context	1	8
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	5	FAIL	Mentions Circle or other alternatives	No mention of Circle or any alternatives beyond Slack and Discord	1	8
+ab-testing	eval-1	with_skill	FAIL	8.5s	2698	6	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	1	FAIL	Diagnoses as launch-stage / new member activation problem	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	2	FAIL	Applies 'launching from zero' playbook	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	3	FAIL	Recommends DMs to new members	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	4	FAIL	Recommends new member journey design	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	5	FAIL	Recommends seeding conversations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	6	FAIL	Mentions the 1% / 90% power user dynamic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-2	with_skill	FAIL	12.7s	3069	7	FAIL	Mentions warning sign of company-dominated posts	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	8
+ab-testing	eval-3	with_skill	FAIL	20.2s	3667	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	20.2s	3667	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	20.2s	3667	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	20.2s	3667	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	20.2s	3667	5	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	1	FAIL	Identifies candidates from existing helpful behavior	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	2	FAIL	Recommends personal 1:1 ask	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	3	FAIL	Suggests meaningful benefits beyond early access	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	4	FAIL	Mentions tools/assets to enable advocates	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	5	FAIL	Includes measurement plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-4	with_skill	FAIL	18.6s	3554	6	FAIL	May cross-reference referrals skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 6 assertions and a model output (text). * Constra…	4	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.4s	3387	6	FAIL	Proposes top 3 priorities	Output provides 3 scenarios (A/B/C) with conditional actions, not a ranked 'top 3 priorities' list. No explicit prioritization is given	5	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	1	FAIL	Applies community-led support playbook	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	2	FAIL	Recommends searchable knowledge base from community Q&A	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	3	FAIL	Recommends recognizing peer helpers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	4	FAIL	Mentions closing the loop with product	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	5	FAIL	Warns about unanswered questions threshold	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	3052	6	FAIL	Notes peer support must feel valued, not used	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	8

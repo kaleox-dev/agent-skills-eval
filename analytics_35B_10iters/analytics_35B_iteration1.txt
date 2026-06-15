@@ -1,0 +1,95 @@
+
+[1m▶ analytics[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up analytics tracking for our B2B SaaS product. We use GA4 and GTM. We need to track signups, feature usage, and upgrade events.
+    [90moutput:[0m  I'll help you set up analytics tracking for your B2B SaaS product. Let me start by asking some key questions to ensure we track the right things for your specific needs. **Before we dive in, I need t…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 'track for decisions' principle
+         [90mevidence:[0m Model output asks: 'What decisions will this data inform?' but does not apply or define the principle in the output.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Uses object_action naming convention
+         [90mevidence:[0m No event definitions or naming conventions are present in the output.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Defines essential SaaS events (signup, feature usage, upgrade)
+         [90mevidence:[0m Model output asks about signup, onboarding, and upgrade flows but does not define specific events.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides GA4 implementation details
+         [90mevidence:[0m Model output asks if GA4 is configured but provides no implementation details.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes GTM data layer examples
+         [90mevidence:[0m No code snippets or data layer examples are present.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Output follows tracking plan format
+         [90mevidence:[0m The output consists of clarifying questions and a promise to provide a plan later, not a tracking plan format.
+    3.5s · 20033 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We're launching an e-commerce store and need to set up tracking from scratch. What events do we absolutely need?
+    [90moutput:[0m  I'll help you set up essential e-commerce tracking. Let me ask a few questions to tailor this to your specific setup: 1. **What tools are you using?** (GA4, Mixpanel, Segment, or multiple?) 2. **What…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines full e-commerce event taxonomy
+         [90mevidence:[0m Provides only a 'Minimum Event Set' and explicitly omits many standard taxonomy events (e.g., `view_cart`, `begin_checkout`, `add_shipping_info`, `add_payment_info`, `remove_from_cart`, `refund`, etc…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Follows object_action naming convention
+         [90mevidence:[0m Uses descriptive phrases instead of `object_action` convention. Examples include `product_viewed` (should be `product_view` or similar), `checkout_started` (should be `checkout_start`), `purchase_com…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Organizes by priority (must-have vs nice-to-have)
+         [90mevidence:[0m The output organizes events by funnel stage (Browsing, Cart, Checkout, Purchase) but does not explicitly categorize them into a 'must-have' vs 'nice-to-have' hierarchy in a structured list, although …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides tracking plan format output
+         [90mevidence:[0m Provides a markdown table and code snippets, but lacks a formal tracking plan structure (e.g., unique event names, data types, required vs optional flags, consistent property schemas defined as a sch…
+    8.7s · 20573 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    What UTM parameters should we use? We run ads on Google, Meta, and LinkedIn, plus send a weekly newsletter and post on LinkedIn organically.
+    [90moutput:[0m  For ads and organic/social, here's a clean, consistent UTM pattern you can roll out across Google, Meta, LinkedIn ads, your newsletter, and organic LinkedIn posts. Standard parameters (lowercase, hyp…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about common UTM mistakes
+         [90mevidence:[0m The output advises omitting utm_id/utm_campaignid but does not warn about common pitfalls like case sensitivity issues in analytics, double slashes, or missing parameters, which are typical 'common m…
+    11.2s · 20833 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    our tracking seems broken — we're seeing duplicate events and our conversion numbers in GA4 don't match what our database shows. help?
+    [90moutput:[0m  This is a common but fixable issue. Duplicate events and conversion discrepancies usually stem from one of three root causes. Let me help you diagnose and fix this systematically. ## First, I need so…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The output begins with 'This is a common but fixable issue' and immediately asks for context. It does not demonstrate that the *trigger* for this response was a casual phrasing (e.g., the user's inpu…
+    13.0s · 21011 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    Help me set up tracking for our A/B test. We want to measure which version of our pricing page converts better.
+    [90moutput:[0m  I'd be happy to help you set up tracking for your A/B test! However, I notice that A/B test measurement is covered by the **ab-testing** skill, which has specific guidelines for experiment tracking. …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    4.6s · 20184 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="analytics"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics,…
+    [90muser:[0m    We need to make sure our tracking is GDPR compliant. We have European users and we're using GA4, Hotjar, and Facebook Pixel.
+    [90moutput:[0m  I'll help you set up GDPR-compliant analytics tracking. Before diving into specifics, I need to understand your current setup to provide tailored guidance. **Quick questions:** 1. What's your current…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses conditional loading for each tool
+         [90mevidence:[0m The response states 'No analytics tools fire until user consents' generally and mentions configuring a CMP to block tools, but it does not provide specific implementation details or code for the cond…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides consent hierarchy
+         [90mevidence:[0m The response lists implementation priorities (Critical, High, Medium, Low) for tasks, but does not define a consent hierarchy (e.g., strict necessary > functional > marketing > analytics) or how user…
+    8.9s · 20571 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 62.3%[0m  [90m· 8.33s avg · 20534 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-441/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 15,
+  "skills": [
+    {
+      "skill": "analytics",
+      "slug": "analytics",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5945945945945946,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-441/benchmark.json"
+    }
+  ],
+  "iteration": 441,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-441",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-441/report/index.html"
+}

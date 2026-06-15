@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	1	FAIL	Checks for product-marketing.md	No file reference or content from product-marketing.md present in output	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	2	FAIL	Applies three pillars framework (Structure, Authority, Presence)	Framework terms not explicitly used; only mentions 'domain authority' and 'content structure' without three-pillar structure	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	3	FAIL	Runs AI Visibility Audit across platforms	No audit execution shown; only asks user for visibility status	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	4	FAIL	Checks content extractability	General mention of extractable content but no actual check performed on user's content	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	5	FAIL	References Princeton GEO research findings	No citation of Princeton GEO research; only general statistics provided	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	6	FAIL	Checks AI bot access in robots.txt	No mention of robots.txt or AI bot access checks in output	1	3
+ab-testing	eval-1	with_skill	FAIL	10.4s	22208	7	FAIL	Provides prioritized action plan	Action plan deferred pending user input; not delivered in current output	1	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	22580	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	5	FAIL	References Princeton GEO research	No mention of Princeton GEO research in model output	3	3
+ab-testing	eval-3	with_skill	FAIL	17.5s	22753	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Response is structured advice without any indication of phrasing trigger.	4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	6	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	16.8s	22706	7	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	1	FAIL	Runs full AI Visibility Audit	Model states: 'Before I can provide a meaningful audit, I need to gather context about their website' - no audit performed	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	2	FAIL	Checks multiple AI platforms	Model only asks 'Have you manually checked ChatGPT, Perplexity, or Google AI Overviews' - does not perform checks	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	3	FAIL	Evaluates all three pillars (Structure, Authority, Presence)	No pillar evaluation performed; output contains only questions	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	4	FAIL	Checks content extractability	No content extractability check performed in output	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	5	FAIL	Checks AI bot access	Model asks 'Can you share your website URL?' and 'Do you have access to check your robots.txt file?' - does not check	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	6	FAIL	Provides findings organized by pillar	No findings provided; output contains only context questions	5	3
+ab-testing	eval-5	with_skill	FAIL	7.3s	21960	7	FAIL	Provides prioritized action plan	Model states 'Once I have this information, I can provide... A prioritized action plan' - action plan not delivered	5	3
+ab-testing	eval-6	with_skill	FAIL	12.6s	22390	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.6s	22390	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.6s	22390	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	12.6s	22390	4	PASS			6	3

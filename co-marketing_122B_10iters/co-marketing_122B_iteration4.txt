@@ -1,0 +1,93 @@
+
+[1m▶ co-marketing[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Draft a cold outreach email to a potential co-marketing partner. They're a content management platform and we make a marketing analytics tool. Both serve B2B marketing teams.
+    [90moutput:[0m  The user wants me to draft a cold outreach email for a co-marketing partnership. They've provided some context: - Their company: Marketing analytics tool - Potential partner: Content management platf…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    9.3s · 3221 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We've identified 5 potential partners but only have time for one campaign this quarter. How should we pick?
+    [90moutput:[0m  The user is asking for help prioritizing which co-marketing partner to focus on when they have 5 potential partners but can only do one campaign this quarter. This is a partner selection/prioritizati…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes all 6 scoring dimensions
+         [90mevidence:[0m Only 5 dimensions shown: Audience overlap, Audience size, Reciprocity potential, Ease of execution, Brand alignment. No 6th dimension present.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Weights by goal
+         [90mevidence:[0m Static weights provided (25%, 20%, 20%, 20%, 15%) but not adjusted by user's goal. Model asks about goal but doesn't apply weight changes.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends starting with low-effort format
+         [90mevidence:[0m No recommendation for low-effort format. Asks 'What campaign type are you leaning toward?' but does not advise starting with low-effort.
+    10.2s · 3273 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We're partnering with a competitor — wait, not a competitor, a complementary CRM company. Help us brainstorm 5 campaign ideas we could run together.
+    [90moutput:[0m  The user wants to brainstorm co-marketing campaign ideas with a complementary CRM company. This is a classic co-marketing scenario where two non-competing but audience-overlapping companies collabora…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses brainstorming prompts
+         [90mevidence:[0m Output asks clarifying questions ('What does your company do?', 'Do you have an integration?') but does not use brainstorming prompts to guide idea generation
+    13.0s · 3521 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our partnership webinar with another SaaS company got 200 signups. How do we split the leads?
+    [90moutput:[0m  The user is asking about how to split leads from a co-marketing webinar with another SaaS company. This is a co-marketing partnership question, specifically about lead handling and agreement structur…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    12.3s · 3434 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our customer success team wants us to launch a referral program. Can you help us design one?
+    [90moutput:[0m  The user is asking about launching a referral program. Looking at the skill description I have available, this is specifically about **co-marketing** - finding partners, planning joint campaigns, bra…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this is customer referral, not co-marketing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defers to referrals skill
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Distinguishes co-marketing from referral programs
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full co-marketing strategy
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: * Assertions (4 item…
+    5.7s · 2916 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We make a project management tool for design agencies. Who should we look for as co-marketing partners?
+    [90moutput:[0m  The user is asking for co-marketing partner recommendations for their project management tool designed for design agencies. This is a perfect use case for the co-marketing skill. Let me think through…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies same persona / different problem characteristic
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Suggests specific partner categories in workflow
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions Crossbeam or account overlap data
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Lists multiple sources to find partners
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Applies scoring criteria
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    18.1s · 3929 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 53.3%[0m  [90m· 11.44s avg · 3382 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-514/benchmark.json[0m
+{
+  "passed": 17,
+  "failed": 14,
+  "skills": [
+    {
+      "skill": "co-marketing",
+      "slug": "co-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5483870967741935,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-514/benchmark.json"
+    }
+  ],
+  "iteration": 514,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-514",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-514/report/index.html"
+}

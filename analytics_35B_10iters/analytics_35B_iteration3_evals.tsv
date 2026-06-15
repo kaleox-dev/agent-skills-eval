@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' No content regarding product-marketing.md is present in the text.	1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.1s	20969	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.4s	20801	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	1	FAIL	Triggers on casual phrasing	The prompt provided specific technical details (GA4 vs database discrepancy, duplicate tags) rather than casual phrasing. The model's response is a structured technical diagnosis, indicating it trigg…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	9.0s	20660	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	2	FAIL	Defines full e-commerce event taxonomy	Missing standard GA4 e-commerce events such as `view_search_results`, `select_item`, `add_shipping_info`, `add_payment_info`, `refund`, `begin_refund`. The list is incomplete relative to the 'full' t…	4	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	5	FAIL	Organizes by priority (must-have vs nice-to-have)	The output provides a section for 'Absolute Essentials' but does not explicitly categorize events into 'must-have' vs 'nice-to-have' or similar distinct priority tiers for the remaining events. It gr…	4	3
+ab-testing	eval-4	with_skill	FAIL	5.5s	20278	6	FAIL	Provides tracking plan format output	The output lists events and parameters but does not provide a structured tracking plan format (e.g., CSV, table, or formal document) and explicitly states 'Once I know your stack, I can... Set up you…	4	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	6	FAIL	Provides consent hierarchy	The model lists storage types (`analytics_storage`, `ad_storage`, etc.) but does not define a hierarchy or priority order (e.g., which consent type overrides another, or a structured dependency hiera…	5	3
+ab-testing	eval-5	with_skill	FAIL	9.2s	20713	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.1s	20612	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.1s	20612	2	FAIL	References or defers to ab-testing skill	Model does not mention 'ab-testing skill', 'skill', or any specific internal agent capability name. It proceeds to give general implementation advice.	6	3
+ab-testing	eval-6	with_skill	FAIL	8.1s	20612	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.1s	20612	4	PASS			6	3

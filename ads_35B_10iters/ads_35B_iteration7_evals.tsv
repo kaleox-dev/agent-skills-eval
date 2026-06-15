@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	1	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	24.6s	30246	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	1	FAIL	Evaluates metrics in context	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	2	FAIL	Compares CPL against LTV considerations	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	3	FAIL	Applies campaign optimization framework	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	4	FAIL	Recommends specific optimization levers	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	5	FAIL	Asks about downstream conversion rates	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-2	with_skill	FAIL	11.0s	28850	6	FAIL	Provides industry context for benchmarking	judge returned unparseable response: { "assertion_results": [ { "text": "Evaluates metrics in context", "passed": true, "evidence": "The model interprets the $12 CPC and $180 CPA by placing them in a…	2	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	1	FAIL	Triggers on casual phrasing	The output addresses the user directly but does not explicitly react to or acknowledge any 'casual phrasing' from the input. The input prompt is not provided in the context, so there is no evidence o…	3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	28863	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	1	FAIL	Applies platform selection guide for TikTok	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	2	FAIL	Evaluates fit for accounting + small business audience	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	3	FAIL	Provides honest assessment of likely weaker fit	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	5	FAIL	Suggests small test budget if proceeding	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	28708	6	FAIL	Compares to their existing Google/Meta performance	judge did not provide concrete evidence	4	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	19.2s	29811	7	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	3.4s	28080	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	3.4s	28080	2	FAIL	References or defers to ad-creative skill	The model outputs text directly and mentions a potential reference to a file `.agents/product-marketing.md`, but it does not explicitly name, load, or defer to a specific 'ad-creative' skill. It acts…	6	7
+ab-testing	eval-6	with_skill	FAIL	3.4s	28080	3	PASS			6	7

@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	1	FAIL	Checks for product-marketing.md	Model states: 'However, I don't have access to file system information' - no evidence of checking product-marketing.md specifically	1	10
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	5	FAIL	Mentions Circle or other alternatives	No mention of Circle or any alternatives beyond Discord and Slack in output	1	10
+ab-testing	eval-1	with_skill	FAIL	9.6s	2798	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	2	FAIL	Applies 'launching from zero' playbook	No explicit reference to 'launching from zero' playbook by name in output	2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	3	FAIL	Recommends DMs to new members	Model recommends 'DM Your Top 20 Members 1:1' - targets engaged members, not specifically new members	2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	16.9s	3439	7	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	22.2s	3830	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	22.2s	3830	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	22.2s	3830	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	22.2s	3830	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	22.2s	3830	5	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	21.3s	3786	6	FAIL	May cross-reference referrals skill	No explicit cross-reference to a referrals skill; mentions 'Referral signups' in tracking and asks 'Do you have referral tracking in place?' but does not reference a referrals skill	4	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	17.3s	3349	6	FAIL	Proposes top 3 priorities	No explicit 'top 3 priorities' section found. 'Immediate Next Steps' has 4 items, not 3	5	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	1	FAIL	Applies community-led support playbook	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	2	FAIL	Recommends searchable knowledge base from community Q&A	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	3	FAIL	Recommends recognizing peer helpers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	4	FAIL	Mentions closing the loop with product	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	5	FAIL	Warns about unanswered questions threshold	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10
+ab-testing	eval-6	with_skill	FAIL	13.9s	3253	6	FAIL	Notes peer support must feel valued, not used	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	10

@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	1	FAIL	Checks for product-marketing.md	Output contains markdown text but no file reference or content resembling a 'product-marketing.md' file. Output ends with 'No output files were captured'.	1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	4	FAIL	Respects Meta character limits (125/40/30)	Headline 'Focus on Strategy, Not Drafting' is 30 characters (OK). Headline 'Draft Blogs in 90 Minutes' is 22 characters (OK). However, Model claims 'Front-Loaded Hook: The first 125 characters of Pri…	1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	5	FAIL	Generates multiple variations per angle	For each angle (Creative Set), the model provides only ONE Primary Text, ONE Headline, and ONE Description. It provides 'Alt Image' options but not copy variations.	1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.8s	29169	8	FAIL	Recommends which angles to test first	The model lists 'Best for: Cold Traffic', 'Best for: Warm Traffic', etc., but does not explicitly recommend a testing order or priority (e.g., 'Start with Set A and B').	1	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	5	FAIL	Notes pinning should be used sparingly per skill guidance	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	6	FAIL	Suggests ad extensions	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	28935	7	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.9s	29636	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	1	FAIL	Triggers on casual phrasing	No evidence found. The output uses formal, professional phrasing such as 'I'll create high-performing LinkedIn ad copy tailored to CISOs' and 'I'm assuming you want Single Image Ads'. It does not use…	4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	30234	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	1	FAIL	Activates batch generation workflow	Model output asks for more context ('Please provide the following') instead of generating ads.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	2	FAIL	Generates for all three platforms	No ad copy was generated; only a list of required inputs was provided.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	3	FAIL	Respects each platform's character limits	No character counts or copy were provided to evaluate.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	4	FAIL	Identifies angles that work across platforms	No angles were identified or discussed.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	5	FAIL	Notes TikTok needs video concepts	While the model mentions 'script concepts for video ads' in the future tense, it did not actually provide any notes or concepts in this turn.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	6	FAIL	Organizes output by platform	No output was organized by platform; no ads were generated.	5	10
+ab-testing	eval-5	with_skill	FAIL	5.6s	28227	7	FAIL	Generates multiple variations per angle per platform	No variations were generated.	5	10
+ab-testing	eval-6	with_skill	FAIL	7.7s	28431	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.7s	28431	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.7s	28431	3	PASS			6	10

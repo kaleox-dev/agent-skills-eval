@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.4s	3028	6	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	6	FAIL	Mentions the 1% / 90% power user dynamic	The model mentions '90%+ of your members are lurkers' but does not mention the '1% / 90% power user dynamic' or reference the 1% of active users driving the majority of content. It only mentions '2-3…	2	4
+ab-testing	eval-2	with_skill	FAIL	12.7s	3365	7	FAIL	Mentions warning sign of company-dominated posts	The model warns against 'Missing "Identity" Hook' (feeling like a 'corporate support ticket queue') and advises to 'Stop posting updates from the brand' in the seeding section. However, it does not e…	2	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	13.3s	3398	5	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.3s	3337	6	FAIL	May cross-reference referrals skill	The output focuses entirely on community ambassadorships, recognition, and engagement. It makes no mention of referral programs, referral codes, or cross-referencing a specific 'referrals skill'.	4	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	1	FAIL	Uses Health Audit Report format	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	2	FAIL	References specific health metrics with benchmarks	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	3	FAIL	Lists warning signs	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	4	FAIL	Recommends concrete audit steps	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	5	FAIL	Considers that some communities can't be saved	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	3410	6	FAIL	Proposes top 3 priorities	judge returned unparseable response: { "assertion_results": [ { "text": "Uses Health Audit Report format", "passed": true, "evidence": "The output is structured as a diagnostic framework with distinc…	5	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	4	FAIL	Mentions closing the loop with product	The output focuses on deflecting tickets, community engagement, and metrics like 'Deflection Rate' and 'Response Time'. It does not mention sharing community insights or data with the product team to…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	5	FAIL	Warns about unanswered questions threshold	The model recommends aiming for a '<15 minute response time' in the community, but does not explicitly warn about a specific threshold of unanswered questions or the negative consequences of a backlo…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.8s	3351	6	PASS			6	4

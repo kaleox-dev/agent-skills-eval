@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to their product marketing context file' - no actual file check performed	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	4	FAIL	Mentions Crossbeam or account overlap data	No mention of 'Crossbeam' or 'account overlap data' in output	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	5	FAIL	Lists multiple sources to find partners	Output lists partner categories but not specific sources to find partners (e.g., integration ecosystems, directories, communities)	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	3608	6	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.3s	3531	5	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	1	FAIL	Includes subject with both company names	Subject line uses placeholders '[Your Company] + [Their Company]' rather than actual company names	3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.7s	3161	6	FAIL	Mentions what to prepare for the call	Email body contains no mention of call preparation; 'Next Steps to Prepare' section is outside the email draft	3	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	3	FAIL	Weights by goal	No weighting mechanism shown; asks about goals but does not apply goal-based scoring weights	4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.0s	3252	5	FAIL	Recommends starting with low-effort format	No explicit recommendation for low-effort format; only suggests 'webinar, content, integration launch' without prioritizing low-effort first	4	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	2	FAIL	Recommends documenting in agreement	No explicit recommendation to document lead split in written agreement; only asks 'Do you have a written agreement on lead splitting?' as a question	5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.3s	3373	5	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	6.2s	2956	4	PASS			6	3

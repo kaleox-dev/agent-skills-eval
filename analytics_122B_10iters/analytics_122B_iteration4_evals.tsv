@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	1	FAIL	Checks for product-marketing.md	Model mentions 'First check if there's a product-marketing context file to read' in thinking but no evidence of actual file check in output	1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	2	FAIL	Applies 'track for decisions' principle	Asks 'What decisions will this data inform?' but tracking plan does not tie events to specific business decisions	1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	5	FAIL	Provides GA4 implementation details	Only mentions 'GA4 - Config - Base Configuration' in container structure; no GA4-specific event parameters or measurement setup shown	1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	6	FAIL	Includes GTM data layer examples	Lists 'DL - user_id', 'DL - feature_name' as variables but provides no actual data layer push code examples	1	4
+ab-testing	eval-1	with_skill	FAIL	13.6s	20840	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	1	FAIL	Applies UTM parameter strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	2	FAIL	Defines source, medium, and campaign conventions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	3	FAIL	Provides specific UTM examples for each channel	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	4	FAIL	Uses consistent naming conventions (lowercase)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	5	FAIL	Warns about common UTM mistakes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	19.2s	21287	6	FAIL	Recommends tracking documentation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	2	FAIL	Applies debugging and validation framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	3	FAIL	Checks for duplicate tag firing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	4	FAIL	Provides specific debugging tools (GA4 DebugView, GTM Preview)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	5	FAIL	Addresses GA4 vs database discrepancy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	6	FAIL	Lists common causes of data mismatches	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-3	with_skill	FAIL	11.3s	20636	7	FAIL	Provides systematic troubleshooting steps	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	1	FAIL	References essential events for e-commerce site type	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	2	FAIL	Defines full e-commerce event taxonomy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	3	FAIL	Includes enhanced e-commerce parameters	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	4	FAIL	Follows object_action naming convention	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	5	FAIL	Organizes by priority (must-have vs nice-to-have)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	20821	6	FAIL	Provides tracking plan format output	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	32.8s	22457	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	20569	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	20569	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	20569	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	20569	4	PASS			6	4

@@ -1,0 +1,79 @@
+
+[1m▶ community-marketing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We're a B2B SaaS that wants to start a community. Should we use Discord or Slack?
+    [90moutput:[0m  The short answer: **For B2B SaaS, Slack is usually the right choice, but it depends on your user persona and the nature of your product.** Discord and Slack serve fundamentally different psychologica…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model output contains no reference to 'product-marketing.md'. The output is a direct conversational response recommending Slack vs Discord.
+    10.9s · 3202 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Design an ambassador program for our community. We have about 5,000 members and a few that always help others. Want to give them more recognition.
+    [90moutput:[0m  Based on your context (5,000 members, existing informal helpers, focus on recognition), here is a tailored **Ambassador Program Brief**. Since you already have "a few that always help others," this p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions tools/assets to enable advocates
+         [90mevidence:[0m The output mentions badges, roles, and private channels for communication, but does not provide specific tools, assets, or resources (such as content templates, media kits, or specific software integ…
+    12.7s · 3365 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Help me write community guidelines for our Discord. We're building a community for indie game developers.
+    [90moutput:[0m  Since you are building for **indie game developers**, your guidelines need to balance two competing needs: **strict protection of intellectual property** (creators are paranoid about leaks/plagiarism…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    12.1s · 3315 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We just launched our community 3 weeks ago. We have 40 members but only 2-3 people post regularly. Everyone else just lurks. What do we do?
+    [90moutput:[0m  This is a classic "Empty Room" problem. At 3 weeks and 40 members, you are in the **Pre-Launch to Early (0–100)** stage. The lack of engagement is normal if the culture and core loop haven't been exp…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions the 1% / 90% power user dynamic
+         [90mevidence:[0m The model mentions '2-3 posters' and 'superusers', but never uses the specific terminology '1%', '90%', or references the specific 1/90/90 power user rule.
+    12.0s · 3323 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We use our community mainly for support. How do we reduce ticket volume without making customers feel ignored?
+    [90moutput:[0m  This is a classic "Community-Led Support" challenge. The key to reducing ticket volume without making customers feel ignored is **shifting from "answering questions" to "building systems that answer …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions closing the loop with product
+         [90mevidence:[0m Section 4 mentions 'Close the Loop with Support Team' by feeding insights to community, but there is no mention of closing the loop with the Product team. The assertion specifically requires 'product…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about unanswered questions threshold
+         [90mevidence:[0m The model discusses 'Time to First Answer' as a metric but does not warn about a specific threshold for unanswered questions or the risks of unanswered questions (e.g., user churn) based on a thresho…
+    9.8s · 3150 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Our community feels dead. Members joined 6 months ago but most haven't posted in months. How do I tell if it's salvageable?
+    [90moutput:[0m  A community that is "quiet" can be salvageable, but it depends entirely on **why** it is quiet. Before you start spending weeks trying to "fix" engagement, run this **Salvageability Audit**. Answer t…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Uses Health Audit Report format
+         [90mevidence:[0m The output is structured as a strategic guide/advice article ('Salvageability Audit') rather than a formal 'Health Audit Report'. It lacks the standard components of a health report such as an execut…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Proposes top 3 priorities
+         [90mevidence:[0m The 'Immediate Action Plan' outlines a 30-day sprint with multiple actions per week (Poll, DMs, Pinning, Rituals, Spotlights, Killing dead channels). It does not explicitly identify or rank a 'top 3 …
+    14.0s · 3601 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 81.0%[0m  [90m· 11.92s avg · 3326 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-545/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 7,
+  "skills": [
+    {
+      "skill": "community-marketing",
+      "slug": "community-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8055555555555556,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-545/benchmark.json"
+    }
+  ],
+  "iteration": 545,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-545",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-545/report/index.html"
+}

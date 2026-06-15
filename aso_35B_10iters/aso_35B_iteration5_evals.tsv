@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.'	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	2	FAIL	Identifies as Apple App Store URL	Model output does not identify a URL; it asks clarifying questions ('Is this your app or a competitor's?'). No concrete evidence of identification exists.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	3	FAIL	Classifies brand maturity tier	Model output explicitly asks: 'Brand maturity: Is "Example" a well-known brand...?' It does not provide a classification.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	4	FAIL	Scores all 6 dimensions with weights	Model output states: 'Once I have that, I'll pull the live metadata and deliver a full report with scores...' No scores were provided in this response.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	5	FAIL	Provides scorecard with grade	Model output indicates a report will be delivered later ('Once I have that...'). No scorecard or grade is present.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	6	FAIL	Lists top 3 quick wins	Model output lists questions for context (1-6), not quick wins. It mentions 'quick wins' as part of a future deliverable.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	7	FAIL	Recommendations include character counts	No recommendations were provided in the output. Only context-seeking questions were asked.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.1s	30165	8	FAIL	Recommendations are specific (X to Y format)	No recommendations were provided, so no 'X to Y' format is present.	1	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	1	FAIL	Identifies as Google Play app	Output only requests the Google Play Store URL; it does not confirm or identify a specific app as a Google Play app.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	2	FAIL	Classifies as Challenger tier	Output contains no tier classification.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	3	FAIL	Flags rating below 4.0	Output contains no rating information or flags.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	4	FAIL	Flags stale update (>3 months)	Output contains no update history or stale update flags.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	5	FAIL	Notes Google Play indexes full description	Output contains no notes about indexing or description content.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	6	FAIL	Mentions feature graphic requirement	Output does not mention feature graphics.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	7	FAIL	Recommends keyword strategy in description	Output does not recommend any keyword strategies.	2	5
+ab-testing	eval-2	with_skill	FAIL	3.6s	30033	8	FAIL	Prioritizes rating improvement	Output does not prioritize any actions, specifically rating improvement.	2	5
+ab-testing	eval-3	with_skill	FAIL	10.3s	30694	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	10.3s	30694	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	10.3s	30694	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	10.3s	30694	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	10.3s	30694	5	FAIL	Cites the 'mistake vs deliberate choice' principle	The output does not contain the phrase 'mistake vs deliberate choice' or explicitly articulate this specific principle. It discusses 'correct choice' and 'deliberate' strategy in general terms but fa…	3	5
+ab-testing	eval-4	with_skill	FAIL	4.2s	30096	1	FAIL	Scores all 3 apps with same framework	judge did not provide concrete evidence	4	5
+ab-testing	eval-4	with_skill	FAIL	4.2s	30096	2	FAIL	Builds comparison table	The model output states 'I'll build a comparison table' as a future action. No table is present in the output.	4	5
+ab-testing	eval-4	with_skill	FAIL	4.2s	30096	3	FAIL	Identifies where user's app is weaker	The output contains only planning steps ('Step 1', 'Step 2') and a request to fetch listings. No analysis of weaknesses is provided.	4	5
+ab-testing	eval-4	with_skill	FAIL	4.2s	30096	4	FAIL	Identifies keyword gaps vs competitors	The output does not contain any keyword analysis or identification of gaps. It stops at the planning phase.	4	5
+ab-testing	eval-4	with_skill	FAIL	4.2s	30096	5	FAIL	Produces competitor-informed action list	The output does not produce any action list. It only describes the process the agent intends to follow.	4	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	1	FAIL	Notes Visual Assets is 25% of score	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	3	FAIL	Mentions screenshot caption indexing (Apple, 2025)	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	6	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	6.1s	30455	7	FAIL	Flags <5 screenshots as always-flag issue	judge did not provide concrete evidence	5	5
+ab-testing	eval-6	with_skill	FAIL	1.9s	30037	1	FAIL	Identifies Custom Product Pages as iOS-specific	The model asks: 'Let's determine if Custom Product Pages (CPPs) will provide a strong ROI for your iOS paid search campaigns.' It limits the context to iOS in the opening statement but fails to expli…	6	5
+ab-testing	eval-6	with_skill	FAIL	1.9s	30037	2	FAIL	Cites +5.9% conversion lift benchmark	The output contains no statistics or benchmarks. It only asks four questions.	6	5
+ab-testing	eval-6	with_skill	FAIL	1.9s	30037	3	FAIL	Explains CPP can match traffic source intent	The output contains no explanation of how CPPs work or their benefits regarding traffic intent.	6	5
+ab-testing	eval-6	with_skill	FAIL	1.9s	30037	4	FAIL	Cross-references ab-testing or ads skill	The output does not reference any other skills, including A/B testing or ads.	6	5
+ab-testing	eval-6	with_skill	FAIL	1.9s	30037	5	FAIL	Notes Google Play equivalents	The output mentions only 'iOS paid search campaigns' and does not mention Google Play or Android equivalents.	6	5

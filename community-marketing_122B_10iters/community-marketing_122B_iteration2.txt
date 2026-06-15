@@ -1,0 +1,97 @@
+
+[1m▶ community-marketing[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We're a B2B SaaS that wants to start a community. Should we use Discord or Slack?
+    [90moutput:[0m  The user is asking about platform selection for a B2B SaaS community - specifically Discord vs Slack. This is a common question in community marketing. However, I notice from the skill instructions t…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    10.4s · 2864 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Help me write community guidelines for our Discord. We're building a community for indie game developers.
+    [90moutput:[0m  The user is asking for help writing community guidelines for a Discord server focused on indie game developers. This is a clear community marketing task. Before I dive in, I should check if there's a…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    19.4s · 3605 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Our community feels dead. Members joined 6 months ago but most haven't posted in months. How do I tell if it's salvageable?
+    [90moutput:[0m  The user is asking about a community that feels "dead" - members joined 6 months ago but most haven't posted. They want to know how to tell if it's salvageable. This is a classic community health aud…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    15.6s · 3345 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    Design an ambassador program for our community. We have about 5,000 members and a few that always help others. Want to give them more recognition.
+    [90moutput:[0m  The user wants to design an ambassador program for their community. They have 5,000 members and have identified some members who already help others consistently. They want to give these members more…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies candidates from existing helpful behavior
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends personal 1:1 ask
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Suggests meaningful benefits beyond early access
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions tools/assets to enable advocates
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes measurement plan
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+      [31m#6[0m [31mFAIL[0m [90m—[0m May cross-reference referrals skill
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions and a model output (text). * Constraint…
+    16.3s · 3381 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We use our community mainly for support. How do we reduce ticket volume without making customers feel ignored?
+    [90moutput:[0m  The user is asking about using their community for support and reducing ticket volume while maintaining customer satisfaction. This is a classic community-led support deflection strategy question. Le…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends searchable knowledge base from community Q&A
+         [90mevidence:[0m No explicit recommendation to create searchable knowledge base from community Q&A. Output says 'surface the community thread *above* the knowledge base article' but does not recommend building KB fro…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns about unanswered questions threshold
+         [90mevidence:[0m No warning about unanswered questions threshold. Only mentions 'Community answer rate (within 24h) | 80%+' as a target metric, not a warning.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes peer support must feel valued, not used
+         [90mevidence:[0m No explicit statement that peer support must feel valued, not used. Output says 'reframing support as a community experience, not a deflection tactic' but does not use the 'valued, not used' language…
+    15.1s · 3271 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="community-marketing"> <description>Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord…
+    [90muser:[0m    We just launched our community 3 weeks ago. We have 40 members but only 2-3 people post regularly. Everyone else just lurks. What do we do?
+    [90moutput:[0m  The user has a community that's 3 weeks old with 40 members, but only 2-3 people are posting regularly. This is a classic "lurker problem" that's very common in early-stage communities. I need to app…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Diagnoses as launch-stage / new member activation problem
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 'launching from zero' playbook
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends DMs to new members
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends new member journey design
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends seeding conversations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions the 1% / 90% power user dynamic
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions warning sign of company-dominated posts
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…
+    17.2s · 3444 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 58.3%[0m  [90m· 15.66s avg · 3318 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-532/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 16,
+  "skills": [
+    {
+      "skill": "community-marketing",
+      "slug": "community-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5555555555555556,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-532/benchmark.json"
+    }
+  ],
+  "iteration": 532,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-532",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-532/report/index.html"
+}

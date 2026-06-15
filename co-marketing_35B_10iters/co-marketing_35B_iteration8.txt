@@ -1,0 +1,81 @@
+
+[1m▶ co-marketing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Draft a cold outreach email to a potential co-marketing partner. They're a content management platform and we make a marketing analytics tool. Both serve B2B marketing teams.
+    [90moutput:[0m  Subject: Co-marketing idea: [Your Company] + [Their Company] Hi [Name], I’m [Your Name] from [Your Company]. We build marketing analytics software that helps B2B marketing teams measure ROI and attri…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Includes subject with both company names
+         [90mevidence:[0m Subject line is 'Co-marketing idea: [Your Company] + [Their Company]', which uses placeholders instead of actual company names.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions what to prepare for the call
+         [90mevidence:[0m The email asks for a call to 'see if this resonates' but does not specify any preparation materials or topics the recipient needs to review or prepare in advance.
+    2.6s · 2690 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We've identified 5 potential partners but only have time for one campaign this quarter. How should we pick?
+    [90moutput:[0m  To pick the right partner from your top 5 when you’re resource-constrained, you need to prioritize **low execution risk** and **high certainty of delivery**. When time is tight, you want a partner wh…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes all 6 scoring dimensions
+         [90mevidence:[0m The output lists only 5 dimensions in the matrix: 1. Asset Readiness, 2. Decision Speed, 3. Audience Overlap Quality, 4. Past Co-Marketing History, 5. Technical/Integration Effort. It does not list 6…
+    8.1s · 3269 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We're partnering with a competitor — wait, not a competitor, a complementary CRM company. Help us brainstorm 5 campaign ideas we could run together.
+    [90moutput:[0m  This is a classic "Adjacent in workflow" partnership opportunity. Since they are a CRM (Customer Relationship Management) tool, your customers likely use them to store data, while your product likely…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses brainstorming prompts
+         [90mevidence:[0m The output provides ideas and a selection guide but does not use 'brainstorming prompts' (e.g., 'How might we...', 'List 10 ways...'). It directly generates the final campaign concepts rather than pr…
+    10.4s · 3520 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our customer success team wants us to launch a referral program. Can you help us design one?
+    [90moutput:[0m  I'd be happy to help, but I need to clarify the specific type of program you're looking to build, as the approach differs significantly between the two main types: 1. **Customer-to-Customer Referral …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this is customer referral, not co-marketing
+         [90mevidence:[0m The model explicitly states it needs to clarify which type is intended and provides options for both, asking 'Could you clarify which direction you'd like to take?' rather than making a definitive re…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defers to referrals skill
+         [90mevidence:[0m The model does not defer to the referrals skill definitively. It presents a conditional statement: 'If you are building a Customer-to-Customer Referral Program: This skill (referrals) is the appropri…
+    4.5s · 2900 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We make a project management tool for design agencies. Who should we look for as co-marketing partners?
+    [90moutput:[0m  To identify the best co-marketing partners for a **project management tool for design agencies**, we need to look for companies that serve the same buyer persona (Creative Directors, Studio Owners, S…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions Crossbeam or account overlap data
+         [90mevidence:[0m Text mentions 'Audience Overlap' in a criteria table but does not mention 'Crossbeam' or specific 'account overlap data' methodologies.
+    16.0s · 4097 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our partnership webinar with another SaaS company got 200 signups. How do we split the leads?
+    [90moutput:[0m  Splitting leads from a joint webinar isn’t just about fairness; it’s about **lead quality, attribution, and future relationship health**. Since you have 200 signups, the method you choose will impact…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    11.4s · 3590 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 73.9%[0m  [90m· 8.83s avg · 3344 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-528/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "co-marketing",
+      "slug": "co-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7419354838709677,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-528/benchmark.json"
+    }
+  ],
+  "iteration": 528,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-528",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-528/report/index.html"
+}
