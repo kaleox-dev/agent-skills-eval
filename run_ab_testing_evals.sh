@@ -5,6 +5,7 @@
 set -e
 
 # Model configuration (override via environment or defaults)
+# For 35B: MODEL_DISPLAY="Qwen/Qwen3.6-35B-A3B-fp8" MODEL_URL="https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-FP8-no-think/v1"
 MODEL_NAME="${MODEL_NAME:-Qwen3.5-122B-A10B-NVFP4}"
 MODEL_URL="${MODEL_URL:-https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1}"
 MODEL_DISPLAY="${MODEL_DISPLAY:-RedHatAI/Qwen3.5-122B-A10B-NVFP4}"
@@ -16,8 +17,12 @@ export OPENAI_TEMPERATURE="0"
 # Number of iterations
 ITERATIONS="${1:-2}"
 
-# Output folder
-OUTPUT_FOLDER="${OUTPUT_FOLDER:-ab_testing_evals}"
+# Output folder (auto-generated based on model and skill)
+if [ -z "$OUTPUT_FOLDER" ]; then
+    # Clean model name for folder (remove slashes and special chars)
+    CLEAN_MODEL="${MODEL_DISPLAY//\//_}"
+    OUTPUT_FOLDER="ab_testing_${CLEAN_MODEL}"
+fi
 mkdir -p "$OUTPUT_FOLDER"
 
 echo "========================================="

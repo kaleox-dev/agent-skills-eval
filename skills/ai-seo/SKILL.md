@@ -921,3 +921,528 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md).
 - **competitors**: For building comparison pages that get cited
 - **programmatic-seo**: For building SEO pages at scale
 - **copywriting**: For writing content that's both human-readable and AI-extractable
+
+================================================================================
+REFERENCE MATERIALS
+================================================================================
+
+--- content-patterns.md ---
+
+# AEO and GEO Content Patterns
+
+Reusable content block patterns optimized for answer engines and AI citation.
+
+---
+
+## Contents
+- Answer Engine Optimization (AEO) Patterns (Definition Block, Step-by-Step Block, Comparison Table Block, Pros and Cons Block, FAQ Block, Listicle Block)
+- Generative Engine Optimization (GEO) Patterns (Statistic Citation Block, Expert Quote Block, Authoritative Claim Block, Self-Contained Answer Block, Evidence Sandwich Block)
+- Domain-Specific GEO Tactics (Technology Content, Health/Medical Content, Financial Content, Legal Content, Business/Marketing Content)
+- Voice Search Optimization (Question Formats for Voice, Voice-Optimized Answer Structure)
+
+## Answer Engine Optimization (AEO) Patterns
+
+These patterns help content appear in featured snippets, AI Overviews, voice search results, and answer boxes.
+
+### Definition Block
+
+Use for "What is [X]?" queries.
+
+```markdown
+## What is [Term]?
+
+[Term] is [concise 1-sentence definition]. [Expanded 1-2 sentence explanation with key characteristics]. [Brief context on why it matters or how it's used].
+```
+
+**Example:**
+```markdown
+## What is Answer Engine Optimization?
+
+Answer Engine Optimization (AEO) is the practice of structuring content so AI-powered systems can easily extract and present it as direct answers to user queries. Unlike traditional SEO that focuses on ranking in search results, AEO optimizes for featured snippets, AI Overviews, and voice assistant responses. This approach has become essential as over 60% of Google searches now end without a click.
+```
+
+### Step-by-Step Block
+
+Use for "How to [X]" queries. Optimal for list snippets.
+
+```markdown
+## How to [Action/Goal]
+
+[1-sentence overview of the process]
+
+1. **[Step Name]**: [Clear action description in 1-2 sentences]
+2. **[Step Name]**: [Clear action description in 1-2 sentences]
+3. **[Step Name]**: [Clear action description in 1-2 sentences]
+4. **[Step Name]**: [Clear action description in 1-2 sentences]
+5. **[Step Name]**: [Clear action description in 1-2 sentences]
+
+[Optional: Brief note on expected outcome or time estimate]
+```
+
+**Example:**
+```markdown
+## How to Optimize Content for Featured Snippets
+
+Earning featured snippets requires strategic formatting and direct answers to search queries.
+
+1. **Identify snippet opportunities**: Use tools like Semrush or Ahrefs to find keywords where competitors have snippets you could capture.
+2. **Match the snippet format**: Analyze whether the current snippet is a paragraph, list, or table, and format your content accordingly.
+3. **Answer the question directly**: Provide a clear, concise answer (40-60 words for paragraph snippets) immediately after the question heading.
+4. **Add supporting context**: Expand on your answer with examples, data, and expert insights in the following paragraphs.
+5. **Use proper heading structure**: Place your target question as an H2 or H3, with the answer immediately following.
+
+Most featured snippets appear within 2-4 weeks of publishing well-optimized content.
+```
+
+### Comparison Table Block
+
+Use for "[X] vs [Y]" queries. Optimal for table snippets.
+
+```markdown
+## [Option A] vs [Option B]: [Brief Descriptor]
+
+| Feature | [Option A] | [Option B] |
+|---------|------------|------------|
+| [Criteria 1] | [Value/Description] | [Value/Description] |
+| [Criteria 2] | [Value/Description] | [Value/Description] |
+| [Criteria 3] | [Value/Description] | [Value/Description] |
+| [Criteria 4] | [Value/Description] | [Value/Description] |
+| Best For | [Use case] | [Use case] |
+
+**Bottom line**: [1-2 sentence recommendation based on different needs]
+```
+
+### Pros and Cons Block
+
+Use for evaluation queries: "Is [X] worth it?", "Should I [X]?"
+
+```markdown
+## Advantages and Disadvantages of [Topic]
+
+[1-sentence overview of the evaluation context]
+
+### Pros
+
+- **[Benefit category]**: [Specific explanation]
+- **[Benefit category]**: [Specific explanation]
+- **[Benefit category]**: [Specific explanation]
+
+### Cons
+
+- **[Drawback category]**: [Specific explanation]
+- **[Drawback category]**: [Specific explanation]
+- **[Drawback category]**: [Specific explanation]
+
+**Verdict**: [1-2 sentence balanced conclusion with recommendation]
+```
+
+### FAQ Block
+
+Use for topic pages with multiple common questions. Essential for FAQ schema.
+
+```markdown
+## Frequently Asked Questions
+
+### [Question phrased exactly as users search]?
+
+[Direct answer in first sentence]. [Supporting context in 2-3 additional sentences].
+
+### [Question phrased exactly as users search]?
+
+[Direct answer in first sentence]. [Supporting context in 2-3 additional sentences].
+
+### [Question phrased exactly as users search]?
+
+[Direct answer in first sentence]. [Supporting context in 2-3 additional sentences].
+```
+
+**Tips for FAQ questions:**
+- Use natural question phrasing ("How do I..." not "How does one...")
+- Include question words: what, how, why, when, where, who, which
+- Match "People Also Ask" queries from search results
+- Keep answers between 50-100 words
+
+### Listicle Block
+
+Use for "Best [X]", "Top [X]", "[Number] ways to [X]" queries.
+
+```markdown
+## [Number] Best [Items] for [Goal/Purpose]
+
+[1-2 sentence intro establishing context and selection criteria]
+
+### 1. [Item Name]
+
+[Why it's included in 2-3 sentences with specific benefits]
+
+### 2. [Item Name]
+
+[Why it's included in 2-3 sentences with specific benefits]
+
+### 3. [Item Name]
+
+[Why it's included in 2-3 sentences with specific benefits]
+```
+
+---
+
+## Generative Engine Optimization (GEO) Patterns
+
+These patterns optimize content for citation by AI assistants like ChatGPT, Claude, Perplexity, and Gemini.
+
+### Statistic Citation Block
+
+Statistics increase AI citation rates by 15-30%. Always include sources.
+
+```markdown
+[Claim statement]. According to [Source/Organization], [specific statistic with number and timeframe]. [Context for why this matters].
+```
+
+**Example:**
+```markdown
+Mobile optimization is no longer optional for SEO success. According to Google's 2024 Core Web Vitals report, 70% of web traffic now comes from mobile devices, and pages failing mobile usability standards see 24% higher bounce rates. This makes mobile-first indexing a critical ranking factor.
+```
+
+### Expert Quote Block
+
+Named expert attribution adds credibility and increases citation likelihood.
+
+```markdown
+"[Direct quote from expert]," says [Expert Name], [Title/Role] at [Organization]. [1 sentence of context or interpretation].
+```
+
+**Example:**
+```markdown
+"The shift from keyword-driven search to intent-driven discovery represents the most significant change in SEO since mobile-first indexing," says Rand Fishkin, Co-founder of SparkToro. This perspective highlights why content strategies must evolve beyond traditional keyword optimization.
+```
+
+### Authoritative Claim Block
+
+Structure claims for easy AI extraction with clear attribution.
+
+```markdown
+[Topic] [verb: is/has/requires/involves] [clear, specific claim]. [Source] [confirms/reports/found] that [supporting evidence]. This [explains/means/suggests] [implication or action].
+```
+
+**Example:**
+```markdown
+E-E-A-T is the cornerstone of Google's content quality evaluation. Google's Search Quality Rater Guidelines confirm that trust is the most critical factor, stating that "untrustworthy pages have low E-E-A-T no matter how experienced, expert, or authoritative they may seem." This means content creators must prioritize transparency and accuracy above all other optimization tactics.
+```
+
+### Self-Contained Answer Block
+
+Create quotable, standalone statements that AI can extract directly.
+
+```markdown
+**[Topic/Question]**: [Complete, self-contained answer that makes sense without additional context. Include specific details, numbers, or examples in 2-3 sentences.]
+```
+
+**Example:**
+```markdown
+**Ideal blog post length for SEO**: The optimal length for SEO blog posts is 1,500-2,500 words for competitive topics. This range allows comprehensive topic coverage while maintaining reader engagement. HubSpot research shows long-form content earns 77% more backlinks than short articles, directly impacting search rankings.
+```
+
+### Evidence Sandwich Block
+
+Structure claims with evidence for maximum credibility.
+
+```markdown
+[Opening claim statement].
+
+Evidence supporting this includes:
+- [Data point 1 with source]
+- [Data point 2 with source]
+- [Data point 3 with source]
+
+[Concluding statement connecting evidence to actionable insight].
+```
+
+---
+
+## Domain-Specific GEO Tactics
+
+Different content domains benefit from different authority signals.
+
+### Technology Content
+- Emphasize technical precision and correct terminology
+- Include version numbers and dates for software/tools
+- Reference official documentation
+- Add code examples where relevant
+
+### Health/Medical Content
+- Cite peer-reviewed studies with publication details
+- Include expert credentials (MD, RN, etc.)
+- Note study limitations and context
+- Add "last reviewed" dates
+
+### Financial Content
+- Reference regulatory bodies (SEC, FTC, etc.)
+- Include specific numbers with timeframes
+- Note that information is educational, not advice
+- Cite recognized financial institutions
+
+### Legal Content
+- Cite specific laws, statutes, and regulations
+- Reference jurisdiction clearly
+- Include professional disclaimers
+- Note when professional consultation is advised
+
+### Business/Marketing Content
+- Include case studies with measurable results
+- Reference industry research and reports
+- Add percentage changes and timeframes
+- Quote recognized thought leaders
+
+---
+
+## Voice Search Optimization
+
+Voice queries are conversational and question-based. Optimize for these patterns:
+
+### Question Formats for Voice
+- "What is..."
+- "How do I..."
+- "Where can I find..."
+- "Why does..."
+- "When should I..."
+- "Who is..."
+
+### Voice-Optimized Answer Structure
+- Lead with direct answer (under 30 words ideal)
+- Use natural, conversational language
+- Avoid jargon unless targeting expert audience
+- Include local context where relevant
+- Structure for single spoken response
+
+
+--- content-types.md ---
+
+# AI SEO by Content Type
+
+Tactical guidance for optimizing specific content types for AI search citation. These tactics work for non-Google AI engines (ChatGPT, Claude, Perplexity, Copilot) and don't hurt Google AI Overviews / AI Mode.
+
+For the cross-cutting strategy, see [SKILL.md](../SKILL.md).
+
+---
+
+## SaaS Product Pages
+
+**Goal:** Get cited in "What is [category]?" and "Best [category]" queries.
+
+**Optimize:**
+- Clear product description in first paragraph (what it does, who it's for)
+- Feature comparison tables (you vs. category, not just competitors)
+- Specific metrics ("processes 10,000 transactions/sec" not "blazing fast")
+- Customer count or social proof with numbers
+- Pricing transparency (AI cites pages with visible pricing) — add a `/pricing.md` file so AI agents can parse your plans without rendering your page (see "Machine-Readable Files" in the main skill)
+- FAQ section addressing common buyer questions
+
+---
+
+## Blog Content
+
+**Goal:** Get cited as an authoritative source on topics in your space.
+
+**Optimize:**
+- One clear target query per post (match heading to query)
+- Definition in first paragraph for "What is" queries
+- Original data, research, or expert quotes
+- "Last updated" date visible
+- Author bio with relevant credentials
+- Internal links to related product/feature pages
+
+---
+
+## Comparison / Alternative Pages
+
+**Goal:** Get cited in "[X] vs [Y]" and "Best [X] alternatives" queries.
+
+**Optimize:**
+- Structured comparison tables (not just prose)
+- Fair and balanced (AI penalizes obviously biased comparisons)
+- Specific criteria with ratings or scores
+- Updated pricing and feature data
+- Cite the `competitors` skill for building these pages
+
+---
+
+## Documentation / Help Content
+
+**Goal:** Get cited in "How to [X] with [your product]" queries.
+
+**Optimize:**
+- Step-by-step format with numbered lists
+- Code examples where relevant
+- HowTo schema markup
+- Screenshots with descriptive alt text
+- Clear prerequisites and expected outcomes
+
+---
+
+## Local Business / Ecom (Google emphasis)
+
+Google's AI features pull from product feeds and business profiles for local + ecom queries. Optimize:
+
+- **Merchant Center feeds** kept current with accurate inventory, pricing, attributes
+- **Google Business Profile** complete with hours, services, photos, posts, Q&A answered
+- **Reviews** — recent + sufficient volume; respond to reviews to signal active management
+- **Service area schema** for local services
+- **Business Agent** (where available) for conversational customer engagement
+
+
+--- platform-ranking-factors.md ---
+
+# How Each AI Platform Picks Sources
+
+Each AI search platform has its own search index, ranking logic, and content preferences. This guide covers what matters for getting cited on each one.
+
+Sources cited throughout: Princeton GEO study (KDD 2024), SE Ranking domain authority study, ZipTie content-answer fit analysis.
+
+---
+
+## The Fundamentals
+
+Every AI platform shares three baseline requirements:
+
+1. **Your content must be in their index** — Each platform uses a different search backend (Google, Bing, Brave, or their own). If you're not indexed, you can't be cited.
+2. **Your content must be crawlable** — AI bots need access via robots.txt. Block the bot, lose the citation.
+3. **Your content must be extractable** — AI systems pull passages, not pages. Clear structure and self-contained paragraphs win.
+
+Beyond these basics, each platform weights different signals. Here's what matters and where.
+
+---
+
+## Google AI Overviews
+
+Google AI Overviews pull from Google's own index and lean heavily on E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness). They appear in roughly 45% of Google searches.
+
+**What makes Google AI Overviews different:** They already have your traditional SEO signals — backlinks, page authority, topical relevance. The additional AI layer adds a preference for content with cited sources and structured data. Research shows that including authoritative citations in your content correlates with a 132% visibility boost, and writing with an authoritative (not salesy) tone adds another 89%.
+
+**Importantly, AI Overviews don't just recycle the traditional Top 10.** Only about 15% of AI Overview sources overlap with conventional organic results. Pages that wouldn't crack page 1 in traditional search can still get cited if they have strong structured data and clear, extractable answers.
+
+**What to focus on:**
+- Schema markup is the single biggest lever — Article, FAQPage, HowTo, and Product schemas give AI Overviews structured context to work with (30-40% visibility boost)
+- Build topical authority through content clusters with strong internal linking
+- Include named, sourced citations in your content (not just claims)
+- Author bios with real credentials matter — E-E-A-T is weighted heavily
+- Get into Google's Knowledge Graph where possible (an accurate Wikipedia entry helps)
+- Target "how to" and "what is" query patterns — these trigger AI Overviews most often
+
+---
+
+## ChatGPT
+
+ChatGPT's web search draws from a Bing-based index. It combines this with its training knowledge to generate answers, then cites the web sources it relied on.
+
+**What makes ChatGPT different:** Domain authority matters more here than on other AI platforms. An SE Ranking analysis of 129,000 domains found that authority and credibility signals account for roughly 40% of what determines citation, with content quality at about 35% and platform trust at 25%. Sites with very high referring domain counts (350K+) average 8.4 citations per response, while sites with slightly lower trust scores (91-96 vs 97-100) drop from 8.4 to 6 citations.
+
+**Freshness is a major differentiator.** Content updated within the last 30 days gets cited about 3.2x more often than older content. ChatGPT clearly favors recent information.
+
+**The most important signal is content-answer fit** — a ZipTie analysis of 400,000 pages found that how well your content's style and structure matches ChatGPT's own response format accounts for about 55% of citation likelihood. This is far more important than domain authority (12%) or on-page structure (14%) alone. Write the way ChatGPT would answer the question, and you're more likely to be the source it cites.
+
+**Where ChatGPT looks beyond your site:** Wikipedia accounts for 7.8% of all ChatGPT citations, Reddit for 1.8%, and Forbes for 1.1%. Brand official sites are cited frequently but third-party mentions carry significant weight.
+
+**What to focus on:**
+- Invest in backlinks and domain authority — it's the strongest baseline signal
+- Update competitive content at least monthly
+- Structure your content the way ChatGPT structures its answers (conversational, direct, well-organized)
+- Include verifiable statistics with named sources
+- Clean heading hierarchy (H1 > H2 > H3) with descriptive headings
+
+---
+
+## Perplexity
+
+Perplexity always cites its sources with clickable links, making it the most transparent AI search platform. It combines its own index with Google's and runs results through multiple reranking passes — initial relevance retrieval, then traditional ranking factor scoring, then ML-based quality evaluation that can discard entire result sets if they don't meet quality thresholds.
+
+**What makes Perplexity different:** It's the most "research-oriented" AI search engine, and its citation behavior reflects that. Perplexity maintains curated lists of authoritative domains (Amazon, GitHub, major academic sites) that get inherent ranking boosts. It uses a time-decay algorithm that evaluates new content quickly, giving fresh publishers a real shot at citation.
+
+**Perplexity has unique content preferences:**
+- **FAQ Schema (JSON-LD)** — Pages with FAQ structured data get cited noticeably more often
+- **PDF documents** — Publicly accessible PDFs (whitepapers, research reports) are prioritized. If you have authoritative PDF content gated behind a form, consider making a version public.
+- **Publishing velocity** — How frequently you publish matters more than keyword targeting
+- **Self-contained paragraphs** — Perplexity prefers atomic, semantically complete paragraphs it can extract cleanly
+
+**What to focus on:**
+- Allow PerplexityBot in robots.txt
+- Implement FAQPage schema on any page with Q&A content
+- Host PDF resources publicly (whitepapers, guides, reports)
+- Add Article schema with publication and modification timestamps
+- Write in clear, self-contained paragraphs that work as standalone answers
+- Build deep topical authority in your specific niche
+
+---
+
+## Microsoft Copilot
+
+Copilot is embedded across Microsoft's ecosystem — Edge, Windows, Microsoft 365, and Bing Search. It relies entirely on Bing's index, so if Bing hasn't indexed your content, Copilot can't cite it.
+
+**What makes Copilot different:** The Microsoft ecosystem connection creates unique optimization opportunities. Mentions and content on LinkedIn and GitHub provide ranking boosts that other platforms don't offer. Copilot also puts more weight on page speed — sub-2-second load times are a clear threshold.
+
+**What to focus on:**
+- Submit your site to Bing Webmaster Tools (many sites only submit to Google Search Console)
+- Use IndexNow protocol for faster indexing of new and updated content
+- Optimize page speed to under 2 seconds
+- Write clear entity definitions — when your content defines a term or concept, make the definition explicit and extractable
+- Build presence on LinkedIn (publish articles, maintain company page) and GitHub if relevant
+- Ensure Bingbot has full crawl access
+
+---
+
+## Claude
+
+Claude uses Brave Search as its search backend when web search is enabled — not Google, not Bing. This is a completely different index, which means your Brave Search visibility directly determines whether Claude can find and cite you.
+
+**What makes Claude different:** Claude is extremely selective about what it cites. While it processes enormous amounts of content, its citation rate is very low — it's looking for the most factually accurate, well-sourced content on a given topic. Data-rich content with specific numbers and clear attribution performs significantly better than general-purpose content.
+
+**What to focus on:**
+- Verify your content appears in Brave Search results (search for your brand and key terms at search.brave.com)
+- Allow ClaudeBot and anthropic-ai user agents in robots.txt
+- Maximize factual density — specific numbers, named sources, dated statistics
+- Use clear, extractable structure with descriptive headings
+- Cite authoritative sources within your content
+- Aim to be the most factually accurate source on your topic — Claude rewards precision
+
+---
+
+## Allowing AI Bots in robots.txt
+
+If your robots.txt blocks an AI bot, that platform can't cite your content. Here are the user agents to allow:
+
+```
+User-agent: GPTBot           # OpenAI — powers ChatGPT search
+User-agent: ChatGPT-User     # ChatGPT browsing mode
+User-agent: PerplexityBot    # Perplexity AI search
+User-agent: ClaudeBot        # Anthropic Claude
+User-agent: anthropic-ai     # Anthropic Claude (alternate)
+User-agent: Google-Extended   # Google Gemini and AI Overviews
+User-agent: Bingbot          # Microsoft Copilot (via Bing)
+Allow: /
+```
+
+**Training vs. search:** Some AI bots are used for both model training and search citation. If you want to be cited but don't want your content used for training, your options are limited — GPTBot handles both for OpenAI. However, you can safely block **CCBot** (Common Crawl) without affecting any AI search citations, since it's only used for training dataset collection.
+
+---
+
+## Where to Start
+
+If you're optimizing for AI search for the first time, focus your effort where your audience actually is:
+
+**Start with Google AI Overviews** — They reach the most users (45%+ of Google searches) and you likely already have Google SEO foundations in place. Add schema markup, include cited sources in your content, and strengthen E-E-A-T signals.
+
+**Then address ChatGPT** — It's the most-used standalone AI search tool for tech and business audiences. Focus on freshness (update content monthly), domain authority, and matching your content structure to how ChatGPT formats its responses.
+
+**Then expand to Perplexity** — Especially valuable if your audience includes researchers, early adopters, or tech professionals. Add FAQ schema, publish PDF resources, and write in clear, self-contained paragraphs.
+
+**Copilot and Claude are lower priority** unless your audience skews enterprise/Microsoft (Copilot) or developer/analyst (Claude). But the fundamentals — structured content, cited sources, schema markup — help across all platforms.
+
+**Actions that help everywhere:**
+1. Allow all AI bots in robots.txt
+2. Implement schema markup (FAQPage, Article, Organization at minimum)
+3. Include statistics with named sources in your content
+4. Update content regularly — monthly for competitive topics
+5. Use clear heading structure (H1 > H2 > H3)
+6. Keep page load time under 2 seconds
+7. Add author bios with credentials
+
+

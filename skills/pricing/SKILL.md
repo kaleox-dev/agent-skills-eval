@@ -627,3 +627,400 @@ Add "Contact Sales" when:
 - **ab-testing**: For testing pricing changes
 - **revops**: For deal desk processes and pipeline pricing
 - **sales-enablement**: For proposal templates and pricing presentations
+
+================================================================================
+REFERENCE MATERIALS
+================================================================================
+
+--- research-methods.md ---
+
+# Pricing Research Methods
+
+## Contents
+- Van Westendorp Price Sensitivity Meter (The Four Questions, How to Analyze, Survey Tips, Sample Output)
+- MaxDiff Analysis (How It Works, Example Survey Question, Analyzing Results, Using MaxDiff for Packaging)
+- Willingness to Pay Surveys
+- Usage-Value Correlation Analysis
+
+## Van Westendorp Price Sensitivity Meter
+
+The Van Westendorp survey identifies the acceptable price range for your product.
+
+### The Four Questions
+
+Ask each respondent:
+1. "At what price would you consider [product] to be so expensive that you would not consider buying it?" (Too expensive)
+2. "At what price would you consider [product] to be priced so low that you would question its quality?" (Too cheap)
+3. "At what price would you consider [product] to be starting to get expensive, but you still might consider it?" (Expensive/high side)
+4. "At what price would you consider [product] to be a bargain—a great buy for the money?" (Cheap/good value)
+
+### How to Analyze
+
+1. Plot cumulative distributions for each question
+2. Find the intersections:
+   - **Point of Marginal Cheapness (PMC):** "Too cheap" crosses "Expensive"
+   - **Point of Marginal Expensiveness (PME):** "Too expensive" crosses "Cheap"
+   - **Optimal Price Point (OPP):** "Too cheap" crosses "Too expensive"
+   - **Indifference Price Point (IDP):** "Expensive" crosses "Cheap"
+
+**The acceptable price range:** PMC to PME
+**Optimal pricing zone:** Between OPP and IDP
+
+### Survey Tips
+- Need 100-300 respondents for reliable data
+- Segment by persona (different willingness to pay)
+- Use realistic product descriptions
+- Consider adding purchase intent questions
+
+### Sample Output
+
+```
+Price Sensitivity Analysis Results:
+─────────────────────────────────
+Point of Marginal Cheapness:  $29/mo
+Optimal Price Point:          $49/mo
+Indifference Price Point:     $59/mo
+Point of Marginal Expensiveness: $79/mo
+
+Recommended range: $49-59/mo
+Current price: $39/mo (below optimal)
+Opportunity: 25-50% price increase without significant demand impact
+```
+
+---
+
+## MaxDiff Analysis (Best-Worst Scaling)
+
+MaxDiff identifies which features customers value most, informing packaging decisions.
+
+### How It Works
+
+1. List 8-15 features you could include
+2. Show respondents sets of 4-5 features at a time
+3. Ask: "Which is MOST important? Which is LEAST important?"
+4. Repeat across multiple sets until all features compared
+5. Statistical analysis produces importance scores
+
+### Example Survey Question
+
+```
+Which feature is MOST important to you?
+Which feature is LEAST important to you?
+
+□ Unlimited projects
+□ Custom branding
+□ Priority support
+□ API access
+□ Advanced analytics
+```
+
+### Analyzing Results
+
+Features are ranked by utility score:
+- High utility = Must-have (include in base tier)
+- Medium utility = Differentiator (use for tier separation)
+- Low utility = Nice-to-have (premium tier or cut)
+
+### Using MaxDiff for Packaging
+
+| Utility Score | Packaging Decision |
+|---------------|-------------------|
+| Top 20% | Include in all tiers (table stakes) |
+| 20-50% | Use to differentiate tiers |
+| 50-80% | Higher tiers only |
+| Bottom 20% | Consider cutting or premium add-on |
+
+---
+
+## Willingness to Pay Surveys
+
+**Direct method (simple but biased):**
+"How much would you pay for [product]?"
+
+**Better: Gabor-Granger method:**
+"Would you buy [product] at [$X]?" (Yes/No)
+Vary price across respondents to build demand curve.
+
+**Even better: Conjoint analysis:**
+Show product bundles at different prices
+Respondents choose preferred option
+Statistical analysis reveals price sensitivity per feature
+
+---
+
+## Usage-Value Correlation Analysis
+
+### 1. Instrument usage data
+Track how customers use your product:
+- Feature usage frequency
+- Volume metrics (users, records, API calls)
+- Outcome metrics (revenue generated, time saved)
+
+### 2. Correlate with customer success
+- Which usage patterns predict retention?
+- Which usage patterns predict expansion?
+- Which customers pay the most, and why?
+
+### 3. Identify value thresholds
+- At what usage level do customers "get it"?
+- At what usage level do they expand?
+- At what usage level should price increase?
+
+### Example Analysis
+
+```
+Usage-Value Correlation Analysis:
+─────────────────────────────────
+Segment: High-LTV customers (>$10k ARR)
+Average monthly active users: 15
+Average projects: 8
+Average integrations: 4
+
+Segment: Churned customers
+Average monthly active users: 3
+Average projects: 2
+Average integrations: 0
+
+Insight: Value correlates with team adoption (users)
+        and depth of use (integrations)
+
+Recommendation: Price per user, gate integrations to higher tiers
+```
+
+
+--- tier-structure.md ---
+
+# Tier Structure and Packaging
+
+## Contents
+- How Many Tiers?
+- Good-Better-Best Framework
+- Tier Differentiation Strategies
+- Example Tier Structure
+- Packaging for Personas (Identifying Pricing Personas, Persona-Based Packaging)
+- Freemium vs. Free Trial (When to Use Freemium, When to Use Free Trial, Hybrid Approaches)
+- Enterprise Pricing (When to Add Custom Pricing, Enterprise Tier Elements, Enterprise Pricing Strategies)
+
+## How Many Tiers?
+
+**2 tiers:** Simple, clear choice
+- Works for: Clear SMB vs. Enterprise split
+- Risk: May leave money on table
+
+**3 tiers:** Industry standard
+- Good tier = Entry point
+- Better tier = Recommended (anchor to best)
+- Best tier = High-value customers
+
+**4+ tiers:** More granularity
+- Works for: Wide range of customer sizes
+- Risk: Decision paralysis, complexity
+
+---
+
+## Good-Better-Best Framework
+
+**Good tier (Entry):**
+- Purpose: Remove barriers to entry
+- Includes: Core features, limited usage
+- Price: Low, accessible
+- Target: Small teams, try before you buy
+
+**Better tier (Recommended):**
+- Purpose: Where most customers land
+- Includes: Full features, reasonable limits
+- Price: Your "anchor" price
+- Target: Growing teams, serious users
+
+**Best tier (Premium):**
+- Purpose: Capture high-value customers
+- Includes: Everything, advanced features, higher limits
+- Price: Premium (often 2-3x "Better")
+- Target: Larger teams, power users, enterprises
+
+---
+
+## Tier Differentiation Strategies
+
+**Feature gating:**
+- Basic features in all tiers
+- Advanced features in higher tiers
+- Works when features have clear value differences
+
+**Usage limits:**
+- Same features, different limits
+- More users, storage, API calls at higher tiers
+- Works when value scales with usage
+
+**Support level:**
+- Email support → Priority support → Dedicated success
+- Works for products with implementation complexity
+
+**Access and customization:**
+- API access, SSO, custom branding
+- Works for enterprise differentiation
+
+---
+
+## Example Tier Structure
+
+```
+┌────────────────┬─────────────────┬─────────────────┬─────────────────┐
+│                │ Starter         │ Pro             │ Business        │
+│                │ $29/mo          │ $79/mo          │ $199/mo         │
+├────────────────┼─────────────────┼─────────────────┼─────────────────┤
+│ Users          │ Up to 5         │ Up to 20        │ Unlimited       │
+│ Projects       │ 10              │ Unlimited       │ Unlimited       │
+│ Storage        │ 5 GB            │ 50 GB           │ 500 GB          │
+│ Integrations   │ 3               │ 10              │ Unlimited       │
+│ Analytics      │ Basic           │ Advanced        │ Custom          │
+│ Support        │ Email           │ Priority        │ Dedicated       │
+│ API Access     │ ✗               │ ✓               │ ✓               │
+│ SSO            │ ✗               │ ✗               │ ✓               │
+│ Audit logs     │ ✗               │ ✗               │ ✓               │
+└────────────────┴─────────────────┴─────────────────┴─────────────────┘
+```
+
+---
+
+## Packaging for Personas
+
+### Identifying Pricing Personas
+
+Different customers have different:
+- Willingness to pay
+- Feature needs
+- Buying processes
+- Value perception
+
+**Segment by:**
+- Company size (solopreneur → SMB → enterprise)
+- Use case (marketing vs. sales vs. support)
+- Sophistication (beginner → power user)
+- Industry (different budget norms)
+
+### Persona-Based Packaging
+
+**Step 1: Define personas**
+
+| Persona | Size | Needs | WTP | Example |
+|---------|------|-------|-----|---------|
+| Freelancer | 1 person | Basic features | Low | $19/mo |
+| Small Team | 2-10 | Collaboration | Medium | $49/mo |
+| Growing Co | 10-50 | Scale, integrations | Higher | $149/mo |
+| Enterprise | 50+ | Security, support | High | Custom |
+
+**Step 2: Map features to personas**
+
+| Feature | Freelancer | Small Team | Growing | Enterprise |
+|---------|------------|------------|---------|------------|
+| Core features | ✓ | ✓ | ✓ | ✓ |
+| Collaboration | — | ✓ | ✓ | ✓ |
+| Integrations | — | Limited | Full | Full |
+| API access | — | — | ✓ | ✓ |
+| SSO/SAML | — | — | — | ✓ |
+| Audit logs | — | — | — | ✓ |
+| Custom contract | — | — | — | ✓ |
+
+**Step 3: Price to value for each persona**
+- Research willingness to pay per segment
+- Set prices that capture value without blocking adoption
+- Consider segment-specific landing pages
+
+---
+
+## Freemium vs. Free Trial
+
+### When to Use Freemium
+
+**Freemium works when:**
+- Product has viral/network effects
+- Free users provide value (content, data, referrals)
+- Large market where % conversion drives volume
+- Low marginal cost to serve free users
+- Clear feature/usage limits for upgrade trigger
+
+**Freemium risks:**
+- Free users may never convert
+- Devalues product perception
+- Support costs for non-paying users
+- Harder to raise prices later
+
+### When to Use Free Trial
+
+**Free trial works when:**
+- Product needs time to demonstrate value
+- Onboarding/setup investment required
+- B2B with buying committees
+- Higher price points
+- Product is "sticky" once configured
+
+**Trial best practices:**
+- 7-14 days for simple products
+- 14-30 days for complex products
+- Full access (not feature-limited)
+- Clear countdown and reminders
+- Credit card optional vs. required trade-off
+
+**Credit card upfront:**
+- Higher trial-to-paid conversion (40-50% vs. 15-25%)
+- Lower trial volume
+- Better qualified leads
+
+### Hybrid Approaches
+
+**Freemium + Trial:**
+- Free tier with limited features
+- Trial of premium features
+- Example: Zoom (free 40-min, trial of Pro)
+
+**Reverse trial:**
+- Start with full access
+- After trial, downgrade to free tier
+- Example: See premium value, live with limitations until ready
+
+---
+
+## Enterprise Pricing
+
+### When to Add Custom Pricing
+
+Add "Contact Sales" when:
+- Deal sizes exceed $10k+ ARR
+- Customers need custom contracts
+- Implementation/onboarding required
+- Security/compliance requirements
+- Procurement processes involved
+
+### Enterprise Tier Elements
+
+**Table stakes:**
+- SSO/SAML
+- Audit logs
+- Admin controls
+- Uptime SLA
+- Security certifications
+
+**Value-adds:**
+- Dedicated support/success
+- Custom onboarding
+- Training sessions
+- Custom integrations
+- Priority roadmap input
+
+### Enterprise Pricing Strategies
+
+**Per-seat at scale:**
+- Volume discounts for large teams
+- Example: $15/user (standard) → $10/user (100+)
+
+**Platform fee + usage:**
+- Base fee for access
+- Usage-based above thresholds
+- Example: $500/mo base + $0.01 per API call
+
+**Value-based contracts:**
+- Price tied to customer's revenue/outcomes
+- Example: % of transactions, revenue share
+
+

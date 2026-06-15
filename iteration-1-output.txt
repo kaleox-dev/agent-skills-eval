@@ -2,165 +2,162 @@
 [1m▶ ads[0m  [90m[0m
   [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill,without_skill[0m
 
-  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
     [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
-    [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta. Compare to our existing Google/Meta performance.
-    [90moutput:[0m  The user is asking whether they should advertise on TikTok for their accounting software business targeting small businesses. They're currently running ads on Google and Meta, and want a comparison t…
-    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
-      [31m#1[0m [31mFAIL[0m [90m—[0m Applies platform selection guide for TikTok
-         [90mevidence:[0m Model asks for context first before making recommendation; no platform selection guide applied in output.
-      [31m#4[0m [31mFAIL[0m [90m—[0m Discusses when TikTok can work for B2B
-         [90mevidence:[0m No specific scenarios discussed when TikTok can work; only general 'Can build brand awareness' listed as pro
-      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests small test budget if proceeding
-         [90mevidence:[0m Asks 'What's your test budget available?' but does not suggest a small test budget amount or approach
-      [31m#6[0m [31mFAIL[0m [90m—[0m Compares to their existing Google/Meta performance
-         [90mevidence:[0m Asks for current performance metrics but does not compare to user's actual existing performance data
-    12.0s · 20687 tokens · [31mFAIL[0m
+    [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up? use casual phrasing. address frequency capping.
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies funnel-based retargeting approach
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends audience segments by intent level
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends different messaging per segment
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses frequency capping
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends retargeting platforms
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes audience duration windows
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    2.9s · 0 tokens · [31mFAIL[0m
 
   [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
     [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
     [90muser:[0m    Our Google Ads CPC is $12 and our cost per lead is $180. Is that good? We're getting about 80 leads/month from a $15k budget. Ask about downstream conversion rates. Apply the platform selection guide.
-    [90moutput:[0m  The user is asking about their Google Ads performance metrics. Let me analyze what they've shared: - CPC: $12 - Cost per lead (CPL): $180 - Monthly leads: 80 - Monthly budget: $15k Let me verify the …
-    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Evaluates metrics in context
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#2[0m [31mFAIL[0m [90m—[0m Compares CPL against LTV considerations
-         [90mevidence:[0m Asks 'What's the average customer value? What's the average deal size or LTV?' but no actual comparison made - LTV data not provided in conversation
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#3[0m [31mFAIL[0m [90m—[0m Applies campaign optimization framework
-         [90mevidence:[0m Mentions 'Platform Selection Guide' and 'how to improve it if needed' but no specific optimization framework applied to the campaign data
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#4[0m [31mFAIL[0m [90m—[0m Recommends specific optimization levers
-         [90mevidence:[0m Only asks questions ('What I Need to Help You Optimize') - no specific levers like bid adjustments, ad copy, landing page, targeting changes recommended
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks about downstream conversion rates
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#6[0m [31mFAIL[0m [90m—[0m Provides industry context for benchmarking
-         [90mevidence:[0m Provides hypothetical scenarios table but no actual industry benchmark data (e.g., 'typical B2B CPL is $X', 'average conversion rate is Y%')
-    11.4s · 20667 tokens · [31mFAIL[0m
-
-  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
-    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
-    [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up? use casual phrasing. address frequency capping.
-    [90moutput:[0m  The user is asking about setting up retargeting ads for people who visited their site but didn't convert. They want me to address frequency capping specifically and use casual phrasing. This falls un…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
-    17.2s · 21134 tokens · [32mPASS[0m
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    3.0s · 0 tokens · [31mFAIL[0m
 
   [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
     [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
     [90muser:[0m    Help me plan a paid advertising strategy. We're a B2B SaaS tool for HR teams, selling at $99/month per seat. We have $15k/month to spend on ads and want to generate demo requests. Where should we adv…
-    [90moutput:[0m  The user is asking for help with a paid advertising strategy for their B2B SaaS tool targeting HR teams. They have: - Product: B2B SaaS for HR teams - Price: $99/month per seat - Budget: $15k/month -…
-    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
       [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
-         [90mevidence:[0m Model states 'Since I don't have actual file access in this context' - no actual file check performed
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#2[0m [31mFAIL[0m [90m—[0m Applies platform selection guide
-         [90mevidence:[0m No evidence of applying a platform selection guide; only general recommendations provided
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends platforms appropriate for B2B HR audience
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends campaign structure with naming conventions
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#5[0m [31mFAIL[0m [90m—[0m Defines audience targeting per platform
-         [90mevidence:[0m LinkedIn mentions job title targeting, but Google and Meta lack specific audience definitions
-    17.4s · 21186 tokens · [31mFAIL[0m
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Sets budget allocation across platforms
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#7[0m [31mFAIL[0m [90m—[0m Defines success metrics
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommends starting structure and scaling plan
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    3.1s · 0 tokens · [31mFAIL[0m
 
-  [1m#3 eval-3[0m  [35m[without_skill][0m  [90m[7][0m
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
+    [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta. Compare to our existing Google/Meta performance.
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies platform selection guide for TikTok
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#2[0m [31mFAIL[0m [90m—[0m Evaluates fit for accounting + small business audience
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides honest assessment of likely weaker fit
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#4[0m [31mFAIL[0m [90m—[0m Discusses when TikTok can work for B2B
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests small test budget if proceeding
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Compares to their existing Google/Meta performance
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    2.9s · 0 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [35m[without_skill][0m  [90m[5][0m
     [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up? use casual phrasing. address frequency capping.
-    [90moutput:[0m  Thinking Process: 1. **Analyze the Request:** * **Goal:** Set up retargeting ads for site visitors who didn't convert. * **Tone:** Casual phrasing (friendly, conversational, not overly technical or s…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies funnel-based retargeting approach
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#3[0m [31mFAIL[0m [90m—[0m Recommends audience segments by intent level
-         [90mevidence:[0m Only one segment mentioned (site visitors in last 30 days), no differentiation by intent level (cart abandoners vs page viewers vs time on site)
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#4[0m [31mFAIL[0m [90m—[0m Recommends different messaging per segment
-         [90mevidence:[0m No different messaging recommendations for different segments; only generic creative advice ("show them that exact product")
-    22.5s · 1728 tokens · [31mFAIL[0m
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses frequency capping
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends retargeting platforms
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes audience duration windows
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    1.7s · 0 tokens · [31mFAIL[0m
 
   [1m#2 eval-2[0m  [35m[without_skill][0m  [90m[6][0m
     [90muser:[0m    Our Google Ads CPC is $12 and our cost per lead is $180. Is that good? We're getting about 80 leads/month from a $15k budget. Ask about downstream conversion rates. Apply the platform selection guide.
-    [90moutput:[0m  Here's a thinking process that leads to the suggested response: 1. **Analyze the User's Request:** * **Current Metrics:** * CPC (Cost Per Click): $12 * CPL (Cost Per Lead): $180 * Leads/Month: 80 * B…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
-    36.1s · 2792 tokens · [32mPASS[0m
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Evaluates metrics in context
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#2[0m [31mFAIL[0m [90m—[0m Compares CPL against LTV considerations
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies campaign optimization framework
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends specific optimization levers
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks about downstream conversion rates
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides industry context for benchmarking
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    1.7s · 0 tokens · [31mFAIL[0m
 
-  [1m#1 eval-1[0m  [35m[without_skill][0m  [90m[8][0m
+  [1m#1 eval-1[0m  [35m[without_skill][0m  [90m[7][0m
     [90muser:[0m    Help me plan a paid advertising strategy. We're a B2B SaaS tool for HR teams, selling at $99/month per seat. We have $15k/month to spend on ads and want to generate demo requests. Where should we adv…
-    [90moutput:[0m  Here's a thinking process that leads to the suggested paid advertising strategy: 1. **Analyze the Request:** * **Product:** B2B SaaS tool for HR teams. * **Price Point:** $99/month per seat (Mid-mark…
-    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
       [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
-         [90mevidence:[0m Model states: 'Since I do not have access to your internal `product-marketing.md` file' - explicitly acknowledges inability to check the file.
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#2[0m [31mFAIL[0m [90m—[0m Applies platform selection guide
-         [90mevidence:[0m No platform selection guide referenced or applied. Model makes recommendations based on 'industry best practices' without citing a guide.
-    39.4s · 3189 tokens · [31mFAIL[0m
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends platforms appropriate for B2B HR audience
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends campaign structure with naming conventions
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Defines audience targeting per platform
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#6[0m [31mFAIL[0m [90m—[0m Sets budget allocation across platforms
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#7[0m [31mFAIL[0m [90m—[0m Defines success metrics
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommends starting structure and scaling plan
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    1.7s · 0 tokens · [31mFAIL[0m
 
-  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[9][0m
-    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
-    [90muser:[0m    How do we structure our Google Ads campaigns? We have 50+ keywords we want to target for our CRM product. Remember to define naming conventions.
-    [90moutput:[0m  The user is asking about Google Ads campaign structure for a CRM product with 50+ keywords. They want me to define naming conventions as well. This is a direct ads skill question about campaign struc…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
-    22.4s · 21612 tokens · [32mPASS[0m
-
-  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[10][0m
-    [90msystem:[0m  <skill name="ads"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user m…
-    [90muser:[0m    Can you write some ad copy for our Facebook ads? We need headlines and descriptions for 5 different angles. Refer to the ad-creative skill.
-    [90moutput:[0m  The user is asking for Facebook ad copy with headlines and descriptions for 5 different angles. They mentioned to refer to the ad-creative skill. However, I notice that the user hasn't provided me wi…
-    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m
-      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as ad creative generation
-         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…
-      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to ad-creative skill
-         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…
-      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt bulk ad copy generation using campaign strategy patterns
-         [90mevidence:[0m judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's response against three assertions: 1. "Recognizes this as ad creat…
-    7.0s · 20323 tokens · [31mFAIL[0m
-
-  [1m#4 eval-4[0m  [35m[without_skill][0m  [90m[5][0m
+  [1m#4 eval-4[0m  [35m[without_skill][0m  [90m[8][0m
     [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta. Compare to our existing Google/Meta performance.
-    [90moutput:[0m  Here's a thinking process that leads to the suggested advice: 1. **Analyze the User's Request:** * **Product:** Accounting software for small businesses (B2B SaaS). * **Current Channels:** Google Ads…
+    [90moutput:[0m  ERROR: openai-compatible 404: service failure: endpoint not found
     [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
       [31m#1[0m [31mFAIL[0m [90m—[0m Applies platform selection guide for TikTok
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#2[0m [31mFAIL[0m [90m—[0m Evaluates fit for accounting + small business audience
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#3[0m [31mFAIL[0m [90m—[0m Provides honest assessment of likely weaker fit
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#4[0m [31mFAIL[0m [90m—[0m Discusses when TikTok can work for B2B
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#5[0m [31mFAIL[0m [90m—[0m Suggests small test budget if proceeding
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
       [31m#6[0m [31mFAIL[0m [90m—[0m Compares to their existing Google/Meta performance
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
-    35.2s · 2654 tokens · [31mFAIL[0m
-
-  [1m#6 eval-6[0m  [35m[without_skill][0m  [90m[12][0m
-    [90muser:[0m    Can you write some ad copy for our Facebook ads? We need headlines and descriptions for 5 different angles. Refer to the ad-creative skill.
-    [90moutput:[0m  Here's a thinking process that leads to the suggested ad copy: 1. **Analyze the Request:** * **Task:** Write Facebook ad copy (headlines + descriptions). * **Quantity:** 5 different angles. * **Refer…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
-    32.6s · 2811 tokens · [32mPASS[0m
-
-  [1m#5 eval-5[0m  [35m[without_skill][0m  [90m[11][0m
-    [90muser:[0m    How do we structure our Google Ads campaigns? We have 50+ keywords we want to target for our CRM product. Remember to define naming conventions.
-    [90moutput:[0m  Here's a thinking process that leads to the suggested Google Ads campaign structure: 1. **Analyze the Request:** * **Goal:** Structure Google Ads campaigns for a CRM product. * **Constraint:** 50+ ke…
-    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
-      [31m#1[0m [31mFAIL[0m [90m—[0m Applies campaign structure framework
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#2[0m [31mFAIL[0m [90m—[0m Organizes campaigns by theme/intent
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends tight ad group structure
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#4[0m [31mFAIL[0m [90m—[0m Defines naming conventions
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends match types strategy
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#6[0m [31mFAIL[0m [90m—[0m Includes negative keyword lists
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-      [31m#7[0m [31mFAIL[0m [90m—[0m Provides sample campaign structure
-         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of 7 assertions a…
-    34.3s · 2984 tokens · [31mFAIL[0m
-
-  [1msummary[0m  [36mwith_skill 54.9%[0m  vs  [35mwithout_skill 57.7%[0m
-    [90mΔ[0m pass-rate [31m-2.9pp[0m  time -18.8s  tokens +18241.8
-    [90mwith_skill:[0m    14.58s avg · 20935 tok avg
-    [90mwithout_skill:[0m 33.34s avg · 2693 tok avg
-  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-139/benchmark.json[0m
-{
-  "passed": 23,
-  "failed": 14,
-  "skills": [
-    {
-      "skill": "ads",
-      "slug": "ads",
-      "relPath": "",
-      "evals": 6,
-      "passRate": 0.6216216216216216,
-      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-139/benchmark.json"
-    }
-  ],
-  "iteration": 139,
-  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-139",
-  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-139/report/index.html"
-}
+         [90mevidence:[0m judge returned unparseable response: openai-compatible 404: service failure: endpoint not found
+    1.7s · 0 tokens · [31mFAIL[0m
