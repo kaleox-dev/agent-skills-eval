@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	1	FAIL	Checks for product-marketing.md	Model states: "I don't have access to check for product-marketing.md files" - did not actually check for the file.	1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	2	FAIL	Distinguishes referral from affiliate	No mention of affiliate programs or distinction between referral and affiliate in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.0s	9071	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	1	FAIL	Applies program optimization guidance	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	2	FAIL	Diagnoses potential causes of low participation	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	3	FAIL	Checks awareness, timing, incentive, and friction	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	4	FAIL	Recommends optimization tactics	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	5	FAIL	Suggests timing referral asks at satisfaction moments	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-2	with_skill	FAIL	10.1s	8729	6	FAIL	Provides experiment ideas	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON with the res…	2	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	1	FAIL	Triggers on casual phrasing	No reference to casual phrasing in model output; response uses formal structure without addressing conversational tone.	3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	5	FAIL	Addresses cookie duration and payout terms	Cookie duration (30-60 days) mentioned, but payout terms (when/how paid) only listed as a checklist item without concrete terms.	3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8871	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.1s	8991	6	FAIL	Notes incentive may not be the only issue	No explicit statement that incentive may not be the only issue; only asks "What have you tried besides the $10 discount?" without acknowledgment	4	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	1	FAIL	Applies measuring success framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	2	FAIL	Defines participation rate, share rate, conversion rate	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	3	FAIL	Includes viral coefficient / k-factor	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	4	FAIL	Compares referral CAC to other channels	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	5	FAIL	Compares referred customer LTV to organic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	6	FAIL	Recommends tracking approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-5	with_skill	FAIL	17.8s	9422	7	FAIL	Provides benchmark ranges	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (text about measuring referral program…	5	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	9117	1	FAIL	Applies referral email section from the skill	Model mentions 'From the skill instructions' but provides no quoted content or specific reference to a skill document's referral email section.	6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	9117	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	9117	3	FAIL	Cross-references emails for broader email work	Model mentions 'email sequences' once and promises to 'create a complete email sequence' but does not cross-reference to broader email work in current output.	6	1
+ab-testing	eval-6	with_skill	FAIL	13.8s	9117	4	PASS			6	1

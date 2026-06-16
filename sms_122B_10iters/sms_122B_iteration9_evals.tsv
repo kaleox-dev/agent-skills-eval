@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	1	FAIL	Checks for product-marketing.md	No output files were captured. No reference to product-marketing.md in output.	1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	6	FAIL	Warns about treating SMS like email	No explicit warning about not treating SMS like email found in output.	1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	27.9s	26416	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	8	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.7s	25577	9	FAIL	Mentions UTM tagging or attribution	No mention of UTM parameters or attribution tracking in the output	2	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	7	FAIL	References compliance.md	No reference to compliance.md file found in output; model mentions "compliance reference materials" but no specific file name	3	9
+ab-testing	eval-3	with_skill	FAIL	16.2s	25459	8	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	1	FAIL	Diagnoses as over-sending / audience fatigue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	2	FAIL	Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	3	FAIL	Recommends reducing send frequency	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	4	FAIL	Recommends segmentation by engagement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	5	FAIL	Suggests reactivation flow for cold subscribers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	6	FAIL	Calculates list erosion impact	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-4	with_skill	FAIL	21.5s	25904	7	FAIL	Mentions 'every send must justify itself' principle	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Grading principles (c…	4	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	No direct question about phone number type; section 7 asks about platform but not phone number type specifically	5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	4	FAIL	Mentions quiet hour considerations	No mention of quiet hours or time-of-day sending restrictions in output	5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	7	FAIL	Mentions A2P sample text alignment requirement	No mention of sample text or message content alignment requirements with A2P registration	5	9
+ab-testing	eval-5	with_skill	FAIL	23.6s	26111	8	FAIL	References platforms.md or trust score monitoring	Trust score mentioned but "platforms.md" file not referenced anywhere in output	5	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	No mention of accented characters or curly quotes in output	6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	6	FAIL	Recommends previewing segment count	No explicit recommendation to preview segment count; only mentions watching character count	6	9
+ab-testing	eval-6	with_skill	FAIL	13.6s	25275	7	FAIL	Calculates cost impact at scale	No concrete scale calculation provided (e.g., cost for 1000+ messages)	6	9

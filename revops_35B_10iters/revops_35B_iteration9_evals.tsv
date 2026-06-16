@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	1	FAIL	Checks for product-marketing.md	The output explicitly states 'No output files were captured.' and the text content is a conversational response asking clarifying questions, not a markdown file named 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.8s	31597	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	6	FAIL	Defines MQL and SQL score thresholds	The model explicitly defines an MQL threshold ('MQL Threshold: 75 points') in Section 1, but it does not define a specific numeric SQL score threshold. It mentions 'MQL-to-SQL acceptance rate' and ro…	2	9
+ab-testing	eval-2	with_skill	FAIL	16.8s	32037	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	4	FAIL	Recommends maximum time per stage	The model suggests a rule for stale deals: '> 2x the average time for that stage'. It does not recommend a specific maximum time per stage (e.g., 'max 2 weeks in Discovery'). It relies on the user's …	3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	10.6s	31350	7	FAIL	Provides practical cleanup plan	The model states: 'What I can build for you right now... 3. A "Cleanse" Plan'. It promises to provide the plan *after* the user replies with inputs. It does not provide the actual cleanup plan in the…	3	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.8s	32020	7	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.9s	31955	7	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	2.8s	30515	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	2.8s	30515	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	2.8s	30515	3	PASS			6	9

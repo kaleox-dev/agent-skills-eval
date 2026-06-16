@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model response is plain text and contains no reference to a file named 'product-marketing.md'.	1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	6	FAIL	Warns about treating SMS like email	The output does not contain any text warning the user not to treat SMS like email, nor does it compare the two channels' best practices in that manner. It mentions email lists as a source for opt-ins…	1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.4s	25923	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	8	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	25285	9	FAIL	Mentions UTM tagging or attribution	The model mentions 'track clicks' in relation to short links but does not explicitly mention 'UTM tagging', 'UTM parameters', 'attribution', or specific tracking mechanisms for analytics attribution.	2	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	7	FAIL	References compliance.md	Output says: 'see the compliance reference in the skill instructions.' It does not explicitly reference a file named 'compliance.md'.	3	7
+ab-testing	eval-3	with_skill	FAIL	7.5s	24931	8	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.7s	25312	7	FAIL	Mentions 'every send must justify itself' principle	The exact phrase 'every send must justify itself' is not present in the output. The text mentions 'Only send if the message provides unique value right now that email cannot,' which is a related conc…	4	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	3	FAIL	Calculates time-to-send for 100K volume	The model calculates 'messages per day' capacity (e.g., 864,000 messages per day theoretical max) but does not calculate the specific time duration (e.g., hours/minutes) required to send a static 100…	5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	7	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.6s	25438	8	FAIL	References platforms.md or trust score monitoring	The model mentions 'Verified trust score' in Section 1 but does not reference a specific file named 'platforms.md' nor does it provide instructions on continuous 'trust score monitoring' as a specifi…	5	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	4	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	Mentions 'accented characters' but does not mention 'curly quotes'. Text: 'UCS-2 (Unicode): Required for emojis, accented characters, or non-standard symbols.'	6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	6	FAIL	Recommends previewing segment count	Recommends 'Test it' to check billing impact but does not explicitly recommend 'previewing segment count' or using a preview tool. Text: 'Test it: If you use an emoji, remember you’ll be billed for 2…	6	7
+ab-testing	eval-6	with_skill	FAIL	6.8s	24908	7	PASS			6	7

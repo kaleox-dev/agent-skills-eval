@@ -1,0 +1,143 @@
+
+[1m▶ seo-audit[0m  [90m[0m
+  [90m8 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    Review the technical SEO of our e-commerce site. We have about 50,000 products and use faceted navigation.
+    [90moutput:[0m  I'll help you audit the technical SEO for your e-commerce site. With 50,000 products and faceted navigation, you're in a category where technical issues can silently drain crawl budget and bury your …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [31m✗ 9[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions product schema with detection limitation caveat
+         [90mevidence:[0m The model output does not mention 'product schema', 'JSON-LD', 'schema markup', or any related technical SEO elements.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Checks for duplicate product descriptions
+         [90mevidence:[0m The output mentions 'Duplicate product URLs' but does not mention 'duplicate product descriptions' or content cannibalization via description text.
+      [31m#9[0m [31mFAIL[0m [90m—[0m Findings include Impact ratings and specific fixes
+         [90mevidence:[0m The output explicitly states 'To provide specific findings, please share...' and requests URL/access before providing the audit. It offers general recommendations but no site-specific findings with i…
+    10.1s · 20512 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    Can you do an SEO audit of our SaaS website? We're getting about 2,000 organic visits/month but feel like we should be getting more. URL: https://example.com
+    [90moutput:[0m  I'd be happy to help you audit your SaaS website to identify opportunities for growth. 2,000 monthly organic visits is a solid foundation, but there's often significant room for improvement in SaaS S…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model output contains no reference to 'product-marketing.md'. It asks for URL and questions but does not check for this specific file or content artifact.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks robots.txt and XML sitemap
+         [90mevidence:[0m While the model lists 'Is your XML sitemap submitted...' as something it *will* check once a URL is provided, it did not perform the check. The output file section states 'No output files were captur…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Evaluates title tags, meta descriptions, heading structure
+         [90mevidence:[0m The model states under 'On-Page SEO' what it 'will check' (Title Tags, Meta Descriptions, Heading Structure) but did not evaluate actual content because no URL was provided. No evaluation took place.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Notes schema markup detection limitation
+         [90mevidence:[0m The model does not explicitly note a limitation regarding schema markup detection specifically. It notes a general inability to perform an audit due to the placeholder URL.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Output has Executive Summary
+         [90mevidence:[0m The output section titled 'What to Expect' lists 'Executive Summary' as something the user will receive *after* providing the URL. The current output does not contain an Executive Summary of the webs…
+      [31m#9[0m [31mFAIL[0m [90m—[0m Output has Prioritized Action Plan
+         [90mevidence:[0m Similar to the Executive Summary, 'Prioritized Action Plan' is listed under 'What to Expect' as a future deliverable. The current output is a clarification request, not the final plan.
+      [31m#10[0m [31mFAIL[0m [90m—[0m Each finding has Issue, Impact, Evidence, Fix, and Priority
+         [90mevidence:[0m There are no findings in the output. The output is a request for more information. No specific audit findings with Issue/Impact/Evidence/Fix/Priority are present.
+    9.5s · 20483 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    Why am I not ranking for 'project management software'? We have a page targeting that keyword but it's stuck on page 3.
+    [90moutput:[0m  This is a classic **keyword cannibalization** or **domain authority** issue. "Project management software" is one of the most competitive keywords in the SaaS industry, dominated by giants like Asana…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual 'why am I not ranking' phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks title tag, H1, URL alignment with target keyword
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates content depth vs competitors
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks for keyword cannibalization
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks indexation status and canonical tags
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Assesses E-E-A-T signals
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions competitive analysis against top-ranking pages
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.5s · 20666 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    We just migrated from WordPress to Next.js and our organic traffic dropped 40% in the last month. Help!
+    [90moutput:[0m  This is a critical situation, but **40% drops are extremely common after a CMS migration**, especially to a framework like Next.js that handles routing, rendering, and URLs differently than WordPress…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [32m✓ 9[0m  [31m✗ 10[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Checks for soft 404s
+         [90mevidence:[0m The output mentions 404s in the context of missing redirects ('Google thinks all your old pages are gone (404s)'), but does not explicitly mention checking for or defining 'soft 404s' (pages returnin…
+      [31m#8[0m [31mFAIL[0m [90m—[0m References Search Console coverage report
+         [90mevidence:[0m The output references 'Google Search Console > URL Inspection' and 'Indexing > Pages > Which errors are showing?', but does not explicitly reference the 'Coverage report' by name.
+      [31m#10[0m [31mFAIL[0m [90m—[0m Mentions recovery timeline expectations
+         [90mevidence:[0m The output mentions '40% drops are extremely common after a CMS migration' but does not provide an estimate of how long it will take for traffic to recover or index after fixes are applied.
+    13.7s · 20908 tokens · [31mFAIL[0m
+
+  [1m#8 eval-8[0m  [36m[with_skill][0m  [90m[8][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    I want to add FAQ schema to my product pages. Can you help me set that up?
+    [90moutput:[0m  This falls under the **schema** skill. Let me help you set up FAQ schema for your product pages. To give you the most accurate implementation, I need a bit more context: 1. **What platform/CMS are yo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    3.3s · 19778 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    Can you check our blog posts for on-page SEO issues? We publish 4 posts per week but traffic has been flat for 6 months.
+    [90moutput:[0m  To provide a targeted audit, I need to understand the current state of your site and content. Since you're publishing consistently (4 posts/week) but seeing flat traffic, the issue likely lies in **k…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [32m✓ 9[0m  [31m✗ 10[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies Content/Blog Sites framework
+         [90mevidence:[0m The model asks for Site URL and specific URLs, indicating it has not applied a specific framework to the current context but is instead requesting general inputs. No specific blog/site structure anal…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks for outdated content
+         [90mevidence:[0m The model mentions 'Outdated or Unoptimized Meta Tags' in a generic list of common reasons, but performs no actual check for outdated content on any provided URLs because none were provided. It state…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Checks for keyword cannibalization
+         [90mevidence:[0m The model discusses keyword cannibalization as a theoretical risk ('It’s easy for multiple posts to target the same keyword cluster') but does not check for it in the user's specific content. It expl…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks for topical clustering
+         [90mevidence:[0m The model asks the user to provide 'Primary Keywords/Topics' and 'Site URL' to proceed. It does not analyze existing content for topical clustering.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks for internal linking quality
+         [90mevidence:[0m The model lists 'Poor Internal Linking' as a generic potential issue and mentions it will check 'Internal linking opportunities' in the 'Next Step' after receiving data. No actual check is performed.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Checks for author pages and E-E-A-T signals
+         [90mevidence:[0m The model lists 'Lack of E-E-A-T Signals' as a general possibility ('If your posts lack author bios...'). It does not check for author pages or E-E-A-T signals on any provided content.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Audits title tags, meta descriptions, heading structure
+         [90mevidence:[0m The model states under 'Next Step': 'Share your site URL... and I’ll run a detailed on-page SEO audit focusing on: Title tag and meta description optimization, Heading structure'. It has not performe…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Assesses whether content answers search intent
+         [90mevidence:[0m The model mentions 'Helpful Content' system generally but does not assess specific content against search intent. It asks for user input to proceed.
+      [31m#10[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m The model provides a list of 'common reasons' and requests more information to proceed. It does not provide a prioritized action plan based on an actual audit, as no data was available to analyze.
+    5.7s · 20079 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    I run a local plumbing business with 3 locations. My website barely shows up when people search for 'plumber near me' in our areas. What's wrong?
+    [90moutput:[0m  The fact that your site doesn't appear for "plumber near me" searches is almost certainly a **Local SEO** issue, not a general technical SEO problem. Google's "Local Pack" (the map results) and local…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Checks for local schema markup with detection caveat
+         [90mevidence:[0m The output mentions 'Use schema markup: LocalBusiness or Plumber schema' as a fix, but it does not provide any mechanism for checking/detecting whether schema currently exists or is correct (no cavea…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Checks standard technical SEO factors too
+         [90mevidence:[0m The output explicitly states the issue is 'almost certainly a Local SEO issue, not a general technical SEO problem' and focuses exclusively on local signals (GBP, NAP, citations). It does not check o…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Provides prioritized local SEO action plan
+         [90mevidence:[0m The output ends with: 'Please answer the Initial Assessment Questions above, and I'll provide a prioritized action plan...'. It withholds the action plan pending user input, so it does not provide th…
+    8.5s · 20379 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="seo-audit"> <description>When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking,"…
+    [90muser:[0m    Our site loads really slowly, especially on mobile. Pages take 5-6 seconds to load. Is this hurting our SEO?
+    [90moutput:[0m  Yes, **this is significantly hurting your SEO.** Page speed is a confirmed ranking factor for both desktop and mobile search results. More critically, a 5-6 second load time on mobile creates a massi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    9.5s · 20477 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 56.5%[0m  [90m· 8.98s avg · 20410 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1115/benchmark.json[0m
+{
+  "passed": 35,
+  "failed": 32,
+  "skills": [
+    {
+      "skill": "seo-audit",
+      "slug": "seo-audit",
+      "relPath": "",
+      "evals": 8,
+      "passRate": 0.5223880597014925,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1115/benchmark.json"
+    }
+  ],
+  "iteration": 1115,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1115",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1115/report/index.html"
+}

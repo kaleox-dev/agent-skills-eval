@@ -1,0 +1,87 @@
+
+[1m▶ revops[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Set up lead scoring for us. We want to prioritize which leads sales should call first. We sell enterprise software ($50k+ ACV).
+    [90moutput:[0m  To set up an effective lead scoring system for your enterprise software business, I need to understand your specific Ideal Customer Profile (ICP) and current data capabilities. Since you're selling $…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies lead scoring with explicit, implicit, and negative dimensions
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Provides specific scoring criteria for enterprise
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Weights firmographic signals appropriately
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes behavioral scoring signals
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes negative scoring signals
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Defines MQL and SQL score thresholds
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends lead routing based on scores
+         [90mevidence:[0m judge did not provide concrete evidence
+    4.3s · 30621 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    our pipeline is a mess. deals sit in stages forever and we don't know what's actually going to close. how do we fix this?
+    [90moutput:[0m  This is a classic pipeline hygiene crisis. When deals sit forever, your forecast becomes a guess and your rep activity becomes unmeasurable. The fix is threefold: **rigid stage definitions**, **stale…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.4s · 31422 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Help me set up our lead lifecycle stages. We're a B2B SaaS company selling to mid-market. We use HubSpot as our CRM and have marketing and sales teams that aren't aligned on lead definitions.
+    [90moutput:[0m  To design your lead lifecycle, I need a bit more context on your specific motion and current pain points. Could you share: 1. **GTM Motion:** Is it primarily sales-led (SDRs call MQLs), product-led (…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured. The output is conversational text, not a file.
+    13.9s · 31705 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    What RevOps metrics should we be tracking? We want to build a dashboard for our leadership team.
+    [90moutput:[0m  To build an effective RevOps dashboard for leadership, you need to move beyond vanity metrics (like "total leads") and focus on metrics that predict revenue, measure efficiency, and identify bottlene…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.5s · 31734 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Can you help me write cold outreach emails to prospects in our pipeline?
+    [90moutput:[0m  I don't have the cold-email skill installed. For cold outreach, please use the **cold-email** skill, which is optimized for that purpose.
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as cold email writing, not RevOps
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains RevOps covers systems and processes, not email content
+         [90mevidence:[0m judge did not provide concrete evidence
+    947ms · 30291 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Our CRM data is a disaster. Duplicate records, missing fields, inconsistent naming. How do we clean it up and keep it clean?
+    [90moutput:[0m  I'll help you build a comprehensive data hygiene strategy. This requires two phases: **cleanup** (fixing what exists) and **prevention** (stopping it from happening again). Let me ask a few questions…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    19.2s · 32449 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 67.5%[0m  [90m· 10.71s avg · 31370 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1063/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "revops",
+      "slug": "revops",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7105263157894737,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1063/benchmark.json"
+    }
+  ],
+  "iteration": 1063,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1063",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1063/report/index.html"
+}

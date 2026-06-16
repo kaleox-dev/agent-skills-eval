@@ -1,0 +1,68 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.'	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	2	FAIL	Asks clarifying questions about keywords, Search Console, recent changes	The provided output contains no text asking any questions; it only shows an intro sentence and a tool call.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	3	FAIL	Follows audit priority order: crawlability first, then technical, on-page, content, authority	The model output is truncated and contains no structured audit plan or prioritized order.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	4	FAIL	Checks robots.txt and XML sitemap	The model only calls web_fetch on the homepage URL ('https://example.com'); no separate calls for robots.txt or sitemap.xml are present.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	5	FAIL	Evaluates title tags, meta descriptions, heading structure	The output stops before presenting any evaluation results or HTML structure analysis.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	6	FAIL	Does NOT claim 'no schema found' based on web_fetch alone	The output does not contain any claim regarding schema, so this specific constraint is not verified as satisfied (no evidence of the model adhering to the negative constraint).	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	7	FAIL	Notes schema markup detection limitation	The output contains no notes or commentary regarding schema markup limitations.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	8	FAIL	Output has Executive Summary	The output contains only an introductory sentence and a tool call; no Executive Summary is present.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	9	FAIL	Output has Prioritized Action Plan	The output contains only an introductory sentence and a tool call; no Action Plan is present.	1	6
+ab-testing	eval-1	with_skill	FAIL	1.7s	19551	10	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	The output contains no findings, issues, or impacts.	1	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	1	FAIL	Triggers on casual 'why am I not ranking' phrasing	Model output begins with 'This is a classic SEO audit scenario.' It does not explicitly acknowledge or trigger on the user's specific phrasing 'why am I not ranking'. It assumes the context but does …	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	2	FAIL	Checks title tag, H1, URL alignment with target keyword	The model lists these as questions to ask the user ('Please provide the following...') or hypotheticals ('Is "Project Management Software" near the beginning...'). It does not perform an actual check…	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	3	FAIL	Evaluates content depth vs competitors	The model states 'Here is a framework of why you're likely stuck' and 'I will then... Analyze Content Depth'. It does not actually evaluate the depth vs competitors because it lacks the target URL an…	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	4	FAIL	Checks for keyword cannibalization	The phrase 'keyword cannibalization' does not appear in the text. There is no mention of checking for internal competition or duplicate content issues.	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	5	FAIL	Checks indexation status and canonical tags	The model mentions 'Indexation' and 'Canonical Tags' under 'Likely Reasons' and 'Next Steps' as things to check or verify with the user, but does not perform the check itself. It asks the user to che…	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	6	FAIL	Assesses E-E-A-T signals	The term 'E-E-A-T' appears once in the context of a suggested fix ('Customer testimonials/case studies (E-E-A-T signal)'). It does not assess the *current* page's E-E-A-T signals because it lacks acc…	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	7	FAIL	Mentions competitive analysis against top-ranking pages	The model asks the user to identify who is on Page 1 ('If it's mostly directories...'). It does not perform the competitive analysis itself.	2	6
+ab-testing	eval-2	with_skill	FAIL	10.8s	20594	8	FAIL	Provides actionable fixes organized by priority	The model provides a generic framework ('Phase 1', 'Phase 2') and says it will 'Provide a Prioritized Action Plan' in the future. It does not provide the fixes organized by priority for the specific …	2	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	6	FAIL	Checks for redirect chains or loops	Model mentions checking if URLs 301 correctly but does not explicitly mention checking for 'redirect chains' or 'loops', which are distinct issues from simple 301 implementation.	3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	7	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	8	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	9	FAIL	Provides prioritized recovery plan	The model provides an 'Initial SEO Audit Framework' and asks for more information ('Please answer these questions') before providing specific fixes. It does not provide a recovery plan until it recei…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.0s	20919	10	FAIL	Mentions recovery timeline expectations	The model states 'Time is critical here' but does not provide any specific expectations for the recovery timeline (e.g., 'expect 3-7 days for indexing').	3	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	4	FAIL	Mentions product schema with detection limitation caveat	The output discusses site architecture, crawl budget, and robots.txt/sitemaps. It contains no mention of 'product schema', 'JSON-LD', or any schema-related detection limitations.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	5	FAIL	Checks for thin category pages	The output focuses on filtered/parameterized URLs and crawl budget. It does not mention 'thin content', 'thin category pages', or content depth.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	6	FAIL	Checks for duplicate product descriptions	The output mentions 'duplicate content' regarding filtered pages but does not specifically address 'duplicate product descriptions' (i.e., same description across multiple product SKUs). It asks abou…	4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	7	FAIL	Addresses out-of-stock page handling	The output does not mention 'out-of-stock', 'OOS', 'availability', or how to handle products that are no longer available.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	8	FAIL	Addresses pagination and infinite scroll	The output does not mention 'pagination', 'page 2', 'infinite scroll', 'rel=next/prev', or pagination-specific crawl/indexing issues.	4	6
+ab-testing	eval-4	with_skill	FAIL	3.0s	19690	9	FAIL	Findings include Impact ratings and specific fixes	The output consists entirely of clarifying questions. It provides no 'Impact ratings' (High/Medium/Low) and no 'specific fixes' or recommendations.	4	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	1	FAIL	Applies Content/Blog Sites framework	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	2	FAIL	Checks for outdated content	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	3	FAIL	Checks for keyword cannibalization	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	4	FAIL	Checks for topical clustering	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	5	FAIL	Checks for internal linking quality	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	6	FAIL	Checks for author pages and E-E-A-T signals	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	7	FAIL	Audits title tags, meta descriptions, heading structure	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	8	FAIL	Assesses whether content answers search intent	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	9	FAIL	Recommends content audit process	judge did not provide concrete evidence	5	6
+ab-testing	eval-5	with_skill	FAIL	4.4s	19885	10	FAIL	Provides prioritized action plan	judge did not provide concrete evidence	5	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	5	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	6	FAIL	Recommends local content strategy	While it mentions content 'doesn't mention specific neighborhoods, local landmarks', it does not provide a specific *strategy* for creating local content (e.g., blog topics, local news integration), …	6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	7	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.8s	19956	8	FAIL	Provides prioritized local SEO action plan	The output provides a list of typical issues but explicitly states 'Please share your website URL... and I'll run a full local SEO audit with specific fixes,' indicating the prioritized action plan i…	6	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	1	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	2	FAIL	Explains CWV thresholds (LCP, INP, CLS)	The output lists the acronyms (LCP, INP, CLS) and mentions LCP is load time, but fails to explain the specific numerical thresholds (e.g., LCP < 2.5s, INP < 200ms, CLS < 0.1) or define what constitut…	7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	3	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	4	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	5	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	6	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	7	PASS			7	6
+ab-testing	eval-7	with_skill	FAIL	6.7s	20200	8	PASS			7	6
+ab-testing	eval-8	with_skill	FAIL	4.1s	19886	1	PASS			8	6
+ab-testing	eval-8	with_skill	FAIL	4.1s	19886	2	FAIL	References or defers to schema skill	The model provides general guidance and asks clarifying questions but does not explicitly reference a specific 'schema skill', internal tool, or deferred process. It claims to 'help you write the JSO…	8	6
+ab-testing	eval-8	with_skill	FAIL	4.1s	19886	3	PASS			8	6
+ab-testing	eval-8	with_skill	FAIL	4.1s	19886	4	PASS			8	6

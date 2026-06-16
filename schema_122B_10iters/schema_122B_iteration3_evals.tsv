@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	1	FAIL	Checks for product-marketing.md	No output files were captured; model stated 'since I don't have access to the file system' but no evidence of file check	1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.6s	10700	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	3	FAIL	Provides complete code example	Only 2 questions shown as template with '// ... repeat for all 20 questions' comment	2	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	4	FAIL	Explains rich result benefits	Only states 'great way to get rich results in Google' without explaining specific benefits	2	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.0s	10238	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	1	FAIL	Triggers on casual phrasing	No trigger mechanism demonstrated; model only asks clarifying questions	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	2	FAIL	Implements Article or BlogPosting schema	No schema markup code provided in output	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	3	FAIL	Includes author, datePublished, image, publisher	No schema implementation present to verify these fields	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	4	FAIL	Recommends BreadcrumbList alongside	Only mentions 'Breadcrumb schema (if applicable)' without actual recommendation or implementation	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	5	FAIL	Provides reusable template code	No code snippets or templates provided in output	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	9737	6	FAIL	Addresses CMS integration for dynamic fields	Asks about tech stack but provides no CMS integration solutions	3	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	23.0s	11205	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	4	FAIL	Recommends Search Console structured data reports	No mention of Search Console or structured data reports in output	5	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	5	FAIL	Addresses warnings vs errors distinction	Asks about errors or warnings but does not explain the distinction between them	5	3
+ab-testing	eval-5	with_skill	FAIL	6.8s	9888	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	10330	1	FAIL	Recognizes this as a technical SEO audit request	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	10330	2	FAIL	References or defers to seo-audit skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	10330	3	FAIL	Does not attempt full SEO audit using schema markup patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	3

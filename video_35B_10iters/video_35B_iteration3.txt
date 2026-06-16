@@ -1,0 +1,95 @@
+
+[1m▶ video[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
+    [90moutput:[0m  For a 10-second clip of a person typing in a coffee shop, I recommend using **Veo 3 (Google)** or **Runway Gen-4**. Here is the breakdown of why, and how to get the best result: ### Top Recommendatio…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Sora reliability caveats
+         [90mevidence:[0m The output mentions Sora only in the context of accessibility: 'Sora: Excellent quality, but currently less accessible via API than Veo/Runway for many developers.' It does not note reliability cavea…
+    7.0s · 8606 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
+    [90moutput:[0m  To produce a 2-minute product demo video for your SaaS homepage **fastest**, the most efficient path is a hybrid approach: 1. **Visuals:** Use **Screen Recording** (for your actual UI) + **AI B-Roll*…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model output is a text response containing workflow recommendations. The 'Output files' section explicitly states 'No output files were captured'. There is no mention or creation of a file named …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Uses real screen recording, not AI generated UI
+         [90mevidence:[0m The model explicitly recommends using 'AI B-Roll' and 'AI Avatar (HeyGen)' for parts of the video. While it suggests using 'Screen Recording' for the UI, it does not verify that the user possesses 'r…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references copywriting skill
+         [90mevidence:[0m The output mentions 'Script' in all options, but it does not explicitly reference a 'copywriting skill' or cross-reference any specific skill module. It asks for the script or key points but does not…
+    6.9s · 8591 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
+    [90moutput:[0m  Turning a 60-minute webinar into social clips is a classic use case for **Editing & Repurposing**. You don't need to generate new footage; you need to extract, polish, and format existing content. He…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Specifies aspect ratios per platform
+         [90mevidence:[0m Output mentions 'Vertical cropping (16:9 → 9:16)' and 'Export: 1080x1920', but does not specify distinct aspect ratios for different platforms (e.g., Instagram vs TikTok).
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions hooking in first 3 seconds
+         [90mevidence:[0m Output mentions 'Add Hook Text' and 'stop the scroll', but does not specify the 'first 3 seconds' constraint.
+      [31m#6[0m [31mFAIL[0m [90m—[0m May cross-reference social skill
+         [90mevidence:[0m Output discusses editing and repurposing tools but does not cross-reference other social skills like community management, analytics, or copywriting.
+    10.8s · 9029 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  For weekly, 60-second product update videos where you **don't want to be on camera**, the most efficient and professional setup is a hybrid of **Programmatic Video (for structure/data)** and **AI Vid…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions HeyGen MCP server for agents
+         [90mevidence:[0m The model output mentions 'HeyGen' as a tool for avatar generation but contains no reference to an 'MCP server', 'agents', or any integration protocol involving an MCP server.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about authenticity tradeoff
+         [90mevidence:[0m The model warns about 'cost', 'flexibility', 'precise text/logo placement', and 'generic look', but does not explicitly mention 'authenticity' or tradeoffs related to perceived authenticity or trust.
+    11.5s · 9116 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
+    [90moutput:[0m  The choice between Hyperframes and Remotion depends on your team's skills, the complexity of your animations, and your long-term goals. Here is the breakdown: ### **Choose Hyperframes if:** 1. **You …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Asks about stack or animation needs
+         [90mevidence:[0m The model output provides a definitive breakdown and recommendation but does not ask the user any questions regarding their stack or animation needs; it prescribes solutions based on hypothetical sce…
+    5.7s · 8496 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
+    [90moutput:[0m  This is a perfect use case for **Programmatic Video**. Since you need to personalize data (company names, pain points) at scale (50 videos), building a template is the most efficient approach. Here i…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends HeyGen + Hyperframes pipeline
+         [90mevidence:[0m The model explicitly recommends Hyperframes *over* HeyGen, stating 'I recommend Hyperframes over Remotion...'. It only mentions HeyGen as an alternative for 'human face' use cases, not as part of a c…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names HeyGen MCP server
+         [90mevidence:[0m The model mentions 'HeyGen' once as an alternative tool. It never mentions 'MCP server' or any specific integration name for HeyGen.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
+         [90mevidence:[0m The model asks 'Would you like me to: 1. Generate the first 5 entries of data.json for you to test?' but does not explicitly instruct or recommend the user to 'test 5 manually first' as a process ste…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
+         [90mevidence:[0m The output contains no mention of 'reply tracking', 'ROI', 'analytics', or 'tracking'.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions captions
+         [90mevidence:[0m The model mentions 'Text-on-screen styles' and 'Visual Polish', but does not use the word 'captions' or specifically mention generating subtitle files.
+    13.6s · 9490 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 57.8%[0m  [90m· 9.27s avg · 8888 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1216/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 15,
+  "skills": [
+    {
+      "skill": "video",
+      "slug": "video",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5714285714285714,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1216/benchmark.json"
+    }
+  ],
+  "iteration": 1216,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1216",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1216/report/index.html"
+}

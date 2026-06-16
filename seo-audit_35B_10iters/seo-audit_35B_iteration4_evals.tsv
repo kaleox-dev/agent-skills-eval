@@ -1,0 +1,68 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model text does not reference product-marketing.md.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	3	FAIL	Follows audit priority order: crawlability first, then technical, on-page, content, authority	The output is a request for context and a single homepage fetch. It does not demonstrate a structured audit prioritization framework or execute the full audit sequence described.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	4	FAIL	Checks robots.txt and XML sitemap	The model output only shows a call to `web_fetch` for `https://example.com`. It does not explicitly mention checking robots.txt or XML sitemap.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	5	FAIL	Evaluates title tags, meta descriptions, heading structure	The model output does not contain any evaluation of title tags, meta descriptions, or heading structure.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	7	FAIL	Notes schema markup detection limitation	The model output does not mention schema markup limitations or detection capabilities.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	8	FAIL	Output has Executive Summary	The output consists of 'Quick Context Questions' and a technical fetch note. There is no section titled 'Executive Summary'.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	9	FAIL	Output has Prioritized Action Plan	The output contains questions and a fetch action, not a 'Prioritized Action Plan'.	1	4
+ab-testing	eval-1	with_skill	FAIL	2.6s	19679	10	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	There are no findings presented in the output, only context questions.	1	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.3s	20631	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	1	FAIL	Treats as urgent migration diagnostic	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	2	FAIL	Checks redirect mapping (301s)	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	3	FAIL	Checks canonical tags on new pages	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	4	FAIL	Checks robots.txt not blocking crawlers	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	5	FAIL	Checks XML sitemap updated and submitted	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	6	FAIL	Checks for redirect chains or loops	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	7	FAIL	Checks for soft 404s	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	8	FAIL	References Search Console coverage report	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	9	FAIL	Provides prioritized recovery plan	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	20491	10	FAIL	Mentions recovery timeline expectations	judge returned unparseable response: { "assertion_results": [ { "text": "Treats as urgent migration diagnostic", "passed": true, "evidence": "\"This is a critical situation. A 40% drop immediately fo…	3	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	4	FAIL	Mentions product schema with detection limitation caveat	Mentions "Schema markup for products" but contains no mention of detection limitations or caveats.	4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	5	FAIL	Checks for thin category pages	No specific mention of 'thin category pages' or analysis of category page content depth.	4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	6	FAIL	Checks for duplicate product descriptions	Focuses on duplicate content from filters/sort orders, not specifically on duplicate product descriptions themselves.	4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	7	FAIL	Addresses out-of-stock page handling	No mention of out-of-stock pages or their handling.	4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	8	FAIL	Addresses pagination and infinite scroll	No mention of pagination or infinite scroll strategies.	4	4
+ab-testing	eval-4	with_skill	FAIL	6.3s	20075	9	FAIL	Findings include Impact ratings and specific fixes	Includes Impact ratings (e.g., 'High Priority') but lacks specific fixes; offers to gather context instead of providing fixes.	4	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	1	FAIL	Applies Content/Blog Sites framework	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	2	FAIL	Checks for outdated content	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	3	FAIL	Checks for keyword cannibalization	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	4	FAIL	Checks for topical clustering	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	5	FAIL	Checks for internal linking quality	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	6	FAIL	Checks for author pages and E-E-A-T signals	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	7	FAIL	Audits title tags, meta descriptions, heading structure	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	8	FAIL	Assesses whether content answers search intent	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	9	FAIL	Recommends content audit process	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.3s	20004	10	FAIL	Provides prioritized action plan	judge did not provide concrete evidence	5	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	1	FAIL	Applies Local Business framework	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	2	FAIL	Checks NAP consistency	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	3	FAIL	Checks for local schema markup with detection caveat	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	4	FAIL	Addresses Google Business Profile optimization	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	5	FAIL	Recommends individual location pages for each location	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	6	FAIL	Recommends local content strategy	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	7	FAIL	Checks standard technical SEO factors too	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-6	with_skill	FAIL	3.4s	19801	8	FAIL	Provides prioritized local SEO action plan	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Local Business framework", "passed": false, "evidence": "The output is a diagnostic questionnaire asking for business …	6	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	1	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	3	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	4	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	5	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	6	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	7	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	10.0s	20591	8	PASS			7	4
+ab-testing	eval-8	with_skill	FAIL	5.3s	20034	1	PASS			8	4
+ab-testing	eval-8	with_skill	FAIL	5.3s	20034	2	PASS			8	4
+ab-testing	eval-8	with_skill	FAIL	5.3s	20034	3	PASS			8	4
+ab-testing	eval-8	with_skill	FAIL	5.3s	20034	4	PASS			8	4

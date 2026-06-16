@@ -1,0 +1,95 @@
+
+[1m▶ social[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    My LinkedIn posts get like 200 impressions and almost no engagement. What am I doing wrong?
+    [90moutput:[0m  200 impressions is a common "plateau" for profiles that haven't optimized for the LinkedIn algorithm yet. It usually means your content is being shown to your existing network, but not pushed to a br…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses posting timing
+         [90mevidence:[0m The model provides advice on *behavior* before posting ('Spend 10 minutes commenting... before you post') but does not mention specific *times of day* or *days of the week* for posting.
+    7.6s · 23230 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a Twitter/X thread about the lessons I learned bootstrapping my SaaS to $10k MRR. Include hooks and a CTA at the end.
+    [90moutput:[0m  Here is a draft for your Twitter/X thread. I’ve structured it using the **Tutorial/Breakdown** template with a strong **Value Hook**. Since I don’t know your specific niche or product, I’ve used brac…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies hook formulas from the skill
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Uses a story hook for the first tweet
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Uses specific numbers and stories
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.2s · 23631 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    i have a blog post that did really well. how do i turn it into social media content for multiple platforms?
+    [90moutput:[0m  Repurposing is the smartest way to social media. You shouldn't create from scratch; you should **extract** value from what already works. To give you the best specific advice, tell me: 1. **What is t…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Extracts 3-5 key insights to repurpose
+         [90mevidence:[0m judge did not provide concrete evidence
+    9.6s · 23442 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me create a LinkedIn content strategy. I'm a SaaS founder building in public and want to grow my personal brand to drive awareness for my product. I currently have 500 followers and post maybe o…
+    [90moutput:[0m  This is a classic "founder-led growth" scenario. Going from 500 followers to a meaningful audience as a SaaS founder is one of the highest-ROI activities you can do, but posting once a week is essent…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Establishes 3-5 content pillars
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies LinkedIn platform guidance
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides hook formulas
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Creates weekly content calendar
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes engagement strategy
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Addresses batching strategy for consistency
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Recommends increasing from 1x to 3-5x per week
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Checks for product-marketing.md", "passed": false, "evidence": "The model output explicitly states 'No output files were captu…
+    16.2s · 24204 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me reverse-engineer what's working for top creators in the DevTools space on Twitter. I want to understand their content patterns.
+    [90moutput:[0m  Reverse-engineering top creators in the **DevTools** space on Twitter/X is a high-leverage move. This niche is unique because it blends **technical authority**, **builder psychology**, and **tool uti…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.4s · 23902 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a 5-email welcome sequence for new email subscribers who came from my LinkedIn audience.
+    [90moutput:[0m  To build a high-converting welcome sequence for LinkedIn subscribers, we need to bridge the gap between **public professional branding** (LinkedIn) and **private personal connection** (Email). Since …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to emails skill
+         [90mevidence:[0m The output directly writes the email sequence using generic templates and placeholders (e.g., '[Your Name]', '[Link]'). It does not reference any specific 'email skill', documentation, or tool defini…
+    17.8s · 24419 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 64.9%[0m  [90m· 12.62s avg · 23805 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1196/benchmark.json[0m
+{
+  "passed": 24,
+  "failed": 15,
+  "skills": [
+    {
+      "skill": "social",
+      "slug": "social",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6153846153846154,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1196/benchmark.json"
+    }
+  ],
+  "iteration": 1196,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1196",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1196/report/index.html"
+}

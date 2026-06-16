@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	1	FAIL	Checks for product-marketing.md	Model references 'lifecycle-definitions.md, routing-rules.md, scoring-models.md, automation-playbooks.md' but never mentions product-marketing.md	1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	28.1s	32527	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.5s	31656	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger in output; response treats input as standard pipeline management query	3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	31133	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	5	FAIL	Includes CAC, LTV, LTV:CAC	Shows 'LTV:CAC Ratio' and 'CAC Payback Period' but does not include standalone CAC or LTV metrics as separate items.	4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.4s	31704	7	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	31814	7	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	7.3s	30830	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.3s	30830	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.3s	30830	3	FAIL	Explains RevOps covers systems and processes, not email content	No explicit explanation found in output	6	9

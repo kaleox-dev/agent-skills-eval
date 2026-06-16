@@ -1,0 +1,125 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  The user wants me to create a sales deck for their B2B SaaS product - an employee engagement platform targeting HR directors at mid-to-large companies (500-5000 employees). They've given me some key …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. No reference to product-marketing.md in model output.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 10-12 slide framework
+         [90mevidence:[0m Model states 'I'll create a 10-12 slide deck' but no actual slides provided.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes Problem, Solution, Proof, Pricing, Next Steps slides
+         [90mevidence:[0m No actual slide content provided. Model is asking questions instead of delivering deck.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Tailors to HR director audience
+         [90mevidence:[0m Model acknowledges 'HR Director is the primary' but no tailored content created.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Incorporates stated differentiator
+         [90mevidence:[0m Differentiator mentioned ('Real-time pulse surveys with AI-powered insights') but not incorporated into actual deck content.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides slide-by-slide content
+         [90mevidence:[0m No slide-by-slide content provided. Model output is only clarifying questions.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes speaker notes or talking points
+         [90mevidence:[0m No speaker notes or talking points provided in output.
+    8.7s · 32453 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  The user wants to build an ROI calculator for sales calls. This is a sales enablement request, and I have detailed guidance in the skill documentation about ROI calculators. However, I'm missing crit…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies ROI calculator framework
+         [90mevidence:[0m Model asks clarifying questions instead of applying framework: 'I should ask clarifying questions before building the calculator'
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines required inputs
+         [90mevidence:[0m No required inputs defined; only examples listed: 'What metrics/proxy inputs prospects can provide (time spent, current tool costs, team size, etc.)'
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides calculation methodology
+         [90mevidence:[0m No methodology provided; only mentioned as future output: 'Formulas (your value logic)'
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m No mention of conservative assumptions in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes ROI timeline and payback period
+         [90mevidence:[0m Payback period only mentioned as potential output: 'Output display (what they see: annual savings, payback period, 3-year value)'
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests validating assumptions during calls
+         [90mevidence:[0m No suggestion to validate assumptions during calls; only asks clarifying questions
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides calculator structure
+         [90mevidence:[0m No calculator structure provided; only describes what it would include: 'Once I have this, I can build you a calculator with...'
+    9.1s · 32498 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  The user wants an objection handling document for their sales team. They've identified three specific objections: 1. "We already use SurveyMonkey" 2. "We don't have budget right now" 3. "Our team is …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Categorizes objections using the skill's framework (competitor, budget, need/timing)
+         [90mevidence:[0m Model addresses the three objection types but does not explicitly label them using the framework categories (competitor, budget, need/timing)
+    28.7s · 34097 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  The user is asking for a public comparison page showing how they stack up against Zendesk and Intercom. This is a competitor comparison page. Looking at the skill description for sales-enablement, I …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains the distinction between internal and public collateral
+         [90mevidence:[0m Is this for SEO/organic traffic or sales enablement?
+    8.3s · 32422 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  The user is asking for a one-pager that can be left behind after sales meetings. This is a common sales enablement request for a "leave-behind" document. According to the skill instructions, I need t…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies one-pager/leave-behind framework
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes headline, benefits, social proof, how it works, CTA
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends scannable design
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+    10.9s · 32603 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  The user wants a demo script for an analytics dashboard product, targeted at a VP of Marketing, with a 30-minute duration. I need to use the Sales Enablement skill to create this. Looking at the refe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 5-part demo script structure
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes opening with discovery questions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes problem validation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes solution walkthrough
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes proof points
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes close with next steps
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Time-boxes for 30 minutes
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Notes customization based on prospect responses
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+    30.9s · 34238 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 26.4%[0m  [90m· 16.11s avg · 33052 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1067/benchmark.json[0m
+{
+  "passed": 8,
+  "failed": 30,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.21052631578947367,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1067/benchmark.json"
+    }
+  ],
+  "iteration": 1067,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1067",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1067/report/index.html"
+}

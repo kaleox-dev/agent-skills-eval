@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	1	FAIL	Checks for product-marketing.md	The model output is a direct text response requesting information and providing code. The 'Output files' section explicitly states: 'No output files were captured.' No file named product-marketing.md…	1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	10565	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	3	FAIL	Provides complete code example	The model explicitly states "Once I have this information, I'll provide you with the exact JSON-LD markup" and only provides a generic template with placeholders like "Your first question here?"	2	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	4	FAIL	Explains rich result benefits	The model mentions "to get rich results in Google" but does not explain what the benefits are (e.g., increased CTR, visibility). No substantive explanation of benefits is provided.	2	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	5	FAIL	Notes Google's FAQ schema guidelines	The model mentions "The questions/answers must match exactly what's visible on the page" which is a guideline, but it does not explicitly reference or note Google's FAQ schema guidelines document or …	2	6
+ab-testing	eval-2	with_skill	FAIL	4.5s	9808	6	FAIL	Recommends validation	The model does not mention using Google's Rich Results Test or Schema Markup Validator to check the implementation.	2	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	1	FAIL	Triggers on casual phrasing	Model output begins with 'I'll help you add schema markup to your blog posts. To create the most effective schema, I need to understand your specific setup and goals.' and immediately asks clarifying…	3	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	4	FAIL	Recommends BreadcrumbList alongside	The model mentions 'breadcrumbs' only in question 4 ('What rich results do you want target? (Article rich results, breadcrumbs, etc.)') but does not provide BreadcrumbList schema code, nor does it re…	3	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	6.8s	10059	6	FAIL	Addresses CMS integration for dynamic fields	The model asks about the tech stack (CMS, WordPress, etc.) but does not provide specific instructions, code examples, or strategies for integrating the schema dynamically into any specific CMS. It de…	3	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	4	FAIL	Includes BreadcrumbList	The output does not mention or include 'BreadcrumbList' in the recommended schema or the JSON example.	4	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.5s	10254	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	4.1s	9782	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	5.3s	9926	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.3s	9926	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.3s	9926	3	PASS			6	6

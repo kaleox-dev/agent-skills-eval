@@ -1,0 +1,73 @@
+
+[1m▶ revops[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    our pipeline is a mess. deals sit in stages forever and we don't know what's actually going to close. how do we fix this?
+    [90moutput:[0m  A stagnant pipeline is one of the most common RevOps challenges. It usually stems from three root causes: 1. **Unclear stage exit criteria** (reps advance deals on gut feel, not facts) 2. **No hygien…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends maximum time per stage
+         [90mevidence:[0m Section 2 recommends alerts for deals stale for '> 2x average days' and lists examples like '> 14 days stale' for Discovery. It does not define a 'maximum time' or SLA limit for a stage; it defines a…
+    11.7s · 31486 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Set up lead scoring for us. We want to prioritize which leads sales should call first. We sell enterprise software ($50k+ ACV).
+    [90moutput:[0m  To build a lead scoring system that prioritizes your enterprise sales team effectively, I need to tailor the model specifically for your **$50k+ ACV**. At this contract value, **fit is paramount** — …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Defines MQL and SQL score thresholds
+         [90mevidence:[0m The output explicitly defines an MQL Threshold (75 points). However, it fails to define a specific SQL score threshold. It notes a secondary threshold of 70 for 'high-fit leads' but labels this as a …
+    12.6s · 31597 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Help me set up our lead lifecycle stages. We're a B2B SaaS company selling to mid-market. We use HubSpot as our CRM and have marketing and sales teams that aren't aligned on lead definitions.
+    [90moutput:[0m  Let's build a lead lifecycle framework tailored for a mid-market B2B SaaS model. Since you are using HubSpot, I will provide the configuration steps and the strategic alignment needed for your teams.…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+    14.9s · 31833 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    What RevOps metrics should we be tracking? We want to build a dashboard for our leadership team.
+    [90moutput:[0m  To build a leadership dashboard, you need to move beyond tactical metrics (like "emails sent") and focus on **efficiency, predictability, and ROI**. Leadership cares about three things: **Is revenue …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    16.4s · 31975 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Can you help me write cold outreach emails to prospects in our pipeline?
+    [90moutput:[0m  This falls under **cold-email**. My RevOps expertise covers pipeline, lead routing, and scoring, but not outbound email copy or strategy. For cold outreach emails, please use the **cold-email** skill.
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    1.0s · 30304 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Our CRM data is a disaster. Duplicate records, missing fields, inconsistent naming. How do we clean it up and keep it clean?
+    [90moutput:[0m  A messy CRM is the most common revenue leak. Data decay is **30% per year** without enforcement, and dirty data costs B2B companies an average of **$14.9M annually** (IBM). Here is your playbook to f…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    15.6s · 32162 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 90.5%[0m  [90m· 12.05s avg · 31560 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1055/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 4,
+  "skills": [
+    {
+      "skill": "revops",
+      "slug": "revops",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8947368421052632,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1055/benchmark.json"
+    }
+  ],
+  "iteration": 1055,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1055",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1055/report/index.html"
+}

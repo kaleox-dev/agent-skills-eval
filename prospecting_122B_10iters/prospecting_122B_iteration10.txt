@@ -1,0 +1,129 @@
+
+[1m▶ prospecting[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    We sell to industrial distributors. Build a list of 25 prospects.
+    [90moutput:[0m  The user wants a prospect list of 25 industrial distributors. This is a B2B prospecting task (non-SaaS B2B branch). However, I'm missing critical information to build a qualified list: 1. **Geography…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends industry-specific directories beyond Apollo/ZoomInfo
+         [90mevidence:[0m No industry-specific directories mentioned; only tool access questions (Apollo, ZoomInfo, Clay, Hunter, Truelist)
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions trade show exhibitor lists
+         [90mevidence:[0m No mention of trade shows or exhibitor lists in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Identifies relevant trigger events
+         [90mevidence:[0m Only asks user about triggers; does not identify specific relevant trigger events for industrial distributors
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about data spottiness for industrial
+         [90mevidence:[0m No warning about data quality or spottiness for industrial sector
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends cross-verification with business websites + LinkedIn
+         [90mevidence:[0m No mention of business websites or LinkedIn for cross-verification
+      [31m#8[0m [31mFAIL[0m [90m—[0m Notes ICP fit precision over volume
+         [90mevidence:[0m Emphasizes qualified list but does not explicitly note ICP fit precision over volume
+    7.5s · 29918 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    I run a marketing agency. Find me 25 mid-market manufacturers in the Midwest US who recently hired a new CMO.
+    [90moutput:[0m  The user is asking me to find 25 mid-market manufacturers in the Midwest US who recently hired a new CMO. This is a B2B prospecting request. Let me break down what I need to collect: 1. Branch - This…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs Phase 1 ICP definition with NAICS or industry classification
+         [90mevidence:[0m No NAICS or industry classification provided; asks clarifying questions instead
+      [31m#3[0m [31mFAIL[0m [90m—[0m Specifies mid-market size band
+         [90mevidence:[0m What's your definition of 'mid-market'? (e.g., 50-500 employees, $10M-$500M revenue?) - model asks, does not specify
+      [31m#4[0m [31mFAIL[0m [90m—[0m Specifies Midwest US geography
+         [90mevidence:[0m What specific Midwest states? - model asks, does not specify
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends Apollo/ZoomInfo + LinkedIn Sales Nav
+         [90mevidence:[0m What tools do you have access to? (Apollo, ZoomInfo, Clay, Hunter, Truelist, or browser-only?) - model asks, does not recommend
+      [31m#7[0m [31mFAIL[0m [90m—[0m Notes CMO hires often only on LinkedIn
+         [90mevidence:[0m No mention of CMO hires being found on LinkedIn
+      [31m#8[0m [31mFAIL[0m [90m—[0m Outputs B2B-branch chat table
+         [90mevidence:[0m No output files were captured; no chat table produced
+      [31m#9[0m [31mFAIL[0m [90m—[0m Mentions CAN-SPAM and source URL capture
+         [90mevidence:[0m Mentions 'source URLs for compliance' but does not explicitly mention CAN-SPAM
+      [31m#10[0m [31mFAIL[0m [90m—[0m References b2b-prospecting.md
+         [90mevidence:[0m References product-marketing.md, not b2b-prospecting.md
+    6.7s · 29870 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    We're a B2B SaaS selling RevOps tooling at $30K ACV. Build me a list of 25 prospects.
+    [90moutput:[0m  The user wants a prospect list for their B2B SaaS selling RevOps tooling at $30K ACV. I need to use the prospecting skill to build this list. First, I should check if there's product marketing contex…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies SaaS branch
+         [90mevidence:[0m Model asks 'Are you selling to other SaaS companies specifically, or general B2B?' rather than identifying.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Runs Phase 1 ICP definition
+         [90mevidence:[0m Model states 'I need to clarify several things before I can build a quality list' - no ICP definition executed.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends multi-source discovery (Apollo, Clay, Crunchbase, BuiltWith)
+         [90mevidence:[0m Model asks 'What prospecting tools do you have access to?' but does not recommend multi-source discovery.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Sources 2-3x candidates before qualifying
+         [90mevidence:[0m No output files were captured. No candidates sourced.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Requires email validation before final list
+         [90mevidence:[0m Model promises 'Verified contact emails' but no validation action taken.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Outputs SaaS-branch chat table columns
+         [90mevidence:[0m No output files were captured.
+      [31m#9[0m [31mFAIL[0m [90m—[0m Includes top 3-5 outreach targets with rationale
+         [90mevidence:[0m Model promises 'Top 3-5 outreach targets with rationale' but none included in output.
+      [31m#10[0m [31mFAIL[0m [90m—[0m References saas-prospecting.md
+         [90mevidence:[0m No reference to saas-prospecting.md in model output.
+    8.2s · 29998 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    Find me 25 SaaS companies that just raised a Series B in the last 60 days and use HubSpot.
+    [90moutput:[0m  The user is asking me to find 25 SaaS companies that: 1. Just raised a Series B in the last 60 days 2. Use HubSpot This is a SaaS prospecting request. I need to follow the SaaS prospecting workflow f…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes data freshness concerns
+         [90mevidence:[0m No mention of data freshness concerns in output
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends cross-source verification
+         [90mevidence:[0m No explicit cross-source verification recommendation found in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Outputs signal column showing round + date
+         [90mevidence:[0m No actual output table or signal column with round + date data provided
+    17.9s · 30789 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    I build websites for local businesses. Find me 15 prospects near Austin, TX who don't have a website.
+    [90moutput:[0m  The user wants me to find 15 local business prospects near Austin, TX who don't have websites. This is a Local SMB prospecting request. Let me follow the Local SMB prospecting workflow: 1. **Branch**…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [32m✓ 10[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks about business category if not specified
+         [90mevidence:[0m Model does not ask about business category; provides generic search queries instead
+      [31m#3[0m [31mFAIL[0m [90m—[0m Defaults radius to 20km
+         [90mevidence:[0m No mention of 20km radius default in output
+      [31m#4[0m [31mFAIL[0m [90m—[0m Runs browser research workflow
+         [90mevidence:[0m I cannot actually browse the internet or access Google Maps directly - model admits it cannot execute browser research
+      [31m#8[0m [31mFAIL[0m [90m—[0m Adds top 3 outreach targets
+         [90mevidence:[0m No specific prospect targets added to output; only workflow guidance provided
+      [31m#9[0m [31mFAIL[0m [90m—[0m References local-prospecting.md
+         [90mevidence:[0m No reference to local-prospecting.md file in output
+    15.6s · 30651 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="prospecting"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use when th…
+    [90muser:[0m    I have a list of 200 prospect emails from Apollo. How do I know which ones are deliverable before I start outreach?
+    [90moutput:[0m  The user is asking about email deliverability validation for a list of 200 prospect emails from Apollo. This is a very practical question about email verification before cold outreach. Looking at the…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions cold email reputation is hard to recover
+         [90mevidence:[0m No explicit statement that reputation is hard to recover; only "destroy sender reputation"
+      [31m#8[0m [31mFAIL[0m [90m—[0m References truelist.md or data-sources.md
+         [90mevidence:[0m Output mentions "data-sources references" in thinking but final output does not reference truelist.md or data-sources.md files
+    16.5s · 30736 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 42.1%[0m  [90m· 12.06s avg · 30327 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1000/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 32,
+  "skills": [
+    {
+      "skill": "prospecting",
+      "slug": "prospecting",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.4074074074074074,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1000/benchmark.json"
+    }
+  ],
+  "iteration": 1000,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1000",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1000/report/index.html"
+}

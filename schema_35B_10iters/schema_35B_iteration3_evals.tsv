@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	1	FAIL	Checks for product-marketing.md	The model output explicitly states 'No output files were captured.' and contains no reference to a file named 'product-marketing.md'.	1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.4s	10527	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	4	FAIL	Explains rich result benefits	The model states 'I can help you implement FAQ schema markup to get rich results in Google' but does not explain *what* the benefits are (e.g., increased CTR, visibility), only that they exist.	2	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.7s	9793	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	1	FAIL	Triggers on casual phrasing	The model output asks for specific technical details (headline, author name, publication date, etc.) rather than responding to a casual prompt or providing a generic example immediately. The output s…	3	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	4	FAIL	Recommends BreadcrumbList alongside	The output JSON-LD schema is strictly BlogPosting. There is no mention, recommendation, or code snippet for BreadcrumbList in the text or code blocks.	3	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.1s	9822	6	FAIL	Addresses CMS integration for dynamic fields	The output provides a static JSON example and asks for specific values to generate more code. It does not discuss CMS integration, dynamic field mapping, template engines, or how to handle variable d…	3	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	4	FAIL	Includes BreadcrumbList	No BreadcrumbList schema, JSON-LD, or code snippet for breadcrumbs is present in the model output.	4	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	5.1s	9828	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	3	FAIL	Explains valid schema doesn't guarantee rich results	The model output focuses on validation and required fields. It does not contain any statement explaining that passing validation does not guarantee appearance in rich results.	5	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	4	FAIL	Recommends Search Console structured data reports	The model output does not mention 'Search Console' or 'structured data reports' anywhere in the text.	5	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	5	FAIL	Addresses warnings vs errors distinction	While the model asks if there are 'errors or warnings shown' in the user's testing, it does not provide any explanation or distinction between what warnings mean versus what errors mean.	5	3
+ab-testing	eval-5	with_skill	FAIL	3.6s	9718	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	4.3s	9786	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	4.3s	9786	2	FAIL	References or defers to seo-audit skill	The model does not mention 'seo-audit skill' or any specific agent skill name; it speaks generically as an assistant.	6	3
+ab-testing	eval-6	with_skill	FAIL	4.3s	9786	3	PASS			6	3

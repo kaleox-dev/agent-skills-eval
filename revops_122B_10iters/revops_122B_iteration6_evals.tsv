@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output. Model mentions 'reference materials' and 'templates' but does not check for or cite specific file.	1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	23.4s	32142	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	6	FAIL	Defines MQL and SQL score thresholds	MQL Threshold: 75 Points is defined, but no SQL threshold is specified in output	2	6
+ab-testing	eval-2	with_skill	FAIL	16.1s	31532	7	FAIL	Recommends lead routing based on scores	No lead routing recommendation provided; mentions SLA for MQL-to-SQL handoff as future deliverable	2	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in the output. The response treats the input as a technical RevOps problem without noting any casual language patterns.	3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	31500	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	5	FAIL	Includes CAC, LTV, LTV:CAC	CAC and LTV:CAC Ratio are included, but LTV is not shown as a standalone metric - only referenced in LTV:CAC ratio definition	4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	30.4s	32679	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	1	FAIL	Applies data hygiene guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	2	FAIL	Recommends duplicate detection and merging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	3	FAIL	Recommends required field enforcement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	4	FAIL	Addresses standardized naming conventions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	5	FAIL	Covers both cleanup and prevention	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	6	FAIL	Recommends CRM automation for hygiene	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-5	with_skill	FAIL	30.4s	32730	7	FAIL	Provides prioritized cleanup plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…	5	6
+ab-testing	eval-6	with_skill	FAIL	9.5s	30993	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.5s	30993	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.5s	30993	3	PASS			6	6

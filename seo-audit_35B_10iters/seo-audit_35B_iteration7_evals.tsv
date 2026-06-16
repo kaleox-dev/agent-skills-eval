@@ -1,0 +1,68 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	1	FAIL	Checks for product-marketing.md	No file 'product-marketing.md' is referenced or checked in the output. The model only asks for the URL and keywords.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	3	FAIL	Follows audit priority order: crawlability first, then technical, on-page, content, authority	The output jumps to 'Common SaaS SEO Issues' (content-focused) like 'Thin Product/Feature Pages' and 'Missing Blog-to-Product Linking' before completing a full technical crawlability check or present…	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	4	FAIL	Checks robots.txt and XML sitemap	The model states: 'I'll assume this is placeholder. For a real audit, I'd check robots.txt, sitemap...'. It explicitly does not perform the check.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	5	FAIL	Evaluates title tags, meta descriptions, heading structure	The model lists these under 'Technical Scan Results' with status 'Needs Check' or '⚠️' and describes what it *would* do ('Would verify uniqueness...', 'Would check for single H1...'). It does not eva…	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	8	FAIL	Output has Executive Summary	The output contains 'Initial Context', 'Technical Scan Results', 'Common SaaS SEO Issues', and 'Next Steps'. It does not contain a section titled or structured as an 'Executive Summary'.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	9	FAIL	Output has Prioritized Action Plan	While it lists common issues, it explicitly states in 'Next Steps': 'Once you provide the real URL, I can... Provide a prioritized action plan'. The final output is a request for information, not the…	1	7
+ab-testing	eval-1	with_skill	FAIL	9.7s	20490	10	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	The findings under 'Common SaaS SEO Issues' follow a structure of 'Title' (Issue), 'Impact' (e.g., 'High Impact'), and 'Fix'. They lack 'Evidence' (specific data from the site) and a distinct 'Priori…	1	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	4	FAIL	Checks for keyword cannibalization	Model output does not mention 'keyword cannibalization', 'duplicate content issues', or 'internal competition between pages'. It mentions 'Internal Linking' and 'Anchor Text' but not cannibalization.	2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	5	FAIL	Checks indexation status and canonical tags	Model output lists 'On-Page Optimization' items (Title, H1, URL, Meta) but does not mention 'indexation status', 'robots.txt', 'noindex', or 'canonical tags'. Section 2D mentions internal linking and…	2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	12.5s	20787	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	6	FAIL	Checks for redirect chains or loops	The model mentions redirect loops in the context of canonicalization errors ('redirect loops can occur') but does not provide a specific step or diagnostic to 'check for redirect chains or loops' as …	3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	7	FAIL	Checks for soft 404s	The model discusses 404s and 5xx errors and 'Excluded' pages in GSC, but does not specifically mention or instruct the user to check for 'soft 404s' (pages returning 200 OK but with thin content or n…	3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	8	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	9	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.5s	20668	10	FAIL	Mentions recovery timeline expectations	The model states the drop is 'almost certainly fixable' and advises to 'move fast,' but it does not provide any specific timeline expectations for recovery (e.g., 'traffic should stabilize within 2-4…	3	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	4	FAIL	Mentions product schema with detection limitation caveat	Section 3 mentions using 'Product Schema (itemgroupID)' to group variants, but does not mention any 'detection limitation caveat'. The model presents it as a straightforward fix without qualifying th…	4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	7	FAIL	Addresses out-of-stock page handling	The model output does not mention out-of-stock pages, handling of 404s/410s, or preserving index status for out-of-stock items.	4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	8	FAIL	Addresses pagination and infinite scroll	The model mentions 'infinite combinations' of filters, but does not address standard pagination (rel=prev/next or canonical to first page) or technical implementation of infinite scroll (lazy loading…	4	7
+ab-testing	eval-4	with_skill	FAIL	14.2s	20953	9	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	1	FAIL	Applies Content/Blog Sites framework	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	2	FAIL	Checks for outdated content	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	3	FAIL	Checks for keyword cannibalization	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	4	FAIL	Checks for topical clustering	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	5	FAIL	Checks for internal linking quality	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	6	FAIL	Checks for author pages and E-E-A-T signals	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	7	FAIL	Audits title tags, meta descriptions, heading structure	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	8	FAIL	Assesses whether content answers search intent	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	9	FAIL	Recommends content audit process	judge did not provide concrete evidence	5	7
+ab-testing	eval-5	with_skill	FAIL	5.0s	19931	10	FAIL	Provides prioritized action plan	judge did not provide concrete evidence	5	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	4	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	5	FAIL	Recommends individual location pages for each location	The model asks a clarifying question: 'Do you have separate pages on your website for each of your 3 locations...?' rather than issuing a recommendation or directive to create them.	6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	6	FAIL	Recommends local content strategy	The model does not mention creating local content. It asks for the URL to check technical health but provides no specific advice on content strategy for local relevance.	6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	7	FAIL	Checks standard technical SEO factors too	The model asks for the URL to check 'technical health' in the future but does not actually check or list standard technical SEO factors (like site speed, mobile-friendliness, crawl errors) in this tu…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.5s	19787	8	FAIL	Provides prioritized local SEO action plan	The model asks clarifying questions ('To get started, tell me a bit more...') rather than providing a prioritized action plan.	6	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	1	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	2	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	3	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	4	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	5	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	6	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	7	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	14.5s	20622	8	PASS			7	7
+ab-testing	eval-8	with_skill	FAIL	10.4s	20199	1	PASS			8	7
+ab-testing	eval-8	with_skill	FAIL	10.4s	20199	2	PASS			8	7
+ab-testing	eval-8	with_skill	FAIL	10.4s	20199	3	PASS			8	7
+ab-testing	eval-8	with_skill	FAIL	10.4s	20199	4	PASS			8	7

@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output. Model mentions 'skill instructions' but no file check shown.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	2	FAIL	Establishes 3-5 content pillars	Output states 'Content Pillars — 3-5 themes aligned with your goals' will be delivered, but no pillars are actually established in this output.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	4	FAIL	Provides hook formulas	Output mentions 'Hook & Post Templates' will be delivered but no actual hook formulas provided in this output.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	5	FAIL	Creates weekly content calendar	Output mentions 'Weekly Content Calendar — Ready-to-use template' will be delivered but no calendar is actually created.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	6	FAIL	Includes engagement strategy	Output mentions 'Engagement Strategy — How to grow beyond 500 followers' will be delivered but no engagement strategy is actually included.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	7	FAIL	Addresses batching strategy for consistency	No mention of batching strategy anywhere in the output.	1	7
+ab-testing	eval-1	with_skill	FAIL	9.9s	23226	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	16.8s	23783	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in user input; model asks clarifying questions without evidence of trigger	3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	2	FAIL	Applies content repurposing system	Model mentions 'content repurposing system' but does not apply it to actual content; asks for blog post first	3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	6	FAIL	Extracts 3-5 key insights to repurpose	Model asks 'What's the blog post about?' - no actual insights extracted from content	3	7
+ab-testing	eval-3	with_skill	FAIL	7.9s	23041	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	1	FAIL	Applies analytics and optimization guidance	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	2	FAIL	Diagnoses potential engagement issues	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	3	FAIL	Addresses hook quality	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	4	FAIL	Addresses posting timing	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	5	FAIL	Recommends daily engagement routine	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	6	FAIL	Suggests trying different content formats	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-4	with_skill	FAIL	16.0s	23713	7	FAIL	Provides specific before/after hook examples	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to: 1. Review the assertions (7 items) 2. Review the model output (the LinkedIn strategy respo…	4	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	28.7s	24821	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	10.1s	23256	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.1s	23256	2	FAIL	References or defers to emails skill	Model only speculates 'likely copywriting or emails based on the related skills mentioned in the references' without actually referencing or deferring to an emails skill tool.	6	7
+ab-testing	eval-6	with_skill	FAIL	10.1s	23256	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.1s	23256	4	PASS			6	7

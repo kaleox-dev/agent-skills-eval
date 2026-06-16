@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	1	FAIL	Checks for product-marketing.md	Model lists file paths to check but shows no actual file content or confirmation of check	1	1
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	3	FAIL	Uses real screen recording, not AI generated UI	No screen recording captured; model only provides advice, no actual video output	1	1
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	5	FAIL	Mentions captions	No mention of captions in output; discusses voiceover, screen recording, overlays but not captions	1	1
+ab-testing	eval-1	with_skill	FAIL	9.8s	8588	6	FAIL	Cross-references copywriting skill	No explicit reference to copywriting skill; only asks 'need help writing one?' regarding scripts	1	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	3	FAIL	Mentions HeyGen MCP server for agents	No mention of MCP server in output	2	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	4	FAIL	Mentions custom avatars option	No mention of custom avatars in output	2	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.0s	8844	6	FAIL	Warns about authenticity tradeoff	No warning about authenticity tradeoff found	2	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8743	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8743	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8743	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8743	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	11.7s	8743	5	FAIL	Notes Sora reliability caveats	Sora is not mentioned in the final output; only Veo 3, Runway Gen-4, and Kling are recommended	3	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	2	FAIL	Names Descript, Opus Clip, CapCut in sequence	Table order is Opus Clip, Descript, CapCut (not Descript, Opus Clip, CapCut). Workflow shows 'Descript or Opus Clip' then 'CapCut' - not exact sequence.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	3	FAIL	Mentions captions essential	Model asks 'Do you need captions?' with context '(85% of social video is watched muted)' - does not state captions are essential.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	5	FAIL	Mentions hooking in first 3 seconds	No mention of 3-second hook or hooking in opening seconds. Only mentions 'help write hooks/titles' at end without timing specification.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	8579	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	2	FAIL	Names HeyGen MCP server	No mention of MCP server in output	5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	4	FAIL	Recommends testing 5 manually first	No mention of testing 5 manually in output	5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	5	FAIL	Mentions reply tracking / ROI	No mention of reply tracking or ROI in output	5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	8498	6	FAIL	Mentions captions	No mention of captions in output	5	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	4	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	5	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.7s	8823	6	PASS			6	1

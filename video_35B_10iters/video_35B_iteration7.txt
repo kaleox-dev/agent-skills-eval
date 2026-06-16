@@ -1,0 +1,85 @@
+
+[1m▶ video[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
+    [90moutput:[0m  For a 10-second clip of a person typing in a coffee shop for a landing page, the best tools depend on the level of realism and style you need. Here are the top recommendations: ### 🏆 Top Recommendat…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Sora reliability caveats
+         [90mevidence:[0m Model lists 'Sora 2 (OpenAI)' as a top recommendation but only praises its 'highest quality photorealism and support synced audio'. It does not mention any reliability caveats, known issues, or limit…
+    6.3s · 8526 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
+    [90moutput:[0m  To give you the fastest, highest-quality path, I need to clarify one critical constraint: **Do you need the video to update automatically as your product changes (programmatic), or is this a static m…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states 'No output files were captured.' The response is a conversational text block asking for clarification, with no mention of a file named 'product-marketing.md' or generation…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references copywriting skill
+         [90mevidence:[0m The response mentions 'Script First' and 'Write a tight 2-minute script', but it does not explicitly reference a 'copywriting skill' as a distinct entity or cross-reference it by name (e.g., 'see cop…
+    7.8s · 8681 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
+    [90moutput:[0m  Great question. Turning a 60-minute webinar into high-performing social clips is one of the highest-ROI tasks you can do. Since you have the source material, we don't need to generate new footage—we …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names Descript, Opus Clip, CapCut in sequence
+         [90mevidence:[0m Model mentions Opus Clip and Descript in Option 1 and Option 2. However, CapCut is mentioned in Step 2 of the Recommendation section, appearing *after* Opus Clip and Descript were already discussed i…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Specifies aspect ratios per platform
+         [90mevidence:[0m Model mentions 'vertical (9:16) format' generally in Option 1 and 'vertical MP4' in Option 2, but does not specify different aspect ratios for different platforms (e.g., it does not contrast 9:16 for…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions hooking in first 3 seconds
+         [90mevidence:[0m The model mentions 'grab attention' and 'hook in the text-on-screen', and discusses 'Hook Strategy', but it does not specify the 'first 3 seconds' constraint mentioned in the assertion.
+    10.6s · 9014 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  Since you need **weekly** consistency, **60-second** length, and **no camera time**, the best approach is a **Hybrid Programmatic + AI Avatar** pipeline. This setup allows an AI agent (or you, using …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about authenticity tradeoff
+         [90mevidence:[0m The model recommends HeyGen for "Best-in-class lip-sync & realism" and states "You can even create a 'digital twin'... but a generic professional avatar works well." It does not explicitly warn about…
+    12.4s · 9218 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
+    [90moutput:[0m  The choice between **Hyperframes** and **Remotion** depends almost entirely on whether you prioritize **agent compatibility/simplicity** or **animation complexity/flexibility**. Here is the quick dec…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    6.7s · 8609 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
+    [90moutput:[0m  This is a perfect use case for **Programmatic Video**. Generating 50 unique videos with a human avatar (HeyGen/Synthesia) can get expensive and slow, and AI-generated footage (Veo/Sora) is unreliable…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
+         [90mevidence:[0m The model suggests generating videos for 50 targets and provides a script to do so. It mentions 'Step 1: Prepare Your Data' with 50 targets but never explicitly advises testing '5 manually first' bef…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
+         [90mevidence:[0m The text discusses 'Sales Outreach', 'conversion', 'Brand Consistency', and 'Speed', but contains no mention of 'reply tracking', 'ROI', or specific metrics for measuring return on investment.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions captions
+         [90mevidence:[0m The model focuses on HTML/CSS rendered text. It mentions 'Text-only videos' and 'spelled audio/voiceover', but does not mention adding subtitles or captions to the video output.
+    16.7s · 9861 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 71.7%[0m  [90m· 10.07s avg · 8985 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1220/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "video",
+      "slug": "video",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7142857142857143,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1220/benchmark.json"
+    }
+  ],
+  "iteration": 1220,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1220",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1220/report/index.html"
+}

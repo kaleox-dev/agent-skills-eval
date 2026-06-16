@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	1	FAIL	Checks for product-marketing.md	The output contains no reference to a file named 'product-marketing.md'. The output is a direct textual response.	1	9
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	3	FAIL	Uses real screen recording, not AI generated UI	The model does not use or claim to use a real screen recording. It instructs the user to 'Use Loom or CleanShot X to record your screen' (Step 3), meaning the model itself did not perform the recordi…	1	9
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.0s	8941	6	FAIL	Cross-references copywriting skill	The output does not mention or cross-reference a 'copywriting skill' or any similar specific skill module by name.	1	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	3	FAIL	Mentions HeyGen MCP server for agents	The model mentions HeyGen for video generation but does not mention an "MCP server" or any specific agent integration protocol for HeyGen. It only suggests using HeyGen programmatically via API/scrip…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.5s	9111	6	FAIL	Warns about authenticity tradeoff	The model highlights benefits like speed and consistency. In the alternative section, it notes a downside of the non-avatar approach is a 'Less premium feel', but it does not explicitly warn about an…	2	9
+ab-testing	eval-3	with_skill	FAIL	7.3s	8647	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.3s	8647	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.3s	8647	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.3s	8647	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.3s	8647	5	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.1s	8845	6	FAIL	May cross-reference social skill	The text focuses on video production workflow (editing, tools, aspect ratios). It does not explicitly mention 'social skills' or interpersonal skills required for social media management, nor does it…	4	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	1	FAIL	Recommends HeyGen + Hyperframes pipeline	judge did not provide concrete evidence	5	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	4	FAIL	Recommends testing 5 manually first	judge did not provide concrete evidence	5	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	5	FAIL	Mentions reply tracking / ROI	judge did not provide concrete evidence	5	9
+ab-testing	eval-5	with_skill	FAIL	18.2s	10112	6	FAIL	Mentions captions	judge did not provide concrete evidence	5	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	5	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	8404	6	FAIL	Asks about stack or animation needs	The output provides advice based on hypothetical scenarios ('If you want...', 'If you need...') but does not contain any interrogative sentences or questions directed at the user asking for their spe…	6	9

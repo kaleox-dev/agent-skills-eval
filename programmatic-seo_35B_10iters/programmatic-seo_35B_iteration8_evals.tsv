@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model did not reference or generate a file named 'product-marketing.md'.	1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	7	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.8s	9623	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	4	FAIL	Includes keyword research for variations	The output lists ranking keywords in section 6 ('[Your Product] vs [Competitor]', '[Competitor] alternatives', 'Better than [Competitor]') but does not provide any actual keyword research, search vol…	2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	7	FAIL	Cross-references competitors skill	The output advises writing a section 'Where [Competitor] Wins' to build credibility, but it does not explicitly analyze or list specific functional skills/capabilities of the competitors (e.g., 'Comp…	2	8
+ab-testing	eval-2	with_skill	FAIL	17.3s	9845	8	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.3s	9752	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	1	FAIL	Diagnoses indexation problem	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	2	FAIL	Investigates thin content as likely cause	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	3	FAIL	Checks crawl budget considerations	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	4	FAIL	Checks internal linking to programmatic pages	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	5	FAIL	Checks XML sitemap and robots.txt	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	6	FAIL	Recommends specific fixes for indexation	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-4	with_skill	FAIL	8.7s	8969	7	FAIL	Warns about Google's thin content policies	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …	4	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	16.9s	9982	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	9038	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	9038	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	9038	3	FAIL	Explains that programmatic-seo is for strategy and template design	The model does not explain that programmatic-seo is for strategy and template design. It discusses 'programmatic SEO audits' and 'remediation framework' but makes no statement distinguishing the 'pro…	6	8
+ab-testing	eval-6	with_skill	FAIL	9.6s	9038	4	PASS			6	8

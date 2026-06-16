@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output contains no reference to a file named 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	6	FAIL	Warns about treating SMS like email	The text advises 'SMS for urgency, Email for detail' in Phase 3, but does not explicitly warn against 'treating SMS like email' as a concept (e.g., regarding length, tone, or frequency habits) in the…	1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	17.1s	25985	8	FAIL	Mentions per-send cost economics	The text mentions '$1k+/mo' for short codes and 'Msg & data rates may apply' for subscribers, but does not discuss per-send cost economics for the merchant (e.g., platform fees per message).	1	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	1	FAIL	Outputs 3-message sequence with timing	The output provides a 4-message sequence (Send 1, Send 2, Send 3, Send 4), not 3. It explicitly labels Send 4: 'The "One Last Thing" (48 Hours After Abandon)'.	2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	6	FAIL	Compliance footer on first send (STOP to opt out)	The Send 1 copy provided is: 'Hey [FirstName], your custom design is saved but expiring soon! Finish your order here: [short.link]'. It does NOT contain 'STOP to opt out'. The footer is only mentione…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	8	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	11.3s	25352	9	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	7	FAIL	References compliance.md	The model output contains no mention of 'compliance.md' or any specific file reference.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.2s	25126	8	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	2	FAIL	Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)	The output cites '<2%' for opt-out rate: 'The industry average for opt-out rate per promotional send is **<2%**.' However, it does NOT cite '<0.5%' for promotional rate. Instead, it discusses a '70/2…	4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	25455	7	FAIL	Mentions 'every send must justify itself' principle	The specific phrase 'every send must justify itself' does not appear in the text. The output mentions 'treating it like an email newsletter kills trust' and 'If every text is a "BUY NOW," the channel…	4	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	4	FAIL	Mentions quiet hour considerations	The model output discusses 'burst patterns', 'peak hours', 'opt-out rates', and 'frequency caps', but does not mention 'quiet hours', 'quiet hour', or specific time-of-day restrictions regarding non-…	5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	7	FAIL	Mentions A2P sample text alignment requirement	The model mentions 'STOP/HELP handling', 'use case', 'content' generally ('Fix your copy'), and 'compliance violations', but never specifically mentions 'A2P sample text alignment', 'payload alignmen…	5	9
+ab-testing	eval-5	with_skill	FAIL	12.2s	25549	8	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	The text mentions 'special characters' triggering the switch but does not specifically list 'accented characters' or 'curly quotes' as examples or triggers. It focuses solely on emojis.	6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	6	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	8.8s	25154	7	PASS			6	9

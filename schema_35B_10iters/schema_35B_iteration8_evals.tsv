@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	10032	7	FAIL	Recommends validation tools	No mention of validation tools (e.g., Google Rich Results Test) in the output.	1	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	4	FAIL	Explains rich result benefits	The output mentions using the Rich Results Test to 'verify the markup is correct' and 'ensure no syntax errors', but does not explain the benefits (e.g., enhanced SERP appearance, click-through rate …	2	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	7.7s	10171	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	8.2s	10211	6	FAIL	Addresses CMS integration for dynamic fields	The model asks for the tech stack ('WordPress, Next.js, React...') but does not provide specific implementation guidance, dynamic field mapping instructions, or code snippets for CMS integration in t…	3	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	14.1s	10883	6	FAIL	Notes rich result benefits for products	The text discusses requirements ('Minimum Requirements', 'Recommended for Maximum Visibility') and implementation details, but does not explicitly state or quote specific 'rich result benefits' such …	4	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	3	FAIL	Explains valid schema doesn't guarantee rich results	The model states 'Not all schema types produce visible rich results' but does not explicitly explain that *valid* schema (passing validation) still might not yield rich results due to quality or othe…	5	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	4.7s	9836	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	4.0s	9756	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	4.0s	9756	2	FAIL	References or defers to seo-audit skill	The model responds with natural language and specific troubleshooting steps but never mentions 'seo-audit skill', 'skill', or any specific tool/schema name.	6	8
+ab-testing	eval-6	with_skill	FAIL	4.0s	9756	3	PASS			6	8

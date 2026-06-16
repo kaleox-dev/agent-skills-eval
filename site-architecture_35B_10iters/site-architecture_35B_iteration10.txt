@@ -1,0 +1,99 @@
+
+[1m▶ site-architecture[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    Our website has grown organically and the navigation is a mess. We have 50+ pages and users can't find anything. Help us reorganize.
+    [90moutput:[0m  I can help you reorganize your site. A messy navigation with 50+ pages is a classic symptom of organic growth without information architecture planning. Let's fix that. To give you a precise restruct…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Groups related pages logically
+         [90mevidence:[0m The model does not provide the restructuring plan or group pages. It explicitly states: 'To give you a precise restructuring plan, I need a bit more context' and 'here's what I'll deliver once I have…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies 3-click rule
+         [90mevidence:[0m The model mentions the goal is to get pages to '≤3 clicks from the homepage' in the summary paragraph, but it does not apply or demonstrate the rule in a structural plan because the restructuring has…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Redesigns navigation structure
+         [90mevidence:[0m The model promises 'Navigation Specification' in the future delivery but does not currently redesign or present any navigation structure. It only lists '4-7 items' as a general guideline for what it …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides ASCII tree or visual sitemap
+         [90mevidence:[0m The output contains no ASCII tree or visual sitemap. The model states it will deliver a 'Clean Page Hierarchy (ASCII Tree)' and 'Visual Sitemap (Mermaid Diagram)' in the future, contingent on the use…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses URL redirects for moved pages
+         [90mevidence:[0m The model does not address specific redirects. It asks the user 'Do you have existing URLs that must be preserved?' and mentions planning '301 redirects later', but no actual redirection mapping or a…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Reduces header navigation items
+         [90mevidence:[0m The model mentions a goal of 'Header nav (4-7 items)' as part of the future deliverables, but it does not currently reduce or present any header navigation items. The actual navigation structure is n…
+    6.0s · 23417 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    Help me plan the site architecture for our new SaaS marketing website. We have a homepage, product page, pricing page, about page, blog, and want to add competitor comparison pages and integration pa…
+    [90moutput:[0m  I'll start by checking if there's a product marketing context file already in place, then ask a few clarifying questions to tailor the architecture. Let me check for existing product marketing contex…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 3-click rule and flat vs deep principles
+         [90mevidence:[0m The model output asks for context questions and provides a preliminary structure. It does not explicitly discuss or apply the '3-click rule' or 'flat vs deep' architectural principles in the text. It…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Organizes pages logically
+         [90mevidence:[0m The model explicitly states: "In the meantime, here's a preliminary site structure... Once I have your answers, I'll refine it significantly" and "Reply with your answers... and I'll build you the fu…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends URL structure for each section
+         [90mevidence:[0m While it lists some example URLs (e.g., `/product`, `/pricing`), it does not provide a comprehensive URL structure for *each* section as part of a complete recommendation. It explicitly promises a "U…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes internal linking strategy
+         [90mevidence:[0m The model lists "Internal linking plan" as something it will provide in the "full deliverable" later. The current output does not include any internal linking strategy.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Provides hierarchy, URL map, and nav spec
+         [90mevidence:[0m The model explicitly states these items (Page hierarchy, Visual sitemap, URL map table, Navigation spec) are part of the "full deliverable" that will be built *after* the user answers questions. It d…
+    7.1s · 23533 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    We're adding programmatic SEO pages — 200 integration pages and 50 comparison pages. How should these fit into our site architecture?
+    [90moutput:[0m  To give you the most accurate site architecture advice, I need to clarify a few details first. Programmatic pages are high-risk for thin content penalties if not structured correctly, so the URL patt…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Keeps programmatic pages out of main nav
+         [90mevidence:[0m The ASCII hierarchy in Section 2.C places the parent hubs ('Integrations (/integrations)' and 'Compare (/vs)') directly under the Homepage in the main navigation structure. It does not explicitly rec…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses crawl budget for 250 pages
+         [90mevidence:[0m While Section 2.D.3 mentions 'Since you have 250 new pages', it only advises using clean paths rather than parameters. It does not provide specific strategies to manage crawl budget, such as prioriti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references programmatic-seo skill
+         [90mevidence:[0m The output is a single block of text. There are no hyperlinks, citations, or explicit references to a 'programmatic-seo skill' or any external resource file.
+    12.3s · 24127 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    what should our url structure look like? we keep debating between /blog/post-name vs /resources/blog/post-name and /product/feature vs /features/feature-name
+    [90moutput:[0m  This is a classic structural debate. The choice dictates your navigation, internal linking strategy, and SEO "cannibalization" risks. To give you the best recommendation, I need to know **what kind o…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    12.1s · 24117 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    Our XML sitemap hasn't been updated in 6 months and we have crawl errors in Search Console. Can you fix our technical SEO?
+    [90moutput:[0m  This request falls under **Technical SEO** (`seo-audit`), not Site Architecture (`site-architecture`). * **Site Architecture** is about *planning* the structure (hierarchy, URLs, navigation) for new …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains site-architecture covers design, not technical SEO
+         [90mevidence:[0m The model states: "**Site Architecture** is about *planning* the structure..." but does not explicitly state that it covers 'design' vs 'technical SEO' in the contrastive manner required. It focuses …
+    6.9s · 23605 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="site-architecture"> <description>When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user m…
+    [90muser:[0m    Can you create a visual sitemap for our site? We want something we can share with our design team.
+    [90moutput:[0m  I'd be happy to create a visual sitemap for your design team. To make it accurate and useful, I need a bit of context first: 1. **What type of site is it?** (SaaS marketing, e-commerce, blog/content …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes all major sections
+         [90mevidence:[0m The response explicitly states: 'I need a bit of context first' and 'Includes all major sections' is not verified because the model asks for the site type, existing pages, and structure before genera…
+    8.4s · 23712 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 55.3%[0m  [90m· 8.80s avg · 23752 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1163/benchmark.json[0m
+{
+  "passed": 18,
+  "failed": 17,
+  "skills": [
+    {
+      "skill": "site-architecture",
+      "slug": "site-architecture",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5142857142857142,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1163/benchmark.json"
+    }
+  ],
+  "iteration": 1163,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1163",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1163/report/index.html"
+}

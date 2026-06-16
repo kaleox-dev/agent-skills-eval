@@ -1,0 +1,361 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	1	FAIL	Checks for product-marketing.md	The model output explicitly states: 'No output files were captured.' and contains no reference to a file named product-marketing.md.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	The model provides 'Trigger Moments' and 'Incentive Structure', but it does not explicitly design the full loop (trigger, share, convert, reward). It explicitly states 'I need to clarify a few detail…	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	6	FAIL	Includes launch checklist	The model output contains no launch checklist. It ends with 'Next Step: Please answer the 4 questions above...'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	2	FAIL	Identifies as single-sided and recommends double-sided	The model critiques the 'punishes the referee' aspect but does not explicitly identify the current structure as 'single-sided' nor does it explicitly recommend 'double-sided' as a specific label in c…	4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	6	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	7	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	3	FAIL	Cross-references emails for broader email work	The output focuses exclusively on referral emails. There is no cross-referencing to other types of emails or broader email strategies mentioned in the context.	6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	4	PASS			6	1
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is conversational text, not a file named 'product-marketing.md'.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	The model states 'Once we have these details, we can move on to designing the trigger moments...'. It has not yet designed the loop (trigger, share, convert, reward); it only asked for input.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	4	FAIL	Recommends double-sided incentive structure	The model asks as a question: 'Would you prefer double-sided rewards ... or single-sided?'. It does not make a definitive recommendation; it proposes options.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	6	FAIL	Includes launch checklist	No launch checklist is present in the text. The model is currently gathering requirements.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	7	FAIL	Recommends tool integrations	The model asks: 'Are you currently using any specific CRM...?' It does not recommend specific integrations.	1	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	1	FAIL	Triggers on casual phrasing	Model output begins immediately with 'Based on your goal to recruit **creators and influencers**...' without addressing any casual phrasing or context from a user prompt, as no user prompt was provid…	3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	6	FAIL	Notes incentive may not be the only issue	The output explicitly states the problem is 'psychology, not just amount' and focuses entirely on fixing the incentive structure (sidedness, value, mechanism). It does not mention external factors su…	4	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	7	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	3	FAIL	Cross-references emails for broader email work	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	4	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The text body contains no reference to a file named 'product-marketing.md'.	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	2	FAIL	Distinguishes referral from affiliate	The model mentions 'B2B SaaS' dynamics and 'trust and professional utility,' but does not explicitly distinguish between a referral program and an affiliate program. It treats them as the same mechan…	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	6	FAIL	Includes launch checklist	The output provides a 'Step-by-Step Implementation Plan' with phases (Week 1-2, Week 3-4, Month 2+). While it lists actions, it is a strategic rollout plan, not a discrete 'launch checklist' (e.g., '…	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	5	FAIL	Addresses cookie duration and payout terms	The output discusses commission percentages and fraud prevention (paying after refund window) but does not mention specific cookie duration windows (e.g., 30 days, 90 days).	3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	2	FAIL	Identifies as single-sided and recommends double-sided	The model recommends 'Double-Sided Credit' (Option A) and 'First Month Free' to 'both parties' (Option B). However, the input implies the current structure is a $10 discount (which is typically singl…	4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	6	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	3	FAIL	Cross-references emails for broader email work	The output does not cross-reference any other email campaigns, sequences, or files. It focuses solely on the referral email context.	6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	4	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	1	FAIL	Checks for product-marketing.md	The output explicitly states 'No output files were captured' and contains no file content.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	2	FAIL	Distinguishes referral from affiliate	The model does not distinguish between referral and affiliate programs. It mentions 'affiliate + referral hybrid' in the context of Tool recommendations (Rewardful) but does not provide a conceptual …	1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	The model addresses 'Incentive Structure', 'Trigger Moments', and 'Share Mechanism', but explicitly fails to address the 'convert' step as a designed part of the loop. Furthermore, the model states i…	1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	6	FAIL	Includes launch checklist	The model lists 'Provide a launch checklist tailored to your tool' under 'Next Steps' indicating it is a future action, not included in the current output.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.6s	8754	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.3s	9052	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.5s	9181	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.0s	9227	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	9341	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	8933	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	8933	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	8933	3	FAIL	Cross-references emails for broader email work	The model output focuses exclusively on referral emails. There is no mention of other types of emails, broader email marketing strategies, or cross-referencing to other email contexts.	6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	8933	4	PASS			6	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	1	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	5	FAIL	Suggests specific incentives for the price point	The model assumes a '$49/mo tool' price point (which is not provided in the context) and suggests '$50–$100 in account credit'. Since the actual product context was not provided, this is an ungrounde…	1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	6	FAIL	Includes launch checklist	The output contains a 'Program Design Framework' with sections on incentives, triggers, etc., but does not contain a 'Launch Checklist' (e.g., steps for go-live, legal review, etc.).	1	5
+ab-testing	eval-1	with_skill	FAIL	6.4s	8618	7	FAIL	Recommends tool integrations	The model suggests 'In-Product Button' and 'Auto-generate a personalized email', but does not recommend specific third-party tool integrations (e.g., Slack, Zapier, HubSpot).	1	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	1	FAIL	Applies program optimization guidance	judge did not provide concrete evidence	2	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	2	FAIL	Diagnoses potential causes of low participation	judge did not provide concrete evidence	2	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	3	FAIL	Checks awareness, timing, incentive, and friction	judge did not provide concrete evidence	2	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.4s	8825	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	5	FAIL	Addresses cookie duration and payout terms	The output addresses cookie duration ('30–60 days'), but it does not mention payout terms (e.g., net-30, monthly, minimum thresholds). The section on platforms mentions 'handles payout' but gives no …	3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	9286	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	4	FAIL	Applies tiered incentive concept	The model provides flat-rate alternatives ($20-30 credit or $25-50 cash) and volume-based rewards ('Refer 3 friends... Refer 5 friends...'), but does not propose a tiered structure where the *per-ref…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.5s	9081	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	6	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.8s	9258	7	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	7.9s	8836	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	5
+ab-testing	eval-6	with_skill	FAIL	7.9s	8836	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	7.9s	8836	3	FAIL	Cross-references emails for broader email work	The output contains no references to other emails, previous context, or broader email work. It treats the request in isolation and offers specific templates without linking to other assets.	6	5
+ab-testing	eval-6	with_skill	FAIL	7.9s	8836	4	PASS			6	5
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	1	FAIL	Checks for product-marketing.md	The output is a direct text response containing no file creation or mention of 'product-marketing.md'. The 'Output files' section explicitly states 'No output files were captured'.	1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	2	FAIL	Distinguishes referral from affiliate	The output discusses 'referral program', 'referrers', and 'referred friends' extensively. It mentions 'affiliate' only once in the context of choosing PartnerStack 'If you want to expand to affiliate…	1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	6	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	6	FAIL	Notes incentive may not be the only issue	Model attributes the problem primarily to sizing and structure (social friction, awkwardness). It does not explicitly state or suggest that other factors (e.g., UX, lack of awareness, poor timing) ar…	4	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	2	FAIL	Defines participation rate, share rate, conversion rate	Participation rate is not defined (only 'Active Referrers' and 'Referral Rate' are defined). Share rate and Conversion rate are only defined in a troubleshooting table as 'If It’s Low...' without exp…	5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	3	FAIL	Cross-references emails for broader email work	The model output focuses exclusively on the referral email request. There is no mention or cross-reference to other types of emails (e.g., cold outreach, newsletter, follow-up) or a broader email str…	6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	4	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	2	FAIL	Distinguishes referral from affiliate	Model output only discusses 'Referral' program structure, triggers, and incentives. It does not define or distinguish 'referral' from 'affiliate' marketing.	1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	12.7s	9304	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	9115	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.2s	9270	6	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.9s	8785	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	9161	7	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	8.2s	8883	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	7
+ab-testing	eval-6	with_skill	FAIL	8.2s	8883	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	8.2s	8883	3	FAIL	Cross-references emails for broader email work	The output focuses solely on referral emails. There is no mention or cross-referencing of other email types or broader email marketing context.	6	7
+ab-testing	eval-6	with_skill	FAIL	8.2s	8883	4	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	1	FAIL	Checks for product-marketing.md	Output files list explicitly states 'No output files were captured.' The model output contains only inline text and does not reference or generate a file named 'product-marketing.md'.	1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	5	FAIL	Addresses cookie duration and payout terms	The output addresses payout terms: 'Define payout terms: Net-30 is standard.' However, it completely fails to mention or address 'cookie duration' anywhere in the text.	3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	3	FAIL	Cross-references emails for broader email work	The model output is standalone referral email content. It does not reference or link to other email types (e.g., welcome emails, transactional emails) or broader email strategy contexts.	6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	4	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The model provided text output but did not generate a file named 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	6	FAIL	Includes launch checklist	"The model provides a 'Quick Win: The ""Launch"" Email' and 'Next Steps & Questions', but does not provide a structured 'launch checklist' (e.g., a step-by-step list of tasks like 'Set up tool', 'Draft …"	1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	9142	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.6s	9289	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	1	FAIL	Triggers on casual phrasing	The model output begins immediately with 'Based on your goal to get **other creators and influencers** to promote you...', directly addressing the business logic without acknowledging or reacting to …	3	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.9s	9236	6	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	4	FAIL	Applies tiered incentive concept	The model suggests specific variations (A, B, C) based on value magnitude, but does not implement a tiered structure (e.g., escalating rewards for multiple referrals or different tiers of users). It …	4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	9046	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	2	FAIL	Defines participation rate, share rate, conversion rate	The output defines 'Referral Rate' (participation) and 'Referral Conversion Rate', but it does not explicitly define 'share rate'. It mentions 'Invitations sent per user' but does not label or define…	5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	5	FAIL	Compares referred customer LTV to organic	Under 'LTV of Referred Customers', the output states: 'Referred customers typically have **16–25% higher LTV** and **18–37% lower churn** than **acquired customers**.' It compares referred customers …	5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.9s	9033	7	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	9.1s	8943	1	FAIL	Applies referral email section from the skill	The model does not apply a specific skill section; it asks for input parameters (Incentive, Product, Tone, Action) before drafting and provides generic templates instead.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.1s	8943	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.1s	8943	3	FAIL	Cross-references emails for broader email work	There is no cross-referencing to other email types or broader email strategy in the output.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.1s	8943	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	2	FAIL	Distinguishes referral from affiliate	The model output does not contain any distinction between referral and affiliate programs.	1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	6	FAIL	Includes launch checklist	The 'Next Steps' section lists calculation, tool selection, and copy drafting, but does not provide a comprehensive launch checklist (e.g., legal review, beta testing, internal training).	1	10
+ab-testing	eval-1	with_skill	FAIL	13.6s	9322	7	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	11.4s	9081	6	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	1	FAIL	Triggers on casual phrasing	The model output addresses a specific business goal ('get other creators and influencers to promote you') and price points. It does not contain any interaction that demonstrates reacting to 'casual p…	3	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.0s	9264	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.1s	8953	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	2	FAIL	Defines participation rate, share rate, conversion rate	The output defines 'Referral Rate (Participation Rate)' and 'Referral Conversion Rate'. However, it does not explicitly define 'share rate' or use that term; it mentions 'Invitations Sent' and 'Click…	5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	6	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	9093	7	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	10.3s	9136	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	10
+ab-testing	eval-6	with_skill	FAIL	10.3s	9136	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.3s	9136	3	FAIL	Cross-references emails for broader email work	The output does not reference any other emails, previous email drafts, or broader email strategies beyond the specific referral context. No cross-referencing is present.	6	10
+ab-testing	eval-6	with_skill	FAIL	10.3s	9136	4	PASS			6	10

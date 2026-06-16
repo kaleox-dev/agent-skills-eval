@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	1	FAIL	Checks for product-marketing.md	Model states: 'I don't have access to check for these files'	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	2	FAIL	Distinguishes referral from affiliate	Model asks 'Are you looking to build a customer referral program... or affiliate program' but provides no distinction between them	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	No referral loop designed; output only contains questions and promises to provide 'once I have the answers above'	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	4	FAIL	Recommends double-sided incentive structure	No incentive structure recommended; model only states 'What incentives have you tried before (if any)?'	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	5	FAIL	Suggests specific incentives for the price point	Only provides generic ranges: 'B2B SaaS referral rewards typically range: $50-$500 or 1-3 months free' - not specific to $49/month price point	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	6	FAIL	Includes launch checklist	No launch checklist present in output; only mentions 'Launch checklist' as something to provide later	1	9
+ab-testing	eval-1	with_skill	FAIL	10.2s	8780	7	FAIL	Recommends tool integrations	Model asks 'What tools/platforms do you currently use?' but provides no tool recommendations	1	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	1	FAIL	Applies program optimization guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	2	FAIL	Diagnoses potential causes of low participation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	3	FAIL	Checks awareness, timing, incentive, and friction	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	4	FAIL	Recommends optimization tactics	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	5	FAIL	Suggests timing referral asks at satisfaction moments	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-2	with_skill	FAIL	15.3s	9193	6	FAIL	Provides experiment ideas	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (6 items). * Model Output (a response …	2	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger in output. Output begins with analytical breakdown of referral vs affiliate question.	3	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	5	FAIL	Addresses cookie duration and payout terms	Cookie duration addressed ('30-60 days is standard for online courses') but no payout terms (payment schedule, minimum payout, etc.) mentioned.	3	9
+ab-testing	eval-3	with_skill	FAIL	14.4s	9132	6	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.0s	8931	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	2	FAIL	Defines participation rate, share rate, conversion rate	Participation rate defined as 'Referral Rate (Customers who refer ÷ Total customers) × 100', conversion rate defined as '(Referred signups ÷ Referral clicks) × 100', but share rate only mentioned in …	5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	4	FAIL	Compares referral CAC to other channels	Output states 'Compare to other acquisition channels' as a note in table but provides no actual comparison data or examples	5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	5	FAIL	Compares referred customer LTV to organic	Output states 'LTV: 16-25% higher than average customers' - compares to average, not specifically to organic customers	5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.5s	9143	7	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	8629	1	FAIL	Applies referral email section from the skill	Model states 'Based on the skill documentation, I have information about' but provides no specific referral email section content or application.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	8629	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	8629	3	FAIL	Cross-references emails for broader email work	Model mentions 'invitation email', 'confirmation email', 'follow-up reminder emails' but does not cross-reference to broader email work beyond referral context.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.9s	8629	4	PASS			6	9

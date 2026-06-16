@@ -1,0 +1,93 @@
+
+[1m▶ schema[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  The user wants to add schema markup to their blog posts. They publish articles about marketing tips. This is a clear request for schema markup implementation. Before I provide the schema, I should ga…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No casual phrasing detected in user input; model asked clarifying questions instead
+      [31m#2[0m [31mFAIL[0m [90m—[0m Implements Article or BlogPosting schema
+         [90mevidence:[0m Only preview/template shown, no actual schema implementation provided
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes author, datePublished, image, publisher
+         [90mevidence:[0m Template shows these fields but no actual implementation with real values
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends BreadcrumbList alongside
+         [90mevidence:[0m Mentioned in 'What I'll Provide' section but not actually recommended
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses CMS integration for dynamic fields
+         [90mevidence:[0m Asks about tech stack but provides no CMS integration guidance or dynamic field handling
+    10.5s · 10070 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  The user wants to add FAQ schema to their FAQ page with 20 questions. They want to get rich results in Google. This is a clear schema markup request. Before I provide the full implementation, I shoul…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides complete code example
+         [90mevidence:[0m Only 2 placeholder questions shown with '// ... repeat for all 20 questions' comment
+      [31m#4[0m [31mFAIL[0m [90m—[0m Explains rich result benefits
+         [90mevidence:[0m No explanation of benefits like increased CTR or visibility; only states 'FAQ Rich Results Are Not Guaranteed'
+    14.0s · 10380 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  The user is asking about schema markup for e-commerce product pages. This is a clear schema markup request, so I should use the schema skill. They want to know what schema they need for product pages…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    20.6s · 10910 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  The user wants to add schema markup to their SaaS product homepage. They mentioned: - Product name: TaskFlow - Type: Project management tool (SaaS) - Page: Homepage - Need: Organization schema and ot…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. Model mentions 'First check if there's any product marketing context available' but no evidence of actually checking the file.
+    15.9s · 10536 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  The user is asking for a technical SEO audit after experiencing a drop in organic search traffic following a site redesign. This is a broader SEO issue, not specifically about schema markup. Looking …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as a technical SEO audit request
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's response to an evaluation run based on provided assertions. * **Input:** * Assertions: …
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to seo-audit skill
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's response to an evaluation run based on provided assertions. * **Input:** * Assertions: …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt full SEO audit using schema markup patterns
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's response to an evaluation run based on provided assertions. * **Input:** * Assertions: …
+    8.3s · 10015 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  The user is asking for help debugging schema markup that isn't showing rich results in Google. This is a schema-related issue, so I should use the schema skill. To help debug this effectively, I need…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains valid schema doesn't guarantee rich results
+         [90mevidence:[0m No explicit statement that valid schema doesn't guarantee rich results; only mentions eligibility requirements and crawl delay
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends Search Console structured data reports
+         [90mevidence:[0m Mentions 'Any Search Console errors you're seeing?' but does not recommend using Search Console structured data reports
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses warnings vs errors distinction
+         [90mevidence:[0m Asks 'What errors or warnings appear?' but does not explain the distinction between warnings and errors
+    7.1s · 9916 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 53.2%[0m  [90m· 12.74s avg · 10305 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1092/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 14,
+  "skills": [
+    {
+      "skill": "schema",
+      "slug": "schema",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5882352941176471,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1092/benchmark.json"
+    }
+  ],
+  "iteration": 1092,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1092",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1092/report/index.html"
+}

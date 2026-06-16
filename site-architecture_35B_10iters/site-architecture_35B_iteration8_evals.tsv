@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The text content is a draft response, not a file named product-marketing.md.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	7	FAIL	Includes internal linking strategy	The output provides site architecture and navigation menus but does not describe a specific strategy for internal linking (e.g., contextual links within content, specific linking patterns between blo…	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	23740	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	1	FAIL	Recommends content inventory first	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	2	FAIL	Groups related pages logically	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	4	FAIL	Redesigns navigation structure	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	5	FAIL	Provides ASCII tree or visual sitemap	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	6	FAIL	Addresses URL redirects for moved pages	judge did not provide concrete evidence	2	8
+ab-testing	eval-2	with_skill	FAIL	5.6s	23380	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	1	FAIL	Triggers on casual phrasing	The model output starts with 'To give you a precise recommendation, I need to understand your site type...' and references 'two specific debates you mentioned'. It does not explicitly demonstrate a t…	3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	4	FAIL	Provides recommendations for each section type	The model only provides recommendations for 'Blog URLs' and 'Feature Pages'. It explicitly asks for more information to provide a 'full page hierarchy' and does not provide recommendations for other …	3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	23836	6	FAIL	Provides URL map reference	The model provides specific URL examples (e.g., `/features/analytics`, `/resources/guides`) but does not provide a comprehensive 'URL map reference' or a full site hierarchy visualization/map. It exp…	3	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	3	FAIL	Keeps programmatic pages out of main nav	Section 4 'Header Nav' recommends: 'Primary Item: Integrations (with Mega Menu)' and 'Primary Item: Compare... (with Dropdown)'. Section 3 states: '200 links in one dropdown are overwhelming. Group t…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.0s	25000	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	2.6s	23076	1	FAIL	Provides visual sitemap in Mermaid format	Model output contains no code blocks or text; it explicitly states 'To build an accurate and useful one, I need a bit more context' and lists questions.	5	8
+ab-testing	eval-5	with_skill	FAIL	2.6s	23076	2	FAIL	Shows hierarchical page relationships	No sitemap or hierarchy was generated; only a list of clarification questions was provided.	5	8
+ab-testing	eval-5	with_skill	FAIL	2.6s	23076	3	FAIL	Includes all major sections	No sections or pages were listed or identified in the output.	5	8
+ab-testing	eval-5	with_skill	FAIL	2.6s	23076	4	FAIL	Uses clear, readable format	The output is a list of questions rather than the requested sitemap format. Even if the questions are readable, the core requirement of the sitemap is missing.	5	8
+ab-testing	eval-5	with_skill	FAIL	2.6s	23076	5	FAIL	Suitable for sharing with design team	The output contains no deliverable for a design team, only a request for more information.	5	8
+ab-testing	eval-6	with_skill	FAIL	2.3s	23045	1	FAIL	Recognizes this as technical SEO, not site architecture	judge did not provide concrete evidence	6	8
+ab-testing	eval-6	with_skill	FAIL	2.3s	23045	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	2.3s	23045	3	FAIL	Explains site-architecture covers design, not technical SEO	The model defines site architecture as 'page hierarchy, navigation, URL structure, internal linking' but never mentions 'design' in the explanation.	6	8

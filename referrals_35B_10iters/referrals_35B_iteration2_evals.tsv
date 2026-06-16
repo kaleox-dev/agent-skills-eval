@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is conversational text, not a file named 'product-marketing.md'.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	The model states 'Once we have these details, we can move on to designing the trigger moments...'. It has not yet designed the loop (trigger, share, convert, reward); it only asked for input.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	4	FAIL	Recommends double-sided incentive structure	The model asks as a question: 'Would you prefer double-sided rewards ... or single-sided?'. It does not make a definitive recommendation; it proposes options.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	6	FAIL	Includes launch checklist	No launch checklist is present in the text. The model is currently gathering requirements.	1	2
+ab-testing	eval-1	with_skill	FAIL	4.4s	8335	7	FAIL	Recommends tool integrations	The model asks: 'Are you currently using any specific CRM...?' It does not recommend specific integrations.	1	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.9s	9197	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	1	FAIL	Triggers on casual phrasing	Model output begins immediately with 'Based on your goal to recruit **creators and influencers**...' without addressing any casual phrasing or context from a user prompt, as no user prompt was provid…	3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.5s	9261	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.5s	9355	6	FAIL	Notes incentive may not be the only issue	The output explicitly states the problem is 'psychology, not just amount' and focuses entirely on fixing the incentive structure (sidedness, value, mechanism). It does not mention external factors su…	4	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	12.7s	9291	7	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	3	FAIL	Cross-references emails for broader email work	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	8.9s	8941	4	PASS			6	2

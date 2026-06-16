@@ -1,0 +1,75 @@
+
+[1m▶ referrals[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    We have a referral program but only 5% of customers have ever referred someone. How do we increase participation?
+    [90moutput:[0m  A 5% referral rate indicates you have a program, but you likely have friction in the **Trigger**, **Share**, or **Reward** steps. To get from 5% to a "good" 10-25%, we need to diagnose where the drop…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    9.7s · 8995 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    What incentive structure works best? We've been offering $10 off for referrers but it's not working. Our product is $29/month.
+    [90moutput:[0m  A $10 discount is likely too low to overcome the social friction of referring someone. For a $29/month product, that's roughly **one month of service** in total value (or less, since it's a discount …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes incentive may not be the only issue
+         [90mevidence:[0m Model attributes the problem primarily to sizing and structure (social friction, awkwardness). It does not explicitly state or suggest that other factors (e.g., UX, lack of awareness, poor timing) ar…
+    9.7s · 9005 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    should we do referral or affiliate? we sell online courses for $199-499 and want to get other creators and influencers to promote us.
+    [90moutput:[0m  Based on your goal ("get other creators and influencers to promote us") and your price point ($199–499), the answer is clear: **You should launch an Affiliate Program.** Here is the breakdown of why,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    10.7s · 9100 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    Help me design a referral program for our SaaS product. We're a $49/month project management tool with about 1,000 customers. We want to encourage word-of-mouth growth.
+    [90moutput:[0m  This is a great use case for a customer referral program. Since you are B2B SaaS with a relatively low price point ($49/mo), the mechanics need to be low-friction, and the incentives need to be attra…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The output is a direct text response containing no file creation or mention of 'product-marketing.md'. The 'Output files' section explicitly states 'No output files were captured'.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Distinguishes referral from affiliate
+         [90mevidence:[0m The output discusses 'referral program', 'referrers', and 'referred friends' extensively. It mentions 'affiliate' only once in the context of choosing PartnerStack 'If you want to expand to affiliate…
+    13.5s · 9429 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    Can you write the referral invitation emails? I need the email that goes out when someone shares their referral link.
+    [90moutput:[0m  To write the most effective referral invitation email, I need to know a little more about your specific context. The best email balances **social proof** (the friend asking) with **low friction** (ea…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Cross-references emails for broader email work
+         [90mevidence:[0m The model output focuses exclusively on the referral email request. There is no mention or cross-reference to other types of emails (e.g., cold outreach, newsletter, follow-up) or a broader email str…
+    9.7s · 9048 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    How do we measure the success of our referral program? What metrics should we track?
+    [90moutput:[0m  To measure the success of your referral program, you need to track metrics across three dimensions: **Program Health** (is the engine running?), **Business Impact** (is it making money?), and **Effic…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines participation rate, share rate, conversion rate
+         [90mevidence:[0m Participation rate is not defined (only 'Active Referrers' and 'Referral Rate' are defined). Share rate and Conversion rate are only defined in a troubleshooting table as 'If It’s Low...' without exp…
+    10.7s · 9164 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 85.9%[0m  [90m· 10.67s avg · 9124 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1039/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 5,
+  "skills": [
+    {
+      "skill": "referrals",
+      "slug": "referrals",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8611111111111112,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1039/benchmark.json"
+    }
+  ],
+  "iteration": 1039,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1039",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1039/report/index.html"
+}

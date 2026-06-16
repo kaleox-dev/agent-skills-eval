@@ -1,0 +1,89 @@
+
+[1m▶ revops[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    our pipeline is a mess. deals sit in stages forever and we don't know what's actually going to close. how do we fix this?
+    [90moutput:[0m  The user is describing a classic pipeline hygiene problem - deals stagnating in stages and poor forecast accuracy. This is a core RevOps issue that I can help with. Before I dive into solutions, I ne…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing detection in the output. The response treats the input as a technical RevOps problem without noting any casual language patterns.
+    15.6s · 31500 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Help me set up our lead lifecycle stages. We're a B2B SaaS company selling to mid-market. We use HubSpot as our CRM and have marketing and sales teams that aren't aligned on lead definitions.
+    [90moutput:[0m  The user wants help setting up lead lifecycle stages for their B2B SaaS company. They're mid-market focused, use HubSpot as CRM, and have marketing-sales alignment issues on lead definitions. This is…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md file found in output. Model mentions 'reference materials' and 'templates' but does not check for or cite specific file.
+    23.4s · 32142 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    What RevOps metrics should we be tracking? We want to build a dashboard for our leadership team.
+    [90moutput:[0m  The user is asking about RevOps metrics for a leadership dashboard. This is a clear RevOps question about metrics and dashboard design. I should use the RevOps skill to provide comprehensive guidance…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes CAC, LTV, LTV:CAC
+         [90mevidence:[0m CAC and LTV:CAC Ratio are included, but LTV is not shown as a standalone metric - only referenced in LTV:CAC ratio definition
+    30.4s · 32679 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Set up lead scoring for us. We want to prioritize which leads sales should call first. We sell enterprise software ($50k+ ACV).
+    [90moutput:[0m  The user wants help setting up lead scoring for their enterprise software business with $50k+ ACV. This is a clear RevOps request. Based on the skill documentation, I should: 1. First gather context …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Defines MQL and SQL score thresholds
+         [90mevidence:[0m MQL Threshold: 75 Points is defined, but no SQL threshold is specified in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends lead routing based on scores
+         [90mevidence:[0m No lead routing recommendation provided; mentions SLA for MQL-to-SQL handoff as future deliverable
+    16.1s · 31532 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Our CRM data is a disaster. Duplicate records, missing fields, inconsistent naming. How do we clean it up and keep it clean?
+    [90moutput:[0m  The user is asking about CRM data hygiene - a core RevOps topic. They have three main problems: 1. Duplicate records 2. Missing fields 3. Inconsistent naming I need to provide a comprehensive data hy…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies data hygiene guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends duplicate detection and merging
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends required field enforcement
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses standardized naming conventions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Covers both cleanup and prevention
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends CRM automation for hygiene
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized cleanup plan
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: 7 Assertions, Model Output (text provided). * Constraint: R…
+    30.4s · 32730 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="revops"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'rev…
+    [90muser:[0m    Can you help me write cold outreach emails to prospects in our pipeline?
+    [90moutput:[0m  The user is asking for help with cold outreach emails. Looking at the skill description for RevOps, I can see there's a specific note about what this skill covers: "For cold outreach emails, see cold…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    9.5s · 30993 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 71.4%[0m  [90m· 20.88s avg · 31929 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1049/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "revops",
+      "slug": "revops",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6842105263157895,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1049/benchmark.json"
+    }
+  ],
+  "iteration": 1049,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1049",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1049/report/index.html"
+}

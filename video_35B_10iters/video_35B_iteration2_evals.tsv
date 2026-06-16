@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	9038	6	FAIL	Cross-references copywriting skill	The output instructs the user to 'Outline 5 key scenes' or 'Write a tight 2-minute script', but does not explicitly reference or cross-reference a specific 'copywriting skill' as defined in the promp…	1	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	1	FAIL	Recommends AI avatar approach	The model recommends 'Programmatic Video + AI Voiceover' using Hyperframes, not an AI avatar approach. It explicitly states avatars are less ideal and suggests using them as an 'Alternative' for pres…	2	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	3	FAIL	Mentions HeyGen MCP server for agents	The model mentions 'HeyGen' generally as a tool for digital avatars but does not mention an 'MCP server' or any specific agent integration mechanism for HeyGen.	2	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	4	FAIL	Mentions custom avatars option	The model recommends programmatic video using HTML/CSS templates (Hyperframes). It does not mention creating or using 'custom avatars'; it only mentions using a 'digital avatar' via HeyGen as an alte…	2	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.8s	9259	6	FAIL	Warns about authenticity tradeoff	While the model mentions avatars can look 'uncanny' or 'impersonal', it does not use the concept of an 'authenticity tradeoff'. It frames the drawback as user experience (distracting, impersonal) rat…	2	2
+ab-testing	eval-3	with_skill	FAIL	4.5s	8314	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.5s	8314	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.5s	8314	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.5s	8314	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.5s	8314	5	FAIL	Notes Sora reliability caveats	The model output mentions Kling, Runway, and Veo, but there is absolutely no mention of 'Sora' or any caveats regarding its reliability.	3	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	3	FAIL	Mentions captions essential	The text mentions adding 'dynamic captions' and 'Platform-native captions' as features of the tools, but does not explicitly state that captions are 'essential' or necessary for success, only recomme…	4	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	4	FAIL	Specifies aspect ratios per platform	The text mentions reframing to '9:16 (vertical)' and starting from '16:9 (horizontal)', but does not specify different aspect ratios per platform (e.g., it does not distinguish between TikTok/Reels/S…	4	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	9.3s	8864	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	1	FAIL	Recommends HeyGen + Hyperframes pipeline	judge did not provide concrete evidence	5	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	4	FAIL	Recommends testing 5 manually first	judge did not provide concrete evidence	5	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	5	FAIL	Mentions reply tracking / ROI	judge did not provide concrete evidence	5	2
+ab-testing	eval-5	with_skill	FAIL	18.2s	9926	6	FAIL	Mentions captions	judge did not provide concrete evidence	5	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	4	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	5	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	8432	6	FAIL	Asks about stack or animation needs	The model output provides a direct comparison and recommendation without asking any clarifying questions or inquiries to the user.	6	2

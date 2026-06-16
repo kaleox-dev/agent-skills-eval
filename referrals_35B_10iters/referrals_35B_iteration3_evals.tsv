@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The text body contains no reference to a file named 'product-marketing.md'.	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	2	FAIL	Distinguishes referral from affiliate	The model mentions 'B2B SaaS' dynamics and 'trust and professional utility,' but does not explicitly distinguish between a referral program and an affiliate program. It treats them as the same mechan…	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	6	FAIL	Includes launch checklist	The output provides a 'Step-by-Step Implementation Plan' with phases (Week 1-2, Week 3-4, Month 2+). While it lists actions, it is a strategic rollout plan, not a discrete 'launch checklist' (e.g., '…	1	3
+ab-testing	eval-1	with_skill	FAIL	12.6s	9309	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.0s	9028	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	5	FAIL	Addresses cookie duration and payout terms	The output discusses commission percentages and fraud prevention (paying after refund window) but does not mention specific cookie duration windows (e.g., 30 days, 90 days).	3	3
+ab-testing	eval-3	with_skill	FAIL	11.3s	9162	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	2	FAIL	Identifies as single-sided and recommends double-sided	The model recommends 'Double-Sided Credit' (Option A) and 'First Month Free' to 'both parties' (Option B). However, the input implies the current structure is a $10 discount (which is typically singl…	4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	10.4s	9081	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	6	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.7s	9032	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	3	FAIL	Cross-references emails for broader email work	The output does not cross-reference any other email campaigns, sequences, or files. It focuses solely on the referral email context.	6	3
+ab-testing	eval-6	with_skill	FAIL	8.0s	8852	4	PASS			6	3

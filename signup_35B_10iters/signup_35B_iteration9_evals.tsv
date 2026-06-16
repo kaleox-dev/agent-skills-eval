@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	6	FAIL	Cross-references ab-testing skill	The output text contains no references to an 'ab-testing skill', 'A/B testing skill', or any external skill documentation. It only mentions 'A/B Test' as part of Experiment #2.	5	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	2	FAIL	References or defers to onboarding skill	The model explicitly states: 'I have analyzed the provided information, but I notice that the .agents/product-marketing.md file (or equivalent context files) was not found in the current environment.…	6	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	3	FAIL	Explains signup covers the signup form, not post-signup	The model does not explain that 'signup' refers to the form and distinguishes it from post-signup. Instead, it conflates the two by attributing the drop-off to the 'first 60 seconds after signup' and…	6	9

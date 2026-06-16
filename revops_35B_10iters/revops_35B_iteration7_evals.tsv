@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	19.4s	32351	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	6	FAIL	Defines MQL and SQL score thresholds	Model defines MQL threshold (75 points) and tiered actions (85+, 75-84), but does not explicitly define an SQL score threshold or criteria for SQL.	2	7
+ab-testing	eval-2	with_skill	FAIL	10.8s	31375	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	4	FAIL	Recommends maximum time per stage	The output recommends '2x the average time in that stage as your threshold' for stale deals and lists typical thresholds (e.g., Discovery: 14 days), but does not define maximum durations for the stag…	3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.5s	31229	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.0s	32494	7	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	29.9s	33896	7	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	2.5s	30475	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	2.5s	30475	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	2.5s	30475	3	PASS			6	7

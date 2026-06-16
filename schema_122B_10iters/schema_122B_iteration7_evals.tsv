@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	1	FAIL	Checks for product-marketing.md	No output files were captured. No reference to product-marketing.md in model output.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	2	FAIL	Implements Organization schema in JSON-LD	Model provides a preview/template with placeholders ('social-profiles', 'https://taskflow.com') rather than complete implementation. States 'I'll generate the complete, ready-to-implement JSON-LD mar…	1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	3	FAIL	Includes required and recommended properties	Preview shows placeholder values ('social-profiles', 'https://taskflow.com') instead of actual required/recommended property values. No complete property set provided.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	6	FAIL	Provides complete JSON-LD code	Model explicitly asks for more information before providing complete code: 'Please provide the details above and I'll generate the complete, ready-to-implement JSON-LD markup!' Preview code has place…	1	7
+ab-testing	eval-1	with_skill	FAIL	8.9s	10058	7	FAIL	Recommends validation tools	No validation tools mentioned in model output (e.g., Google Structured Data Testing Tool, Schema Markup Validator, etc.)	1	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	5	FAIL	Notes Google's FAQ schema guidelines	No explicit reference to Google's FAQ schema guidelines document or specific guidelines mentioned	2	7
+ab-testing	eval-2	with_skill	FAIL	15.0s	10567	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	1	FAIL	Triggers on casual phrasing	No casual phrasing trigger detected in output; model treats request as structured schema inquiry	3	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	2	FAIL	Implements Article or BlogPosting schema	Model mentions 'Article or BlogPosting schema type is ideal' but does not provide actual schema code implementation	3	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	3	FAIL	Includes author, datePublished, image, publisher	No schema code provided; model asks 'What data fields do you have available' including author, date, image, publisher but does not include them in output	3	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	4	FAIL	Recommends BreadcrumbList alongside	BreadcrumbList only listed as user option ('Breadcrumb navigation in search') not recommended or provided by model	3	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	5	FAIL	Provides reusable template code	Output states 'I'll provide: Complete JSON-LD schema code' but no code is actually present in this response	3	7
+ab-testing	eval-3	with_skill	FAIL	6.1s	9813	6	FAIL	Addresses CMS integration for dynamic fields	Model asks 'What CMS or platform do you use?' but provides no CMS integration guidance or dynamic field handling	3	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	11536	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	3	FAIL	Explains valid schema doesn't guarantee rich results	No explicit statement found that valid schema alone does not guarantee rich results; only mentions processing timeline	5	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	5	FAIL	Addresses warnings vs errors distinction	No distinction between warnings and errors explained; only asks 'Are there any errors or warnings showing' without defining the difference	5	7
+ab-testing	eval-5	with_skill	FAIL	12.2s	10326	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	16.6s	10703	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	16.6s	10703	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	16.6s	10703	3	PASS			6	7

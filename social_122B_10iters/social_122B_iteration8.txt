@@ -1,0 +1,89 @@
+
+[1m▶ social[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a Twitter/X thread about the lessons I learned bootstrapping my SaaS to $10k MRR. Include hooks and a CTA at the end.
+    [90moutput:[0m  The user wants me to write a Twitter/X thread about bootstrapping a SaaS to $10k MRR. This is a social media content request, so I should use the social skill. Looking at the reference materials, I h…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies hook formulas from the skill
+         [90mevidence:[0m Model mentions 'strong hook tweet' but no specific hook formula from reference materials is cited or applied (e.g., 'I [result] in [timeframe]' not explicitly tied to a named formula)
+    14.4s · 23585 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me create a LinkedIn content strategy. I'm a SaaS founder building in public and want to grow my personal brand to drive awareness for my product. I currently have 500 followers and post maybe o…
+    [90moutput:[0m  The user is asking for help creating a LinkedIn content strategy. They're a SaaS founder building in public, want to grow their personal brand to drive product awareness, currently have 500 followers…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model states: 'since I don't have access to external files' - did not check the file
+      [31m#7[0m [31mFAIL[0m [90m—[0m Addresses batching strategy for consistency
+         [90mevidence:[0m No explicit batching strategy mentioned; repurposing system is different from content batching for consistency
+    23.4s · 24342 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a 5-email welcome sequence for new email subscribers who came from my LinkedIn audience.
+    [90moutput:[0m  The user is asking for a 5-email welcome sequence for new email subscribers who came from their LinkedIn audience. This is actually an email marketing request, not a social media content request. Loo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    10.4s · 23251 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me reverse-engineer what's working for top creators in the DevTools space on Twitter. I want to understand their content patterns.
+    [90moutput:[0m  The user wants to reverse-engineer content patterns from top DevTools creators on Twitter/X. This is a perfect use case for the Social skill, specifically the reverse-engineering framework from the r…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    18.7s · 23975 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    i have a blog post that did really well. how do i turn it into social media content for multiple platforms?
+    [90moutput:[0m  The user wants to repurpose a successful blog post into social media content for multiple platforms. This is a perfect use case for the social media skill, specifically the content repurposing system…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing trigger in model output. User input was structured task description, not casual phrasing.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Extracts 3-5 key insights to repurpose
+         [90mevidence:[0m No actual insights extracted. Model provides general framework but states 'While you gather those details' - no blog post content was provided to extract from.
+    9.9s · 23202 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    My LinkedIn posts get like 200 impressions and almost no engagement. What am I doing wrong?
+    [90moutput:[0m  The user is asking about their LinkedIn posts that are getting low impressions (200) and almost no engagement. This is a social media optimization question that falls under my social skill. To help t…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies analytics and optimization guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Diagnoses potential engagement issues
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Addresses hook quality
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses posting timing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends daily engagement routine
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests trying different content formats
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides specific before/after hook examples
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    11.1s · 23301 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 72.0%[0m  [90m· 14.65s avg · 23609 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1191/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "social",
+      "slug": "social",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6923076923076923,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1191/benchmark.json"
+    }
+  ],
+  "iteration": 1191,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1191",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1191/report/index.html"
+}

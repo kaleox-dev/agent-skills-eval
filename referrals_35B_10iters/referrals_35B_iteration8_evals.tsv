@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	1	FAIL	Checks for product-marketing.md	Output files list explicitly states 'No output files were captured.' The model output contains only inline text and does not reference or generate a file named 'product-marketing.md'.	1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9360	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.1s	9028	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	5	FAIL	Addresses cookie duration and payout terms	The output addresses payout terms: 'Define payout terms: Net-30 is standard.' However, it completely fails to mention or address 'cookie duration' anywhere in the text.	3	8
+ab-testing	eval-3	with_skill	FAIL	12.0s	9254	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.4s	8963	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.6s	9408	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	3	FAIL	Cross-references emails for broader email work	The model output is standalone referral email content. It does not reference or link to other email types (e.g., welcome emails, transactional emails) or broader email strategy contexts.	6	8
+ab-testing	eval-6	with_skill	FAIL	8.3s	8879	4	PASS			6	8

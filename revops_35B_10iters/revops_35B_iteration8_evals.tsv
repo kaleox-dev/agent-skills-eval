@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	1	FAIL	Checks for product-marketing.md	No output files were captured; the assertion requires a specific file check which is impossible to pass without file presence.	1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	25.9s	33085	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	14.0s	31738	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	4	FAIL	Recommends maximum time per stage	The model recommends flagging deals as stale after '2x the average time' or '>14 days' as an example, but does not define a hard maximum time limit per stage. It explicitly mentions tracking 'Average…	3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.6s	31351	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	6	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.2s	31959	7	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	19.2s	32500	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	1.7s	30379	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	1.7s	30379	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	1.7s	30379	3	FAIL	Explains RevOps covers systems and processes, not email content	The model output contains no mention of 'RevOps', 'systems', or 'processes'. It only discusses cold outreach emails.	6	8

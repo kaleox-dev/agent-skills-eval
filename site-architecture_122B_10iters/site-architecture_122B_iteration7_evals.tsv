@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	1	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	2	FAIL	Applies 3-click rule and flat vs deep principles	No mention of 3-click rule or flat vs deep principles in output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	3	FAIL	Creates ASCII tree for site structure	No ASCII tree present in model output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	4	FAIL	Organizes pages logically	No page organization or hierarchy provided in output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	5	FAIL	Recommends URL structure for each section	No URL structure recommendations in output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	6	FAIL	Provides navigation design (4-7 header items)	No navigation spec or header items listed in output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	7	FAIL	Includes internal linking strategy	No internal linking strategy mentioned in output	1	7
+ab-testing	eval-1	with_skill	FAIL	5.1s	23195	8	FAIL	Provides hierarchy, URL map, and nav spec	None of hierarchy, URL map, or nav spec present in output	1	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	1	FAIL	Recommends content inventory first	Model asks context questions instead of recommending content inventory. No mention of content inventory.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	2	FAIL	Groups related pages logically	No page grouping provided. Model states 'Once I have this context, I'll provide...' indicating no grouping done yet.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	3	FAIL	Applies 3-click rule	3-click rule not mentioned anywhere in output.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	4	FAIL	Redesigns navigation structure	Model promises 'Navigation spec' but does not provide actual redesign in this output.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	5	FAIL	Provides ASCII tree or visual sitemap	ASCII tree mentioned as future deliverable: 'A clean page hierarchy (ASCII tree + Mermaid diagram)' but not provided.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	6	FAIL	Addresses URL redirects for moved pages	Asks about redirects ('Are there existing URLs that must be preserved?') but does not address them.	2	7
+ab-testing	eval-2	with_skill	FAIL	7.7s	23406	7	FAIL	Reduces header navigation items	No mention of reducing header navigation items in output.	2	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger. User query is technical about URL structure decisions. Model response is standard advisory format.	3	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.1s	23929	6	FAIL	Provides URL map reference	No URL map provided. Model states 'I can give you a more specific recommendation and even draft a full site architecture if you'd like' but does not deliver one.	3	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	5	FAIL	Addresses crawl budget for 250 pages	No mention of crawl budget strategy for the 250 pages	4	7
+ab-testing	eval-4	with_skill	FAIL	11.0s	23675	6	FAIL	Cross-references programmatic-seo skill	I should use the site-architecture skill.	4	7
+ab-testing	eval-5	with_skill	FAIL	6.3s	23313	1	FAIL	Provides visual sitemap in Mermaid format	No Mermaid diagram or visual sitemap was provided in the output. Model only asked clarifying questions.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.3s	23313	2	FAIL	Shows hierarchical page relationships	No page hierarchy or relationships were shown. Model stated 'Once I have this, I'll create' indicating nothing was delivered yet.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.3s	23313	3	FAIL	Includes all major sections	No sitemap content was provided. Model output contains only questions and promises of future deliverables.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.3s	23313	4	FAIL	Uses clear, readable format	The output is a text response with questions, not a readable sitemap format.	5	7
+ab-testing	eval-5	with_skill	FAIL	6.3s	23313	5	FAIL	Suitable for sharing with design team	Model explicitly stated 'Once I have this, I'll create' - nothing was created to share with the design team.	5	7
+ab-testing	eval-6	with_skill	FAIL	7.8s	23447	1	FAIL	Recognizes this as technical SEO, not site architecture	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response against 3 assertions. * Input: Model output (text provided in the prompt), Asserti…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.8s	23447	2	FAIL	References or defers to seo-audit skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response against 3 assertions. * Input: Model output (text provided in the prompt), Asserti…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.8s	23447	3	FAIL	Explains site-architecture covers design, not technical SEO	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response against 3 assertions. * Input: Model output (text provided in the prompt), Asserti…	6	7

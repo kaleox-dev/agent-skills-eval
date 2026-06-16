@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output	1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.8s	11058	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	3	FAIL	Provides complete code example	Template shows 3 questions with placeholder, not all 20 requested	2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	10149	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	2	FAIL	Implements Article or BlogPosting schema	No schema code provided; output only states "For marketing tip articles, the Article or BlogPosting schema type is ideal" without implementation	3	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	3	FAIL	Includes author, datePublished, image, publisher	No schema JSON-LD output contains these fields; model asks for this information instead	3	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	4	FAIL	Recommends BreadcrumbList alongside	BreadcrumbList not mentioned anywhere in the output	3	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	5	FAIL	Provides reusable template code	No code provided; model states "I'll provide you with complete, ready-to-use JSON-LD code" as a future promise	3	6
+ab-testing	eval-3	with_skill	FAIL	6.0s	9800	6	FAIL	Addresses CMS integration for dynamic fields	Model asks about tech stack but provides no CMS integration solution or dynamic field handling	3	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	1	FAIL	Implements Product schema with full properties	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	2	FAIL	Includes Offer with price, availability	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	3	FAIL	Recommends AggregateRating and Review schema	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	4	FAIL	Includes BreadcrumbList	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	5	FAIL	Provides complete JSON-LD code	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-4	with_skill	FAIL	21.8s	11120	6	FAIL	Notes rich result benefits for products	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output (model response) against a set of assertions. * **Input:** * Assertions (6 items…	4	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	1	FAIL	Recommends validation tools for debugging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	2	FAIL	Checks for common schema errors	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	3	FAIL	Explains valid schema doesn't guarantee rich results	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	4	FAIL	Recommends Search Console structured data reports	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	5	FAIL	Addresses warnings vs errors distinction	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	7.4s	9919	6	FAIL	Provides systematic debugging approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on specific asserti…	5	6
+ab-testing	eval-6	with_skill	FAIL	10.2s	10174	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.2s	10174	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.2s	10174	3	PASS			6	6

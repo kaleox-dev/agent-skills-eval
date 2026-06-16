@@ -1,0 +1,351 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	1	FAIL	Checks for product-marketing.md	No mention of 'product-marketing.md' in the output; output files section confirms 'No output files were captured' and text contains no file references.	1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	7	FAIL	Includes Quick Wins, High-Impact Changes, Test Hypotheses	Output includes sections 'Quick Wins (Same-Day Fixes)' and 'High-Impact Changes (Week-Level Effort)', but does NOT contain a section for 'Test Hypotheses'. It contains 'Measurement Plan' and 'Clarify…	1	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	1	FAIL	Applies social auth options guidance	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	2	FAIL	Recommends Google and Microsoft for B2B	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	3	FAIL	Explains conversion benefits of SSO	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	4	FAIL	Recommends prominent placement	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	5	FAIL	Addresses visual separation from email signup	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	6	FAIL	Provides implementation recommendations	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Applies social auth options guidance"", ""passed"": true, ""evidence"": ""The model provides detailed guidance on implementation inc…"	2	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	1	FAIL	Triggers on casual phrasing	The model output provides a generic diagnostic framework and does not acknowledge or react to the specific 'casual phrasing' of the user's input (e.g., it does not mention tone, style, or phrasing of…	3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	6	FAIL	Cross-references ab-testing skill	The output does not mention 'ab-testing skill' nor does it contain a hyperlink or reference to such a resource. It only uses the term 'A/B Test' as a method.	5	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	1	FAIL	Recognizes this as post-signup onboarding, not signup flow	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	2	FAIL	References or defers to onboarding skill	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	3	FAIL	Explains signup covers the signup form, not post-signup	judge did not provide concrete evidence	6	1
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output contains no reference to a file named 'product-marketing.md'.	1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.5s	4031	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.6s	3857	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.6s	3856	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.0s	3958	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	5	FAIL	Prioritizes by likely impact	The model explicitly states it 'cannot prioritize these' without more user data: 'To give you a prioritized list... please answer: [questions]'. It offers a 'high-impact' label but does not perform t…	5	2
+ab-testing	eval-5	with_skill	FAIL	11.2s	3821	6	FAIL	Cross-references ab-testing skill	No mention of 'ab-testing skill' or external cross-references found in the text.	5	2
+ab-testing	eval-6	with_skill	FAIL	8.8s	3556	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	8.8s	3556	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	8.8s	3556	3	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	1	FAIL	Checks for product-marketing.md	The model output is a text response discussing a signup flow audit. The 'Output files' section explicitly states 'No output files were captured.' There is no mention or generation of a file named 'pr…	1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.4s	4114	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	3817	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.3s	3837	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.3s	3752	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	4	FAIL	Covers trial and commitment experiments	The output mentions 'trial signups' in the intro and 'Start Free Trial' CTA, but does not describe specific experiments regarding trial length, commitment levels (e.g., credit card vs. no CC), or tri…	5	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	9.3s	3594	6	FAIL	Cross-references ab-testing skill	The output mentions 'A/B Test' within the experiment descriptions but contains no specific cross-reference to an 'ab-testing skill' or external resource definition.	5	3
+ab-testing	eval-6	with_skill	FAIL	9.0s	3582	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	9.0s	3582	2	FAIL	References or defers to onboarding skill	No mention of any specific 'onboarding skill' or tool/call to a skill was found in the text.	6	3
+ab-testing	eval-6	with_skill	FAIL	9.0s	3582	3	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	1	FAIL	Checks for product-marketing.md	The output text contains no reference to a file named 'product-marketing.md'. The output files section also states 'No output files were captured'.	1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.4s	4305	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.4s	3701	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.7s	3634	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.0s	3752	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	5	FAIL	Prioritizes by likely impact	The model explicitly states: 'To tell you which experiment to run first, I need this context... Reply with these details, and I will give you a prioritized experiment roadmap.' It does not provide a …	5	4
+ab-testing	eval-5	with_skill	FAIL	9.4s	3559	6	FAIL	Cross-references ab-testing skill	The output text contains no mention of 'ab-testing skill', 'A/B testing', or any cross-references to a specific skill or tool definition.	5	4
+ab-testing	eval-6	with_skill	FAIL	12.2s	4015	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	12.2s	4015	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	12.2s	4015	3	FAIL	Explains signup covers the signup form, not post-signup	The model states: 'Since your signup flow is working... the problem isn't acquisition; it's activation.' It assumes the signup flow is the user's current focus/competency but does not explicitly expl…	6	4
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	7	FAIL	Includes Quick Wins, High-Impact Changes, Test Hypotheses	Section '6. Quick Wins' is present. Section '5. A/B Test Hypotheses' is present. However, the specific section/category 'High-Impact Changes' is missing (the audit uses 'Priority' and 'Impact' but do…	1	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	5	FAIL	Addresses visual separation from email signup	The output instructs to place SSO buttons 'above the email form' and keep email/password as 'secondary', but does not provide specific guidance on visual separation techniques (e.g., dividers, spacin…	2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	6	FAIL	Cross-references ab-testing skill	The model output contains no mention of 'ab-testing skill', 'ab_testing skill', or any specific external resource link/reference to such a skill.	5	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	2	FAIL	References or defers to onboarding skill	Model states: 'Per your skill definitions, this falls under the **Onboarding** optimization framework.' However, it does not defer to a specific skill module or trigger a skill tool; it provides a ge…	6	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	3	FAIL	Explains signup covers the signup form, not post-signup	Model does not explicitly explain that the 'signup' concept covers only the form. It distinguishes 'creating an account' from 'realizing value', but fails to provide a definition or explanation of wh…	6	5
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	1	FAIL	Checks for product-marketing.md	The model output contains no reference to 'product-marketing.md' nor does it output any file content. Output files section explicitly states 'No output files were captured.'	1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.7s	4331	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	5	FAIL	Addresses visual separation from email signup	The model recommends making SSO the 'primary button' and Email as a 'secondary option'. It does not explicitly discuss visual separation techniques (e.g., dividers, distinct spacing) to distinguish S…	2	6
+ab-testing	eval-2	with_skill	FAIL	10.0s	3652	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.1s	3661	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.1s	3436	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	3753	6	FAIL	Cross-references ab-testing skill	The output text contains no mention of 'ab-testing skill', 'A/B testing skill', or any specific cross-reference to a named skill.	5	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	3296	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	3296	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	3296	3	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	1	FAIL	Checks for product-marketing.md	The model output is a text-based audit report. Under 'Output files', it explicitly states 'No output files were captured.' There is no mention or creation of a file named 'product-marketing.md'.	1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	6	FAIL	Cross-references ab-testing skill	The output text contains no explicit cross-reference to a specific skill named 'ab-testing' or similar metadata linking to an external skill definition.	5	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	2	FAIL	References or defers to onboarding skill	The model does not mention any specific 'onboarding skill', tool, or external reference. It provides a generic text-based guide with headers like 'Common onboarding failure patterns' but no reference…	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	3	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	1	FAIL	Checks for product-marketing.md	Model output is raw text; output files section explicitly states 'No output files were captured.' No reference to a file named 'product-marketing.md' exists in the output.	1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.9s	4442	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	9.9s	3634	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.9s	3730	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	9.9s	3634	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	11.7s	3890	6	FAIL	Cross-references ab-testing skill	The output discusses A/B testing concepts (e.g., 'A/B test a version with...', 'A/B test a 2-field form...') but never explicitly references an 'ab-testing skill' or uses a label/tag indicating a cro…	5	8
+ab-testing	eval-6	with_skill	FAIL	4.8s	3051	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	4.8s	3051	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	4.8s	3051	3	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.9s	4315	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.3s	3676	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.6s	3926	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.6s	3705	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.9s	4124	6	FAIL	Cross-references ab-testing skill	The output text contains no references to an 'ab-testing skill', 'A/B testing skill', or any external skill documentation. It only mentions 'A/B Test' as part of Experiment #2.	5	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	2	FAIL	References or defers to onboarding skill	The model explicitly states: 'I have analyzed the provided information, but I notice that the .agents/product-marketing.md file (or equivalent context files) was not found in the current environment.…	6	9
+ab-testing	eval-6	with_skill	FAIL	11.2s	3834	3	FAIL	Explains signup covers the signup form, not post-signup	The model does not explain that 'signup' refers to the form and distinguishes it from post-signup. Instead, it conflates the two by attributing the drop-off to the 'first 60 seconds after signup' and…	6	9
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output does not mention or reference a file named 'product-marketing.md'.	1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	14.7s	4200	7	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	3757	6	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	1	FAIL	Triggers on casual phrasing	The model immediately accepts '35% completion rate' as a factual premise ('A 35% completion rate... is a significant red flag') rather than questioning the context or nature of the phrasing. It does …	3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	4046	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.9s	4092	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.6s	3614	6	FAIL	Cross-references ab-testing skill	The output contains no mention of 'ab-testing skill', 'A/B testing skill', or any specific skill reference/link to the ab-testing module. It mentions 'How to Test' generally but does not cross-refere…	5	10
+ab-testing	eval-6	with_skill	FAIL	4.7s	3044	1	FAIL	Recognizes this as post-signup onboarding, not signup flow	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Recognizes this as post-signup onboarding, not signup flow"", ""passed"": true, ""evidence"": ""This is a classic **Activation Probl…"	6	10
+ab-testing	eval-6	with_skill	FAIL	4.7s	3044	2	FAIL	References or defers to onboarding skill	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Recognizes this as post-signup onboarding, not signup flow"", ""passed"": true, ""evidence"": ""This is a classic **Activation Probl…"	6	10
+ab-testing	eval-6	with_skill	FAIL	4.7s	3044	3	FAIL	Explains signup covers the signup form, not post-signup	"judge returned unparseable response: { ""assertion_results"": [ { ""text"": ""Recognizes this as post-signup onboarding, not signup flow"", ""passed"": true, ""evidence"": ""This is a classic **Activation Probl…"	6	10

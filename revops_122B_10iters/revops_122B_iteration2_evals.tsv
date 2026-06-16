@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	1	FAIL	Checks for product-marketing.md	Model references lifecycle-definitions.md, routing-rules.md, scoring-models.md, automation-playbooks.md but never mentions product-marketing.md	1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	24.9s	32256	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	6	FAIL	Defines MQL and SQL score thresholds	MQL threshold defined (75+ points) but no explicit SQL threshold specified	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	31764	7	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	1	FAIL	Triggers on casual phrasing	No reference to casual phrasing detected in output. Model does not acknowledge user's communication style.	3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.3s	31230	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	5	FAIL	Includes CAC, LTV, LTV:CAC	Only LTV:CAC Ratio is present as standalone metric; CAC and LTV are not standalone metrics with their own formulas	4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	31939	7	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	28.7s	32646	7	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	9.8s	31025	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.8s	31025	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.8s	31025	3	PASS			6	2

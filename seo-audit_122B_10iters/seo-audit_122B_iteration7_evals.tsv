@@ -1,0 +1,68 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product marketing context file' but provides no evidence of checking product-marketing.md	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	3	FAIL	Follows audit priority order: crawlability first, then technical, on-page, content, authority	Technical issues listed first in 'What I Can Audit' section without crawlability prioritization as required	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	4	FAIL	Checks robots.txt and XML sitemap	No mention of robots.txt or XML sitemap checks in output	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	7	FAIL	Notes schema markup detection limitation	No mention of schema detection limitations in response	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	8	FAIL	Output has Executive Summary	No section labeled 'Executive Summary' present in output structure	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	9	FAIL	Output has Prioritized Action Plan	'Next Steps' section mentions plan but contains no actual prioritized actions or findings	1	7
+ab-testing	eval-1	with_skill	FAIL	10.0s	20250	10	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	No findings provided with required components - response only asks questions	1	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	2	FAIL	Checks title tag, H1, URL alignment with target keyword	Only mentioned as future work: 'On-Page | Title tag, H1, content depth, keyword placement' - not actually checked	2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	3	FAIL	Evaluates content depth vs competitors	Only mentioned as future work: 'Content Quality | Does it satisfy search intent better than page 1 competitors?' - not actually evaluated	2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	4	FAIL	Checks for keyword cannibalization	Only asked about in questions: 'Do you have other pages that might be competing for similar keywords?' - not actually checked	2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	5	FAIL	Checks indexation status and canonical tags	Only mentioned as future work: 'Indexation | Is the page actually indexed? Any canonical/noindex issues?' - not actually checked	2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	6	FAIL	Assesses E-E-A-T signals	E-E-A-T not mentioned anywhere in output	2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.2s	20093	8	FAIL	Provides actionable fixes organized by priority	Framework with priorities shown but no actual fixes provided yet	2	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	1	FAIL	Treats as urgent migration diagnostic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	2	FAIL	Checks redirect mapping (301s)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	3	FAIL	Checks canonical tags on new pages	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	4	FAIL	Checks robots.txt not blocking crawlers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	5	FAIL	Checks XML sitemap updated and submitted	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	6	FAIL	Checks for redirect chains or loops	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	7	FAIL	Checks for soft 404s	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	8	FAIL	References Search Console coverage report	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	9	FAIL	Provides prioritized recovery plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-3	with_skill	FAIL	16.3s	20755	10	FAIL	Mentions recovery timeline expectations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	3	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	1	FAIL	Addresses faceted navigation duplicate content	Model only asks questions about faceted URLs ('How do your faceted URLs work?') without providing solutions or addressing duplicate content issues.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	2	FAIL	Addresses crawl budget for large catalog	Model mentions 'crawl budget' in table as area to audit but provides no actual recommendations or solutions for managing crawl budget.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	3	FAIL	Checks for parameterized URL issues	Model asks about faceted URL structure but does not check for or identify parameterized URL issues.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	4	FAIL	Mentions product schema with detection limitation caveat	No mention of product schema or structured data anywhere in the output.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	5	FAIL	Checks for thin category pages	No mention of thin category pages in the audit questions or recommendations.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	6	FAIL	Checks for duplicate product descriptions	No mention of duplicate product descriptions in the output.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	7	FAIL	Addresses out-of-stock page handling	No mention of out-of-stock page handling anywhere in the output.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	8	FAIL	Addresses pagination and infinite scroll	No mention of pagination or infinite scroll in the audit scope.	4	7
+ab-testing	eval-4	with_skill	FAIL	10.4s	20268	9	FAIL	Findings include Impact ratings and specific fixes	Table shows priority indicators (🔴 Critical, 🟡 High) but no actual findings or specific fixes are provided - only areas to audit.	4	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	1	FAIL	Applies Content/Blog Sites framework	Model asks for URL and context before performing any framework application. No framework applied.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	2	FAIL	Checks for outdated content	Model mentions 'Content freshness' in table but does not check any content. Output: 'Once you provide your URL and context, I can start with a targeted audit.'	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	3	FAIL	Checks for keyword cannibalization	Model lists 'Keyword cannibalization' as a common issue but does not check for it. No URL or content analyzed.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	4	FAIL	Checks for topical clustering	Model mentions 'topical authority' and 'topic clusters' but does not check for topical clustering. No site access provided.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	5	FAIL	Checks for internal linking quality	Model lists 'Internal Links' in audit table but does not check internal linking. Output: 'Once you provide your URL and context...'	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	6	FAIL	Checks for author pages and E-E-A-T signals	Model mentions 'E-E-A-T signals, author pages' in table but does not check them. No site access.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	7	FAIL	Audits title tags, meta descriptions, heading structure	Model lists these in 'On-Page' table but does not audit them. Output: 'Once you provide your URL and context, I can start with a targeted audit.'	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	8	FAIL	Assesses whether content answers search intent	Model mentions 'Search intent mismatch' as common issue but does not assess any content. No URLs provided.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	9	FAIL	Recommends content audit process	Model outlines what it will check but does not recommend a specific audit process. Only asks clarifying questions.	5	7
+ab-testing	eval-5	with_skill	FAIL	9.8s	20249	10	FAIL	Provides prioritized action plan	No action plan provided. Model output ends with: 'If you can share 2-3 specific URLs of posts you're concerned about, that'll help me dive deeper quickly.'	5	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	2	FAIL	Checks NAP consistency	Only mentions 'Inconsistent NAP (Name, Address, Phone) across directories' as a concern, does not actually check or audit NAP data	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	3	FAIL	Checks for local schema markup with detection caveat	No mention of schema markup anywhere in output	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	4	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	5	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	6	FAIL	Recommends local content strategy	Only mentions 'thin or missing local content — Medium' as concern, no specific content strategy recommendations provided	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	7	FAIL	Checks standard technical SEO factors too	Lists 'Technical Health — Site speed, mobile-friendliness, indexing' as what to check, but no actual technical audit performed (no URL provided)	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	20197	8	FAIL	Provides prioritized local SEO action plan	States 'I'll give you a prioritized action plan' but output only contains a problem table, not an actionable prioritized plan	6	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	1	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	2	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	3	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	4	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	5	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	6	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	7	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	10.7s	20315	8	PASS			7	7
+ab-testing	eval-8	with_skill	FAIL	8.8s	20194	1	FAIL	Recognizes this as schema markup implementation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	8	7
+ab-testing	eval-8	with_skill	FAIL	8.8s	20194	2	FAIL	References or defers to schema skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	8	7
+ab-testing	eval-8	with_skill	FAIL	8.8s	20194	3	FAIL	Does not attempt a full SEO audit	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	8	7
+ab-testing	eval-8	with_skill	FAIL	8.8s	20194	4	FAIL	May briefly mention FAQ schema benefits	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	8	7

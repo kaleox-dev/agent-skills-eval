@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured' and the text response contains no mention of 'product-marketing.md'.	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	2	FAIL	Runs compliance/A2P 10DLC readiness check	The model asks clarifying questions about geographic focus and current opt-in mechanisms but does not perform or state it is running a readiness check or mention A2P 10DLC specifics.	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	4	FAIL	Prioritizes abandoned cart as highest-ROI flow	Model states: '...map out the highest-ROI flows to build first, starting with the welcome series and abandoned cart recovery.' It groups them and does not explicitly prioritize abandoned cart over we…	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	5	FAIL	Mentions replenishment for skincare specifically	The word 'skincare' or 'replenishment' does not appear in the output.	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	6	FAIL	Warns about treating SMS like email	The output contains no warning regarding the differences between SMS and email channels.	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	7	FAIL	References compliance.md or opt-in disclosure requirements	The output mentions 'compliance posture' generally but does not reference 'compliance.md' or specific opt-in disclosure requirements.	1	5
+ab-testing	eval-1	with_skill	FAIL	3.4s	24461	8	FAIL	Mentions per-send cost economics	The output does not mention per-send costs, pricing, or economics.	1	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	6	FAIL	Compliance footer on first send (STOP to opt out)	The actual text provided for Send 1 is: 'Hey [FirstName], your custom design isn't complete yet! Finish your order here: [ShortLink]. Questions? Reply here.' This text does not contain 'STOP to opt o…	2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	7	FAIL	Warns about discount on first send	The output explicitly states regarding Send 1: 'No discount on Send 1'. It does not warn *about* a discount on the first send, nor does it contain a warning message. It simply omits the discount.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	8	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.8s	25160	9	FAIL	Mentions UTM tagging or attribution	The output mentions '[ShortLink]' and advises on 'Link Deep-Linking' to ensure the link goes to the 'product customization page'. It does not explicitly mention 'UTM tagging', 'UTM parameters', or 'a…	2	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	7	FAIL	References compliance.md	The model output does not contain the string 'compliance.md' or reference any specific file by that name.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	25067	8	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	6	FAIL	Calculates list erosion impact	The model states: 'You’ll lose 5–10% of the list (the dead weight)' but this is an estimation or prediction of result, not a calculation of the current list erosion impact based on the provided opt-o…	4	5
+ab-testing	eval-4	with_skill	FAIL	12.9s	25524	7	FAIL	Mentions 'every send must justify itself' principle	The model states: 'Rule: If a message doesn’t solve a problem, save money, or create urgency specific to that person, it’s noise.' It does not use the specific phrase 'every send must justify itself'…	4	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	3	FAIL	Calculates time-to-send for 100K volume	The model calculates an average rate ('approx. 4,100/hr') in Section 4 but does not perform a calculation of the total time required to send 100K messages based on the throughput limits (e.g., calcul…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	6	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	7	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	25643	8	FAIL	References platforms.md or trust score monitoring	The model mentions 'trust score' multiple times (e.g., 'depending on carrier and trust score', 'damaging your trust score'), but there is no reference to a file named 'platforms.md' nor any mention o…	5	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	4	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	The text mentions emojis triggering UCS-2, but does not contain any reference to accented characters or curly quotes.	6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	6	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.7s	25107	7	FAIL	Calculates cost impact at scale	The text mentions '$0.02 more per send' and 'double your cost', but does not perform a calculation of cost impact at scale (e.g., multiplying by volume).	6	5

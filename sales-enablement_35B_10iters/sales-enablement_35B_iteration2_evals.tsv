@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The response is plain text, not a file named product-marketing.md.	1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.0s	34303	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	4	FAIL	Provides 2-3 response variations per objection	The document provides exactly one 'Talk Track' and one 'Response Approach' per objection. It does not provide 2-3 distinct variations (e.g., different tones or angles) for any single objection.	2	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	19.1s	33848	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	2	FAIL	Applies one-pager/leave-behind framework	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	4	FAIL	Keeps to one page format	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	5	FAIL	Recommends scannable design	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	3.4s	32048	6	FAIL	Provides specific content for each section	judge did not provide concrete evidence	3	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	7	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	19.6s	33870	8	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	4	FAIL	Recommends conservative assumptions	The model defines an 'Efficiency Gain' assumption based on 'customer avg' and a 'Productivity Shift' but does not explicitly recommend or justify 'conservative' assumptions (e.g., stating to use lowe…	5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	6	FAIL	Suggests validating assumptions during calls	The model asks the user to provide answers to questions to 'tailor this to your product' and will 'write the specific formulas' later. It does not explicitly suggest validating the assumptions within…	5	2
+ab-testing	eval-5	with_skill	FAIL	9.1s	32748	7	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	4.5s	32237	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.5s	32237	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.5s	32237	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.5s	32237	4	PASS			6	2

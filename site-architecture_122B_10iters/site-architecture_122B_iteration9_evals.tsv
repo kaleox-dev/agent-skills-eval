@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in actual output; only mentioned in thinking section	1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	2	FAIL	Applies 3-click rule and flat vs deep principles	No explicit mention of 3-click rule or flat vs deep principles in output	1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	20.7s	24512	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	1	FAIL	Recommends content inventory first	Model asks 'What are the main categories or sections you currently have?' but does not recommend doing content inventory as a first step	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	2	FAIL	Groups related pages logically	No grouping of pages provided in output; model is still gathering information	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	3	FAIL	Applies 3-click rule	No mention of 3-click rule in the output	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	4	FAIL	Redesigns navigation structure	No navigation structure redesign provided; model states 'I'll provide you with' future deliverables but none are present	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	5	FAIL	Provides ASCII tree or visual sitemap	Model promises 'Page hierarchy (ASCII tree with URL structure)' but does not provide it in this output	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	6	FAIL	Addresses URL redirects for moved pages	Model asks 'Are there existing URLs that must be preserved for redirects?' but does not address redirects	2	9
+ab-testing	eval-2	with_skill	FAIL	8.9s	23524	7	FAIL	Reduces header navigation items	No mention of reducing header navigation items in the output	2	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	2	FAIL	Applies URL structure patterns	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	3	FAIL	Recommends shorter, cleaner paths	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	4	FAIL	Provides recommendations for each section type	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	5	FAIL	Addresses SEO implications	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-3	with_skill	FAIL	9.0s	23529	6	FAIL	Provides URL map reference	judge returned unparseable response: The user is asking me to grade an evaluation run for agentskills.io. I need to evaluate the model output against the provided assertions and return strict JSON. L…	3	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	1	FAIL	Recommends hub pages for each section	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	2	FAIL	Applies hub-and-spoke internal linking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	3	FAIL	Keeps programmatic pages out of main nav	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	4	FAIL	Provides URL structure for both sections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	5	FAIL	Addresses crawl budget for 250 pages	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-4	with_skill	FAIL	10.5s	23641	6	FAIL	Cross-references programmatic-seo skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output against a set of assertions. * **Role:** Strict JSON-only evaluator. * **Input:*…	4	9
+ab-testing	eval-5	with_skill	FAIL	6.9s	23361	1	FAIL	Provides visual sitemap in Mermaid format	No Mermaid diagram present. Output states: 'I can't just make assumptions about what their site structure should be' and asks questions instead.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.9s	23361	2	FAIL	Shows hierarchical page relationships	No page hierarchy shown. Output only contains questions: 'What type of site is this?', 'Is this a new site or restructuring an existing one?' etc.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.9s	23361	3	FAIL	Includes all major sections	No sitemap sections included. Output lists 6 questions to gather context before creating sitemap.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.9s	23361	4	FAIL	Uses clear, readable format	While questions are formatted clearly, no sitemap was provided to evaluate for readability.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.9s	23361	5	FAIL	Suitable for sharing with design team	Output is a questionnaire, not a deliverable. States: 'Once I have this context, I can provide: Visual sitemap (Mermaid diagram)' - indicating it was not yet provided.	5	9
+ab-testing	eval-6	with_skill	FAIL	7.2s	23394	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.2s	23394	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.2s	23394	3	PASS			6	9

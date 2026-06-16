@@ -1,0 +1,99 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  To create a one-pager that your reps will actually use and prospects will keep, I need to tailor it to your specific value proposition. A generic one-pager is often forgotten; a specific one builds m…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m The model did not produce a one-page document; it produced a template framework and a request for inputs. While the framework *intends* for a one-pager, the output itself is not a one-pager format, n…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m The model provides placeholder descriptions (e.g., 'One sentence summarizing the value', '2-3 bullets describing the pain') rather than specific content. It explicitly asks the user to provide detail…
+    4.8s · 32173 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  To create a high-impact objection handling document, I need to anchor the responses in your specific value proposition rather than generic rebuttals. Generic responses feel defensive; tailored respon…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides 2-3 response variations per objection
+         [90mevidence:[0m The model provides exactly one primary Talk Track per objection (e.g., one block under 'Talk Track' for Objection 1), not 2-3 distinct variations.
+    15.4s · 33403 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  To build a high-impact ROI calculator, I need to understand the specific economics of your product and your buyers. ROI calculations are only as good as the inputs, and the "winning" inputs vary by b…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies ROI calculator framework
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides calculation methodology
+         [90mevidence:[0m The model states it will provide 'The Calculation Logic' *after* receiving answers, stating 'ROI calculations are only as good as the inputs...'. No formulas or methodology are provided in the curren…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m The output contains no recommendations on assumptions, conservative or otherwise. It asks for user data instead.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes ROI timeline and payback period
+         [90mevidence:[0m It asks the user about 'Payback Period' and 'Time Horizon' as preferences, but does not include any actual timeline, payback period calculation, or example.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests validating assumptions during calls
+         [90mevidence:[0m The model lists 'The Inputs' as questions for the developer/user to answer to build the tool. It does not suggest validating assumptions *during* a sales call as a behavioral instruction.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides calculator structure
+         [90mevidence:[0m It offers format options (Spreadsheet, Web Tool, Slide-Embedded) but explicitly states: 'Once you provide these details, I will generate... The Structure: A wireframe'. No structure is provided in th…
+    7.0s · 32478 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  I need a bit more context to make this script truly effective for **your** specific product and the VP of Marketing’s likely pain points. To tailor this perfectly, please answer these quick questions…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 5-part demo script structure
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes opening with discovery questions
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#8[0m [31mFAIL[0m [90m—[0m Notes customization based on prospect responses
+         [90mevidence:[0m judge did not provide concrete evidence
+    19.6s · 33828 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  To build a high-impact sales deck for your employee engagement platform, I need to move beyond generic "engagement" claims and anchor the value in **actionable intelligence** and **risk mitigation** …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured.
+    23.5s · 34292 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  Since you didn't specify the exact product name, I will create a **high-impact, modular template** for a Public Comparison Page (often called a "Battle Card" or "Alternative Page" for SEO). This temp…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to competitors skill
+         [90mevidence:[0m The model provides generic placeholders (e.g., '[key pain point: e.g., bloated pricing...]') and does not reference specific competitor capabilities or skills, only general stereotypes like 'legacy s…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains the distinction between internal and public collateral
+         [90mevidence:[0m The output provides a template for public-facing content ('SEO-optimized', 'scannable', 'objective-sounding') but contains no explanation or distinction regarding internal vs. public collateral types…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt public SEO comparison page using sales enablement patterns
+         [90mevidence:[0m The model explicitly attempts to create a public SEO comparison page. The output includes an 'Executive Summary', 'Feature Comparison Matrix', and 'FAQ' sections formatted for public consumption ('Pa…
+    16.2s · 33704 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 53.5%[0m  [90m· 14.41s avg · 33313 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1074/benchmark.json[0m
+{
+  "passed": 21,
+  "failed": 17,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5526315789473685,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1074/benchmark.json"
+    }
+  ],
+  "iteration": 1074,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1074",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1074/report/index.html"
+}

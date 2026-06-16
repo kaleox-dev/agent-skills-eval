@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	1	FAIL	Checks for product-marketing.md	Model output states: 'Since you didn't mention an existing .agents/product-marketing.md file... I'll provide the full plan below'. No file was created or referenced as output.	1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	2	FAIL	Applies 3-click rule and flat vs deep principles	The ASCII tree shows deep nesting (e.g., /resources/guides is 3 clicks deep; /docs/getting-started is 2-3 clicks). The text mentions 'flat vs deep' concepts implicitly by creating dropdowns, but does…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	19.3s	24894	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	3	FAIL	Applies 3-click rule	The model mentions a '3-level hierarchy' but never mentions the '3-click rule' or ensures that the depth adheres to that specific heuristic. It discusses structure levels, not click depth limits.	2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	5	FAIL	Provides ASCII tree or visual sitemap	No ASCII tree or visual sitemap is provided. The output contains text descriptions and questions, but explicitly states: 'If you can share your current page list ... I can start mapping out a propose…	2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	7.1s	23546	7	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	8.0s	23636	6	FAIL	Provides URL map reference	judge did not provide concrete evidence	3	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	3	FAIL	Keeps programmatic pages out of main nav	The output recommends including `/integrations` in the primary header nav: 'Header Nav: Include /integrations in the primary header nav'. It also suggests a 'Compare Dropdown' in the header for top 5…	4	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.6s	24825	6	FAIL	Cross-references programmatic-seo skill	The output text does not contain any references, links, or mentions of a 'programmatic-seo skill' or similar external resource.	4	6
+ab-testing	eval-5	with_skill	FAIL	2.7s	23033	1	FAIL	Provides visual sitemap in Mermaid format	Output contains only questions requesting context (e.g., 'Quick questions: 1. Is this a new site...'). No Mermaid code or visual sitemap is present.	5	6
+ab-testing	eval-5	with_skill	FAIL	2.7s	23033	2	FAIL	Shows hierarchical page relationships	No page relationships are shown because the model failed to generate any sitemap or diagram.	5	6
+ab-testing	eval-5	with_skill	FAIL	2.7s	23033	3	FAIL	Includes all major sections	No sections are listed in the output; the model asks the user to provide them ('What are the key sections/pages?').	5	6
+ab-testing	eval-5	with_skill	FAIL	2.7s	23033	4	FAIL	Uses clear, readable format	While the text is readable, the format does not fulfill the primary request for a visual sitemap, failing the core intent.	5	6
+ab-testing	eval-5	with_skill	FAIL	2.7s	23033	5	FAIL	Suitable for sharing with design team	The output is a request for information, not a deliverable asset like a sitemap suitable for sharing.	5	6
+ab-testing	eval-6	with_skill	FAIL	4.2s	23250	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	4.2s	23250	2	FAIL	References or defers to seo-audit skill	The model references an 'SEO audit resource or specialist' but never explicitly mentions an 'seo-audit skill' by name or defers to it as a specific tool/skill unit.	6	6
+ab-testing	eval-6	with_skill	FAIL	4.2s	23250	3	PASS			6	6

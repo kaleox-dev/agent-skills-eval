@@ -1,0 +1,55 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	2	FAIL	Identifies SaaS branch	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	3	FAIL	Runs Phase 1 ICP definition	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	4	FAIL	Recommends multi-source discovery (Apollo, Clay, Crunchbase, BuiltWith)	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	5	FAIL	Asks about user's tool access	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	6	FAIL	Sources 2-3x candidates before qualifying	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	7	FAIL	Requires email validation before final list	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	8	FAIL	Outputs SaaS-branch chat table columns	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	9	FAIL	Includes top 3-5 outreach targets with rationale	judge did not provide concrete evidence	1	2
+ab-testing	eval-1	with_skill	FAIL	4.8s	29799	10	FAIL	References saas-prospecting.md	judge did not provide concrete evidence	1	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	5	FAIL	Notes data freshness concerns	The model states it will identify companies 'in the last 60 days' and prioritized by 'funding recency', but does not explicitly note concerns about data staleness or freshness issues.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	7	FAIL	Outputs signal column showing round + date	The output files section states 'No output files were captured.' and the model output is a request for clarification, not a final output with signal columns.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.4s	29962	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	6	FAIL	Recommends Apollo/ZoomInfo + LinkedIn Sales Nav	Output states: 'I will use public sources, LinkedIn Sales Navigator logic... and Apollo-like firmographic cross-checks via browser research.' It mentions 'Apollo-like' and 'LinkedIn Sales Navigator',…	3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	7	FAIL	Notes CMO hires often only on LinkedIn	Output does not contain the statement that CMO hires are 'often only on LinkedIn'. It notes: 'In manufacturing, "CMO" titles are sometimes held by "VP of Marketing," "Chief Growth Officer," or "Head …	3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	8	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	9	FAIL	Mentions CAN-SPAM and source URL capture	Output mentions 'Source' column in table (e.g., 'LinkedIn + PR Newswire') but does not explicitly mention 'CAN-SPAM' compliance nor 'source URL capture' as a specific process or requirement.	3	2
+ab-testing	eval-3	with_skill	FAIL	22.2s	31651	10	FAIL	References b2b-prospecting.md	The output text does not contain the string 'b2b-prospecting.md'. The output files section explicitly states: 'No output files were captured.' No reference exists in the text.	3	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	3	FAIL	Recommends industry-specific directories beyond Apollo/ZoomInfo	Text mentions 'Apollo, ZoomInfo, Clay' as tools, but suggests 'public/browser-assisted research' as an alternative. It does not explicitly recommend specific industry directories (e.g., ThomasNet, In…	4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	4	FAIL	Mentions trade show exhibitor lists	The output does not contain the phrase 'trade show' or 'exhibitor lists'.	4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	5	FAIL	Identifies relevant trigger events	The model asks the user if they are looking for triggers ('Are you looking for companies with specific triggers?') but does not itself identify or list specific relevant trigger events for the indust…	4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	6	FAIL	Warns about data spottiness for industrial	The output does not mention data spottiness, scarcity, or quality issues regarding industrial data.	4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	7	FAIL	Recommends cross-verification with business websites + LinkedIn	The output suggests using 'public/browser-assisted research' but does not explicitly recommend cross-verification with 'business websites + LinkedIn'.	4	2
+ab-testing	eval-4	with_skill	FAIL	4.3s	29744	8	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	1	FAIL	Identifies Local SMB branch	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	2	FAIL	Asks about business category if not specified	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	3	FAIL	Defaults radius to 20km	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	4	FAIL	Runs browser research workflow	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	5	FAIL	Applies 4-tier website status classification	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	6	FAIL	Uses Hot/Warm/Cold/Skip scoring	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	7	FAIL	Outputs Local SMB chat table columns	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	8	FAIL	Adds top 3 outreach targets	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	9	FAIL	References local-prospecting.md	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-5	with_skill	FAIL	0s	0	10	FAIL	Warns against bulk-scraping Google Maps	judge returned unparseable response: fetch failed	5	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	2	FAIL	Explains email_state values (ok, email_invalid, risky, unknown, accept_all)	Model lists: 'email_state: ok, risky, invalid, unknown'. It does not mention 'email_invalid' (uses 'invalid') and completely omits 'accept_all'.	6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	3	FAIL	Warns Apollo accuracy is 60-80%	Model mentions: 'If <85% is valid, your Apollo data quality is poor.' It does not state the 60-80% range.	6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	4	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	5	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	6	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	7	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	11.1s	30523	8	FAIL	References truelist.md or data-sources.md	No reference to truelist.md or data-sources.md found in output.	6	2

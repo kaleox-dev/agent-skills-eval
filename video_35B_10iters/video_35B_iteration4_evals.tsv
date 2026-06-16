@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The model output is a text response, not a file named product-marketing.md.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	5	FAIL	Mentions captions	The word 'captions' does not appear in the output. It mentions 'text-accurate', 'script', 'text overlays', and 'copy', but specifically fails to mention captions or subtitles.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.5s	8654	6	FAIL	Cross-references copywriting skill	The model mentions 'Script & Storyboard' and 'concise script' in Step 1, and asks for 'Your Script' in Next Steps. However, it does not explicitly mention or cross-reference a 'copywriting skill' (by…	1	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	1	FAIL	Recommends AI avatar approach	The model explicitly argues against this approach: 'Why Not AI Avatars (HeyGen/Synthesia)? ... it’s overkill and less flexible for product updates... The Recommended Stack... is Programmatic Video us…	2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	3	FAIL	Mentions HeyGen MCP server for agents	The text mentions 'HeyGen TTS' and 'HeyGen' as an avatar service, but contains no reference to an 'MCP server'.	2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	4	FAIL	Mentions custom avatars option	The model rejects the avatar approach entirely ('Why Not AI Avatars'), recommending 'Screen Recordings + AI B-Roll' and 'Programmatic Video using Hyperframes' instead. It does not mention the option …	2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.5s	9103	6	FAIL	Warns about authenticity tradeoff	The model critiques avatars based on 'Cost', 'Flexibility', and 'Consistency/Credibility', stating they are 'overkill'. It does not issue a warning about an 'authenticity tradeoff' (e.g., users knowi…	2	4
+ab-testing	eval-3	with_skill	FAIL	5.8s	8464	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	5.8s	8464	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	5.8s	8464	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	5.8s	8464	4	FAIL	Warns about common prompt mistakes	The output lists pros and cons of specific tools (e.g., Pika may struggle with consistent hand movements, Runway offers motion control) but does not explicitly warn about general 'common prompt mista…	3	4
+ab-testing	eval-3	with_skill	FAIL	5.8s	8464	5	FAIL	Notes Sora reliability caveats	The model output mentions Runway, Kling, Veo, and Pika, but never mentions 'Sora'. Therefore, no caveats regarding Sora are provided.	3	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	4	FAIL	Specifies aspect ratios per platform	Model mentions 'Export as vertical (9:16)' in Option 1, but does not specify different aspect ratios for different platforms (e.g., 16:9 for YouTube, 1:1 for Instagram feed, etc.).	4	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	5	FAIL	Mentions hooking in first 3 seconds	Model mentions 'AI Analysis... detect hooks' and 'identify the 3 best hooks', but never explicitly mentions the 'first 3 seconds' constraint.	4	4
+ab-testing	eval-4	with_skill	FAIL	7.8s	8675	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	4	FAIL	Recommends testing 5 manually first	The model output discusses a batch of 50 videos and provides a script to render all 50. It contains no mention of testing 5 manually first or any similar staging advice.	5	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	5	FAIL	Mentions reply tracking / ROI	The model mentions 'conversion' once ('Only do this if the human element is critical for conversion') but does not mention 'reply tracking' or specific 'ROI' metrics/mechanisms.	5	4
+ab-testing	eval-5	with_skill	FAIL	17.4s	9975	6	FAIL	Mentions captions	The model discusses HTML/CSS text rendering for the video content ('dynamic text', 'company name', 'pain point'), but does not explicitly mention 'captions' (subtitles) for the video.	5	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	4	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	5	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.4s	8442	6	FAIL	Asks about stack or animation needs	The model provides a deterministic comparison based on assumptions but does not ask any questions or include any inquiry directed at the user about their stack or animation needs.	6	4

@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	1	FAIL	Checks for product-marketing.md	Model states 'First check if there's a product-marketing context file (but I can't access files, so I'll proceed)' - did not actually check for the file.	1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	33.7s	25190	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.3s	23662	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	1	FAIL	Triggers on casual phrasing	No casual phrasing in user input was identified or referenced in model output. Model output begins with 'The user has a successful blog post' without mentioning casual language.	3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	6	FAIL	Extracts 3-5 key insights to repurpose	Model provides framework for extracting insights ('Mark 5-10 content atoms') but does not actually extract 3-5 key insights from any blog post content.	3	3
+ab-testing	eval-3	with_skill	FAIL	11.7s	23363	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	5	FAIL	Recommends daily engagement routine	Only mentions 'Engage for 30 minutes after posting' which is post-specific, not a daily engagement routine recommendation	4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	6	FAIL	Suggests trying different content formats	Asks 'What type of content are you posting?' but does not recommend trying different content formats	4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	23398	7	FAIL	Provides specific before/after hook examples	Provides hook formulas ('I was wrong about [common belief]') but no specific before/after examples of the same post	4	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	27.6s	24760	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	9.3s	23174	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	9.3s	23174	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	9.3s	23174	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	9.3s	23174	4	PASS			6	3

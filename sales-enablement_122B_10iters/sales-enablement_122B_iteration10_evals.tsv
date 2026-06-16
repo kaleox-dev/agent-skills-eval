@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file or content in output	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	2	FAIL	Applies 10-12 slide framework	Output contains questions only, no slide framework applied	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	3	FAIL	Includes Problem, Solution, Proof, Pricing, Next Steps slides	No slide content present in output	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	4	FAIL	Tailors to HR director audience	No tailored content for HR directors in output	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	5	FAIL	Incorporates stated differentiator	Differentiator mentioned but not incorporated into output	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	6	FAIL	Provides slide-by-slide content	Output contains no slide-by-slide breakdown	1	10
+ab-testing	eval-1	with_skill	FAIL	10.1s	32579	7	FAIL	Includes speaker notes or talking points	No speaker notes or talking points present	1	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	1	FAIL	Applies objection handling framework	Model states 'I'm missing critical context... I should ask clarifying questions before creating the document' - no framework applied, only questions asked	2	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	2	FAIL	Categorizes the three objections	Objections listed ('We already use SurveyMonkey', 'We don't have budget right now', 'Our team is too small to need this') but never categorized	2	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	3	FAIL	Provides structured response for each (acknowledge, reframe, evidence, bridge)	No responses provided at all - output is 'Quick questions to get this right' asking for more context	2	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	4	FAIL	Provides 2-3 response variations per objection	Zero response variations provided - model explicitly states 'Once I have this, I'll create' indicating work not yet done	2	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	5	FAIL	Organizes for quick reference during calls	No document created - mentions 'A quick-reference table' as future promise, not delivered output	2	10
+ab-testing	eval-2	with_skill	FAIL	7.4s	32362	6	FAIL	Categorizes objections using the skill's framework (competitor, budget, need/timing)	Objections not categorized - 'We already use SurveyMonkey' not labeled as competitor, 'We don't have budget right now' not labeled as budget, 'Our team is too small to need this' not labeled as need/…	2	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	1	FAIL	Triggers on casual phrasing	No casual phrasing detected or triggered; output is standard clarifying questions	3	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	2	FAIL	Applies one-pager/leave-behind framework	Framework mentioned but not applied; no one-pager created	3	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	None of these elements present in output	3	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	4	FAIL	Keeps to one page format	No one-pager content generated	3	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	5	FAIL	Recommends scannable design	Mentions 'scannable in 30 seconds' as future promise, not current recommendation	3	10
+ab-testing	eval-3	with_skill	FAIL	7.1s	32311	6	FAIL	Provides specific content for each section	No sections created; only questions asked	3	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	1	FAIL	Applies 5-part demo script structure	Script contains 6 scenes (Scene 1-6), not 5 parts: 'Scene 1: Opening & Recap', 'Scene 2: Workflow 1', 'Scene 3: Workflow 2', 'Scene 4: Workflow 3', 'Scene 5: Proof Point', 'Scene 6: Close'	4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	6	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	7	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	25.7s	33833	8	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	1	FAIL	Applies ROI calculator framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	2	FAIL	Defines required inputs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	3	FAIL	Provides calculation methodology	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	4	FAIL	Recommends conservative assumptions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	5	FAIL	Includes ROI timeline and payback period	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	6	FAIL	Suggests validating assumptions during calls	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	32421	7	FAIL	Provides calculator structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	5	10
+ab-testing	eval-6	with_skill	FAIL	7.8s	32342	1	FAIL	Recognizes this as a public comparison page	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on specific assertions. * I…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.8s	32342	2	FAIL	References or defers to competitors skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on specific assertions. * I…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.8s	32342	3	FAIL	Explains the distinction between internal and public collateral	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on specific assertions. * I…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.8s	32342	4	FAIL	Does not attempt public SEO comparison page using sales enablement patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on specific assertions. * I…	6	10

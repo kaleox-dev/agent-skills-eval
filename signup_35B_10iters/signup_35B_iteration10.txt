@@ -1,0 +1,77 @@
+
+[1m▶ signup[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    Should we add Google and Microsoft SSO to our signup page? We're a B2B project management tool and currently only have email/password signup.
+    [90moutput:[0m  Given that you are a **B2B project management tool**, the short answer is **yes, absolutely**. In the B2B SaaS landscape, removing Google and Microsoft (Entra ID/Azure AD) SSO is one of highest-impac…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    10.7s · 3757 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    We require email verification before users can access the product. Is that hurting our conversion? Should we change it?
+    [90moutput:[0m  Yes, requiring email verification **immediately** upon signup is almost certainly hurting your conversion rates, but the magnitude depends on your business model. It creates a "trust gap" and adds fr…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.9s · 4092 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    Audit our signup flow. We have a 3-step process: Step 1 asks for email, password, and full name. Step 2 asks for company name, company size, role, and industry. Step 3 asks for use case and how they …
+    [90moutput:[0m  Based on your description, your **45% completion rate is likely a result of excessive friction and premature data extraction**. You are asking for a significant amount of "identity" and "intent" data…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. The model output does not mention or reference a file named 'product-marketing.md'.
+    14.7s · 4200 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    our signup form is just email and password but we still only get 35% of visitors to complete it. what else could be wrong?
+    [90moutput:[0m  A 35% completion rate for a minimal email/password form is a significant red flag. Typically, for a simple B2C or low-friction B2B flow, you should aim for **50–65%+**. Since the form is already mini…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model immediately accepts '35% completion rate' as a factual premise ('A 35% completion rate... is a significant red flag') rather than questioning the context or nature of the phrasing. It does …
+    13.3s · 4046 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    Users sign up fine but then never activate. Only 20% complete onboarding. What do we do?
+    [90moutput:[0m  This is a classic **Activation Problem**, not a Signup Problem. While your signup flow is working (users are getting in), your **Onboarding Flow** is failing to demonstrate value or guide users to th…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as post-signup onboarding, not signup flow
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes this as post-signup onboarding, not signup flow", "passed": true, "evidence": "This is a classic **Activation Probl…
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to onboarding skill
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes this as post-signup onboarding, not signup flow", "passed": true, "evidence": "This is a classic **Activation Probl…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains signup covers the signup form, not post-signup
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes this as post-signup onboarding, not signup flow", "passed": true, "evidence": "This is a classic **Activation Probl…
+    4.7s · 3044 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="signup"> <description>When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registrati…
+    [90muser:[0m    What experiments should we run on our signup page? We want to improve our trial signup rate.
+    [90moutput:[0m  To provide specific, high-impact experiment ideas, I need to understand your current setup. However, I can provide a **prioritized framework of experiments** based on common high-leverage changes. Pl…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references ab-testing skill
+         [90mevidence:[0m The output contains no mention of 'ab-testing skill', 'A/B testing skill', or any specific skill reference/link to the ab-testing module. It mentions 'How to Test' generally but does not cross-refere…
+    9.6s · 3614 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 75.8%[0m  [90m· 11.15s avg · 3792 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1143/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "signup",
+      "slug": "signup",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8285714285714286,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1143/benchmark.json"
+    }
+  ],
+  "iteration": 1143,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1143",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1143/report/index.html"
+}

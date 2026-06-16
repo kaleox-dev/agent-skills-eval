@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	1	FAIL	Checks for product-marketing.md	The output is a direct text response containing no file creation or mention of 'product-marketing.md'. The 'Output files' section explicitly states 'No output files were captured'.	1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	2	FAIL	Distinguishes referral from affiliate	The output discusses 'referral program', 'referrers', and 'referred friends' extensively. It mentions 'affiliate' only once in the context of choosing PartnerStack 'If you want to expand to affiliate…	1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.5s	9429	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	9.7s	8995	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.7s	9100	6	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.7s	9005	6	FAIL	Notes incentive may not be the only issue	Model attributes the problem primarily to sizing and structure (social friction, awkwardness). It does not explicitly state or suggest that other factors (e.g., UX, lack of awareness, poor timing) ar…	4	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	2	FAIL	Defines participation rate, share rate, conversion rate	Participation rate is not defined (only 'Active Referrers' and 'Referral Rate' are defined). Share rate and Conversion rate are only defined in a troubleshooting table as 'If It’s Low...' without exp…	5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.7s	9164	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	3	FAIL	Cross-references emails for broader email work	The model output focuses exclusively on the referral email request. There is no mention or cross-reference to other types of emails (e.g., cold outreach, newsletter, follow-up) or a broader email str…	6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	9048	4	PASS			6	6

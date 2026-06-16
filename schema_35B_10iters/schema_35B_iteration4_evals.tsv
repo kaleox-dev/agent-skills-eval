@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.5s	10355	7	FAIL	Recommends validation tools	The model output discusses customization and placement but does not mention or recommend any specific validation tools (e.g., Google Rich Results Test, Schema Markup Validator).	1	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	3	FAIL	Provides complete code example	The output provides a template with placeholders (`[Product]`, `Your answer here...`) and comments (`// ... repeat for all 20 questions`) rather than a complete, ready-to-deploy code example with act…	2	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	4	FAIL	Explains rich result benefits	The text mentions "help you implement FAQ schema to get those rich results" and "Key Best Practices", but it does not explicitly explain the *benefits* of rich results (e.g., increased click-through …	2	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	4.7s	9830	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	4	FAIL	Recommends BreadcrumbList alongside	The model output does not mention 'BreadcrumbList' or suggest it as a recommended schema type. It only covers Article/BlogPosting and implementation tips.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	7.6s	10150	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	4	FAIL	Includes BreadcrumbList	While the model mentions BreadcrumbList in Section 3 as a recommendation for category pages, the provided JSON-LD example code is for a 'Product' schema and does not include a 'BreadcrumbList' object.	4	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.5s	10251	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	4	FAIL	Recommends Search Console structured data reports	The model output does not mention Google Search Console or structured data reports in Search Console. It only recommends the Rich Results Test tool.	5	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	3.5s	9722	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.5s	9978	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.5s	9978	2	FAIL	References or defers to seo-audit skill	The model claims personal specialization: 'While I specialize in Schema Markup and structured data... I will act as your SEO Auditor'. It does not reference a specific tool, plugin, or skill named 's…	6	4
+ab-testing	eval-6	with_skill	FAIL	5.5s	9978	3	PASS			6	4

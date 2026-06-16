@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	20.3s	11004	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	3	FAIL	Provides complete code example	Only 2 question templates shown instead of 20 required questions	2	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	8.8s	10050	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	4	FAIL	Recommends BreadcrumbList alongside	No mention of BreadcrumbList schema in response	3	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.4s	10336	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	21.1s	11058	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	3	FAIL	Explains valid schema doesn't guarantee rich results	No explicit statement that valid schema doesn't guarantee rich results; only mentions 'Some types aren't eligible' and 'Google can take days/weeks'	5	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	7.1s	9891	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	9.2s	10148	1	FAIL	Recognizes this as a technical SEO audit request	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), As…	6	2
+ab-testing	eval-6	with_skill	FAIL	9.2s	10148	2	FAIL	References or defers to seo-audit skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), As…	6	2
+ab-testing	eval-6	with_skill	FAIL	9.2s	10148	3	FAIL	Does not attempt full SEO audit using schema markup patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text), As…	6	2

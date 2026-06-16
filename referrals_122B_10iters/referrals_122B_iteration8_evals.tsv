@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	1	FAIL	Checks for product-marketing.md	No file reference or creation of product-marketing.md in output	1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	No explicit referral loop structure with trigger, share, convert, reward components	1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	6	FAIL	Includes launch checklist	Launch checklist listed as future deliverable, not included in output	1	8
+ab-testing	eval-1	with_skill	FAIL	13.1s	9014	7	FAIL	Recommends tool integrations	Tools (Rewardful, Tolt, PartnerStack) listed as future help, not as current recommendations	1	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	8.2s	8582	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger in model output; response is structured analysis without indication of trigger mechanism	3	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.2s	8929	6	FAIL	Recommends appropriate affiliate platforms	Model asks "What tools/platforms are you using?" but does not recommend specific affiliate platforms	3	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	4	FAIL	Applies tiered incentive concept	No tiered incentive structure (e.g., escalating rewards for multiple referrals) is presented in the output	4	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	10.6s	8790	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	4	FAIL	Compares referral CAC to other channels	Output lists 'CAC via referral vs. other channels' as a monthly metric to track but provides no actual comparison data or values between channels	5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	6	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	15.2s	9217	7	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	15.8s	9278	1	FAIL	Applies referral email section from the skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	15.8s	9278	2	FAIL	Provides referral invitation email guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	15.8s	9278	3	FAIL	Cross-references emails for broader email work	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	6	8
+ab-testing	eval-6	with_skill	FAIL	15.8s	9278	4	FAIL	Provides specific referral email copy or template	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	6	8

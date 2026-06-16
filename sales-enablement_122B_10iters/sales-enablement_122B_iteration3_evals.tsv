@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to check for that file' - did not verify file existence	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	2	FAIL	Applies 10-12 slide framework	No deck created; model only says 'Once I have this context, I'll create a 10-12 slide deck'	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	3	FAIL	Includes Problem, Solution, Proof, Pricing, Next Steps slides	No slide content provided; model only asked clarifying questions	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	4	FAIL	Tailors to HR director audience	No actual content created for HR director audience	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	5	FAIL	Incorporates stated differentiator	Differentiator mentioned in context but not incorporated into deliverable content	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	6	FAIL	Provides slide-by-slide content	No slide-by-slide content in output	1	3
+ab-testing	eval-1	with_skill	FAIL	11.0s	32652	7	FAIL	Includes speaker notes or talking points	No speaker notes or talking points provided	1	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	1	FAIL	Applies objection handling framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	2	FAIL	Categorizes the three objections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	3	FAIL	Provides structured response for each (acknowledge, reframe, evidence, bridge)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	4	FAIL	Provides 2-3 response variations per objection	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	5	FAIL	Organizes for quick reference during calls	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-2	with_skill	FAIL	29.9s	34214	6	FAIL	Categorizes objections using the skill's framework (competitor, budget, need/timing)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions. * **Role:** Strict JSON-only evalua…	2	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model states 'The user is asking for a sales leave-behind one-pager' without mentioning phrasing analysis.	3	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	2	FAIL	Applies one-pager/leave-behind framework	Model only states it 'will structure a one-pager' but does not actually apply the framework - only asks clarifying questions.	3	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	Model promises these sections ('The output will follow sales best practices...') but does not actually include them in the output.	3	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	4	FAIL	Keeps to one page format	No one-pager content was generated. Output contains only questions and promises of future output.	3	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.8s	32282	6	FAIL	Provides specific content for each section	No specific content provided. Output only lists 6 context questions to gather information before creating content.	3	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	1	FAIL	Applies 5-part demo script structure	No demo script was created; model only asked clarifying questions	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	2	FAIL	Includes opening with discovery questions	Discovery questions were asked to gather context, not as part of a demo script opening	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	3	FAIL	Includes problem validation	No demo script produced; no problem validation section exists	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	4	FAIL	Includes solution walkthrough	No demo script produced; no solution walkthrough exists	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	5	FAIL	Includes proof points	No demo script produced; no proof points section exists	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	6	FAIL	Includes close with next steps	No demo script produced; no closing/next steps section exists	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	7	FAIL	Time-boxes for 30 minutes	30-minute duration mentioned in questions but no time-boxed script created	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	32523	8	FAIL	Notes customization based on prospect responses	Model requested context for customization but did not produce a script with customization notes	4	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	1	FAIL	Applies ROI calculator framework	Model states 'I'll build you' calculator but provides no framework; only asks clarifying questions.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	2	FAIL	Defines required inputs	Lists generic examples ('Time spent on current process', 'Team size') but does not define specific required inputs for this use case.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	3	FAIL	Provides calculation methodology	Mentions 'Formulas that calculate time/cost savings' but no actual formulas or methodology provided.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	4	FAIL	Recommends conservative assumptions	No mention of conservative assumptions in output.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	5	FAIL	Includes ROI timeline and payback period	States it will show 'payback period' but does not include any timeline or payback calculation.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	6	FAIL	Suggests validating assumptions during calls	No suggestion to validate assumptions during calls in output.	5	3
+ab-testing	eval-5	with_skill	FAIL	7.0s	32315	7	FAIL	Provides calculator structure	Promises 'Input fields', 'Formulas', 'Output display', 'Sample data' but none are actually provided.	5	3
+ab-testing	eval-6	with_skill	FAIL	7.9s	32395	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.9s	32395	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.9s	32395	3	FAIL	Explains the distinction between internal and public collateral	No explanation of internal vs public collateral distinction provided	6	3
+ab-testing	eval-6	with_skill	FAIL	7.9s	32395	4	FAIL	Does not attempt public SEO comparison page using sales enablement patterns	I can still help create this content using the sales enablement framework	6	3

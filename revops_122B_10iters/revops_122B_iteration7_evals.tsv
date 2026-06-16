@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output. Model mentions 'reference materials' generically but does not check for or cite this specific file.	1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	27.5s	32360	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	6	FAIL	Defines MQL and SQL score thresholds	MQL Threshold: 75 points is defined, but no SQL score threshold is specified in the output	2	7
+ab-testing	eval-2	with_skill	FAIL	24.0s	32183	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in model output; response is systematic regardless of input tone.	3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	14.8s	31442	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	21.4s	31968	7	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	1	FAIL	Applies data hygiene guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	2	FAIL	Recommends duplicate detection and merging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	3	FAIL	Recommends required field enforcement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	4	FAIL	Addresses standardized naming conventions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	5	FAIL	Covers both cleanup and prevention	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	6	FAIL	Recommends CRM automation for hygiene	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-5	with_skill	FAIL	27.1s	32473	7	FAIL	Provides prioritized cleanup plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…	5	7
+ab-testing	eval-6	with_skill	FAIL	7.4s	30825	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.4s	30825	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.4s	30825	3	PASS			6	7

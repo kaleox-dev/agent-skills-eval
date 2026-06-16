@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output	1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	24.4s	33640	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	4	FAIL	Provides 2-3 response variations per objection	Only one main talk track per objection; follow-up questions present but not distinct response variations	2	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	27.0s	33844	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; model asks clarifying questions without referencing trigger behavior	3	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	2	FAIL	Applies one-pager/leave-behind framework	Model asks for context before creating one-pager; no framework actually applied in output	3	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	Output contains questions, not one-pager content; no headline, benefits, social proof, how it works, or CTA present	3	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	4	FAIL	Keeps to one page format	No one-pager document created; output is clarification questions only	3	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	5	FAIL	Recommends scannable design	Mentions 'scannable 30-second chunks' as future deliverable, not as design recommendation for current output	3	1
+ab-testing	eval-3	with_skill	FAIL	7.3s	32215	6	FAIL	Provides specific content for each section	No sections with specific content provided; model requests information instead of delivering content	3	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	1	FAIL	Applies 5-part demo script structure	No demo script structure provided; output is an inquiry for product context.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	2	FAIL	Includes opening with discovery questions	No script opening present; model asks user for information instead.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	3	FAIL	Includes problem validation	No problem validation section in output.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	4	FAIL	Includes solution walkthrough	No solution walkthrough provided.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	5	FAIL	Includes proof points	No proof points included; model asks for them instead.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	6	FAIL	Includes close with next steps	No closing section or next steps in output.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	7	FAIL	Time-boxes for 30 minutes	No time-boxing structure in output.	4	1
+ab-testing	eval-4	with_skill	FAIL	9.0s	32354	8	FAIL	Notes customization based on prospect responses	No customization notes for prospect responses in output.	4	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	1	FAIL	Applies ROI calculator framework	Model states 'I'll build you' calculator components but does not actually apply a framework in output	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	2	FAIL	Defines required inputs	No specific inputs defined; only asks 'What can you share on these?' without listing required input fields	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	3	FAIL	Provides calculation methodology	No formulas or calculation methodology provided; only mentions 'Calculations (your formula for value)' as future deliverable	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	4	FAIL	Recommends conservative assumptions	No mention of conservative assumptions in output	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	5	FAIL	Includes ROI timeline and payback period	Payback period mentioned as 'what they see' but not actually included in output	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	6	FAIL	Suggests validating assumptions during calls	No suggestion about validating assumptions during calls in output	5	1
+ab-testing	eval-5	with_skill	FAIL	7.8s	32380	7	FAIL	Provides calculator structure	Lists 'Input fields, Calculations, Outputs' as future deliverables but provides no actual structure	5	1
+ab-testing	eval-6	with_skill	FAIL	9.0s	32455	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.0s	32455	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.0s	32455	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.0s	32455	4	PASS			6	1

@@ -1,3 +1,89 @@
 
 [1m▶ programmatic-seo[0m  [90m[0m
   [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We built 500 programmatic pages but Google isn't indexing most of them. Only 80 are in the index. What's going wrong?
+    [90moutput:[0m  This is a classic "thin content" or "programmatic SEO penalty" scenario. If you built 500 pages but only 80 are indexed, Google is likely classifying the other 420 as **"Crawled - currently not index…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Diagnoses indexation problem
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Investigates thin content as likely cause
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Checks crawl budget considerations
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks internal linking to programmatic pages
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Checks XML sitemap and robots.txt
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends specific fixes for indexation
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+      [31m#7[0m [31mFAIL[0m [90m—[0m Warns about Google's thin content policies
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses indexation problem", "passed": true, "evidence": "States: 'This is a classic \"thin content\" or \"programmatic SEO …
+    8.7s · 8969 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We want to create programmatic SEO pages for our CRM. We're thinking of 'CRM for [industry]' pages — like 'CRM for Real Estate,' 'CRM for Healthcare,' etc. How should we approach this?
+    [90moutput:[0m  This is a classic and highly effective **Programmatic SEO** strategy. You are targeting the **"Personas"** playbook (specifically `[Product] for [Audience/Industry]`). Since you are building pages fo…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model did not reference or generate a file named 'product-marketing.md'.
+    14.8s · 9623 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    we want to rank for '[tool name] integration' keywords. we integrate with 50+ tools and want a page for each. like 'Slack integration', 'Salesforce integration' etc.
+    [90moutput:[0m  This is a classic use of the **Integrations Playbook**. You are targeting high-intent users who are already using another tool and are looking for a way to connect it to your product. These users are…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    16.3s · 9752 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Create a comparison page strategy. We want pages like 'Notion vs Asana', 'Notion vs Monday', etc. for all our competitors. We have 15 competitors.
+    [90moutput:[0m  This is a classic application of the **Comparisons Playbook**. Since you have a defined product and a specific list of 15 competitors, you have the perfect conditions for high-intent, scalable progra…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes keyword research for variations
+         [90mevidence:[0m The output lists ranking keywords in section 6 ('[Your Product] vs [Competitor]', '[Competitor] alternatives', 'Better than [Competitor]') but does not provide any actual keyword research, search vol…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Cross-references competitors skill
+         [90mevidence:[0m The output advises writing a section 'Where [Competitor] Wins' to build credibility, but it does not explicitly analyze or list specific functional skills/capabilities of the competitors (e.g., 'Comp…
+    17.3s · 9845 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Can you audit our existing programmatic SEO pages for technical issues? We have crawl errors and some pages return 404s.
+    [90moutput:[0m  Since you are dealing with **crawl errors and 404s** specifically on programmatic pages, I will switch to the **`seo-audit`** skill context to handle the technical diagnosis and remediation. However,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that programmatic-seo is for strategy and template design
+         [90mevidence:[0m The model does not explain that programmatic-seo is for strategy and template design. It discusses 'programmatic SEO audits' and 'remediation framework' but makes no statement distinguishing the 'pro…
+    9.6s · 9038 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Help me create a glossary section for our marketing automation platform. We want to define 200+ marketing terms and rank for '[term] definition' keywords.
+    [90moutput:[0m  This is a classic **Programmatic SEO (pSEO)** opportunity using the **Glossary Playbook**. Since you have a marketing automation platform, you possess a massive advantage: **proprietory data** and **…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    16.9s · 9982 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 70.5%[0m  [90m· 13.94s avg · 9535 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-988/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "programmatic-seo",
+      "slug": "programmatic-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7073170731707317,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-988/benchmark.json"
+    }
+  ],
+  "iteration": 988,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-988",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-988/report/index.html"
+}

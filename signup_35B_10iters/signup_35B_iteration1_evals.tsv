@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	1	FAIL	Checks for product-marketing.md	No mention of 'product-marketing.md' in the output; output files section confirms 'No output files were captured' and text contains no file references.	1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.8s	4209	7	FAIL	Includes Quick Wins, High-Impact Changes, Test Hypotheses	Output includes sections 'Quick Wins (Same-Day Fixes)' and 'High-Impact Changes (Week-Level Effort)', but does NOT contain a section for 'Test Hypotheses'. It contains 'Measurement Plan' and 'Clarify…	1	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	1	FAIL	Applies social auth options guidance	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	2	FAIL	Recommends Google and Microsoft for B2B	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	3	FAIL	Explains conversion benefits of SSO	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	4	FAIL	Recommends prominent placement	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	5	FAIL	Addresses visual separation from email signup	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-2	with_skill	FAIL	11.8s	3863	6	FAIL	Provides implementation recommendations	judge returned unparseable response: { "assertion_results": [ { "text": "Applies social auth options guidance", "passed": true, "evidence": "The model provides detailed guidance on implementation inc…	2	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	1	FAIL	Triggers on casual phrasing	The model output provides a generic diagnostic framework and does not acknowledge or react to the specific 'casual phrasing' of the user's input (e.g., it does not mention tone, style, or phrasing of…	3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.8s	3963	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	10.0s	3649	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.8s	3529	6	FAIL	Cross-references ab-testing skill	The output does not mention 'ab-testing skill' nor does it contain a hyperlink or reference to such a resource. It only uses the term 'A/B Test' as a method.	5	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	1	FAIL	Recognizes this as post-signup onboarding, not signup flow	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	2	FAIL	References or defers to onboarding skill	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	7.5s	3420	3	FAIL	Explains signup covers the signup form, not post-signup	judge did not provide concrete evidence	6	1

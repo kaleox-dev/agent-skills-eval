@@ -1,0 +1,99 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  To create a high-impact **Post-Meeting Leave-Behind**, I need to tailor it to what you actually discussed. A generic one-pager is easy to throw away; a specific one is hard to ignore because it prove…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies one-pager/leave-behind framework
+         [90mevidence:[0m The model explicitly states: 'Please provide the following context so I can draft the copy' and 'Once you give me those details, I'll write the full copy'. It does not apply the framework; it defers …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes headline, benefits, social proof, how it works, CTA
+         [90mevidence:[0m The output is a request for information. It does not contain a headline, benefits, social proof, how it works, or CTA. It lists questions to ask the user instead.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m The model did not generate a one-page format. It generated a list of questions asking for context to create the document later.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends scannable design
+         [90mevidence:[0m The model mentions 'layout guidance' will be provided *after* receiving details, but does not currently recommend a scannable design in this output.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m The model asks for 'top 2-3 pain points' and 'specific proof points' from the user. It provides no specific content for the sections of the leave-behind.
+    3.3s · 32043 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  To build an ROI calculator that actually helps close deals, I need to understand the specific value drivers of your product. An ROI calculator is only effective if the inputs are things your prospect…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies ROI calculator framework
+         [90mevidence:[0m The model does not apply the framework; it explicitly states it needs more information to do so: 'I need to understand the specific value drivers of your product. An ROI calculator is only effective …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines required inputs
+         [90mevidence:[0m The model asks for inputs (e.g., 'What are the typical inputs...') but does not define them for the user. It asks the user to provide this information rather than defining the inputs itself.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides calculation methodology
+         [90mevidence:[0m No calculation methodology is provided. The output contains only questions and a promise to provide formulas later: 'Once I have this, I’ll provide: A structured ROI calculator template (with input f…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m No assumptions are recommended in the output. The text contains no mention of conservative or other types of assumptions.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes ROI timeline and payback period
+         [90mevidence:[0m No timeline or payback period is included. The model asks if the user has data on when 'ROI is typically realized' but does not provide a timeline.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests validating assumptions during calls
+         [90mevidence:[0m The model suggests 'how to walk prospects through it' but does not explicitly suggest validating assumptions during calls as a specific step in the provided output.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides calculator structure
+         [90mevidence:[0m The model explicitly refuses to provide the structure in this turn, stating it will do so only after the user answers questions: 'Once I have this, I’ll provide: A structured ROI calculator template.…
+    3.7s · 32124 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  Here is a focused Objection Handling Document tailored to the three specific objections your sales team is facing. I have structured this for quick reference, including the "why" behind the objection…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides 2-3 response variations per objection
+         [90mevidence:[0m Each objection provides exactly one 'Talk Track' and one 'Follow-Up Question'. There are no alternative variations or multiple scripts provided for any of the three objections.
+    16.7s · 33594 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  This demo script is designed specifically for a **VP of Marketing**. This persona is an **economic buyer** (or heavily influences one) who cares about ROI, attribution, team efficiency, and proving v…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 5-part demo script structure
+         [90mevidence:[0m judge did not provide concrete evidence
+    20.8s · 33998 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  This request falls under **Competitor Analysis** rather than Sales Enablement. Per the `sales-enablement` skill instructions: > "For competitor comparison pages and battle cards, see **competitors**.…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    11.8s · 33009 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  To build a high-impact sales deck for an Employee Engagement Platform, I need to move beyond generic "happiness" metrics and speak to the business outcomes HR Directors care about: retention, product…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model provided a text response but no file named 'product-marketing.md'.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes Problem, Solution, Proof, Pricing, Next Steps slides
+         [90mevidence:[0m The output includes slides for Problem (Slide 2), Solution (Slide 3), and Proof (Slide 6). It includes a section on ROI/Cost (Slide 9) but does not contain a distinct 'Pricing' slide with specific pr…
+    20.3s · 34011 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 57.0%[0m  [90m· 12.76s avg · 33130 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1081/benchmark.json[0m
+{
+  "passed": 21,
+  "failed": 17,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5526315789473685,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1081/benchmark.json"
+    }
+  ],
+  "iteration": 1081,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1081",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1081/report/index.html"
+}

@@ -1,0 +1,97 @@
+
+[1m▶ schema[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  The user wants to add schema markup to their blog posts. They mention they publish articles about marketing tips. This is a clear schema markup request, so I should use the schema skill. Before I can…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m Model asked clarifying questions instead of triggering schema skill with tool call
+      [31m#2[0m [31mFAIL[0m [90m—[0m Implements Article or BlogPosting schema
+         [90mevidence:[0m No schema markup code provided in output
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes author, datePublished, image, publisher
+         [90mevidence:[0m No schema fields implemented - output contains only questions
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends BreadcrumbList alongside
+         [90mevidence:[0m Mentions BreadcrumbList will be provided but does not include it
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides reusable template code
+         [90mevidence:[0m No code snippet or template provided
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses CMS integration for dynamic fields
+         [90mevidence:[0m Only asks about tech stack without providing integration guidance
+    5.3s · 9742 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  The user wants to add schema markup to their SaaS product homepage. They mentioned: - Company name: TaskFlow - Product type: Project management tool (SaaS) - Page type: Homepage - They want Organizat…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No mention of product-marketing.md file in model output
+      [31m#2[0m [31mFAIL[0m [90m—[0m Implements Organization schema in JSON-LD
+         [90mevidence:[0m Model states 'I'll generate complete, validated JSON-LD markup' - no actual JSON-LD code provided
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes required and recommended properties
+         [90mevidence:[0m Only lists questions to ask; no actual schema properties implemented in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses @graph for multiple types
+         [90mevidence:[0m No @graph structure or JSON-LD code present in output
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides complete JSON-LD code
+         [90mevidence:[0m Model explicitly defers: 'Once you provide these details, I'll generate complete, validated JSON-LD markup' - no code provided
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends validation tools
+         [90mevidence:[0m No validation tools (e.g., Google Structured Data Testing Tool, Schema.org validator) mentioned in output
+    7.5s · 9940 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  The user wants to add FAQ schema markup to their FAQ page with 20 questions about their product. This is a clear schema markup request that falls under my schema skill. Let me provide them with: 1. T…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides complete code example
+         [90mevidence:[0m Uses placeholders like "Question 1 text here?" and "// ... repeat for all 20 questions" instead of all 20 questions filled in
+    14.0s · 10474 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  The user is having issues with schema markup not showing up as rich results in Google. This is a common problem that can have several causes. I should help them debug this systematically. Let me thin…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends Search Console structured data reports
+         [90mevidence:[0m No explicit recommendation of Search Console structured data reports; only mentions 'What error messages from Search Console?' as a question to user
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses warnings vs errors distinction
+         [90mevidence:[0m No explicit distinction made between warnings and errors; only mentions 'What errors or warnings appear?' without explanation of difference
+    9.1s · 10083 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  The user is asking for a technical SEO audit after their organic search traffic dropped following a site redesign. This is a broader SEO issue, not specifically about schema markup/structured data. L…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    9.8s · 10146 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  The user is asking about schema markup for e-commerce product pages. This is a clear schema implementation question. I should provide comprehensive guidance on Product schema markup for e-commerce, i…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends AggregateRating and Review schema
+         [90mevidence:[0m Product schema includes AggregateRating but no Review schema type is recommended
+    20.1s · 10965 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 57.9%[0m  [90m· 10.96s avg · 10225 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1091/benchmark.json[0m
+{
+  "passed": 18,
+  "failed": 16,
+  "skills": [
+    {
+      "skill": "schema",
+      "slug": "schema",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5294117647058824,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1091/benchmark.json"
+    }
+  ],
+  "iteration": 1091,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1091",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1091/report/index.html"
+}

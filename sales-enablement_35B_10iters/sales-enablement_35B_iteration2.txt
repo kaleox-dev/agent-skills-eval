@@ -1,0 +1,85 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  To create a high-impact leave-behind one-pager, I need to tailor it to your specific product, buyer, and value proposition. A generic one-pager gets filed away; a tailored one gets forwarded to the b…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies one-pager/leave-behind framework
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes headline, benefits, social proof, how it works, CTA
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends scannable design
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m judge did not provide concrete evidence
+    3.4s · 32048 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  To build an ROI calculator that actually helps close deals, we need to move beyond generic "time saved" metrics and build a model tied to your specific value proposition and pricing. Per the Sales En…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m The model defines an 'Efficiency Gain' assumption based on 'customer avg' and a 'Productivity Shift' but does not explicitly recommend or justify 'conservative' assumptions (e.g., stating to use lowe…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests validating assumptions during calls
+         [90mevidence:[0m The model asks the user to provide answers to questions to 'tailor this to your product' and will 'write the specific formulas' later. It does not explicitly suggest validating the assumptions within…
+    9.1s · 32748 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  Here is the objection handling document for your sales team. I’ve structured this as a **Quick-Reference Table** for live calls and a **Detailed Response Guide** for training and prep. *** # Objectio…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides 2-3 response variations per objection
+         [90mevidence:[0m The document provides exactly one 'Talk Track' and one 'Response Approach' per objection. It does not provide 2-3 distinct variations (e.g., different tones or angles) for any single objection.
+    19.1s · 33848 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  Here is a customized 30-minute demo script for an analytics dashboard product, tailored for a **VP of Marketing**. ### Strategy Note for VP of Marketing * **Focus:** VPs of Marketing care about **att…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    19.6s · 33870 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  Here is a draft for your 11-slide sales deck, structured around the **Situation → Complication → Resolution** arc. This deck is tailored for **HR Directors** at mid-to-large enterprises (500–5,000 em…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The response is plain text, not a file named product-marketing.md.
+    23.0s · 34303 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  You are correct to distinguish this task. Creating a **public-facing comparison page** (for your website, designed for prospects researching options) is distinct from creating **internal battle cards…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    4.5s · 32237 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 73.4%[0m  [90m· 13.11s avg · 33176 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1075/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7368421052631579,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1075/benchmark.json"
+    }
+  ],
+  "iteration": 1075,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1075",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1075/report/index.html"
+}

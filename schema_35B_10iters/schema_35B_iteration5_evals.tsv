@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a text response, not a file named 'product-marketing.md'.	1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.8s	10751	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	3	FAIL	Provides complete code example	Model states `// ... all 20 Q&A pairs` inside the code block and requests user input to generate the complete code, failing to provide a full, standalone example.	2	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	4	FAIL	Explains rich result benefits	The text lists requirements, implementation locations, and notes (like content matching and minimum questions), but does not explicitly explain the benefits (e.g., click-through rate improvement, vis…	2	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.3s	9909	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	10533	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.6s	10725	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	3	FAIL	Explains valid schema doesn't guarantee rich results	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	4	FAIL	Recommends Search Console structured data reports	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	5	FAIL	Addresses warnings vs errors distinction	judge did not provide concrete evidence	5	5
+ab-testing	eval-5	with_skill	FAIL	4.9s	9802	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	4.1s	9808	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	4.1s	9808	2	FAIL	References or defers to seo-audit skill	The model output does not contain any reference to a specific 'seo-audit skill' or any specific tool name. It speaks generally about its own capabilities ('I can certainly help', 'I can give you a mo…	6	5
+ab-testing	eval-6	with_skill	FAIL	4.1s	9808	3	PASS			6	5

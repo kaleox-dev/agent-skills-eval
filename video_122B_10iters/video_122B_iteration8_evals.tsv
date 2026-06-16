@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	1	FAIL	Checks for product-marketing.md	Model states 'First, I should check if there's product marketing context available' but does not reference or check for 'product-marketing.md' file specifically.	1	8
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.4s	8758	6	FAIL	Cross-references copywriting skill	Model mentions 'Write a 250-300 word script' but does not reference or cross-reference a copywriting skill.	1	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	1	FAIL	Recommends AI avatar approach	Output recommends 'Voiceover + Screen Recording' as primary approach; HeyGen listed as Option C but not recommended	2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	4	FAIL	Mentions custom avatars option	No mention of custom avatars in actual output; only in thinking section	2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	9308	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	8621	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	8621	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	8621	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	8621	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	9.7s	8621	5	FAIL	Notes Sora reliability caveats	Sora 2 mentioned as 'highest quality' but no reliability caveats or limitations noted in output	3	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.3s	8910	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	3	FAIL	Suggests template + loop approach	No explicit mention of 'loop' in template approach	5	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	4	FAIL	Recommends testing 5 manually first	No reference to manual testing of 5 videos	5	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	5	FAIL	Mentions reply tracking / ROI	No mention of reply tracking or ROI metrics	5	8
+ab-testing	eval-5	with_skill	FAIL	9.2s	8595	6	FAIL	Mentions captions	No reference to captions in video content	5	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	1	FAIL	Compares the two with the When to Pick Which table	Table titled 'Quick Decision Guide', not 'When to Pick Which'	6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	5	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	8863	6	PASS			6	8

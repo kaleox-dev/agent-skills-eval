@@ -1,0 +1,85 @@
+
+[1m▶ schema[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  I can help you implement proper schema markup for your marketing blog posts. To create the most accurate and effective JSON-LD schema, I need a few details about your articles. **Please provide:** 1.…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model output asks for specific technical details (headline, author name, publication date, etc.) rather than responding to a casual prompt or providing a generic example immediately. The output s…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends BreadcrumbList alongside
+         [90mevidence:[0m The output JSON-LD schema is strictly BlogPosting. There is no mention, recommendation, or code snippet for BreadcrumbList in the text or code blocks.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses CMS integration for dynamic fields
+         [90mevidence:[0m The output provides a static JSON example and asks for specific values to generate more code. It does not discuss CMS integration, dynamic field mapping, template engines, or how to handle variable d…
+    5.1s · 9822 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  I can help you implement FAQ schema markup to get rich results in Google. Before I provide the specific code, I need a few details: 1. **What's the URL of your FAQ page?** 2. **What's your tech stack…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Explains rich result benefits
+         [90mevidence:[0m The model states 'I can help you implement FAQ schema markup to get rich results in Google' but does not explain *what* the benefits are (e.g., increased CTR, visibility), only that they exist.
+    4.7s · 9793 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  For e-commerce product pages, you need **Product** schema with **Offer** nested inside. This enables rich results like price, availability, and star ratings in Google Shopping and Search. Let me ask …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes BreadcrumbList
+         [90mevidence:[0m No BreadcrumbList schema, JSON-LD, or code snippet for breadcrumbs is present in the model output.
+    5.1s · 9828 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  Yes, I can certainly help with that. A technical SEO audit is the right first step after a redesign to identify why traffic dropped. Before we dive into the technical specifics, I want to make sure I…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to seo-audit skill
+         [90mevidence:[0m The model does not mention 'seo-audit skill' or any specific agent skill name; it speaks generically as an assistant.
+    4.3s · 9786 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  I'd be happy to help debug your schema markup issues. To get started, I need to understand your current setup. **First, let me check for product marketing context:** Let me check if there's product m…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains valid schema doesn't guarantee rich results
+         [90mevidence:[0m The model output focuses on validation and required fields. It does not contain any statement explaining that passing validation does not guarantee appearance in rich results.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends Search Console structured data reports
+         [90mevidence:[0m The model output does not mention 'Search Console' or 'structured data reports' anywhere in the text.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses warnings vs errors distinction
+         [90mevidence:[0m While the model asks if there are 'errors or warnings shown' in the user's testing, it does not provide any explanation or distinction between what warnings mean versus what errors mean.
+    3.6s · 9718 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  I'll help you add comprehensive schema markup for TaskFlow's homepage. Since this is a SaaS product, you'll need multiple schema types working together. Let me start by asking a few clarifying questi…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model output explicitly states 'No output files were captured.' and contains no reference to a file named 'product-marketing.md'.
+    11.4s · 10527 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 69.8%[0m  [90m· 5.68s avg · 9912 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1096/benchmark.json[0m
+{
+  "passed": 24,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "schema",
+      "slug": "schema",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7058823529411765,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1096/benchmark.json"
+    }
+  ],
+  "iteration": 1096,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1096",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1096/report/index.html"
+}

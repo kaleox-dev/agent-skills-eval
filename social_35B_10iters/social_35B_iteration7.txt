@@ -1,0 +1,91 @@
+
+[1m▶ social[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me create a LinkedIn content strategy. I'm a SaaS founder building in public and want to grow my personal brand to drive awareness for my product. I currently have 500 followers and post maybe o…
+    [90moutput:[0m  Let's build a LinkedIn strategy that leverages your "building in public" authenticity to convert those followers into customers. Since you're a SaaS founder, you have a massive advantage: your journe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.'
+      [31m#2[0m [31mFAIL[0m [90m—[0m Establishes 3-5 content pillars
+         [90mevidence:[0m The model states: 'Content Pillars: We'll identify 3-4 specific topics... Which of these should we dive into first?' It proposes the topic but does not establish the actual pillars in this turn.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies LinkedIn platform guidance
+         [90mevidence:[0m The output discusses general strategy ('building in public', 'frequency') but provides no specific LinkedIn platform guidance (e.g., algorithm preferences, hashtag usage, post format specs).
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides hook formulas
+         [90mevidence:[0m No hook formulas are provided in the text. It only lists strategic areas to explore.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Creates weekly content calendar
+         [90mevidence:[0m No calendar is created. The model asks the user which area to dive into first.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes engagement strategy
+         [90mevidence:[0m No engagement strategy (comments, DMs, networking tactics) is included.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Addresses batching strategy for consistency
+         [90mevidence:[0m No mention of batching content creation.
+    4.0s · 22717 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    i have a blog post that did really well. how do i turn it into social media content for multiple platforms?
+    [90moutput:[0m  Great question. Repurposing high-performing blog posts is the most efficient way to grow your audience because you’ve already validated the topic. To give you a specific plan, I need a little more co…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Extracts 3-5 key insights to repurpose
+         [90mevidence:[0m The model instructs to 'Break the blog post into 5-7 standalone ideas' in Step 1. Furthermore, in the example workflow, it mentions '5 slides, one tip per slide' and 'Tweets 2-6 are the key points', …
+    7.2s · 23181 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    My LinkedIn posts get like 200 impressions and almost no engagement. What am I doing wrong?
+    [90moutput:[0m  200 impressions is the #1 signal that **LinkedIn’s algorithm isn’t testing your content.** It’s not that people hate your posts. It’s that LinkedIn doesn’t know who to show them to, or it doesn’t thi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses posting timing
+         [90mevidence:[0m The model mentions the 'First Hour' regarding algorithm testing (Section 3) and advises staying online for 15 minutes after posting, but it does not provide specific advice on *when* during the day t…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends daily engagement routine
+         [90mevidence:[0m The model recommends a 'Pre-heat' (commenting on 5-10 posts) and replying to comments, but it does not explicitly recommend a 'daily' routine. It frames this as a step around specific posts ('Before …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests trying different content formats
+         [90mevidence:[0m The model focuses exclusively on text-based post structures (hooks, line breaks, length). It does not mention trying different content formats such as videos, carousels, polls, or articles.
+    10.3s · 23376 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a Twitter/X thread about the lessons I learned bootstrapping my SaaS to $10k MRR. Include hooks and a CTA at the end.
+    [90moutput:[0m  To write a high-converting thread that resonates, I need to make a few assumptions about your journey since specific details weren't provided. I’ve structured this using the **"Tutorial/Story" hybrid…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    13.7s · 23769 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a 5-email welcome sequence for new email subscribers who came from my LinkedIn audience.
+    [90moutput:[0m  To create a high-converting 5-email welcome sequence tailored to your LinkedIn audience, I need to tailor the content to their specific pain points and interests. However, since I don't have your spe…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to emails skill
+         [90mevidence:[0m The model does not explicitly reference an 'email skill' or defer to a specific skill module. It proceeds directly to provide templates and questions without mentioning any underlying skill structure.
+    11.7s · 23691 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me reverse-engineer what's working for top creators in the DevTools space on Twitter. I want to understand their content patterns.
+    [90moutput:[0m  To reverse-engineer what’s working for top DevTools creators on Twitter, we need to follow the **Reverse Engineering Framework** outlined in your instructions. Since I can’t scrape live data directly…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    15.5s · 24191 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 69.3%[0m  [90m· 10.39s avg · 23488 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1200/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 13,
+  "skills": [
+    {
+      "skill": "social",
+      "slug": "social",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6666666666666666,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1200/benchmark.json"
+    }
+  ],
+  "iteration": 1200,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1200",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1200/report/index.html"
+}

@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	15.3s	4228	7	FAIL	Includes Quick Wins, High-Impact Changes, Test Hypotheses	Section '6. Quick Wins' is present. Section '5. A/B Test Hypotheses' is present. However, the specific section/category 'High-Impact Changes' is missing (the audit uses 'Priority' and 'Impact' but do…	1	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	5	FAIL	Addresses visual separation from email signup	The output instructs to place SSO buttons 'above the email form' and keep email/password as 'secondary', but does not provide specific guidance on visual separation techniques (e.g., dividers, spacin…	2	5
+ab-testing	eval-2	with_skill	FAIL	9.7s	3586	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	13.6s	3862	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.1s	3461	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.5s	3862	6	FAIL	Cross-references ab-testing skill	The model output contains no mention of 'ab-testing skill', 'ab_testing skill', or any specific external resource link/reference to such a skill.	5	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	2	FAIL	References or defers to onboarding skill	Model states: 'Per your skill definitions, this falls under the **Onboarding** optimization framework.' However, it does not defer to a specific skill module or trigger a skill tool; it provides a ge…	6	5
+ab-testing	eval-6	with_skill	FAIL	8.5s	3510	3	FAIL	Explains signup covers the signup form, not post-signup	Model does not explicitly explain that the 'signup' concept covers only the form. It distinguishes 'creating an account' from 'realizing value', but fails to provide a definition or explanation of wh…	6	5

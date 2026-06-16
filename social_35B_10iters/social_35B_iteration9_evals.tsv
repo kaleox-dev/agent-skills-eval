@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	5	FAIL	Creates weekly content calendar	Model provides an 'Immediate Action Plan: The First 2 Weeks' with specific post ideas for Week 1 and Week 2, but does not provide a recurring 'weekly content calendar' template or schedule beyond the…	1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.0s	23746	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	2	FAIL	Uses a story hook for the first tweet	The model did not use a personal story hook; it used a result/statistic hook. The output explicitly states it is a 'TEMPLATE' with placeholders like '[Timeframe]' and '[Number]' because 'You haven't …	2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	4	FAIL	Uses specific numbers and stories	The numbers are placeholders or generic examples, not specific to the user's context. Evidence: '$10k MRR in [Timeframe]', '[Number] hours', '15-minute exit interviews'. The model explicitly notes th…	2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.0s	23833	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	6	FAIL	Extracts 3-5 key insights to repurpose	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	8.0s	23265	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	4	FAIL	Addresses posting timing	The model output contains no mention of specific times, days, or schedules for posting. It focuses entirely on content structure (hooks, formatting) and algorithmic signals (dwell time, comments), no…	4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	5	FAIL	Recommends daily engagement routine	The model provides a checklist for creating a post ('Did I put a link in the post body?') but does not recommend a daily routine for interacting with other users (e.g., 'comment on 5 posts a day').	4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.5s	23107	7	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	2	FAIL	Walks through the full process (find, collect, analyze, codify, apply)	The model does not walk through the full process; it stops at general pattern identification and asks for user input ('Who are 3-5 specific accounts...') before proceeding to specific analysis or app…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	3	FAIL	Recommends identifying 10-20 accounts	The model recommends '3-5 specific accounts', not 10-20.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	5	FAIL	Emphasizes layering authentic voice	The model mentions 'tailored to your voice' and 'nuanced, experience-based take', but does not explicitly 'emphasize layering authentic voice' as a core instructional step or principle in the provide…	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	23434	6	FAIL	Provides data collection guidance	The model does not provide guidance on how to collect data (e.g., tools, metrics, specific steps for scraping or reviewing). It only asks the user to provide account names.	5	9
+ab-testing	eval-6	with_skill	FAIL	13.9s	24086	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.9s	24086	2	FAIL	References or defers to emails skill	The model provides a generic framework without explicitly referencing a specific 'emails skill' or tool/plugin. It acts as a general assistant.	6	9
+ab-testing	eval-6	with_skill	FAIL	13.9s	24086	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	13.9s	24086	4	PASS			6	9

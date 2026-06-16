@@ -1,0 +1,81 @@
+
+[1m▶ schema[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  I'll help you add FAQ schema to your page. Let me gather some details to ensure we implement this correctly for your specific page. 1. **What is the URL of the FAQ page?** 2. **What tech stack are yo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides complete code example
+         [90mevidence:[0m Model states `// ... all 20 Q&A pairs` inside the code block and requests user input to generate the complete code, failing to provide a full, standalone example.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Explains rich result benefits
+         [90mevidence:[0m The text lists requirements, implementation locations, and notes (like content matching and minimum questions), but does not explicitly explain the benefits (e.g., click-through rate improvement, vis…
+    5.3s · 9909 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  I'll help you add schema markup to your marketing blog posts. This will help search engines understand your content and potentially enable rich results like star ratings, dates, and author informatio…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.0s · 10533 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  For e-commerce product pages, you need a combination of schema types to maximize rich results (like Product snippets with price, availability, and ratings). Here is the recommended setup: ### 1. The …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.6s · 10725 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  To provide the most accurate schema markup, I need a bit more context about TaskFlow. Before I generate the final code, could you clarify: 1. **Is this the homepage only, or do you have specific land…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is a text response, not a file named 'product-marketing.md'.
+    12.8s · 10751 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  I'd be happy to help debug your schema markup issues. To effectively troubleshoot, I need to understand the current state of your implementation. ## Initial Assessment **Please provide the following:…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains valid schema doesn't guarantee rich results
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends Search Console structured data reports
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses warnings vs errors distinction
+         [90mevidence:[0m judge did not provide concrete evidence
+    4.9s · 9802 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  I can certainly help with that. A drop in organic traffic after a redesign is a common issue, often caused by structural changes, broken redirects, or loss of indexable content. To get started, I nee…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to seo-audit skill
+         [90mevidence:[0m The model output does not contain any reference to a specific 'seo-audit skill' or any specific tool name. It speaks generally about its own capabilities ('I can certainly help', 'I can give you a mo…
+    4.1s · 9808 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 75.4%[0m  [90m· 8.45s avg · 10255 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1098/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "schema",
+      "slug": "schema",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7647058823529411,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1098/benchmark.json"
+    }
+  ],
+  "iteration": 1098,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1098",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1098/report/index.html"
+}

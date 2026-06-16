@@ -1,0 +1,101 @@
+
+[1m▶ schema[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  The user wants to add schema markup to their SaaS product homepage. They're a project management tool called TaskFlow. They need Organization schema and other relevant types. Before I create the sche…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Implements Organization schema in JSON-LD
+         [90mevidence:[0m No JSON-LD code provided; only stated 'I'll generate complete, validated schema markup for you!'
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes required and recommended properties
+         [90mevidence:[0m No schema implementation present to verify properties
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses @graph for multiple types
+         [90mevidence:[0m Mentioned 'These can all be combined in a single JSON-LD script using @graph' but no actual code provided
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides complete JSON-LD code
+         [90mevidence:[0m No JSON-LD code block present in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommends validation tools
+         [90mevidence:[0m No validation tools (e.g., Google Rich Results Test, Schema Markup Validator) recommended
+    6.9s · 9894 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  The user is asking for help debugging schema markup that's not showing up as rich results in Google. This is a schema-related issue, so I should use the schema skill. Before I can provide specific de…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses warnings vs errors distinction
+         [90mevidence:[0m No explanation of the difference between warnings and errors in schema validation
+    9.1s · 10105 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  The user is asking about schema markup for e-commerce product pages. This is a clear request for structured data guidance on product pages. I should provide comprehensive information about Product sc…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    27.3s · 11575 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  The user wants to add schema markup to their blog posts about marketing tips. This is a clear request for schema implementation. Before I provide the schema, I should ask some clarifying questions to…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Implements Article or BlogPosting schema
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes author, datePublished, image, publisher
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends BreadcrumbList alongside
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides reusable template code
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses CMS integration for dynamic fields
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output (text resp…
+    10.3s · 10161 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  The user is asking for a technical SEO audit after a site redesign that caused a drop in organic search traffic. This is a broader SEO issue that falls under the "seo-audit" skill, not the schema mar…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    7.9s · 9981 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "J…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  The user wants to add FAQ schema to their FAQ page with 20 questions. This is a clear schema markup request. I should help them implement FAQPage schema to get rich results in Google. Before I provid…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Implements FAQPage schema in JSON-LD
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Shows correct nested structure (FAQPage > Question > Answer)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides complete code example
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Explains rich result benefits
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google's FAQ schema guidelines
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends validation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    12.7s · 10365 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 52.0%[0m  [90m· 12.36s avg · 10347 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1093/benchmark.json[0m
+{
+  "passed": 16,
+  "failed": 18,
+  "skills": [
+    {
+      "skill": "schema",
+      "slug": "schema",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.47058823529411764,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1093/benchmark.json"
+    }
+  ],
+  "iteration": 1093,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1093",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1093/report/index.html"
+}

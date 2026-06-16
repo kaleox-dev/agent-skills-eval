@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	1	FAIL	Checks for product-marketing.md	No output files were captured. Model only asked clarifying questions.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	2	FAIL	Applies 10-12 slide framework	No slides created. Model stated 'I can create a deck that follows the 10-12 slide storytelling framework' but did not deliver it.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	3	FAIL	Includes Problem, Solution, Proof, Pricing, Next Steps slides	No slide content provided. Model only asked questions about the deck.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	4	FAIL	Tailors to HR director audience	Model acknowledged HR Directors but did not create tailored content. 'A deck that works for HR Directors... needs to be specific' but no deck was created.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	5	FAIL	Incorporates stated differentiator	Differentiator mentioned ('Real-time pulse surveys with AI-powered insights') but not incorporated into actual deliverable.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	6	FAIL	Provides slide-by-slide content	No slide-by-slide content provided. Model output is a list of clarifying questions.	1	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	32521	7	FAIL	Includes speaker notes or talking points	No speaker notes or talking points included in output.	1	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	4	FAIL	Provides 2-3 response variations per objection	Only one talk track provided per objection (e.g., 'How's SurveyMonkey working for you? Specifically...' for competitor objection). No 2-3 variations shown.	2	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	17.8s	33214	6	FAIL	Categorizes objections using the skill's framework (competitor, budget, need/timing)	Objections addressed but NOT explicitly labeled with framework categories. No mention of 'competitor', 'budget', or 'need/timing' categorization in document.	2	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	1	FAIL	Triggers on casual phrasing	No casual phrasing trigger detected in output. Model output is context-gathering questions.	3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	2	FAIL	Applies one-pager/leave-behind framework	Model states 'I'll follow the leave-behind structure' but did not create the one-pager. Only questions were asked.	3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	No headline, benefits, social proof, how it works, or CTA included. Model is asking for this information, not providing it.	3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	4	FAIL	Keeps to one page format	No one-pager was created to verify format.	3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	5	FAIL	Recommends scannable design	Model says 'I'll make it scannable in 30 seconds' but this is a promise, not an actual recommendation or design guidance provided.	3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	32193	6	FAIL	Provides specific content for each section	No specific content provided for any section. Model is gathering context, not delivering the one-pager.	3	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	1	FAIL	Applies 5-part demo script structure	No demo script was produced; output is a request for clarifying questions	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	2	FAIL	Includes opening with discovery questions	No demo script opening exists; model asked user questions instead	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	3	FAIL	Includes problem validation	No demo script section on problem validation present	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	4	FAIL	Includes solution walkthrough	No solution walkthrough section in output	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	5	FAIL	Includes proof points	No proof points section included in output	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	6	FAIL	Includes close with next steps	No closing section with next steps in output	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	7	FAIL	Time-boxes for 30 minutes	Mentions '30-minute demo script' in planning but no actual time-boxed script created	4	9
+ab-testing	eval-4	with_skill	FAIL	9.4s	32496	8	FAIL	Notes customization based on prospect responses	No demo script with customization notes present in output	4	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	1	FAIL	Applies ROI calculator framework	Model asks clarifying questions rather than applying framework: 'I need to understand a few things about your product and how you create value for customers.'	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	2	FAIL	Defines required inputs	Model asks for inputs instead of defining them: 'What are the 3-5 inputs prospects can realistically provide?'	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	3	FAIL	Provides calculation methodology	No methodology provided. Model states 'Calculations (the math showing savings/value)' as promised output, not actual content.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	4	FAIL	Recommends conservative assumptions	No mention of conservative assumptions in output.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	5	FAIL	Includes ROI timeline and payback period	Payback period mentioned as promised output: 'Outputs (what the prospect sees: ROI %, payback period, total value)' but not actually included.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	6	FAIL	Suggests validating assumptions during calls	No suggestion to validate assumptions during calls in output.	5	9
+ab-testing	eval-5	with_skill	FAIL	6.8s	32314	7	FAIL	Provides calculator structure	Model lists planned structure ('Input fields, Calculations, Outputs, Talk track') but does not provide actual calculator structure.	5	9
+ab-testing	eval-6	with_skill	FAIL	9.3s	32513	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.3s	32513	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.3s	32513	3	FAIL	Explains the distinction between internal and public collateral	Model only states 'This is a public-facing comparison page' but does not explain the distinction between internal and public collateral.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.3s	32513	4	PASS			6	9

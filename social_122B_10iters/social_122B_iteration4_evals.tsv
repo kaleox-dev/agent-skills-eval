@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	1	FAIL	Checks for product-marketing.md	No reference to 'product-marketing.md' file in output; model mentions 'reference materials' and 'skill instructions' generically without specific file citation.	1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	33.0s	25112	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.9s	23559	7	FAIL	Includes engagement prompts	No questions or engagement prompts within the thread content itself; CTA is only 'follow me'	2	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; model responds to repurposing request without noting casual language.	3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	6	FAIL	Extracts 3-5 key insights to repurpose	Model states 'Aim for 5-10 content atoms per blog post' not 3-5 as asserted.	3	4
+ab-testing	eval-3	with_skill	FAIL	18.2s	23883	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	1	FAIL	Applies analytics and optimization guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	2	FAIL	Diagnoses potential engagement issues	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	3	FAIL	Addresses hook quality	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	4	FAIL	Addresses posting timing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	5	FAIL	Recommends daily engagement routine	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	6	FAIL	Suggests trying different content formats	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-4	with_skill	FAIL	15.4s	23657	7	FAIL	Provides specific before/after hook examples	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions and a model output (which appears to b…	4	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.8s	24203	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	11.1s	23313	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.1s	23313	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.1s	23313	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.1s	23313	4	PASS			6	4

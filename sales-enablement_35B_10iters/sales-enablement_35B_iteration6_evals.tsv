@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	1	FAIL	Checks for product-marketing.md	Output explicitly states 'No output files were captured' and provides only inline text, failing to check for or generate the specific file.	1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	3	FAIL	Includes Problem, Solution, Proof, Pricing, Next Steps slides	The output includes slides for Problem (Slide 2), Solution (Slide 5), Proof (Slide 7), and Next Steps (Slide 10). However, there is no specific slide dedicated to Pricing; Slide 9 covers Implementati…	1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	20.6s	33927	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	4	FAIL	Provides 2-3 response variations per objection	For each of the three objections, the model provides only one 'Talk Track' and one 'Response Approach'. It does not provide distinct alternative variations or scripts (e.g., 'Option A: Soft Approach'…	2	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	17.2s	33563	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	1	FAIL	Triggers on casual phrasing	The model output is a direct response to an implicit request for a one-pager framework. There is no casual phrasing in the model's response; it is a professional, structured request for information. …	3	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	The model includes a 'HEADLINE' section, 'PROOF' (social proof), and a 'CTA' section. It includes 'THE SOLUTION' (how it works). However, the 'benefits' are not presented as a distinct, consolidated …	3	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	5	FAIL	Recommends scannable design	The model text says: 'Once you provide the details, I'll fill this in with persuasive, scannable copy.' It does not explicitly *recommend* a scannable design in the instructions or template structure…	3	6
+ab-testing	eval-3	with_skill	FAIL	5.6s	32181	6	FAIL	Provides specific content for each section	The model provides placeholders and instructions rather than specific content. For example, it says 'HEADLINE: One sentence describing what you do...' and 'THE PROBLEM: 2-3 sentences describing the p…	3	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	1	FAIL	Applies 5-part demo script structure	The script uses a 6-part structure: 1. Opening, 2. Executive View, 3. Attribution, 4. Reporting, 5. Proof, 6. Close.	4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	7	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	20.4s	33834	8	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	4	FAIL	Recommends conservative assumptions	The text suggests 'highly adaptable' assumptions and asks for customer metrics, but does not explicitly recommend conservative assumptions (e.g., 'assume lower bounds' or 'conservative estimates').	5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	6.0s	32372	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	6.1s	32485	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.1s	32485	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.1s	32485	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.1s	32485	4	PASS			6	6

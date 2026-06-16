@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	1	FAIL	Checks for product-marketing.md	The output is a conversational response containing tables and text, not a 'product-marketing.md' file. The 'Output files' section explicitly states: 'No output files were captured.'	1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	32246	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	6	FAIL	Defines MQL and SQL score thresholds	Output explicitly defines 'MQL Threshold: 75 Points' and tier thresholds (Hot: 80-100, Warm: 60-79), but contains no definition or threshold for SQL	2	6
+ab-testing	eval-2	with_skill	FAIL	15.2s	31863	7	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	3	FAIL	Defines stages with entry/exit criteria	The model defines 'Stale Thresholds' (exit criteria based on time) and 'Required Fields' (entry criteria to advance), but it does not define the specific 'entry/exit criteria' for the stages themselv…	3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	7.2s	30959	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	12.7s	31570	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.1s	32278	7	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	3.0s	30526	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.0s	30526	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	3.0s	30526	3	PASS			6	6

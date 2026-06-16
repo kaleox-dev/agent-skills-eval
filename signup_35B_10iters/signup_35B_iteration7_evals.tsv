@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	1	FAIL	Checks for product-marketing.md	The model output is a text-based audit report. Under 'Output files', it explicitly states 'No output files were captured.' There is no mention or creation of a file named 'product-marketing.md'.	1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.6s	4425	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.6s	3493	6	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	10.8s	3745	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	11.2s	3769	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	10.7s	3722	6	FAIL	Cross-references ab-testing skill	The output text contains no explicit cross-reference to a specific skill named 'ab-testing' or similar metadata linking to an external skill definition.	5	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	2	FAIL	References or defers to onboarding skill	The model does not mention any specific 'onboarding skill', tool, or external reference. It provides a generic text-based guide with headers like 'Common onboarding failure patterns' but no reference…	6	7
+ab-testing	eval-6	with_skill	FAIL	9.2s	3594	3	PASS			6	7

@@ -1,0 +1,75 @@
+
+[1m▶ social[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    My LinkedIn posts get like 200 impressions and almost no engagement. What am I doing wrong?
+    [90moutput:[0m  200 impressions with almost no engagement is a classic "ghost town" scenario. It usually means one of two things: 1. **You aren't hitting the right audience** (your hooks are too niche or vague). 2. …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends daily engagement routine
+         [90mevidence:[0m The model recommends spending '15 minutes commenting on other people’s posts... before you post', but does not specify this as a 'daily' routine, nor does it explicitly recommend a recurring daily ha…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests trying different content formats
+         [90mevidence:[0m The output discusses hooks and link placement but contains no mention or suggestion to try different content formats (e.g., video, carousels, text-only).
+    13.8s · 22939 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a Twitter/X thread about the lessons I learned bootstrapping my SaaS to $10k MRR. Include hooks and a CTA at the end.
+    [90moutput:[0m  Here is a Twitter/X thread structured around the "Tutorial/Story" framework, optimized for engagement and readability. I’ve focused on universal bootstrapping truths that resonate with founders, usin…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides 8-12 tweet thread content
+         [90mevidence:[0m The output explicitly labels tweets 1/7 through 7/7, totaling 7 tweets. This is outside the required range of 8-12.
+    18.3s · 23287 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    i have a blog post that did really well. how do i turn it into social media content for multiple platforms?
+    [90moutput:[0m  This is one of the most efficient ways to grow. The best social content isn't created from scratch—it's extracted from your best-performing "pillar" content (like your blog post). To give you the bes…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Extracts 3-5 key insights to repurpose
+         [90mevidence:[0m Model instructs to 'Extract 5–10 standalone moments' and 'highlight the 5–10 best quotes, stats, or ideas.' This contradicts the '3-5 key insights' constraint.
+    18.1s · 23252 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me create a LinkedIn content strategy. I'm a SaaS founder building in public and want to grow my personal brand to drive awareness for my product. I currently have 500 followers and post maybe o…
+    [90moutput:[0m  Great foundation. Posting once a week is a start, but to grow from 500 followers to a meaningful audience that drives product awareness, we need to increase frequency, consistency, and leverage the "…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model provided text output but no file named product-marketing.md.
+    25.7s · 24107 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Help me reverse-engineer what's working for top creators in the DevTools space on Twitter. I want to understand their content patterns.
+    [90moutput:[0m  To reverse-engineer the DevTools space on Twitter/X effectively, we need to move beyond guessing and analyze actual data. Since I don't have access to a live database of your specific competitors, I …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.0s · 24052 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="social"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use…
+    [90muser:[0m    Write me a 5-email welcome sequence for new email subscribers who came from my LinkedIn audience.
+    [90moutput:[0m  To craft a high-converting welcome sequence, I need to understand the bridge between your LinkedIn audience and what you’re offering. Since these subscribers came from LinkedIn, they are likely profe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    16.9s · 24159 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 88.4%[0m  [90m· 18.11s avg · 23633 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1194/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 5,
+  "skills": [
+    {
+      "skill": "social",
+      "slug": "social",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8717948717948718,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1194/benchmark.json"
+    }
+  ],
+  "iteration": 1194,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1194",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1194/report/index.html"
+}

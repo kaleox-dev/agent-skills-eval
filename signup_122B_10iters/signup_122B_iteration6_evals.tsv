@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	21.5s	4323	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	13.4s	3625	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	1	FAIL	Triggers on casual phrasing	Model does not mention or flag any casual phrasing in user input.	3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	19.1s	4099	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	4	FAIL	Suggests letting users explore while pending	Model suggests delaying verification or offering 'skip verification' option with limited access, but does not explicitly suggest letting users explore while verification is pending.	4	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.9s	3324	6	FAIL	Provides improvements if verification is kept	Model provides alternatives (delaying, skipping, magic link) but does not provide specific improvements to the verification process itself if kept.	4	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.7s	3464	6	FAIL	Cross-references ab-testing skill	No explicit reference to 'ab-testing skill' or A/B testing skill appears in output; only mentions 'experiments' generically	5	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	3371	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	3371	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	3371	3	PASS			6	6

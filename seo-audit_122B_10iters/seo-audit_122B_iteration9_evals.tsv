@@ -1,0 +1,68 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	1	FAIL	Checks for product-marketing.md	Model states 'I also need to check if there's a product marketing context file to read first' but no file was actually checked or captured in output files	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	4	FAIL	Checks robots.txt and XML sitemap	No tool calls made to check robots.txt or sitemap; model only asks 'can you provide a sitemap URL'	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	5	FAIL	Evaluates title tags, meta descriptions, heading structure	No actual evaluation performed; model states 'I cannot actually fetch and analyze https://example.com' and asks for more info first	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	7	FAIL	Notes schema markup detection limitation	No mention of schema detection limitations in output	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	8	FAIL	Output has Executive Summary	No 'Executive Summary' section present; output contains 'Initial Questions' and 'What I'll Audit' sections only	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	9	FAIL	Output has Prioritized Action Plan	No action plan with specific fixes provided; model is in information-gathering phase	1	9
+ab-testing	eval-1	with_skill	FAIL	9.0s	20163	10	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	No findings present in output; model is asking clarifying questions before providing audit findings	1	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	2	FAIL	Checks title tag, H1, URL alignment with target keyword	No title tag, H1, or URL alignment analysis performed. Model asks for URL but does not check alignment.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	3	FAIL	Evaluates content depth vs competitors	No content depth evaluation present. Model only asks questions about competitors without performing analysis.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	4	FAIL	Checks for keyword cannibalization	No cannibalization check performed. Model asks 'Are there other pages on your site that might be competing' but does not check.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	5	FAIL	Checks indexation status and canonical tags	No indexation status or canonical tag check. Model mentions 'indexation' in planned audit scope but has not checked.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	6	FAIL	Assesses E-E-A-T signals	No E-E-A-T assessment present in output.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	7	FAIL	Mentions competitive analysis against top-ranking pages	Model asks 'Who are your top 3-5 organic competitors' but does not perform competitive analysis.	2	9
+ab-testing	eval-2	with_skill	FAIL	8.1s	20085	8	FAIL	Provides actionable fixes organized by priority	No actionable fixes provided. Model explicitly states 'I should NOT jump straight to giving recommendations without gathering more information first.'	2	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	6	FAIL	Checks for redirect chains or loops	No explicit mention of redirect chains or loops; only mentions 301 vs 404 testing	3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	7	FAIL	Checks for soft 404s	No explicit mention of soft 404s; only mentions "Crawled - currently not indexed" without soft 404 identification	3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	8	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	9	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	17.7s	20872	10	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	1	FAIL	Addresses faceted navigation duplicate content	Model only mentions faceted navigation as a concern to be aware of, does not provide actual duplicate content analysis or fixes.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	2	FAIL	Addresses crawl budget for large catalog	Crawl budget mentioned in thinking section only ('50K pages is significant'), not addressed in actual output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	3	FAIL	Checks for parameterized URL issues	Model asks about URL parameters in question 8 but does not check or provide analysis.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	4	FAIL	Mentions product schema with detection limitation caveat	Product schema not mentioned anywhere in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	5	FAIL	Checks for thin category pages	No check for thin category pages performed or mentioned.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	6	FAIL	Checks for duplicate product descriptions	No check for duplicate product descriptions performed or mentioned.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	7	FAIL	Addresses out-of-stock page handling	Out-of-stock page handling not addressed in output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	8	FAIL	Addresses pagination and infinite scroll	Pagination and infinite scroll not addressed in output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.8s	20210	9	FAIL	Findings include Impact ratings and specific fixes	No findings, impact ratings, or specific fixes provided - model only asks clarifying questions.	4	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	1	FAIL	Applies Content/Blog Sites framework	No framework applied; output only asks clarifying questions without demonstrating any blog site SEO framework.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	2	FAIL	Checks for outdated content	Mentions 'Content freshness' as future audit item but no actual check performed.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	3	FAIL	Checks for keyword cannibalization	Lists keyword cannibalization as future focus but provides no actual check or evidence.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	4	FAIL	Checks for topical clustering	No mention of topical clustering in the output.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	5	FAIL	Checks for internal linking quality	Lists 'Internal linking structure' as future audit item but no actual check performed.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	6	FAIL	Checks for author pages and E-E-A-T signals	No mention of author pages or E-E-A-T signals anywhere in output.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	7	FAIL	Audits title tags, meta descriptions, heading structure	Lists these as future audit items but no actual audit performed on any content.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	8	FAIL	Assesses whether content answers search intent	No assessment of search intent or content relevance provided.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	9	FAIL	Recommends content audit process	Output asks for information rather than recommending an audit process; no process recommendation provided.	5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	20159	10	FAIL	Provides prioritized action plan	Priority table shows what WILL be audited, not an actual prioritized action plan based on findings.	5	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	2	FAIL	Checks NAP consistency	NAP consistency — Are your business Name, Address, and Phone number identical across your website, Google Business Profile, and all directories? (question only, no actual check performed)	6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	3	FAIL	Checks for local schema markup with detection caveat	Missing local schema markup (LocalBusiness schema for each location) - mentioned as issue but no actual check performed, no detection caveat provided	6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	5	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	6	FAIL	Recommends local content strategy	Only mentions 'unique content (not just swapped city names)' - no comprehensive local content strategy provided	6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	7	FAIL	Checks standard technical SEO factors too	What I Can Audit For You section lists technical factors but no actual check performed (no URL provided)	6	9
+ab-testing	eval-6	with_skill	FAIL	11.9s	20414	8	PASS			6	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	1	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	2	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	3	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	4	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	5	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	6	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	7	FAIL	Provides prioritized speed fixes	Model defers fixes: "Once I have this information, I can give you a targeted action plan" - no prioritized fixes provided	7	9
+ab-testing	eval-7	with_skill	FAIL	8.8s	20163	8	PASS			7	9
+ab-testing	eval-8	with_skill	FAIL	8.9s	20172	1	PASS			8	9
+ab-testing	eval-8	with_skill	FAIL	8.9s	20172	2	PASS			8	9
+ab-testing	eval-8	with_skill	FAIL	8.9s	20172	3	PASS			8	9
+ab-testing	eval-8	with_skill	FAIL	8.9s	20172	4	PASS			8	9

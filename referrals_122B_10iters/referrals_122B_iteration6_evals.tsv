@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	2	FAIL	Distinguishes referral from affiliate	Referral and affiliate mentioned together: 'Do you have any existing referral/affiliate program' without distinction	1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	No referral loop designed; output asks questions instead of providing design	1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	4	FAIL	Recommends double-sided incentive structure	Mentions 'Double-sided incentives...typically convert 2-3x better' as general info, not a recommendation	1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	6	FAIL	Includes launch checklist	No launch checklist present; only a table of what will be delivered	1	6
+ab-testing	eval-1	with_skill	FAIL	9.1s	8673	7	FAIL	Recommends tool integrations	Asks 'Do you have existing tools we should integrate with (e.g., Stripe, HubSpot)?' but does not recommend specific tools	1	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.3s	8761	6	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	1	FAIL	Triggers on casual phrasing	Model output does not mention or trigger on casual phrasing; responds directly without noting phrasing style	3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	5	FAIL	Addresses cookie duration and payout terms	Cookie duration mentioned ('30 days is standard'), but payout terms not specified beyond 'Payment terms and schedule' in checklist	3	6
+ab-testing	eval-3	with_skill	FAIL	15.6s	9219	6	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.2s	9018	6	FAIL	Notes incentive may not be the only issue	No explicit statement that incentive may not be the only issue. Questions asked include placement and referral rate but no acknowledgment that incentive is not the sole factor.	4	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	1	FAIL	Applies measuring success framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	2	FAIL	Defines participation rate, share rate, conversion rate	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	3	FAIL	Includes viral coefficient / k-factor	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	4	FAIL	Compares referral CAC to other channels	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	5	FAIL	Compares referred customer LTV to organic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	6	FAIL	Recommends tracking approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-5	with_skill	FAIL	14.8s	9219	7	FAIL	Provides benchmark ranges	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent's output based on specific assertions. * **Role:** Strict JSON-only evaluator. * **Input:…	5	6
+ab-testing	eval-6	with_skill	FAIL	12.0s	8987	1	FAIL	Applies referral email section from the skill	Model mentions 'Looking at the skill reference materials' but does not quote or reference specific skill section content. No concrete evidence of skill application.	6	6
+ab-testing	eval-6	with_skill	FAIL	12.0s	8987	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	12.0s	8987	3	FAIL	Cross-references emails for broader email work	Model distinguishes between email types ('Referral Program Launch' vs invitation email) but does not cross-reference for broader email work.	6	6
+ab-testing	eval-6	with_skill	FAIL	12.0s	8987	4	PASS			6	6

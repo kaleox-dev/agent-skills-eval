@@ -1,0 +1,93 @@
+
+[1m▶ referrals[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    What incentive structure works best? We've been offering $10 off for referrers but it's not working. Our product is $29/month.
+    [90moutput:[0m  The user is asking about referral incentive structure for a product that costs $29/month. They've been offering $10 off for referrers but it's not working. I need to help them understand why this mig…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.3s · 8949 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    Help me design a referral program for our SaaS product. We're a $49/month project management tool with about 1,000 customers. We want to encourage word-of-mouth growth.
+    [90moutput:[0m  The user wants to design a referral program for their SaaS product. They've provided some key information: - Product: $49/month project management tool - Customer base: ~1,000 customers - Goal: Word-…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md file in output
+      [31m#2[0m [31mFAIL[0m [90m—[0m Distinguishes referral from affiliate
+         [90mevidence:[0m Model asks about program type but does not explain the distinction between referral and affiliate programs
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes launch checklist
+         [90mevidence:[0m No structured launch checklist present; 'Next Steps' section only offers future assistance
+    15.8s · 9257 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    How do we measure the success of our referral program? What metrics should we track?
+    [90moutput:[0m  The user is asking about how to measure the success of a referral program and what metrics they should track. This is directly covered in the referral skill documentation, specifically in the "Measur…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines participation rate, share rate, conversion rate
+         [90mevidence:[0m Referral Rate (participation) and Referral Conversion Rate defined, but Share Rate not explicitly defined with formula
+      [31m#4[0m [31mFAIL[0m [90m—[0m Compares referral CAC to other channels
+         [90mevidence:[0m Mentions 'CAC via Referral' and 'Cost efficiency vs other channels' but provides no actual comparison to other channels
+    14.9s · 9174 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    should we do referral or affiliate? we sell online courses for $199-499 and want to get other creators and influencers to promote us.
+    [90moutput:[0m  The user is asking whether they should do a referral or affiliate program for their online courses ($199-499 price point). They specifically mention wanting to get "other creators and influencers to …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No explicit mention of casual phrasing trigger in output; model addresses user request but does not reference phrasing detection mechanism.
+    12.5s · 8966 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    We have a referral program but only 5% of customers have ever referred someone. How do we increase participation?
+    [90moutput:[0m  The user has an existing referral program but is only seeing 5% participation rate. This is below the "Good" benchmark of 10-25% that's mentioned in the reference materials. They want to increase par…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies program optimization guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Diagnoses potential causes of low participation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Checks awareness, timing, incentive, and friction
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends optimization tactics
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests timing referral asks at satisfaction moments
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides experiment ideas
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …
+    10.3s · 8772 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="referrals"> <description>When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,'…
+    [90muser:[0m    Can you write the referral invitation emails? I need the email that goes out when someone shares their referral link.
+    [90moutput:[0m  The user is asking for referral invitation emails - specifically the email that goes out when someone shares their referral link with their friends/network. This is a common component of referral pro…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies referral email section from the skill
+         [90mevidence:[0m Model mentions 'Based on the skill documentation, I have information about' but does not apply specific referral email section content from the skill.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Cross-references emails for broader email work
+         [90mevidence:[0m No mention of connecting referral emails to broader email campaigns or email strategy in the output.
+    7.1s · 8506 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 60.3%[0m  [90m· 12.16s avg · 8937 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1027/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 14,
+  "skills": [
+    {
+      "skill": "referrals",
+      "slug": "referrals",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6111111111111112,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1027/benchmark.json"
+    }
+  ],
+  "iteration": 1027,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1027",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1027/report/index.html"
+}

@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	8
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	3	FAIL	Uses real screen recording, not AI generated UI	The model suggests 'Screen Record' as the fastest path but explicitly offers 'AI Video Generation (Veo 3/Runway)' and 'Hyperframes' (AI/code-generated) as alternatives. It does not mandate or verify …	1	8
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.1s	9055	6	FAIL	Cross-references copywriting skill	The model offers to help write the script ('I can help write this') but does not explicitly cross-reference a specific 'copywriting skill' artifact or module name as requested by the assertion.	1	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	1	FAIL	Recommends AI avatar approach	The model explicitly recommends 'Hyperframes' and states under 'Why not AI Avatars (HeyGen)?': 'It’s too slow... It’s overkill... It’s expensive... compared to rendering code to MP4.' It advises agai…	2	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	3	FAIL	Mentions HeyGen MCP server for agents	The output mentions HeyGen as a tool to avoid, but contains no reference to an 'MCP server' or integration with agents via MCP.	2	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	4	FAIL	Mentions custom avatars option	The output recommends programmatic video (HTML/CSS) and mentions AI B-Roll, but does not discuss the option of creating or using 'custom avatars' (e.g., uploading a photo to generate a talking head).	2	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.2s	9896	6	FAIL	Warns about authenticity tradeoff	The model warns about technical tradeoffs like speed, cost, and text accuracy, but does not mention 'authenticity' or the ethical/trust implications of using AI-generated content.	2	8
+ab-testing	eval-3	with_skill	FAIL	7.0s	8607	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	7.0s	8607	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	7.0s	8607	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	7.0s	8607	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	7.0s	8607	5	FAIL	Notes Sora reliability caveats	The model output compares Veo, Runway, and Kling. It never mentions 'Sora' nor provides any caveats regarding Sora's reliability.	3	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	5	FAIL	Mentions hooking in first 3 seconds	The text mentions 'Hooks' generally ('Add a text overlay at the start...'), and pro tips say 'Start the clip 2 seconds after the question is asked'. It does NOT explicitly mention 'first 3 seconds' o…	4	8
+ab-testing	eval-4	with_skill	FAIL	7.9s	8702	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	4	FAIL	Recommends testing 5 manually first	The output mentions 'For 50 personalized videos' in the opening sentence and provides a script for batch processing. It does not contain any instruction to 'test 5 manually first'.	5	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	5	FAIL	Mentions reply tracking / ROI	The output discusses generation, distribution, and conversion rates qualitatively ('converts significantly better'), but does not mention specific reply tracking mechanisms or ROI calculation methods.	5	8
+ab-testing	eval-5	with_skill	FAIL	13.1s	9361	6	FAIL	Mentions captions	The output describes text-on-screen elements in the HTML template but does not explicitly use the term 'captions' or refer to subtitle generation.	5	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	5	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.5s	8445	6	FAIL	Asks about stack or animation needs	The text states 'The choice... depends on your team's technical skills, the complexity of the animations you need...', which is a statement of dependency, not a direct question. The output does not c…	6	8

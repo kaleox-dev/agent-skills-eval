@@ -94,7 +94,7 @@ for skill in $SKILLS; do
     else
         run_skill "$skill" \
             "Qwen/Qwen3.6-35B-A3B-fp8" \
-            "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-FP8-no-think/v1" \
+            "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1" \
             "35B"
     fi
     

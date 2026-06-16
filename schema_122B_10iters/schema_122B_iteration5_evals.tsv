@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	1	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	2	FAIL	Implements Organization schema in JSON-LD	No Organization schema code provided in output	1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	3	FAIL	Includes required and recommended properties	No schema properties included - no schema code provided	1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	4	FAIL	Recommends additional relevant schema types	Agent listed types in planning phase but did not provide recommendations to user	1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	5	FAIL	Uses @graph for multiple types	No @graph structure present in output	1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	6	FAIL	Provides complete JSON-LD code	No JSON-LD code blocks found in output	1	5
+ab-testing	eval-1	with_skill	FAIL	4.3s	9667	7	FAIL	Recommends validation tools	No validation tools mentioned in output	1	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	3	FAIL	Provides complete code example	Template shows only 2 questions with "// ... repeat for all 20 questions" placeholder	2	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	4	FAIL	Explains rich result benefits	No explanation of rich result benefits provided, only mentions "get those rich results in Google"	2	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	5	FAIL	Notes Google's FAQ schema guidelines	No Google FAQ schema guidelines mentioned	2	5
+ab-testing	eval-2	with_skill	FAIL	8.6s	10021	6	FAIL	Recommends validation	Mentions "testing checklist to validate before deployment" as future action, not actual recommendation	2	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; model only asks clarifying questions	3	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	2	FAIL	Implements Article or BlogPosting schema	No schema markup code provided; output only promises 'I'll create a complete Article/BlogPosting JSON-LD schema' but delivers none	3	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	3	FAIL	Includes author, datePublished, image, publisher	No schema implementation present; these fields cannot be verified without actual schema code	3	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	4	FAIL	Recommends BreadcrumbList alongside	Mentions 'BreadcrumbList schema (if you have breadcrumbs)' as a promise in 'What I'll Provide' section, not an actual recommendation or implementation	3	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	5	FAIL	Provides reusable template code	No template code provided; output only contains questions and promises of future deliverables	3	5
+ab-testing	eval-3	with_skill	FAIL	8.0s	9965	6	FAIL	Addresses CMS integration for dynamic fields	Asks about tech stack but provides no CMS integration guidance or dynamic field handling	3	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	19.5s	10913	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	5	FAIL	Addresses warnings vs errors distinction	No explanation of difference between warnings and errors provided	5	5
+ab-testing	eval-5	with_skill	FAIL	8.6s	10016	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	9.0s	10048	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.0s	10048	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.0s	10048	3	PASS			6	5

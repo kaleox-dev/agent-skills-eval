@@ -1,0 +1,81 @@
+
+[1m▶ sms[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Can I just send SMS without any opt-in if customers gave me their phone number at checkout?
+    [90moutput:[0m  No. Under US law (TCPA), giving a phone number at checkout for shipping or order updates is **not sufficient consent** to send marketing/promotional SMS. You must have **express written consent** spe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m References compliance.md
+         [90mevidence:[0m Output says 'see the compliance reference.' It does not explicitly cite the filename 'compliance.md'. Output files section states 'No output files were captured.'
+    5.9s · 24742 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Write me an abandoned cart SMS sequence. We sell custom apparel, average order $80.
+    [90moutput:[0m  Here is an optimized abandoned cart SMS sequence for a custom apparel brand with an $80 AOV. ### Strategy Notes for Custom Apparel 1. **No Deep Discounts on First Touch:** Custom apparel has higher m…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [31m✗ 9[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Character counts shown, target ~160 GSM-7
+         [90mevidence:[0m Character counts are provided ('~135 chars', '~145 chars', '~150 chars'), but there is no mention of 'GSM-7' encoding or target character limits specific to GSM-7 constraints. The counts are close to…
+      [31m#9[0m [31mFAIL[0m [90m—[0m Mentions UTM tagging or attribution
+         [90mevidence:[0m The text mentions 'Link Tracking' and 'track clicks', but does not explicitly mention 'UTM tagging' or 'attribution' parameters.
+    12.2s · 25444 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Our SMS list is 50K subscribers. We send 3 promotional messages per week. Opt-out rate has crept up to 4% per send. What's wrong?
+    [90moutput:[0m  4% opt-out rate per send is **critical**. Healthy ranges are <0.5% for promotional sends. At 4%, you are bleeding your list faster than you can grow it, and you are risking carrier filtering (carrier…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    13.5s · 25597 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We're a Shopify DTC brand doing $5M/year in skincare. We have 80K email subscribers but no SMS program yet. Where do we start?
+    [90moutput:[0m  Given your $5M revenue and 80K email list, you are in the "sweet spot" to launch SMS. You have enough scale to make the economics work, but you're likely not large enough to warrant the heavy lift of…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions replenishment for skincare specifically
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about treating SMS like email
+         [90mevidence:[0m judge did not provide concrete evidence
+    15.9s · 25842 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We just submitted our A2P 10DLC registration and our sends are working. Can we start scaling to 100K+ messages per day?
+    [90moutput:[0m  Holding off on that scale is the right instinct until you verify three things. Jumping from test volumes to 100K/day without these checks will get you filtered or blocked by carriers. ### 1. Verify Y…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Calculates time-to-send for 100K volume
+         [90mevidence:[0m No calculation of total time duration (e.g., seconds/minutes/hours) to send 100k messages is present. It mentions 'per day' but does not calculate send time.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions quiet hour considerations
+         [90mevidence:[0m No mention of 'quiet hours' or specific time-of-day restrictions in the output.
+    8.4s · 25015 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Should we put emojis in our SMS messages? Other brands seem to use them a lot.
+    [90moutput:[0m  The short answer is: **Yes, but use them sparingly and strategically.** While other brands might be using them frequently, that doesn't mean it's optimal for your business. In SMS, emojis have signif…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    9.3s · 25257 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 83.8%[0m  [90m· 10.86s avg · 25316 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1179/benchmark.json[0m
+{
+  "passed": 39,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "sms",
+      "slug": "sms",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8297872340425532,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1179/benchmark.json"
+    }
+  ],
+  "iteration": 1179,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1179",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1179/report/index.html"
+}

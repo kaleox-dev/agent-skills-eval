@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	5	FAIL	Mentions replenishment for skincare specifically	The output mentions 'skincare' implicitly via 'replenishment' is not mentioned at all. It discusses general flows (Cart, Welcome, Transactional) but does not specifically address replenishment for sk…	1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	6	FAIL	Warns about treating SMS like email	The output advises 'Less is more' and 'Don't train them to abandon', but does not explicitly use the phrasing or concept of 'treating SMS like email' as a warning. It focuses on compliance and ROI.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.6s	25832	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	4	FAIL	Each message has sender ID + single CTA + short link	Send 1 copy is 'From [Brand]: Hey [FirstName]! Looks like you were designing something cool. Your custom tee is saved in your cart: [short.link]'. This contains a greeting ('Hey...') and a statement …	2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	5	FAIL	Character counts shown, target ~160 GSM-7	The output mentions '< 160 characters' for Send 1 in the 'Why it works' section. However, it does NOT provide explicit character counts for Send 2 or Send 3. The assertion requires 'Character counts …	2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	8	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	10.7s	25288	9	FAIL	Mentions UTM tagging or attribution	The output mentions '[short.link]' but does not explicitly mention 'UTM tagging', 'UTM parameters', or 'attribution' in the copy or strategy notes. The link is generic.	2	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	7	FAIL	References compliance.md	No mention of 'compliance.md' found in the model output.	3	10
+ab-testing	eval-3	with_skill	FAIL	6.6s	24825	8	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	6	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.1s	25349	7	FAIL	Mentions 'every send must justify itself' principle	No exact match found. Text references 'Did every message offer value specific to the recipient?' but does not use the specific phrase 'every send must justify itself'.	4	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	3	FAIL	Calculates time-to-send for 100K volume	The model mentions '100K messages/day (~1.15 msg/sec sustained...)', but this is a conversion of daily volume to an average rate, not a calculation of the *time-to-send* duration (e.g., 'It will take…	5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	4	FAIL	Mentions quiet hour considerations	The model mentions 'Throttle sends', 'Segment', and 'Opt-Out Rates', but never mentions 'quiet hours' or specific time-window restrictions for sending.	5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	6	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	7	FAIL	Mentions A2P sample text alignment requirement	The model mentions 'campaign use case matches your actual messaging', but does not explicitly mention 'A2P sample text alignment' or the requirement for sample text to align with the use case descrip…	5	10
+ab-testing	eval-5	with_skill	FAIL	12.1s	25510	8	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	4	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	The model output mentions 'accents' or 'curly quotes' nowhere. It only discusses emojis as the trigger for UCS-2 encoding.	6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	6	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.1s	25286	7	FAIL	Calculates cost impact at scale	The model explains the per-message doubling of cost (1 segment vs 2 segments) but does not perform or provide any calculation regarding cost impact at scale (e.g., total monthly spend, volume multipl…	6	10

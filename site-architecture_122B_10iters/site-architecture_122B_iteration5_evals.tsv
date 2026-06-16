@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	1	FAIL	Checks for product-marketing.md	Since I can't actually check for files in this environment, I'll proceed with gathering the necessary context through questions	1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	2	FAIL	Applies 3-click rule and flat vs deep principles	No mention of 3-click rule or flat vs deep principles in output	1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	23.3s	24676	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	1	FAIL	Recommends content inventory first	Model asks 'Do you have a rough content inventory?' as a question rather than recommending to create one first.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	2	FAIL	Groups related pages logically	No grouping or logical organization of pages provided in output.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	3	FAIL	Applies 3-click rule	No mention of 3-click rule anywhere in output.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	4	FAIL	Redesigns navigation structure	Model is gathering information, not redesigning navigation structure.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	5	FAIL	Provides ASCII tree or visual sitemap	Model promises to provide these 'Once I have this information' but does not include them in this output.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	6	FAIL	Addresses URL redirects for moved pages	Model asks about existing URLs but does not provide any redirect recommendations.	2	5
+ab-testing	eval-2	with_skill	FAIL	9.1s	23528	7	FAIL	Reduces header navigation items	No mention of reducing header navigation items in output.	2	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	1	FAIL	Triggers on casual phrasing	No evidence of detecting or responding to casual phrasing. User input is a structured technical question, and model output does not reference any casual language trigger.	3	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.3s	24347	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	1	FAIL	Recommends hub pages for each section	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	2	FAIL	Applies hub-and-spoke internal linking	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	3	FAIL	Keeps programmatic pages out of main nav	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	4	FAIL	Provides URL structure for both sections	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	5	FAIL	Addresses crawl budget for 250 pages	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-4	with_skill	FAIL	10.0s	23595	6	FAIL	Cross-references programmatic-seo skill	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 6 assertions and return strict JSON format. Let me anal…	4	5
+ab-testing	eval-5	with_skill	FAIL	9.5s	23530	1	FAIL	Provides visual sitemap in Mermaid format	No Mermaid code or diagram present in output. Model states 'I don't have enough context about their site to create a meaningful sitemap' and asks questions instead.	5	5
+ab-testing	eval-5	with_skill	FAIL	9.5s	23530	2	FAIL	Shows hierarchical page relationships	No hierarchy shown. Output contains only questions: '1. New site or restructuring? 2. What type of site is it? 3. How many pages?...' with no page structure.	5	5
+ab-testing	eval-5	with_skill	FAIL	9.5s	23530	3	FAIL	Includes all major sections	No site sections included. Output lists deliverables it WILL provide ('Mermaid Visual Sitemap', 'URL Map Table', etc.) but does not actually provide them.	5	5
+ab-testing	eval-5	with_skill	FAIL	9.5s	23530	4	FAIL	Uses clear, readable format	Format is Q&A style with questions, not a sitemap. No visual or structured sitemap format present.	5	5
+ab-testing	eval-5	with_skill	FAIL	9.5s	23530	5	FAIL	Suitable for sharing with design team	Questions asking for site information are not suitable for sharing with design team. No sitemap deliverable provided.	5	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	23429	1	FAIL	Recognizes this as technical SEO, not site architecture	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	23429	2	FAIL	References or defers to seo-audit skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	23429	3	FAIL	Explains site-architecture covers design, not technical SEO	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	5

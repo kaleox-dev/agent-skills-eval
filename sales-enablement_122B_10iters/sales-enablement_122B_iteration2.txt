@@ -1,0 +1,119 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  The user wants me to create an objection handling document for their sales team. They've provided three specific objections: 1. "We already use SurveyMonkey" 2. "We don't have budget right now" 3. "O…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies objection handling framework
+         [90mevidence:[0m Model asks for context instead of applying framework: 'I need to understand your product and value proposition first'
+      [31m#2[0m [31mFAIL[0m [90m—[0m Categorizes the three objections
+         [90mevidence:[0m No categorization present; objections listed as-is without classification
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides structured response for each (acknowledge, reframe, evidence, bridge)
+         [90mevidence:[0m No responses provided; model states 'Once I have this, I'll create an objection handling doc'
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides 2-3 response variations per objection
+         [90mevidence:[0m Zero response variations provided; no actual content created
+      [31m#5[0m [31mFAIL[0m [90m—[0m Organizes for quick reference during calls
+         [90mevidence:[0m No organized content; only promises 'Quick-reference table for live calls' will be created later
+      [31m#6[0m [31mFAIL[0m [90m—[0m Categorizes objections using the skill's framework (competitor, budget, need/timing)
+         [90mevidence:[0m No framework categorization; objections remain unclassified in original form
+    7.5s · 32367 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  The user wants to create a sales deck for their B2B SaaS product - an employee engagement platform. They've provided some context: - Target: HR Directors at companies with 500-5000 employees - Produc…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. Agent asked questions instead of creating deliverable.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies 10-12 slide framework
+         [90mevidence:[0m No deck created. Agent stated 'I can build a 10-12 slide deck' but did not produce it.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes Problem, Solution, Proof, Pricing, Next Steps slides
+         [90mevidence:[0m No slides provided. Output contains only clarifying questions.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Tailors to HR director audience
+         [90mevidence:[0m Mentioned HR Directors but no tailored content created.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Incorporates stated differentiator
+         [90mevidence:[0m Acknowledged 'real-time pulse + AI insights' but did not incorporate into actual deck content.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides slide-by-slide content
+         [90mevidence:[0m No slide-by-slide content in output. Only questions asked.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes speaker notes or talking points
+         [90mevidence:[0m No speaker notes or talking points provided.
+    7.6s · 32364 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  The user is asking for a one-pager to leave behind after sales meetings. This is a sales enablement task - they need a post-meeting leave-behind document. Looking at the skill instructions, I need to…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No casual phrasing detected in user input; model output does not reference any casual language trigger.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies one-pager/leave-behind framework
+         [90mevidence:[0m Model asks for context before creating one-pager; no actual framework applied in output.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes headline, benefits, social proof, how it works, CTA
+         [90mevidence:[0m Output contains only questions; no one-pager content with headline, benefits, social proof, how it works, or CTA present.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m No one-pager document created; output is a clarification request.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m No one-pager sections created; only context questions asked.
+    6.2s · 32234 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  The user wants a demo script for an analytics dashboard product, targeted at a VP of Marketing, with a 30-minute typical demo duration. I need to use the sales enablement skill to create this demo sc…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 5-part demo script structure
+         [90mevidence:[0m Script contains 6 scenes (Opening, Workflow 1-3, Proof Point, Close) instead of required 5-part structure
+    20.3s · 33382 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  The user wants to build an ROI calculator for sales calls. This is a clear sales enablement request - they need a tool to help prospects understand the financial value of switching to their product. …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies ROI calculator framework
+         [90mevidence:[0m Model asks clarifying questions instead of applying framework: 'I should ask clarifying questions before building the calculator'
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines required inputs
+         [90mevidence:[0m No calculator inputs defined; model requests context: 'What problem does your product solve?'
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides calculation methodology
+         [90mevidence:[0m No methodology provided; model states 'I can build you a calculator' but provides no formulas
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m No mention of conservative assumptions in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes ROI timeline and payback period
+         [90mevidence:[0m Model mentions outputs it 'can' provide but does not include them: 'Outputs (annual ROI, payback period, 3-year value)'
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests validating assumptions during calls
+         [90mevidence:[0m No suggestion about validating assumptions during calls in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides calculator structure
+         [90mevidence:[0m No calculator structure provided; model asks 6 questions before building anything
+    8.6s · 32435 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  The user is asking for a public comparison page showing how their product stacks up against Zendesk and Intercom. This is a competitor comparison request. Looking at the skill description, it says: "…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains the distinction between internal and public collateral
+         [90mevidence:[0m No explanation of internal vs public collateral distinction found in output.
+    7.1s · 32325 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 29.9%[0m  [90m· 9.56s avg · 32518 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1065/benchmark.json[0m
+{
+  "passed": 11,
+  "failed": 27,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.2894736842105263,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1065/benchmark.json"
+    }
+  ],
+  "iteration": 1065,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1065",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1065/report/index.html"
+}

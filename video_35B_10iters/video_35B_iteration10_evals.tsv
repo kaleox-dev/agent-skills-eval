@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	1	FAIL	Checks for product-marketing.md	The output contains no reference to 'product-marketing.md' or any file path with that name. It provides a text-based workflow instead.	1	10
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	5	FAIL	Mentions captions	The output mentions 'Voiceover', 'AI voiceover tool', 'TTS', and 'Audio', but the word 'captions' or 'subtitles' is not present in the text.	1	10
+ab-testing	eval-1	with_skill	FAIL	11.7s	9117	6	FAIL	Cross-references copywriting skill	The output mentions 'Write the Script' and 'Draft a script', but does not explicitly mention or cross-reference a 'copywriting skill' or concept.	1	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	1	FAIL	Recommends AI avatar approach	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.9s	9255	6	FAIL	Warns about authenticity tradeoff	The model warns about cost and the 'uncanny' feeling ('feel uncanny if not perfectly tailored'), but does not explicitly frame this as an 'authenticity tradeoff'. It frames the main advice as avoidin…	2	10
+ab-testing	eval-3	with_skill	FAIL	7.4s	8652	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.4s	8652	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.4s	8652	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.4s	8652	4	FAIL	Warns about common prompt mistakes	The output provides a recommended workflow and advises against using specific tools (Pika, LTX Studio, Avatars) for this use case. It does not explicitly warn about 'prompt engineering mistakes' (e.g…	3	10
+ab-testing	eval-3	with_skill	FAIL	7.4s	8652	5	FAIL	Notes Sora reliability caveats	The output mentions 'Sora' only in the context of a 'Would you like me to...' list? No, actually, 'Sora' is not mentioned anywhere in the text. The text compares Runway, Veo, and Kling. There is no m…	3	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	4	FAIL	Specifies aspect ratios per platform	Only specifies '9:16 (1080x1920)' generally for TikTok/Reels/Shorts. Does not specify different ratios for other platforms (e.g., LinkedIn is not explicitly given a ratio constraint, nor is YouTube S…	4	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.5s	8996	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	1	FAIL	Recommends HeyGen + Hyperframes pipeline	judge did not provide concrete evidence	5	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	2	FAIL	Names HeyGen MCP server	judge did not provide concrete evidence	5	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	4	FAIL	Recommends testing 5 manually first	judge did not provide concrete evidence	5	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	5	FAIL	Mentions reply tracking / ROI	judge did not provide concrete evidence	5	10
+ab-testing	eval-5	with_skill	FAIL	16.2s	9777	6	FAIL	Mentions captions	judge did not provide concrete evidence	5	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	1	FAIL	Compares the two with the When to Pick Which table	judge did not provide concrete evidence	6	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	4	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	5	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.3s	8566	6	PASS			6	10

@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	1	FAIL	Checks for product-marketing.md	Model states: 'Check for product marketing context first (but I don't have access to file systems, so I'll proceed with what I have)' - did not actually check for the file	1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	22.7s	4433	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.8s	3503	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	1	FAIL	Triggers on casual phrasing	No explicit trigger mechanism shown in output; model responds to query but no evidence of phrasing detection	3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.2s	3880	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.6s	3901	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.6s	3370	6	FAIL	Cross-references ab-testing skill	No explicit mention of A/B testing or related skill in the output	5	8
+ab-testing	eval-6	with_skill	FAIL	14.7s	3766	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	14.7s	3766	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	14.7s	3766	3	PASS			6	8

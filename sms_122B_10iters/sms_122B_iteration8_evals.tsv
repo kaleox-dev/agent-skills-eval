@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	2	FAIL	Runs compliance/A2P 10DLC readiness check	Mentions 'A2P 10DLC registration status (US)' as something to gather, but no actual check performed	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	3	FAIL	Recommends Klaviyo SMS or Postscript with rationale	Platform mentioned in planning ('likely Klaviyo or Postscript for Shopify') but no recommendation with rationale in actual output	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	4	FAIL	Prioritizes abandoned cart as highest-ROI flow	Abandoned cart not mentioned in output	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	5	FAIL	Mentions replenishment for skincare specifically	Replenishment not mentioned in output	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	6	FAIL	Warns about treating SMS like email	No warning about SMS vs email in output	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	7	FAIL	References compliance.md or opt-in disclosure requirements	Compliance mentioned generally but no compliance.md or opt-in disclosure referenced	1	8
+ab-testing	eval-1	with_skill	FAIL	6.4s	24646	8	FAIL	Mentions per-send cost economics	States 'economics work well at this scale' but no per-send cost specifics	1	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	7	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	8	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	22.9s	25986	9	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	7	FAIL	References compliance.md	No reference to compliance.md found in output	3	8
+ab-testing	eval-3	with_skill	FAIL	17.4s	25556	8	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	1	FAIL	Diagnoses as over-sending / audience fatigue	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	2	FAIL	Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	3	FAIL	Recommends reducing send frequency	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	4	FAIL	Recommends segmentation by engagement	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	5	FAIL	Suggests reactivation flow for cold subscribers	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	6	FAIL	Calculates list erosion impact	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-4	with_skill	FAIL	20.6s	25831	7	FAIL	Mentions 'every send must justify itself' principle	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 specific assertions and return strict JSON only. Le…	4	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	2	FAIL	Explains throughput limits with specific msg/sec numbers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	3	FAIL	Calculates time-to-send for 100K volume	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	4	FAIL	Mentions quiet hour considerations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	5	FAIL	Recommends short code for high sustained volume	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	6	FAIL	Warns about carrier filtering / throttling	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	7	FAIL	Mentions A2P sample text alignment requirement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-5	with_skill	FAIL	22.2s	25980	8	FAIL	References platforms.md or trust score monitoring	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's skills evaluation run based on provided asserti…	5	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	4	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	No mention of accented characters or curly quotes in output	6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	6	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.5s	25171	7	PASS			6	8

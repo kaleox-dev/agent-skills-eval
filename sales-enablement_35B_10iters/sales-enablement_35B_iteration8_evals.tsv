@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model provided a text response but no file named 'product-marketing.md'.	1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	3	FAIL	Includes Problem, Solution, Proof, Pricing, Next Steps slides	The output includes slides for Problem (Slide 2), Solution (Slide 3), and Proof (Slide 6). It includes a section on ROI/Cost (Slide 9) but does not contain a distinct 'Pricing' slide with specific pr…	1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	20.3s	34011	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	4	FAIL	Provides 2-3 response variations per objection	Each objection provides exactly one 'Talk Track' and one 'Follow-Up Question'. There are no alternative variations or multiple scripts provided for any of the three objections.	2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	33594	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	2	FAIL	Applies one-pager/leave-behind framework	The model explicitly states: 'Please provide the following context so I can draft the copy' and 'Once you give me those details, I'll write the full copy'. It does not apply the framework; it defers …	3	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	3	FAIL	Includes headline, benefits, social proof, how it works, CTA	The output is a request for information. It does not contain a headline, benefits, social proof, how it works, or CTA. It lists questions to ask the user instead.	3	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	4	FAIL	Keeps to one page format	The model did not generate a one-page format. It generated a list of questions asking for context to create the document later.	3	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	5	FAIL	Recommends scannable design	The model mentions 'layout guidance' will be provided *after* receiving details, but does not currently recommend a scannable design in this output.	3	8
+ab-testing	eval-3	with_skill	FAIL	3.3s	32043	6	FAIL	Provides specific content for each section	The model asks for 'top 2-3 pain points' and 'specific proof points' from the user. It provides no specific content for the sections of the leave-behind.	3	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	1	FAIL	Applies 5-part demo script structure	judge did not provide concrete evidence	4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	6	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	7	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	20.8s	33998	8	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	1	FAIL	Applies ROI calculator framework	The model does not apply the framework; it explicitly states it needs more information to do so: 'I need to understand the specific value drivers of your product. An ROI calculator is only effective …	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	2	FAIL	Defines required inputs	The model asks for inputs (e.g., 'What are the typical inputs...') but does not define them for the user. It asks the user to provide this information rather than defining the inputs itself.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	3	FAIL	Provides calculation methodology	No calculation methodology is provided. The output contains only questions and a promise to provide formulas later: 'Once I have this, I’ll provide: A structured ROI calculator template (with input f…	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	4	FAIL	Recommends conservative assumptions	No assumptions are recommended in the output. The text contains no mention of conservative or other types of assumptions.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	5	FAIL	Includes ROI timeline and payback period	No timeline or payback period is included. The model asks if the user has data on when 'ROI is typically realized' but does not provide a timeline.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	6	FAIL	Suggests validating assumptions during calls	The model suggests 'how to walk prospects through it' but does not explicitly suggest validating assumptions during calls as a specific step in the provided output.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.7s	32124	7	FAIL	Provides calculator structure	The model explicitly refuses to provide the structure in this turn, stating it will do so only after the user answers questions: 'Once I have this, I’ll provide: A structured ROI calculator template.…	5	8
+ab-testing	eval-6	with_skill	FAIL	11.8s	33009	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.8s	33009	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.8s	33009	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.8s	33009	4	PASS			6	8

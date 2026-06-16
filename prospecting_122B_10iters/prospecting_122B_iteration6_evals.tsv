@@ -1,0 +1,55 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	1	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	3	FAIL	Runs Phase 1 ICP definition	No ICP definition run; model asks questions instead of defining ICP	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	4	FAIL	Recommends multi-source discovery (Apollo, Clay, Crunchbase, BuiltWith)	Lists tools but does not recommend multi-source discovery approach	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	6	FAIL	Sources 2-3x candidates before qualifying	No candidates sourced in output	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	7	FAIL	Requires email validation before final list	Email verification mentioned as future deliverable, not required in current output	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	8	FAIL	Outputs SaaS-branch chat table columns	No table columns output	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	9	FAIL	Includes top 3-5 outreach targets with rationale	No targets included; promised as future deliverable	1	6
+ab-testing	eval-1	with_skill	FAIL	8.8s	30009	10	FAIL	References saas-prospecting.md	No reference to saas-prospecting.md found	1	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	1	FAIL	Identifies as SaaS branch	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	2	FAIL	Identifies funding signal + tech stack filter	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	3	FAIL	Recommends Crunchbase or Pitchbook for funding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	4	FAIL	Recommends BuiltWith or Clay for HubSpot verification	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	5	FAIL	Notes data freshness concerns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	6	FAIL	Recommends cross-source verification	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	7	FAIL	Outputs signal column showing round + date	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-2	with_skill	FAIL	13.2s	30397	8	FAIL	Requires email validation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	2	FAIL	Runs Phase 1 ICP definition with NAICS or industry classification	No NAICS codes or industry classification performed; only asks clarifying questions	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	3	FAIL	Specifies mid-market size band	What headcount or revenue range defines "mid-market" for you? (asking, not specifying)	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	4	FAIL	Specifies Midwest US geography	Which states should I target? (asking, not specifying)	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	6	FAIL	Recommends Apollo/ZoomInfo + LinkedIn Sales Nav	What prospecting tools do you have access to? (Apollo, ZoomInfo...)? (asking, not recommending)	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	7	FAIL	Notes CMO hires often only on LinkedIn	No mention of CMO hire source limitations in output	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	8	FAIL	Outputs B2B-branch chat table	No chat table actually output; only asks Chat table or CSV output?	3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	9	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.2s	30077	10	FAIL	References b2b-prospecting.md	No reference to b2b-prospecting.md file in output	3	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	3	FAIL	Recommends industry-specific directories beyond Apollo/ZoomInfo	Only mentions Apollo, ZoomInfo, Clay, Hunter, Truelist - no industry-specific directories recommended	4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	4	FAIL	Mentions trade show exhibitor lists	No mention of trade show exhibitor lists in output	4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	5	FAIL	Identifies relevant trigger events	Asks about buying signals but does not identify specific trigger events for industrial distributors	4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	6	FAIL	Warns about data spottiness for industrial	No warning about data spottiness for industrial sector	4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	7	FAIL	Recommends cross-verification with business websites + LinkedIn	No mention of cross-verification with business websites or LinkedIn	4	6
+ab-testing	eval-4	with_skill	FAIL	7.2s	29904	8	FAIL	Notes ICP fit precision over volume	No explicit note about ICP fit precision over volume	4	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	3	FAIL	Defaults radius to 20km	What radius around Austin? (downtown, 10 miles, specific neighborhoods?) - no default set	5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	4	FAIL	Runs browser research workflow	I cannot browse Google Maps or the internet in real-time to find actual local businesses	5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	7	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	8	FAIL	Adds top 3 outreach targets	No actual prospects added, only template provided	5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	9	FAIL	References local-prospecting.md	Mentions 'framework from the skill' but no explicit reference to local-prospecting.md	5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	30570	10	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	5	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	6	FAIL	Mentions Truelist MCP server for agent workflows	No mention of MCP server in output	6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	7	FAIL	Mentions cold email reputation is hard to recover	No statement about reputation being hard to recover; only mentions penalty	6	6
+ab-testing	eval-6	with_skill	FAIL	13.1s	30452	8	FAIL	References truelist.md or data-sources.md	Output says 'prospecting data sources' but no specific file reference	6	6

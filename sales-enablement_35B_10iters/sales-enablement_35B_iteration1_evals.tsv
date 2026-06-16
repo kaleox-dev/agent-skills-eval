@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	23.5s	34292	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	4	FAIL	Provides 2-3 response variations per objection	The model provides exactly one primary Talk Track per objection (e.g., one block under 'Talk Track' for Objection 1), not 2-3 distinct variations.	2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	33403	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	4	FAIL	Keeps to one page format	The model did not produce a one-page document; it produced a template framework and a request for inputs. While the framework *intends* for a one-pager, the output itself is not a one-pager format, n…	3	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	4.8s	32173	6	FAIL	Provides specific content for each section	The model provides placeholder descriptions (e.g., 'One sentence summarizing the value', '2-3 bullets describing the pain') rather than specific content. It explicitly asks the user to provide detail…	3	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	1	FAIL	Applies 5-part demo script structure	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	2	FAIL	Includes opening with discovery questions	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	6	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	7	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	19.6s	33828	8	FAIL	Notes customization based on prospect responses	judge did not provide concrete evidence	4	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	1	FAIL	Applies ROI calculator framework	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	3	FAIL	Provides calculation methodology	The model states it will provide 'The Calculation Logic' *after* receiving answers, stating 'ROI calculations are only as good as the inputs...'. No formulas or methodology are provided in the curren…	5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	4	FAIL	Recommends conservative assumptions	The output contains no recommendations on assumptions, conservative or otherwise. It asks for user data instead.	5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	5	FAIL	Includes ROI timeline and payback period	It asks the user about 'Payback Period' and 'Time Horizon' as preferences, but does not include any actual timeline, payback period calculation, or example.	5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	6	FAIL	Suggests validating assumptions during calls	The model lists 'The Inputs' as questions for the developer/user to answer to build the tool. It does not suggest validating assumptions *during* a sales call as a behavioral instruction.	5	1
+ab-testing	eval-5	with_skill	FAIL	7.0s	32478	7	FAIL	Provides calculator structure	It offers format options (Spreadsheet, Web Tool, Slide-Embedded) but explicitly states: 'Once you provide these details, I will generate... The Structure: A wireframe'. No structure is provided in th…	5	1
+ab-testing	eval-6	with_skill	FAIL	16.2s	33704	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	16.2s	33704	2	FAIL	References or defers to competitors skill	The model provides generic placeholders (e.g., '[key pain point: e.g., bloated pricing...]') and does not reference specific competitor capabilities or skills, only general stereotypes like 'legacy s…	6	1
+ab-testing	eval-6	with_skill	FAIL	16.2s	33704	3	FAIL	Explains the distinction between internal and public collateral	The output provides a template for public-facing content ('SEO-optimized', 'scannable', 'objective-sounding') but contains no explanation or distinction regarding internal vs. public collateral types…	6	1
+ab-testing	eval-6	with_skill	FAIL	16.2s	33704	4	FAIL	Does not attempt public SEO comparison page using sales enablement patterns	The model explicitly attempts to create a public SEO comparison page. The output includes an 'Executive Summary', 'Feature Comparison Matrix', and 'FAQ' sections formatted for public consumption ('Pa…	6	1

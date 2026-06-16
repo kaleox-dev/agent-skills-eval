@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	1	FAIL	Checks for product-marketing.md	The model output explicitly states: 'No output files were captured.' and contains no reference to a file named product-marketing.md.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	3	FAIL	Designs the referral loop (trigger, share, convert, reward)	The model provides 'Trigger Moments' and 'Incentive Structure', but it does not explicitly design the full loop (trigger, share, convert, reward). It explicitly states 'I need to clarify a few detail…	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	6	FAIL	Includes launch checklist	The model output contains no launch checklist. It ends with 'Next Step: Please answer the 4 questions above...'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.1s	8686	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.7s	9209	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	15.4s	9393	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	2	FAIL	Identifies as single-sided and recommends double-sided	The model critiques the 'punishes the referee' aspect but does not explicitly identify the current structure as 'single-sided' nor does it explicitly recommend 'double-sided' as a specific label in c…	4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.4s	9384	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	6	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.3s	9168	7	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	1	FAIL	Applies referral email section from the skill	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	3	FAIL	Cross-references emails for broader email work	The output focuses exclusively on referral emails. There is no cross-referencing to other types of emails or broader email strategies mentioned in the context.	6	1
+ab-testing	eval-6	with_skill	FAIL	9.8s	9060	4	PASS			6	1

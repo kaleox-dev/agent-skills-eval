@@ -1,0 +1,89 @@
+
+[1m▶ video[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
+    [90moutput:[0m  The user wants to create a 2-minute product demo video for their SaaS homepage. They're asking about the fastest way to produce it. This is a video production request, so I should use the video skill…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Uses real screen recording, not AI generated UI
+         [90mevidence:[0m Model is text-only; no actual screen recording output provided. Output is markdown text only.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references copywriting skill
+         [90mevidence:[0m No explicit reference to copywriting skill in output. Script mentioned but not cross-referenced as a skill.
+    11.4s · 8749 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
+    [90moutput:[0m  The user is asking about repurposing a 60-minute webinar into short social clips. This is a common video editing/repurposing workflow question. I should provide guidance on tools and workflows for ex…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.9s · 8872 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  The user wants to create weekly product update videos that are about 60 seconds each, and they don't want to be on camera. This is a perfect use case for programmatic video + AI avatars or voiceover.…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends AI avatar approach
+         [90mevidence:[0m Primary recommendation is 'Programmatic Video + Voiceover' with Hyperframes. AI Avatar is listed only as 'Alternative: AI Avatar (If You Want a Presenter)'.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about authenticity tradeoff
+         [90mevidence:[0m No explicit warning about authenticity tradeoffs. Only mentions 'Less flexible for screen recordings, costs per minute'.
+    13.7s · 8937 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
+    [90moutput:[0m  The user wants to create 50 personalized intro videos for sales outreach, with each video mentioning a different company name and pain point. This is a classic use case for programmatic video generat…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
+         [90mevidence:[0m No mention of testing 5 manually first in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
+         [90mevidence:[0m No mention of reply tracking or ROI in output
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions captions
+         [90mevidence:[0m No mention of captions in output
+    9.4s · 8595 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
+    [90moutput:[0m  The user wants to generate a 10-second AI video clip of a person typing on a laptop in a coffee shop. This is a clear AI video generation use case. Let me help them choose the right tool based on the…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Compares Veo, Runway, and Kling
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (the …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Provides structured video prompt example
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (the …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Follows Subject + Action + Camera + Style + Mood pattern
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (the …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Warns about common prompt mistakes
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (the …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Sora reliability caveats
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (the …
+    10.2s · 8661 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
+    [90moutput:[0m  The user is asking about choosing between Hyperframes and Remotion for programmatic video. This is a common decision point in video production workflows, and I have detailed information about both to…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    9.6s · 8603 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 63.9%[0m  [90m· 11.22s avg · 8736 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-1206/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "video",
+      "slug": "video",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6571428571428571,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1206/benchmark.json"
+    }
+  ],
+  "iteration": 1206,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1206",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-1206/report/index.html"
+}

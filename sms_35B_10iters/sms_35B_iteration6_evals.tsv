@@ -1,0 +1,48 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	5	FAIL	Mentions replenishment for skincare specifically	judge did not provide concrete evidence	1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	6	FAIL	Warns about treating SMS like email	judge did not provide concrete evidence	1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	15.9s	25842	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	5	FAIL	Character counts shown, target ~160 GSM-7	Character counts are provided ('~135 chars', '~145 chars', '~150 chars'), but there is no mention of 'GSM-7' encoding or target character limits specific to GSM-7 constraints. The counts are close to…	2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	8	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.2s	25444	9	FAIL	Mentions UTM tagging or attribution	The text mentions 'Link Tracking' and 'track clicks', but does not explicitly mention 'UTM tagging' or 'attribution' parameters.	2	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	7	FAIL	References compliance.md	Output says 'see the compliance reference.' It does not explicitly cite the filename 'compliance.md'. Output files section states 'No output files were captured.'	3	6
+ab-testing	eval-3	with_skill	FAIL	5.9s	24742	8	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.5s	25597	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	3	FAIL	Calculates time-to-send for 100K volume	No calculation of total time duration (e.g., seconds/minutes/hours) to send 100k messages is present. It mentions 'per day' but does not calculate send time.	5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	4	FAIL	Mentions quiet hour considerations	No mention of 'quiet hours' or specific time-of-day restrictions in the output.	5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	6	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	7	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	8.4s	25015	8	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	5	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	6	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.3s	25257	7	PASS			6	6

@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	2	FAIL	Implements Organization schema in JSON-LD	Model output contains only questions asking for details; no JSON-LD code or implementation is provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	3	FAIL	Includes required and recommended properties	No schema properties were implemented or listed in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	5	FAIL	Uses @graph for multiple types	No JSON-LD structure using @graph is present in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	6	FAIL	Provides complete JSON-LD code	Model output contains only questions and a list of types; no actual JSON-LD code block is provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	5.1s	9691	7	FAIL	Recommends validation tools	The output does not mention any validation tools.	1	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	3	FAIL	Provides complete code example	Output explicitly states: 'I can help you implement FAQ schema... I need a few details... Do you want me to write the schema using your actual 20 Q&A pairs... If you want the real schema, please shar…	2	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	4	FAIL	Explains rich result benefits	The text mentions 'implement FAQ schema to get rich results' and 'Google typically shows up to 8 FAQ items in rich results', but does not explain the benefits (e.g., increased CTR, better visibility,…	2	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	8.0s	10017	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.7s	9935	6	FAIL	Addresses CMS integration for dynamic fields	The model states: "Once you tell me your tech stack I can provide implementation-specific code..." It does not provide the CMS integration advice or dynamic field handling in this specific output, in…	3	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	4	FAIL	Includes BreadcrumbList	The text lists 'breadcrumbList' under 'Strongly Recommended' as a bullet point, but the provided JSON-LD code does NOT include a BreadcrumbList schema object.	4	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.1s	10439	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	3	FAIL	Explains valid schema doesn't guarantee rich results	The output mentions 'Eligibility requirements not met' and advises asking 'Which rich results are you hoping to see?', but it does not explicitly state or explain that having valid schema markup does…	5	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	5	FAIL	Addresses warnings vs errors distinction	The output asks if the validation tool shows 'errors or warnings' and mentions seeing 'errors or valid items' in Search Console, but it does not explain the distinction between warnings and errors or…	5	9
+ab-testing	eval-5	with_skill	FAIL	3.2s	9683	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	5.4s	9932	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	5.4s	9932	2	FAIL	References or defers to seo-audit skill	The output contains no mention of an 'seo-audit' skill, nor does it reference any specific tool or skill name. It provides a generic conversational response.	6	9
+ab-testing	eval-6	with_skill	FAIL	5.4s	9932	3	PASS			6	9
