@@ -1,0 +1,77 @@
+
+[1m▶ free-tools[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    I want to build a free ROI calculator for our HR software. Users input their company size and current processes, and it shows how much time and money they'd save.
+    [90moutput:[0m  This is a classic "Engineering as Marketing" play. An ROI calculator is one of the highest-converting free tools for B2B SaaS because it bridges the gap between "this sounds nice" and "this pays for …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies ideation framework to validate
+         [90mevidence:[0m The model proposes a strategy and scope but does not provide a structured ideation framework (e.g., SWOT, Porter's Five Forces, Value Proposition Canvas) to validate the concept's viability or risks.…
+      [31m#7[0m [31mFAIL[0m [90m—[0m References evaluation scorecard
+         [90mevidence:[0m The output contains no mention of an 'evaluation scorecard' or any specific scoring matrix used to evaluate options.
+    12.4s · 5479 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    give me some ideas for free tools we could build. we sell email marketing software for e-commerce brands.
+    [90moutput:[0m  To provide the best recommendations, I’ve evaluated potential free tools against the **Engineering as Marketing** principles: solving a real e-commerce pain point, being adjacent to email marketing, …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    13.3s · 5600 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We want to build a free tool to drive leads for our SEO software. We're thinking about an SEO audit tool or a keyword research tool. Which would be better and how should we approach it?
+    [90moutput:[0m  To determine whether an SEO Audit Tool or a Keyword Research Tool is better for your specific goals, we need to evaluate them against the "Engineering as Marketing" framework. Both are classic tools,…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model output contains no reference to a file named 'product-marketing.md'. The output is a direct text response.
+    12.8s · 5587 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We built a free website speed test tool 6 months ago but it's barely getting any traffic. What went wrong and how do we fix it?
+    [90moutput:[0m  This is a common outcome for "speed test" tools. The market is saturated (Google PageSpeed Insights, GTmetrix, Pingdom), and users trust established players. To fix this, we need to diagnose why it's…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.2s · 5596 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    How do I optimize the landing page for our free tool to get more signups? The tool itself is great but nobody finds it.
+    [90moutput:[0m  To optimize a free tool's landing page for conversions, you need to treat the tool not just as a product, but as a **content asset** that needs to be discovered and understood instantly. Since you me…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m The model provides generic best-practice advice for CRO (headlines, friction reduction, social proof) but never explicitly mentions or defers to a specific 'cro skill', 'CRO agent', or internal skill…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full page CRO using free tool strategy patterns
+         [90mevidence:[0m The model *does* attempt to apply free-tool strategy patterns to page CRO. Specifically, in Part 1, it includes 'Deferred Value' ('If you *must* gate the result, show a "teaser"... This uses the "Cur…
+    12.0s · 5523 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    Should we gate our free tool behind an email capture or make it completely free? We want leads but don't want to kill usage.
+    [90moutput:[0m  This is a classic tension in engineering-as-marketing. The core truth is: **Higher friction = fewer users, but higher lead quality. Lower friction = more users, more SEO value, but fewer leads.** The…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.9s · 5804 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 82.1%[0m  [90m· 13.08s avg · 5598 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-748/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "free-tools",
+      "slug": "free-tools",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8378378378378378,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-748/benchmark.json"
+    }
+  ],
+  "iteration": 748,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-748",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-748/report/index.html"
+}

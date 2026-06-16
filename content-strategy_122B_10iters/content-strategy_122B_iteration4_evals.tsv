@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product-marketing-context file' but no file check or result is shown	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	2	FAIL	Establishes 3-5 content pillars	Model promises '3-5 content pillars' but states 'Once I have this information, I'll provide you with' - no pillars established	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	3	FAIL	Maps content by buyer stage (awareness through implementation)	No buyer stage mapping present in output	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	4	FAIL	Includes keyword research by buyer stage	No keyword research present in output	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	5	FAIL	Recommends mix of searchable and shareable content	Model mentions 'Priority topics with searchable vs. shareable classification' but only as future deliverable, not actual recommendation	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	6	FAIL	Uses prioritization scoring framework	Model mentions 'A scoring framework' as future deliverable but does not use or present one	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	7	FAIL	Provides publishing cadence or calendar	No publishing cadence or calendar present in output	1	4
+ab-testing	eval-1	with_skill	FAIL	8.6s	9472	8	FAIL	Recommends appropriate starting content types	Model asks 'What content formats can you realistically produce?' but does not recommend starting content types	1	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	2	FAIL	Recommends content audit for existing posts	Audit and update or delete is listed as a future fix, not an immediate recommendation	2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	3	FAIL	Introduces content pillars and topical clustering	Content Pillars and Topic Cluster Map are listed under 'What I'll Help You Build' as future deliverables, not introduced now	2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	4	FAIL	Identifies hub-and-spoke opportunities	Structure hub-and-spoke relationships is mentioned as a fix, not identified as specific opportunities	2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	5	FAIL	Recommends update, consolidate, or retire decisions	What to update, what to create next, what to delete is listed as future work, not recommended now	2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	6	FAIL	Uses prioritization framework	No prioritization framework is shown or used in the output	2	4
+ab-testing	eval-2	with_skill	FAIL	11.1s	9662	7	FAIL	Addresses topical authority building	Competitors cover same topics with more authority is mentioned but no guidance on building topical authority is provided	2	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	1	FAIL	Triggers on casual phrasing	No casual phrasing from user detected; output is structured professional response	3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	4	FAIL	Notes developers prefer substance over marketing	No explicit statement about developer preference for substance over marketing found	3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	6	FAIL	Uses ideation sources framework	No explicit ideation sources framework mentioned; only asks about business context, customer research, current state, competitive landscape	3	4
+ab-testing	eval-3	with_skill	FAIL	14.4s	9926	7	FAIL	Mentions developer community channels	No developer community channels (GitHub, Stack Overflow, Reddit, Discord, etc.) mentioned in output	3	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	9838	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	9838	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	9838	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	9838	4	FAIL	Considers buyer stage distribution	Model asks user to 'Identify buyer stage (awareness/consideration/decision)' but does not incorporate buyer stage into the scoring framework or recommendations. Framework lacks buyer stage as a dimen…	4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	9838	5	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	3	FAIL	Identifies 8-15 supporting spoke articles	25 spoke articles identified across 5 clusters (5 per cluster), exceeding the 8-15 range requirement	5	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.2s	10496	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	7.2s	9363	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	7.2s	9363	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	7.2s	9363	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	7.2s	9363	4	PASS			6	4

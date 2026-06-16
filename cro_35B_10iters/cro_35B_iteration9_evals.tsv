@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	1	FAIL	Checks for product-marketing.md	Model output states: 'I cannot browse live URLs... please copy and paste the text'. No file content or reference to product-marketing.md is present.	1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	8	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	9	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.9s	15892	10	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	5	FAIL	Suggests specific experiments	Model provides general diagnostic advice (e.g., 'Add a quiz', 'Re-evaluate feature gap') but explicitly states 'I need to analyze your page to give specific recommendations' and asks for more data be…	2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	6	FAIL	Output has Quick Wins section	The output contains headers 'Initial Assessment Needed', 'Immediate Observations & Recommendations', and 'Questions to Narrow Down the Fix'. There is no section titled or explicitly labeled as 'Quick…	2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	7	FAIL	Output has High-Impact Changes section	The output contains 'Immediate Observations & Recommendations'. While the 'Next Steps' section mentions 'Once I have this, I can provide a specific High-Impact Changes plan', the actual 'High-Impact …	2	9
+ab-testing	eval-2	with_skill	FAIL	7.8s	15370	8	FAIL	Output has Test Ideas section	The output contains headers 'Initial Assessment Needed', 'Immediate Observations & Recommendations', and 'Questions to Narrow Down the Fix'. There is no section titled or explicitly labeled as 'Test …	2	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	7	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	8.8s	15456	8	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.2s	15814	6	FAIL	Cross-references copywriting or related skill	The response focuses entirely on CRO strategy, UX, technical checks, and analytics. It does not explicitly reference or provide guidance on copywriting skills, content structure for readability, or c…	4	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	1	FAIL	Approaches as diagnostic audit	judge did not provide concrete evidence	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	2	FAIL	Checks for lost trust signals	The model did not check for trust signals because it lacked the page content. It only listed 'Trust & Social Proof' as a category for future analysis.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	3	FAIL	Checks for weakened value proposition	The model did not check for value proposition strength. It stated: 'Once you provide the page/context, I will evaluate... Value Proposition Clarity'.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	4	FAIL	Checks for CTA hierarchy changes	The model did not check CTA hierarchy. It listed 'CTA Hierarchy' as a future evaluation dimension but did not perform the check.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	5	FAIL	Checks for added friction	The model did not check for friction. It listed 'Friction Points' as a future evaluation dimension but did not perform the check.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	6	FAIL	Checks for broken message match with traffic sources	The model did not check for message match. It asked the user to provide traffic source info to check this in the future.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	7	FAIL	Provides fixes organized by impact	No fixes were provided. The model provided a list of requirements to proceed.	5	9
+ab-testing	eval-5	with_skill	FAIL	5.0s	15073	8	FAIL	Recommends reverting high-risk changes	No recommendations were made as the page was not available.	5	9
+ab-testing	eval-6	with_skill	FAIL	6.9s	15269	1	FAIL	Recognizes this as signup flow optimization	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	6.9s	15269	2	FAIL	References or defers to signup skill	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	6.9s	15269	3	PASS			6	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	1	FAIL	Applies Feature Page CRO framework	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	2	FAIL	Connects features to benefits	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	3	FAIL	Suggests use cases and examples	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	4	FAIL	Provides clear path to try/buy	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	5	FAIL	Notes organic traffic source and search intent match	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	6	FAIL	Suggests specific experiment hypotheses	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9
+ab-testing	eval-7	with_skill	FAIL	19.7s	16803	7	FAIL	Cross-references ab-testing skill	judge returned unparseable response: { "assertion_results": [ { "text": "Applies Feature Page CRO framework", "passed": true, "evidence": "The output is structured with sections: 'Initial Assessment'…	7	9

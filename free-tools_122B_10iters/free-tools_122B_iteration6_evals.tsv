@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to their specific product marketing context file' - no check performed	1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	3	FAIL	References tool types from the skill	Mentions 'free-tools skill' but no specific tool types from skill document referenced in output	1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	2	FAIL	Applies ideation framework to validate	Mentions 'Score your idea on the evaluation framework' but does not apply any framework	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	3	FAIL	Discusses lead capture gating strategy	Mentions 'How to gate it for maximum conversions' in Next Steps but provides no gating strategy discussion	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	4	FAIL	Addresses build vs buy decision	Asks about 'Technical Resources' and 'no-code options' but does not address build vs buy decision	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	Mentions 'Feature scope - What inputs/outputs for an MVP' but provides no MVP scope recommendation	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	6	FAIL	Discusses SEO considerations	Mentions 'SEO Potential' in table but does not discuss SEO considerations in detail	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	7	FAIL	References evaluation scorecard	Mentions 'evaluation framework' but does not reference a specific evaluation scorecard	2	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	5	FAIL	Provides 5-8 ideas	Model provided 15 ideas, which exceeds the 5-8 range requirement.	3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	2	FAIL	Investigates SEO strategy for the tool	Mentions 'SEO Competition' as a challenge but only suggests generic tactics like 'Build 10-20 backlinks' without investigating actual SEO strategy for the tool	4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'This is a clear use of the free-tools skill since they're talking about a free marketing tool' - explicitly frames as free tool strategy, not page CRO	6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	2	FAIL	References or defers to cro skill	Model says 'Let me provide comprehensive guidance based on the free-tools skill framework' - references free-tools skill, not cro skill	6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides full CRO guidance including 'Landing page optimization (CRO focus)', 'Lead Capture Strategy', 'Above the Fold' sections using free tool context	6	6

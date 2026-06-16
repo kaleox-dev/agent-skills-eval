@@ -1,0 +1,84 @@
+
+[1m▶ copywriting[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Rewrite this headline: 'An Innovative AI-Powered Platform for Streamlined Business Operations' — it's for a B2B SaaS tool that helps small businesses manage invoicing and payments.
+    [90moutput:[0m  The original headline is a classic example of the "corporate buzzword salad" problem. It uses five vague buzzwords ("Innovative," "AI-Powered," "Platform," "Streamlined," "Business Operations") but t…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    10.7s · 13751 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write copy for our About page. We're a 3-person startup that built a developer tool for database migrations. Founded because we kept losing data during migrations at our last jobs. Tone should be pro…
+    [90moutput:[0m  To write the most compelling About page for you, I need to fill in a few specific details. The "founder story" is the strongest asset here, but it needs to be anchored by your specific product identi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+    14.3s · 14121 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    i need copy for my pricing page. we have three plans: starter ($29/mo), pro ($79/mo), business ($199/mo). it's a social media scheduling tool for marketers
+    [90moutput:[0m  To write high-converting pricing page copy, I need to bridge the gap between the plan names/prices and the specific value provided at each tier. Since I don't have your exact feature breakdown, I hav…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The output begins with 'To write high-converting pricing page copy, I need to bridge the gap...', which is formal, instructional AI language rather than casual phrasing. No casual tone is evident in …
+    16.6s · 14351 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write homepage copy for a SaaS tool that automates employee onboarding. Target audience is HR directors at mid-size companies (200-2000 employees). Main differentiator is that it integrates with all …
+    [90moutput:[0m  Here is the homepage copy for your SaaS onboarding tool. **Assumed Product Name:** OnboardFlow **Tone:** Professional, efficient, empathetic to HR pain, but confident and direct. **Primary CTA:** Sta…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. The output is raw text, not a file named product-marketing.md.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides 2-3 headline alternatives with rationale
+         [90mevidence:[0m Only one headline ('Complete new hire onboarding in 2 days, not 2 weeks.') is provided with rationale. No alternatives are listed.
+    18.7s · 14563 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Can you improve this CTA? We currently have 'Learn More' on our feature page for our analytics dashboard product.
+    [90moutput:[0m  To give you the best recommendation, I need to know what happens when they click. "Learn More" is weak because it’s vague—it doesn’t tell the user *what* they are learning more about or *what* they g…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Considers CTA hierarchy (primary vs secondary)
+         [90mevidence:[0m The output lists a primary suggestion followed by 'Alternatives', but does not explicitly define a visual or functional hierarchy (e.g., primary button vs secondary link) for these specific CTAs. It …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests complementary CTAs
+         [90mevidence:[0m The output suggests alternatives to replace 'Learn More' based on different end-goals (demo, trial, pricing). It does not suggest a set of complementary CTAs to appear together (e.g., a primary CTA f…
+    5.5s · 13175 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Review this copy and tell me what's wrong: 'We are extremely excited to announce our revolutionary, cutting-edge platform that will totally transform how businesses optimize their workflows! Sign up …
+    [90moutput:[0m  This copy is a textbook example of **all the things you should avoid** in conversion copywriting. It violates almost every principle in the skill guidelines. Here is the breakdown of what is wrong, f…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    8.9s · 13608 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write me a 5-email welcome sequence for new trial users of our project management tool.
+    [90moutput:[0m  To write a high-converting welcome sequence, I need to know a little more about your specific product and audience. The copy below is a **strong foundational template** based on best practices for Sa…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to emails skill
+         [90mevidence:[0m Model output contains no reference to an 'email skill', 'emails tool', or any specific named capability for emails. It simply provides the content directly.
+    17.6s · 14548 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 85.7%[0m  [90m· 13.19s avg · 14017 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-642/benchmark.json[0m
+{
+  "passed": 44,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "copywriting",
+      "slug": "copywriting",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.88,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-642/benchmark.json"
+    }
+  ],
+  "iteration": 642,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-642",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-642/report/index.html"
+}

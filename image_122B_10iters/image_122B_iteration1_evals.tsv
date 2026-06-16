@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	2	FAIL	Recommends AI generation for one-off hero	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	3	FAIL	Proposes visual metaphor for topic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	4	FAIL	Specifies 1200x630 dimensions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	5	FAIL	Recommends Flux, Gemini, or Ideogram	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	6	FAIL	Provides structured prompt	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.3s	11154	7	FAIL	Mentions WebP optimization	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text) and a list of Assertions. * Output Form…	1	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	3	FAIL	Recommends real screenshots at 2x resolution	User-facing response does not specify 2x resolution	2	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	5	FAIL	Suggests specific screenshot tools	Only mentions image generation tools (Gemini, Flux, Ideogram), not screenshot tools	2	1
+ab-testing	eval-2	with_skill	FAIL	9.1s	11060	6	FAIL	Notes this as a common mistake	Thinking section says 'common request' but not 'common mistake' in user output	2	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	1	FAIL	Specifies 1500x500 dimensions	Dimensions not mentioned in user-facing output. Internal thought mentions '1500x500 pixels' but not in actual response.	3	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	2	FAIL	Warns about avatar overlap area	No avatar overlap warning in user-facing output. Internal thought notes 'partially obscured by avatar' but not communicated to user.	3	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	3	FAIL	Recommends minimal text	No text minimization recommendation found in output.	3	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	4	FAIL	Suggests Canva or Figma over AI	Output mentions 'Canva/Figma' as an option alongside AI, not explicitly suggesting them over AI.	3	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	5	FAIL	Mentions Ideogram for text-heavy designs	Output says 'using Ideogram for text rendering' but does not specify 'text-heavy designs'.	3	1
+ab-testing	eval-3	with_skill	FAIL	7.0s	10898	6	FAIL	Recommends testing at display size	No mention of testing at display size in output.	3	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	11123	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	11123	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	11123	3	FAIL	Notes Instagram 4:5 variant	No 4:5 variant mentioned; only 1:1 and 9:16 ratios shown for Instagram	4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	11123	4	FAIL	Suggests programmatic text overlays for variants	No mention of programmatic text overlays in output	4	1
+ab-testing	eval-4	with_skill	FAIL	9.7s	11123	5	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.0s	11264	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	4	FAIL	Lists required og:image meta tags	No og:image meta tags listed in output	6	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	5	FAIL	Specifies 1200x630 dimensions	No image dimensions specified in output	6	1
+ab-testing	eval-6	with_skill	FAIL	7.1s	10994	6	FAIL	Notes this is best for high-volume blogs	No explicit statement that this is best for high-volume blogs	6	1

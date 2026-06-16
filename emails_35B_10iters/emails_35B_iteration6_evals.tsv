@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	1	FAIL	Checks for product-marketing.md	No output files were captured. The assertion requires a specific file check which is missing.	1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	8	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	18.8s	20347	9	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	1	FAIL	Creates 6-8 email lead nurture sequence	Model explicitly states 'Proposed Sequence Structure (5-Email Lead Nurture)' and outlines only 5 emails.	2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	5	FAIL	Each email has clear subject line and single CTA	Subject lines are provided for all 5 emails. However, specific CTAs are not explicitly stated for Emails 1-4 (e.g., 'Click here to read more', 'Reply with questions'), though implied; only Email 5 ha…	2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	6	FAIL	Gradually increases commitment asks	Emails 1-4 do not have explicit commitment asks defined in the text (e.g., no specific click targets or low-friction steps listed for each). Only Email 5 has a high-commitment ask. The lack of explic…	2	6
+ab-testing	eval-2	with_skill	FAIL	8.8s	19348	7	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	1	FAIL	Triggers on casual phrasing	The model output does not contain any casual phrasing (e.g., 'hey', 'what's up', or informal slang). It responds with a formal, structured diagnostic report. There is no evidence of triggering on cas…	3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	15.3s	20008	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	6	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	13.4s	19817	7	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.8s	19219	6	FAIL	Recommends behavior triggers with time-based fallbacks	The model states 'Instead of strict days, consider sending... only when they fail...'. It recommends behavior triggers *instead* of strict days ('> Time-Based'), but does not explicitly specify a tim…	5	6
+ab-testing	eval-6	with_skill	FAIL	8.9s	19378	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	8.9s	19378	2	FAIL	References or defers to onboarding skill	The model does not reference any specific 'onboarding skill' or tool. It acts as a general consultant, asking questions like 'Please answer these questions so I can design the right strategy' without…	6	6
+ab-testing	eval-6	with_skill	FAIL	8.9s	19378	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	8.9s	19378	4	PASS			6	6

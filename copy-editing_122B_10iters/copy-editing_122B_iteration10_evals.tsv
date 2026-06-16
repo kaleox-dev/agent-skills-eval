@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output; model only analyzed provided copy without file references.	1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.9s	15222	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	2	FAIL	Flags 'click here' and 'learn more' as weak	Flags 'Click here' but does not specifically flag 'learn more' as weak	2	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.4s	14766	6	FAIL	Keeps response concise for a quick edit	Response is lengthy with multiple sections, tables, detailed analysis - not concise for a quick edit	2	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	1	FAIL	Triggers on casual phrasing	Model identifies corporate speak and wordy phrases, not casual phrasing. No mention of casual/informal language issues.	3	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	18.0s	15277	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.1s	14946	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	13.9s	14908	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	14358	1	FAIL	Recognizes this as writing new copy, not editing existing copy	judge returned unparseable response: The user wants me to grade a model's response against 4 assertions. I need to create a strict JSON output with assertion results. Let me analyze each assertion ag…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	14358	2	FAIL	References or defers to copywriting skill	judge returned unparseable response: The user wants me to grade a model's response against 4 assertions. I need to create a strict JSON output with assertion results. Let me analyze each assertion ag…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	14358	3	FAIL	Explains that copy-editing is for improving existing copy	judge returned unparseable response: The user wants me to grade a model's response against 4 assertions. I need to create a strict JSON output with assertion results. Let me analyze each assertion ag…	6	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	14358	4	FAIL	Does not attempt to write full page copy from scratch	judge returned unparseable response: The user wants me to grade a model's response against 4 assertions. I need to create a strict JSON output with assertion results. Let me analyze each assertion ag…	6	10

@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	1	FAIL	Checks for product-marketing.md	Model mentions 'look for .agents/product-marketing.md or similar' in planning but no evidence of actually checking this file in output	1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	2	FAIL	Identifies page type as landing page	User provided 'SaaS landing page' context; model did not independently identify page type in analysis	1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	8	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	9	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	16437	10	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	7	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	16098	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing in output. Model simply states 'The user is saying their homepage isn't converting' without identifying phrasing style.	3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	5	FAIL	Applies CRO Analysis Framework	No CRO Analysis Framework mentioned or applied. Model only asks questions without demonstrating framework usage.	3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	6	FAIL	Addresses serving multiple audiences	No mention of multiple audiences, segments, or personas in output.	3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	7	FAIL	Addresses clear paths for different visitor intents	No discussion of visitor intent paths or multiple conversion paths in output.	3	2
+ab-testing	eval-3	with_skill	FAIL	7.1s	15099	8	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	1	FAIL	Applies Blog Post CRO framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	2	FAIL	Recommends contextual CTAs matching content	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	3	FAIL	Recommends inline CTAs at natural stopping points	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	4	FAIL	Suggests specific CTA placements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	5	FAIL	Suggests testing different CTA formats	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-4	with_skill	FAIL	24.7s	16546	6	FAIL	Cross-references copywriting or related skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	4	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	6	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	7	FAIL	Provides fixes organized by impact	No fixes provided; model states 'Once you share the page content, I can do a full CRO audit with specific recommendations' - no actual fixes in output	5	2
+ab-testing	eval-5	with_skill	FAIL	8.4s	15226	8	FAIL	Recommends reverting high-risk changes	No reversion recommendations made; model only asks for page content before providing recommendations	5	2
+ab-testing	eval-6	with_skill	FAIL	5.8s	15000	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.8s	15000	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.8s	15000	3	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	1	FAIL	Applies Feature Page CRO framework	Model output only asks for page content: 'I need to ask them to provide the page content or URL so I can actually analyze it.' No CRO framework applied.	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	2	FAIL	Connects features to benefits	No features or benefits analyzed. Output states: 'I don't have the actual page content to analyze!'	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	3	FAIL	Suggests use cases and examples	No use cases or examples provided in output. Only mentions 'I'll analyze it across these dimensions' without actual analysis.	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	4	FAIL	Provides clear path to try/buy	No CTA or trial path discussed. Output says: 'Please share the page and I'll give you a comprehensive CRO audit!'	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	5	FAIL	Notes organic traffic source and search intent match	Output only restates user input: 'Traffic comes from organic search for "API monitoring tools"' without analysis of intent match.	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	6	FAIL	Suggests specific experiment hypotheses	No hypotheses suggested. Output only lists what will be analyzed: 'A/B test ideas specific to your page' without actual ideas.	7	2
+ab-testing	eval-7	with_skill	FAIL	7.2s	15124	7	FAIL	Cross-references ab-testing skill	No ab-testing skill referenced. Output mentions 'A/B test ideas' but does not cross-reference any skill.	7	2

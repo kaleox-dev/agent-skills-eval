@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	1	FAIL	Checks for product-marketing.md	No evidence of file check; output states 'No output files were captured'	1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	8	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.0s	15214	9	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	1	FAIL	Identifies jargon in original headline	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	2	FAIL	Identifies vagueness as a problem	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	3	FAIL	Identifies company language vs customer language issue	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	4	FAIL	Provides 2-3 alternative headlines	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	5	FAIL	Alternatives use headline formulas from the skill	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	6	FAIL	Each alternative includes rationale	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.1s	13627	7	FAIL	Suggests a subheadline	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return strict JSON. Let…	2	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	1	FAIL	Triggers on casual phrasing	No pricing page copy written; output is a question-gathering response	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	2	FAIL	Applies Pricing Page guidance	No pricing page copy produced; only clarification questions asked	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	3	FAIL	Addresses 'which plan is right for me' anxiety	Model states 'Once I have this, I'll write a pricing page' but no copy was written	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	4	FAIL	Makes recommended plan obvious	No pricing page copy written; no plan recommendation made	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	5	FAIL	Writes benefit-oriented feature copy, not just feature names	No feature copy written; only asked for feature differences	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	6	FAIL	Includes page headline	No pricing page copy written; no headline present	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	7	FAIL	CTAs are specific per plan	No pricing page copy written; no CTAs present	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	8	FAIL	Includes FAQ or objection handling copy	No pricing page copy written; no FAQ or objection handling present	3	5
+ab-testing	eval-3	with_skill	FAIL	10.7s	13515	9	FAIL	Provides alternatives for key elements	No pricing page copy written; no alternatives provided	3	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	1	FAIL	Applies About Page guidance	Model output is a questionnaire asking for information, not About page copy: 'I need to gather a bit more context first'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	2	FAIL	Tells the story of why the company exists	No story told. Model asked: 'Can you share a specific moment that sparked the idea?'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	3	FAIL	Connects mission to customer benefit	No mission or benefit stated. Model asked: 'What's the key outcome customers get?'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	4	FAIL	Includes a CTA	No call-to-action in copy. Model only said: 'Once I have this, I'll draft an About page'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	6	FAIL	Uses the founder origin story	No origin story used. Model requested: 'Can you share a specific moment that sparked the idea?'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	7	FAIL	Connects personal pain to customer pain	No pain points connected. Model asked: 'What's the biggest pain they're dealing with?'	4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	8	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	8.3s	13317	9	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	1	FAIL	Identifies 'Learn More' as a weak CTA	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	2	FAIL	Applies the CTA formula from the skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	3	FAIL	Provides 2-3 strong alternatives	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	4	FAIL	Each alternative includes rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	5	FAIL	Considers CTA hierarchy (primary vs secondary)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-5	with_skill	FAIL	10.6s	13457	6	FAIL	Suggests complementary CTAs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13184	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13184	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13184	3	PASS			6	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	1	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	2	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	3	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	4	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	5	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	6	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	15.0s	13879	7	PASS			7	5

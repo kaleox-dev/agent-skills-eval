@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	1	FAIL	Checks for product-marketing.md	Output states 'No output files were captured' and contains no reference to 'product-marketing.md'.	1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	3	FAIL	Recommends tier mix appropriate to AI SaaS	The model does not recommend a tier mix yet; it states 'Once I have your answers, I will generate the full plan' and only outlines future actions like 'Tier Selection'.	1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	4	FAIL	Maps 3-week PH timeline to calendar dates	Output provides a general 3-week strategy (Week 1, Week 2, Week 3) but does not map it to specific calendar dates.	1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	6	FAIL	Recommends 10-in-30 reviews protocol	The output mentions the term '10-in-30' only in the context of a question: 'You need ~20 real users to drive the "10-in-30" review protocol for G2/Capterra', but does not explicitly recommend it as a…	1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	7	FAIL	Sets day-30 and day-90 KPI targets	Output mentions '30 days' regarding reviews but does not set specific KPI targets for day-30 or day-90.	1	3
+ab-testing	eval-1	with_skill	FAIL	8.2s	37778	8	FAIL	References directory-list.md or positioning-variations.md	Output mentions 'Positioning Variants' as a future step but does not reference the specific files 'directory-list.md' or 'positioning-variations.md'.	1	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	1	FAIL	Refuses the request	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	5	FAIL	Specifies variant lengths (tagline, short, long)	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.9s	38131	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.3s	37782	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.3s	37782	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.3s	37782	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.3s	37782	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.3s	37782	5	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	6	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	7	FAIL	Warns against DMing strangers	The model suggests: "DM your email list, Twitter followers, and friends the night before". It does not contain a warning against DMing strangers; in fact, it instructs to DM a list of people (which c…	4	3
+ab-testing	eval-4	with_skill	FAIL	14.3s	38371	8	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	6	FAIL	Warns against paying for G2 plan in year one	No evidence found in text. The model states 'The submission itself is free' but does not warn against paying for a paid G2 plan in year one.	5	3
+ab-testing	eval-5	with_skill	FAIL	8.8s	37849	7	FAIL	Mentions Summer/Fall report cutoffs	No evidence found in text regarding Summer/Fall report cutoffs.	5	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	1	FAIL	Warns against over-indexing on launch spike	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	4	FAIL	Mentions GEO tactics	The output contains no mention of GEO, Generative Engine Optimization, or specific tactics for AI search appearance other than generic "AI Citations" checks in Section 6, but the specific term 'GEO' …	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	5	FAIL	Includes ongoing community distribution	The output focuses on directories, listicles, and Product Hunt. It does not mention ongoing distribution to communities like Reddit, Indie Hackers, or Discord beyond a one-time cross-post of a recap.	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	6	FAIL	Recommends tracking weekly KPIs	Section 6 lists metrics to track (DR, Referring Domains) but does not specify a *weekly* frequency. It mentions "Quarterly" verification and "first 90 days" targets.	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	38045	7	PASS			6	3

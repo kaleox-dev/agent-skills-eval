@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	1	FAIL	Checks for product-marketing.md	Model states: 'I don't see any file system access in this context' - no actual file check performed	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	3	FAIL	Includes TL;DR comparison section	No TL;DR section present in output - only mentioned in 'What I'll Create' plan	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	4	FAIL	Includes feature comparison table	No comparison table included in output - only referenced in future deliverables	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	5	FAIL	Includes pricing comparison	Pricing mentioned as context but no actual comparison table/section present	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	6	FAIL	Includes 'who it's best for' per alternative	No alternative-specific recommendations present in output	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	7	FAIL	Positions user's product prominently with differentiators	User's product not positioned in output - only placeholder mentioned	1	4
+ab-testing	eval-1	with_skill	FAIL	13.8s	13015	8	FAIL	Addresses SEO for target keyword	SEO mentioned in plan but no actual meta tags/URL structure implemented	1	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	29.4s	14299	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	1	FAIL	Triggers on casual phrasing	Output is formal question-based format, no casual phrasing detected.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	2	FAIL	Identifies as singular alternative format	Output mentions 'Format 1 competitor alternative page' but does not deliver singular alternative page content.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	3	FAIL	Focuses on user's product as THE alternative	Output asks questions about product rather than positioning it as THE alternative.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	4	FAIL	Includes why people switch from Mailchimp	No switching reasons included; model asks 'What are the most common reasons e-commerce brands switch from Mailchimp to you?' instead.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	5	FAIL	Highlights e-commerce-specific advantages	No e-commerce advantages highlighted; model asks for them in questions section.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	6	FAIL	Includes feature and pricing comparison	No comparison tables or pricing data included in output.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	7	FAIL	Includes migration guide	No migration guide present; model only asks about migration support.	3	4
+ab-testing	eval-3	with_skill	FAIL	7.4s	12443	8	FAIL	Optimizes for singular keyword	No keyword optimization evident; output is question-based inquiry.	3	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	39.1s	15089	7	FAIL	Suggests monetization approach	No monetization strategy mentioned - output focuses on neutral third-party review content without affiliate links, ad placement, or conversion tactics	4	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	4	FAIL	Addresses internal linking between comparison pages	Only mentions 'Internal linking strategy' as a future deliverable, no actual linking guidance provided in output	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	5	FAIL	Recommends research process for competitive data	No research process outlined; only asks questions about competitors without systematic methodology	5	4
+ab-testing	eval-5	with_skill	FAIL	12.2s	12852	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	10.3s	12700	1	FAIL	Recognizes this as internal sales enablement material	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 3 assertions and return STRICT JSON only with no markdown…	6	4
+ab-testing	eval-6	with_skill	FAIL	10.3s	12700	2	FAIL	References or defers to sales-enablement skill	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 3 assertions and return STRICT JSON only with no markdown…	6	4
+ab-testing	eval-6	with_skill	FAIL	10.3s	12700	3	FAIL	Does not attempt to create internal battle card using public comparison page patterns	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 3 assertions and return STRICT JSON only with no markdown…	6	4

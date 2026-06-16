@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; only asks clarifying questions about image requirements	1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	2	FAIL	Recommends AI generation for one-off hero	Output asks about 'one-off or template' but does not explicitly recommend AI generation for one-off hero; only offers to generate or provide prompts after gathering more info	1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	3	FAIL	Proposes visual metaphor for topic	No visual metaphor proposed; only lists style options (photorealistic, illustrative, abstract) without concrete metaphor for email deliverability topic	1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	6	FAIL	Provides structured prompt	No structured prompt provided; output states 'I'll craft a targeted prompt' but has not yet done so, only asking clarifying questions first	1	3
+ab-testing	eval-1	with_skill	FAIL	8.1s	11009	7	FAIL	Mentions WebP optimization	No mention of WebP; only asks 'Web optimization needed?' as a general question without specifying WebP	1	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	3	FAIL	Recommends real screenshots at 2x resolution	2x resolution not mentioned in final output	2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	5	FAIL	Suggests specific screenshot tools	No specific screenshot tools mentioned	2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11324	6	FAIL	Notes this as a common mistake	Common mistake not explicitly noted in final output	2	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	3	FAIL	Recommends minimal text	No explicit recommendation about text quantity	3	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	4	FAIL	Suggests Canva or Figma over AI	Presented as optional choice ('if you prefer'), not a recommendation over AI	3	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.0s	10845	6	FAIL	Recommends testing at display size	No mention of testing at actual display size	3	3
+ab-testing	eval-4	with_skill	FAIL	11.0s	11265	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.0s	11265	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.0s	11265	3	FAIL	Notes Instagram 4:5 variant	No mention of Instagram 4:5 (1080×1350) variant in output. Only 1:1 and 9:16 Instagram sizes listed.	4	3
+ab-testing	eval-4	with_skill	FAIL	11.0s	11265	4	FAIL	Suggests programmatic text overlays for variants	No mention of programmatic text overlays. Only mentions manual 'adjust cropping/text visibility' in step 4.	4	3
+ab-testing	eval-4	with_skill	FAIL	11.0s	11265	5	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	1	FAIL	Recommends WebP as default	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	2	FAIL	Mentions JPEG/PNG fallback strategy	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	3	FAIL	Lists optimization checklist items	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	4	FAIL	Mentions lazy loading	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	5	FAIL	Mentions explicit dimensions to prevent CLS	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-5	with_skill	FAIL	14.1s	11532	6	FAIL	Provides command line tool example	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return STRICT JSON only. Let …	5	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	4	FAIL	Lists required og:image meta tags	No og:image meta tags listed in output	6	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	5	FAIL	Specifies 1200x630 dimensions	No dimensions specified in output	6	3
+ab-testing	eval-6	with_skill	FAIL	8.6s	11117	6	FAIL	Notes this is best for high-volume blogs	Does not explicitly state this approach is best for high-volume blogs	6	3

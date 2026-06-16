@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	1	FAIL	Checks for product-marketing.md	Model output does not reference 'product-marketing.md' nor indicate its creation. Output files section explicitly states: 'No output files were captured.'	1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Model output shows no file system interaction or path references. The 'Output files' section confirms: 'No output files were captured.'	1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	5	FAIL	Produces _summary.md after individual profiles	While the output contains a '# Competitive Landscape Summary' section, the 'Output files' section states 'No output files were captured'. Therefore, a file named '_summary.md' was not produced.	1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	44.7s	17761	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	3.8s	12928	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	3.8s	12928	2	FAIL	Suggests top 5 based on relevance	judge did not provide concrete evidence	2	6
+ab-testing	eval-2	with_skill	FAIL	3.8s	12928	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	3.8s	12928	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	3.8s	12928	5	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	5.4s	13105	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.4s	13105	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.4s	13105	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.4s	13105	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	5.4s	13105	5	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	5.8s	13136	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	5.8s	13136	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	5.8s	13136	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	5.8s	13136	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	5.8s	13136	5	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	1.6s	12725	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	1.6s	12725	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	1.6s	12725	3	FAIL	Explains what's missing without SEO data	The output acknowledges skipping DataForSEO but does not explicitly explain or detail what specific information or analysis is missing from the report due to the absence of SEO data. It only asks for…	5	6
+ab-testing	eval-5	with_skill	FAIL	1.6s	12725	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	1.6s	12725	5	FAIL	Still saves raw data	Output files section states: 'No output files were captured.' The model has not yet saved any raw data as it is still in the input gathering phase.	5	6
+ab-testing	eval-6	with_skill	FAIL	5.0s	13087	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.0s	13087	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.0s	13087	3	FAIL	Mentions checking traffic/backlink profile against claim scale	No mention of traffic, backlink profiles, or claim scale analysis in the provided output. Only mentions checking named logos via search and review sites.	6	6
+ab-testing	eval-6	with_skill	FAIL	5.0s	13087	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.0s	13087	5	FAIL	Notes including date pulled	No mention of including a 'date pulled' or timestamp in the verification process or output.	6	6

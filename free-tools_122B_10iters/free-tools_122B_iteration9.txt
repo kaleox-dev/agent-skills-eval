@@ -1,0 +1,105 @@
+
+[1m▶ free-tools[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We want to build a free tool to drive leads for our SEO software. We're thinking about an SEO audit tool or a keyword research tool. Which would be better and how should we approach it?
+    [90moutput:[0m  The user is asking about building a free tool for their SEO software company to drive leads. They're considering two options: an SEO audit tool or a keyword research tool. This is a perfect use case …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model states 'I don't have access to their file system, so I'll need to ask clarifying questions' - did not check or reference product-marketing.md
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies evaluation scorecard to compare options
+         [90mevidence:[0m Model mentions 'use the evaluation framework from the skill' but no scorecard is actually applied - only a comparison table is provided
+      [31m#3[0m [31mFAIL[0m [90m—[0m References tool types from the skill
+         [90mevidence:[0m Model mentions 'free-tools skill' but does not reference specific tool types from the skill documentation
+    12.2s · 5236 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    I want to build a free ROI calculator for our HR software. Users input their company size and current processes, and it shows how much time and money they'd save.
+    [90moutput:[0m  The user wants to build a free ROI calculator for their HR software. This is a classic "engineering as marketing" use case - they want to create a free tool that generates leads and demonstrates valu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    21.3s · 5981 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    give me some ideas for free tools we could build. we sell email marketing software for e-commerce brands.
+    [90moutput:[0m  The user is asking for free tool ideas for their email marketing software company that serves e-commerce brands. This is a perfect use case for the free-tools skill I have access to. Let me think abo…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No mention of casual phrasing trigger in output. Model states: 'The user is asking for free tool ideas for their email marketing software company that serves e-commerce brands.'
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides 5-8 ideas
+         [90mevidence:[0m Model provides 12+ tool ideas (numbered 1-12 in main list), exceeding the 5-8 range requirement.
+    20.7s · 5930 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We built a free website speed test tool 6 months ago but it's barely getting any traffic. What went wrong and how do we fix it?
+    [90moutput:[0m  The user is asking about a free website speed test tool they built 6 months ago that isn't getting traffic. This falls squarely within the free-tools skill - they're asking about evaluating and fixin…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Diagnoses potential traffic issues
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Investigates SEO strategy for the tool
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Assesses competitive landscape
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Questions unique value proposition
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies engineering as marketing principles
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends recovery plan with specific actions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    18.1s · 5730 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    Should we gate our free tool behind an email capture or make it completely free? We want leads but don't want to kill usage.
+    [90moutput:[0m  This is a classic question about free tool strategy and lead capture. The user is asking about the gating strategy for their free tool - whether to require email capture (gated) or make it completely…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies lead capture gating strategy
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Presents gating spectrum (ungated to fully gated)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends partial gating approach
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Discusses tradeoffs of each approach
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides specific gating recommendations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses SEO impact of gating decisions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…
+    15.7s · 5522 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    How do I optimize the landing page for our free tool to get more signups? The tool itself is great but nobody finds it.
+    [90moutput:[0m  The user is asking about optimizing a landing page for their free tool to get more signups. They mention the tool is great but nobody finds it. This is about: 1. Landing page optimization (CRO - conv…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as page CRO, not free tool strategy
+         [90mevidence:[0m Model states: 'This relates to the free-tools skill I have access to' and provides extensive free-tool traffic strategies alongside CRO advice
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m Model mentions 'there's also a mention of a "cro" skill in the related skills section' but then says 'I should work with what I have' - does not defer to cro skill
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full page CRO using free tool strategy patterns
+         [90mevidence:[0m Model provides extensive CRO advice (landing page optimization, conversion rate optimization) combined with free tool traffic patterns in same response
+    17.6s · 5684 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 42.3%[0m  [90m· 17.60s avg · 5681 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-739/benchmark.json[0m
+{
+  "passed": 17,
+  "failed": 20,
+  "skills": [
+    {
+      "skill": "free-tools",
+      "slug": "free-tools",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.4594594594594595,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-739/benchmark.json"
+    }
+  ],
+  "iteration": 739,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-739",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-739/report/index.html"
+}

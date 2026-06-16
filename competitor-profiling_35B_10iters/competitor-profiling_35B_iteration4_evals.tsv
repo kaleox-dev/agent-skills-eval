@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	4	FAIL	Produces individual profile per competitor	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	5	FAIL	Produces _summary.md after individual profiles	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	6	FAIL	Uses consistent metrics across competitors	judge did not provide concrete evidence	1	4
+ab-testing	eval-1	with_skill	FAIL	3.6s	12932	7	FAIL	Parallelizes scraping when possible	judge did not provide concrete evidence	1	4
+ab-testing	eval-2	with_skill	FAIL	4.0s	12945	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	4.0s	12945	2	FAIL	Suggests top 5 based on relevance	The model suggests 'top 3–5 most critical competitors' but does not determine or list 'top 5 based on relevance'; it asks the user to identify the critical ones or provides generic options without re…	2	4
+ab-testing	eval-2	with_skill	FAIL	4.0s	12945	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	4.0s	12945	4	FAIL	Explains quick scan vs deep profile difference	The model labels 'Quick Scan' as focusing on 'positioning, pricing, and basic SEO metrics' but does not explicitly explain the technical or methodological difference between 'Quick Scan' and 'Deep Pr…	2	4
+ab-testing	eval-2	with_skill	FAIL	4.0s	12945	5	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	4.7s	13025	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.7s	13025	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.7s	13025	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.7s	13025	4	FAIL	Says to save raw data to new date folder	No mention of saving to a 'new date folder'; mentions updating existing profile and appending sections.	3	4
+ab-testing	eval-3	with_skill	FAIL	4.7s	13025	5	FAIL	Says never overwrite prior date's data	No explicit instruction to 'never overwrite prior date's data'; suggests updating the existing profile and appending a changelog.	3	4
+ab-testing	eval-4	with_skill	FAIL	4.9s	13027	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	4.9s	13027	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	4.9s	13027	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	4.9s	13027	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	4.9s	13027	5	FAIL	References Firecrawl Map then Scrape workflow	The output mentions 'I'll map their site, scrape the key pages' but does not explicitly name 'Firecrawl', nor does it describe a specific 'Map then Scrape' workflow mechanism.	4	4
+ab-testing	eval-5	with_skill	FAIL	2.3s	12812	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	2.3s	12812	2	FAIL	Runs Phase 1 and Phase 3	Model asks for input URLs and context rather than executing the pipeline. It outlines a plan (Map, Scrape, Synthesize) but has not actually performed the execution or generation of Phase 1 (data gath…	5	4
+ab-testing	eval-5	with_skill	FAIL	2.3s	12812	3	FAIL	Explains what's missing without SEO data	The model does not explain what specific insights or sections are missing due to the lack of SEO data; it simply reframes the request as a 'Quick Scan' and lists steps it *will* take.	5	4
+ab-testing	eval-5	with_skill	FAIL	2.3s	12812	4	FAIL	Flags SEO section as skipped, not blank	No output file or generated report was provided to demonstrate how the SEO section is flagged. The model is in a conversational state asking for input.	5	4
+ab-testing	eval-5	with_skill	FAIL	2.3s	12812	5	FAIL	Still saves raw data	"No output files were captured."	5	4
+ab-testing	eval-6	with_skill	FAIL	6.2s	13257	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	6.2s	13257	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	6.2s	13257	3	FAIL	Mentions checking traffic/backlink profile against claim scale	The model suggests checking LinkedIn, pitch decks, reverse-image search, and review sites, but makes no mention of checking website traffic metrics or backlink profiles.	6	4
+ab-testing	eval-6	with_skill	FAIL	6.2s	13257	4	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	6.2s	13257	5	PASS			6	4

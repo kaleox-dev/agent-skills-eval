@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	1	FAIL	Checks for product-marketing.md	Agent states: 'I won't have access to `.agents/product-marketing.md` in this conversation, so I need to ask directly.' No file check performed.	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	2	FAIL	Establishes 3-5 content pillars	No content pillars established. Agent only promises: 'I'll build you a complete content strategy including: 3-5 content pillars'	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	3	FAIL	Maps content by buyer stage (awareness through implementation)	No buyer stage mapping provided. Only mentioned as future output: 'Buyer journey mapping (awareness → consideration → decision)'	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	4	FAIL	Includes keyword research by buyer stage	No keyword research included in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	5	FAIL	Recommends mix of searchable and shareable content	No content type recommendations made. Only promises: 'Priority topic ideas with searchable vs. shareable classification'	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	6	FAIL	Uses prioritization scoring framework	No prioritization scoring framework used. Only mentioned as future output.	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	7	FAIL	Provides publishing cadence or calendar	No publishing cadence or calendar provided in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	10.0s	9587	8	FAIL	Recommends appropriate starting content types	No specific starting content types recommended. Output only contains questions to gather context.	1	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	2	FAIL	Recommends content audit for existing posts	Model only lists 'Content Audit Framework' as a future deliverable, does not recommend audit action	2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	3	FAIL	Introduces content pillars and topical clustering	Model lists '3-5 Content Pillars' and 'Topic Cluster Map' as future deliverables without introducing actual pillars or clusters	2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	4	FAIL	Identifies hub-and-spoke opportunities	Model identifies lack of hub-and-spoke as problem, but does not identify specific opportunities	2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	5	FAIL	Recommends update, consolidate, or retire decisions	Model mentions 'What to update, consolidate, delete, or create next' as future deliverable without actual recommendations	2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	6	FAIL	Uses prioritization framework	Model mentions 'Prioritized Content Plan' as deliverable but does not demonstrate or use a prioritization framework	2	6
+ab-testing	eval-2	with_skill	FAIL	10.9s	9647	7	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	1	FAIL	Triggers on casual phrasing	Model response uses professional tone without explicit acknowledgment of casual language in user query.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	2	FAIL	Recommends content types for developer audience	Model asks about existing formats but does not recommend specific content types tailored to developers.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	3	FAIL	Emphasizes technical depth and practical value	No mention of technical depth or practical value in the output.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	4	FAIL	Notes developers prefer substance over marketing	Output mentions avoiding generic advice but does not explicitly state developer preferences.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	5	FAIL	Suggests content pillars for developer tool	Content pillars are promised as future output but not actually suggested in this response.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	6	FAIL	Uses ideation sources framework	Model lists context categories but does not reference an explicit ideation sources framework.	3	6
+ab-testing	eval-3	with_skill	FAIL	7.9s	9392	7	FAIL	Mentions developer community channels	No reference to GitHub, Stack Overflow, or other developer community channels.	3	6
+ab-testing	eval-4	with_skill	FAIL	13.6s	9876	1	FAIL	Applies prioritization scoring framework with weights	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	6
+ab-testing	eval-4	with_skill	FAIL	13.6s	9876	2	FAIL	Explains each scoring dimension	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	6
+ab-testing	eval-4	with_skill	FAIL	13.6s	9876	3	FAIL	Recommends focusing on high-impact, lower-effort first	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	6
+ab-testing	eval-4	with_skill	FAIL	13.6s	9876	4	FAIL	Considers buyer stage distribution	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	6
+ab-testing	eval-4	with_skill	FAIL	13.6s	9876	5	FAIL	Provides practical workflow for limited resources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	3	FAIL	Identifies 8-15 supporting spoke articles	35 spoke articles identified across 7 clusters (5 spokes per cluster), exceeds 8-15 range requirement	5	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	28.1s	10987	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	10.5s	9622	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.5s	9622	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.5s	9622	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	10.5s	9622	4	PASS			6	6

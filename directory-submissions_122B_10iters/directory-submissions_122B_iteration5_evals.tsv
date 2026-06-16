@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	1	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	2	FAIL	Runs Phase 0 readiness assessment	Model asks 9 questions but does not run an assessment; states 'Before I can create the right strategy, I need to understand your product and launch readiness'	1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	4	FAIL	Maps 3-week PH timeline to calendar dates	Timeline shows 'Week -3 to -2 (Days 1–7)' with no actual calendar dates	1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	6	FAIL	Recommends 10-in-30 reviews protocol	Only promised as deliverable '7. ✅ Reviews 10-in-30 plan' without actual protocol recommendation	1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	7	FAIL	Sets day-30 and day-90 KPI targets	No day-30 or day-90 KPI targets present in output	1	5
+ab-testing	eval-1	with_skill	FAIL	12.2s	37914	8	FAIL	References directory-list.md or positioning-variations.md	Neither file referenced in output	1	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	1	FAIL	Refuses the request	Model answered the question with 'No' but did not refuse to engage. It provided a helpful explanation rather than refusing the user's query.	2	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	2	FAIL	Cites Rule 3 (positioning varies by directory type)	No mention of 'Rule 3' in the output. Model references positioning-variations.md but does not cite a specific rule number.	2	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	5	FAIL	Specifies variant lengths (tagline, short, long)	No mention of tagline, short, or long variants. Model mentions '150 words' but does not specify length variants.	2	5
+ab-testing	eval-2	with_skill	FAIL	10.7s	37800	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	13.9s	38057	1	FAIL	Refuses the service	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	3	5
+ab-testing	eval-3	with_skill	FAIL	13.9s	38057	2	FAIL	Cites 'don't pay for submission services' rule	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	3	5
+ab-testing	eval-3	with_skill	FAIL	13.9s	38057	3	FAIL	Warns about low-DR spam directories	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	3	5
+ab-testing	eval-3	with_skill	FAIL	13.9s	38057	4	FAIL	Warns about Google spam penalty risk	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	3	5
+ab-testing	eval-3	with_skill	FAIL	13.9s	38057	5	FAIL	Recommends manual submission to quality directories	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	3	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	7	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	23.9s	38859	8	FAIL	Includes post-launch recap and cross-posting	Cross-posting mentioned ('Share the link to: Twitter/X thread, LinkedIn...'), but no explicit post-launch recap section or guidance	4	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	6	FAIL	Warns against paying for G2 plan in year one	No explicit warning against paying for G2 plan in year one; only states 'Consider paid G2 plan ($2,999+/year)' at 50+ reviews	5	5
+ab-testing	eval-5	with_skill	FAIL	14.9s	38138	7	FAIL	Mentions Summer/Fall report cutoffs	No mention of Summer/Fall report cutoffs in output	5	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	1	FAIL	Warns against over-indexing on launch spike	No explicit warning about 'launch spike' found. Output mentions 'Don't treat directories as entire GTM' but not launch spike specifically.	6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	4	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	5	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	6	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	30.5s	39512	7	PASS			6	5

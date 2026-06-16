@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	1	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	2	FAIL	Identifies as plural alternatives format	The model did not generate the plural alternatives page; it asked for clarification on 'Other Alternatives' (Q10) instead of producing the content.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	3	FAIL	Includes TL;DR comparison section	No TL;DR section was generated. The model stated: 'Once you provide this information, I will generate: 1. A Centralized Competitor Data Block... TL;DR Summary'.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	4	FAIL	Includes feature comparison table	No feature comparison table was included in the output.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	5	FAIL	Includes pricing comparison	No pricing comparison was included. The model asks for pricing details in Q2 and Q7.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	6	FAIL	Includes 'who it's best for' per alternative	No 'who it's best for' content was included. The model promises to generate 'Who Should Choose What' after receiving more info.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	7	FAIL	Positions user's product prominently with differentiators	No positioning or differentiators were provided. The model asks for 'Key Differentiators' in Q3.	1	7
+ab-testing	eval-1	with_skill	FAIL	8.1s	12736	8	FAIL	Addresses SEO for target keyword	No SEO content was generated. The model states it will generate 'SEO Meta Tags' in the future.	1	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	19.2s	13856	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	1	FAIL	Triggers on casual phrasing	The output is a structured questionnaire requesting product details (name, strengths, pricing), not a triggered response or copy based on casual phrasing.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	2	FAIL	Identifies as singular alternative format	The output does not contain any identified alternative format; it is a request for input data.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	3	FAIL	Focuses on user's product as THE alternative	The model asks 'What is your product name?' indicating it does not yet know or focus on the specific product as THE alternative.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	4	FAIL	Includes why people switch from Mailchimp	The model asks the user for this information ('What is the #1 reason e-commerce brands switch from Mailchimp to you?') rather than including it.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	5	FAIL	Highlights e-commerce-specific advantages	The model asks for e-commerce strengths ('What are your top 3 strengths specifically vs. Mailchimp?') rather than highlighting them.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	6	FAIL	Includes feature and pricing comparison	The output contains questions about features and pricing to be answered by the user, not an actual comparison.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	7	FAIL	Includes migration guide	The model asks about the migration process ('What is the migration process like?') but does not provide a guide.	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12800	8	FAIL	Optimizes for singular keyword	No keyword optimization or SEO content generation occurred; only a data gathering prompt was returned.	3	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	25.3s	14510	7	FAIL	Suggests monetization approach	The output provides pricing info for the competitors (Notion/Coda) but contains no text suggesting how the review site itself should monetize (e.g., affiliate links, ad placements).	4	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	12.5s	13157	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	11.9s	13116	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	11.9s	13116	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	11.9s	13116	3	PASS			6	7

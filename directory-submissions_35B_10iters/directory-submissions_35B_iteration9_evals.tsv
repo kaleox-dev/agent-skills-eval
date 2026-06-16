@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	1	FAIL	Checks for product-marketing.md	No output files were captured; the text mentions generating files but does not produce them.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	2	FAIL	Runs Phase 0 readiness assessment	The model outputs a 'Readiness Checklist' for the user to fill out but explicitly states: 'Once you provide these answers, I will generate: 1. Readiness Assessment'. It does not run the assessment it…	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	3	FAIL	Recommends tier mix appropriate to AI SaaS	No tier recommendations are provided. The model defers this until user input is received.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	4	FAIL	Maps 3-week PH timeline to calendar dates	The model mentions 'Product Hunt Timeline (Mapped to your 3-week launch)' as a future output item to be generated after user input.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	5	FAIL	Names Product Hunt as anchor	Product Hunt is not named as the anchor in the output. It is only mentioned in the list of future deliverables.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	6	FAIL	Recommends 10-in-30 reviews protocol	The model references a 'Reviews 10-in-30 Plan' as a future output, not a current recommendation.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	7	FAIL	Sets day-30 and day-90 KPI targets	No KPI targets are set in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.2s	37761	8	FAIL	References directory-list.md or positioning-variations.md	No output files were captured, and no file references exist in the text.	1	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	5	FAIL	Specifies variant lengths (tagline, short, long)	Model mentions 'Generate 5–7 Variants' and 'Customize Taglines', but does not explicitly specify lengths such as 'tagline, short, long' as distinct length categories. It only specifies 'taglines unde…	2	9
+ab-testing	eval-2	with_skill	FAIL	6.6s	37607	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	37516	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	37516	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	37516	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	37516	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	5.7s	37516	5	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	6	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	7	FAIL	Warns against DMing strangers	The output does not contain any warning against DMing strangers. It mentions 'Thank Your Supporters' via DM, but does not advise against cold DMing or warn about the risks.	4	9
+ab-testing	eval-4	with_skill	FAIL	18.7s	38850	8	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	6	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	10.6s	38042	7	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	1	FAIL	Warns against over-indexing on launch spike	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	4	FAIL	Mentions GEO tactics	The output mentions 'AI citations' and 'AI engines' (Section 6), but uses the term 'GEO' (Generative Engine Optimization) zero times. While the tactics (schema, stats) align with GEO, the specific te…	6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	5	FAIL	Includes ongoing community distribution	The output recommends submitting to 'Tier 8 Profile Platforms' (GitHub, Dev.to, etc.) and posting content there (Section 4). However, it frames this as 'Profile Platforms' for 'dofollow backlinks', n…	6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	6	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	38278	7	PASS			6	9

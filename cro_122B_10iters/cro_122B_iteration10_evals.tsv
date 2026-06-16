@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	1	FAIL	Checks for product-marketing.md	Model mentions checking for '.agents/product-marketing.md' in thinking but does not actually check or reference the file in output	1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	8	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	9	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	18.0s	16046	10	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	23.1s	16432	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	6	FAIL	Addresses serving multiple audiences	No mention of multiple audiences or audience segmentation in output	3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	7	FAIL	Addresses clear paths for different visitor intents	No mention of different visitor intents or navigation paths for them in output	3	10
+ab-testing	eval-3	with_skill	FAIL	8.9s	15251	8	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	26.6s	16717	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	1	FAIL	Approaches as diagnostic audit	Model asks for URL and information rather than performing audit: 'I don't see the page you're referring to. To give you a proper analysis, I need to see...'	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	2	FAIL	Checks for lost trust signals	No actual checking performed - only lists 'Removed social proof' as potential issue in table without examining page	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	3	FAIL	Checks for weakened value proposition	No actual checking performed - only mentions 'Weaker headline' in generic table without examining page	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	4	FAIL	Checks for CTA hierarchy changes	No actual checking performed - only mentions 'CTA buried or changed' in generic table without examining page	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	5	FAIL	Checks for added friction	No actual checking performed - only mentions 'More form fields' in generic table without examining page	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	6	FAIL	Checks for broken message match with traffic sources	No actual checking performed - only mentions 'Message mismatch' in generic table without examining page	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	7	FAIL	Provides fixes organized by impact	No specific fixes provided - model states 'Once I can see the page, I'll give you a specific diagnosis' indicating no fixes were given	5	10
+ab-testing	eval-5	with_skill	FAIL	8.7s	15250	8	FAIL	Recommends reverting high-risk changes	No recommendation to revert changes made - model only asks for more information	5	10
+ab-testing	eval-6	with_skill	FAIL	14.1s	15700	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	14.1s	15700	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	14.1s	15700	3	FAIL	Does not attempt full cro analysis on a form	Provides full CRO analysis including: recommendations table, field optimization checklist, form structure options (single-step and multi-step), trust & friction reduction tips, experiments to run, an…	6	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	1	FAIL	Applies Feature Page CRO framework	Model states 'I need to ask them to provide the page content/URL' - no CRO analysis performed	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	2	FAIL	Connects features to benefits	No features or benefits identified - 'I don't see the page URL or content in your message'	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	3	FAIL	Suggests use cases and examples	No use cases or examples suggested - model only asks for page content	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	4	FAIL	Provides clear path to try/buy	No conversion path provided - 'I need to ask them to share the page'	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	5	FAIL	Notes organic traffic source and search intent match	Acknowledges traffic source but no intent analysis - 'Traffic source: Organic search for API monitoring tools' noted but not evaluated	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	6	FAIL	Suggests specific experiment hypotheses	No hypotheses suggested - model only provides a checklist of what it will check	7	10
+ab-testing	eval-7	with_skill	FAIL	8.2s	15092	7	FAIL	Cross-references ab-testing skill	No ab-testing skill cross-reference - model doesn't mention A/B testing	7	10

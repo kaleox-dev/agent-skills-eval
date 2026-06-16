@@ -1,0 +1,89 @@
+
+[1m▶ free-tools[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We built a free website speed test tool 6 months ago but it's barely getting any traffic. What went wrong and how do we fix it?
+    [90moutput:[0m  This is a common scenario. Building a tool is only 20% of the work; distribution and positioning are the other 80%. Since your tool is a "tester/validator" type (specifically a speed test), you are c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies engineering as marketing principles
+         [90mevidence:[0m The output does not mention building tools/marketing assets that are themselves marketing channels (e.g., interactive calculators embedded in blog posts, viral loops, or using the product's technical…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends recovery plan with specific actions
+         [90mevidence:[0m The output does not provide a recovery plan. It explicitly states: 'I need to understand your specific context. Please answer the following questions' and 'Reply with the answers... and I will help y…
+    8.8s · 5153 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We want to build a free tool to drive leads for our SEO software. We're thinking about an SEO audit tool or a keyword research tool. Which would be better and how should we approach it?
+    [90moutput:[0m  To give you the most accurate recommendation, I need to understand your specific business context first. As noted in the guidelines, **engineering as marketing** requires the tool to be adjacent to y…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies evaluation scorecard to compare options
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Discusses lead capture gating strategy
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses MVP scope
+         [90mevidence:[0m judge did not provide concrete evidence
+    8.6s · 5139 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    I want to build a free ROI calculator for our HR software. Users input their company size and current processes, and it shows how much time and money they'd save.
+    [90moutput:[0m  This is a classic and high-potential "Engineering as Marketing" use case. ROI calculators are effective because they quantify the pain point your software solves, making the value proposition concret…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses build vs buy decision
+         [90mevidence:[0m Section 'Next Steps' lists 'No-Code (Fastest)' and 'Custom (Best for SEO/Branding)' as build methods. It does not discuss purchasing an existing off-the-shelf solution or 'buying' a calculator tool, …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Discusses SEO considerations
+         [90mevidence:[0m The text mentions 'SEO traffic' in Option 3 and 'Custom (Best for SEO/Branding)' in Next Steps, but provides no substantive discussion, strategy, or analysis regarding SEO (e.g., keyword strategy, te…
+    11.3s · 5421 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    give me some ideas for free tools we could build. we sell email marketing software for e-commerce brands.
+    [90moutput:[0m  To provide the most relevant ideas, I’ll assume the standard context for an e-commerce email marketing platform (like Klaviyo, Omnisend, or Attentive). If your product is different (e.g., focused on …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    12.0s · 5461 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    How do I optimize the landing page for our free tool to get more signups? The tool itself is great but nobody finds it.
+    [90moutput:[0m  This sounds like a classic "Engineering as Marketing" challenge: you’ve built the asset, but you’re missing the acquisition and conversion layers. Since you didn’t provide specific details about your…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as page CRO, not free tool strategy
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full page CRO using free tool strategy patterns
+         [90mevidence:[0m judge did not provide concrete evidence
+    9.9s · 5317 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    Should we gate our free tool behind an email capture or make it completely free? We want leads but don't want to kill usage.
+    [90moutput:[0m  This is the classic **"Engineering as Marketing" tension**. You want the SEO/brand benefits of usage (ungated) but the revenue benefit of leads (gated). The answer is rarely binary. The best strategy…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.9s · 5641 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 65.3%[0m  [90m· 10.56s avg · 5355 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-746/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "free-tools",
+      "slug": "free-tools",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6756756756756757,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-746/benchmark.json"
+    }
+  ],
+  "iteration": 746,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-746",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-746/report/index.html"
+}

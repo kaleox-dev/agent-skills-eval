@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	1	FAIL	Checks for product-marketing.md	Model output explicitly asks 'What is your product?' and states 'If you don't have a product marketing context document available...', indicating the file was not found or processed. Output files: No…	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Model halted at the information gathering stage, asking for product context. 'No output files were captured.' No evidence of scraping, SEO data retrieval, or synthesis occurred.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Asserted in output: 'No output files were captured.' No file system interactions or directory creation visible.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	4	FAIL	Produces individual profile per competitor	Asserted in output: 'No output files were captured.' Model requested context before proceeding to profile competitors.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	5	FAIL	Produces _summary.md after individual profiles	Asserted in output: 'No output files were captured.' No summary document was generated.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	6	FAIL	Uses consistent metrics across competitors	No competitor analysis was performed due to lack of input context. No metrics were defined or extracted.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.6s	12821	7	FAIL	Parallelizes scraping when possible	No scraping was performed. Model output: 'No output files were captured.' The process did not initiate.	1	5
+ab-testing	eval-2	with_skill	FAIL	2.8s	12817	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	2.8s	12817	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	2.8s	12817	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	2.8s	12817	4	FAIL	Explains quick scan vs deep profile difference	The model mentions 'Quick Scan (homepage + pricing + basic SEO) or Deep Profile (all pages, reviews, full SEO/backlink analysis)' but frames this as a question for user preference rather than an expl…	2	5
+ab-testing	eval-2	with_skill	FAIL	2.8s	12817	5	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	6.4s	13203	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	6.4s	13203	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	6.4s	13203	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	6.4s	13203	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to new date folders; only mentions archiving elsewhere or having access to old folder	3	5
+ab-testing	eval-3	with_skill	FAIL	6.4s	13203	5	FAIL	Says never overwrite prior date's data	No explicit instruction to 'never overwrite'; advises appending a changelog but does not use this specific constraint language	3	5
+ab-testing	eval-4	with_skill	FAIL	4.5s	12988	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	4.5s	12988	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	4.5s	12988	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	4.5s	12988	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	4.5s	12988	5	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	2.1s	12782	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	2.1s	12782	2	FAIL	Runs Phase 1 and Phase 3	Model output indicates it 'focus[es] on a Quick Scan using Firecrawl... To proceed, I need a few details... Once you provide the URLs, I'll generate the profiles'. It has not run or completed any pha…	5	5
+ab-testing	eval-5	with_skill	FAIL	2.1s	12782	3	FAIL	Explains what's missing without SEO data	The model output does not explain what is missing; it simply states it will skip DataForSEO and asks for competitor URLs to proceed.	5	5
+ab-testing	eval-5	with_skill	FAIL	2.1s	12782	4	FAIL	Flags SEO section as skipped, not blank	No output file was generated ('No output files were captured'), so no section (skipped or otherwise) exists in the output.	5	5
+ab-testing	eval-5	with_skill	FAIL	2.1s	12782	5	FAIL	Still saves raw data	Model output: 'No output files were captured.'	5	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13330	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13330	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13330	3	FAIL	Mentions checking traffic/backlink profile against claim scale	The output mentions checking 'LinkedIn', 'case studies page', 'paid ads and sales collateral', but contains no mention of traffic metrics, backlink profiles, or checking claim scale against these web…	6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13330	4	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.8s	13330	5	FAIL	Notes including date pulled	The output does not mention including a date pulled or timestamp for when the information was retrieved.	6	5

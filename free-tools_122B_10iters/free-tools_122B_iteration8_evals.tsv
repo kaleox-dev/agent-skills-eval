@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	2	FAIL	Applies evaluation scorecard to compare options	Model provides scorecard template for user to fill out ('Rate each 1-5 for both options') but does not actually apply scores to compare options	1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	7	FAIL	References evaluation scorecard	No explicit reference to evaluation scorecard found in output; mentions 'validation' and 'checks several boxes' but no scorecard reference	2	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output; model treats request as formal business inquiry ('The user is asking for free tool ideas for their business')	3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	5	FAIL	Provides 5-8 ideas	Provides 13 ideas (numbered 1-13), exceeds 5-8 range	3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	1	FAIL	Recognizes this as page CRO, not free tool strategy	"This falls squarely within the free-tools skill since they're asking about a free tool for marketing purposes" - explicitly frames as free-tool strategy, not CRO specifically	6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	2	FAIL	References or defers to cro skill	No explicit deference to a 'cro skill' mentioned; only discusses CRO concepts generically without skill reference	6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Provides comprehensive CRO checklist and full optimization recommendations: "Landing Page Optimization (CRO)" with complete table and strategies	6	8

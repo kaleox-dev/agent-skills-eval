@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	1	FAIL	Checks for product-marketing.md	Model output states 'No output files were captured' and provides no file path or content.	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Model output asks for clarification ('What is your product?') and explicitly states 'No output files were captured,' indicating no phases were run.	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Model output states 'No output files were captured' and did not generate any directory structure or files.	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	4	FAIL	Produces individual profile per competitor	Model output indicates no files were produced ('No output files were captured').	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	5	FAIL	Produces _summary.md after individual profiles	Model output states 'No output files were captured' and no summary content is present.	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	6	FAIL	Uses consistent metrics across competitors	No data was generated; therefore, no metrics were used or compared.	1	10
+ab-testing	eval-1	with_skill	FAIL	2.0s	12749	7	FAIL	Parallelizes scraping when possible	No scraping occurred as indicated by 'No output files were captured' and the request for further context.	1	10
+ab-testing	eval-2	with_skill	FAIL	3.1s	12844	1	FAIL	Recommends prioritization over profiling all 12	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	3.1s	12844	2	FAIL	Suggests top 5 based on relevance	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	3.1s	12844	3	FAIL	Defaults to quick scan for large list	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	3.1s	12844	4	FAIL	Explains quick scan vs deep profile difference	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	3.1s	12844	5	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	4.1s	12960	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	4.1s	12960	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	4.1s	12960	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	4.1s	12960	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to a new date folder found in the output.	3	10
+ab-testing	eval-3	with_skill	FAIL	4.1s	12960	5	FAIL	Says never overwrite prior date's data	No mention of never overwriting prior date's data found in the output.	3	10
+ab-testing	eval-4	with_skill	FAIL	4.5s	12981	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	4.5s	12981	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	4.5s	12981	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	4.5s	12981	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	4.5s	12981	5	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	2.2s	12789	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	2.2s	12789	2	FAIL	Runs Phase 1 and Phase 3	The model output is a conversational response asking for input URLs ('Please provide the competitor URLs'). It did not execute or demonstrate running Phase 1 (Scraping) or Phase 3 (Analysis) as the e…	5	10
+ab-testing	eval-5	with_skill	FAIL	2.2s	12789	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	2.2s	12789	4	FAIL	Flags SEO section as skipped, not blank	No output files were captured, so there is no generated document/section to verify how the SEO section was flagged.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.2s	12789	5	FAIL	Still saves raw data	'No output files were captured.' indicates no data was saved.	5	10
+ab-testing	eval-6	with_skill	FAIL	6.9s	13347	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.9s	13347	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.9s	13347	3	FAIL	Mentions checking traffic/backlink profile against claim scale	The model mentions checking 'G2/Capterra reviews', 'LinkedIn', 'Press coverage', and 'Direct outreach'. It does not mention checking 'traffic' or 'backlink profile' anywhere in the text.	6	10
+ab-testing	eval-6	with_skill	FAIL	6.9s	13347	4	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.9s	13347	5	FAIL	Notes including date pulled	The model mentions that 'Many logo walls are never updated' and discusses 'Recency', but it does not explicitly instruct the user to include a 'date pulled' timestamp in their final output or verific…	6	10

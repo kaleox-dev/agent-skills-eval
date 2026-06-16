@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	2	FAIL	Writes full page copy organized by section	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	3	FAIL	Includes Headline, Subheadline, and CTA above the fold	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	4	FAIL	Includes Social Proof, Problem/Pain, Solution/Benefits, How It Works sections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	5	FAIL	Uses the '2 weeks to 2 days' specificity in copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	6	FAIL	CTAs are action-oriented, not generic	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	7	FAIL	Provides 2-3 headline alternatives with rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	8	FAIL	Includes annotations explaining copy choices	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	25.1s	14725	9	FAIL	Includes meta content (SEO title and meta description)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	11.6s	13573	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	1	FAIL	Triggers on casual phrasing	Output asks clarifying questions instead of triggering on casual phrasing; no evidence of this behavior	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	2	FAIL	Applies Pricing Page guidance	Model states 'I need more context to write effective pricing page copy' and asks questions instead of applying guidance to write copy	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	3	FAIL	Addresses 'which plan is right for me' anxiety	No pricing page copy written; model only mentions 'Hero section that addresses pricing anxiety' as future intent	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	4	FAIL	Makes recommended plan obvious	No pricing page copy written; no plan recommendation made	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	5	FAIL	Writes benefit-oriented feature copy, not just feature names	No pricing page copy written; only lists questions to ask user	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	6	FAIL	Includes page headline	No pricing page copy written; no headline present in output	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	7	FAIL	CTAs are specific per plan	No pricing page copy written; no CTAs present in output	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	8	FAIL	Includes FAQ or objection handling copy	No pricing page copy written; model only mentions 'FAQ to handle objections' as future intent	3	3
+ab-testing	eval-3	with_skill	FAIL	6.4s	13153	9	FAIL	Provides alternatives for key elements	No pricing page copy written; no alternatives provided	3	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	1	FAIL	Applies About Page guidance	No About page copy was written; model only asked clarifying questions	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	2	FAIL	Tells the story of why the company exists	No copy written; founder origin story not included in output	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	3	FAIL	Connects mission to customer benefit	No copy written; no mission-customer benefit connection present	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	4	FAIL	Includes a CTA	No CTA in output; model asked 'What's the ONE thing you want visitors to do?' instead of including one	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	5	FAIL	Adapts tone to professional but human	No About page copy written to evaluate tone; only questions were asked	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	6	FAIL	Uses the founder origin story	No copy written; founder story not included in output	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	7	FAIL	Connects personal pain to customer pain	No copy written; pain points not connected in output	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	8	FAIL	Uses active voice	No About page copy written to evaluate voice	4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	13420	9	FAIL	Avoids corporate jargon	No About page copy written to evaluate jargon usage	4	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	5	FAIL	Considers CTA hierarchy (primary vs secondary)	No mention of primary vs secondary CTA hierarchy in the output	5	3
+ab-testing	eval-5	with_skill	FAIL	8.4s	13279	6	FAIL	Suggests complementary CTAs	Alternatives provided as a list rather than complementary pairings (e.g., primary + secondary CTA combination)	5	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	13292	1	FAIL	Recognizes this as email sequence work	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against specific assertions based on an evaluation run for agentskills.io. * Input: …	6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	13292	2	FAIL	References or defers to emails skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against specific assertions based on an evaluation run for agentskills.io. * Input: …	6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	13292	3	FAIL	Does not attempt to write a full email sequence using page copywriting patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against specific assertions based on an evaluation run for agentskills.io. * Input: …	6	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	1	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	2	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	3	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	4	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	5	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	6	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	13.2s	13721	7	PASS			7	3

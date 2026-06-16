@@ -1,0 +1,101 @@
+
+[1m▶ competitor-profiling[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  To get started, I need a bit more context to ensure the profiles are useful for your sales enablement and positioning goals. 1. **What is your product?** (A brief description of what you do, who you …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model output states 'No output files were captured' and provides no file path or content.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs all three phases (scraping, SEO data, synthesis)
+         [90mevidence:[0m Model output asks for clarification ('What is your product?') and explicitly states 'No output files were captured,' indicating no phases were run.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Saves raw data to competitor-profiles/raw/ with date subfolder
+         [90mevidence:[0m Model output states 'No output files were captured' and did not generate any directory structure or files.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces individual profile per competitor
+         [90mevidence:[0m Model output indicates no files were produced ('No output files were captured').
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces _summary.md after individual profiles
+         [90mevidence:[0m Model output states 'No output files were captured' and no summary content is present.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses consistent metrics across competitors
+         [90mevidence:[0m No data was generated; therefore, no metrics were used or compared.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Parallelizes scraping when possible
+         [90mevidence:[0m No scraping occurred as indicated by 'No output files were captured' and the request for further context.
+    2.0s · 12749 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  Given that Notion is a high-growth SaaS company, **you should definitely update it** rather than start fresh. Four months is significant in their space — they frequently update pricing, launch new fe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Says to save raw data to new date folder
+         [90mevidence:[0m No mention of saving raw data to a new date folder found in the output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Says never overwrite prior date's data
+         [90mevidence:[0m No mention of never overwriting prior date's data found in the output.
+    4.1s · 12960 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    We have 12 competitors. Profile all of them.
+    [90moutput:[0m  I can help you profile all 12 competitors. However, I need some initial information to get started: 1. **Competitor URLs** — Please provide the list of 12 competitor website URLs you want me to profi…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends prioritization over profiling all 12
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Suggests top 5 based on relevance
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Defaults to quick scan for large list
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Explains quick scan vs deep profile difference
+         [90mevidence:[0m judge did not provide concrete evidence
+    3.1s · 12844 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    What pages should I scrape for a competitor profile?
+    [90moutput:[0m  For a **deep profile**, here are the key pages you should scrape for each competitor, in order of priority: ## Essential Pages (Scrape for Every Profile) 1. **Homepage** — Positioning, value proposit…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    4.5s · 12981 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    I want a profile but I don't care about SEO data — just pricing, positioning, and customer logos. Can you skip the DataForSEO calls?
+    [90moutput:[0m  I can absolutely do that. I will focus purely on **pricing, positioning, and customer logos** by scraping the relevant pages and skipping all SEO/backlink traffic data. To get started, I need: 1. **C…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs Phase 1 and Phase 3
+         [90mevidence:[0m The model output is a conversational response asking for input URLs ('Please provide the competitor URLs'). It did not execute or demonstrate running Phase 1 (Scraping) or Phase 3 (Analysis) as the e…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Flags SEO section as skipped, not blank
+         [90mevidence:[0m No output files were captured, so there is no generated document/section to verify how the SEO section was flagged.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Still saves raw data
+         [90mevidence:[0m 'No output files were captured.' indicates no data was saved.
+    2.2s · 12789 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="competitor-profiling"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor re…
+    [90muser:[0m    Should I trust the customer logo wall on the competitor's homepage as evidence of who their customers are?
+    [90moutput:[0m  Short answer: **Treat it as a claim, not verified evidence.** It's a strong signal, but logo walls are low-cost marketing assets that require verification. ## What to Trust and What to Skeptic ### ✅ …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions checking traffic/backlink profile against claim scale
+         [90mevidence:[0m The model mentions checking 'G2/Capterra reviews', 'LinkedIn', 'Press coverage', and 'Direct outreach'. It does not mention checking 'traffic' or 'backlink profile' anywhere in the text.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes including date pulled
+         [90mevidence:[0m The model mentions that 'Many logo walls are never updated' and discusses 'Recency', but it does not explicitly instruct the user to include a 'date pulled' timestamp in their final output or verific…
+    6.9s · 13347 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 46.7%[0m  [90m· 3.79s avg · 12945 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-570/benchmark.json[0m
+{
+  "passed": 14,
+  "failed": 18,
+  "skills": [
+    {
+      "skill": "competitor-profiling",
+      "slug": "competitor-profiling",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.4375,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-570/benchmark.json"
+    }
+  ],
+  "iteration": 570,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-570",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-570/report/index.html"
+}

@@ -1,0 +1,371 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	1	FAIL	Checks for product-marketing.md	I don't see any product marketing context file mentioned, so I'll proceed with general best practices from the skill documentation.	1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	3	FAIL	References tool types from the skill	Mentions 'free-tools skill I have access to' but does not reference specific tool types from the skill documentation	1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.5s	6001	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	2	FAIL	Applies ideation framework to validate	No explicit ideation framework applied; only asks clarifying questions	2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	3	FAIL	Discusses lead capture gating strategy	Mentions 'Lead capture strategy (gating approach)' as future topic but does not discuss it	2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	4	FAIL	Addresses build vs buy decision	Asks about dev resources vs no-code but does not address build vs buy decision	2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	Lists 'Specific calculator design and inputs' as future help but provides no MVP recommendation	2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	6	FAIL	Discusses SEO considerations	Mentions 'SEO and keyword strategy' as future topic but provides no SEO discussion	2	1
+ab-testing	eval-2	with_skill	FAIL	9.4s	4927	7	FAIL	References evaluation scorecard	No mention of evaluation scorecard in output	2	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model states 'The user is asking for free tool ideas for their business' without noting casual language.	3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	5	FAIL	Provides 5-8 ideas	Model provides 10 ideas total (3 top recommendations + 7 additional options numbered 4-10). 10 exceeds the 5-8 range.	3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	17.7s	5609	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	3	FAIL	Assesses competitive landscape	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	4	FAIL	Questions unique value proposition	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-4	with_skill	FAIL	20.1s	5802	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	4	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.0s	5003	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	17.6s	5769	1	FAIL	Recognizes this as page CRO, not free tool strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	1
+ab-testing	eval-6	with_skill	FAIL	17.6s	5769	2	FAIL	References or defers to cro skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	1
+ab-testing	eval-6	with_skill	FAIL	17.6s	5769	3	FAIL	May provide free-tool-specific context	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	1
+ab-testing	eval-6	with_skill	FAIL	17.6s	5769	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	1
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	1	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	13.6s	5346	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	2	FAIL	Applies ideation framework to validate	No ideation framework applied; only clarifying questions asked	2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	4	FAIL	Addresses build vs buy decision	Build options listed as future discussion point, not addressed in output	2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	6	FAIL	Discusses SEO considerations	SEO strategy listed as next step, no actual SEO discussion in output	2	2
+ab-testing	eval-2	with_skill	FAIL	9.8s	5024	7	FAIL	References evaluation scorecard	No evaluation scorecard referenced in output	2	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	2	FAIL	Applies ideation framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	3	FAIL	Generates ideas across multiple tool types	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	4	FAIL	Ideas are relevant to email marketing + e-commerce	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	5	FAIL	Provides 5-8 ideas	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	6	FAIL	Briefly evaluates each idea	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-3	with_skill	FAIL	19.1s	5788	7	FAIL	Recommends top 2-3 to pursue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	3	FAIL	Assesses competitive landscape	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	4	FAIL	Questions unique value proposition	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-4	with_skill	FAIL	21.0s	5939	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	4	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	5604	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	13.2s	5274	1	FAIL	Recognizes this as page CRO, not free tool strategy	This is clearly a free-tool related question... I should use the free-tools skill framework to guide my response.	6	2
+ab-testing	eval-6	with_skill	FAIL	13.2s	5274	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	13.2s	5274	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	13.2s	5274	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Provides extensive CRO recommendations: Above-the-Fold Essentials, Value Proposition Clarity, Lead Capture Strategy, Trust Elements, Page Speed & UX while using free-tools skill framework	6	2
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	1	FAIL	Checks for product-marketing.md	Model says 'I don't see a product-marketing-context file mentioned' - does not specifically check for product-marketing.md	1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	3	FAIL	References tool types from the skill	Only mentions 'free-tools skill I have access to' - no specific tool types referenced	1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	4	FAIL	Recommends one option with clear rationale	Model asks 'Which direction feels more aligned with your product and resources right now?' - no definitive recommendation made	1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	5	FAIL	Discusses lead capture gating strategy	Mentions 'Plan lead capture strategy (gating approach)' as future help, but does not discuss gating strategy	1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	6	FAIL	Addresses MVP scope	Mentions 'Define an MVP scope that's realistic' as future help, but does not address MVP scope	1	3
+ab-testing	eval-1	with_skill	FAIL	11.2s	5143	7	FAIL	Provides implementation recommendations	Provides conditional strategic guidance ('SEO Audit Tool tends to work better if...') but no concrete implementation recommendations	1	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	2	FAIL	Applies ideation framework to validate	No specific ideation framework named or applied in output	2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	MVP Scope lists inputs and outputs but formula is missing	2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	8.9s	4949	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	1	FAIL	Triggers on casual phrasing	No evidence of casual language detection in output; response begins with internal reasoning 'The user is asking for free tool ideas for their business'	3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.9s	5431	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	19.5s	5822	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	10.9s	5110	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	18.3s	5835	1	FAIL	Recognizes this as page CRO, not free tool strategy	"Model states: ""Based on the free-tools skill I have, this falls squarely within my expertise"" and ""This is a classic free tool/lead generation optimization question"" - treats as free tool strategy, n…"	6	3
+ab-testing	eval-6	with_skill	FAIL	18.3s	5835	2	FAIL	References or defers to cro skill	"Model references ""free-tools skill"" not ""cro skill"" - states ""Based on the free-tools skill I have"" with no mention of a cro skill"	6	3
+ab-testing	eval-6	with_skill	FAIL	18.3s	5835	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	18.3s	5835	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	"Model provides comprehensive CRO advice including ""Above the Fold Essentials"" table, ""Conversion Best Practices for Tools"", ""Lead Capture Strategy"" with gating options - attempts full page CRO within…"	6	3
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in output	1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	17.9s	5731	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	18.6s	5775	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. User input was a direct business request, not casual phrasing.	3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	5	FAIL	Provides 5-8 ideas	Output provides 15+ ideas (4 calculators + 4 analyzers + 4 generators + 3 assessments), exceeding the 5-8 range.	3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	5828	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	3	FAIL	Assesses competitive landscape	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	4	FAIL	Questions unique value proposition	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-4	with_skill	FAIL	22.0s	6034	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	12.0s	5205	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	17.6s	5703	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'This falls under the free-tools skill, but specifically touches on: 1. Landing page optimization (CRO)'	6	4
+ab-testing	eval-6	with_skill	FAIL	17.6s	5703	2	FAIL	References or defers to cro skill	No mention of 'cro skill' in output; model references 'free-tools skill' instead	6	4
+ab-testing	eval-6	with_skill	FAIL	17.6s	5703	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	17.6s	5703	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides CRO advice ('Landing Page Checklist', 'Lead Capture Strategy') framed within 'Free Tool Landing Page Optimization Strategy'	6	4
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	1	FAIL	Checks for product-marketing.md	I should also check if there's a product-marketing context file I should read first, but since I can't actually access files, I'll work with what I have and ask clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	7	FAIL	References evaluation scorecard	No mention of 'evaluation scorecard' - only 'Success Metrics to Track' table which is not a scorecard reference	2	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; model responds directly without acknowledging phrasing style	3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	5	FAIL	Provides 5-8 ideas	Model provided 15+ ideas: 'Here are 15+ ideas organized by type' - exceeds 5-8 range requirement	3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	3	FAIL	Assesses competitive landscape	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	4	FAIL	Questions unique value proposition	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	1	FAIL	Recognizes this as page CRO, not free tool strategy	This falls under the free-tools skill, specifically around the CRO and SEO aspects - Model treats it as free-tools skill, not page CRO	6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	2	FAIL	References or defers to cro skill	No mention of 'cro skill' - only references 'free-tools skill' framework	6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Let me structure this based on the free-tools skill framework - Model uses free-tool patterns for CRO advice	6	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to their specific product marketing context file' - no check performed	1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	3	FAIL	References tool types from the skill	Mentions 'free-tools skill' but no specific tool types from skill document referenced in output	1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	17.0s	5641	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	2	FAIL	Applies ideation framework to validate	Mentions 'Score your idea on the evaluation framework' but does not apply any framework	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	3	FAIL	Discusses lead capture gating strategy	Mentions 'How to gate it for maximum conversions' in Next Steps but provides no gating strategy discussion	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	4	FAIL	Addresses build vs buy decision	Asks about 'Technical Resources' and 'no-code options' but does not address build vs buy decision	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	Mentions 'Feature scope - What inputs/outputs for an MVP' but provides no MVP scope recommendation	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	6	FAIL	Discusses SEO considerations	Mentions 'SEO Potential' in table but does not discuss SEO considerations in detail	2	6
+ab-testing	eval-2	with_skill	FAIL	10.5s	5045	7	FAIL	References evaluation scorecard	Mentions 'evaluation framework' but does not reference a specific evaluation scorecard	2	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	5	FAIL	Provides 5-8 ideas	Model provided 15 ideas, which exceeds the 5-8 range requirement.	3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	20.3s	5892	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	2	FAIL	Investigates SEO strategy for the tool	Mentions 'SEO Competition' as a challenge but only suggests generic tactics like 'Build 10-20 backlinks' without investigating actual SEO strategy for the tool	4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.3s	5491	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.8s	5107	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'This is a clear use of the free-tools skill since they're talking about a free marketing tool' - explicitly frames as free tool strategy, not page CRO	6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	2	FAIL	References or defers to cro skill	Model says 'Let me provide comprehensive guidance based on the free-tools skill framework' - references free-tools skill, not cro skill	6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	16.3s	5568	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides full CRO guidance including 'Landing page optimization (CRO focus)', 'Lead Capture Strategy', 'Above the Fold' sections using free tool context	6	6
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	1	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.2s	5730	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	3	FAIL	Discusses lead capture gating strategy	Only lists 'Gating strategy - How much to show vs. capture' as future help, no actual discussion	2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	4	FAIL	Addresses build vs buy decision	Asks about technical resources but does not address build vs buy decision	2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	Lists 'MVP scope - What to build first' as future help but provides no specific recommendations	2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	6	FAIL	Discusses SEO considerations	Only mentions 'SEO approach - Keywords and landing page structure' as future help, no discussion	2	7
+ab-testing	eval-2	with_skill	FAIL	6.6s	4751	7	FAIL	References evaluation scorecard	No evaluation scorecard referenced in output	2	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	2	FAIL	Applies ideation framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	3	FAIL	Generates ideas across multiple tool types	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	4	FAIL	Ideas are relevant to email marketing + e-commerce	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	5	FAIL	Provides 5-8 ideas	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	6	FAIL	Briefly evaluates each idea	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-3	with_skill	FAIL	17.6s	5669	7	FAIL	Recommends top 2-3 to pursue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	26.8s	6439	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.0s	5120	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	19.5s	5826	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'this falls under the free-tools skill territory' - explicitly identifies as free tool, not CRO	6	7
+ab-testing	eval-6	with_skill	FAIL	19.5s	5826	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	19.5s	5826	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	19.5s	5826	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides full CRO guidance (headlines, lead capture, social proof) while framing entire response as 'free-tools skill territory' and mixing in traffic acquisition patterns	6	7
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	2	FAIL	Applies evaluation scorecard to compare options	Model provides scorecard template for user to fill out ('Rate each 1-5 for both options') but does not actually apply scores to compare options	1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	15.2s	5377	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.9s	5287	7	FAIL	References evaluation scorecard	No explicit reference to evaluation scorecard found in output; mentions 'validation' and 'checks several boxes' but no scorecard reference	2	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output; model treats request as formal business inquiry ('The user is asking for free tool ideas for their business')	3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	5	FAIL	Provides 5-8 ideas	Provides 13 ideas (numbered 1-13), exceeds 5-8 range	3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.9s	5691	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	21.9s	6025	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.9s	5379	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	1	FAIL	Recognizes this as page CRO, not free tool strategy	This falls squarely within the free-tools skill since they're asking about a free tool for marketing purposes - explicitly frames as free-tool strategy, not CRO specifically	6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	2	FAIL	References or defers to cro skill	No explicit deference to a 'cro skill' mentioned; only discusses CRO concepts generically without skill reference	6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	15.1s	5500	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	"Provides comprehensive CRO checklist and full optimization recommendations: ""Landing Page Optimization (CRO)"" with complete table and strategies"	6	8
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to their file system, so I'll need to ask clarifying questions' - did not check or reference product-marketing.md	1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	2	FAIL	Applies evaluation scorecard to compare options	Model mentions 'use the evaluation framework from the skill' but no scorecard is actually applied - only a comparison table is provided	1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	3	FAIL	References tool types from the skill	Model mentions 'free-tools skill' but does not reference specific tool types from the skill documentation	1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	12.2s	5236	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	21.3s	5981	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing trigger in output. Model states: 'The user is asking for free tool ideas for their email marketing software company that serves e-commerce brands.'	3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	5	FAIL	Provides 5-8 ideas	Model provides 12+ tool ideas (numbered 1-12 in main list), exceeding the 5-8 range requirement.	3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	20.7s	5930	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	3	FAIL	Assesses competitive landscape	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	4	FAIL	Questions unique value proposition	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-4	with_skill	FAIL	18.1s	5730	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	1	FAIL	Applies lead capture gating strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	2	FAIL	Presents gating spectrum (ungated to fully gated)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	3	FAIL	Recommends partial gating approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	4	FAIL	Discusses tradeoffs of each approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	5	FAIL	Provides specific gating recommendations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-5	with_skill	FAIL	15.7s	5522	6	FAIL	Addresses SEO impact of gating decisions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Role: Strict JSON-only eval…	5	9
+ab-testing	eval-6	with_skill	FAIL	17.6s	5684	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'This relates to the free-tools skill I have access to' and provides extensive free-tool traffic strategies alongside CRO advice	6	9
+ab-testing	eval-6	with_skill	FAIL	17.6s	5684	2	FAIL	References or defers to cro skill	"Model mentions 'there's also a mention of a ""cro"" skill in the related skills section' but then says 'I should work with what I have' - does not defer to cro skill"	6	9
+ab-testing	eval-6	with_skill	FAIL	17.6s	5684	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	17.6s	5684	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides extensive CRO advice (landing page optimization, conversion rate optimization) combined with free tool traffic patterns in same response	6	9
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to their actual product marketing context file' - did not check or reference the file	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	2	FAIL	Applies evaluation scorecard to compare options	Model describes scorecard framework but does not apply it: 'I'll help you evaluate both options using this scorecard' - no actual scoring performed	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	3	FAIL	References tool types from the skill	Mentions 'free-tools skill I have access to' but does not reference specific tool types from the skill	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	4	FAIL	Recommends one option with clear rationale	No recommendation made: 'Before I recommend which to build and how to approach it, I need to understand your context better'	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	5	FAIL	Discusses lead capture gating strategy	Only mentions as future step: 'Design the lead capture strategy (gating, email flow, conversion)' - no actual discussion	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	6	FAIL	Addresses MVP scope	Only mentions as future step: 'Outline an MVP scope (what to build first, what to skip)' - no actual scope addressed	1	10
+ab-testing	eval-1	with_skill	FAIL	12.6s	5274	7	FAIL	Provides implementation recommendations	No implementation recommendations provided: asks for context first, promises recommendations 'Once you share your context'	1	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	2	FAIL	Applies ideation framework to validate	"Model only mentions ""I should validate their idea"" but no framework is actually applied or demonstrated in output"	2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	5	FAIL	Recommends MVP scope (inputs, outputs, formula)	"Inputs and outputs listed but no formula provided - ""Inputs to consider:"" and ""Outputs to show:"" sections present but formula missing"	2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	6	FAIL	Discusses SEO considerations	"SEO only mentioned as ""Plan the landing page for SEO and conversion"" - no actual SEO strategy or considerations discussed"	2	10
+ab-testing	eval-2	with_skill	FAIL	9.3s	4986	7	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; starts with 'The user is asking for free tool ideas for their business' without referencing casual language trigger.	3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	5	FAIL	Provides 5-8 ideas	Output provides 19 distinct tool ideas (4+4+4+4+3), exceeding the 5-8 range specified.	3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	17.1s	5635	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	5	FAIL	Applies engineering as marketing principles	Model mentions 'free-tools skill' and 'marketing tool' but does not explicitly apply engineering as marketing principles (building free tools as a lead generation/marketing strategy)	4	10
+ab-testing	eval-4	with_skill	FAIL	19.4s	5825	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	15.6s	5546	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	5453	1	FAIL	Recognizes this as page CRO, not free tool strategy	Model states: 'this falls under the free-tools skill but also touches on CRO' - explicitly categorizes as free-tools skill, not CRO	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	5453	2	FAIL	References or defers to cro skill	No mention of 'cro skill' - model references 'free-tools skill' instead	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	5453	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	5453	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	Model provides extensive CRO advice: 'Landing Page Optimization Checklist', 'Above the Fold', 'Below the Fold' sections with full CRO patterns	6	10

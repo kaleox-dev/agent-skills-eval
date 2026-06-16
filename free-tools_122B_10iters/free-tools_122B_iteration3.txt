@@ -1,0 +1,89 @@
+
+[1m▶ free-tools[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    I want to build a free ROI calculator for our HR software. Users input their company size and current processes, and it shows how much time and money they'd save.
+    [90moutput:[0m  The user wants to build a free ROI calculator for their HR software. This is a classic "engineering as marketing" / free tool strategy. Let me help them plan this effectively. First, I should check i…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies ideation framework to validate
+         [90mevidence:[0m No specific ideation framework named or applied in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends MVP scope (inputs, outputs, formula)
+         [90mevidence:[0m MVP Scope lists inputs and outputs but formula is missing
+    8.9s · 4949 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We want to build a free tool to drive leads for our SEO software. We're thinking about an SEO audit tool or a keyword research tool. Which would be better and how should we approach it?
+    [90moutput:[0m  The user is asking about building a free tool for their SEO software company. They're considering two options: an SEO audit tool or a keyword research tool. They want to know which would be better an…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model says 'I don't see a product-marketing-context file mentioned' - does not specifically check for product-marketing.md
+      [31m#3[0m [31mFAIL[0m [90m—[0m References tool types from the skill
+         [90mevidence:[0m Only mentions 'free-tools skill I have access to' - no specific tool types referenced
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends one option with clear rationale
+         [90mevidence:[0m Model asks 'Which direction feels more aligned with your product and resources right now?' - no definitive recommendation made
+      [31m#5[0m [31mFAIL[0m [90m—[0m Discusses lead capture gating strategy
+         [90mevidence:[0m Mentions 'Plan lead capture strategy (gating approach)' as future help, but does not discuss gating strategy
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses MVP scope
+         [90mevidence:[0m Mentions 'Define an MVP scope that's realistic' as future help, but does not address MVP scope
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides implementation recommendations
+         [90mevidence:[0m Provides conditional strategic guidance ('SEO Audit Tool tends to work better if...') but no concrete implementation recommendations
+    11.2s · 5143 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    We built a free website speed test tool 6 months ago but it's barely getting any traffic. What went wrong and how do we fix it?
+    [90moutput:[0m  The user is asking about a free website speed test tool they built 6 months ago that's not getting traffic. This is a classic "engineering as marketing" / free tool strategy problem. I need to help t…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    19.5s · 5822 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    give me some ideas for free tools we could build. we sell email marketing software for e-commerce brands.
+    [90moutput:[0m  The user is asking for free tool ideas for their business - they sell email marketing software for e-commerce brands. This is a perfect use case for the free-tools skill since they want to build some…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual language detection in output; response begins with internal reasoning 'The user is asking for free tool ideas for their business'
+    14.9s · 5431 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    Should we gate our free tool behind an email capture or make it completely free? We want leads but don't want to kill usage.
+    [90moutput:[0m  This is a classic free tool strategy question about gating vs. ungating. The user wants to generate leads but is concerned about killing usage with too much friction. This is a perfect use case for t…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    10.9s · 5110 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="free-tools"> <description>When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user ment…
+    [90muser:[0m    How do I optimize the landing page for our free tool to get more signups? The tool itself is great but nobody finds it.
+    [90moutput:[0m  The user is asking about optimizing their free tool's landing page to get more signups. They mention the tool itself is great but nobody finds it. This is a classic free tool/lead generation optimiza…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as page CRO, not free tool strategy
+         [90mevidence:[0m Model states: "Based on the free-tools skill I have, this falls squarely within my expertise" and "This is a classic free tool/lead generation optimization question" - treats as free tool strategy, n…
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m Model references "free-tools skill" not "cro skill" - states "Based on the free-tools skill I have" with no mention of a cro skill
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full page CRO using free tool strategy patterns
+         [90mevidence:[0m Model provides comprehensive CRO advice including "Above the Fold Essentials" table, "Conversion Best Practices for Tools", "Lead Capture Strategy" with gating options - attempts full page CRO within…
+    18.3s · 5835 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 66.1%[0m  [90m· 13.93s avg · 5382 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-733/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "free-tools",
+      "slug": "free-tools",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6756756756756757,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-733/benchmark.json"
+    }
+  ],
+  "iteration": 733,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-733",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-733/report/index.html"
+}

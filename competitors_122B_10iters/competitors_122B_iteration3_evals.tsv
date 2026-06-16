@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	1	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	3	FAIL	Includes TL;DR comparison section	Output is clarification questions, no TL;DR section present	1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	4	FAIL	Includes feature comparison table	No comparison table in output	1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	5	FAIL	Includes pricing comparison	No pricing comparison in output	1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	6	FAIL	Includes 'who it's best for' per alternative	No alternatives presented with audience guidance	1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	7	FAIL	Positions user's product prominently with differentiators	Output asks questions rather than positioning product	1	3
+ab-testing	eval-1	with_skill	FAIL	13.1s	12932	8	FAIL	Addresses SEO for target keyword	SEO mentioned as future deliverable only, not in output	1	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	1	FAIL	Identifies as 'you vs competitor' format	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	2	FAIL	Includes structured comparison sections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	3	FAIL	Includes feature-by-feature comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	4	FAIL	Includes pricing comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	5	FAIL	Includes TL;DR at the top	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	6	FAIL	Factually accurate about competitor	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	7	FAIL	Strategically positions user's product for SMBs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-2	with_skill	FAIL	48.1s	15811	8	FAIL	Includes migration path or switching section	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a draft comparison page between HubSp…	2	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	2	FAIL	Identifies as singular alternative format	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	3	FAIL	Focuses on user's product as THE alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	4	FAIL	Includes why people switch from Mailchimp	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	5	FAIL	Highlights e-commerce-specific advantages	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	6	FAIL	Includes feature and pricing comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	7	FAIL	Includes migration guide	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	12604	8	FAIL	Optimizes for singular keyword	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	3	FAIL	Includes balanced feature comparison	No feature comparison content provided; model only asked clarification questions	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	4	FAIL	Includes pricing comparison	Model stated 'I don't have current pricing information' - no pricing provided	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	5	FAIL	Includes use case recommendations	No use case recommendations included; model only outlined structure	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	6	FAIL	Addresses SEO considerations	SEO only mentioned as possible goal ('SEO traffic capture'), not addressed in content	4	3
+ab-testing	eval-4	with_skill	FAIL	9.7s	12632	7	FAIL	Suggests monetization approach	Monetization only mentioned as possible goal ('Affiliate conversions'), not suggested	4	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	5	FAIL	Recommends research process for competitive data	Output asks questions about competitive intelligence and mentions 'quarterly pricing checks' for maintenance, but does not recommend a specific research process or methodology for gathering competiti…	5	3
+ab-testing	eval-5	with_skill	FAIL	18.2s	13349	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.2s	12528	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.2s	12528	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.2s	12528	3	PASS			6	3

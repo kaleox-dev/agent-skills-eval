@@ -1,0 +1,62 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	4
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	3.8s	14737	6	FAIL	Asks which deliverable is needed	The model asks for the goal, method of sharing, ICP, and existing themes, but does not explicitly ask which specific deliverable format is required (e.g., 'Do you need a spreadsheet, a slide deck, or…	1	4
+ab-testing	eval-2	with_skill	FAIL	2.6s	14622	1	FAIL	Checks for product-marketing.md	No output files were captured and no file content is present in the model output.	2	4
+ab-testing	eval-2	with_skill	FAIL	2.6s	14622	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	2.6s	14622	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	2.6s	14622	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	2.6s	14622	5	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	4	FAIL	Recommends competitor 4-star reviews for buried complaints	Source text explicitly limits scope to '1-3 star reviews'. There is no mention of analyzing 4-star reviews.	3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	19.6s	16350	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured' and the text content does not contain a file named product-marketing.md.	4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.2s	15733	6	FAIL	Notes minimum data threshold (5-10 data points)	The model output does not mention a minimum data threshold of 5-10 data points. It mentions using 'common, high-confidence patterns' and asks for specific assets but does not specify a quantity of da…	4	4
+ab-testing	eval-5	with_skill	FAIL	7.8s	15184	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	7.8s	15184	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	7.8s	15184	3	FAIL	Warns against treating all tickets as equal signal	The model output does not contain any warning against treating all tickets as equal signal. It lists categories but does not explicitly advise against equal weighting or signal dilution.	5	4
+ab-testing	eval-5	with_skill	FAIL	7.8s	15184	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	7.8s	15184	5	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	2.7s	14661	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	6	4
+ab-testing	eval-6	with_skill	FAIL	2.7s	14661	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	2.7s	14661	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	2.7s	14661	4	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	2.7s	14661	5	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	6.0s	14978	1	FAIL	Checks for product-marketing.md	No output files were captured.	7	4
+ab-testing	eval-7	with_skill	FAIL	6.0s	14978	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	6.0s	14978	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	States 'I'll tell you exactly which subreddits, LinkedIn groups, or G2 competitors to mine' as a conditional future action contingent on user input, but does not currently suggest specific watering h…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.0s	14978	4	FAIL	Plans to extract verbatim language for copy use	Mentions outputting '"money quotes"' but does not explicitly state a plan to extract verbatim language specifically for 'copy use' in the current interaction.	7	4
+ab-testing	eval-7	with_skill	FAIL	6.0s	14978	5	FAIL	Mentions organizing findings into a VOC quote bank	Does not mention 'organizing findings into a VOC quote bank' or any similar structured repository concept.	7	4
+ab-testing	eval-8	with_skill	FAIL	3.5s	14716	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.'	8	4
+ab-testing	eval-8	with_skill	FAIL	3.5s	14716	2	FAIL	Recommends segmenting churn reasons before analyzing	The model asks if segmentation data is available ('Can we segment by plan tier...?') but does not explicitly recommend segmenting churn reasons *before* analysis as a general principle. It offers 'Pe…	8	4
+ab-testing	eval-8	with_skill	FAIL	3.5s	14716	3	FAIL	Warns against averaging across different churn causes	The text contains no mention of 'averaging' or warnings against this statistical practice.	8	4
+ab-testing	eval-8	with_skill	FAIL	3.5s	14716	4	FAIL	Suggests pairing open-ended responses with quantitative data	The text asks for data format ('Raw text responses, CSV columns, NPS scores...') but does not explicitly suggest pairing them together as an analytical strategy.	8	4
+ab-testing	eval-8	with_skill	FAIL	3.5s	14716	5	FAIL	Asks if win/loss interview data is also available	The model asks 'Do you have any other data to correlate with?' but lists examples related to the churned customers (plan tier, company size, tenure, feature usage). It does not ask about 'win/loss in…	8	4
+ab-testing	eval-9	with_skill	FAIL	12.5s	15682	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	9	4
+ab-testing	eval-9	with_skill	FAIL	12.5s	15682	2	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	12.5s	15682	3	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	12.5s	15682	4	PASS			9	4
+ab-testing	eval-10	with_skill	FAIL	5.1s	14896	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a request for information, not a generated file.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.1s	14896	2	FAIL	Extracts the VOC language and themes first before jumping to copy	The model did not extract any VOC language or themes because it explicitly asked the user to provide the research data first: 'To do this effectively, I need to know what research you currently have.…	10	4
+ab-testing	eval-10	with_skill	FAIL	5.1s	14896	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes were identified in the output. The model stated it will 'Extract "Money Quotes"' *once* the user provides the data, but no such extraction occurred in the actual response.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.1s	14896	4	FAIL	References the copywriting skill for the actual copy writing step	The model output contains no mention of 'copywriting skill' or any specific internal skill references. It offers a general process description ('Extract... Identify... Draft') but does not reference …	10	4
+ab-testing	eval-11	with_skill	FAIL	6.3s	15022	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output contains no mention of a file named 'product-marketing.md'.	11	4
+ab-testing	eval-11	with_skill	FAIL	6.3s	15022	2	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	6.3s	15022	3	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	6.3s	15022	4	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	6.3s	15022	5	PASS			11	4
+ab-testing	eval-12	with_skill	FAIL	2.7s	14664	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a conversational response asking for input, not a file named product-marketing.md.	12	4
+ab-testing	eval-12	with_skill	FAIL	2.7s	14664	2	PASS			12	4
+ab-testing	eval-12	with_skill	FAIL	2.7s	14664	3	FAIL	Recommends forming hypotheses before gathering data	The model asks the user for their current hypothesis *after* stating the next steps, and explicitly states step 3 is to 'Help you draft hypotheses... based on that external signal.' It does not recom…	12	4
+ab-testing	eval-12	with_skill	FAIL	2.7s	14664	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	The model suggests 'Identify the most promising Digital Watering Holes' and 'Conduct initial mining'. It does not mention 'interviews' at all, only online mining of communities/forums/review sites.	12	4
+ab-testing	eval-12	with_skill	FAIL	2.7s	14664	5	FAIL	Warns against building personas without any data	The model output does not contain any warning about building personas without data. It only asks for context to proceed with research.	12	4

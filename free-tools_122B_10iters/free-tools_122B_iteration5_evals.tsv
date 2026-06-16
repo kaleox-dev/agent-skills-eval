@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	1	FAIL	Checks for product-marketing.md	I should also check if there's a product-marketing context file I should read first, but since I can't actually access files, I'll work with what I have and ask clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.5s	5256	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.2s	5698	7	FAIL	References evaluation scorecard	No mention of 'evaluation scorecard' - only 'Success Metrics to Track' table which is not a scorecard reference	2	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; model responds directly without acknowledging phrasing style	3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	5	FAIL	Provides 5-8 ideas	Model provided 15+ ideas: 'Here are 15+ ideas organized by type' - exceeds 5-8 range requirement	3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	26.8s	6426	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	1	FAIL	Diagnoses potential traffic issues	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	2	FAIL	Investigates SEO strategy for the tool	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	3	FAIL	Assesses competitive landscape	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	4	FAIL	Questions unique value proposition	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	5	FAIL	Applies engineering as marketing principles	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-4	with_skill	FAIL	13.3s	5308	6	FAIL	Recommends recovery plan with specific actions	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against a set of assertions and return strict JSON. Let me …	4	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.3s	5136	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	1	FAIL	Recognizes this as page CRO, not free tool strategy	"This falls under the free-tools skill, specifically around the CRO and SEO aspects" - Model treats it as free-tools skill, not page CRO	6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	2	FAIL	References or defers to cro skill	No mention of 'cro skill' - only references 'free-tools skill' framework	6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	15.5s	5519	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	"Let me structure this based on the free-tools skill framework" - Model uses free-tool patterns for CRO advice	6	5

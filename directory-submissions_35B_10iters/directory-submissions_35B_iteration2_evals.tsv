@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	1	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	3	FAIL	Recommends tier mix appropriate to AI SaaS	No specific tier recommendations are provided. The model states 'Tier Selection' will be generated *after* the user provides answers. It only asks a contextual question: 'Do you have an MCP or Agent …	1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	4	FAIL	Maps 3-week PH timeline to calendar dates	The model does not provide a timeline. It asks: 'When is your exact launch day? (To map the 3-week PH prep timeline...)' indicating this step is pending user input.	1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	5	FAIL	Names Product Hunt as anchor	Product Hunt is not explicitly named in the text provided. The model refers to 'PH prep timeline' and 'PH launch day warm traffic' in future tense descriptions, but does not explicitly anchor the str…	1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	6	FAIL	Recommends 10-in-30 reviews protocol	The output mentions 'Need ~20 to hit the 10-review threshold' in a question context, but the actual '10-in-30 protocol' is listed as a deliverable ('G2 Reviews Plan (10-in-30 protocol)') to be genera…	1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	7	FAIL	Sets day-30 and day-90 KPI targets	No KPI targets are set. The output consists solely of diagnostic questions.	1	2
+ab-testing	eval-1	with_skill	FAIL	7.0s	37641	8	FAIL	References directory-list.md or positioning-variations.md	Neither `directory-list.md` nor `positioning-variations.md` are mentioned. The model mentions generating 'Positioning Variants' in the future.	1	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	2	FAIL	Cites Rule 3 (positioning varies by directory type)	The output does not explicitly cite 'Rule 3' nor does it use that specific phrase. It discusses 'Positioning Variations' and tier-based differentiation, but the specific label 'Rule 3' is absent.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	5	FAIL	Specifies variant lengths (tagline, short, long)	The output mentions 'draft 3 distinct long descriptions (150 words each)' but does not specify or list variant lengths for 'tagline' or 'short' versions.	2	2
+ab-testing	eval-2	with_skill	FAIL	6.5s	37592	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	37802	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	37802	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	37802	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	37802	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	37802	5	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	7	FAIL	Warns against DMing strangers	The model advises messaging an 'Inner Circle' of friends/beta users (Days 14-7) but contains no explicit warning or mention regarding DMing strangers or cold messaging.	4	2
+ab-testing	eval-4	with_skill	FAIL	20.5s	39020	8	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	6	FAIL	Warns against paying for G2 plan in year one	No mention of avoiding paid G2 plans in the first year.	5	2
+ab-testing	eval-5	with_skill	FAIL	10.9s	38062	7	FAIL	Mentions Summer/Fall report cutoffs	No mention of Summer/Fall report cutoffs.	5	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	1	FAIL	Warns against over-indexing on launch spike	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	4	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	5	FAIL	Includes ongoing community distribution	judge did not provide concrete evidence	6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	6	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	12.5s	38222	7	PASS			6	2

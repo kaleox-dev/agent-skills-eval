@@ -1,0 +1,167 @@
+
+[1m▶ customer-research[0m  [90m[0m
+  [90m12 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I want to do ICP research but I don't have any customer interviews yet.
+    [90moutput:[0m  Since you don't have existing interviews or internal data, we need to go out and gather that signal from where your Ideal Customer Profile (ICP) already lives online. This is "Mode 2: Go Find Researc…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states 'No output files were captured'.
+    2.6s · 14624 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    Build me a customer persona for a marketing manager at a B2B SaaS company.
+    [90moutput:[0m  I cannot build a valid customer persona for you right now. According to the research guidelines, **personas must be built from research, not invented.** Creating a persona without data results in an …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes jobs to be done, pains, triggers, and desired outcomes in persona structure
+         [90mevidence:[0m Output lists 'Jobs to Be Done', 'Pain Points', and 'Trigger Events', but does not explicitly list 'desired outcomes' as a distinct component of the structure.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes minimum data threshold (5-10 data points)
+         [90mevidence:[0m The output mentions using 'Transcripts, Reviews, etc.' and 'Confidence-Stamped Insights' but does not specify a numerical minimum threshold of '5-10 data points'.
+    4.4s · 14803 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I have 20 customer interview transcripts. Help me analyze them.
+    [90moutput:[0m  To get started, I need a bit of context to ensure the analysis is relevant and actionable. **1. What is the primary goal of this analysis?** (Options: Build/update customer personas? Identify product…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Asks which deliverable is needed
+         [90mevidence:[0m The model states 'I can output... depending on your goal' and lists options, but does not explicitly ask the user to select a specific deliverable type as a standalone question. It bundles this into …
+    3.9s · 14756 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    What are customers saying about my competitors on review sites?
+    [90moutput:[0m  To conduct this research effectively, I need a bit more context. Please provide: 1. **Who are your competitors?** (Names of 1-3 main competitors) 2. **What is your product/category?** (This helps me …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m The model mentions 'I'll also check if there's a .agents/product-marketing.md file' in the text, but the output files section explicitly states 'No output files were captured', meaning no file was ac…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Frames as competitive intelligence input
+         [90mevidence:[0m The model frames the output as information gathering to help the user: 'Once I have this, I can mine the reviews... and extract...'. It asks for the goal ('find gaps to exploit... inform messaging?')…
+    2.9s · 14670 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    Help me do voice of customer research for a new SaaS in the HR space.
+    [90moutput:[0m  I can certainly help with that. To ensure we extract the right signal and don't waste time on generic HR chatter, I need to narrow down the context first. Please answer the following: 1. **What is th…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.'
+      [31m#3[0m [31mFAIL[0m [90m—[0m Suggests relevant digital watering holes (subreddits, G2 categories, communities)
+         [90mevidence:[0m Model mentions 'digital watering holes (like Reddit, G2, LinkedIn, or niche forums)' only in the context of future actions ('Once you provide this, I’ll determine...'), not as a current suggestion or…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Plans to extract verbatim language for copy use
+         [90mevidence:[0m Model states 'I need to narrow down the context first' and asks clarifying questions. It does not state a plan to extract verbatim language in this turn.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions organizing findings into a VOC quote bank
+         [90mevidence:[0m No mention of 'VOC quote bank' or organizing findings into such a structure is present in the output.
+    3.0s · 14691 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I have 6 months of customer support tickets. What insights can I pull from them?
+    [90moutput:[0m  To get the most out of your support tickets, I need to understand the context first. Support tickets are noisy by design — they represent the "broken" end of your user base, not necessarily the whole…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section explicitly states: 'No output files were captured'.
+    7.6s · 15051 tokens · [31mFAIL[0m
+
+  [1m#8 eval-8[0m  [36m[with_skill][0m  [90m[8][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I want to understand why customers churn. I have exit survey results.
+    [90moutput:[0m  To help you analyze the exit survey results for churn drivers, I need a bit more context first. 1. **What is your product?** (Industry, target customer, key features) 2. **Can you share the exit surv…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends segmenting churn reasons before analyzing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Warns against averaging across different churn causes
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests pairing open-ended responses with quantitative data
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks if win/loss interview data is also available
+         [90mevidence:[0m judge did not provide concrete evidence
+    1.7s · 14539 tokens · [31mFAIL[0m
+
+  [1m#10 eval-10[0m  [36m[with_skill][0m  [90m[10][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    Turn my customer research into messaging I can use on my homepage.
+    [90moutput:[0m  To turn your research into effective homepage messaging, I need to understand what the research is saying and what your specific product context is. Please provide one of the following: 1. **The Rese…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output contains only conversational text asking for input, not a generated file.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Extracts the VOC language and themes first before jumping to copy
+         [90mevidence:[0m The model output states: 'To turn your research into effective homepage messaging, I need to understand what the research is saying... Please provide... Research Data... VOC (Voice of Customer) quote…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies the highest-signal quotes for messaging
+         [90mevidence:[0m The model output does not contain any quotes or analysis of quotes. It explicitly asks the user to paste research notes or transcripts: 'Paste your research notes, survey summaries, interview transcr…
+      [31m#4[0m [31mFAIL[0m [90m—[0m References the copywriting skill for the actual copy writing step
+         [90mevidence:[0m The output does not reference any specific 'copywriting skill' tool or module. It outlines a manual process ('I will deliver...') dependent on user-provided input.
+    15.3s · 14868 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    Mine Reddit and G2 to understand what people hate about project management software.
+    [90moutput:[0m  To provide a high-signal analysis of what users actually hate about project management (PM) software, I will simulate the extraction process from the two primary sources: **Reddit** (for raw, unfilte…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends competitor 4-star reviews for buried complaints
+         [90mevidence:[0m judge did not provide concrete evidence
+    20.0s · 16392 tokens · [31mFAIL[0m
+
+  [1m#11 eval-11[0m  [36m[with_skill][0m  [90m[11][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I run a mobile fitness app and want to understand why users drop off after week 2.
+    [90moutput:[0m  To understand why users drop off after week 2, I need to diagnose the "second-week slump." This is a classic drop-off point where the novelty of a new app fades, the workout becomes harder, and the i…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+    3.4s · 14712 tokens · [31mFAIL[0m
+
+  [1m#12 eval-12[0m  [36m[with_skill][0m  [90m[12][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    I have no existing research and don't know who my best customers are yet.
+    [90moutput:[0m  I can help you uncover your best customers through research, but since you have no existing assets, we will be in **Mode 2: Go Find Research**. To do this effectively, I need to know what we are look…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states 'No output files were captured.' The model output text contains no reference to creating or checking a file named product-marketing.md.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends forming hypotheses before gathering data
+         [90mevidence:[0m The model asks for the product description and target audience but does not explicitly instruct the user to 'form hypotheses' prior to the research steps. It implies gathering info first.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests a minimum viable research plan (interviews + online sources)
+         [90mevidence:[0m The model suggests identifying 'digital watering holes' (online sources) but does not mention 'interviews' as part of the plan. It only mentions scraping and analyzing conversations.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Warns against building personas without any data
+         [90mevidence:[0m The model output contains no text warning against building personas or mentioning personas at all.
+    2.5s · 14637 tokens · [31mFAIL[0m
+
+  [1m#9 eval-9[0m  [36m[with_skill][0m  [90m[9][0m
+    [90msystem:[0m  <skill name="customer-research"> <description>When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to custom…
+    [90muser:[0m    Find the digital watering holes where DevOps engineers talk shop.
+    [90moutput:[0m  Based on the `customer-research` skill guidelines, here is a targeted guide to the digital watering holes where DevOps engineers congregate. DevOps engineers are technical, skeptical, and value peer …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+    29.4s · 16257 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 49.9%[0m  [90m· 8.05s avg · 15000 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-682/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 30,
+  "skills": [
+    {
+      "skill": "customer-research",
+      "slug": "customer-research",
+      "relPath": "",
+      "evals": 12,
+      "passRate": 0.5081967213114754,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-682/benchmark.json"
+    }
+  ],
+  "iteration": 682,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-682",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-682/report/index.html"
+}

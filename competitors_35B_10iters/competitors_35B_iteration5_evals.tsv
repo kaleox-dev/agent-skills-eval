@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The model provided raw text/markdown content but did not output a file named 'product-marketing.md'.	1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	31.6s	15295	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	20.3s	14050	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	1	FAIL	Triggers on casual phrasing	The model output is a formal request for information, not a triggered response to casual phrasing. It states: 'Since you are an **e-commerce focused email marketing platform**... I need to sharpen it…	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	2	FAIL	Identifies as singular alternative format	The model does not identify itself as a singular alternative. Instead, it asks the user to define the product's position. It mentions 'other alternatives' in the context of strategy: 'Are there other…	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	3	FAIL	Focuses on user's product as THE alternative	The model explicitly asks for input to determine positioning and does not currently focus on the user's product as 'THE alternative'. It asks: 'Do you want to own the "Mailchimp vs. Us" narrative exc…	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	4	FAIL	Includes why people switch from Mailchimp	The model asks the user to provide this information: 'Common Pain Points: Why do e-commerce brands leave Mailchimp?' It does not include this information in the output itself.	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	5	FAIL	Highlights e-commerce-specific advantages	The model asks the user to provide these details: 'Key Differentiators vs. Mailchimp: Features: (e.g., "Native integrations with [Top 3 EC platforms]..."'. It does not highlight specific advantages i…	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	6	FAIL	Includes feature and pricing comparison	The model requests this data from the user: 'Pricing Structure: What are their current tiers...?' and 'Key Differentiators... Features...'. No actual comparison is present in the output.	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	7	FAIL	Includes migration guide	The model asks about migration notes: 'Migration Notes: How hard is it to switch? Do they export clean data? Do you offer a migration tool?'. No guide is included.	3	5
+ab-testing	eval-3	with_skill	FAIL	6.6s	12551	8	FAIL	Optimizes for singular keyword	The model references 'Mailchimp Alternative' as a page topic but does not demonstrate optimization for a singular keyword strategy in the text itself. It asks for a 'Target URL Slug' and 'Primary Com…	3	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	32.2s	15330	7	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.8s	13766	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	11.2s	13017	1	FAIL	Recognizes this as internal sales enablement material	judge did not provide concrete evidence	6	5
+ab-testing	eval-6	with_skill	FAIL	11.2s	13017	2	FAIL	References or defers to sales-enablement skill	judge did not provide concrete evidence	6	5
+ab-testing	eval-6	with_skill	FAIL	11.2s	13017	3	PASS			6	5

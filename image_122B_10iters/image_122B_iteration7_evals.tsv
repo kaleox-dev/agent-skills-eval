@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	6	FAIL	Provides structured prompt	No structured prompt provided; only offers to provide one later	1	7
+ab-testing	eval-1	with_skill	FAIL	9.1s	11096	7	FAIL	Mentions WebP optimization	No mention of WebP in output	1	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	1	FAIL	Refuses to use AI generation for product UI	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	2	FAIL	Explains models hallucinate UI	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	3	FAIL	Recommends real screenshots at 2x resolution	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	4	FAIL	Mentions device mockups for framing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	5	FAIL	Suggests specific screenshot tools	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	10.5s	11197	6	FAIL	Notes this as a common mistake	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	3	FAIL	Recommends minimal text	No mention of minimal text recommendation in output	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	4	FAIL	Suggests Canva or Figma over AI	Model presents Canva/Figma as equal option: 'Create a template in Canva/Figma if you prefer design tools' - not 'over AI'	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	5	FAIL	Mentions Ideogram for text-heavy designs	Model says 'Ideogram for text' but does not specify 'text-heavy designs'	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	10865	6	FAIL	Recommends testing at display size	No mention of testing at display size in output	3	7
+ab-testing	eval-4	with_skill	FAIL	15.9s	11673	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.9s	11673	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	15.9s	11673	3	FAIL	Notes Instagram 4:5 variant	Instagram Feed listed as 1080x1080 (1:1), no 4:5 variant mentioned in final output	4	7
+ab-testing	eval-4	with_skill	FAIL	15.9s	11673	4	FAIL	Suggests programmatic text overlays for variants	No mention of programmatic text overlays in output	4	7
+ab-testing	eval-4	with_skill	FAIL	15.9s	11673	5	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.0s	11114	6	FAIL	Provides command line tool example	No command line tool examples present in response	5	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	4	FAIL	Lists required og:image meta tags	No og:image meta tag specification found in output	6	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	5	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.5s	11273	6	PASS			6	7

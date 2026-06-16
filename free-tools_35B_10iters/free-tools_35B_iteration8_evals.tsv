@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	1	FAIL	Checks for product-marketing.md	Model output contains no reference to a file named 'product-marketing.md'. The output is a direct text response.	1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	12.8s	5587	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	2	FAIL	Applies ideation framework to validate	The model proposes a strategy and scope but does not provide a structured ideation framework (e.g., SWOT, Porter's Five Forces, Value Proposition Canvas) to validate the concept's viability or risks.…	2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.4s	5479	7	FAIL	References evaluation scorecard	The output contains no mention of an 'evaluation scorecard' or any specific scoring matrix used to evaluate options.	2	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.3s	5600	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.2s	5596	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	14.9s	5804	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	12.0s	5523	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.0s	5523	2	FAIL	References or defers to cro skill	The model provides generic best-practice advice for CRO (headlines, friction reduction, social proof) but never explicitly mentions or defers to a specific 'cro skill', 'CRO agent', or internal skill…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.0s	5523	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.0s	5523	4	FAIL	Does not attempt full page CRO using free tool strategy patterns	The model *does* attempt to apply free-tool strategy patterns to page CRO. Specifically, in Part 1, it includes 'Deferred Value' ('If you *must* gate the result, show a "teaser"... This uses the "Cur…	6	8

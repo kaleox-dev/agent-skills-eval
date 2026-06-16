@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	7	FAIL	Output has Quick Wins section	No "Quick Wins" section header found; only "Quick Audit Checklist"	1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	8	FAIL	Output has High-Impact Changes section	No "High-Impact Changes" section header found; only inline "(High Impact)" labels	1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	9	FAIL	Output has Test Ideas section	No "Test Ideas" section header found; only "Recommended Experiments"	1	8
+ab-testing	eval-1	with_skill	FAIL	23.7s	16516	10	FAIL	Provides 2-3 headline or CTA alternatives	No specific alternatives provided; only suggests "Create 3 headline variations"	1	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	7	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	18.0s	16028	8	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	1	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	6	FAIL	Addresses serving multiple audiences	No mention of multiple audience segments or different user types in output	3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	7	FAIL	Addresses clear paths for different visitor intents	No mention of different visitor intents or navigation paths for different user goals in output	3	8
+ab-testing	eval-3	with_skill	FAIL	10.5s	15390	8	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	25.2s	16606	6	FAIL	Cross-references copywriting or related skill	Model provides CTA copy advice (Improve CTA Button Copy section) but does not explicitly cross-reference copywriting as a related skill or resource	4	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	1	FAIL	Approaches as diagnostic audit	Model asks for page content: "First, I need to see the page. Could you share: The URL of the new landing page" - no actual audit performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	2	FAIL	Checks for lost trust signals	Only mentions trust signals as what will be looked for: "Trust Signals | Social proof near decision points?" - no actual check performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	3	FAIL	Checks for weakened value proposition	Only mentions value proposition in table: "Value Proposition | Is the core benefit clear within 5 seconds?" - no actual check performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	4	FAIL	Checks for CTA hierarchy changes	Only mentions CTA in table: "CTA | Is it visible, compelling, and value-driven?" - no actual check performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	5	FAIL	Checks for added friction	Only mentions friction in table: "Form Friction | Too many fields? Confusing layout?" - no actual check performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	6	FAIL	Checks for broken message match with traffic sources	Only mentions message match in table: "Message Match | Does it align with where traffic is coming from?" - no actual check performed	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	7	FAIL	Provides fixes organized by impact	States "I'll give you: Quick wins you can implement immediately" but provides no actual fixes	5	8
+ab-testing	eval-5	with_skill	FAIL	9.4s	15327	8	FAIL	Recommends reverting high-risk changes	No recommendation to revert any changes is present in the output	5	8
+ab-testing	eval-6	with_skill	FAIL	13.9s	15678	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	13.9s	15678	2	FAIL	References or defers to signup skill	Model mentions 'cro' skill and 'signup forms mentioned in the related skills section' but does not actually reference or defer to a signup skill	6	8
+ab-testing	eval-6	with_skill	FAIL	13.9s	15678	3	FAIL	Does not attempt full cro analysis on a form	Model provides full CRO analysis with Field Optimization Checklist, Submit Button Optimization, Trust Signals, Common Signup Form Mistakes table, and Immediate Recommendations section	6	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	1	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	2	FAIL	Connects features to benefits	Model only asks 'Is it benefit-focused vs. feature-focused?' without actually connecting any features to benefits	7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	3	FAIL	Suggests use cases and examples	No use cases or examples suggested; response only asks for page content	7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	4	FAIL	Provides clear path to try/buy	No clear path provided; mentions 'Start Free Trial' as something to look for rather than providing guidance	7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	5	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	6	FAIL	Suggests specific experiment hypotheses	Promises '🧪 Specific A/B test ideas' but does not provide any specific hypotheses	7	8
+ab-testing	eval-7	with_skill	FAIL	9.2s	15296	7	FAIL	Cross-references ab-testing skill	Mentions A/B test ideas but does not explicitly cross-reference an ab-testing skill	7	8

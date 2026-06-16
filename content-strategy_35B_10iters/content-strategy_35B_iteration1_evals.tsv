@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' and the model output contains no file creation instructions or content resembling a markdown file named 'product-marketing.md'.	1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	6	FAIL	Uses prioritization scoring framework	The model provides a numbered list of topics for the first 90 days but does not employ a scoring framework (e.g., ICE, RICE, or weighted criteria) to prioritize them. The text suggests 'prioritizatio…	1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	14.4s	10291	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	6	FAIL	Uses prioritization framework	The model categorizes content by performance (Winners/Zombies/Orphans) and suggests updating winners, but does not provide a specific prioritization framework (e.g., ICE, RICE, or Impact/Effort matri…	2	1
+ab-testing	eval-2	with_skill	FAIL	12.0s	10037	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	4	FAIL	Notes developers prefer substance over marketing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	6	FAIL	Uses ideation sources framework	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	9.9s	9809	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	16.2s	10445	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.2s	10445	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.2s	10445	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.2s	10445	4	FAIL	Considers buyer stage distribution	While Step 1 mentions distinguishing between 'Awareness' and 'Consideration/Decision' content, the framework itself (Section 1) does not include buyer stage as a scoring dimension or weight. Section …	4	1
+ab-testing	eval-4	with_skill	FAIL	16.2s	10445	5	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	13.0s	10199	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	9641	1	FAIL	Recognizes this as content creation, not strategy	The model output focuses entirely on strategic discovery, asking for 'Business Context', 'Angle & Differentiation', and providing 'Strategic Directions' (Searchable vs Shareable). It explicitly state…	6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	9641	2	FAIL	References or defers to copywriting skill	The model output references 'content-strategy guidelines' but does not explicitly mention 'copywriting' skill or defer to a copywriting persona. It refers to itself as providing 'outline and draft' a…	6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	9641	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	9641	4	PASS			6	1

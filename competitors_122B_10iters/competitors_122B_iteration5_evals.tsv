@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	3	FAIL	Includes TL;DR comparison section	No page content was generated, only clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	4	FAIL	Includes feature comparison table	No page content was generated, only clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	5	FAIL	Includes pricing comparison	No page content was generated, only clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	6	FAIL	Includes 'who it's best for' per alternative	No page content was generated, only clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	7	FAIL	Positions user's product prominently with differentiators	No page content was generated, only clarifying questions.	1	5
+ab-testing	eval-1	with_skill	FAIL	9.4s	12631	8	FAIL	Addresses SEO for target keyword	Agent asked about SEO keywords but did not address SEO in actual output.	1	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	6	FAIL	Factually accurate about competitor	Model admits: "I don't have access to those files" and uses placeholders like "[Name], [Role] at [Company]" for customer quotes. Pricing numbers unverified.	2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	41.4s	15260	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	2	FAIL	Identifies as singular alternative format	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	3	FAIL	Focuses on user's product as THE alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	4	FAIL	Includes why people switch from Mailchimp	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	5	FAIL	Highlights e-commerce-specific advantages	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	6	FAIL	Includes feature and pricing comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	7	FAIL	Includes migration guide	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-3	with_skill	FAIL	8.8s	12559	8	FAIL	Optimizes for singular keyword	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions, Model Outpu…	3	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	36.3s	14862	7	FAIL	Suggests monetization approach	Output states 'I'll keep the content focused on genuine value' with no affiliate links, lead capture forms, or monetization strategies included in the actual content	4	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	18.1s	13374	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	10.6s	12731	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.6s	12731	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.6s	12731	3	PASS			6	5

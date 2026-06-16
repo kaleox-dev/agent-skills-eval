@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	1	FAIL	Checks for product-marketing.md	Model mentions checking for .agents/product-marketing.md in thinking but no actual file check shown in output	1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	4	FAIL	Maps 3-week PH timeline to calendar dates	Uses relative weeks (Week -3 to -1) not calendar dates	1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	7	FAIL	Sets day-30 and day-90 KPI targets	No day-30 or day-90 KPI targets specified in output	1	6
+ab-testing	eval-1	with_skill	FAIL	26.3s	38647	8	FAIL	References directory-list.md or positioning-variations.md	No reference to directory-list.md or positioning-variations.md in output	1	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	2	FAIL	Cites Rule 3 (positioning varies by directory type)	No mention of 'Rule 3' in output; only '3 Hard Reasons' table	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	5	FAIL	Specifies variant lengths (tagline, short, long)	No mention of tagline, short, or long variant lengths in output	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	37709	6	FAIL	References positioning-variations.md	Mentions 'Positioning Variations Library' but no file reference to positioning-variations.md	2	6
+ab-testing	eval-3	with_skill	FAIL	25.1s	38559	1	FAIL	Refuses the service	judge returned unparseable response: The user wants me to grade an agent's response based on 5 assertions. I need to analyze the model output against each assertion and provide evidence for each pass…	3	6
+ab-testing	eval-3	with_skill	FAIL	25.1s	38559	2	FAIL	Cites 'don't pay for submission services' rule	judge returned unparseable response: The user wants me to grade an agent's response based on 5 assertions. I need to analyze the model output against each assertion and provide evidence for each pass…	3	6
+ab-testing	eval-3	with_skill	FAIL	25.1s	38559	3	FAIL	Warns about low-DR spam directories	judge returned unparseable response: The user wants me to grade an agent's response based on 5 assertions. I need to analyze the model output against each assertion and provide evidence for each pass…	3	6
+ab-testing	eval-3	with_skill	FAIL	25.1s	38559	4	FAIL	Warns about Google spam penalty risk	judge returned unparseable response: The user wants me to grade an agent's response based on 5 assertions. I need to analyze the model output against each assertion and provide evidence for each pass…	3	6
+ab-testing	eval-3	with_skill	FAIL	25.1s	38559	5	FAIL	Recommends manual submission to quality directories	judge returned unparseable response: The user wants me to grade an agent's response based on 5 assertions. I need to analyze the model output against each assertion and provide evidence for each pass…	3	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	1	FAIL	Maps 3-week timeline with specific day markers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	2	FAIL	Notes 12:01 AM Pacific Time launch	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	3	FAIL	Restricts to Tue/Wed/Thu	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	4	FAIL	Emphasizes first 2 hours / 50+ supporters	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	5	FAIL	Warns never ask for upvotes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	6	FAIL	Recommends asking for feedback	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	7	FAIL	Warns against DMing strangers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-4	with_skill	FAIL	34.7s	39332	8	FAIL	Includes post-launch recap and cross-posting	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of 8 assertions and a model output (which appears to …	4	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	1	FAIL	Explains 10-review threshold for Grid	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	2	FAIL	Recommends NOT submitting yet OR claim + plan review drive	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	3	FAIL	Lays out 10-in-30 protocol	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	4	FAIL	Notes incentive ($25 gift card) is allowed	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	5	FAIL	Mentions Users Love Us badge requirements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	6	FAIL	Warns against paying for G2 plan in year one	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-5	with_skill	FAIL	18.8s	38435	7	FAIL	Mentions Summer/Fall report cutoffs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	5	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	4	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	5	FAIL	Includes ongoing community distribution	No mention of Reddit, Indie Hackers, LinkedIn or community distribution in actual response output	6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	6	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.0s	38423	7	PASS			6	6

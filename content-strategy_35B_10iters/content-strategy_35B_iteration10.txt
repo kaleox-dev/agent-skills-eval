@@ -1,0 +1,87 @@
+
+[1m▶ content-strategy[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    Help me build a content strategy for our B2B SaaS product. We sell expense management software to finance teams at companies with 50-500 employees. We currently have no blog and want to start from sc…
+    [90moutput:[0m  To build a high-impact content strategy from scratch, I need to understand your specific context better. Following the **Content Strategy** framework, let's start with the discovery phase. ### Step 1…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Maps content by buyer stage (awareness through implementation)
+         [90mevidence:[0m No explicit mapping to buyer stages (awareness, consideration, decision, implementation) is provided. It lists pillar topics but not a stage-based map.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes keyword research by buyer stage
+         [90mevidence:[0m Lists generic keyword examples like 'best expense software' under 'Searchable', but does not structure this as research by buyer stage.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses prioritization scoring framework
+         [90mevidence:[0m No prioritization scoring framework (e.g., ICE, RICE, value vs. effort) is mentioned. It states it will 'synthesize... with prioritized topics' later.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides publishing cadence or calendar
+         [90mevidence:[0m States it will provide a '3-Month Editorial Calendar' in the 'Next Steps', but no calendar is present in the output.
+    8.9s · 9717 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    How should we prioritize which content to create first? We have a list of 50 blog post ideas but limited resources — one content marketer writing 2 posts per week.
+    [90moutput:[0m  To prioritize 50 ideas with limited resources, we need to move away from "what sounds cool" and toward "what delivers the highest return on effort." Since you have a specific capacity (2 posts/week),…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Considers buyer stage distribution
+         [90mevidence:[0m The model mentions 'top-of-funnel pain point' and 'bottom-of-funnel blocker' in the Customer Relevance questions, but it does not analyze or recommend a strategy based on the distribution of ideas ac…
+    9.8s · 9777 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    We have 200+ blog posts but traffic has been flat for a year. Our content feels random — no clear strategy. How do we fix this?
+    [90moutput:[0m  This is a common problem for established blogs. Having 200+ posts with flat traffic usually means you have **volume without structure**. Search engines and users prefer authoritative hubs over scatte…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends update, consolidate, or retire decisions
+         [90mevidence:[0m The output mentions 'Content Decay' in diagnosis and suggests updates for 'Low-Hanging Fruit', but it does not explicitly recommend a framework for 'update, consolidate, OR retire' decisions for the …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses prioritization framework
+         [90mevidence:[0m The output lists 'Immediate Next Steps' (share context, share posts, identify low-hanging fruit) but does not provide a specific prioritization framework (e.g., impact vs. effort, ICE score, or a def…
+    8.8s · 9698 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    Can you write a blog post about remote work best practices for our HR software blog?
+    [90moutput:[0m  I'd be happy to help, but before I write the post, I need to clarify the **content strategy** first. A generic "best practices" list is unlikely to rank well or convert readers because it competes wi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    5.8s · 9338 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    what kind of content should we be creating? we're a developer tool (API testing platform) and our audience is backend developers and QA engineers
+    [90moutput:[0m  To build a content strategy for an API testing platform targeting backend developers and QA engineers, we need to move beyond generic "how to test APIs" advice. This audience is technical, skeptical …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model output uses a formal, structured tone ('To build a content strategy... we need to move beyond generic...') and does not demonstrate a trigger mechanism for casual phrasing.
+    18.6s · 10709 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="content-strategy"> <description>When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "conten…
+    [90muser:[0m    We want to build topical authority in 'employee engagement.' What does a content cluster look like for this topic?
+    [90moutput:[0m  To build topical authority in **employee engagement**, you need to move beyond generic "tips" and build a comprehensive ecosystem of content that covers the entire employee lifecycle and the specific…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies 8-15 supporting spoke articles
+         [90mevidence:[0m The model identifies 16 supporting spoke articles across 4 clusters (5 in Cluster A, 5 in Cluster B, 5 in Cluster C, 5 in Cluster D). 16 is outside the required range of 8-15.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends content types for each piece
+         [90mevidence:[0m Section 3 ('Searchable vs. Shareable Strategy') categorizes example topics into 'Searchable' or 'Shareable' types. However, it does not assign these types to the specific 16 spoke articles identified…
+    17.9s · 10695 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 73.6%[0m  [90m· 11.64s avg · 9989 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-610/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "content-strategy",
+      "slug": "content-strategy",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7027027027027027,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-610/benchmark.json"
+    }
+  ],
+  "iteration": 610,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-610",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-610/report/index.html"
+}

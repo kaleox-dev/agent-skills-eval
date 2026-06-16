@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	1	FAIL	Checks for product-marketing.md	Model output: 'No output files were captured.' and text: 'I cannot access external URLs...'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	2	FAIL	Identifies page type as landing page	Model output: 'I cannot access external URLs... To provide you with a targeted CRO analysis, please paste the text/content of your landing page...'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	3	FAIL	Identifies conversion goal as free trial signup	Model output: Asks user: 'Is the 1.2% conversion rate based on "Free Trial Signups" or "Demo Requests"?' indicating it did not identify the specific goal.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	4	FAIL	Analyzes value proposition clarity	Model output: 'I cannot access external URLs... please paste the text/content of your landing page... Value Propositions: What are the top 3-5 benefits...'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	5	FAIL	Analyzes CTA placement and copy	Model output: 'I cannot access external URLs... please paste the text/content of your landing page... Above the Fold: What is the primary CTA button text?'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	6	FAIL	Notes message match between ads and landing page	Model output: 'Ad Copy: Since you’re coming from Google Ads, what is the ad headline and description? (Message match is critical).'	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	7	FAIL	Output has Quick Wins section	Model output: No section titled 'Quick Wins' exists; only a numbered list of 'most common reasons' and general questions.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	8	FAIL	Output has High-Impact Changes section	Model output: No section titled 'High-Impact Changes' exists.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	9	FAIL	Output has Test Ideas section	Model output: No section titled 'Test Ideas' exists.	1	1
+ab-testing	eval-1	with_skill	FAIL	7.6s	15343	10	FAIL	Provides 2-3 headline or CTA alternatives	Model output: Provides generic examples only (e.g., 'Start My Free Trial'), but does not provide specific alternatives for the user's page because it could not analyze it.	1	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	7	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.8s	16158	8	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	2	FAIL	Identifies as Homepage CRO	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	3	FAIL	Asks about current conversion rate	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	6	FAIL	Addresses serving multiple audiences	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	7	FAIL	Addresses clear paths for different visitor intents	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	8.6s	15412	8	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	3	FAIL	Recommends inline CTAs at natural stopping points	Model recommends 'Sticky Sidebars or Floating CTAs' and 'Bottom of Post Area' CTAs, but does not explicitly recommend placing CTAs within the body of the text (inline) at specific paragraph breaks or…	4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	15901	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	1	FAIL	Approaches as diagnostic audit	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	2	FAIL	Checks for lost trust signals	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	3	FAIL	Checks for weakened value proposition	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	4	FAIL	Checks for CTA hierarchy changes	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	5	FAIL	Checks for added friction	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	6	FAIL	Checks for broken message match with traffic sources	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	7	FAIL	Provides fixes organized by impact	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	5.1s	15052	8	FAIL	Recommends reverting high-risk changes	judge did not provide concrete evidence	5	1
+ab-testing	eval-6	with_skill	FAIL	11.9s	15811	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	11.9s	15811	2	FAIL	References or defers to signup skill	The model does not reference a specific 'signup skill' or defer to one. Instead, it states: 'I can apply Form CRO principles immediately... to provide a framework for optimization.' It provides gener…	6	1
+ab-testing	eval-6	with_skill	FAIL	11.9s	15811	3	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	6	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	19.4s	16752	7	FAIL	Cross-references ab-testing skill	While the model suggests A/B tests (e.g., 'Test Ideas'), it does not explicitly reference or link to an 'ab-testing skill' or framework as a distinct entity or cross-reference within the output text.	7	1

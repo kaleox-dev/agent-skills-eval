@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	2	FAIL	Identifies page type as landing page	Model states: 'I cannot access external URLs... please copy and paste the text content'. It does not identify the page type.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	3	FAIL	Identifies conversion goal as free trial signup	Model does not identify the goal; it asks the user to provide 'Primary CTA Button Text' and 'Form Fields'.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	4	FAIL	Analyzes value proposition clarity	Model provides generic advice ('The Problem: The page explains features rather than benefits') but does not analyze the specific page's value proposition.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	5	FAIL	Analyzes CTA placement and copy	Model does not analyze CTA placement or copy; it asks the user to 'describe those as well' regarding layout and copy.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	6	FAIL	Notes message match between ads and landing page	Model discusses message match in theory ('Since your traffic comes from Google Ads...'), but does not note it for the specific page because it couldn't access it.	1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	8	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	9	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	7.8s	15403	10	FAIL	Provides 2-3 headline or CTA alternatives	The model provides generic examples ('Start My Free Trial') but explicitly states it needs content to provide specific recommendations. It does not provide 2-3 alternatives for the specific page.	1	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.9s	16110	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	3	FAIL	Asks about current conversion rate	The model asks for product marketing context ('Target Audience, Primary Value Prop, Key Differentiators') and the page URL/text, but never asks for the 'current conversion rate' metric.	3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	4	FAIL	Asks about traffic sources	The model does not ask about traffic sources. It mentions 'paid traffic landing pages' in a generic advisory context but does not inquire about the user's specific traffic sources.	3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	7	FAIL	Addresses clear paths for different visitor intents	The model discusses reducing navigation friction generally but does not specifically address or propose distinct paths for different visitor intents (e.g., separating paths for 'Informational' vs 'Tr…	3	4
+ab-testing	eval-3	with_skill	FAIL	10.9s	15702	8	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	5	FAIL	Suggests testing different CTA formats	The model suggests replacing generic CTAs with contextual ones or intermediate offers (templates/case studies), but does not explicitly recommend A/B testing or experimenting with different CTA *form…	4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	15777	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	1	FAIL	Approaches as diagnostic audit	judge did not provide concrete evidence	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	2	FAIL	Checks for lost trust signals	The model lists 'Trust Signals' as a bullet point under 'here's what I'll be looking for', but does not actually check for them because no page content was provided. It asks the user to provide scree…	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	3	FAIL	Checks for weakened value proposition	The model lists 'Value Proposition Clarity' as a theoretical point to analyze, but states 'To provide specific recommendations, I need to see the page.' It does not perform the check.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	4	FAIL	Checks for CTA hierarchy changes	The model mentions 'Primary CTA Issues' as a category to look for, but fails to actually check the specific page's CTA hierarchy due to missing input.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	5	FAIL	Checks for added friction	The model lists 'Friction Points' as a category to analyze theoretically, but does not check for actual added friction in a specific implementation.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	6	FAIL	Checks for broken message match with traffic sources	The model mentions 'Message Match with Traffic' as a theoretical analysis point, but cannot perform the check without page content and traffic source data.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	7	FAIL	Provides fixes organized by impact	The model does not provide any fixes. It states 'Share the page details and I'll give you... High-impact changes to prioritize,' indicating the fixes are future work, not current output.	5	4
+ab-testing	eval-5	with_skill	FAIL	5.6s	15135	8	FAIL	Recommends reverting high-risk changes	The model does not recommend reverting any specific changes. It only asks for page details to proceed with the audit.	5	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	15144	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	15144	2	FAIL	References or defers to signup skill	The model provides generic best-practice advice ('Radical Reduction', 'Single-Field Strategy') and asks for user input details, but never explicitly references a 'signup skill', 'signup agent', or sp…	6	4
+ab-testing	eval-6	with_skill	FAIL	5.7s	15144	3	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	1	FAIL	Applies Feature Page CRO framework	Model explicitly states 'I need to see the page' and provides a 'Pre-Analysis Checklist' rather than applying a framework to specific content.	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	2	FAIL	Connects features to benefits	No specific features or benefits are connected; the model only gives hypothetical examples of what constitutes a good benefit (e.g., 'Monitor 500+ endpoints... is strong').	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	3	FAIL	Suggests use cases and examples	No use cases are suggested for the user's page. The model asks the user to provide the page content first.	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	4	FAIL	Provides clear path to try/buy	The model does not analyze the user's CTA or path to buy. It lists 'CTA Hierarchy' as something it 'will look for' in the future.	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	5	FAIL	Notes organic traffic source and search intent match	The model assumes the traffic source ('Organic Search') and search intent in the 'Initial Context Analysis' section rather than noting/validating the user's specific page context.	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	6	FAIL	Suggests specific experiment hypotheses	The model promises 'Test Ideas' only after receiving the page, which it did not get. It lists general concepts like 'A/B tests for headlines' but offers no specific hypotheses.	7	4
+ab-testing	eval-7	with_skill	FAIL	9.2s	15551	7	FAIL	Cross-references ab-testing skill	No cross-reference to an ab-testing skill is present in the output.	7	4

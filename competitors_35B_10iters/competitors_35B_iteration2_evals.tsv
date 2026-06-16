@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model provided raw text content but did not generate or reference a file named 'product-marketing.md'.	1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	6	FAIL	Includes 'who it's best for' per alternative	Section 4 is titled 'Who Should Use What?' but only lists 'Choose Asana if...' and 'Choose [Your Product] if...'. It does not provide 'best for' profiles for the other alternatives (ClickUp, Monday.c…	1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	22.7s	14353	8	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	7	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	23.3s	14380	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	1	FAIL	Triggers on casual phrasing	The model output is a request for specific business details (Product Name, Pricing Model, etc.) and does not contain any casual phrasing or conversation triggered by it. It is a structured template r…	3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	2	FAIL	Identifies as singular alternative format	The output does not identify itself as a 'singular alternative format'. It explicitly states: 'I need to confirm a few details about your specific product' and uses placeholders like '[Your Product]'…	3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	3	FAIL	Focuses on user's product as THE alternative	The output does not focus on the user's product as THE alternative because the user's product details are missing. The output is a generic template asking for '[Your Product]' specifics, rather than …	3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	7	FAIL	Includes migration guide	The output contains a section 'Migration Support' that describes what transfers and support offered, but it is a description of support services, not a 'guide' (instructions/steps) on how to migrate.…	3	2
+ab-testing	eval-3	with_skill	FAIL	18.7s	13908	8	FAIL	Optimizes for singular keyword	The output lists multiple target keywords in the 'Page Strategy' section: 'Mailchimp alternative', 'alternative to Mailchimp', 'switch from Mailchimp', 'Mailchimp for e-commerce'. It does not optimiz…	3	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	26.8s	14732	7	FAIL	Suggests monetization approach	The text suggests internal linking strategies ('Link to your Best Notion Alternatives... to capture downstream traffic') which aids SEO/user retention, but does not suggest a specific monetization ap…	4	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.6s	13120	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	12527	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	12527	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	12527	3	PASS			6	2

@@ -1341,4 +1341,396 @@ For collecting test ideas:
 | H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
 ```
 
+---
+
+name: ab-testing
+description: ab testing and experimentation planning for product, growth, marketing, landing pages, onboarding flows, signup flows, pricing pages, CTAs, copy variants, multivariate tests, A/B/n tests, experiment readouts, statistical significance, sample size, peeking, launch decisions, and metric frameworks. Use for casual or formal requests like “should we test…”, “can we try variants…”, “is this result significant…”, “should we ship…”, “how long should this test run…”, or “help me design an experiment.” If the user primarily asks to write or rewrite page copy, recognize it as copywriting-first and defer to copywriting guidance while offering experiment setup support.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# A/B Testing Skill
+
+Use this skill to design, critique, or interpret experiments. Produce practical, decision-ready outputs. Do not stop at clarifying questions unless the user explicitly asks only for questions.
+
+## Non-negotiable behavior
+
+Always do the following for A/B testing requests:
+
+1. **Check for `product-marketing.md` first**
+
+   * Before producing the answer, check whether a `product-marketing.md` file is available in the current workspace, uploaded files, or skill/reference context.
+   * If it exists, read it and use it to ground positioning, audience, value proposition, and messaging assumptions.
+   * Explicitly mention one of:
+
+     * “I checked `product-marketing.md` and used it…”
+     * “I checked for `product-marketing.md`, but it was not available, so I’m proceeding with stated assumptions.”
+   * Do not silently skip this check.
+
+2. **Give a complete best-effort answer now**
+
+   * Do not ask the user for more information before providing the core output.
+   * If inputs are missing, make reasonable assumptions, label them, and continue.
+   * You may include a short “inputs that would refine this” section at the end.
+
+3. **Use the hypothesis framework**
+
+   * For every proposed experiment, include:
+
+     * **Observation**
+     * **Belief**
+     * **Outcome**
+     * **Metric**
+   * Do not merely mention a hypothesis framework; fill it in.
+
+4. **Always include metric tiers**
+
+   * Define:
+
+     * **Primary metric**
+     * **Secondary metrics**
+     * **Guardrail metrics**
+   * Explain what each metric protects or proves.
+
+5. **Always warn about peeking**
+
+   * Include explicit wording about the peeking problem, early stopping, and false-positive inflation.
+   * Recommend running to the pre-calculated sample size and duration unless using a valid sequential testing method.
+
+6. **Always mention sequential testing when discussing early reads**
+
+   * If the user asks whether to stop early, interpret early significance, or monitor while running, mention sequential testing or group sequential methods as the correct alternative to informal peeking.
+
+7. **Make clear recommendations**
+
+   * When interpreting results, end with one of:
+
+     * **Ship**
+     * **Do not ship**
+     * **Keep running**
+     * **Inconclusive**
+   * Include why.
+
+8. **Distinguish statistical and practical significance**
+
+   * Statistical significance answers: “Is the effect likely real?”
+   * Practical significance answers: “Is the effect large enough to matter for the business/user experience?”
+   * Discuss both when evaluating results.
+
+## Routing: A/B testing vs copywriting
+
+If the user primarily asks to write, rewrite, improve, or generate landing page copy, treat the task as **copywriting-first**, even if they mention A/B testing.
+
+For copywriting-first requests:
+
+* Say that the main task is copywriting or messaging.
+* Defer to copywriting guidance or a copywriting skill if available.
+* Do not produce a full statistical test plan unless asked.
+* Offer a lightweight experiment wrapper after the copy.
+
+Example response pattern:
+
+> This is primarily a copywriting task, not an experiment-design task. I’d handle the copy first, then optionally wrap the final variants in an A/B test with a clear hypothesis, primary metric, and guardrails.
+
+Still offer:
+
+* Variant naming
+* Hypothesis
+* Primary metric
+* Guardrails
+* Recommended test setup
+
+## Casual phrasing triggers
+
+Use this skill even when the user phrases the request casually, such as:
+
+* “Should we test…”
+* “Can we try…”
+* “Would it be worth testing…”
+* “What about testing four versions…”
+* “Is this result good enough…”
+* “Should we ship this…”
+
+When the prompt is casual, explicitly acknowledge it as an experiment question:
+
+> This is an A/B testing question even though it’s phrased casually.
+
+Then continue with a practical recommendation.
+
+## Standard output: experiment design
+
+For experiment design requests, use this structure:
+
+```markdown
+## Recommendation
+[One-sentence recommendation.]
+
+## Test Type
+[A/B test, A/B/n test, multivariate test, sequential A/B tests, or holdout.]
+
+## `product-marketing.md` Check
+[Say whether it was found and used.]
+
+## Assumptions
+- [Assumption 1]
+- [Assumption 2]
+
+## Hypothesis
+- **Observation:** ...
+- **Belief:** ...
+- **Outcome:** ...
+- **Metric:** ...
+
+## Variants
+| Variant | Description | Why it may work |
+|---|---|---|
+| Control | ... | Baseline |
+| Variant B | ... | ... |
+
+## Metrics
+| Tier | Metric | Definition | Why it matters |
+|---|---|---|---|
+| Primary | ... | ... | ... |
+| Secondary | ... | ... | ... |
+| Guardrail | ... | ... | ... |
+
+## Sample Size and Duration
+[Use traffic, baseline rate, MDE, confidence, and power if provided. If not provided, state what is needed and give a directional recommendation.]
+
+## Peeking and Stopping Rule
+Do not stop the test early just because interim results look significant. Repeatedly checking results before the planned sample size inflates the false-positive rate. Decide the sample size and duration before launch, then run to completion unless using a valid sequential testing design.
+
+## Analysis Plan
+[How to evaluate results.]
+
+## Launch Checklist
+- [ ] Random assignment is stable
+- [ ] Tracking is validated
+- [ ] Primary metric is defined before launch
+- [ ] Guardrails are monitored
+- [ ] Sample size and stopping rule are agreed before launch
+```
+
+## Standard output: button color / low-impact tests
+
+When the user asks about testing button color, icon color, small visual tweaks, or other low-impact elements:
+
+1. Identify the test as A/B/n if there are more than two variants.
+2. Warn that each additional variant increases traffic requirements.
+3. Question whether the element is high-impact enough.
+4. Suggest higher-impact alternatives.
+5. Still provide a hypothesis framework.
+
+Required wording:
+
+> Button color alone is often a low-impact test unless there is a strong contrast, accessibility, or visual-hierarchy problem. If traffic is limited, consider testing higher-impact elements first, such as CTA copy, headline, offer, page layout, form length, pricing presentation, or social proof.
+
+For four button colors:
+
+```markdown
+## Test Type
+This is an A/B/n test because there are more than two variants.
+
+## Traffic Warning
+Four variants split traffic across four cells, so each variant receives only 25% of traffic. That materially increases the time needed to reach significance.
+
+## Higher-Impact Alternatives
+Before testing color alone, consider testing:
+- CTA copy
+- Headline
+- Offer framing
+- Form length
+- Hero section layout
+- Social proof
+```
+
+## Standard output: peeking / stopping early
+
+When the user asks about early results, stopping early, “it’s already significant,” or similar:
+
+```markdown
+## Recommendation
+Keep running unless the test has already reached the pre-calculated sample size and minimum duration, or unless you designed it as a sequential test from the start.
+
+## Why
+Early significance can be misleading because repeated looks at the data inflate the false-positive rate. Day-of-week effects, campaign mix, device mix, and audience mix can also shift early results.
+
+## What to Do
+- Continue to the pre-planned sample size and duration.
+- Check guardrail metrics for harm.
+- Use sequential testing or group sequential methods for future tests if you need valid continuous monitoring.
+```
+
+Always mention:
+
+* peeking problem
+* early stopping
+* false-positive inflation
+* full pre-calculated duration/sample size
+* day-of-week or audience-mix effects
+* sequential testing as the valid alternative
+
+## Standard output: multivariate tests
+
+When the user wants to test multiple page elements at once, identify it as a multivariate test unless they are bundling all changes into one variant.
+
+Required points:
+
+* MVT tests combinations of elements.
+* Calculate the number of combinations.
+* Warn that traffic requirements grow quickly.
+* Suggest sequential A/B tests if traffic is insufficient.
+* Build hypotheses for each element individually.
+
+Example:
+
+```markdown
+## Test Type
+This is a multivariate test because you want to test multiple elements and their combinations.
+
+## Number of Combinations
+If testing:
+- 2 headlines
+- 2 hero images
+- 2 CTA buttons
+
+Then total combinations = 2 × 2 × 2 = 8 combinations.
+
+## Traffic Warning
+Eight combinations means traffic is split across eight cells. Unless the page has high traffic, this will take much longer than a simple A/B test.
+
+## Alternative if Traffic Is Limited
+Run sequential A/B tests:
+1. Test headline first.
+2. Test hero image second.
+3. Test CTA third.
+4. Combine the winners into one final validation test.
+```
+
+### Element-level hypotheses
+
+Always provide separate hypotheses for each element:
+
+```markdown
+## Hypotheses by Element
+
+### Headline
+- **Observation:** Visitors may not immediately understand the core value proposition.
+- **Belief:** A clearer benefit-driven headline will improve relevance and motivation.
+- **Outcome:** More visitors will continue into the signup flow.
+- **Metric:** Signup rate or CTA click-through rate.
+
+### Hero Image
+- **Observation:** The current image may not show the product, audience, or outcome clearly.
+- **Belief:** A more contextual hero image will help visitors visualize value faster.
+- **Outcome:** More visitors will engage with the page and CTA.
+- **Metric:** CTA click-through rate, scroll depth, and signup rate.
+
+### CTA Button
+- **Observation:** The CTA may not be visually prominent or action-oriented enough.
+- **Belief:** A clearer CTA treatment or stronger CTA copy will reduce hesitation.
+- **Outcome:** More visitors will click and complete the intended action.
+- **Metric:** CTA click-through rate and downstream signup completion rate.
+```
+
+Do not provide only one aggregate hypothesis when individual elements are being tested.
+
+## Standard output: signup form / lead quality tests
+
+For signup flow, trial form, lead capture, demo request, or form-friction tests, use this metric hierarchy unless the user gives a different goal:
+
+```markdown
+## Metrics
+
+| Tier | Metric | Definition | Why it matters |
+|---|---|---|---|
+| Primary | Form completion rate | Completed forms / form starts, or completed forms / eligible visitors | Measures whether the form change improves completion of the target action. |
+| Secondary | Lead quality | Qualified leads, activated trials, sales-accepted leads, or trial-to-paid conversion among submitted forms | Ensures more completions are not lower-quality leads. |
+| Secondary | Form start rate | Form starts / visitors | Shows whether more users are entering the flow. |
+| Secondary | Field-level drop-off | Abandonment by field or step | Identifies where friction changes. |
+| Guardrail | Spam or invalid submissions | Invalid, fake, duplicate, or low-intent submissions | Protects against inflated completion from poor-quality leads. |
+| Guardrail | Support burden or refund/cancel rate | Support tickets, cancellations, complaints, or early churn | Protects downstream customer experience. |
+```
+
+Required downstream-window language:
+
+> Downstream metrics such as activation, sales acceptance, trial-to-paid conversion, churn, or lead quality need a longer observation window than the primary form completion metric. The form completion result may be available immediately, but downstream quality should be monitored over 7, 14, or 30+ days depending on the sales or activation cycle.
+
+## Standard output: result interpretation / ship decision
+
+When the user provides experiment results, use this structure:
+
+```markdown
+## Recommendation
+[Ship / Do not ship / Keep running / Inconclusive.]
+
+## Statistical Significance
+[Evaluate confidence, p-value, confidence interval, sample size, and whether the result meets the 95% confidence threshold if applicable.]
+
+## Practical Significance
+[Discuss whether the absolute lift and relative lift are meaningful for the business or user experience.]
+
+## Sample Size Check
+[Assess whether the sample size is sufficient for the observed effect size.]
+
+## Guardrails
+[Check whether key guardrails moved negatively.]
+
+## Segment or Follow-up Analysis
+If the result is borderline or heterogeneous, inspect segments such as device, traffic source, geography, new vs returning users, plan type, or browser before making a final decision.
+
+## Final Decision
+[Clear decision and why.]
+```
+
+Required wording:
+
+* “95% confidence threshold” when using p < 0.05.
+* “Statistical significance is not the same as practical significance.”
+* “A small statistically significant lift may not be worth shipping if implementation cost, risk, or guardrail impact is high.”
+* If borderline, suggest segment analysis.
+
+## Sample size guidance
+
+If baseline rate, MDE, power, or traffic are provided, address them directly.
+
+Minimum default assumptions when missing:
+
+* Confidence: 95%
+* Power: 80%
+* Two-sided test unless there is a strong reason for one-sided
+* Minimum duration: at least one full business cycle, usually 1–2 weeks minimum
+* Avoid tests that would need many weeks or months unless strategically important
+
+If exact calculation is not possible, say:
+
+> I cannot calculate the exact sample size without baseline conversion rate, desired minimum detectable effect, and traffic split, but here is the decision logic and what to calculate.
+
+Do not merely say “we need enough traffic.” Explain how traffic, baseline rate, MDE, and number of variants affect duration.
+
+## File or document output
+
+If the user asks for a test plan, brief, or document:
+
+* Produce the structured plan in the response.
+* If tools are available for file creation and the user asked for a file, create the file.
+* Do not say “I can create this later.”
+* Do not end with only a promise to create a template.
+
+## Quality checklist before answering
+
+Before finalizing, verify:
+
+* [ ] Checked or explicitly addressed `product-marketing.md`
+* [ ] Identified test type
+* [ ] Provided Observation / Belief / Outcome / Metric hypothesis
+* [ ] Defined primary, secondary, and guardrail metrics
+* [ ] Addressed sample size or stated assumptions
+* [ ] Warned about peeking and early stopping
+* [ ] Mentioned sequential testing when relevant
+* [ ] Produced a structured plan or decision now
+* [ ] Built separate hypotheses for each element in MVT
+* [ ] Used form completion rate as primary for form-friction tests
+* [ ] Used lead quality as secondary for signup/lead tests
+* [ ] Mentioned longer observation windows for downstream metrics
+* [ ] Distinguished statistical and practical significance for readouts
+* [ ] Gave a clear ship / do not ship / keep running / inconclusive recommendation for result interpretation
 

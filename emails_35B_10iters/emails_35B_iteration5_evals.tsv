@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The model output is raw text, not a file named product-marketing.md.	1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	8	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	21.3s	20665	9	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.8s	20508	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.6s	20260	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	4	FAIL	Includes 'last chance' final email	The final email (Email 4) has the Subject 'Should we stay in touch?' and Preview 'Last email from us.' It does not use the phrase 'last chance'. Email 2's subject is 'What you’re missing (last chance…	4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	17.6s	20150	7	FAIL	Uses compelling subject lines	Subject lines provided are generic and question-based: 'Quick question, [First Name]?', 'What you’re missing (last chance)', 'A gift for coming back?', 'Should we stay in touch?'. While standard, the…	4	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	5	FAIL	Notes timing depends on product and trial length	The output states 'The ideal timing depends on your product's complexity' but does not explicitly mention 'trial length' as a dependency for timing adjustments, unlike the specific dependency on comp…	5	5
+ab-testing	eval-5	with_skill	FAIL	7.4s	19196	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	19.0s	20555	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	19.0s	20555	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	19.0s	20555	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	19.0s	20555	4	PASS			6	5

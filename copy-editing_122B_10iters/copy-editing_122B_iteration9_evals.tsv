@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	1	FAIL	Checks for product-marketing.md	No reference to 'product-marketing.md' file found in output. Output discusses 'homepage copy' but does not mention this specific file.	1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	21.8s	15447	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	1	FAIL	Identifies clichés and filler phrases	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	2	FAIL	Flags 'click here' and 'learn more' as weak	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	3	FAIL	Applies word-level and sentence-level checks	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	4	FAIL	Rewrites with specific value and strong CTA	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	5	FAIL	Uses active voice in rewrite	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-2	with_skill	FAIL	11.1s	14650	6	FAIL	Keeps response concise for a quick edit	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output against a set of assertions. * Input: Assertions list, Model output text. * Constrai…	2	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing in output. Model identified corporate jargon, buzzwords, and wordiness, but original copy was formal corporate language, not casual. No evidence of casual phrasing trigg…	3	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	15.3s	15056	6	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	13.8s	14876	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	14874	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	6.6s	14273	1	FAIL	Recognizes this as writing new copy, not editing existing copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output text, Asse…	6	9
+ab-testing	eval-6	with_skill	FAIL	6.6s	14273	2	FAIL	References or defers to copywriting skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output text, Asse…	6	9
+ab-testing	eval-6	with_skill	FAIL	6.6s	14273	3	FAIL	Explains that copy-editing is for improving existing copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output text, Asse…	6	9
+ab-testing	eval-6	with_skill	FAIL	6.6s	14273	4	FAIL	Does not attempt to write full page copy from scratch	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Model output text, Asse…	6	9

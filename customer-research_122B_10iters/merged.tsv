@@ -1,0 +1,611 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	1	FAIL	Checks for product-marketing.md	Model says 'I should also check if there's a product marketing context file' but no actual file check was performed. Output files: No output files were captured.	1	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	Only mentions 'Jobs-to-be-done map (functional, emotional, social jobs)' - no explicit mention of pain points or desired outcomes.	1	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14833	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	7.8s	14929	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 specific checks). * Model Output (a…	2	1
+ab-testing	eval-2	with_skill	FAIL	7.8s	14929	2	FAIL	Recommends digital watering hole research as an alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 specific checks). * Model Output (a…	2	1
+ab-testing	eval-2	with_skill	FAIL	7.8s	14929	3	FAIL	Mentions Reddit, G2, or review sites as starting points	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 specific checks). * Model Output (a…	2	1
+ab-testing	eval-2	with_skill	FAIL	7.8s	14929	4	FAIL	Asks what product or category to research	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 specific checks). * Model Output (a…	2	1
+ab-testing	eval-2	with_skill	FAIL	7.8s	14929	5	FAIL	Offers to help extract insights from online sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertions (5 specific checks). * Model Output (a…	2	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	2	FAIL	Identifies relevant subreddits or search strategies for project management	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	4	FAIL	Recommends competitor 4-star reviews for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	5	FAIL	Plans to extract verbatim quotes and pain themes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-3	with_skill	FAIL	9.7s	15076	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	1	FAIL	Checks for product-marketing.md	Agent mentions 'product marketing context file' but does not specifically reference 'product-marketing.md'	4	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure with jobs/pains/triggers/outcomes present in output - only questions asked	4	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	5	FAIL	Mentions the need to capture actual customer vocabulary	No mention of customer vocabulary, quotes, or actual customer language in output	4	1
+ab-testing	eval-4	with_skill	FAIL	9.5s	15067	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	8.4s	15032	1	FAIL	Checks for product-marketing.md	Output references 'product marketing context file' but does not explicitly check for product-marketing.md	5	1
+ab-testing	eval-5	with_skill	FAIL	8.4s	15032	2	FAIL	Recommends categorizing tickets before analyzing (bugs vs confusion vs feature requests)	Final output contains clarifying questions but no explicit recommendation to categorize tickets first	5	1
+ab-testing	eval-5	with_skill	FAIL	8.4s	15032	3	FAIL	Warns against treating all tickets as equal signal	No warning about ticket signal weighting present in output	5	1
+ab-testing	eval-5	with_skill	FAIL	8.4s	15032	4	FAIL	Mentions extracting recurring language and patterns	Output focuses on questions rather than extraction of recurring language/patterns	5	1
+ab-testing	eval-5	with_skill	FAIL	8.4s	15032	5	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	5.0s	14748	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	6	1
+ab-testing	eval-6	with_skill	FAIL	5.0s	14748	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	No mention of 4-star reviews or buried complaints in output	6	1
+ab-testing	eval-6	with_skill	FAIL	5.0s	14748	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	5.0s	14748	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	"Only mentions ""unmet customer needs"" once; does not describe what they love or what frustrates them"	6	1
+ab-testing	eval-6	with_skill	FAIL	5.0s	14748	5	FAIL	Frames as competitive intelligence input	"No explicit framing as competitive intelligence input; uses ""voice-of-customer insights"" instead"	6	1
+ab-testing	eval-7	with_skill	FAIL	9.7s	15134	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.7s	15134	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.7s	15134	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	Model only mentions 'Reddit, G2, forums, communities' as general categories but does not suggest specific subreddits, G2 categories, or communities.	7	1
+ab-testing	eval-7	with_skill	FAIL	9.7s	15134	4	FAIL	Plans to extract verbatim language for copy use	Model asks 'What deliverable do you want?' including 'VOC quote bank for copy?' but does not state a plan to extract verbatim language.	7	1
+ab-testing	eval-7	with_skill	FAIL	9.7s	15134	5	FAIL	Mentions organizing findings into a VOC quote bank	Model lists 'VOC quote bank for copy?' as a deliverable option but does not mention organizing findings into one.	7	1
+ab-testing	eval-8	with_skill	FAIL	7.8s	14944	1	FAIL	Checks for product-marketing.md	Model mentions 'Let me also check if there's a product marketing context file I should read first' but no actual file check or reference to product-marketing.md in output	8	1
+ab-testing	eval-8	with_skill	FAIL	7.8s	14944	2	FAIL	Recommends segmenting churn reasons before analyzing	Model asks 'What segment of churned customers?' but does not explicitly recommend segmenting churn reasons before analyzing	8	1
+ab-testing	eval-8	with_skill	FAIL	7.8s	14944	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes found in output	8	1
+ab-testing	eval-8	with_skill	FAIL	7.8s	14944	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asks 'Do you have both quantitative (multiple choice) and qualitative (open-ended) responses?' but does not suggest pairing them together	8	1
+ab-testing	eval-8	with_skill	FAIL	7.8s	14944	5	FAIL	Asks if win/loss interview data is also available	No mention of win/loss interview data in output	8	1
+ab-testing	eval-9	with_skill	FAIL	16.9s	15726	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	9	1
+ab-testing	eval-9	with_skill	FAIL	16.9s	15726	2	FAIL	Mentions specific relevant communities (r/devops, Hacker News, LinkedIn, Discord)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	9	1
+ab-testing	eval-9	with_skill	FAIL	16.9s	15726	3	FAIL	Suggests what to search for in those communities	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	9	1
+ab-testing	eval-9	with_skill	FAIL	16.9s	15726	4	FAIL	Describes what signal to extract from each source type	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	9	1
+ab-testing	eval-10	with_skill	FAIL	5.2s	14795	1	FAIL	Checks for product-marketing.md	Model mentions 'If you have a product marketing context file, I should read that first' but no tool call or file check occurred.	10	1
+ab-testing	eval-10	with_skill	FAIL	5.2s	14795	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC language or themes extracted. Model is asking clarifying questions before having research.	10	1
+ab-testing	eval-10	with_skill	FAIL	5.2s	14795	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified. Model states 'I don't have access to their actual customer research yet'.	10	1
+ab-testing	eval-10	with_skill	FAIL	5.2s	14795	4	PASS			10	1
+ab-testing	eval-11	with_skill	FAIL	5.9s	14835	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	11	1
+ab-testing	eval-11	with_skill	FAIL	5.9s	14835	2	FAIL	Recognizes this as a B2C research scenario	No explicit B2C terminology used; only describes 'mobile fitness app' and 'users'	11	1
+ab-testing	eval-11	with_skill	FAIL	5.9s	14835	3	PASS			11	1
+ab-testing	eval-11	with_skill	FAIL	5.9s	14835	4	PASS			11	1
+ab-testing	eval-11	with_skill	FAIL	5.9s	14835	5	PASS			11	1
+ab-testing	eval-12	with_skill	FAIL	5.1s	14771	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	12	1
+ab-testing	eval-12	with_skill	FAIL	5.1s	14771	2	FAIL	Recognizes this as a zero-research bootstrap scenario	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	12	1
+ab-testing	eval-12	with_skill	FAIL	5.1s	14771	3	FAIL	Recommends forming hypotheses before gathering data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	12	1
+ab-testing	eval-12	with_skill	FAIL	5.1s	14771	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	12	1
+ab-testing	eval-12	with_skill	FAIL	5.1s	14771	5	FAIL	Warns against building personas without any data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	12	1
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output. Model only asks 'What's your product? (If not already in context)'	1	2
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of extracting jobs to be done, pain points, or desired outcomes. Only mentions 'Jobs-to-be-done map' as a deliverable option.	1	2
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in the output.	1	2
+ab-testing	eval-1	with_skill	FAIL	6.6s	14861	6	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	4.8s	14733	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	2	2
+ab-testing	eval-2	with_skill	FAIL	4.8s	14733	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	4.8s	14733	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	4.8s	14733	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	4.8s	14733	5	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	3	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	16.2s	15648	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in final output; only asks 'What's your product?' without file reference	4	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure created; only questions asked to user	4	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	5	FAIL	Mentions the need to capture actual customer vocabulary	No mention of customer vocabulary in output	4	2
+ab-testing	eval-4	with_skill	FAIL	8.6s	15032	6	FAIL	Notes minimum data threshold (5-10 data points)	Threshold mentioned in internal reasoning only, not in final output to user	4	2
+ab-testing	eval-5	with_skill	FAIL	9.3s	15121	1	FAIL	Checks for product-marketing.md	Model output does not reference or check for product-marketing.md file. Only asks about goals and data format.	5	2
+ab-testing	eval-5	with_skill	FAIL	9.3s	15121	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.3s	15121	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.3s	15121	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.3s	15121	5	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	5.4s	14809	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output	6	2
+ab-testing	eval-6	with_skill	FAIL	5.4s	14809	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	No mention of 4-star reviews or buried complaints	6	2
+ab-testing	eval-6	with_skill	FAIL	5.4s	14809	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.4s	14809	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	No extraction criteria specified in output	6	2
+ab-testing	eval-6	with_skill	FAIL	5.4s	14809	5	FAIL	Frames as competitive intelligence input	Only mentions 'competitive gaps to exploit' as one goal option, not framing the review mining as CI input	6	2
+ab-testing	eval-7	with_skill	FAIL	9.2s	15117	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.2s	15117	2	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.2s	15117	3	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.2s	15117	4	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.2s	15117	5	PASS			7	2
+ab-testing	eval-8	with_skill	FAIL	5.0s	14791	1	FAIL	Checks for product-marketing.md	Model states 'If there's a product marketing context file in your project, I'll check that first' but no tool call or file check evidence present	8	2
+ab-testing	eval-8	with_skill	FAIL	5.0s	14791	2	FAIL	Recommends segmenting churn reasons before analyzing	Model asks 'What segment are we looking at?' but does not explicitly recommend segmenting churn reasons before analyzing	8	2
+ab-testing	eval-8	with_skill	FAIL	5.0s	14791	3	FAIL	Warns against averaging across different churn causes	No mention of averaging or churn causes warning in output	8	2
+ab-testing	eval-8	with_skill	FAIL	5.0s	14791	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asks 'Is it quantitative... or qualitative' but does not suggest pairing them together	8	2
+ab-testing	eval-8	with_skill	FAIL	5.0s	14791	5	FAIL	Asks if win/loss interview data is also available	No mention of win/loss interview data in output	8	2
+ab-testing	eval-9	with_skill	FAIL	20.0s	16034	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in output. Model mentions 'research source guides' but not this specific file.	9	2
+ab-testing	eval-9	with_skill	FAIL	20.0s	16034	2	PASS			9	2
+ab-testing	eval-9	with_skill	FAIL	20.0s	16034	3	PASS			9	2
+ab-testing	eval-9	with_skill	FAIL	20.0s	16034	4	PASS			9	2
+ab-testing	eval-10	with_skill	FAIL	4.3s	14735	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (4 items):…	10	2
+ab-testing	eval-10	with_skill	FAIL	4.3s	14735	2	FAIL	Extracts the VOC language and themes first before jumping to copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (4 items):…	10	2
+ab-testing	eval-10	with_skill	FAIL	4.3s	14735	3	FAIL	Identifies the highest-signal quotes for messaging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (4 items):…	10	2
+ab-testing	eval-10	with_skill	FAIL	4.3s	14735	4	FAIL	References the copywriting skill for the actual copy writing step	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: * Assertions (4 items):…	10	2
+ab-testing	eval-11	with_skill	FAIL	5.5s	14843	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	11	2
+ab-testing	eval-11	with_skill	FAIL	5.5s	14843	2	FAIL	Recognizes this as a B2C research scenario	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	11	2
+ab-testing	eval-11	with_skill	FAIL	5.5s	14843	3	FAIL	Suggests app store reviews as a primary source	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	11	2
+ab-testing	eval-11	with_skill	FAIL	5.5s	14843	4	FAIL	Mentions Reddit or community sources relevant to fitness/consumer apps	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	11	2
+ab-testing	eval-11	with_skill	FAIL	5.5s	14843	5	FAIL	Frames around understanding drop-off triggers and desired outcomes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	11	2
+ab-testing	eval-12	with_skill	FAIL	8.1s	15041	1	FAIL	Checks for product-marketing.md	Model mentions checking for product-marketing.md in reasoning but no evidence of actual check in user-facing output	12	2
+ab-testing	eval-12	with_skill	FAIL	8.1s	15041	2	PASS			12	2
+ab-testing	eval-12	with_skill	FAIL	8.1s	15041	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses in the output	12	2
+ab-testing	eval-12	with_skill	FAIL	8.1s	15041	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	"Model states ""Once I have these answers, I can map out a research plan"" but does not suggest one with interviews or online sources"	12	2
+ab-testing	eval-12	with_skill	FAIL	8.1s	15041	5	FAIL	Warns against building personas without any data	"Model offers ""Persona document"" as a deliverable option without warning about data requirements"	12	2
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	2	FAIL	Asks about the goal before diving in (improve messaging, build personas, find gaps, etc.)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	4	FAIL	Suggests organizing quotes by theme	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	5	FAIL	References frequency and intensity scoring	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14869	6	FAIL	Asks which deliverable is needed	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	3
+ab-testing	eval-2	with_skill	FAIL	6.1s	14851	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	3
+ab-testing	eval-2	with_skill	FAIL	6.1s	14851	2	FAIL	Recommends digital watering hole research as an alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	3
+ab-testing	eval-2	with_skill	FAIL	6.1s	14851	3	FAIL	Mentions Reddit, G2, or review sites as starting points	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	3
+ab-testing	eval-2	with_skill	FAIL	6.1s	14851	4	FAIL	Asks what product or category to research	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	3
+ab-testing	eval-2	with_skill	FAIL	6.1s	14851	5	FAIL	Offers to help extract insights from online sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	2	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. No reference to product-marketing.md in output.	3	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	34.6s	17230	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	2	FAIL	Asks if there is existing research to build from before inventing details	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	3	FAIL	Warns against creating personas without data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	5	FAIL	Mentions the need to capture actual customer vocabulary	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-4	with_skill	FAIL	8.8s	15067	6	FAIL	Notes minimum data threshold (5-10 data points)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of assertions, a model output (text), and output fil…	4	3
+ab-testing	eval-5	with_skill	FAIL	11.2s	15213	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in model output	5	3
+ab-testing	eval-5	with_skill	FAIL	11.2s	15213	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.2s	15213	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.2s	15213	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.2s	15213	5	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	4.7s	14760	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output; model asks clarifying questions instead.	6	3
+ab-testing	eval-6	with_skill	FAIL	4.7s	14760	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Model mentions '3-star reviews are usually the goldmine' not 4-star reviews.	6	3
+ab-testing	eval-6	with_skill	FAIL	4.7s	14760	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	4.7s	14760	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Model says 'What specific insights to extract' but does not list what they love, what frustrates them, or unmet needs.	6	3
+ab-testing	eval-6	with_skill	FAIL	4.7s	14760	5	FAIL	Frames as competitive intelligence input	No mention of 'competitive intelligence' framing in output.	6	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	14947	1	FAIL	Checks for product-marketing.md	Model states 'I also need to check if there's a product marketing context file to read first' but no actual file check was performed; output files show 'No output files were captured'	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	14947	2	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	14947	3	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	14947	4	FAIL	Plans to extract verbatim language for copy use	No mention of extracting verbatim language for copy use in the output	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	14947	5	FAIL	Mentions organizing findings into a VOC quote bank	No mention of VOC quote bank organization in the output	7	3
+ab-testing	eval-8	with_skill	FAIL	5.0s	14793	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	8	3
+ab-testing	eval-8	with_skill	FAIL	5.0s	14793	2	FAIL	Recommends segmenting churn reasons before analyzing	Asks 'Do you have any segmentation' but does not recommend segmenting churn reasons before analyzing	8	3
+ab-testing	eval-8	with_skill	FAIL	5.0s	14793	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes in output	8	3
+ab-testing	eval-8	with_skill	FAIL	5.0s	14793	4	FAIL	Suggests pairing open-ended responses with quantitative data	Asks about response types but does not suggest pairing open-ended with quantitative data	8	3
+ab-testing	eval-8	with_skill	FAIL	5.0s	14793	5	FAIL	Asks if win/loss interview data is also available	No mention of win/loss interview data in clarifying questions	8	3
+ab-testing	eval-9	with_skill	FAIL	15.1s	15611	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in output. Model mentions 'source guides' and 'research framework' but not the specific file.	9	3
+ab-testing	eval-9	with_skill	FAIL	15.1s	15611	2	PASS			9	3
+ab-testing	eval-9	with_skill	FAIL	15.1s	15611	3	PASS			9	3
+ab-testing	eval-9	with_skill	FAIL	15.1s	15611	4	PASS			9	3
+ab-testing	eval-10	with_skill	FAIL	5.0s	14775	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	3
+ab-testing	eval-10	with_skill	FAIL	5.0s	14775	2	FAIL	Extracts the VOC language and themes first before jumping to copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	3
+ab-testing	eval-10	with_skill	FAIL	5.0s	14775	3	FAIL	Identifies the highest-signal quotes for messaging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	3
+ab-testing	eval-10	with_skill	FAIL	5.0s	14775	4	FAIL	References the copywriting skill for the actual copy writing step	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	3
+ab-testing	eval-11	with_skill	FAIL	9.0s	15101	1	PASS			11	3
+ab-testing	eval-11	with_skill	FAIL	9.0s	15101	2	PASS			11	3
+ab-testing	eval-11	with_skill	FAIL	9.0s	15101	3	PASS			11	3
+ab-testing	eval-11	with_skill	FAIL	9.0s	15101	4	PASS			11	3
+ab-testing	eval-11	with_skill	FAIL	9.0s	15101	5	PASS			11	3
+ab-testing	eval-12	with_skill	FAIL	6.9s	14936	1	FAIL	Checks for product-marketing.md	Model mentions 'First check for product marketing context (if .agents/product-marketing.md exists)' in reasoning but no tool call or file check evidence present in output	12	3
+ab-testing	eval-12	with_skill	FAIL	6.9s	14936	2	PASS			12	3
+ab-testing	eval-12	with_skill	FAIL	6.9s	14936	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses before gathering data in the output	12	3
+ab-testing	eval-12	with_skill	FAIL	6.9s	14936	4	PASS			12	3
+ab-testing	eval-12	with_skill	FAIL	6.9s	14936	5	FAIL	Warns against building personas without any data	No warning about building personas without data; model lists 'Build your first personas?' as a research goal option without caution	12	3
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	1	FAIL	Checks for product-marketing.md	No tool call or file read evidence present. Model only states intent: 'I'll look for a product marketing context file'	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of extracting pain points or desired outcomes. Only 'Jobs-to-be-Done map' listed as deliverable option	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	4	FAIL	Suggests organizing quotes by theme	No mention of organizing quotes by theme in output	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	6	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	5	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	2	FAIL	Identifies relevant subreddits or search strategies for project management	No specific subreddits or search strategies mentioned in output	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	Output mentions G2 but does not specify 3-star or 1-star reviews	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	4	FAIL	Recommends competitor 4-star reviews for buried complaints	No mention of competitor reviews or 4-star reviews in output	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	5	FAIL	Plans to extract verbatim quotes and pain themes	Output says 'Extract themes, pains, language, and patterns' but does not mention verbatim quotes	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	Output mentions 'complaints' but does not mention workarounds or switching triggers	3	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	1	FAIL	Checks for product-marketing.md	Output does not mention product-marketing.md or checking for existing product context files	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure with jobs/pains/triggers/outcomes present in output	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	5	FAIL	Mentions the need to capture actual customer vocabulary	Output does not mention capturing customer vocabulary, language, or terminology	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	6	FAIL	Notes minimum data threshold (5-10 data points)	Output does not specify 5-10 data point threshold	4	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	1	FAIL	Checks for product-marketing.md	Model says 'If not in a product marketing context file' but does not actually check for or reference product-marketing.md file	5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	5	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	1	FAIL	Checks for product-marketing.md	Thought states 'I also need to check' but no confirmation or tool call indicates the check was performed.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Output mentions 'review sites' generally but does not specify '4-star reviews' or 'buried complaints'.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Extraction list includes 'What customers love' and 'What frustrates them' but omits 'unmet needs' in the extraction description section.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	5	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	2	FAIL	Asks about target ICP segment within HR	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	4	FAIL	Plans to extract verbatim language for copy use	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	5	FAIL	Mentions organizing findings into a VOC quote bank	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	1	PASS			8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	2	FAIL	Recommends segmenting churn reasons before analyzing	No mention of segmenting churn reasons in model response	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	3	FAIL	Warns against averaging across different churn causes	No warning about averaging churn causes in output	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	4	FAIL	Suggests pairing open-ended responses with quantitative data	No suggestion about open-ended/quantitative data pairing	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	5	FAIL	Asks if win/loss interview data is also available	No inquiry about win/loss interview data	8	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	1	FAIL	Checks for product-marketing.md	No reference to 'product-marketing.md' found in output. Model references 'source guides' and 'research playbooks' instead.	9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	2	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	3	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	4	PASS			9	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	1	FAIL	Checks for product-marketing.md	No evidence of checking .agents/product-marketing.md in output. Reasoning mentions it but no actual file check performed.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC extraction shown in output. Model only asks clarifying questions.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified in output. Model did not extract or reference any customer quotes.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	4	FAIL	References the copywriting skill for the actual copy writing step	Copywriting skill mentioned in internal reasoning only, not in user-facing output.	10	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	1	FAIL	Checks for product-marketing.md	Agent states: 'Since I don't have access to their file system to check for product marketing context, I should ask clarifying questions first.' No actual check performed.	11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	2	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	3	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	4	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	5	PASS			11	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	2	PASS			12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses before gathering data in output	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Mentions 'online sources' and 'Mode 2: Go Find Research' but no mention of interviews as part of research plan	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	5	FAIL	Warns against building personas without any data	No explicit warning against building personas without data; persona listed as example goal without caveat	12	4
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	1	FAIL	Checks for product-marketing.md	Model states 'If there's a product marketing context file in your setup, I'll check that first' but does not actually check for the file.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of jobs to be done, pain points, or desired outcomes in output.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	4	FAIL	Suggests organizing quotes by theme	No suggestion about organizing quotes by theme in output.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	5	FAIL	References frequency and intensity scoring	No reference to frequency and intensity scoring in output.	1	5
+ab-testing	eval-1	with_skill	FAIL	5.9s	14832	6	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	6.2s	14858	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output. Output references 'Mode 2: Digital Watering Hole Research' and 'analyzing existing assets' but no specific file.	2	5
+ab-testing	eval-2	with_skill	FAIL	6.2s	14858	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	6.2s	14858	3	FAIL	Mentions Reddit, G2, or review sites as starting points	Output says 'Identify the right online communities and sources to mine' but does not specifically mention Reddit, G2, or review sites.	2	5
+ab-testing	eval-2	with_skill	FAIL	6.2s	14858	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	6.2s	14858	5	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output; model states 'I don't have direct access to browse Reddit or G2 in real-time' and provides methodology instead	3	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	17.9s	15812	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	1	FAIL	Checks for product-marketing.md	No evidence of checking for product-marketing.md file. Model mentions 'check if there's a product marketing context file' but no actual file check occurs.	4	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure was created - model only asks clarifying questions before building persona.	4	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	5	FAIL	Mentions the need to capture actual customer vocabulary	No mention of customer vocabulary in the output.	4	5
+ab-testing	eval-4	with_skill	FAIL	9.0s	15084	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	14933	1	FAIL	Checks for product-marketing.md	I don't have access to check for product-marketing.md files directly.	5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	14933	2	FAIL	Recommends categorizing tickets before analyzing (bugs vs confusion vs feature requests)	Asks 'Categorized by issue type already?' but does not recommend categorization as a step.	5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	14933	3	FAIL	Warns against treating all tickets as equal signal	No mention of ticket signal weighting or equal treatment warning.	5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	14933	4	FAIL	Mentions extracting recurring language and patterns	No reference to recurring language or pattern extraction in analysis.	5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	14933	5	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	5.8s	14856	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on specific assertions. * Input: List of assertions, Model output (tex…	6	5
+ab-testing	eval-6	with_skill	FAIL	5.8s	14856	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on specific assertions. * Input: List of assertions, Model output (tex…	6	5
+ab-testing	eval-6	with_skill	FAIL	5.8s	14856	3	FAIL	Mentions G2 or Capterra as sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on specific assertions. * Input: List of assertions, Model output (tex…	6	5
+ab-testing	eval-6	with_skill	FAIL	5.8s	14856	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on specific assertions. * Input: List of assertions, Model output (tex…	6	5
+ab-testing	eval-6	with_skill	FAIL	5.8s	14856	5	FAIL	Frames as competitive intelligence input	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on specific assertions. * Input: List of assertions, Model output (tex…	6	5
+ab-testing	eval-7	with_skill	FAIL	8.5s	15069	1	FAIL	Checks for product-marketing.md	No mention of checking .agents/product-marketing.md in user-facing output; only in internal reasoning	7	5
+ab-testing	eval-7	with_skill	FAIL	8.5s	15069	2	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.5s	15069	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	No subreddits, communities, or digital watering holes mentioned in output	7	5
+ab-testing	eval-7	with_skill	FAIL	8.5s	15069	4	FAIL	Plans to extract verbatim language for copy use	No explicit statement about extracting verbatim language for copy; only mentions quote bank as deliverable option	7	5
+ab-testing	eval-7	with_skill	FAIL	8.5s	15069	5	PASS			7	5
+ab-testing	eval-8	with_skill	FAIL	7.2s	14950	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to file system in this conversation, I'll proceed with asking the key questions.' No actual check performed.	8	5
+ab-testing	eval-8	with_skill	FAIL	7.2s	14950	2	FAIL	Recommends segmenting churn reasons before analyzing	No recommendation found in output. Model mentions categorizing by churn reason only as future analysis step: 'Once I have this, I can analyze the exit survey data using the churn research framework: …	8	5
+ab-testing	eval-8	with_skill	FAIL	7.2s	14950	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes present in output.	8	5
+ab-testing	eval-8	with_skill	FAIL	7.2s	14950	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asks about survey format including 'open-ended responses' but never suggests pairing with quantitative data.	8	5
+ab-testing	eval-8	with_skill	FAIL	7.2s	14950	5	FAIL	Asks if win/loss interview data is also available	Model asks about exit survey data format only. No mention of win/loss interview data.	8	5
+ab-testing	eval-9	with_skill	FAIL	19.7s	15992	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	9	5
+ab-testing	eval-9	with_skill	FAIL	19.7s	15992	2	FAIL	Mentions specific relevant communities (r/devops, Hacker News, LinkedIn, Discord)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	9	5
+ab-testing	eval-9	with_skill	FAIL	19.7s	15992	3	FAIL	Suggests what to search for in those communities	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	9	5
+ab-testing	eval-9	with_skill	FAIL	19.7s	15992	4	FAIL	Describes what signal to extract from each source type	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	9	5
+ab-testing	eval-10	with_skill	FAIL	5.5s	14831	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in the output.	10	5
+ab-testing	eval-10	with_skill	FAIL	5.5s	14831	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC language or themes extracted; model is asking for research input instead.	10	5
+ab-testing	eval-10	with_skill	FAIL	5.5s	14831	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified in the output.	10	5
+ab-testing	eval-10	with_skill	FAIL	5.5s	14831	4	PASS			10	5
+ab-testing	eval-11	with_skill	FAIL	6.8s	14938	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	11	5
+ab-testing	eval-11	with_skill	FAIL	6.8s	14938	2	PASS			11	5
+ab-testing	eval-11	with_skill	FAIL	6.8s	14938	3	PASS			11	5
+ab-testing	eval-11	with_skill	FAIL	6.8s	14938	4	PASS			11	5
+ab-testing	eval-11	with_skill	FAIL	6.8s	14938	5	PASS			11	5
+ab-testing	eval-12	with_skill	FAIL	7.1s	14975	1	FAIL	Checks for product-marketing.md	No mention of checking for product-marketing.md file in the output.	12	5
+ab-testing	eval-12	with_skill	FAIL	7.1s	14975	2	PASS			12	5
+ab-testing	eval-12	with_skill	FAIL	7.1s	14975	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses before gathering data in the output.	12	5
+ab-testing	eval-12	with_skill	FAIL	7.1s	14975	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Mentions sources and methods only as potential future recommendations ('Once I know these, I can recommend'), not as an actual suggested plan.	12	5
+ab-testing	eval-12	with_skill	FAIL	7.1s	14975	5	FAIL	Warns against building personas without any data	No warning against building personas; instead lists 'Persona' as a potential deliverable option.	12	5
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	1	FAIL	Checks for product-marketing.md	Model mentions '(If this isn't in a product marketing context file...)' but no actual file check performed or confirmed.	1	6
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of jobs to be done, pain points, or desired outcomes in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	4	FAIL	Suggests organizing quotes by theme	No mention of organizing quotes by theme in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	4.9s	14746	6	FAIL	Asks which deliverable is needed	Model states 'Once I have that, I can ask a couple more targeted questions' about deliverables - not directly asking in this turn.	1	6
+ab-testing	eval-2	with_skill	FAIL	4.9s	14748	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items) an…	2	6
+ab-testing	eval-2	with_skill	FAIL	4.9s	14748	2	FAIL	Recommends digital watering hole research as an alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items) an…	2	6
+ab-testing	eval-2	with_skill	FAIL	4.9s	14748	3	FAIL	Mentions Reddit, G2, or review sites as starting points	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items) an…	2	6
+ab-testing	eval-2	with_skill	FAIL	4.9s	14748	4	FAIL	Asks what product or category to research	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items) an…	2	6
+ab-testing	eval-2	with_skill	FAIL	4.9s	14748	5	FAIL	Offers to help extract insights from online sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items) an…	2	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	2	FAIL	Identifies relevant subreddits or search strategies for project management	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	4	FAIL	Recommends competitor 4-star reviews for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	5	FAIL	Plans to extract verbatim quotes and pain themes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-3	with_skill	FAIL	29.7s	16778	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (research plan, Reddit findings, G2 re…	3	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	1	FAIL	Checks for product-marketing.md	Output mentions 'product marketing context file' in thinking but no evidence of checking product-marketing.md in actual output	4	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure shown; only clarifying questions asked	4	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	5	FAIL	Mentions the need to capture actual customer vocabulary	No mention of customer vocabulary in output	4	6
+ab-testing	eval-4	with_skill	FAIL	8.0s	15002	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	11.3s	15293	1	FAIL	Checks for product-marketing.md	No output files were captured. No tool calls to check for product-marketing.md visible in output.	5	6
+ab-testing	eval-5	with_skill	FAIL	11.3s	15293	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.3s	15293	3	FAIL	Warns against treating all tickets as equal signal	Warning appears in thinking process only, not in user-facing output. No explicit warning in final response.	5	6
+ab-testing	eval-5	with_skill	FAIL	11.3s	15293	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.3s	15293	5	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	6.7s	14927	1	FAIL	Checks for product-marketing.md	No reference to checking product-marketing.md in output; only mentions 'if not in the product marketing context file' in internal reasoning	6	6
+ab-testing	eval-6	with_skill	FAIL	6.7s	14927	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Output says 'competitor 4-star reviews for unmet needs' not 'buried complaints'	6	6
+ab-testing	eval-6	with_skill	FAIL	6.7s	14927	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.7s	14927	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Output only mentions 'unmet needs' not 'what they love, what frustrates them'	6	6
+ab-testing	eval-6	with_skill	FAIL	6.7s	14927	5	PASS			6	6
+ab-testing	eval-7	with_skill	FAIL	7.1s	14971	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Input: Model output …	7	6
+ab-testing	eval-7	with_skill	FAIL	7.1s	14971	2	FAIL	Asks about target ICP segment within HR	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Input: Model output …	7	6
+ab-testing	eval-7	with_skill	FAIL	7.1s	14971	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Input: Model output …	7	6
+ab-testing	eval-7	with_skill	FAIL	7.1s	14971	4	FAIL	Plans to extract verbatim language for copy use	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Input: Model output …	7	6
+ab-testing	eval-7	with_skill	FAIL	7.1s	14971	5	FAIL	Mentions organizing findings into a VOC quote bank	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Input: Model output …	7	6
+ab-testing	eval-8	with_skill	FAIL	8.6s	15075	1	FAIL	Checks for product-marketing.md	Model stated 'I don't have access to read files from the filesystem in this context' - did not actually check for the file	8	6
+ab-testing	eval-8	with_skill	FAIL	8.6s	15075	2	FAIL	Recommends segmenting churn reasons before analyzing	No explicit recommendation to segment churn reasons found in output	8	6
+ab-testing	eval-8	with_skill	FAIL	8.6s	15075	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes in output	8	6
+ab-testing	eval-8	with_skill	FAIL	8.6s	15075	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asked about data format but did not suggest pairing open-ended with quantitative data	8	6
+ab-testing	eval-8	with_skill	FAIL	8.6s	15075	5	PASS			8	6
+ab-testing	eval-9	with_skill	FAIL	18.7s	15927	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output; model references 'source guides' generically without file-specific check	9	6
+ab-testing	eval-9	with_skill	FAIL	18.7s	15927	2	PASS			9	6
+ab-testing	eval-9	with_skill	FAIL	18.7s	15927	3	PASS			9	6
+ab-testing	eval-9	with_skill	FAIL	18.7s	15927	4	PASS			9	6
+ab-testing	eval-10	with_skill	FAIL	7.2s	14962	1	FAIL	Checks for product-marketing.md	Model asks 'Is there a product marketing context file' rather than checking it. No file read action performed.	10	6
+ab-testing	eval-10	with_skill	FAIL	7.2s	14962	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC extraction in output. Model only asks clarifying questions about research materials.	10	6
+ab-testing	eval-10	with_skill	FAIL	7.2s	14962	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified. Output contains only questions to user, no quote extraction.	10	6
+ab-testing	eval-10	with_skill	FAIL	7.2s	14962	4	FAIL	References the copywriting skill for the actual copy writing step	Model mentions copywriting skill ('falls under the copywriting skill') but does not execute copy writing step - still in questioning phase.	10	6
+ab-testing	eval-11	with_skill	FAIL	6.7s	14914	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product marketing context file, but I don't have access to that in this conversation' - acknowledges file but no evidence of checking it	11	6
+ab-testing	eval-11	with_skill	FAIL	6.7s	14914	2	PASS			11	6
+ab-testing	eval-11	with_skill	FAIL	6.7s	14914	3	PASS			11	6
+ab-testing	eval-11	with_skill	FAIL	6.7s	14914	4	PASS			11	6
+ab-testing	eval-11	with_skill	FAIL	6.7s	14914	5	PASS			11	6
+ab-testing	eval-12	with_skill	FAIL	5.9s	14851	1	FAIL	Checks for product-marketing.md	Model mentions checking for file in reasoning but does not actually access it: 'Since I don't have access to their product marketing context file'	12	6
+ab-testing	eval-12	with_skill	FAIL	5.9s	14851	2	PASS			12	6
+ab-testing	eval-12	with_skill	FAIL	5.9s	14851	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses in the model output	12	6
+ab-testing	eval-12	with_skill	FAIL	5.9s	14851	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Only mentions 'online communities, review sites, and sources to mine' - no mention of interviews	12	6
+ab-testing	eval-12	with_skill	FAIL	5.9s	14851	5	PASS			12	6
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	1	FAIL	Checks for product-marketing.md	No mention of checking for product-marketing.md file in output	1	7
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of jobs to be done, pain points, or desired outcomes in output	1	7
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	4	FAIL	Suggests organizing quotes by theme	No mention of organizing quotes by theme in output	1	7
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output	1	7
+ab-testing	eval-1	with_skill	FAIL	6.1s	14834	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	4.7s	14729	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	2	7
+ab-testing	eval-2	with_skill	FAIL	4.7s	14729	2	FAIL	Recommends digital watering hole research as an alternative	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	2	7
+ab-testing	eval-2	with_skill	FAIL	4.7s	14729	3	FAIL	Mentions Reddit, G2, or review sites as starting points	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	2	7
+ab-testing	eval-2	with_skill	FAIL	4.7s	14729	4	FAIL	Asks what product or category to research	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	2	7
+ab-testing	eval-2	with_skill	FAIL	4.7s	14729	5	FAIL	Offers to help extract insights from online sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…	2	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	2	FAIL	Identifies relevant subreddits or search strategies for project management	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	4	FAIL	Recommends competitor 4-star reviews for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	5	FAIL	Plans to extract verbatim quotes and pain themes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-3	with_skill	FAIL	5.6s	14801	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** Assertions …	3	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	1	FAIL	Checks for product-marketing.md	Model says 'Since I don't have access to check for `.agents/product-marketing.md`' - acknowledges file but does not actually check it	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure was created; model is asking clarifying questions before building persona	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	5	FAIL	Mentions the need to capture actual customer vocabulary	Model mentions 'voice-of-customer data' but does not explicitly mention capturing customer vocabulary	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	15139	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	9.1s	15111	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	5	7
+ab-testing	eval-5	with_skill	FAIL	9.1s	15111	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.1s	15111	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.1s	15111	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	9.1s	15111	5	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	5.7s	14794	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items), Model Output (text response), Output …	6	7
+ab-testing	eval-6	with_skill	FAIL	5.7s	14794	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items), Model Output (text response), Output …	6	7
+ab-testing	eval-6	with_skill	FAIL	5.7s	14794	3	FAIL	Mentions G2 or Capterra as sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items), Model Output (text response), Output …	6	7
+ab-testing	eval-6	with_skill	FAIL	5.7s	14794	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items), Model Output (text response), Output …	6	7
+ab-testing	eval-6	with_skill	FAIL	5.7s	14794	5	FAIL	Frames as competitive intelligence input	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (5 items), Model Output (text response), Output …	6	7
+ab-testing	eval-7	with_skill	FAIL	7.5s	14977	1	FAIL	Checks for product-marketing.md	Model states: 'I should also check if there's a product-marketing context file, but since I don't have access to the file system, I'll need to ask about the product details.' - No actual file check p…	7	7
+ab-testing	eval-7	with_skill	FAIL	7.5s	14977	2	PASS			7	7
+ab-testing	eval-7	with_skill	FAIL	7.5s	14977	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	No mention of subreddits, G2 categories, or communities as research sources. Only mentions 'G2/Capterra reviews' as existing research material.	7	7
+ab-testing	eval-7	with_skill	FAIL	7.5s	14977	4	FAIL	Plans to extract verbatim language for copy use	No explicit mention of extracting verbatim language for copy use in the output.	7	7
+ab-testing	eval-7	with_skill	FAIL	7.5s	14977	5	PASS			7	7
+ab-testing	eval-8	with_skill	FAIL	6.6s	14908	1	FAIL	Checks for product-marketing.md	No file check performed; model only mentions 'If this isn't in a product marketing context file' without evidence of checking	8	7
+ab-testing	eval-8	with_skill	FAIL	6.6s	14908	2	FAIL	Recommends segmenting churn reasons before analyzing	Model asks about segments but does not explicitly recommend segmenting churn reasons before analyzing	8	7
+ab-testing	eval-8	with_skill	FAIL	6.6s	14908	3	FAIL	Warns against averaging across different churn causes	No warning present in output about averaging across churn causes	8	7
+ab-testing	eval-8	with_skill	FAIL	6.6s	14908	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asks about data types but does not suggest pairing them together	8	7
+ab-testing	eval-8	with_skill	FAIL	6.6s	14908	5	PASS			8	7
+ab-testing	eval-9	with_skill	FAIL	13.7s	15495	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in output	9	7
+ab-testing	eval-9	with_skill	FAIL	13.7s	15495	2	PASS			9	7
+ab-testing	eval-9	with_skill	FAIL	13.7s	15495	3	PASS			9	7
+ab-testing	eval-9	with_skill	FAIL	13.7s	15495	4	PASS			9	7
+ab-testing	eval-10	with_skill	FAIL	5.3s	14817	1	FAIL	Checks for product-marketing.md	No file check or tool call for product-marketing.md present in output.	10	7
+ab-testing	eval-10	with_skill	FAIL	5.3s	14817	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC language or themes extracted; output only asks clarifying questions.	10	7
+ab-testing	eval-10	with_skill	FAIL	5.3s	14817	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified; output requests user to provide research.	10	7
+ab-testing	eval-10	with_skill	FAIL	5.3s	14817	4	PASS			10	7
+ab-testing	eval-11	with_skill	FAIL	8.1s	15041	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output	11	7
+ab-testing	eval-11	with_skill	FAIL	8.1s	15041	2	PASS			11	7
+ab-testing	eval-11	with_skill	FAIL	8.1s	15041	3	PASS			11	7
+ab-testing	eval-11	with_skill	FAIL	8.1s	15041	4	PASS			11	7
+ab-testing	eval-11	with_skill	FAIL	8.1s	15041	5	PASS			11	7
+ab-testing	eval-12	with_skill	FAIL	5.0s	14775	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output. States 'I don't have this context' instead.	12	7
+ab-testing	eval-12	with_skill	FAIL	5.0s	14775	2	PASS			12	7
+ab-testing	eval-12	with_skill	FAIL	5.0s	14775	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses in the output. Only asks clarifying questions.	12	7
+ab-testing	eval-12	with_skill	FAIL	5.0s	14775	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Only mentions 'gather intelligence from online sources' - no interviews suggested.	12	7
+ab-testing	eval-12	with_skill	FAIL	5.0s	14775	5	FAIL	Warns against building personas without any data	Personas mentioned as a possible goal but no warning against building them without data.	12	7
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No explicit mention of extracting pain points and desired outcomes in the output	1	8
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output	1	8
+ab-testing	eval-1	with_skill	FAIL	7.3s	14938	6	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	6.0s	14847	1	FAIL	Checks for product-marketing.md	No evidence in output of checking for product-marketing.md file. Thought process mentions it but not actual output.	2	8
+ab-testing	eval-2	with_skill	FAIL	6.0s	14847	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	6.0s	14847	3	FAIL	Mentions Reddit, G2, or review sites as starting points	Output mentions 'online communities and review sites' and 'forums' generally, but does not specifically name Reddit, G2, or any specific review sites.	2	8
+ab-testing	eval-2	with_skill	FAIL	6.0s	14847	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	6.0s	14847	5	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	1	FAIL	Checks for product-marketing.md	"Model states: ""I don't have access to those in this context, so I'll proceed with asking clarifying questions."" No actual file check performed."	3	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	"Only mentions ""Pull 3-star reviews"" - no 1-star reviews mentioned."	3	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	4	FAIL	Recommends competitor 4-star reviews for buried complaints	No 4-star reviews mentioned; only 3-star reviews suggested.	3	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	12.4s	15366	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	"Mentions complaints and switching triggers (""Trigger events"") but no mention of workarounds."	3	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	2	FAIL	Asks if there is existing research to build from before inventing details	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	3	FAIL	Warns against creating personas without data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	5	FAIL	Mentions the need to capture actual customer vocabulary	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-4	with_skill	FAIL	8.6s	15058	6	FAIL	Notes minimum data threshold (5-10 data points)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	4	8
+ab-testing	eval-5	with_skill	FAIL	9.3s	15137	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file check in output; model mentions 'check if there's product marketing context' in thought process but no file evidence in final output	5	8
+ab-testing	eval-5	with_skill	FAIL	9.3s	15137	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	9.3s	15137	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	9.3s	15137	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	9.3s	15137	5	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	5.0s	14790	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	6	8
+ab-testing	eval-6	with_skill	FAIL	5.0s	14790	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	No mention of 4-star reviews or buried complaints in output	6	8
+ab-testing	eval-6	with_skill	FAIL	5.0s	14790	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	5.0s	14790	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Output asks about goal but does not specify extraction criteria like 'what they love, what frustrates them, unmet needs'	6	8
+ab-testing	eval-6	with_skill	FAIL	5.0s	14790	5	PASS			6	8
+ab-testing	eval-7	with_skill	FAIL	6.7s	14911	1	FAIL	Checks for product-marketing.md	Model states 'Let me see if there's a product marketing context file' but no actual file check or product-marketing.md reference in output; output files: None captured	7	8
+ab-testing	eval-7	with_skill	FAIL	6.7s	14911	2	FAIL	Asks about target ICP segment within HR	Model asks about goal and research assets, mentions HR SaaS categories (recruiting, onboarding, etc.) but does not ask about target ICP segment specifically	7	8
+ab-testing	eval-7	with_skill	FAIL	6.7s	14911	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	Mentions G2/Capterra as existing assets to review but does not suggest specific digital watering holes like subreddits or communities for research	7	8
+ab-testing	eval-7	with_skill	FAIL	6.7s	14911	4	FAIL	Plans to extract verbatim language for copy use	No mention of extracting verbatim language or using it for copy in the output	7	8
+ab-testing	eval-7	with_skill	FAIL	6.7s	14911	5	FAIL	Mentions organizing findings into a VOC quote bank	No mention of VOC quote bank organization in the output	7	8
+ab-testing	eval-8	with_skill	FAIL	6.0s	14873	1	FAIL	Checks for product-marketing.md	I don't have access to check for product marketing context files	8	8
+ab-testing	eval-8	with_skill	FAIL	6.0s	14873	2	FAIL	Recommends segmenting churn reasons before analyzing	No recommendation about segmenting churn reasons found in output; only asks about existing segmentation	8	8
+ab-testing	eval-8	with_skill	FAIL	6.0s	14873	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes in output	8	8
+ab-testing	eval-8	with_skill	FAIL	6.0s	14873	4	FAIL	Suggests pairing open-ended responses with quantitative data	Asks about response types (open-ended, multiple choice, or both) but does not suggest pairing them	8	8
+ab-testing	eval-8	with_skill	FAIL	6.0s	14873	5	FAIL	Asks if win/loss interview data is also available	Asks about exit survey results but never mentions win/loss interview data	8	8
+ab-testing	eval-9	with_skill	FAIL	16.8s	15735	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md found in output. Model mentions 'source guides' but not the specific file.	9	8
+ab-testing	eval-9	with_skill	FAIL	16.8s	15735	2	PASS			9	8
+ab-testing	eval-9	with_skill	FAIL	16.8s	15735	3	PASS			9	8
+ab-testing	eval-9	with_skill	FAIL	16.8s	15735	4	PASS			9	8
+ab-testing	eval-10	with_skill	FAIL	4.6s	14757	1	FAIL	Checks for product-marketing.md	Model states 'If you have a product marketing context file, I'll check that first' but does not actually check for or reference the file in the output.	10	8
+ab-testing	eval-10	with_skill	FAIL	4.6s	14757	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC language or themes are extracted; output only contains clarifying questions asking for research materials.	10	8
+ab-testing	eval-10	with_skill	FAIL	4.6s	14757	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes are identified or referenced in the model output.	10	8
+ab-testing	eval-10	with_skill	FAIL	4.6s	14757	4	PASS			10	8
+ab-testing	eval-11	with_skill	FAIL	9.1s	14963	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	11	8
+ab-testing	eval-11	with_skill	FAIL	9.1s	14963	2	FAIL	Recognizes this as a B2C research scenario	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	11	8
+ab-testing	eval-11	with_skill	FAIL	9.1s	14963	3	FAIL	Suggests app store reviews as a primary source	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	11	8
+ab-testing	eval-11	with_skill	FAIL	9.1s	14963	4	FAIL	Mentions Reddit or community sources relevant to fitness/consumer apps	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	11	8
+ab-testing	eval-11	with_skill	FAIL	9.1s	14963	5	FAIL	Frames around understanding drop-off triggers and desired outcomes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Assertion…	11	8
+ab-testing	eval-12	with_skill	FAIL	7.8s	15010	1	PASS			12	8
+ab-testing	eval-12	with_skill	FAIL	7.8s	15010	2	PASS			12	8
+ab-testing	eval-12	with_skill	FAIL	7.8s	15010	3	PASS			12	8
+ab-testing	eval-12	with_skill	FAIL	7.8s	15010	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Model only mentions 'online communities and sources' and 'Mode 2: Digital Watering Hole Research' - no interviews mentioned	12	8
+ab-testing	eval-12	with_skill	FAIL	7.8s	15010	5	FAIL	Warns against building personas without any data	No warning found in output about building personas without data	12	8
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output; only mentions '20 customer interview transcripts'	1	9
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of jobs to be done, pain points, or desired outcomes in output	1	9
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	4	FAIL	Suggests organizing quotes by theme	No suggestion about organizing quotes by theme in output	1	9
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output	1	9
+ab-testing	eval-1	with_skill	FAIL	5.6s	14799	6	FAIL	Asks which deliverable is needed	Output asks about goal and other assets but does not ask which deliverable is needed	1	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	14801	1	FAIL	Checks for product-marketing.md	No output files captured; no reference to product-marketing.md in visible output	2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	14801	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	14801	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	14801	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	14801	5	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	2	FAIL	Identifies relevant subreddits or search strategies for project management	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	4	FAIL	Recommends competitor 4-star reviews for buried complaints	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	5	FAIL	Plans to extract verbatim quotes and pain themes	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	50.3s	18464	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	2	FAIL	Asks if there is existing research to build from before inventing details	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	3	FAIL	Warns against creating personas without data	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	5	FAIL	Mentions the need to capture actual customer vocabulary	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-4	with_skill	FAIL	8.1s	15010	6	FAIL	Notes minimum data threshold (5-10 data points)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (list of 6 items), Model Output (text response f…	4	9
+ab-testing	eval-5	with_skill	FAIL	7.6s	14978	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output; model only mentions 'customer research skill documentation'	5	9
+ab-testing	eval-5	with_skill	FAIL	7.6s	14978	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	7.6s	14978	3	FAIL	Warns against treating all tickets as equal signal	No explicit warning found; model mentions 'Issues that appear 5+ times' but does not warn against treating all tickets equally	5	9
+ab-testing	eval-5	with_skill	FAIL	7.6s	14978	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	7.6s	14978	5	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	14779	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	14779	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Output says '3-4 star reviews' not specifically 4-star reviews for buried complaints	6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	14779	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	14779	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Only mentions 'pain points and unmet needs' - does not describe extracting what they love or what frustrates them	6	9
+ab-testing	eval-6	with_skill	FAIL	4.9s	14779	5	FAIL	Frames as competitive intelligence input	No explicit framing as competitive intelligence; only mentions 'competitive battlecards' as a goal option	6	9
+ab-testing	eval-7	with_skill	FAIL	9.4s	15136	1	FAIL	Checks for product-marketing.md	Since I'm an AI assistant and can't actually check for files in their system	7	9
+ab-testing	eval-7	with_skill	FAIL	9.4s	15136	2	FAIL	Asks about target ICP segment within HR	Output asks about goal and existing assets only, no question about target segment	7	9
+ab-testing	eval-7	with_skill	FAIL	9.4s	15136	3	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	9.4s	15136	4	PASS			7	9
+ab-testing	eval-7	with_skill	FAIL	9.4s	15136	5	FAIL	Mentions organizing findings into a VOC quote bank	No mention of quote bank in output	7	9
+ab-testing	eval-8	with_skill	FAIL	5.7s	14847	1	FAIL	Checks for product-marketing.md	Model states 'If you have a product marketing context file' indicating it did not find or check the file	8	9
+ab-testing	eval-8	with_skill	FAIL	5.7s	14847	2	FAIL	Recommends segmenting churn reasons before analyzing	Model asks about segmentation but does not recommend the approach before analyzing	8	9
+ab-testing	eval-8	with_skill	FAIL	5.7s	14847	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes in output	8	9
+ab-testing	eval-8	with_skill	FAIL	5.7s	14847	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model asks about format but does not suggest pairing open-ended with quantitative data	8	9
+ab-testing	eval-8	with_skill	FAIL	5.7s	14847	5	FAIL	Asks if win/loss interview data is also available	Model does not ask about win/loss interview data in clarifying questions	8	9
+ab-testing	eval-9	with_skill	FAIL	15.6s	15643	1	FAIL	Checks for product-marketing.md	No mention of 'product-marketing.md' in output. Model states 'I have detailed source guides in my reference materials' but does not check for specific file.	9	9
+ab-testing	eval-9	with_skill	FAIL	15.6s	15643	2	PASS			9	9
+ab-testing	eval-9	with_skill	FAIL	15.6s	15643	3	PASS			9	9
+ab-testing	eval-9	with_skill	FAIL	15.6s	15643	4	PASS			9	9
+ab-testing	eval-10	with_skill	FAIL	6.1s	14873	1	FAIL	Checks for product-marketing.md	No file check or reference to product-marketing.md in output	10	9
+ab-testing	eval-10	with_skill	FAIL	6.1s	14873	2	FAIL	Extracts the VOC language and themes first before jumping to copy	Output asks clarifying questions but does not extract any VOC language or themes	10	9
+ab-testing	eval-10	with_skill	FAIL	6.1s	14873	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified in the model output	10	9
+ab-testing	eval-10	with_skill	FAIL	6.1s	14873	4	FAIL	References the copywriting skill for the actual copy writing step	Mentions copywriting in planning section but does not reference it for actual copy writing step	10	9
+ab-testing	eval-11	with_skill	FAIL	8.4s	14944	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	11	9
+ab-testing	eval-11	with_skill	FAIL	8.4s	14944	2	PASS			11	9
+ab-testing	eval-11	with_skill	FAIL	8.4s	14944	3	PASS			11	9
+ab-testing	eval-11	with_skill	FAIL	8.4s	14944	4	FAIL	Mentions Reddit or community sources relevant to fitness/consumer apps	"Output mentions ""consumer communities"" but no specific Reddit reference"	11	9
+ab-testing	eval-11	with_skill	FAIL	8.4s	14944	5	PASS			11	9
+ab-testing	eval-12	with_skill	FAIL	5.6s	14845	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product marketing context file' but no file check was performed or evidence shown.	12	9
+ab-testing	eval-12	with_skill	FAIL	5.6s	14845	2	PASS			12	9
+ab-testing	eval-12	with_skill	FAIL	5.6s	14845	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses in the model output.	12	9
+ab-testing	eval-12	with_skill	FAIL	5.6s	14845	4	PASS			12	9
+ab-testing	eval-12	with_skill	FAIL	5.6s	14845	5	FAIL	Warns against building personas without any data	No explicit warning against building personas without data in the output.	12	9
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to the file system, I should ask about this context or proceed with questions' - did not actually check the file	1	10
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of extracting pain points or desired outcomes; only 'Jobs-to-be-done map?' listed as deliverable option	1	10
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in the output	1	10
+ab-testing	eval-1	with_skill	FAIL	7.6s	14954	6	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	5.2s	14772	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	5.2s	14772	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	5.2s	14772	3	FAIL	Mentions Reddit, G2, or review sites as starting points	No mention of Reddit, G2, or review sites in the model output	2	10
+ab-testing	eval-2	with_skill	FAIL	5.2s	14772	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	5.2s	14772	5	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in the output	3	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	4	FAIL	Recommends competitor 4-star reviews for buried complaints	No mention of 4-star reviews; only 1-3 star reviews recommended	3	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	34.4s	17176	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	Complaints and switching triggers ('switched from' posts) mentioned, but workarounds not explicitly mentioned	3	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	1	FAIL	Checks for product-marketing.md	Agent mentions checking `.agents/product-marketing.md` as a requirement but no evidence of actually checking the file; output files: 'No output files were captured'	4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure presented; agent is asking clarifying questions before building persona	4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	5	FAIL	Mentions the need to capture actual customer vocabulary	No mention of capturing customer vocabulary in the output	4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	14932	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	9.4s	15117	1	FAIL	Checks for product-marketing.md	Model mentions '(If not in a product marketing context file)' but does not actually check for or reference product-marketing.md specifically.	5	10
+ab-testing	eval-5	with_skill	FAIL	9.4s	15117	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.4s	15117	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.4s	15117	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	9.4s	15117	5	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	6.4s	14867	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	6	10
+ab-testing	eval-6	with_skill	FAIL	6.4s	14867	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Output says '3-star reviews first, then 4-star for unmet needs' - does not mention 'buried complaints'	6	10
+ab-testing	eval-6	with_skill	FAIL	6.4s	14867	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	6.4s	14867	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Only mentions 'unmet needs' and 'VOC quote bank organized by theme' - does not describe extracting 'what they love' or 'what frustrates them'	6	10
+ab-testing	eval-6	with_skill	FAIL	6.4s	14867	5	PASS			6	10
+ab-testing	eval-7	with_skill	FAIL	8.0s	15038	1	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	8.0s	15038	2	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	8.0s	15038	3	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	8.0s	15038	4	FAIL	Plans to extract verbatim language for copy use	No explicit mention of extracting verbatim language for copy use in output	7	10
+ab-testing	eval-7	with_skill	FAIL	8.0s	15038	5	FAIL	Mentions organizing findings into a VOC quote bank	VOC quote bank listed as deliverable option but no plan to organize findings into it	7	10
+ab-testing	eval-8	with_skill	FAIL	7.4s	14941	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	8	10
+ab-testing	eval-8	with_skill	FAIL	7.4s	14941	2	FAIL	Recommends segmenting churn reasons before analyzing	Asks about segments in Q3 but does not recommend segmenting before analysis	8	10
+ab-testing	eval-8	with_skill	FAIL	7.4s	14941	3	FAIL	Warns against averaging across different churn causes	No warning about averaging across churn causes in output	8	10
+ab-testing	eval-8	with_skill	FAIL	7.4s	14941	4	FAIL	Suggests pairing open-ended responses with quantitative data	Asks about format in Q4 but does not suggest pairing open-ended with quantitative data	8	10
+ab-testing	eval-8	with_skill	FAIL	7.4s	14941	5	FAIL	Asks if win/loss interview data is also available	No mention of win/loss interview data in output	8	10
+ab-testing	eval-9	with_skill	FAIL	24.3s	16357	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in model output. Model mentions 'source guides' but never checks product-marketing.md specifically.	9	10
+ab-testing	eval-9	with_skill	FAIL	24.3s	16357	2	PASS			9	10
+ab-testing	eval-9	with_skill	FAIL	24.3s	16357	3	PASS			9	10
+ab-testing	eval-9	with_skill	FAIL	24.3s	16357	4	PASS			9	10
+ab-testing	eval-10	with_skill	FAIL	6.5s	14911	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	10
+ab-testing	eval-10	with_skill	FAIL	6.5s	14911	2	FAIL	Extracts the VOC language and themes first before jumping to copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	10
+ab-testing	eval-10	with_skill	FAIL	6.5s	14911	3	FAIL	Identifies the highest-signal quotes for messaging	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	10
+ab-testing	eval-10	with_skill	FAIL	6.5s	14911	4	FAIL	References the copywriting skill for the actual copy writing step	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	10	10
+ab-testing	eval-11	with_skill	FAIL	7.5s	14990	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in model output. Model asks about 'research assets' but does not check for this specific file.	11	10
+ab-testing	eval-11	with_skill	FAIL	7.5s	14990	2	FAIL	Recognizes this as a B2C research scenario	Model output mentions 'Mobile fitness app users' and 'fitness app churn' but does not explicitly identify this as B2C.	11	10
+ab-testing	eval-11	with_skill	FAIL	7.5s	14990	3	PASS			11	10
+ab-testing	eval-11	with_skill	FAIL	7.5s	14990	4	PASS			11	10
+ab-testing	eval-11	with_skill	FAIL	7.5s	14990	5	PASS			11	10
+ab-testing	eval-12	with_skill	FAIL	5.4s	14826	1	FAIL	Checks for product-marketing.md	No evidence of file check in output. Model output only mentions 'First check if there's a product marketing context file' in internal thinking, not actual execution.	12	10
+ab-testing	eval-12	with_skill	FAIL	5.4s	14826	2	PASS			12	10
+ab-testing	eval-12	with_skill	FAIL	5.4s	14826	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses in the output. Output discusses research plan but not hypothesis formation.	12	10
+ab-testing	eval-12	with_skill	FAIL	5.4s	14826	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Output mentions 'Mode 2: Digital Wateringhole Research' and 'gathering intel from online sources' but no mention of interviews as part of the research plan.	12	10
+ab-testing	eval-12	with_skill	FAIL	5.4s	14826	5	FAIL	Warns against building personas without any data	No warning about building personas without data. Output lists 'build personas' as a goal option without any caution.	12	10

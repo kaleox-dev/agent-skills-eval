@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	1	FAIL	Checks for product-marketing.md	The 'Output files' section explicitly states: 'No output files were captured.'	1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	7	FAIL	Provides 2-3 headline alternatives with rationale	The 'Annotations & Rationale' section provides only one alternative: '*Alternative:* "The Onboarding Platform for Modern HR Teams" (Too generic, avoided).' This is not 2-3 alternatives.	1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	8	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	14.1s	14139	9	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	5.9s	13248	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	5	FAIL	Writes benefit-oriented feature copy, not just feature names	The pricing cards list features as 'Basic Analytics (Monthly)', 'Advanced Analytics (Real-time)', 'Link-in-bio tool'. The 'Why Upgrade' section uses benefit copy, but the core pricing card content (t…	3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	7	FAIL	CTAs are specific per plan	All three pricing cards (Starter, Pro, Business) have the identical CTA button text: '[Start Free Trial]'. They are not specific to the plan (e.g., 'Upgrade to Pro' vs 'Start Free Trial').	3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	8	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.3s	14464	9	FAIL	Provides alternatives for key elements	The model provides a single static draft. While it mentions in annotations to 'Adjust features' or 'Add visuals', it does not provide alternative copy variations or alternative layouts for the key el…	3	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	6	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	7	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	8	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.6s	14085	9	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	2	FAIL	Applies the CTA formula from the skill	The output does not reference, define, or explicitly apply a specific 'CTA formula' from a provided skill. It offers general best practices and options without citing a structured formula.	5	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	5	FAIL	Considers CTA hierarchy (primary vs secondary)	The output lists primary options and some 'Secondary Options' (e.g., 'Take a Quick Tour' under Option A), but it does not explicitly define a hierarchy of primary vs secondary CTAs for the user's spe…	5	8
+ab-testing	eval-5	with_skill	FAIL	8.0s	13435	6	FAIL	Suggests complementary CTAs	The output suggests alternatives for a single button location. It does not suggest a set of complementary CTAs (e.g., a primary CTA paired with a secondary link) for a page layout, nor does it discus…	5	8
+ab-testing	eval-6	with_skill	FAIL	17.3s	14570	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	17.3s	14570	2	FAIL	References or defers to emails skill	The model does not mention any specific 'emails skill', tool, or module. It simply generates the content directly without referencing a specific skill or deferring to it.	6	8
+ab-testing	eval-6	with_skill	FAIL	17.3s	14570	3	FAIL	Does not attempt to write a full email sequence using page copywriting patterns	The model wrote a full 5-email sequence. The assertion requires the model NOT to do this. Since the model did write the full sequence, this negative constraint is violated.	6	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	1	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	2	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	3	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	4	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	5	FAIL	Rewrites the copy following principles	The model does not provide a direct rewrite of the original copy. Instead, it provides 'three templates' (Options A, B, C) with bracketed placeholders like '[Specific Task]' and '[Product Category]' …	7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	6	PASS			7	8
+ab-testing	eval-7	with_skill	FAIL	10.2s	13785	7	PASS			7	8

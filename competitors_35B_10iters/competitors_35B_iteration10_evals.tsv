@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	1	FAIL	Checks for product-marketing.md	Model output explicitly states 'No output files were captured' and provides text content instead of a file named product-marketing.md.	1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	27.6s	14827	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	24.6s	14520	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	1	FAIL	Triggers on casual phrasing	The model output does not contain any casual phrasing; it is a formal request for business data.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	2	FAIL	Identifies as singular alternative format	The output is a questionnaire asking for product details, not a landing page copy identifying itself as a singular alternative.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	3	FAIL	Focuses on user's product as THE alternative	The output asks the user to provide their product name and value proposition; it does not yet focus on any product as THE alternative.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	4	FAIL	Includes why people switch from Mailchimp	The output asks the user 'Why do people switch to you?' but does not provide the reasons itself.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	5	FAIL	Highlights e-commerce-specific advantages	The output asks the user to provide 'E-commerce specific features' but does not list any advantages itself.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	6	FAIL	Includes feature and pricing comparison	The output asks for 'Current Pricing Structure' and 'Key Differentiators' from the user but provides no comparison.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	7	FAIL	Includes migration guide	The output asks about 'Migration Support' and 'Ease of Switch' but does not provide a guide.	3	10
+ab-testing	eval-3	with_skill	FAIL	7.7s	12674	8	FAIL	Optimizes for singular keyword	The output is a meta-request for information and contains no SEO-optimized content or keyword usage.	3	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	6	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	20.2s	14050	7	FAIL	Suggests monetization approach	The text mentions 'We may earn a commission if you click links and purchase' as a disclaimer requirement, but it does not suggest a monetization approach/strategy (e.g., affiliate programs, ad placem…	4	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	4	FAIL	Addresses internal linking between comparison pages	While the hub index suggests a 'Quick Link Table' to jump to specific comparisons, the model does not explicitly advise on a strategy for linking individual comparison pages to each other (e.g., cros…	5	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	5	FAIL	Recommends research process for competitive data	The model requests the user to provide competitor names and details in Step 1 but does not recommend a specific research process or methodology for gathering that data (e.g., 'use G2/Capterra reports…	5	10
+ab-testing	eval-5	with_skill	FAIL	12.8s	13226	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	12652	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	12652	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	12652	3	PASS			6	10

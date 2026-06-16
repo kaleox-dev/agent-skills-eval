@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	1	FAIL	Checks for product-marketing.md	Output files note: 'No output files were captured.' The model provided only a text response, not a file named product-marketing.md.	1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	7	FAIL	Provides 2-3 headline alternatives with rationale	The output provides only one headline: 'Onboard new hires in 2 days, not 2 weeks.' The 'Annotations & Rationale' section explains the choice for this single headline but does not provide alternative …	1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	8	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	19.5s	14648	9	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.8s	13650	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	1	FAIL	Triggers on casual phrasing	The output provides a structured 'High-Performing Pricing Page Template' with formal headings, tables, and meta data. It does not adopt a casual tone or trigger on casual phrasing; it is a profession…	3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	7	FAIL	CTAs are specific per plan	In the Pricing Table, the CTAs are '[Start Free Trial]' for Starter, '[Start Free Trial]' for Pro, and '[Contact Sales]' for Business. Starter and Pro have identical CTAs. Furthermore, the 'Final CTA…	3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	8	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	18.7s	14571	9	FAIL	Provides alternatives for key elements	The output provides a single draft template. While it suggests using a toggle for pricing, it does not provide alternative versions of the copy, headlines, or structure to A/B test or compare against.	3	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	7	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	8	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.9s	14294	9	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	5	FAIL	Considers CTA hierarchy (primary vs secondary)	The model lists alternatives in groups (Try It Yourself, Outcome, Low Friction) but does not explicitly define a visual or functional hierarchy (primary vs secondary buttons) or assign priority level…	5	4
+ab-testing	eval-5	with_skill	FAIL	6.7s	13288	6	FAIL	Suggests complementary CTAs	The model suggests alternatives for the specific button but does not suggest complementary CTAs elsewhere on the page (e.g., a secondary 'Contact Sales' link if the primary is 'Start Free Trial').	5	4
+ab-testing	eval-6	with_skill	FAIL	14.9s	14239	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	14.9s	14239	2	FAIL	References or defers to emails skill	The model provides the full email copy directly without referencing any specific 'emails skill', tool, or module. It acts as a general copywriter rather than invoking a specific skill entity.	6	4
+ab-testing	eval-6	with_skill	FAIL	14.9s	14239	3	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	1	FAIL	Identifies exclamation point overuse	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	2	FAIL	Identifies marketing buzzwords without substance	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	3	FAIL	Identifies vague language	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	4	FAIL	Applies writing style rules	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	5	FAIL	Rewrites the copy following principles	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	6	FAIL	Provides alternatives	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4
+ab-testing	eval-7	with_skill	FAIL	7.7s	13481	7	FAIL	Result is specific, clear, and jargon-free	judge returned unparseable response: { "assertion_results": [ { "text": "Identifies exclamation point overuse", "passed": true, "evidence": "Section 4 states: '\"Sign up now!!\": ... The double excla…	7	4

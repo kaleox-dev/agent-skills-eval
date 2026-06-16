@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	1	FAIL	Checks for product-marketing.md	Model mentions checking for product-marketing.md but provides no evidence of accessing or using it	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	3	FAIL	Includes TL;DR comparison section	Only mentions TL;DR in draft structure without actual content	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	4	FAIL	Includes feature comparison table	Lists comparison table in draft structure but no actual table present	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	5	FAIL	Includes pricing comparison	Mentions pricing in draft but no actual pricing data included	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	6	FAIL	Includes 'who it's best for' per alternative	Lists 'Recommendation by Use Case' in draft but no actual content provided	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	7	FAIL	Positions user's product prominently with differentiators	Asks for product name/differentiators instead of including them	1	7
+ab-testing	eval-1	with_skill	FAIL	13.0s	12925	8	FAIL	Addresses SEO for target keyword	Mentions SEO elements in draft but no actual keyword optimization shown	1	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	38.7s	15031	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	1	FAIL	Triggers on casual phrasing	No casual phrasing trigger detected in output	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	3	FAIL	Focuses on user's product as THE alternative	Output asks questions about product rather than positioning it as THE alternative	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	4	FAIL	Includes why people switch from Mailchimp	Only asks question 7 about switching reasons, does not include actual content	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	5	FAIL	Highlights e-commerce-specific advantages	Only asks question 2 about value proposition, does not include actual advantages	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	6	FAIL	Includes feature and pricing comparison	Mentions will create comparison but no actual comparison in output	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	7	FAIL	Includes migration guide	Asks question 9-10 about migration but no actual guide included	3	7
+ab-testing	eval-3	with_skill	FAIL	9.2s	12588	8	FAIL	Optimizes for singular keyword	References mailchimp alternative but no actual keyword-optimized page content	3	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	1	FAIL	Identifies as 'competitor vs competitor' format	Model states: 'the approach needs to be different from the typical 'you vs competitor' pages in my skill set' and 'For a neutral review site, I'll focus on: Objective, balanced analysis (no product p…	4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	3	FAIL	Includes balanced feature comparison	No actual feature comparison provided - only framework mentions 'Features & Functionality' as a planned section	4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	4	FAIL	Includes pricing comparison	No actual pricing comparison provided - only framework mentions 'Pricing & Value' as a planned section	4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	5	FAIL	Includes use case recommendations	No actual use case recommendations provided - only framework mentions 'Who Should Choose Notion/Coda' as planned sections	4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	6	FAIL	Addresses SEO considerations	SEO mentioned as 'SEO traffic capture?' question and 'SEO elements' in deliverables table, but no actual SEO considerations provided	4	7
+ab-testing	eval-4	with_skill	FAIL	12.4s	12859	7	FAIL	Suggests monetization approach	Monetization asked as question 'Will this include affiliate links, ads, or other monetization?' but no specific approach suggested	4	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	17.5s	13300	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	10.3s	12725	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.3s	12725	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	10.3s	12725	3	PASS			6	7

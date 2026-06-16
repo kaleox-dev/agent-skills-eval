@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; model only mentions placeholder URL (example.com/product)	1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	8	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	9	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	21.5s	16329	10	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	7	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	19.4s	16150	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	2	FAIL	Identifies as Homepage CRO	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	3	FAIL	Asks about current conversion rate	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	4	FAIL	Asks about traffic sources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	5	FAIL	Applies CRO Analysis Framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	6	FAIL	Addresses serving multiple audiences	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	7	FAIL	Addresses clear paths for different visitor intents	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-3	with_skill	FAIL	9.4s	15223	8	FAIL	Output has structured sections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A list of 8 assertions and a model output (which appears to…	3	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	22.8s	16410	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	6	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	7	FAIL	Provides fixes organized by impact	Checklist ranked by likelihood not impact; impact table exists but fixes not ordered by impact	5	3
+ab-testing	eval-5	with_skill	FAIL	12.1s	15512	8	FAIL	Recommends reverting high-risk changes	No explicit recommendation to revert changes in response	5	3
+ab-testing	eval-6	with_skill	FAIL	7.6s	15166	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.6s	15166	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	7.6s	15166	3	PASS			6	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	1	FAIL	Applies Feature Page CRO framework	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	2	FAIL	Connects features to benefits	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	3	FAIL	Suggests use cases and examples	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	4	FAIL	Provides clear path to try/buy	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	5	FAIL	Notes organic traffic source and search intent match	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	6	FAIL	Suggests specific experiment hypotheses	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3
+ab-testing	eval-7	with_skill	FAIL	7.0s	15140	7	FAIL	Cross-references ab-testing skill	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against 7 specific assertions and return a strict JSON resp…	7	3

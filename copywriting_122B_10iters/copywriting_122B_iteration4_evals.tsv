@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	1	FAIL	Checks for product-marketing.md	Model stated: 'I don't have access to check for those files in this environment, so I should ask the user for the necessary context before writing.' - Did not actually check.	1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	8	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	34.8s	15530	9	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	1	FAIL	Identifies jargon in original headline	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	2	FAIL	Identifies vagueness as a problem	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	3	FAIL	Identifies company language vs customer language issue	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	4	FAIL	Provides 2-3 alternative headlines	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	5	FAIL	Alternatives use headline formulas from the skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	6	FAIL	Each alternative includes rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-2	with_skill	FAIL	13.1s	13710	7	FAIL	Suggests a subheadline	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	1	FAIL	Triggers on casual phrasing	No pricing copy written; model asked clarifying questions instead	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	2	FAIL	Applies Pricing Page guidance	No pricing page copy produced	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	3	FAIL	Addresses 'which plan is right for me' anxiety	No plan comparison or guidance provided in output	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	4	FAIL	Makes recommended plan obvious	No plan recommendations made	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	5	FAIL	Writes benefit-oriented feature copy, not just feature names	No feature copy written	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	6	FAIL	Includes page headline	No pricing page headline present	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	7	FAIL	CTAs are specific per plan	No CTAs written for any plan	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	8	FAIL	Includes FAQ or objection handling copy	No FAQ or objection handling copy included	3	4
+ab-testing	eval-3	with_skill	FAIL	6.1s	13127	9	FAIL	Provides alternatives for key elements	No alternatives provided in output	3	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	1	FAIL	Applies About Page guidance	Model output is clarifying questions, not About page copy: "Before I dive in, I need to gather a bit more context"	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	2	FAIL	Tells the story of why the company exists	No story told. Model asked: "What's your company name?" and "Are there any specific details about the data loss incidents"	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	3	FAIL	Connects mission to customer benefit	No mission or benefits stated. Model requested: "What's the key transformation?"	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	4	FAIL	Includes a CTA	No call-to-action for About page visitors. Only "Once I have this, I can write an About page" - asking for more info, not converting	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	5	FAIL	Adapts tone to professional but human	No actual About page copy to evaluate tone. Model asked "where do you fall on this spectrum?" instead of applying it	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	6	FAIL	Uses the founder origin story	No origin story used. Model asked for: "What's your company name?" and "Are there any specific details about the data loss incidents"	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	7	FAIL	Connects personal pain to customer pain	No pain points connected. Model asked: "What's their biggest frustration with database migrations right now?"	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	8	FAIL	Uses active voice	No About page copy written to evaluate voice. Output is a question list	4	4
+ab-testing	eval-4	with_skill	FAIL	8.3s	13310	9	FAIL	Avoids corporate jargon	No About page copy written to evaluate. Output is a clarification request	4	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	4	FAIL	Each alternative includes rationale	No specific rationale provided for each alternative; only general formula stated	5	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	5	FAIL	Considers CTA hierarchy (primary vs secondary)	No mention of primary vs secondary CTA distinction in output	5	4
+ab-testing	eval-5	with_skill	FAIL	7.9s	13274	6	FAIL	Suggests complementary CTAs	No complementary CTAs suggested; only single alternatives listed	5	4
+ab-testing	eval-6	with_skill	FAIL	9.3s	13366	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	9.3s	13366	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	9.3s	13366	3	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	1	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	3	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	4	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	5	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	6	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.4s	13567	7	PASS			7	4

@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	The output explicitly states 'Let's begin Phase 1: Site Scraping.' It does not contain evidence of Phase 2 (SEO data) or Phase 3 (synthesis) execution.	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	The output section 'Output files:' explicitly states 'No output files were captured.'	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	4	FAIL	Produces individual profile per competitor	No individual profiles were produced. The output is a preliminary plan/statement of intent.	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	5	FAIL	Produces _summary.md after individual profiles	No summary file was produced. The workflow did not complete.	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	6	FAIL	Uses consistent metrics across competitors	No metrics or data extraction occurred. The model is still in the planning/querying stage.	1	3
+ab-testing	eval-1	with_skill	FAIL	4.2s	12983	7	FAIL	Parallelizes scraping when possible	While the model states 'I will map the sites and scrape... in parallel', the tool call `[firecrawl_map]` suggests a sequential mapping step first. More importantly, no actual scraping execution or pa…	1	3
+ab-testing	eval-2	with_skill	FAIL	4.2s	12958	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.2s	12958	2	FAIL	Suggests top 5 based on relevance	No mention of 'top 5' or selecting a subset of 5 competitors is found in the output. It suggests prioritizing depth (Quick vs Deep) but not a specific count like top 5.	2	3
+ab-testing	eval-2	with_skill	FAIL	4.2s	12958	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.2s	12958	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.2s	12958	5	FAIL	Asks user to prioritize	The model asks for 'Focus Areas' and 'URLs' but does not explicitly ask the user to 'prioritize' the list of 12 competitors into a smaller subset or rank them. It suggests a *method* of prioritizatio…	2	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	13070	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	13070	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	13070	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	13070	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to new date folder found in output.	3	3
+ab-testing	eval-3	with_skill	FAIL	5.2s	13070	5	FAIL	Says never overwrite prior date's data	No mention of never overwriting prior date's data found in output.	3	3
+ab-testing	eval-4	with_skill	FAIL	3.7s	12916	1	FAIL	Lists all key page types in priority order	judge did not provide concrete evidence	4	3
+ab-testing	eval-4	with_skill	FAIL	3.7s	12916	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	3.7s	12916	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	3.7s	12916	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	3.7s	12916	5	FAIL	References Firecrawl Map then Scrape workflow	The output text contains no mention of 'Firecrawl', 'Map', or specific workflow names like 'Map then Scrape'. It only says 'scrape' and 'map one competitor's site first to show you exactly which page…	4	3
+ab-testing	eval-5	with_skill	FAIL	1.5s	12715	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	1.5s	12715	2	FAIL	Runs Phase 1 and Phase 3	Model output contains no execution of analysis, only a request for input URLs: 'Please provide the URLs, and I'll get started.' No Phase 1 or Phase 3 activities are demonstrated.	5	3
+ab-testing	eval-5	with_skill	FAIL	1.5s	12715	3	FAIL	Explains what's missing without SEO data	Model does not provide an explanation of missing information; it only requests competitor URLs.	5	3
+ab-testing	eval-5	with_skill	FAIL	1.5s	12715	4	FAIL	Flags SEO section as skipped, not blank	No output report or sections were generated to verify how the SEO section was flagged.	5	3
+ab-testing	eval-5	with_skill	FAIL	1.5s	12715	5	FAIL	Still saves raw data	Output files section states: 'No output files were captured.'	5	3
+ab-testing	eval-6	with_skill	FAIL	5.9s	13235	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	5.9s	13235	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	5.9s	13235	3	FAIL	Mentions checking traffic/backlink profile against claim scale	Model mentions checking 'SEO data' and 'dataforseo_labs_google_competitors_domain' (competitors, not backlink/traffic volume) but does not mention checking traffic/backlink profile against claim scal…	6	3
+ab-testing	eval-6	with_skill	FAIL	5.9s	13235	4	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	5.9s	13235	5	FAIL	Notes including date pulled	Model mentions flagging staleness if case studies are old, but does not explicitly state the practice of noting the 'date pulled' for the logo/customer data itself in the output or methodology.	6	3

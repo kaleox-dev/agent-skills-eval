@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	2	FAIL	Establishes 3-5 content pillars	Model promises 'I'll build you: 3-5 content pillars' but does not establish them in this output	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	3	FAIL	Maps content by buyer stage (awareness through implementation)	No buyer stage mapping present; only mentions 'Top-of-funnel traffic' as a goal option	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	4	FAIL	Includes keyword research by buyer stage	No keyword research included in output	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	5	FAIL	Recommends mix of searchable and shareable content	Model mentions 'searchable vs. shareable classification' as future deliverable but does not recommend actual mix	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	6	FAIL	Uses prioritization scoring framework	Model mentions 'A prioritization framework' as future deliverable but does not use one in this output	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	7	FAIL	Provides publishing cadence or calendar	Model asks about capacity but does not provide publishing cadence or calendar	1	3
+ab-testing	eval-1	with_skill	FAIL	9.3s	9525	8	FAIL	Recommends appropriate starting content types	Model asks what formats they can produce but does not recommend specific starting content types	1	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	1	FAIL	Diagnoses the 'random content' problem	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	2	FAIL	Recommends content audit for existing posts	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	3	FAIL	Introduces content pillars and topical clustering	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	4	FAIL	Identifies hub-and-spoke opportunities	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	5	FAIL	Recommends update, consolidate, or retire decisions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	6	FAIL	Uses prioritization framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-2	with_skill	FAIL	15.0s	9990	7	FAIL	Addresses topical authority building	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response against a set of assertions based on p…	2	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	1	FAIL	Triggers on casual phrasing	No casual phrasing trigger observed in output; model treated input as task description without demonstrating trigger behavior.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	4	FAIL	Notes developers prefer substance over marketing	No explicit statement about developer preference for substance over marketing in output.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	5	FAIL	Suggests content pillars for developer tool	Output states 'I can build... a content pillar structure' but does not actually suggest any content pillars.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	6	FAIL	Uses ideation sources framework	No ideation sources framework mentioned or applied in the output.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.5s	9448	7	FAIL	Mentions developer community channels	No developer community channels (GitHub, Stack Overflow, Reddit, Discord, etc.) referenced in output.	3	3
+ab-testing	eval-4	with_skill	FAIL	13.0s	9826	1	FAIL	Applies prioritization scoring framework with weights	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	3
+ab-testing	eval-4	with_skill	FAIL	13.0s	9826	2	FAIL	Explains each scoring dimension	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	3
+ab-testing	eval-4	with_skill	FAIL	13.0s	9826	3	FAIL	Recommends focusing on high-impact, lower-effort first	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	3
+ab-testing	eval-4	with_skill	FAIL	13.0s	9826	4	FAIL	Considers buyer stage distribution	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	3
+ab-testing	eval-4	with_skill	FAIL	13.0s	9826	5	FAIL	Provides practical workflow for limited resources	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: * Assertions (5 specifi…	4	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	3	FAIL	Identifies 8-15 supporting spoke articles	Output identifies 19 spoke articles (Why Employee Engagement Matters, Employee Engagement vs. Satisfaction, Statistics 2025, How to Measure, Remote Ideas, Hybrid Practices, Small Teams, First-Time Ma…	5	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	4	FAIL	Maps internal linking between hub and spokes	Tree diagram shows hierarchy but no explicit internal linking strategy or cross-linking recommendations between hub and spokes.	5	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	5	FAIL	Addresses keyword research for the cluster	Output contains no keyword research, search volume data, or keyword targeting - only mentions 'Searchable/Shareable' in table without actual keywords.	5	3
+ab-testing	eval-5	with_skill	FAIL	12.2s	9771	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	9680	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	9680	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	9680	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	11.4s	9680	4	PASS			6	3

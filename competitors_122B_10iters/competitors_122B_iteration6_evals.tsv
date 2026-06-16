@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	1	FAIL	Checks for product-marketing.md	Agent states 'First check for product marketing context files' but no file check or reference appears in output	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	2	FAIL	Identifies as plural alternatives format	No alternatives page format created; output is question-gathering format	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	3	FAIL	Includes TL;DR comparison section	No TL;DR section present in output	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	4	FAIL	Includes feature comparison table	No feature comparison table in output	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	5	FAIL	Includes pricing comparison	Pricing mentioned ($8 vs $24) but no comparison section or table	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	6	FAIL	Includes 'who it's best for' per alternative	No 'who it's best for' sections present	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	7	FAIL	Positions user's product prominently with differentiators	Agent asked for differentiators rather than positioning product	1	6
+ab-testing	eval-1	with_skill	FAIL	9.5s	12644	8	FAIL	Addresses SEO for target keyword	SEO mentioned as future deliverable but not addressed in output	1	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	33.2s	14575	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	3	FAIL	Focuses on user's product as THE alternative	Model asks questions about product rather than positioning it as THE alternative	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	4	FAIL	Includes why people switch from Mailchimp	Model asks for this information: "Do you have customers who switched from Mailchimp?" but does not include actual reasons	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	5	FAIL	Highlights e-commerce-specific advantages	Model asks "What do you do better for e-commerce?" but does not highlight any advantages	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	6	FAIL	Includes feature and pricing comparison	Model requests pricing information but output contains no actual comparison	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	7	FAIL	Includes migration guide	Model asks about migration support but does not include a migration guide	3	6
+ab-testing	eval-3	with_skill	FAIL	11.0s	12740	8	FAIL	Optimizes for singular keyword	Mentions "Mailchimp Alternative" but no SEO optimization evidence in output	3	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	1	FAIL	Identifies as 'competitor vs competitor' format	Output is asking clarifying questions, not delivering actual comparison page content	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	2	FAIL	Maintains objectivity (third-party perspective)	Only promises objectivity ('I'll structure this as an objective, neutral comparison'), no actual comparison delivered	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	3	FAIL	Includes balanced feature comparison	Preview table shown but full comparison page not delivered; only 5 features in outline format	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	4	FAIL	Includes pricing comparison	Pricing mentioned in preview table ($8/user/mo, $10/user/mo) but this is a preview, not actual deliverable	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	5	FAIL	Includes use case recommendations	Brief mention in TL;DR preview ('Choose Notion for docs-first teams; choose Coda for workflow automation') but not full recommendations section	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	6	FAIL	Addresses SEO considerations	SEO listed as 'What I'll Deliver' section, not actually included in output	4	6
+ab-testing	eval-4	with_skill	FAIL	13.3s	12931	7	FAIL	Suggests monetization approach	Model asks about monetization ('Do you have affiliate links...') but provides no monetization suggestion	4	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	4	FAIL	Addresses internal linking between comparison pages	Only states 'Internal linking strategy (including footer navigation)' as future deliverable - no actual linking strategy provided	5	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	5	FAIL	Recommends research process for competitive data	Asks 'Do you have existing competitor data' but provides no research methodology or process recommendations	5	6
+ab-testing	eval-5	with_skill	FAIL	10.2s	12689	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	12680	1	FAIL	Recognizes this as internal sales enablement material	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	12680	2	FAIL	References or defers to sales-enablement skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	6
+ab-testing	eval-6	with_skill	FAIL	10.3s	12680	3	FAIL	Does not attempt to create internal battle card using public comparison page patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Assertion…	6	6

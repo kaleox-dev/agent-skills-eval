@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	1	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	42.9s	15463	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	6	FAIL	Factually accurate about competitor	Model acknowledges limitation: 'I don't have access to actual product marketing context files, so I'll need to work with general knowledge' and includes note to 'Verify current pricing (both platform…	2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	44.8s	15577	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	1	FAIL	Triggers on casual phrasing	No casual phrasing trigger detected in output	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	3	FAIL	Focuses on user's product as THE alternative	Model asks questions instead of positioning product as THE alternative	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	4	FAIL	Includes why people switch from Mailchimp	Only asks about switching reasons (question 8), no content included	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	5	FAIL	Highlights e-commerce-specific advantages	Questions e-commerce differentiators but doesn't highlight them	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	6	FAIL	Includes feature and pricing comparison	Asks about pricing (question 2) but no comparison table included	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	7	FAIL	Includes migration guide	Mentions migration in questions (6-7) but no guide provided	3	10
+ab-testing	eval-3	with_skill	FAIL	6.8s	12386	8	FAIL	Optimizes for singular keyword	Asks about URL structure but doesn't optimize content for keyword	3	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	6	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	51.8s	16055	7	FAIL	Suggests monetization approach	Questions for Your Review Site section asks 'How will this page generate revenue (affiliate links, ads, lead gen)?' but does not suggest an approach - only queries the user	4	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	1	FAIL	Applies centralized competitor data architecture	No architecture applied - model only checks for files with <file_check> tags, no actual competitor data structure provided.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	2	FAIL	Recommends hub structure with multiple page types	No hub structure recommendation present - output only mentions 'structure for the hub' without details.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	3	FAIL	Suggests individual and roundup alternative pages	No alternative page suggestions made - model states 'Create a plan for page generation' but provides no plan.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	4	FAIL	Addresses internal linking between comparison pages	No internal linking discussion in output.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	5	FAIL	Recommends research process for competitive data	No research process recommended - model only mentions 'check for product marketing context'.	5	10
+ab-testing	eval-5	with_skill	FAIL	2.9s	12083	6	FAIL	Addresses URL structure	No URL structure addressed in the output.	5	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	12474	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	12474	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.6s	12474	3	PASS			6	10

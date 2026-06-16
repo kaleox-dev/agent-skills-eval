@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model provided a text response instead of the required file.	1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	7	FAIL	Provides 2-3 headline alternatives with rationale	The model provides only one primary headline: 'Automate Onboarding. Cut Setup Time from 2 Weeks to 2 Days.' The annotation section explains the rationale for this single headline but does not provide…	1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	8	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.0s	14401	9	FAIL	Includes meta content (SEO title and meta description)	The model output contains no mention of 'SEO title', 'meta description', or meta tags. This required element is missing from the copy structure.	1	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	10.1s	13691	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	7	FAIL	CTAs are specific per plan	The pricing table shows the CTA for all three plans (Starter, Pro, Business) as '**Start Free Trial**'. The 'Final CTA Section' also uses '**Get Started for Free**'. While consistent, they are not un…	3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	8	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.4s	14231	9	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	1	FAIL	Applies About Page guidance	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	2	FAIL	Tells the story of why the company exists	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	3	FAIL	Connects mission to customer benefit	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	4	FAIL	Includes a CTA	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	5	FAIL	Adapts tone to professional but human	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	6	FAIL	Uses the founder origin story	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	7	FAIL	Connects personal pain to customer pain	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	8	FAIL	Uses active voice	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-4	with_skill	FAIL	13.1s	14002	9	FAIL	Avoids corporate jargon	judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output includes structured sections [Section 1: Hero] through [Sect…	4	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	5	FAIL	Considers CTA hierarchy (primary vs secondary)	No distinction is made between primary and secondary CTAs. The model lists options A-D and a 'Quick Fix' without prioritizing them in a hierarchy.	5	5
+ab-testing	eval-5	with_skill	FAIL	5.1s	13118	6	FAIL	Suggests complementary CTAs	The model suggests alternatives to replace 'Learn More' but does not suggest additional or complementary CTAs (e.g., 'Buy Now' paired with 'Learn More') to work alongside it.	5	5
+ab-testing	eval-6	with_skill	FAIL	15.1s	14291	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	15.1s	14291	2	FAIL	References or defers to emails skill	The model output does not mention an 'emails skill', 'email skill', or any specific internal tool/capability labeled as such. It simply acts as a general writing agent providing a draft based on best…	6	5
+ab-testing	eval-6	with_skill	FAIL	15.1s	14291	3	PASS			6	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	1	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	2	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	3	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	4	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	5	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	6	PASS			7	5
+ab-testing	eval-7	with_skill	FAIL	8.7s	13593	7	PASS			7	5

@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The response is a conversational request for more information, not a written document.	1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	3	FAIL	Maps content by buyer stage (awareness through implementation)	The model states: 'Once you provide the answers above... I will: 2. Map specific blog topics to the buyer's journey (Awareness → Consideration → Decision).' It has not yet performed this mapping.	1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	4	FAIL	Includes keyword research by buyer stage	The model states: 'Once you provide the answers above... I will: 3. Identify "Quick Win" keywords...'. No keyword research is present in the current output.	1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	6	FAIL	Uses prioritization scoring framework	The output provides qualitative reasoning for pillars (e.g., 'High intent, high fear') but does not define or apply a quantitative prioritization scoring framework.	1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	7	FAIL	Provides publishing cadence or calendar	The output states: 'I will: 4. Suggest a 30-day launch plan.' The calendar/cadence is promised for the future, not provided.	1	4
+ab-testing	eval-1	with_skill	FAIL	9.6s	9603	8	FAIL	Recommends appropriate starting content types	The model asks the user: 'What formats can you produce? (Written blog posts, videos, webinars, downloadable templates/tools?)'. It does not make a specific recommendation for starting content types.	1	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	19.3s	10607	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.5s	10311	7	FAIL	Mentions developer community channels	While it mentions GitHub Actions and CI/CD integration, it does not explicitly mention community channels such as Stack Overflow, Reddit, Hacker News, Discord/Slack communities, or tech forums.	3	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	10031	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	10031	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	10031	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	10031	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	13.6s	10031	5	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	15.6s	10457	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	14.5s	10253	1	FAIL	Recognizes this as content creation, not strategy	judge did not provide concrete evidence	6	4
+ab-testing	eval-6	with_skill	FAIL	14.5s	10253	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	14.5s	10253	3	FAIL	Does not attempt to write the full blog post	judge did not provide concrete evidence	6	4
+ab-testing	eval-6	with_skill	FAIL	14.5s	10253	4	PASS			6	4

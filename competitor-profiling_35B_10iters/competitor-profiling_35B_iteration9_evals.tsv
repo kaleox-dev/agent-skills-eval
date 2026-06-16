@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Model output asks for clarification instead of executing the workflow.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	4	FAIL	Produces individual profile per competitor	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	5	FAIL	Produces _summary.md after individual profiles	Output files: No output files were captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	6	FAIL	Uses consistent metrics across competitors	No profile data or metrics were generated or output.	1	9
+ab-testing	eval-1	with_skill	FAIL	2.1s	12761	7	FAIL	Parallelizes scraping when possible	No scraping activity or tool calls were recorded.	1	9
+ab-testing	eval-2	with_skill	FAIL	2.6s	12780	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	2.6s	12780	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	2.6s	12780	3	FAIL	Defaults to quick scan for large list	The model does not default to quick scan; it asks the user to choose between quick scan and deep profile, though it recommends quick scans first.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.6s	12780	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	2.6s	12780	5	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	12921	1	FAIL	Recommends updating over starting fresh	The model output consists only of tool calls to read files and no generated response or recommendation is present.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	12921	2	FAIL	Lists what to re-pull (pricing, SEO, changelog)	The model output consists only of tool calls and does not list any items to re-pull.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	12921	3	FAIL	Mentions adding Change Log section	The model output consists only of tool calls and does not mention a Change Log section.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	12921	4	FAIL	Says to save raw data to new date folder	The model output consists only of tool calls and does not provide instructions on saving raw data.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	12921	5	FAIL	Says never overwrite prior date's data	The model output consists only of tool calls and does not contain instructions regarding overwriting data.	3	9
+ab-testing	eval-4	with_skill	FAIL	6.2s	13160	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.2s	13160	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.2s	13160	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.2s	13160	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	6.2s	13160	5	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	2.1s	12767	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	2.1s	12767	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	2.1s	12767	3	FAIL	Explains what's missing without SEO data	The model output is a conversational response requesting URLs and outlining the process. It does not contain an explanation of what specific content or sections are missing from a potential report du…	5	9
+ab-testing	eval-5	with_skill	FAIL	2.1s	12767	4	FAIL	Flags SEO section as skipped, not blank	The model output is a pre-processing request for URLs. It does not generate or display a report section to flag as 'skipped'. There is no content provided to evaluate the formatting of a skipped sect…	5	9
+ab-testing	eval-5	with_skill	FAIL	2.1s	12767	5	FAIL	Still saves raw data	Output files section states: 'No output files were captured.'	5	9
+ab-testing	eval-6	with_skill	FAIL	7.8s	13432	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.8s	13432	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.8s	13432	3	FAIL	Mentions checking traffic/backlink profile against claim scale	The output mentions 'Count vs. claim' regarding customer counts vs logo counts, but contains no mention of checking 'traffic', 'backlink profile', or using those metrics to verify claim scale.	6	9
+ab-testing	eval-6	with_skill	FAIL	7.8s	13432	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.8s	13432	5	FAIL	Notes including date pulled	The output does not mention including a 'date pulled' or timestamp for the data collection or verification process.	6	9

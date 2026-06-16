@@ -1,0 +1,62 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	1	FAIL	Checks for product-marketing.md	No tool call or file read evidence present. Model only states intent: 'I'll look for a product marketing context file'	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	3	FAIL	Mentions extracting jobs to be done, pain points, and desired outcomes	No mention of extracting pain points or desired outcomes. Only 'Jobs-to-be-Done map' listed as deliverable option	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	4	FAIL	Suggests organizing quotes by theme	No mention of organizing quotes by theme in output	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	5	FAIL	References frequency and intensity scoring	No mention of frequency or intensity scoring in output	1	4
+ab-testing	eval-1	with_skill	FAIL	6.4s	14862	6	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output	2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	6.0s	14838	5	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	2	FAIL	Identifies relevant subreddits or search strategies for project management	No specific subreddits or search strategies mentioned in output	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	Output mentions G2 but does not specify 3-star or 1-star reviews	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	4	FAIL	Recommends competitor 4-star reviews for buried complaints	No mention of competitor reviews or 4-star reviews in output	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	5	FAIL	Plans to extract verbatim quotes and pain themes	Output says 'Extract themes, pains, language, and patterns' but does not mention verbatim quotes	3	4
+ab-testing	eval-3	with_skill	FAIL	3.6s	14633	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	Output mentions 'complaints' but does not mention workarounds or switching triggers	3	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	1	FAIL	Checks for product-marketing.md	Output does not mention product-marketing.md or checking for existing product context files	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	No persona structure with jobs/pains/triggers/outcomes present in output	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	5	FAIL	Mentions the need to capture actual customer vocabulary	Output does not mention capturing customer vocabulary, language, or terminology	4	4
+ab-testing	eval-4	with_skill	FAIL	9.0s	15075	6	FAIL	Notes minimum data threshold (5-10 data points)	Output does not specify 5-10 data point threshold	4	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	1	FAIL	Checks for product-marketing.md	Model says 'If not in a product marketing context file' but does not actually check for or reference product-marketing.md file	5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	9.1s	15096	5	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	1	FAIL	Checks for product-marketing.md	Thought states 'I also need to check' but no confirmation or tool call indicates the check was performed.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Output mentions 'review sites' generally but does not specify '4-star reviews' or 'buried complaints'.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	4	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Extraction list includes 'What customers love' and 'What frustrates them' but omits 'unmet needs' in the extraction description section.	6	4
+ab-testing	eval-6	with_skill	FAIL	5.0s	14785	5	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	2	FAIL	Asks about target ICP segment within HR	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	3	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	4	FAIL	Plans to extract verbatim language for copy use	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-7	with_skill	FAIL	6.5s	14887	5	FAIL	Mentions organizing findings into a VOC quote bank	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run based on provided assertions and model output. * Role: Strict JSON-on…	7	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	1	PASS			8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	2	FAIL	Recommends segmenting churn reasons before analyzing	No mention of segmenting churn reasons in model response	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	3	FAIL	Warns against averaging across different churn causes	No warning about averaging churn causes in output	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	4	FAIL	Suggests pairing open-ended responses with quantitative data	No suggestion about open-ended/quantitative data pairing	8	4
+ab-testing	eval-8	with_skill	FAIL	3.9s	14701	5	FAIL	Asks if win/loss interview data is also available	No inquiry about win/loss interview data	8	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	1	FAIL	Checks for product-marketing.md	No reference to 'product-marketing.md' found in output. Model references 'source guides' and 'research playbooks' instead.	9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	2	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	3	PASS			9	4
+ab-testing	eval-9	with_skill	FAIL	19.2s	15945	4	PASS			9	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	1	FAIL	Checks for product-marketing.md	No evidence of checking .agents/product-marketing.md in output. Reasoning mentions it but no actual file check performed.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	2	FAIL	Extracts the VOC language and themes first before jumping to copy	No VOC extraction shown in output. Model only asks clarifying questions.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes identified in output. Model did not extract or reference any customer quotes.	10	4
+ab-testing	eval-10	with_skill	FAIL	5.2s	14790	4	FAIL	References the copywriting skill for the actual copy writing step	Copywriting skill mentioned in internal reasoning only, not in user-facing output.	10	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	1	FAIL	Checks for product-marketing.md	Agent states: 'Since I don't have access to their file system to check for product marketing context, I should ask clarifying questions first.' No actual check performed.	11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	2	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	3	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	4	PASS			11	4
+ab-testing	eval-11	with_skill	FAIL	8.6s	15070	5	PASS			11	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	2	PASS			12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	3	FAIL	Recommends forming hypotheses before gathering data	No mention of forming hypotheses before gathering data in output	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	Mentions 'online sources' and 'Mode 2: Go Find Research' but no mention of interviews as part of research plan	12	4
+ab-testing	eval-12	with_skill	FAIL	5.2s	14811	5	FAIL	Warns against building personas without any data	No explicit warning against building personas without data; persona listed as example goal without caveat	12	4

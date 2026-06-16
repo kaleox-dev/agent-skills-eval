@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	1	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	4	FAIL	Flags weak opening and company-focused language (Voice & Tone sweep)	The model applies 'Sweep 6: Heightened Emotion' for company-focused language ('It is about *you* (the company)...'), but does not explicitly label or execute a 'Voice & Tone sweep' nor explicitly fla…	1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	6	FAIL	Notes missing proof points (Prove It sweep)	The model uses 'Sweep 5: Specificity' to address vague terms and adds proof points in the fix, but never explicitly mentions or executes a 'Prove It sweep' or 'Missing proof points' check as a distin…	1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.7s	14696	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.1s	14449	6	FAIL	Keeps response concise for a quick edit	The response includes extensive explanatory sections ('Why This Works', 'Alternative Options', 'Checklist'), making it verbose rather than concise. The summary explicitly notes 'Wordiness' as a probl…	2	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	5	FAIL	Cuts copy significantly (50%+ reduction)	The output provides an 'Edited Version' of ~35 words and an 'Alternative' of ~20 words. However, the original source text is not fully provided in the prompt's context window, only referenced snippet…	3	1
+ab-testing	eval-3	with_skill	FAIL	6.2s	14373	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	5	FAIL	Does not fabricate specific numbers	The model generates specific numbers such as '10+ hours a week', '40%', '30 minutes', and '20% more deals' in the 'Improved Versions' section. The model explicitly states: 'Since I don’t know the act…	4	1
+ab-testing	eval-4	with_skill	FAIL	11.3s	14844	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.3s	14646	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	3.5s	14095	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	3.5s	14095	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	3.5s	14095	3	FAIL	Explains that copy-editing is for improving existing copy	The model does not mention copy-editing or define it. It focuses entirely on drafting new copy and gathering requirements.	6	1
+ab-testing	eval-6	with_skill	FAIL	3.5s	14095	4	PASS			6	1

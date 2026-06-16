@@ -1,0 +1,62 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	1
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	4	FAIL	Suggests organizing quotes by theme	The model output does not mention organizing quotes by theme. It suggests a general extraction using JTBD/Pains framework but does not specify thematic organization of quotes.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	5	FAIL	References frequency and intensity scoring	The model output does not mention frequency or intensity scoring. It lists 'Jobs to Be Done, Pains, Triggers, Language, Alternatives' but not scoring metrics.	1	1
+ab-testing	eval-1	with_skill	FAIL	3.3s	14661	6	FAIL	Asks which deliverable is needed	The model asks for the 'goal' and suggests a 'general extraction' or 'sample extraction', but it does not explicitly ask the user to choose between specific deliverables (e.g., 'Do you need a persona…	1	1
+ab-testing	eval-2	with_skill	FAIL	2.5s	14590	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	2	1
+ab-testing	eval-2	with_skill	FAIL	2.5s	14590	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	2.5s	14590	3	FAIL	Mentions Reddit, G2, or review sites as starting points	The output mentions 'go where your customers hang out online' but does not explicitly mention 'Reddit', 'G2', or 'review sites'.	2	1
+ab-testing	eval-2	with_skill	FAIL	2.5s	14590	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	2.5s	14590	5	FAIL	Offers to help extract insights from online sources	The model states it will rely on research but does not explicitly offer to 'extract insights'. It asks for context to proceed.	2	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	1	FAIL	Checks for product-marketing.md	No output files were captured. The model only provided a single tool call for Reddit search.	3	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	3	FAIL	Suggests reading 3-star and 1-star G2 reviews	The model output mentions 'research across Reddit and G2' generally but does not specifically suggest reading 3-star and 1-star reviews. The only action taken was a Reddit search.	3	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	4	FAIL	Recommends competitor 4-star reviews for buried complaints	No mention of competitor 4-star reviews or buried complaints is present in the output.	3	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	1.9s	14523	6	FAIL	Mentions what to look for: complaints, workarounds, switching triggers	The output mentions 'complaints and frustrations' but does not explicitly mention 'workarounds' or 'switching triggers'.	3	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	1	FAIL	Checks for product-marketing.md	Output files explicitly state: 'No output files were captured.' The model provided text only and did not generate or check for a file named product-marketing.md.	4	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	4	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	The model does not provide a persona structure in this output. It asks for clarification to proceed. While it mentions 'Jobs to Be Done' in the context of what the product info helps with ('tailor th…	4	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	5	FAIL	Mentions the need to capture actual customer vocabulary	The text does not contain any reference to capturing 'actual customer vocabulary', 'language', or 'quotes' from customers. It lists sources like Reddit and G2 but does not explicitly mandate capturin…	4	1
+ab-testing	eval-4	with_skill	FAIL	6.0s	14957	6	FAIL	Notes minimum data threshold (5-10 data points)	The text does not mention a specific numerical threshold like '5-10 data points'. It vaguely refers to 'authentic data' and 'existing data' without specifying a quantity.	4	1
+ab-testing	eval-5	with_skill	FAIL	5.3s	14920	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	5	1
+ab-testing	eval-5	with_skill	FAIL	5.3s	14920	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	5.3s	14920	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	5.3s	14920	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	5.3s	14920	5	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	4.0s	14794	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	4.0s	14794	2	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	judge did not provide concrete evidence	6	1
+ab-testing	eval-6	with_skill	FAIL	4.0s	14794	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.0s	14794	4	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	4.0s	14794	5	FAIL	Frames as competitive intelligence input	judge did not provide concrete evidence	6	1
+ab-testing	eval-7	with_skill	FAIL	5.6s	14952	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	7	1
+ab-testing	eval-7	with_skill	FAIL	5.6s	14952	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	5.6s	14952	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	5.6s	14952	4	FAIL	Plans to extract verbatim language for copy use	Model mentions 'extracting insights' generally but does not explicitly state a plan to extract 'verbatim language' for 'copy use'.	7	1
+ab-testing	eval-7	with_skill	FAIL	5.6s	14952	5	FAIL	Mentions organizing findings into a VOC quote bank	Model mentions 'mining reviews' but does not mention organizing findings into a 'VOC quote bank'.	7	1
+ab-testing	eval-8	with_skill	FAIL	2.9s	14680	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	8	1
+ab-testing	eval-8	with_skill	FAIL	2.9s	14680	2	FAIL	Recommends segmenting churn reasons before analyzing	Model asks for primary churn segment but does not recommend segmenting churn reasons (e.g., price vs product) before analysis; it plans to categorize after receiving data.	8	1
+ab-testing	eval-8	with_skill	FAIL	2.9s	14680	3	FAIL	Warns against averaging across different churn causes	No warning against averaging across different churn causes is present in the output.	8	1
+ab-testing	eval-8	with_skill	FAIL	2.9s	14680	4	FAIL	Suggests pairing open-ended responses with quantitative data	Model mentions extracting verbatim quotes and identifying pain points, but does not explicitly suggest pairing open-ended responses with quantitative data.	8	1
+ab-testing	eval-8	with_skill	FAIL	2.9s	14680	5	FAIL	Asks if win/loss interview data is also available	Model asks for product context, churn segment, and data format, but does not ask if win/loss interview data is available.	8	1
+ab-testing	eval-9	with_skill	FAIL	14.1s	15900	1	FAIL	Checks for product-marketing.md	Model output contains no mention of 'product-marketing.md' nor does it reference any output files. The output explicitly states 'No output files were captured'.	9	1
+ab-testing	eval-9	with_skill	FAIL	14.1s	15900	2	FAIL	Mentions specific relevant communities (r/devops, Hacker News, LinkedIn, Discord)	The model mentions 'r/devops', 'Hacker News', and 'Discord', but fails to mention 'LinkedIn'. The requirement lists LinkedIn as one of the specific relevant communities to be mentioned.	9	1
+ab-testing	eval-9	with_skill	FAIL	14.1s	15900	3	PASS			9	1
+ab-testing	eval-9	with_skill	FAIL	14.1s	15900	4	PASS			9	1
+ab-testing	eval-10	with_skill	FAIL	4.8s	14860	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	10	1
+ab-testing	eval-10	with_skill	FAIL	4.8s	14860	2	FAIL	Extracts the VOC language and themes first before jumping to copy	The model did not extract any VOC language or themes; it requested the user to provide them first. Quote: 'Please share the research assets you have.' 'Copy/paste key quotes... here. I will extract t…	10	1
+ab-testing	eval-10	with_skill	FAIL	4.8s	14860	3	FAIL	Identifies the highest-signal quotes for messaging	No quotes were provided by the user, so the model could not identify highest-signal quotes. Quote: 'Once you provide the input, I will generate...'	10	1
+ab-testing	eval-10	with_skill	FAIL	4.8s	14860	4	FAIL	References the copywriting skill for the actual copy writing step	The model offers to perform the copywriting steps itself ('I will generate...') but does not explicitly reference a 'copywriting skill' tool or mechanism in the output.	10	1
+ab-testing	eval-11	with_skill	FAIL	7.6s	15180	1	FAIL	Checks for product-marketing.md	The model output contains no file generation, no mention of 'product-marketing.md', and explicitly states 'No output files were captured.' This is a request for text-based strategy/research, not a fi…	11	1
+ab-testing	eval-11	with_skill	FAIL	7.6s	15180	2	PASS			11	1
+ab-testing	eval-11	with_skill	FAIL	7.6s	15180	3	PASS			11	1
+ab-testing	eval-11	with_skill	FAIL	7.6s	15180	4	PASS			11	1
+ab-testing	eval-11	with_skill	FAIL	7.6s	15180	5	PASS			11	1
+ab-testing	eval-12	with_skill	FAIL	2.8s	14675	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model did not generate or reference a file named product-marketing.md.	12	1
+ab-testing	eval-12	with_skill	FAIL	2.8s	14675	2	PASS			12	1
+ab-testing	eval-12	with_skill	FAIL	2.8s	14675	3	FAIL	Recommends forming hypotheses before gathering data	The model does not explicitly recommend forming hypotheses. Instead, it asks the user for inputs ('Do you have a hunch...') and promises to 'Synthesize a Research Gap Analysis' later. It does not pro…	12	1
+ab-testing	eval-12	with_skill	FAIL	2.8s	14675	4	FAIL	Suggests a minimum viable research plan (interviews + online sources)	The model suggests finding 'online communities' and performing 'initial searches'. It does not mention interviews. The plan is limited to online sourcing in the provided output.	12	1
+ab-testing	eval-12	with_skill	FAIL	2.8s	14675	5	FAIL	Warns against building personas without any data	The output contains no warning against building personas. It focuses on gathering data via online research.	12	1

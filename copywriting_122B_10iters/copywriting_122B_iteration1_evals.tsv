@@ -1,0 +1,51 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	1	FAIL	Checks for product-marketing.md	No evidence of file checking. Model states 'According to the skill instructions, I should check for product marketing context first' but does not show any file read or check.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	2	FAIL	Writes full page copy organized by section	No page copy was written. Output is only clarifying questions asking for more information.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	3	FAIL	Includes Headline, Subheadline, and CTA above the fold	No headline, subheadline, or CTA present in output. Model asks 'What's the ONE action you want visitors to take?' instead of providing one.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	4	FAIL	Includes Social Proof, Problem/Pain, Solution/Benefits, How It Works sections	No sections written. Model asks 'Do you have any of these? Number of customers/companies using the tool' instead of including social proof.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	5	FAIL	Uses the '2 weeks to 2 days' specificity in copy	The phrase '2 weeks to 2 days' appears only in the model's analysis of provided context, not in any written copy.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	6	FAIL	CTAs are action-oriented, not generic	No CTAs were written. Model asks 'What's the ONE action you want visitors to take?' instead of providing action-oriented CTAs.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	7	FAIL	Provides 2-3 headline alternatives with rationale	No headline alternatives provided. Output contains no headlines at all.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	8	FAIL	Includes annotations explaining copy choices	No copy was written, therefore no annotations explaining copy choices exist.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	13384	9	FAIL	Includes meta content (SEO title and meta description)	No SEO title or meta description present in output.	1	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	3	FAIL	Identifies company language vs customer language issue	Model asks 'What language do your customers use' but does not explicitly identify the current headline as company language vs customer language	2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	4	FAIL	Provides 2-3 alternative headlines	No alternative headlines provided; model only asks clarifying questions	2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	5	FAIL	Alternatives use headline formulas from the skill	No alternatives provided to evaluate	2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	6	FAIL	Each alternative includes rationale	No alternatives provided to evaluate	2	1
+ab-testing	eval-2	with_skill	FAIL	8.8s	13301	7	FAIL	Suggests a subheadline	No subheadline suggested in output	2	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	1	FAIL	Triggers on casual phrasing	Model uses formal tone: 'I can help you write compelling pricing page copy. To make this truly effective, I need a bit more context.' No casual language detected.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	3	FAIL	Addresses 'which plan is right for me' anxiety	Asks about audience hesitations but provides no plan-selection guidance in copy.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	4	FAIL	Makes recommended plan obvious	No plan highlighted as preferred; all tiers presented equally without recommendation.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	5	FAIL	Writes benefit-oriented feature copy, not just feature names	Lists features (e.g., '# of social accounts') without explaining benefits like 'Save 10 hours/week'.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	7	FAIL	CTAs are specific per plan	CTAs are generic ('Start Free Trial') without plan-specific variations like 'Get Pro Features'.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	8	FAIL	Includes FAQ or objection handling copy	Mentions FAQ section structure but includes no actual FAQ content or objection-handling text.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.7s	13625	9	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	1	FAIL	Applies About Page guidance	Model output asks clarifying questions instead of writing About page copy. States: 'According to my skill instructions, I should gather context before writing'	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	2	FAIL	Tells the story of why the company exists	No story told. Model asks user: 'What were the specific migration disasters that sparked this?'	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	3	FAIL	Connects mission to customer benefit	No mission-customer connection made. Model asks for customer details and product details.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	4	FAIL	Includes a CTA	No call-to-action in output. Model asks user: 'What's the main action you want visitors to take on this page?'	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	5	FAIL	Adapts tone to professional but human	Tone is conversational but no actual About page copy was written to evaluate.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	6	FAIL	Uses the founder origin story	Model does not use origin story. Asks: 'What were the specific migration disasters that sparked this?'	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	7	FAIL	Connects personal pain to customer pain	No pain point connection made. Model asks for this information from user.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	8	FAIL	Uses active voice	Output contains questions and explanations, not About page copy with active voice.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	13253	9	FAIL	Avoids corporate jargon	No About page copy written to evaluate for jargon. Model output is questioning phase.	4	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	2	FAIL	Applies the CTA formula from the skill	Formula mentioned but not applied: no alternatives created using [Action Verb] + [What They Get] + [Qualifier]	5	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	3	FAIL	Provides 2-3 strong alternatives	No CTA alternatives provided; model asks for context instead: "Once I have this context, I can give you 3-4 specific CTA options"	5	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	4	FAIL	Each alternative includes rationale	No alternatives provided, therefore no rationales exist	5	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	5	FAIL	Considers CTA hierarchy (primary vs secondary)	Model asks about primary action but does not address primary vs secondary CTA hierarchy in recommendations	5	1
+ab-testing	eval-5	with_skill	FAIL	8.2s	13270	6	FAIL	Suggests complementary CTAs	No complementary CTAs suggested; only mentions "plus suggestions for the hero section if that's helpful too"	5	1
+ab-testing	eval-6	with_skill	FAIL	7.9s	13260	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.9s	13260	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	7.9s	13260	3	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	6	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	14.7s	13884	7	PASS			7	1

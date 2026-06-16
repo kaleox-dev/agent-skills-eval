@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	1	FAIL	Checks for product-marketing.md	Model mentions checking for file but no tool call or file read evidence shown; output is questions only	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	2	FAIL	Runs all three phases (scraping, SEO data, synthesis)	No scraping, SEO data extraction, or synthesis performed; model only asks clarifying questions	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	3	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	No output files captured; no file save evidence in output	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	4	FAIL	Produces individual profile per competitor	No competitor profiles generated; model asks for product details instead of executing	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	5	FAIL	Produces _summary.md after individual profiles	No summary file produced; no _summary.md evidence in output files	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	6	FAIL	Uses consistent metrics across competitors	No competitor analysis performed; no metrics shown in output	1	9
+ab-testing	eval-1	with_skill	FAIL	6.5s	13078	7	FAIL	Parallelizes scraping when possible	No scraping tool calls made; model did not initiate any scraping	1	9
+ab-testing	eval-2	with_skill	FAIL	7.7s	13147	1	FAIL	Recommends prioritization over profiling all 12	I'm ready to profile all 12 competitors	2	9
+ab-testing	eval-2	with_skill	FAIL	7.7s	13147	2	FAIL	Suggests top 5 based on relevance	No mention of top 5 competitors in output	2	9
+ab-testing	eval-2	with_skill	FAIL	7.7s	13147	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.7s	13147	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	7.7s	13147	5	FAIL	Asks user to prioritize	Asks for URLs, product, depth, focus areas but does not ask user to prioritize which competitors	2	9
+ab-testing	eval-3	with_skill	FAIL	9.3s	13283	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.3s	13283	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.3s	13283	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.3s	13283	4	FAIL	Says to save raw data to new date folder	No mention of saving raw data to date folders in output	3	9
+ab-testing	eval-3	with_skill	FAIL	9.3s	13283	5	FAIL	Says never overwrite prior date's data	No statement about never overwriting prior date's data in output	3	9
+ab-testing	eval-4	with_skill	FAIL	10.7s	13391	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.7s	13391	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.7s	13391	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.7s	13391	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.7s	13391	5	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	13069	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	13069	2	FAIL	Runs Phase 1 and Phase 3	No tool calls made; model states 'I should not proceed with any tool calls yet' and 'No output files were captured'	5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	13069	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	13069	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	13069	5	FAIL	Still saves raw data	Output files section states: 'No output files were captured'	5	9
+ab-testing	eval-6	with_skill	FAIL	11.4s	13524	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.4s	13524	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.4s	13524	3	FAIL	Mentions checking traffic/backlink profile against claim scale	No mention of traffic or backlink profile checking against claim scale in output	6	9
+ab-testing	eval-6	with_skill	FAIL	11.4s	13524	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	11.4s	13524	5	PASS			6	9

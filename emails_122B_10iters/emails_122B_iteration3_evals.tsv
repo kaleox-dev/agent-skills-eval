@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output. Model mentions 'reference materials' but does not check or cite product-marketing.md specifically.	1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	8	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	28.5s	20769	9	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	1	FAIL	Creates 6-8 email lead nurture sequence	Model states 'Once I have this, I'll write the full sequence with complete copy' - only an outline/framework was provided, not actual email content	2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	2	FAIL	Follows value before ask principle	No actual email copy provided to verify value before ask in content; only framework goals listed	2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	3	FAIL	Maps from awareness through consideration to decision	Framework structure indicates progression but no actual email content created to verify mapping	2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	5	FAIL	Each email has clear subject line and single CTA	Subject lines present but CTAs only described as goals ('soft CTA', 'Clear ask, book demo') - no actual CTA content written	2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	6	FAIL	Gradually increases commitment asks	Framework indicates progression but no actual email copy written to verify commitment escalation	2	3
+ab-testing	eval-2	with_skill	FAIL	15.1s	19678	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	2	FAIL	Diagnoses potential causes beyond just subject lines	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	3	FAIL	Addresses sender reputation and deliverability	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	4	FAIL	Recommends list hygiene or re-engagement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	5	FAIL	Applies subject line strategy with specific patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	6	FAIL	Provides subject line formulas and examples	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-3	with_skill	FAIL	23.0s	20336	7	FAIL	Suggests testing framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A set of 7 assertions and a model output (the conte…	3	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	1	FAIL	Creates 3-4 email re-engagement sequence	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	2	FAIL	Acknowledges absence in first email	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	3	FAIL	Escalates through the sequence	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	4	FAIL	Includes 'last chance' final email	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	5	FAIL	Recommends sunset policy for non-responders	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	6	FAIL	Addresses deliverability impact of inactive subscribers	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-4	with_skill	FAIL	25.1s	20483	7	FAIL	Uses compelling subject lines	judge returned unparseable response: The user is asking me to grade an agent's output for an emails skill evaluation. I need to evaluate the model's response against 7 assertions and return strict JS…	4	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	3	FAIL	Discusses behavior-triggered vs time-based timing	No mention of behavior-triggered timing or comparison with time-based timing	5	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	5	FAIL	Notes timing depends on product and trial length	Asks clarifying questions but does not explicitly state timing depends on product/trial length	5	3
+ab-testing	eval-5	with_skill	FAIL	11.1s	19180	6	FAIL	Recommends behavior triggers with time-based fallbacks	No mention of behavior triggers or time-based fallbacks in the output	5	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	19122	1	FAIL	Recognizes this as in-app onboarding optimization	Model states: 'This is clearly an email sequence/onboarding optimization task' - treats as email, not in-app	6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	19122	2	FAIL	References or defers to onboarding skill	Model references 'emails skill' not 'onboarding skill': 'I should use the emails skill to help them'	6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	19122	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	19122	4	PASS			6	3

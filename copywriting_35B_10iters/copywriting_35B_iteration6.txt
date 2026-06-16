@@ -1,0 +1,100 @@
+
+[1m▶ copywriting[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Rewrite this headline: 'An Innovative AI-Powered Platform for Streamlined Business Operations' — it's for a B2B SaaS tool that helps small businesses manage invoicing and payments.
+    [90moutput:[0m  The current headline is a classic example of "corporate speak"—it uses buzzwords (*innovative, streamlined*) to describe vague concepts (*business operations*) without telling the user what they actu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    8.0s · 13455 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    i need copy for my pricing page. we have three plans: starter ($29/mo), pro ($79/mo), business ($199/mo). it's a social media scheduling tool for marketers
+    [90moutput:[0m  To write high-converting copy for your pricing page, I need to fill in the specific details that make the tiers distinct and valuable. A generic pricing page lists prices; a *converting* pricing page…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    14.8s · 14174 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Can you improve this CTA? We currently have 'Learn More' on our feature page for our analytics dashboard product.
+    [90moutput:[0m  "Learn More" is one of the weakest calls-to-action (CTAs) in marketing copy. It puts the burden of curiosity on the user and offers no specific reward. Since you didn't provide the surrounding contex…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Considers CTA hierarchy (primary vs secondary)
+         [90mevidence:[0m The model provides a list of strong alternatives and a single recommendation ('See It in Action') but does not explicitly distinguish between primary and secondary CTAs, nor does it structure the cop…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests complementary CTAs
+         [90mevidence:[0m The model focuses on replacing 'Learn More' with a single, stronger primary CTA based on different scenarios. It does not suggest complementary CTAs (e.g., a secondary CTA for users not ready for the…
+    7.6s · 13369 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write homepage copy for a SaaS tool that automates employee onboarding. Target audience is HR directors at mid-size companies (200-2000 employees). Main differentiator is that it integrates with all …
+    [90moutput:[0m  Here is the homepage copy for your SaaS onboarding tool. **Strategic Note:** For HR Directors at mid-sized companies, the primary pain points are usually **fragmented data** (tools not talking to eac…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is raw text, not a markdown file.
+    19.8s · 14692 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write copy for our About page. We're a 3-person startup that built a developer tool for database migrations. Founded because we kept losing data during migrations at our last jobs. Tone should be pro…
+    [90moutput:[0m  Here is the copy for your About page. **Context Check:** * **Page Type:** About Page * **Primary Action:** Build trust to convert visitors into trial users or sign-ups (implied, as this is a develope…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies About Page guidance
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Tells the story of why the company exists
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Connects mission to customer benefit
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes a CTA
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Adapts tone to professional but human
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Uses the founder origin story
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#7[0m [31mFAIL[0m [90m—[0m Connects personal pain to customer pain
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#8[0m [31mFAIL[0m [90m—[0m Uses active voice
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+      [31m#9[0m [31mFAIL[0m [90m—[0m Avoids corporate jargon
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Applies About Page guidance", "passed": true, "evidence": "Output is structured as a complete 'About Page' copy with sections …
+    14.9s · 14181 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Review this copy and tell me what's wrong: 'We are extremely excited to announce our revolutionary, cutting-edge platform that will totally transform how businesses optimize their workflows! Sign up …
+    [90moutput:[0m  This copy suffers from several critical anti-patterns identified in the copywriting principles. Here is a breakdown of what is wrong and how to fix it. ### The Diagnosis **1. "Extremely excited" (Int…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    8.7s · 13583 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="copywriting"> <description>When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, o…
+    [90muser:[0m    Write me a 5-email welcome sequence for new trial users of our project management tool.
+    [90moutput:[0m  To write a high-converting welcome sequence, I need a bit more context about your specific tool. However, I can provide a **strong, flexible framework** based on best practices for SaaS onboarding. B…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to emails skill
+         [90mevidence:[0m The model output contains no mention of an 'emails skill', 'email skill', or any specific tool/skill named 'emails'. It provides a generic framework based on general best practices.
+    16.4s · 14415 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 73.0%[0m  [90m· 12.88s avg · 13981 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-646/benchmark.json[0m
+{
+  "passed": 36,
+  "failed": 14,
+  "skills": [
+    {
+      "skill": "copywriting",
+      "slug": "copywriting",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.72,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-646/benchmark.json"
+    }
+  ],
+  "iteration": 646,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-646",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-646/report/index.html"
+}

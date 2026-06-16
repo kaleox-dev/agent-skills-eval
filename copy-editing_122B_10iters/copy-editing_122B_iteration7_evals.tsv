@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in model output.	1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.0s	15216	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.7s	14614	6	FAIL	Keeps response concise for a quick edit	Response includes 3 full options, 2 tables, multiple sections - not concise for a 'quick edit' request	2	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	1	FAIL	Triggers on casual phrasing	Model identifies 'corporate jargon' and 'corporate/formal throughout' but does not identify casual phrasing. No evidence of triggering on casual language.	3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	16.5s	15165	6	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	17.1s	15145	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	13.1s	14883	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	7.9s	14413	1	FAIL	Recognizes this as writing new copy, not editing existing copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.9s	14413	2	FAIL	References or defers to copywriting skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.9s	14413	3	FAIL	Explains that copy-editing is for improving existing copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.9s	14413	4	FAIL	Does not attempt to write full page copy from scratch	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	6	7

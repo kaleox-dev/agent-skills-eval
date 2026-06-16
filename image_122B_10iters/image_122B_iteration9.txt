@@ -1,0 +1,97 @@
+
+[1m▶ image[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    Need a Twitter/X header banner for our company. We just want to show our product and tagline.
+    [90moutput:[0m  The user wants a Twitter/X header banner for their company. They want to show their product and tagline. Let me gather the necessary context to create this. From the skill instructions, I need to ask…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends minimal text
+         [90mevidence:[0m No mention of text quantity recommendations
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions Ideogram for text-heavy designs
+         [90mevidence:[0m Ideogram only listed as API tool option, not for text-heavy designs
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends testing at display size
+         [90mevidence:[0m No mention of preview/testing at actual display size
+    7.0s · 10903 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    What's the best image format for our website?
+    [90moutput:[0m  The user is asking about the best image format for their website. This is a common question related to image optimization for web performance, which falls under the image skill's scope (image optimiz…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    11.2s · 11313 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    I need 5 versions of the same hero image for Twitter, LinkedIn, Instagram feed, Instagram stories, and Facebook. What's the fastest way?
+    [90moutput:[0m  The user wants 5 versions of the same hero image for different social platforms. This is a common marketing workflow question. Let me think about the fastest approach based on the skill documentation…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Notes Instagram 4:5 variant
+         [90mevidence:[0m Output table only shows Instagram Feed 1080x1080 (1:1), 4:5 variant not in final output
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests programmatic text overlays for variants
+         [90mevidence:[0m No mention of programmatic text overlays in output
+    13.4s · 11432 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    We're a SaaS that just launched. Need OG images for every blog post we ship — about 2 per week. Doing it manually is killing us.
+    [90moutput:[0m  The user is a SaaS company that just launched and needs OG (Open Graph) images for their blog posts. They're publishing about 2 blog posts per week and finding manual creation too time-consuming. The…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Lists required og:image meta tags
+         [90mevidence:[0m No og:image meta tags mentioned in output
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes this is best for high-volume blogs
+         [90mevidence:[0m No explicit statement that programmatic OG is best for high-volume blogs
+    9.2s · 11155 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    I need a hero image for a blog post about email deliverability. Make it visually striking.
+    [90moutput:[0m  The user wants a hero image for a blog post about email deliverability. They want it to be "visually striking." This is a clear image generation request. Let me gather the key information I need: 1. …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md in model output. Model asks clarifying questions but does not check this file.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends AI generation for one-off hero
+         [90mevidence:[0m Model offers to generate or provide prompts but does not explicitly recommend AI generation for one-off hero scenario.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions WebP optimization
+         [90mevidence:[0m No mention of WebP or image optimization anywhere in model output.
+    10.4s · 11172 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    Generate me an image of our app's dashboard.
+    [90moutput:[0m  The user wants me to generate an image of their app's dashboard. However, I need to gather more context before I can help them effectively. This is a common request that requires clarification becaus…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Refuses to use AI generation for product UI
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Explains models hallucinate UI
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends real screenshots at 2x resolution
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions device mockups for framing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests specific screenshot tools
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes this as a common mistake
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    7.0s · 10890 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 55.6%[0m  [90m· 9.68s avg · 11144 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-759/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 16,
+  "skills": [
+    {
+      "skill": "image",
+      "slug": "image",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5555555555555556,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-759/benchmark.json"
+    }
+  ],
+  "iteration": 759,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-759",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-759/report/index.html"
+}

@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	1	FAIL	Recognizes this as internal sales enablement material	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	2	FAIL	References or defers to sales-enablement skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	3	FAIL	Does not attempt to create internal battle card using public comparison page patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.1s	12704	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	1	FAIL	Identifies as 'you vs competitor' format	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	2	FAIL	Includes structured comparison sections	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	3	FAIL	Includes feature-by-feature comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	4	FAIL	Includes pricing comparison	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	5	FAIL	Includes TL;DR at the top	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	6	FAIL	Factually accurate about competitor	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	7	FAIL	Strategically positions user's product for SMBs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-2	with_skill	FAIL	38.7s	15048	8	FAIL	Includes migration path or switching section	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** A set of as…	2	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in input; model did not demonstrate trigger mechanism.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	3	FAIL	Focuses on user's product as THE alternative	Asks "What should we call you in the comparison?" rather than positioning product as THE alternative.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	4	FAIL	Includes why people switch from Mailchimp	Question 7 asks about switch reasons but no actual switch reasons included in output.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	5	FAIL	Highlights e-commerce-specific advantages	Question 4 asks about e-commerce features but no advantages highlighted in output.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	6	FAIL	Includes feature and pricing comparison	No feature or pricing comparison table/data present in output.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	7	FAIL	Includes migration guide	Question 9 asks about migration support but no migration guide content included.	3	9
+ab-testing	eval-3	with_skill	FAIL	9.1s	12588	8	FAIL	Optimizes for singular keyword	Questions 11-12 ask about SEO but no keyword optimization demonstrated in output.	3	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	3	FAIL	Includes balanced feature comparison	No feature comparison content was provided in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	4	FAIL	Includes pricing comparison	No pricing comparison content was provided in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	5	FAIL	Includes use case recommendations	No use case recommendations were provided in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	6	FAIL	Addresses SEO considerations	SEO mentioned only as a clarification question, not addressed in content.	4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	12580	7	FAIL	Suggests monetization approach	Monetization mentioned only as a clarification question, not suggested in content.	4	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	5	FAIL	Recommends research process for competitive data	Model asks clarifying questions ('What's your product?', 'Who are the 5 main competitors?') but provides no methodology or process for researching competitive data	5	9
+ab-testing	eval-5	with_skill	FAIL	20.6s	13543	6	PASS			5	9
