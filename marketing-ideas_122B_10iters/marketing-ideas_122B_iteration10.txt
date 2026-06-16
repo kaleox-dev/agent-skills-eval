@@ -1,0 +1,115 @@
+
+[1m▶ marketing-ideas[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to build authority and thought leadership in the HR tech space. We're a newer company and nobody knows who we are yet.
+    [90moutput:[0m  The user is asking for marketing ideas to build authority and thought leadership in the HR tech space. They're a newer company with no brand recognition yet. This is a perfect use case for the market…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 'authority building' use case filter
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends thought leadership tactics
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes original research and content
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes community and media appearances
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes authority building is longer-term
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides structured output with timelines
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return strict JSON. Let me analyze each …
+    14.9s · 13516 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    What's the fastest way to get more leads? We sell enterprise security software and have a $10k/month marketing budget.
+    [90moutput:[0m  The user is asking for the fastest way to get more leads for their enterprise security software with a $10k/month marketing budget. This is a clear marketing ideas request, so I should use the market…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends outbound tactics
+         [90mevidence:[0m Model recommends advertising channels only; no cold email, cold calling, or direct outreach tactics mentioned
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes that fast leads means paid or outbound
+         [90mevidence:[0m Model does not explicitly state this principle; only applies it implicitly through recommendations
+    19.9s · 13777 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    how do we grow without spending money on ads? we're a PLG (product-led growth) company with a freemium model
+    [90moutput:[0m  The user is asking for marketing ideas for their PLG (product-led growth) company with a freemium model, specifically without spending money on ads. This is a perfect use case for this marketing-idea…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies PLG use case filter
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends PLG-specific tactics
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Avoids ad-dependent ideas
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes virality and referral tactics
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides structured output with implementation guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    16.4s · 13634 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    Give me 20 marketing ideas. We sell project management software.
+    [90moutput:[0m  The user is asking for 20 marketing ideas for their project management software. They haven't provided much context about their product, audience, or current stage, so I should: 1. First ask clarifyi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    30.8s · 14861 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to set up a referral program. How should we structure it?
+    [90moutput:[0m  The user is asking about setting up a referral program. This falls under the marketing ideas skill, specifically around referrals and viral growth. Looking at the 139 marketing ideas, I can see: - #9…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to referrals skill
+         [90mevidence:[0m Model references "marketing ideas skill" not "referrals skill" and provides answer itself rather than deferring
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt detailed referral program design
+         [90mevidence:[0m Provides extensive design: "Referral Program Structure Framework", "Implementation Steps" (3 phases), "Key Metrics to Track", tables, etc.
+      [31m#4[0m [31mFAIL[0m [90m—[0m May briefly mention as a marketing idea
+         [90mevidence:[0m Goes far beyond brief mention - provides comprehensive referral program structure with implementation steps, metrics, and detailed recommendations
+    13.4s · 13424 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    I need marketing ideas for my SaaS product. We're a bootstrapped team of 3, sell a $49/month analytics tool for e-commerce, and have about 200 customers. Budget is tight — maybe $500/month for market…
+    [90moutput:[0m  The user is asking for marketing ideas for their SaaS product. They've provided some context: - Bootstrapped team of 3 - $49/month analytics tool for e-commerce - 200 customers - Budget: $500/month f…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Filters ideas by low budget constraint
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides ideas from the 139 marketing ideas catalog
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Ideas are appropriate for bootstrapped SaaS stage
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Output follows structured format per idea
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes why it fits, how to start, expected outcome
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Prioritizes by likely impact
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes resources needed per idea
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on provided assertions and model output. * **Role:** Strict…
+    20.0s · 13815 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 32.7%[0m  [90m· 19.23s avg · 13838 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-820/benchmark.json[0m
+{
+  "passed": 12,
+  "failed": 25,
+  "skills": [
+    {
+      "skill": "marketing-ideas",
+      "slug": "marketing-ideas",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.32432432432432434,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-820/benchmark.json"
+    }
+  ],
+  "iteration": 820,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-820",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-820/report/index.html"
+}

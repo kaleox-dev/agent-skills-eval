@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	4	FAIL	Recommends five-phase launch approach	Output shows 4 phases (Week 1-2, Week 3-4, Week 5, Week 6), not 5 phases	1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	25.9s	5082	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	2	FAIL	Covers timing (day and time selection)	No specific day or time selection recommendations provided; only asks user about timeline in questions	2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	5	FAIL	Recommends preparation timeline	Only vague "weeks before launch" mention; no concrete preparation timeline recommendation provided	2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	6	FAIL	Mentions common mistakes to avoid	No section or mention of common mistakes to avoid in the output	2	4
+ab-testing	eval-2	with_skill	FAIL	9.7s	3661	7	FAIL	Sets realistic expectations	No realistic expectations about outcomes, success rates, or potential challenges set	2	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	2	FAIL	Applies ongoing launch strategy / update matrix	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	3	FAIL	Identifies as major feature update	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	4	FAIL	Scales tactics appropriately (not full launch)	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	5	FAIL	Recommends announcement channels	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	6	FAIL	Includes email, blog, social, and in-app notification	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-3	with_skill	FAIL	9.2s	3665	7	FAIL	Provides feature announcement framework	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 7 assertions and provide JSON results. Let me analyze…	3	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	1	FAIL	Applies post-launch product marketing guidance	Model mentions 'The ORB framework' and 'phased launch approach from the skill documentation' but does not demonstrate applying specific post-launch product marketing guidance - provides general advic…	4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	5	FAIL	Suggests analyzing which channels produced signups	Model asks 'Channels used: Where did you announce?' but does not explicitly suggest analyzing which channels produced signups or channel performance analysis.	4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	4108	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	1	FAIL	Focuses on Borrowed channel from ORB Framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	2	FAIL	Provides specific borrowed audience tactics	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	3	FAIL	Mentions partnerships, communities, guest content	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	4	FAIL	Recommends how to identify and approach partners	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	5	FAIL	Notes borrowed strategies take time to build	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-5	with_skill	FAIL	12.8s	3952	6	FAIL	Suggests starting well before launch day	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions (list of 6 i…	5	4
+ab-testing	eval-6	with_skill	FAIL	15.6s	4230	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	15.6s	4230	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	15.6s	4230	3	FAIL	Does not attempt full marketing brainstorm using launch strategy patterns	Provides 17+ marketing ideas organized by owned, rented, borrowed channels framework with full 30-day launch plan.	6	4
+ab-testing	eval-6	with_skill	FAIL	15.6s	4230	4	PASS			6	4

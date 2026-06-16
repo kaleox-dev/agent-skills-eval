@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model provided inline text response instead of generating the specified file.	1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.0s	6762	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	6	FAIL	Includes social proof	The model only suggests social proof as a potential A/B test variant in the table ('Join 5,000+ Pro Users', 'Teams using [Product] save 10 hrs/week'), but does not explicitly recommend it as a standa…	2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.0s	6554	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	1	FAIL	Triggers on casual phrasing	The model does not demonstrate handling of casual user input; it provides a strategic framework instead.	3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	9.7s	6301	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	5	FAIL	Includes relevant plan comparison	The wireframe includes a link to 'See All Plans' but does not present a side-by-side comparison table or list of features available on Free vs Pro within the paywall interface itself. It lists 'What …	4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	15.8s	6928	7	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.8s	6251	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	6.3s	5973	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.3s	5973	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.3s	5973	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	6.3s	5973	4	FAIL	Does not attempt public pricing page optimization	The model explicitly attempts public pricing page optimization by listing strategies under headers 'Anchor with the Pro Plan', 'Reduce Friction & Ambiguity', etc., for a 'public pricing page'.	6	5

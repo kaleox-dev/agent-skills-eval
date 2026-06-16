@@ -1,0 +1,133 @@
+
+[1m▶ marketing-plan[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    /marketing-plan acme-saas — pick up where we left off
+    [90moutput:[0m  I need to check the status of the `acme-saas` marketing plan to see where we left off. ```bash cat ~/marketing-plans/acme-saas/progress.md 2>/dev/null || echo "Plan not found or not initialized" ```
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Resumes from next unfinished section based on state machine
+         [90mevidence:[0m No evidence of parsing progress.md or identifying next section; only a cat command was issued.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not silently restart from scratch
+         [90mevidence:[0m No evidence of state resumption logic; the model only checked file existence.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Handles finalized state by asking user how to proceed (revise / fresh / re-open)
+         [90mevidence:[0m No interaction with user or handling of finalized state is visible in the output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Saves each newly confirmed section to the progress file
+         [90mevidence:[0m No writes to the progress file or confirmation of sections are present.
+    2.8s · 169049 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    we have an audit already done — can you take that and turn it into a real plan
+    [90moutput:[0m  Understood. I can turn a scored audit into a comprehensive, executable 12-month marketing plan (AARRR framework, 13 sections). To do this correctly, I need the audit data and a few missing details to…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Ingests prior audit scoring directly into Section 3
+         [90mevidence:[0m The model has not yet generated the plan; it is requesting the input. It mentions 'Current State (integrating your audit scores)' as Section 3 in the deliverable list, but has not performed the inges…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not re-score what's already been scored
+         [90mevidence:[0m No scoring action was performed by the model as it requested the audit data. Cannot verify compliance with this negative constraint as no action occurred.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes the scoring date and flags any shifted material
+         [90mevidence:[0m The model output contains no mention of scoring dates or shifted material.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses audit gaps to inform 90-day roadmap and AARRR section moves
+         [90mevidence:[0m The model has not generated the 90-day roadmap or AARRR sections yet; it is currently requesting input data.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Still produces a full 13-section plan, not just Section 3
+         [90mevidence:[0m The model output is a request for information, not the final plan. It lists the 13 sections as a promise of delivery but has not produced the plan itself.
+    7.6s · 169515 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I'm starting a fractional CMO engagement with a Series A B2B SaaS doing $2M ARR, 12-person team with 1 marketer, $20K/month marketing budget. They want a marketing plan we can share with the team and…
+    [90moutput:[0m  To build the most accurate and executable plan for your client, I need to gather some specific data during an intake. The "Series A, $2M ARR, 12-person team" profile tells me the *shape* of the busin…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m  [31m✗ 11[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces 13-section plan structured by AARRR
+         [90mevidence:[0m The output does not produce a plan. It is an intake form. No 13-section plan or AARRR structure is present in the text.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Section 3 scores against the embedded 17-section rubric
+         [90mevidence:[0m No section 3 or rubric scoring is present. The output is an intake request.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Section 9 (90-day roadmap) has owner-assigned moves, not just actions
+         [90mevidence:[0m No section 9 or roadmap is present.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Section 10 names funding-stage capability unlocks explicitly
+         [90mevidence:[0m No section 10 is present.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Section 11 maps marketing skills + MCPs to each AARRR stage
+         [90mevidence:[0m No section 11 or AARRR mapping is present.
+      [31m#9[0m [31mFAIL[0m [90m—[0m Section 12 cross-references all 139 marketing-ideas with client-specific status
+         [90mevidence:[0m No section 12 or marketing ideas list is present.
+      [31m#10[0m [31mFAIL[0m [90m—[0m Output is Notion-paste-ready markdown
+         [90mevidence:[0m The output is a conversational request for data, not a formatted document intended for Notion pasting.
+      [31m#11[0m [31mFAIL[0m [90m—[0m Plan is specific to the client (their budget, team, current channels), not generic
+         [90mevidence:[0m While the model acknowledges the 'Series A, $2M ARR, 12-person team' profile, it fails to generate a specific plan. It asks for more details to proceed. The assertion requires the *plan* to be specif…
+    11.8s · 169944 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    We're pre-seed bootstrapped, $0 paid marketing budget, 4-person team building a D2C consumer app. Founder wants a 90-day plan + 12-month roadmap they can show investors during the upcoming raise. The…
+    [90moutput:[0m  To build a plan that holds up to investor scrutiny and reflects your actual team size and budget constraints, I need to run the INIT (research + intake) phase first. Please answer the following **10 …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes pre-seed tier and uses Tier 1 budget profile
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Skips paid acquisition recommendations until budget unlocks
+         [90mevidence:[0m The model output does not provide any recommendations. It asks for the current paid acquisition status ('What budget unlocks when the next round closes?'). No recommendations were made to skip or pro…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Leans Acquisition on organic + lifecycle + ambassador
+         [90mevidence:[0m The model output lists channels for inquiry ('Organic SEO, paid search... ambassadors?') but provides no strategic lean or plan. It is an intake questionnaire, not a strategic plan.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Names what unlocks when seed closes
+         [90mevidence:[0m The model asks the user to provide this information: 'What budget unlocks when the next round closes?' It does not name or define what unlocks.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Accounts for product being in beta
+         [90mevidence:[0m The model asks the user to specify the product status: 'Is the app live, in beta, or pre-launch?' It does not account for it as a known state; it treats it as unknown.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Identifies binding-constraint AARRR stage (likely Activation or Referral)
+         [90mevidence:[0m The model asks the user to identify funnel leaks: 'What is the biggest leak right now?' It does not identify a binding constraint itself.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Executive summary can be lifted into an investor update
+         [90mevidence:[0m The output contains no executive summary. It explicitly states it will draft the plan 'Once you provide these answers'.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Plan is operationally honest — doesn't pretend paid budget exists
+         [90mevidence:[0m No plan was generated. The model asks for current burn/rum and paid spend details to determine constraints. It did not output an operational plan to evaluate.
+    13.9s · 170064 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    Just give me a quick marketing plan. Don't make it long.
+    [90moutput:[0m  I cannot provide a comprehensive, executable marketing plan (the kind an fCMO produces) without specific details about your company, budget, and goals. A generic plan would be generic advice, not a s…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names marketing-plan as the comprehensive fCMO artifact
+         [90mevidence:[0m The model refers to 'comprehensive, executable marketing plan' and 'lean 1-page strategic framework'. It does not explicitly name or reference 'marketing-plan' as the specific fCMO artifact terminolo…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends channel-specific skills for single-channel quick plans
+         [90mevidence:[0m Under the 'Universal Lean Framework', the model asks 'Where do they hang out? (One channel only for now)' and gives an example 'Post 3x/week on LinkedIn'. It does not explicitly recommend 'channel-sp…
+    7.6s · 169593 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I need a plan for a hybrid hardware+software wellness company. They sell a physical product and a subscription app. Series A, $100K/month marketing budget, 8-person team including a marketing lead.
+    [90moutput:[0m  This is a **Series A** engagement for a **Hybrid Hardware + Software** business. This is a high-leverage, high-complexity stage. You have the budget to scale ($1200K/yr) and the team (8 people), but …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Acquisition leans on PR, retail, Amazon, Shopify SEO, paid
+         [90mevidence:[0m The model output is an intake questionnaire and does not provide acquisition strategies. It asks 'What channels are firing today?' and lists potential tech stack components like 'Ahrefs/Semrush' or '…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Activation covers unboxing, setup, first session, paywall
+         [90mevidence:[0m The model output asks for data on 'The Link: How does hardware connect to software?' but does not provide coverage or recommendations for unboxing, setup, first session, or paywall activation steps.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Retention covers lifecycle, community
+         [90mevidence:[0m The model output asks for 'monthly churn' and '12-month retention' metrics but does not provide any content covering lifecycle management or community strategies.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Referral covers gifting, reviews
+         [90mevidence:[0m The model output contains no mention of referral strategies, gifting, or reviews. It is strictly an intake request.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Revenue covers blended LTV with hardware + subscription + accessories
+         [90mevidence:[0m While the text mentions 'blended LTV' and asks about subscription prices, it does not cover accessories or provide a revenue strategy covering blended LTV across these specific streams.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Idea bank skips ideas that conflict with brand fit, with explicit rationale
+         [90mevidence:[0m The model output does not generate an idea bank. It stops at the intake phase asking for information before drafting any plan or ideas.
+    12.8s · 170071 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 23.3%[0m  [90m· 9.40s avg · 169706 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-842/benchmark.json[0m
+{
+  "passed": 9,
+  "failed": 34,
+  "skills": [
+    {
+      "skill": "marketing-plan",
+      "slug": "marketing-plan",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.20930232558139536,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-842/benchmark.json"
+    }
+  ],
+  "iteration": 842,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-842",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-842/report/index.html"
+}

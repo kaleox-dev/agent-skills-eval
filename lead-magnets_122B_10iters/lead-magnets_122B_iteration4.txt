@@ -1,0 +1,83 @@
+
+[1m▶ lead-magnets[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our lead form asks for name, email, company, role, company size, and phone. We're not getting enough signups. Could the form be the problem?
+    [90moutput:[0m  The user is asking about their lead form and whether it could be the problem for low signups. They're asking for 6 fields: name, email, company, role, company size, and phone. This is a classic lead …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.8s · 12072 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    What's the difference between a lead magnet and a free tool? Should I build one or the other?
+    [90moutput:[0m  The user is asking about the difference between a lead magnet and a free tool, and wants guidance on which to build. This is a strategic question that falls within my lead magnet expertise, but also …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Compares SEO and shareability characteristics
+         [90mevidence:[0m Shareability: Medium vs High (people love sharing results) - SEO not mentioned
+      [31m#5[0m [31mFAIL[0m [90m—[0m Defers to free-tools skill
+         [90mevidence:[0m Model states 'I should use my lead magnet skills while also acknowledging the free-tools skill distinction' but does not defer - answers question itself
+    15.7s · 12208 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?
+    [90moutput:[0m  The user is asking for lead magnet recommendations for a B2B SaaS company selling project management software to marketing agencies. This is a perfect use case for the lead-magnets skill. Let me thin…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Model states 'I should first check for product marketing context - but the user hasn't provided any existing context files' but never references or attempts to access product-marketing.md
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies the 5 principles
+         [90mevidence:[0m No mention of '5 principles' in output. Model says 'This follows the output format from the skill' but does not demonstrate application of specific principles
+      [31m#6[0m [31mFAIL[0m [90m—[0m Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)
+         [90mevidence:[0m Missing gating section entirely. Distribution and measurement only mentioned as 'What I Need to Finalize the Plan' but not outlined. Only recommendation and partial content sections present
+    18.0s · 12357 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a 50-page ebook we spent 3 months writing. Conversion on the landing page is only 4%. Should we keep iterating?
+    [90moutput:[0m  The user is asking about a lead magnet (50-page ebook) that's performing poorly with only 4% conversion on the landing page. They want to know if they should keep iterating. Based on the lead magnet …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    20.3s · 12585 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a top-performing blog post on email subject lines. Can we use it as a lead magnet?
+    [90moutput:[0m  The user is asking about using a top-performing blog post on email subject lines as a lead magnet. This is a great question about content repurposing for lead generation. Let me think about this stra…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps blog post ungated to preserve SEO
+         [90mevidence:[0m No explicit mention of keeping the post ungated or SEO preservation in output
+    11.0s · 11803 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our checklist gets a lot of downloads but very few of them ever sign up for a trial. Is the lead magnet broken?
+    [90moutput:[0m  The user is asking about a lead magnet performance issue. They're getting downloads on their checklist but very few trial signups. This is a common lead magnet problem - it's not necessarily "broken,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m References Lead Quality Signals
+         [90mevidence:[0m No explicit reference to 'Lead Quality Signals' framework or named signals
+      [31m#4[0m [31mFAIL[0m [90m—[0m Cross-references emails skill for nurture
+         [90mevidence:[0m Mentions 'nurture email sequence' but does not cross-reference an 'emails skill'
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions tracking time to conversion by source
+         [90mevidence:[0m No mention of tracking 'time to conversion' or by 'source'
+    10.5s · 11841 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 73.3%[0m  [90m· 14.87s avg · 12144 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-794/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "lead-magnets",
+      "slug": "lead-magnets",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7352941176470589,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-794/benchmark.json"
+    }
+  ],
+  "iteration": 794,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-794",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-794/report/index.html"
+}

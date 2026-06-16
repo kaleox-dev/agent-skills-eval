@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	2	FAIL	Applies three pricing axes framework	The model only discusses 'Per Agent', 'Per Ticket', and 'Flat Rate' as alternatives but does not apply a formal 'three pricing axes framework' to the specific product; it asks for more context instea…	1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	5	FAIL	Recommends good-better-best tier structure	The model states: 'I will give you a detailed pricing strategy, tier structure, and price points' but does not provide the tier structure in this output.	1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	6	FAIL	Addresses pricing psychology	The model mentions customers 'perceive value' but does not discuss specific pricing psychology techniques (e.g., anchoring, charm pricing, decoy effect).	1	6
+ab-testing	eval-1	with_skill	FAIL	7.4s	11067	7	FAIL	Provides specific pricing recommendation with rationale	The model explicitly states: 'To give you specific pricing recommendations, I need to understand your product and market better' and refuses to provide a specific recommendation until context is prov…	1	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	1	FAIL	Applies price increase strategies	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	2	FAIL	Recommends grandfathering or grace period approach	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	3	FAIL	Recommends tying increase to new value	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	4	FAIL	Provides communication strategy	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	5	FAIL	Addresses new vs existing customer timing	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	6	FAIL	Suggests annual billing as softening measure	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-2	with_skill	FAIL	14.8s	11833	7	FAIL	Notes some churn is expected	judge returned unparseable response: { "assertion_results": [ { "text": "Applies price increase strategies", "passed": true, "evidence": "Model provides a strategic plan to execute a 30% price increa…	2	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	1	FAIL	Triggers on casual phrasing	The output begins directly with 'Pricing a new product without historical data is one of the hardest challenges...' It does not contain any conversational filler, acknowledgment of user tone, or resp…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	3	FAIL	Applies MaxDiff for feature importance	The text mentions 'Value Metric' (Step 1) and 'Feature Importance' is not discussed. There is no mention of MaxDiff, Conjoint Analysis, or statistical methods for determining feature importance. The …	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	11780	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	2	FAIL	Analyzes current tier performance	The model analyzes the *symptoms* (70% on Pro) and diagnoses potential reasons, but does not analyze the actual performance metrics (e.g., revenue per tier, conversion rates, churn rates) of the curr…	4	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	5	FAIL	Applies pricing psychology (Hick's Law)	The model mentions 'Anchoring' in the 'Why this works' section ('makes Pro look cheap... Enterprise look like a huge jump'). However, it does not reference or apply Hick's Law (which states that choi…	4	6
+ab-testing	eval-4	with_skill	FAIL	14.3s	11759	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.1s	11821	6	FAIL	Cross-references cro or marketing-psychology	The output contains no references to external frameworks, citations, or specific academic theories beyond standard industry terms like 'Anchoring' or 'Decoy Effect'. It does not cite any specific CRO…	5	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	10862	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	10862	2	FAIL	References or defers to cro skill	The model output does not mention 'cro skill', 'CRO', or any specific tool/skill name. It provides a generic expert response without referencing a specific system capability.	6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	10862	3	FAIL	Explains that pricing is about pricing decisions	The model focuses entirely on conversion optimization (CRO) factors like value metrics, tiers, anchors, and trust signals. It does not explicitly explain or define pricing as being about 'pricing dec…	6	6
+ab-testing	eval-6	with_skill	FAIL	5.9s	10862	4	PASS			6	6

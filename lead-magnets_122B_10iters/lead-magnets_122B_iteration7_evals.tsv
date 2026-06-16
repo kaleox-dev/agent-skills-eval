@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	1	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	2	FAIL	Asks about buyer stage and goal	Questions section asks about existing content, funnel, nurture sequence, traffic volume, budget - but does not ask about buyer stage or goal	1	7
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	3	FAIL	Applies the 5 principles	No mention of '5 principles' anywhere in the output; no principles framework referenced or applied	1	7
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	29.3s	13331	6	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	15.3s	12170	6	FAIL	Cross-references cro or ab-testing skill	No explicit skill framework cross-reference found in output	2	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	4	FAIL	Asks what fields are actually used	No question about which fields are actually used; asks 'What are you offering in exchange for the email?' instead.	3	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	11.3s	11856	6	FAIL	Cross-references cro skill	References 'lead magnet skill' not 'CRO skill' specifically	3	7
+ab-testing	eval-4	with_skill	FAIL	18.1s	12403	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.1s	12403	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.1s	12403	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.1s	12403	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.1s	12403	5	FAIL	Defers to free-tools skill	This is within the lead-magnets skill scope since it's about lead generation strategy	4	7
+ab-testing	eval-5	with_skill	FAIL	18.5s	12446	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	18.5s	12446	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	18.5s	12446	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	18.5s	12446	4	FAIL	Keeps blog post ungated to preserve SEO	Partial gate with preview - Show the first 10 subject lines + checklist preview on the blog - Gate the full 50+ swipe file (blog kept accessible but no SEO rationale mentioned)	5	7
+ab-testing	eval-5	with_skill	FAIL	18.5s	12446	5	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	2	FAIL	Asks about ICP fit of leads	Model asks about audience and promotion sources but does not explicitly ask about ICP (Ideal Customer Profile) fit or qualification criteria. Diagnostic questions cover topic, product, connection, nu…	6	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	3	FAIL	References Lead Quality Signals	Model discusses "Lead magnet quality" in metrics table and mentions audience mismatch, but does not explicitly reference "Lead Quality Signals" as a concept or signal framework.	6	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	4	FAIL	Cross-references emails skill for nurture	Model states "This is a lead magnet strategy question, so I should use the lead-magnets skill" but does not cross-reference an emails skill. Nurture sequence is discussed without skill cross-referenc…	6	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	5	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	16.8s	12309	6	FAIL	Mentions tracking time to conversion by source	Model mentions "Time to trial <30 days" and "Tag them by lead magnet source and track which ones convert" separately, but does not explicitly mention tracking time to conversion by source together.	6	7

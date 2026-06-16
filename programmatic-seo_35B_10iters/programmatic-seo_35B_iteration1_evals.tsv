@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	1	FAIL	Checks for product-marketing.md	The output contains only Markdown-formatted text. The 'Output files' section explicitly states 'No output files were captured.' No file named 'product-marketing.md' is present or referenced as a file…	1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	19.6s	10103	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	4	FAIL	Includes keyword research for variations	The model explicitly states it does *not* include this yet: 'Once you provide these, I can generate the **keyword research summary**... including estimated monthly search volume and difficulty.' It l…	2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	7	FAIL	Cross-references competitors skill	The model asks for input: 'Please confirm the exact 15 names' and 'Provide the 15 Competitor Names.' It does not cross-reference any specific competitor skills because the list was not provided.	2	1
+ab-testing	eval-2	with_skill	FAIL	13.9s	9530	8	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.5s	9790	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	6	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.1s	9546	7	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	6	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	22.6s	10684	7	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	6.0s	8675	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.0s	8675	2	FAIL	References or defers to seo-audit skill	Model output contains no mention of 'seo-audit skill' or any specific skill name. It proceeds directly to asking for information.	6	1
+ab-testing	eval-6	with_skill	FAIL	6.0s	8675	3	FAIL	Explains that programmatic-seo is for strategy and template design	Model explains differences in error sources ('data mismatches, URL generation errors, or template logic flaws') but does not explicitly state that 'programmatic-seo is for strategy and template desig…	6	1
+ab-testing	eval-6	with_skill	FAIL	6.0s	8675	4	PASS			6	1

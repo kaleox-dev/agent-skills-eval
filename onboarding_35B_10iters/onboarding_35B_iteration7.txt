@@ -1,0 +1,79 @@
+
+[1m▶ onboarding[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    What should our onboarding checklist include? We're a design collaboration tool. Users need to upload a design, invite a team member, and leave a comment to get full value.
+    [90moutput:[0m  To optimize your onboarding checklist for a **design collaboration tool**, we need to balance the three required actions (Upload, Invite, Comment) with the core principles of **Time-to-Value** and **…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    10.3s · 8301 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    our users sign up but then never come back. like 50% don't even log in a second time. what do we do?
+    [90moutput:[0m  This is a classic "leaky bucket" problem. If 50% don't even log in a second time, the issue isn't necessarily that they don't like your product—it's that **they forgot about it, didn't know what to d…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests multi-channel onboarding
+         [90mevidence:[0m The model suggests Email (Phase 1), In-App Guidance/Checklist (Phase 2), and Trigger-Based Notifications including "Push/SMS" (Phase 3). However, the prompt asks for 'onboarding' suggestions specific…
+    12.3s · 8437 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    How do we handle the empty state when a new user first logs in? Right now they just see a blank dashboard.
+    [90moutput:[0m  This is a classic onboarding friction point. A blank dashboard is an "empty state" that fails to communicate value, leaving new users wondering what to do next. They likely feel overwhelmed or confus…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    10.2s · 8227 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Help me optimize our onboarding flow. We have a project management tool and only 30% of trial users create their first project within the first week. We need to get them to value faster.
+    [90moutput:[0m  This is a classic activation problem. For a project management tool, **creating the first project** is your "Aha moment," but the barrier to entry (setup, naming, adding fields, inviting people) is o…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is a direct text response, not a file reference.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies checklist pattern with 3-7 items
+         [90mevidence:[0m The model provides a numbered list of 5 recommendations ('1. The Empty State Intervention' through '5. Skip Team Invites'). While the count is within 3-7, the item labeled '4. Use Dummy Data or Examp…
+    15.4s · 8793 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Our signup form has 8 fields and people keep dropping off. Can you help us fix the signup flow?
+    [90moutput:[0m  This is a classic onboarding optimization problem. Before I give you specific fixes, I need to understand your product context to ensure we don't remove fields that are actually critical for your bus…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as signup flow optimization, not onboarding
+         [90mevidence:[0m Model output explicitly states: 'This is a classic onboarding optimization problem.'
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to signup skill
+         [90mevidence:[0m The model provides a generic UX response and does not reference any specific 'signup skill', 'signup module', or defer to such a specialized agent/skill.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that onboarding covers post-signup
+         [90mevidence:[0m The model misidentifies the problem as 'onboarding optimization' rather than signup. It mentions 'post-signup flow' in the context of the 'Aha Moment', but does not provide a definition or explanatio…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt signup form redesign using onboarding patterns
+         [90mevidence:[0m The model attempts a form redesign (e.g., 'Split Form Strategy', 'Ruthless Field Audit', 'Optimize the Fields You Keep') and incorrectly labels this process as 'onboarding optimization', thereby usin…
+    8.6s · 8126 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Should we use tooltips, a product tour, or a setup wizard for onboarding? What works best?
+    [90moutput:[0m  The short answer: **It depends on your product's complexity and your users' goals.** There is no single "best" option. However, modern CRO data suggests a specific hierarchy of effectiveness. Here’s …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    15.1s · 8852 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 76.8%[0m  [90m· 11.98s avg · 8456 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-887/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 7,
+  "skills": [
+    {
+      "skill": "onboarding",
+      "slug": "onboarding",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8205128205128205,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-887/benchmark.json"
+    }
+  ],
+  "iteration": 887,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-887",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-887/report/index.html"
+}

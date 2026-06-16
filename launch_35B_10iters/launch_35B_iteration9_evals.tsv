@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	1	FAIL	Checks for product-marketing.md	No output files were captured; response is plain text, not a file named product-marketing.md.	1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	4	FAIL	Recommends five-phase launch approach	The text only describes three phases: 'Phase 1: Internal & Alpha', 'Phase 2: Alpha & Warm Market', and 'Phase 3: Beta & Buzz'. It does not provide a five-phase approach.	1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	14.4s	4505	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.4s	4478	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	14.3s	4429	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.8s	4109	6	FAIL	Provides specific recovery plan	The output explicitly states: 'Please reply with your answers to the diagnostic questions above, and I’ll give you a specific, step-by-step recovery plan.' It provides *immediate* actions but withhol…	4	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.5s	4418	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	10.7s	4121	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	10.7s	4121	2	FAIL	References or defers to marketing-ideas skill	The model output contains no references to 'marketing-ideas', no mention of a specific skill, and no indication of deferring to a specialized tool or module. It answers directly as a general assistan…	6	9
+ab-testing	eval-6	with_skill	FAIL	10.7s	4121	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	10.7s	4121	4	PASS			6	9

@@ -1,0 +1,87 @@
+
+[1m▶ image[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    Generate me an image of our app's dashboard.
+    [90moutput:[0m  I cannot access your specific application to take a real screenshot, and **AI models should not be used to generate UI screenshots** because they hallucinate interfaces that don't exist. To get a hig…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends real screenshots at 2x resolution
+         [90mevidence:[0m Mentions setting a standard viewport (e.g., 1440x900) and using Capture full size screenshot, but never mentions 2x resolution.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes this as a common mistake
+         [90mevidence:[0m The text states 'AI models should not be used...' but does not explicitly characterize this behavior as a 'common mistake'.
+    5.1s · 10868 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    Need a Twitter/X header banner for our company. We just want to show our product and tagline.
+    [90moutput:[0m  To create an effective Twitter/X header, I need to gather a bit more context to ensure the design aligns with your brand and effectively showcases your product. Here are the key details I need: 1. **…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends minimal text
+         [90mevidence:[0m Model suggests 'Option A with Ideogram (if you need short, perfect text)' but does not explicitly recommend 'minimal text' as a general design principle in the provided output.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests Canva or Figma over AI
+         [90mevidence:[0m Model recommends 'Option C (Hybrid)' or 'Option A with Ideogram', not Canva/Figma over AI as a primary preference.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions Ideogram for text-heavy designs
+         [90mevidence:[0m Model mentions Ideogram for 'perfect text' or 'short, perfect text', not specifically 'text-heavy designs'.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends testing at display size
+         [90mevidence:[0m No mention of testing at display size in the output.
+    5.9s · 10956 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    I need 5 versions of the same hero image for Twitter, LinkedIn, Instagram feed, Instagram stories, and Facebook. What's the fastest way?
+    [90moutput:[0m  The fastest way is to **generate one high-resolution "master" image** and then **resize/crop** it for each platform, rather than generating 5 separate images. Here is the optimal workflow: ### 1. Gen…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Notes Instagram 4:5 variant
+         [90mevidence:[0m The output lists Instagram Story (9:16) and Instagram Feed (1:1). It lists Facebook Post as 4:5, but does not explicitly identify an 'Instagram 4:5' variant. Instagram Feed is listed as 1:1.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests programmatic text overlays for variants
+         [90mevidence:[0m The output explicitly advises: 'Do NOT bake text into the AI generation' and 'Add text in post-processing'. It does not mention programmatic overlays.
+    8.0s · 11193 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    I need a hero image for a blog post about email deliverability. Make it visually striking.
+    [90moutput:[0m  To create a visually striking hero image for a blog post about **email deliverability**, we need to balance technical concepts (servers, routing, spam filters) with clean, modern aesthetics. Since I …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+    8.2s · 11193 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    What's the best image format for our website?
+    [90moutput:[0m  The best image format for modern websites is **WebP**, served with **AVIF** as a progressive enhancement and **JPEG/PNG** as fallbacks for older browsers. Here’s the breakdown of why and how to imple…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    7.9s · 11225 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    We're a SaaS that just launched. Need OG images for every blog post we ship — about 2 per week. Doing it manually is killing us.
+    [90moutput:[0m  This is a classic scalability problem. Since you're shipping 2 posts a week, you need a **system**, not just a prompt. Here is the most efficient workflow to automate OG images for a SaaS, ranked by …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Lists required og:image meta tags
+         [90mevidence:[0m The output only provides `<meta property="og:image" ... />` inside an HTML code block for usage, but it does not list the full set of required OG meta tags (og:title, og:description, og:type, etc.) n…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes this is best for high-volume blogs
+         [90mevidence:[0m The output explicitly states 'Since you're shipping 2 posts a week... You need a system, not just a prompt' and recommends this for a SaaS that 'just launched'. It does not claim this approach is bes…
+    12.1s · 11736 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 68.7%[0m  [90m· 7.86s avg · 11195 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-761/benchmark.json[0m
+{
+  "passed": 25,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "image",
+      "slug": "image",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6944444444444444,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-761/benchmark.json"
+    }
+  ],
+  "iteration": 761,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-761",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-761/report/index.html"
+}

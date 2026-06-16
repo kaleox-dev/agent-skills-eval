@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a direct text response, not a file reference.	1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	5	FAIL	Applies checklist pattern with 3-7 items	The model provides a numbered list of 5 recommendations ('1. The Empty State Intervention' through '5. Skip Team Invites'). While the count is within 3-7, the item labeled '4. Use Dummy Data or Examp…	1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	5	FAIL	Suggests multi-channel onboarding	The model suggests Email (Phase 1), In-App Guidance/Checklist (Phase 2), and Trigger-Based Notifications including "Push/SMS" (Phase 3). However, the prompt asks for 'onboarding' suggestions specific…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	1	FAIL	Recognizes this as signup flow optimization, not onboarding	Model output explicitly states: 'This is a classic onboarding optimization problem.'	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	2	FAIL	References or defers to signup skill	The model provides a generic UX response and does not reference any specific 'signup skill', 'signup module', or defer to such a specialized agent/skill.	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	3	FAIL	Explains that onboarding covers post-signup	The model misidentifies the problem as 'onboarding optimization' rather than signup. It mentions 'post-signup flow' in the context of the 'Aha Moment', but does not provide a definition or explanatio…	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	4	FAIL	Does not attempt signup form redesign using onboarding patterns	The model attempts a form redesign (e.g., 'Split Form Strategy', 'Ruthless Field Audit', 'Optimize the Fields You Keep') and incorrectly labels this process as 'onboarding optimization', thereby usin…	6	7

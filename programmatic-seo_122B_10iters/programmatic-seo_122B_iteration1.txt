@@ -1,0 +1,101 @@
+
+[1m▶ programmatic-seo[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We built 500 programmatic pages but Google isn't indexing most of them. Only 80 are in the index. What's going wrong?
+    [90moutput:[0m  The user is asking about a programmatic SEO issue - they created 500 pages but only 80 are being indexed by Google. This is a common pSEO problem that I can help diagnose using the programmatic SEO s…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    18.6s · 9564 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    we want to rank for '[tool name] integration' keywords. we integrate with 50+ tools and want a page for each. like 'Slack integration', 'Salesforce integration' etc.
+    [90moutput:[0m  The user wants to create programmatic SEO pages for integration keywords. They have 50+ integrations and want individual pages for each (like "Slack integration", "Salesforce integration", etc.). Thi…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing detection in output. Output begins with analysis without identifying user input style.
+    22.8s · 9921 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Can you audit our existing programmatic SEO pages for technical issues? We have crawl errors and some pages return 404s.
+    [90moutput:[0m  The user is asking me to audit their existing programmatic SEO pages for technical issues, specifically mentioning crawl errors and 404s. This is a request for an SEO audit of programmatic SEO pages.…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that programmatic-seo is for strategy and template design
+         [90mevidence:[0m No statement in output explicitly explains programmatic-seo skill is for strategy and template design. Output discusses programmatic SEO audit framework but does not make the skill distinction.
+    12.8s · 9081 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Help me create a glossary section for our marketing automation platform. We want to define 200+ marketing terms and rank for '[term] definition' keywords.
+    [90moutput:[0m  The user wants to create a glossary section for their marketing automation platform with 200+ marketing terms. This is a clear programmatic SEO opportunity using the Glossary playbook. Let me think a…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    25.7s · 10164 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We want to create programmatic SEO pages for our CRM. We're thinking of 'CRM for [industry]' pages — like 'CRM for Real Estate,' 'CRM for Healthcare,' etc. How should we approach this?
+    [90moutput:[0m  The user wants to create programmatic SEO pages for their CRM product, specifically targeting "CRM for [industry]" pages. This is a classic "Personas" playbook pattern from the programmatic SEO playb…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies as Personas playbook
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies core principles (unique value, proprietary data, clean URLs)
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends keyword research per variation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses data requirements for unique content
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides template design guidance
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes internal linking strategy
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Warns against thin content
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** A model output (the text provided in the prompt) an…
+    28.0s · 10348 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Create a comparison page strategy. We want pages like 'Notion vs Asana', 'Notion vs Monday', etc. for all our competitors. We have 15 competitors.
+    [90moutput:[0m  The user wants to create a programmatic SEO strategy for comparison pages targeting their competitors. They have 15 competitors and want pages like "Notion vs Asana", "Notion vs Monday", etc. This is…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies as Comparisons playbook
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends template structure for scale
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Addresses unique data per comparison
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes keyword research for variations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides URL structure recommendation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes internal linking strategy
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Cross-references competitors skill
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Applies quality checks
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run based on specific assertions. * **Role:** Strict JSON-only evalua…
+    34.7s · 10862 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 60.1%[0m  [90m· 23.76s avg · 9990 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-971/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 18,
+  "skills": [
+    {
+      "skill": "programmatic-seo",
+      "slug": "programmatic-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.5609756097560976,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-971/benchmark.json"
+    }
+  ],
+  "iteration": 971,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-971",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-971/report/index.html"
+}

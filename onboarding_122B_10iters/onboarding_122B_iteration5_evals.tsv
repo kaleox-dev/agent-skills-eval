@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to any external files in this conversation' - no file found or referenced	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	2	FAIL	Defines the activation/aha moment	Model asks 'Is 'create first project' your true 'aha moment'' but does not define it themselves	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	3	FAIL	Evaluates time-to-value	Model mentions 'Time-to-Value Is Everything' as a principle but provides no evaluation for this product	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	4	FAIL	Recommends onboarding flow approach	Model says 'I can provide specific recommendations' but provides none - only asks questions	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern used in output - only numbered questions to user	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	6	FAIL	Addresses empty states as opportunities	Model asks about empty dashboard but does not address empty states as opportunities in recommendations	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	7	FAIL	Provides experiment ideas	Model states 'Experiment ideas to test' but provides zero experiment ideas	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	8	FAIL	Includes measurement metrics	Model asks about metrics but includes no measurement metrics in output	1	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	7	FAIL	Addresses skipped items	No explicit guidance on handling users who skip checklist items; only mentions 'Allow users to hide it (don't trap them)' which is about dismissal, not skipping	2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Output begins with 'This is a classic activation problem' - no reference to casual language.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	2	FAIL	Applies stalled users framework	Output mentions 'stalled users' once in 'bring back stalled users' but no framework is applied or referenced.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	5	FAIL	Suggests multi-channel onboarding	No mention of multi-channel onboarding in output.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	6	FAIL	Cross-references emails for re-engagement	No mention of email cross-referencing. Output only says 'Set up re-engagement' without specifics.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	7	FAIL	Provides specific re-engagement triggers	Output mentions 're-engagement' but provides no specific triggers (time-based, behavior-based, etc.).	3	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	1	FAIL	Compares tooltips, product tours, and setup wizards	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	2	FAIL	Explains when each works best	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	3	FAIL	Notes that combination approaches often work	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	4	FAIL	Provides best practices for each	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	5	FAIL	Addresses tooltip fatigue and tour length	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	6	FAIL	Recommends testing different approaches	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	4	PASS			6	5

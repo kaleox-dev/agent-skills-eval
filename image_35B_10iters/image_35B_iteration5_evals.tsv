@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	9.0s	11316	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	1	FAIL	Refuses to use AI generation for product UI	judge did not provide concrete evidence	2	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	8.1s	11228	6	FAIL	Notes this as a common mistake	The model explains the technical reason (hallucination) and offers solutions, but does not explicitly state that using AI to generate the UI itself is a 'common mistake'. It frames it as a poor capab…	2	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	3	FAIL	Recommends minimal text	Output asks for 'exact text you want to display' and notes 'Keep it short' as a question rather than a definitive recommendation to use minimal text.	3	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	4	FAIL	Suggests Canva or Figma over AI	Output recommends 'Ideogram 3.0 or Flux Kontext' and lists Canva only as a manual alternative, not suggesting it over AI.	3	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	5	FAIL	Mentions Ideogram for text-heavy designs	Output mentions Ideogram for rendering text accurately ('Using an AI model that can render text accurately'), not specifically for 'text-heavy designs'.	3	5
+ab-testing	eval-3	with_skill	FAIL	4.8s	10878	6	FAIL	Recommends testing at display size	No mention of testing at display size; only mentions mobile cropping issues.	3	5
+ab-testing	eval-4	with_skill	FAIL	12.0s	11583	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.0s	11583	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	12.0s	11583	3	FAIL	Notes Instagram 4:5 variant	The output lists 1:1 (Feed) and 9:16 (Stories) but does not mention the 4:5 aspect ratio for Instagram.	4	5
+ab-testing	eval-4	with_skill	FAIL	12.0s	11583	4	FAIL	Suggests programmatic text overlays for variants	The output suggests adding text in Canva/Figma 'not in the AI image', but does not use the term 'programmatic' nor suggest an automated/programmatic method for generating these overlays across varian…	4	5
+ab-testing	eval-4	with_skill	FAIL	12.0s	11583	5	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	8.1s	11215	6	FAIL	Provides command line tool example	The output provides HTML implementation examples (`<picture>` tag) and mentions CDN/platform strategies, but contains no command line tool examples or shell commands.	5	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	4	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	5	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	13.9s	12008	6	FAIL	Notes this is best for high-volume blogs	The model explicitly tailors the advice to '2 posts/week', calling it 'high-ROI' for a 'new SaaS' but noting AI generation is 'overkill for 2 posts/week'. It does not characterize the approach as bes…	6	5

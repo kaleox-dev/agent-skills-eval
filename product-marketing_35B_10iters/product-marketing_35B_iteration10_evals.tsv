@@ -1,0 +1,27 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.5s	3589	1	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.5s	3589	2	FAIL	Offers two options: auto-draft or start from scratch	The model output only mentions 'Option 1: Auto-draft from codebase' and immediately proceeds with it. It does not offer 'start from scratch' as an option in the dialogue.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.5s	3589	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	15.5s	3589	4	FAIL	Walks through sections conversationally one at a time	The model dumps the entire skeleton draft at once rather than walking through sections conversationally one at a time. It asks for feedback on the whole document at the end.	1	10
+ab-testing	eval-1	with_skill	FAIL	15.5s	3589	5	FAIL	Creates file at .agents/product-marketing.md	The output files section states: 'No output files were captured.' The text also states: 'Please correct the draft above or provide the missing details, and I'll finalize the .agents/product-marketing…	1	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	2	PASS	Identifies sections that need updating	No output files generated and no text response containing section identification provided.	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	3	FAIL	Offers auto-draft or start-from-scratch options	Output states: 'Let's build this from scratch' but does not offer 'auto-draft' as an option, stating it lacks materials for it.	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	4	FAIL	Adapts questions for early-stage B2C mobile app	Questions are generic (One-line description, Features, Category, Type) and do not specifically reference B2C or mobile app nuances (e.g., App Store Optimization, platform specifics).	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	5	FAIL	Notes some sections may be sparse early on	No mention of sections being sparse or incomplete in the provided output.	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	6	FAIL	Skips non-applicable sections rather than forcing all 12	The output only provides 4 questions under 'Product Overview'. There is no evidence of a 12-section framework being considered or non-applicable sections being explicitly skipped.	2	10
+ab-testing	eval-2	with_skill	FAIL	2.5s	2141	7	FAIL	Creates file at .agents/product-marketing.md	Output files section states: 'No output files were captured.'	2	10
+ab-testing	eval-4	with_skill	FAIL	3.3s	2207	1	FAIL	Activates auto-draft workflow mode	judge did not provide concrete evidence	4	10
+ab-testing	eval-4	with_skill	FAIL	3.3s	2207	2	FAIL	Scans codebase for existing marketing materials	judge did not provide concrete evidence	4	10
+ab-testing	eval-4	with_skill	FAIL	3.3s	2207	3	FAIL	Drafts context from found information	judge did not provide concrete evidence	4	10
+ab-testing	eval-4	with_skill	FAIL	3.3s	2207	4	FAIL	Flags sections needing manual input	judge did not provide concrete evidence	4	10
+ab-testing	eval-4	with_skill	FAIL	3.3s	2207	5	FAIL	Presents draft for review before saving	judge did not provide concrete evidence	4	10
+ab-testing	eval-5	with_skill	FAIL	2.4s	2160	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	2.4s	2160	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	2.4s	2160	3	FAIL	Summarizes contents if found	The document was not found, so no contents were summarized. The model instead describes what the context would contain ('foundational product, audience, and positioning context') but did not summariz…	5	10
+ab-testing	eval-5	with_skill	FAIL	2.4s	2160	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	2.4s	2160	5	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	2.4s	2146	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	2.4s	2146	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	2.4s	2146	3	FAIL	References or defers to copywriting skill for the actual copy	The model does not reference a specific 'copywriting skill' or tool. It offers to draft the copy itself based on collected context, or mentions setting up a context document. It does not explicitly d…	6	10
+ab-testing	eval-6	with_skill	FAIL	2.4s	2146	4	PASS			6	10

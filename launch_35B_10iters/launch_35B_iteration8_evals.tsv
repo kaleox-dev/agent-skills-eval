@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The response is a text dump, not a file.	1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	4	FAIL	Recommends five-phase launch approach	The timeline is divided into three phases: 'Phase 1: Internal/Alpha', 'Phase 2: Alpha Launch', 'Phase 3: Beta/Full Launch'. It does not recommend a five-phase approach.	1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	7	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.5s	4694	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	13.0s	4284	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.5s	4164	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	15.6s	4601	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.2s	4281	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	8.7s	3900	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.7s	3900	2	FAIL	References or defers to marketing-ideas skill	The output contains no reference to a specific 'marketing-ideas skill' or any skill routing mechanism. It acts as a general assistant providing direct advice.	6	8
+ab-testing	eval-6	with_skill	FAIL	8.7s	3900	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	8.7s	3900	4	PASS			6	8

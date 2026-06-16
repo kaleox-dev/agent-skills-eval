@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.2s	2451	1	FAIL	Checks for existing product-marketing.md	Model states it cannot access file system and does not perform check; no tool calls or file references	1	9
+ab-testing	eval-1	with_skill	FAIL	7.2s	2451	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	7.2s	2451	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	7.2s	2451	4	FAIL	Walks through sections conversationally one at a time	Multiple sections/questions presented together in single response, not one at a time	1	9
+ab-testing	eval-1	with_skill	FAIL	7.2s	2451	5	FAIL	Creates file at .agents/product-marketing.md	No output files captured; model only offers to create but does not execute file creation	1	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	1	FAIL	Reads existing product-marketing.md	No output files were captured - all file_read tools returned no content	2	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	2	FAIL	Identifies sections that need updating	No file content was read to identify sections	2	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	3	FAIL	Updates Target Audience with VP of Engineering	No file update tool was called, no content modified	2	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	4	FAIL	Adds new persona for the expanded audience	No new persona content was added to any file	2	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	5	FAIL	Updates Product Overview for enterprise tier	No file update tool was called for Product Overview	2	9
+ab-testing	eval-2	with_skill	FAIL	3.2s	2111	6	FAIL	Preserves unchanged sections	No file was read or modified, cannot verify preservation	2	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	1	FAIL	Triggers on casual phrasing	No explicit trigger mechanism shown in output; 'just getting started' appears in reasoning, not visible output	3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	5	FAIL	Notes some sections may be sparse early on	No mention of sparse sections in output	3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	6	FAIL	Skips non-applicable sections rather than forcing all 12	Mentioned in reasoning ('not overwhelm them with all 12 sections at once') but not in actual output	3	9
+ab-testing	eval-3	with_skill	FAIL	7.1s	2443	7	FAIL	Creates file at .agents/product-marketing.md	No output files were captured	3	9
+ab-testing	eval-4	with_skill	FAIL	7.7s	2469	1	FAIL	Activates auto-draft workflow mode	Model states: 'I need to let them know this limitation and ask them to either: 1. Share key files/content with me' - workflow not activated, only explained.	4	9
+ab-testing	eval-4	with_skill	FAIL	7.7s	2469	2	FAIL	Scans codebase for existing marketing materials	Model explicitly states: 'I don't have access to their actual codebase or files' - no scanning occurred.	4	9
+ab-testing	eval-4	with_skill	FAIL	7.7s	2469	3	FAIL	Drafts context from found information	No draft was created. Model says: 'Once you share the materials, I'll analyze them and draft' - future tense, no draft presented.	4	9
+ab-testing	eval-4	with_skill	FAIL	7.7s	2469	4	FAIL	Flags sections needing manual input	No draft exists to flag sections. Model asks for materials instead of identifying gaps in a draft.	4	9
+ab-testing	eval-4	with_skill	FAIL	7.7s	2469	5	FAIL	Presents draft for review before saving	No draft presented. Model response is a request for materials, not a draft for review.	4	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	2361	1	FAIL	Checks both file locations	Model states 'I don't have direct file system access in this environment' - does not actually check files	5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	2361	2	FAIL	Reports whether context doc exists	Model explicitly says 'I don't have direct access to your file system to see if .agents/product-marketing.md already exists' - no determination made	5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	2361	3	FAIL	Summarizes contents if found	No contents were found or summarized - model could not access files to read contents	5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	2361	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	5.9s	2361	5	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	4.6s	2254	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.6s	2254	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	4.6s	2254	3	FAIL	References or defers to copywriting skill for the actual copy	Model references "product-marketing skill" not "copywriting skill" specifically	6	9
+ab-testing	eval-6	with_skill	FAIL	4.6s	2254	4	PASS			6	9

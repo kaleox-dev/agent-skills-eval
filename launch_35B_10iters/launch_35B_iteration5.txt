@@ -1,0 +1,85 @@
+
+[1m▶ launch[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    we just shipped a major feature update. how should we announce it? it's not a full product launch, just a big new feature.
+    [90moutput:[0m  Since this is a **major feature update** rather than a brand-new product launch, your strategy should shift from "awareness building" to **adoption and conversion**. You want to show existing users w…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The output immediately jumps into strategy without showing a trigger mechanism or response to a casual input; it assumes a formal request context.
+    11.6s · 4196 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We want to launch on Product Hunt. Any tips? We've never done it before.
+    [90moutput:[0m  Launching on Product Hunt (PH) for the first time is an exciting milestone. As the guidelines note, PH is powerful for reaching early adopters and gaining credibility, but it requires significant pre…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Addresses hunter network and supporter activation
+         [90mevidence:[0m The output mentions building relationships with 'influential PH users' and 'engaging with them', but it does not explicitly discuss 'hunter network' activation (contacting PH hunters) or specific str…
+    11.8s · 4202 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Our launch flopped. We launched 3 weeks ago and only got 50 signups. We expected at least 500. What went wrong and what can we do now?
+    [90moutput:[0m  I’m sorry to hear that. A 10x miss is painful, but **it is not fatal.** In fact, 50 signups from a "flopped" launch is often a goldmine for fixing your strategy for the next attempt. Most launches fa…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.1s · 4306 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We're launching a new B2B SaaS product for design teams in 6 weeks. It's a design review tool. We have a small audience (500 email subscribers, 2k Twitter followers). Help us plan the launch.
+    [90moutput:[0m  This is a classic "Small Audience, Big Product" challenge. With only 500 email subscribers and 2k Twitter followers, you cannot rely on volume to drive launch day traffic. You must rely on **signal, …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies ORB Framework (Owned, Rented, Borrowed)
+         [90mevidence:[0m The output mentions 'Owned Channels', 'Borrowed Channels', and 'Rented Channels' in Section 1, but does not explicitly name or apply the 'ORB Framework' as a structured methodology. It uses the conce…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes launch day checklist
+         [90mevidence:[0m The output provides a high-level schedule for Week 5 (Monday-Friday) and mentions 'Product Hunt Prep' in Week 4, but it does not provide a specific 'Launch Day Checklist' (e.g., bullet points for tas…
+    14.0s · 4446 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Give me some creative marketing ideas to promote our product. We're bootstrapped and don't have a big budget.
+    [90moutput:[0m  Since you are bootstrapped, the most effective marketing strategies are those that rely on **creativity, effort, and community engagement** rather than paid spend. This aligns perfectly with the prin…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as broader marketing ideas request
+         [90mevidence:[0m The model does not explicitly recognize or label the request as a 'broader marketing ideas request'. It immediately proceeds to answer the prompt with generic advice. There is no textual evidence of …
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to marketing-ideas skill
+         [90mevidence:[0m The output contains no references to a 'marketing-ideas' skill, tool, or internal system prompt. The model generates the content directly without deferring to any specific skill configuration.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt full marketing brainstorm using launch strategy patterns
+         [90mevidence:[0m The model explicitly states it is using a 'launch framework' ('...principles of leveraging "Borrowed" and "Owned" channels from our launch framework...') and provides a structured brainstorm of marke…
+    11.2s · 4210 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    How do we leverage partnerships and borrowed audiences for our launch? We don't have a big audience of our own.
+    [90moutput:[0m  Since you don’t have a large owned audience (email list, blog traffic, etc.), your launch strategy must be **asymmetric**. You cannot rely on "broadcasting" to your own followers. Instead, you must *…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Focuses on Borrowed channel from ORB Framework
+         [90mevidence:[0m The output discusses a 'Borrowed Channel' strategy generically. It does not mention the 'ORB Framework' or define 'Borrowed' as a specific acronym/component within that framework.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes borrowed strategies take time to build
+         [90mevidence:[0m The output provides a 4-week action plan but does not explicitly state that borrowed strategies 'take time to build' as a general principle or caution, nor does it emphasize long-term duration beyond…
+    13.5s · 4442 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 70.9%[0m  [90m· 12.54s avg · 4300 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-785/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "launch",
+      "slug": "launch",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7368421052631579,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-785/benchmark.json"
+    }
+  ],
+  "iteration": 785,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-785",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-785/report/index.html"
+}

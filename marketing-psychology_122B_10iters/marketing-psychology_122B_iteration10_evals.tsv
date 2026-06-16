@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	1	FAIL	Checks for product-marketing.md	Since I don't have access to file systems to check for .agents/product-marketing.md or similar files, I'll proceed with the knowledge I have	1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	Mentions Anchoring Effect and Charm Pricing in list, but no Rule of 100 application visible. Charm pricing ($X.99) not demonstrated.	1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	21.1s	6353	7	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	26.8s	6785	6	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	1	FAIL	Triggers on casual phrasing	No user input showing casual phrasing; model states 'The user is asking about psychological principles' without identifying casual language	3	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	5	FAIL	Organizes by where each applies in copy	Organized by principle type (Core Persuasion, Cognitive Biases, Decision-Making) not by copy position (headline, body, CTA)	3	10
+ab-testing	eval-3	with_skill	FAIL	21.7s	6360	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	2	FAIL	Applies Hick's Law	Hick's Law is not mentioned anywhere in the output. No reference to choice reduction or decision complexity.	4	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	16.5s	5949	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	3	FAIL	Applies Zero-Price Effect	Zero-Price Effect only mentioned in thinking section ('Free is psychologically different from low-cost, but freemium vs trial has different implications') but not applied or explained in the actual r…	5	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.7s	6160	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	16.0s	5887	1	FAIL	Recognizes this as an A/B test setup task	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return strict JSON only. …	6	10
+ab-testing	eval-6	with_skill	FAIL	16.0s	5887	2	FAIL	References or defers to ab-testing skill	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return strict JSON only. …	6	10
+ab-testing	eval-6	with_skill	FAIL	16.0s	5887	3	FAIL	May provide psychological context for hypothesis	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return strict JSON only. …	6	10
+ab-testing	eval-6	with_skill	FAIL	16.0s	5887	4	FAIL	Does not attempt full test design using psychology patterns	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against the provided assertions and return strict JSON only. …	6	10

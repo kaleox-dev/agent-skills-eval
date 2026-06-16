@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The output text contains no markdown file creation or reference to 'product-marketing.md'.	1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	3	FAIL	Provides ideas from the 139 marketing ideas catalog	The output explicitly states: 'I need to know a little more about your current situation... here are the questions I need answered'. It does not reference or utilize a '139 marketing ideas catalog'.	1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	7	FAIL	Prioritizes by likely impact	The ideas are listed as a generic set of 5 high-ROI strategies. There is no explicit ranking, prioritization score, or explanation of relative impact between the ideas (e.g., Idea 1 is not ranked hig…	1	4
+ab-testing	eval-1	with_skill	FAIL	13.0s	13700	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	3	FAIL	Recommends outbound tactics	Strategy 2 recommends 'Message Ads (InMail)', which is a paid social feature, not manual outbound tactics like cold email or cold calling. Strategy 3 is inbound/Engineering as Marketing. No cold outr…	2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	6	FAIL	Notes that fast leads means paid or outbound	The text states 'speed comes from targeting high-intent audiences who are already looking for solutions', implying search/paid intent. It does not explicitly state that 'fast leads means paid or outb…	2	4
+ab-testing	eval-2	with_skill	FAIL	10.2s	13415	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	11.9s	13562	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	4	FAIL	Includes community and media appearances	The model mentions 'Engage in those same threads with helpful, non-salesy answers' (Idea #2) but does not recommend specific 'media appearances' such as podcast interviews, guest articles, or speakin…	4	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.5s	13445	6	FAIL	Provides structured output with timelines	The output provides steps (1, 2, 3) under 'How to start' but contains no specific timelines, dates, or duration estimates (e.g., 'by Q3', 'within 3 months'). It ends by asking for more info to provid…	4	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	21.5s	14848	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	11.2s	13595	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	11.2s	13595	2	FAIL	References or defers to referrals skill	Model states: 'If you are asking for the structure, I will assume this falls under **Referral Marketing**.' It does not explicitly reference a specific 'referrals skill' or tool definition, but rathe…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.2s	13595	3	FAIL	Does not attempt detailed referral program design	The model provides a comprehensive 6-step framework including specific models (Two-Sided vs One-Sided), incentive types, trigger timing, technical implementation tools (ReferralCandy, etc.), and user…	6	4
+ab-testing	eval-6	with_skill	FAIL	11.2s	13595	4	PASS			6	4

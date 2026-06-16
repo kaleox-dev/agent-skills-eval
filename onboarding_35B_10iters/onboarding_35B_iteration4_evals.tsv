@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	6	FAIL	Addresses empty states as opportunities	No explicit checklist with 3-7 items found. Section 6 has 4 rows in a table, but it is not labeled as a checklist. Section 'Immediate Action Plan' has 4 items, but they are narrative steps, not a dis…	1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	5	FAIL	Starts with quickest win	The model explicitly states in Step 1: 'This is the highest friction step.' While it argues for doing it while motivation is high, uploading a file is generally higher effort/friction than inviting v…	2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	2	FAIL	References or defers to signup skill	No mention of a 'signup skill' or deferred signup expertise. The model provides generic UX advice (reduce fields, add social login) without referencing a specific system skill.	6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	3	FAIL	Explains that onboarding covers post-signup	The model does not define or explain the distinction between signup and onboarding. It only mentions 'deferring non-critical info' to 'after first value' or 'later in onboarding' without explaining w…	6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	4	PASS			6	4

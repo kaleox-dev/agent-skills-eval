@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.0s	2090	1	FAIL	Checks for existing product-marketing.md	Model output states: 'Since this is the first time we're doing this for your product', implying it assumes absence but does not explicitly perform or state a check for an existing file. More critical…	1	3
+ab-testing	eval-1	with_skill	FAIL	2.0s	2090	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	2.0s	2090	3	FAIL	Covers applicable sections	The model output offers to 'walk you through each section' in Option 2, but does not list, cover, or display any specific sections of the product-marketing.md file in the provided text.	1	3
+ab-testing	eval-1	with_skill	FAIL	2.0s	2090	4	FAIL	Walks through sections conversationally one at a time	The model presents options but does not actually initiate the walkthrough conversationally; it waits for user input ('Which would you prefer?').	1	3
+ab-testing	eval-1	with_skill	FAIL	2.0s	2090	5	FAIL	Creates file at .agents/product-marketing.md	Output files section states: 'No output files were captured.'	1	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	1	FAIL	Reads existing product-marketing.md	Model output states 'Would you like me to check for an existing file first?' and does not demonstrate reading the file.	2	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	2	FAIL	Identifies sections that need updating	Model asks for user input ('please let me know, and I'll proceed') rather than identifying sections itself.	2	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	3	FAIL	Updates Target Audience with VP of Engineering	No updates were made; model requested permission to proceed.	2	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	4	FAIL	Adds new persona for the expanded audience	No persona was added; model requested permission to proceed.	2	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	5	FAIL	Updates Product Overview for enterprise tier	No product overview was updated; model requested permission to proceed.	2	3
+ab-testing	eval-2	with_skill	FAIL	2.0s	2098	6	FAIL	Preserves unchanged sections	No file was read or written, so preservation could not occur.	2	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	1	FAIL	Triggers on casual phrasing	The model output starts directly with 'Since you're just getting started...', without explicitly acknowledging or quoting any specific casual phrasing from the user's prompt.	3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	2	FAIL	Checks for existing context doc	The output does not contain any evidence of checking for an existing context document or file. It immediately suggests 'Option 2' based on an assumption about history/copy.	3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	5	FAIL	Notes some sections may be sparse early on	The output says 'Don’t worry about being perfect' and 'We can refine them later,' but it does not explicitly state that 'some sections may be sparse early on.'	3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	6	FAIL	Skips non-applicable sections rather than forcing all 12	The output explicitly says 'I’ll walk you through each section one by one' and starts with 'Section 1', implying a full walkthrough rather than skipping non-applicable ones. It does not mention skipp…	3	3
+ab-testing	eval-3	with_skill	FAIL	2.6s	2141	7	FAIL	Creates file at .agents/product-marketing.md	Output files section states: 'No output files were captured.'	3	3
+ab-testing	eval-4	with_skill	FAIL	3.3s	2206	1	FAIL	Activates auto-draft workflow mode	The model does not report activating an 'auto-draft workflow mode'. Instead, it explicitly states: 'To get started, please share the relevant files or codebase snippets' and asks the user to provide …	4	3
+ab-testing	eval-4	with_skill	FAIL	3.3s	2206	2	FAIL	Scans codebase for existing marketing materials	The model output states: 'I'll scan the repository... To get started, please share the relevant files'. The 'Output files' section confirms 'No output files were captured'. The action of scanning was…	4	3
+ab-testing	eval-4	with_skill	FAIL	3.3s	2206	3	FAIL	Drafts context from found information	The model states: 'Once you provide the materials, I'll: ... Draft the .agents/product-marketing.md file'. No draft was generated in the output. The condition of having 'found information' was not me…	4	3
+ab-testing	eval-4	with_skill	FAIL	3.3s	2206	4	FAIL	Flags sections needing manual input	While the model asks for input, it does not explicitly flag 'sections needing manual input' within a draft or workflow structure as implied by the assertion. It simply lists required files to enable …	4	3
+ab-testing	eval-4	with_skill	FAIL	3.3s	2206	5	FAIL	Presents draft for review before saving	The model output contains no draft. It states: 'I'll... Present the draft to you for corrections and refinements' as a future step. No draft was presented for review in this run.	4	3
+ab-testing	eval-5	with_skill	FAIL	4.2s	2202	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	4.2s	2202	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	4.2s	2202	3	FAIL	Summarizes contents if found	The document was not found; the model states 'I don't see an existing `.agents/product-marketing.md` file' and offers to create/draft it rather than summarizing existing content.	5	3
+ab-testing	eval-5	with_skill	FAIL	4.2s	2202	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	4.2s	2202	5	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	3.0s	2166	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	3.0s	2166	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	3.0s	2166	3	FAIL	References or defers to copywriting skill for the actual copy	The model offers two paths: asking for details directly to draft immediately or setting up context. It does not explicitly reference a 'copywriting skill' or tool. It defers the action to user input,…	6	3
+ab-testing	eval-6	with_skill	FAIL	3.0s	2166	4	PASS			6	3

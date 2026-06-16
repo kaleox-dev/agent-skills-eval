@@ -1,0 +1,85 @@
+
+[1m▶ marketing-ideas[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to build authority and thought leadership in the HR tech space. We're a newer company and nobody knows who we are yet.
+    [90moutput:[0m  Hello! I can certainly help you with that. Building authority in HR Tech is a fantastic goal, but it’s also one of the most competitive spaces, so the strategy needs to be sharp. Since you are a newe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes community and media appearances
+         [90mevidence:[0m The model mentions 'Engage in those same threads with helpful, non-salesy answers' (Idea #2) but does not recommend specific 'media appearances' such as podcast interviews, guest articles, or speakin…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides structured output with timelines
+         [90mevidence:[0m The output provides steps (1, 2, 3) under 'How to start' but contains no specific timelines, dates, or duration estimates (e.g., 'by Q3', 'within 3 months'). It ends by asking for more info to provid…
+    10.5s · 13445 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    What's the fastest way to get more leads? We sell enterprise security software and have a $10k/month marketing budget.
+    [90moutput:[0m  For **enterprise security software** with a **$10k/month budget**, speed comes from targeting **high-intent audiences** who are already looking for solutions, rather than waiting for organic growth. …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends outbound tactics
+         [90mevidence:[0m Strategy 2 recommends 'Message Ads (InMail)', which is a paid social feature, not manual outbound tactics like cold email or cold calling. Strategy 3 is inbound/Engineering as Marketing. No cold outr…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes that fast leads means paid or outbound
+         [90mevidence:[0m The text states 'speed comes from targeting high-intent audiences who are already looking for solutions', implying search/paid intent. It does not explicitly state that 'fast leads means paid or outb…
+    10.2s · 13415 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    how do we grow without spending money on ads? we're a PLG (product-led growth) company with a freemium model
+    [90moutput:[0m  Since you are a PLG (Product-Led Growth) company with a freemium model, you have a distinct advantage: **your product is your primary marketing channel.** Instead of paying for attention, you need to…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.9s · 13562 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    I need marketing ideas for my SaaS product. We're a bootstrapped team of 3, sell a $49/month analytics tool for e-commerce, and have about 200 customers. Budget is tight — maybe $500/month for market…
+    [90moutput:[0m  To give you the best ideas, I need to know a little more about your current situation. Based on the profile you shared (Bootstrapped, $49/mo, 200 customers, tight budget), here are the questions I ne…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The output text contains no markdown file creation or reference to 'product-marketing.md'.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Provides ideas from the 139 marketing ideas catalog
+         [90mevidence:[0m The output explicitly states: 'I need to know a little more about your current situation... here are the questions I need answered'. It does not reference or utilize a '139 marketing ideas catalog'.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Prioritizes by likely impact
+         [90mevidence:[0m The ideas are listed as a generic set of 5 high-ROI strategies. There is no explicit ranking, prioritization score, or explanation of relative impact between the ideas (e.g., Idea 1 is not ranked hig…
+    13.0s · 13700 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to set up a referral program. How should we structure it?
+    [90moutput:[0m  Setting up a referral program is one of the highest-ROI marketing activities for SaaS, but structure is critical. If the incentive isn't right, or the friction is too high, it won't work. Since you a…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to referrals skill
+         [90mevidence:[0m Model states: 'If you are asking for the structure, I will assume this falls under **Referral Marketing**.' It does not explicitly reference a specific 'referrals skill' or tool definition, but rathe…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt detailed referral program design
+         [90mevidence:[0m The model provides a comprehensive 6-step framework including specific models (Two-Sided vs One-Sided), incentive types, trigger timing, technical implementation tools (ReferralCandy, etc.), and user…
+    11.2s · 13595 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    Give me 20 marketing ideas. We sell project management software.
+    [90moutput:[0m  To provide the most relevant ideas, I need to briefly clarify your stage and audience. However, since you asked for a broad list of **20 ideas** for **Project Management Software**, I have selected h…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    21.5s · 14848 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 72.3%[0m  [90m· 13.05s avg · 13761 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-824/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "marketing-ideas",
+      "slug": "marketing-ideas",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7297297297297297,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-824/benchmark.json"
+    }
+  ],
+  "iteration": 824,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-824",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-824/report/index.html"
+}

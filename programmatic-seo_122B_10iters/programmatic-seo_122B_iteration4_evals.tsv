@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	1	FAIL	Checks for product-marketing.md	Since I don't have access to their file system to check for `.agents/product-marketing.md`, I should ask clarifying questions	1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	22.1s	9879	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	7	FAIL	Cross-references competitors skill	Model mentions 'reference the comparison playbook from the playbooks.md reference' but does not actually cross-reference any competitors skill document or framework	2	4
+ab-testing	eval-2	with_skill	FAIL	32.3s	10716	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	2	FAIL	Identifies as Integrations playbook	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	3	FAIL	Recommends template with unique content per integration	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	4	FAIL	Includes setup steps and use cases per page	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	5	FAIL	Provides URL structure recommendation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	6	FAIL	Recommends hub page for all integrations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-3	with_skill	FAIL	34.8s	10908	7	FAIL	Emphasizes genuine unique value per page	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Input:** Model output (a strategy document for programmatic …	3	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	3	FAIL	Checks crawl budget considerations	No explicit crawl budget diagnostic or considerations mentioned in output.	4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	9412	7	FAIL	Warns about Google's thin content policies	No explicit warning about Google's thin content policies mentioned; only discusses thin content as a problem.	4	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	23.3s	9941	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	13.8s	9201	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	13.8s	9201	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	13.8s	9201	3	FAIL	Explains that programmatic-seo is for strategy and template design	No explanation found in model output regarding programmatic-seo's scope.	6	4
+ab-testing	eval-6	with_skill	FAIL	13.8s	9201	4	PASS			6	4

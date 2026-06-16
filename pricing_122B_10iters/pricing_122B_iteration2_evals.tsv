@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	2	FAIL	Applies three pricing axes framework	Model does not apply a 'three pricing axes framework' - only discusses pricing metrics	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	5	FAIL	Recommends good-better-best tier structure	Lists 'Design 2-3 tier structure (Good-Better-Best framework)' as future help, not a recommendation	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	6	FAIL	Addresses pricing psychology	No discussion of pricing psychology principles (anchoring, decoy, etc.)	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	7	FAIL	Provides specific pricing recommendation with rationale	Model asks for more context before giving recommendations: 'Once you answer the context questions above, I can help you... Set specific price points'	1	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	4	FAIL	Provides communication strategy	Model states 'Communication templates for customers' will be provided 'Once you answer the context questions above' - no actual templates or strategy delivered	2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	7	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection mechanism in output. Model responds with 'Great question!' but does not demonstrate specific triggering on casual phrasing.	3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	1	FAIL	Applies good-better-best tier structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	2	FAIL	Analyzes current tier performance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	3	FAIL	Evaluates whether 4th tier addresses real gap	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	4	FAIL	Considers choice paralysis risk	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	5	FAIL	Applies pricing psychology (Hick's Law)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	6	FAIL	Provides specific recommendation with rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	1	FAIL	Applies pricing psychology tactics	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	2	FAIL	Applies anchoring effect	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	3	FAIL	Applies decoy effect or visual emphasis	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	4	FAIL	Applies charm pricing or Rule of 100	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	5	FAIL	Provides specific pricing page recommendations	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	6	FAIL	Cross-references cro or marketing-psychology	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Model states: 'This is a pricing-related question, so I should use the pricing skill.' - References pricing skill, not CRO.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	2	FAIL	References or defers to cro skill	No mention of 'cro skill' anywhere. Model says 'I should use the pricing skill' instead.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	3	FAIL	Explains that pricing is about pricing decisions	No explanation provided about pricing being about pricing decisions. Model focuses on gathering context only.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	4	FAIL	Does not attempt full page CRO audit	Model provides 'most common pricing page killers' table with 7 issues and quick fixes - this constitutes an audit attempt.	6	2

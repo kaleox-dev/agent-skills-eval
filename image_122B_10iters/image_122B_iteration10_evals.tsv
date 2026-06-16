@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output	1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	2	FAIL	Recommends AI generation for one-off hero	Model asks about one-off vs template but does not recommend AI generation	1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	3	FAIL	Proposes visual metaphor for topic	No visual metaphor proposed for email deliverability topic	1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	5	FAIL	Recommends Flux, Gemini, or Ideogram	Mentions tools in question form, not as recommendation: "Do you have API keys for any image tools (Gemini, Flux, Ideogram)"	1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	6	FAIL	Provides structured prompt	No structured prompt provided in output	1	10
+ab-testing	eval-1	with_skill	FAIL	7.8s	10964	7	FAIL	Mentions WebP optimization	No mention of WebP optimization in output	1	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	3	FAIL	Recommends real screenshots at 2x resolution	No mention of 2x resolution in output	2	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	5	FAIL	Suggests specific screenshot tools	No specific screenshot tools mentioned in output	2	10
+ab-testing	eval-2	with_skill	FAIL	9.6s	11140	6	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	3	FAIL	Recommends minimal text	No explicit recommendation for minimal text found in output	3	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	4	FAIL	Suggests Canva or Figma over AI	Canva/Figma mentioned as option alongside AI generation, not recommended over AI	3	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	7.8s	10858	6	FAIL	Recommends testing at display size	No mention of testing at display size found in output	3	10
+ab-testing	eval-4	with_skill	FAIL	12.0s	11353	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.0s	11353	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	12.0s	11353	3	FAIL	Notes Instagram 4:5 variant	Instagram listed as 1080x1080 (1:1) and 1080x1920 (9:16), no 4:5 variant mentioned	4	10
+ab-testing	eval-4	with_skill	FAIL	12.0s	11353	4	FAIL	Suggests programmatic text overlays for variants	Option 3 mentions auto-cropping with Sharp/Cloudinary but no text overlay suggestion; prompt template explicitly says "no text overlay"	4	10
+ab-testing	eval-4	with_skill	FAIL	12.0s	11353	5	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	8.3s	11050	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	1	FAIL	Recommends programmatic OG image generation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	2	FAIL	Names Vercel OG, Satori, or Cloudinary	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	3	FAIL	Mentions template + dynamic data approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	4	FAIL	Lists required og:image meta tags	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	5	FAIL	Specifies 1200x630 dimensions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10
+ab-testing	eval-6	with_skill	FAIL	14.4s	11681	6	FAIL	Notes this is best for high-volume blogs	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	6	10

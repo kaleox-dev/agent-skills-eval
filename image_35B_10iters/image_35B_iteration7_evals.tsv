@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	5	FAIL	Recommends Flux, Gemini, or Ideogram	The output recommends 'Flux Pro', 'Midjourney v7', and 'DALL-E 3'. It does not mention 'Gemini' or 'Ideogram'.	1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.7s	11554	7	FAIL	Mentions WebP optimization	The output mentions aspect ratio, negative space, text rendering, and color palette, but does not mention 'WebP' or specific image file format optimization.	1	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	1	FAIL	Refuses to use AI generation for product UI	judge did not provide concrete evidence	2	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	3	FAIL	Recommends real screenshots at 2x resolution	judge did not provide concrete evidence	2	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	5	FAIL	Suggests specific screenshot tools	judge did not provide concrete evidence	2	7
+ab-testing	eval-2	with_skill	FAIL	8.3s	11059	6	FAIL	Notes this as a common mistake	judge did not provide concrete evidence	2	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	3	FAIL	Recommends minimal text	No mention of minimal text; mentions 'text overlay' and Ideogram being 'best for text'.	3	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	4	FAIL	Suggests Canva or Figma over AI	Lists Canva/Figma as Option C and AI as Option A, without stating a preference for Canva/Figma over AI.	3	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	5	FAIL	Mentions Ideogram for text-heavy designs	Mentions 'Ideogram (best for text)' but does not use the phrase 'text-heavy designs' or make that specific distinction.	3	7
+ab-testing	eval-3	with_skill	FAIL	5.7s	10960	6	FAIL	Recommends testing at display size	No mention of testing at display size.	3	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	11391	1	FAIL	Recommends Canva Magic Resize	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	11391	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	11391	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	11391	4	FAIL	Suggests programmatic text overlays for variants	judge did not provide concrete evidence	4	7
+ab-testing	eval-4	with_skill	FAIL	9.7s	11391	5	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	7.8s	11182	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	4	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	5	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	12.8s	11873	6	FAIL	Notes this is best for high-volume blogs	The text explicitly frames the solution for 'SaaS companies' and 'SaaS', stating 'Best for: SaaS companies...' and 'Why it’s great for SaaS'. It does not mention 'high-volume blogs' as the target use…	6	7

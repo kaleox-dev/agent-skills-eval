@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a raw text response, not a file named 'product-marketing.md'.	1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	The output mentions 'Anchoring' explicitly ('Anchor High', 'Annual vs. Monthly Anchor') and 'Mental Accounting'. However, it fails to mention or apply 'charm pricing' or the 'Rule of 100'. The price …	1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	16.0s	6274	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.6s	6145	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	15.6s	6221	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.4s	6019	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	3	FAIL	Applies Zero-Price Effect	The output mentions 'lower barrier to entry' and 'no credit card required' for Freemium, but does not explicitly apply the Zero-Price Effect (the disproportionate value consumers place on items price…	5	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.1s	6274	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	11.4s	5868	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.4s	5868	2	FAIL	References or defers to ab-testing skill	The output provides a direct structured plan but does not contain any text referencing, linking to, or deferring to an 'ab-testing skill' or similar tool/agent. It acts as the agent itself without ex…	6	5
+ab-testing	eval-6	with_skill	FAIL	11.4s	5868	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.4s	5868	4	FAIL	Does not attempt full test design using psychology patterns	The output explicitly attempts full test design using psychology patterns. Section 2 defines 'The Variables (The "Psychological Hooks")', Section 4 provides a detailed 'Experimental Setup' table mapp…	6	5

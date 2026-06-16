@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	1	FAIL	Checks for product-marketing.md	The output states 'Since you have a `product-marketing` context... I have structured the response...' and no output files were captured.	1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	6	FAIL	Applies copy formulas from the skill	The model invents its own variations and does not explicitly reference or apply named copy formulas (e.g., AIDA, PAS) from a specific 'skill' or defined framework.	1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	8	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	13.8s	4419	9	FAIL	Includes conversion benchmarks	The output mentions that 'Every extra field drops conversion by ~10-15%' but does not provide general conversion rate benchmarks (e.g., average exit-intent conversion rates of 2-5%). It asks the user…	1	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.9s	4153	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	1	FAIL	Triggers on casual phrasing	Model output begins with 'This is a classic Value vs. Friction dilemma.' It does not quote or reference any casual phrasing from the user prompt, as the prompt text was not provided in the context. N…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	5	FAIL	Suggests excluding existing subscribers	The model suggests excluding 'Returning Visitors' (Section 3A: 'Returning Visitors: Do not show the email capture popup') and those who dismissed it (Section 2A). It does not explicitly mention exclu…	3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4259	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.9s	4271	7	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	6	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.8s	4673	7	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	7.0s	3774	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.0s	3774	2	FAIL	References or defers to cro skill	The model output contains no references to a 'cro' (Conversion Rate Optimization) skill, nor does it defer to one. It provides direct advice without mentioning the specific skill entity required by t…	6	7
+ab-testing	eval-6	with_skill	FAIL	7.0s	3774	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	7.0s	3774	4	PASS			6	7

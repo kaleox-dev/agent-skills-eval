@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a direct text response, not a file named product-marketing.md.	1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	The output mentions 'Anchoring' explicitly ('Leverage the Decoy Effect... Anchor the Top'). However, it does not mention 'charm pricing' (e.g., $79 instead of $80) or 'Rule of 100' (framing discounts…	1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	13.9s	6054	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	15.1s	6158	6	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	1	FAIL	Triggers on casual phrasing	The model output is a structured guide titled 'Here are the most impactful psychological principles for copywriting'. It does not contain any evidence of a trigger response to casual phrasing (e.g., …	3	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	5	FAIL	Organizes by where each applies in copy	The principles are organized by the psychological concept name (e.g., '1. The Jobs to Be Done Framework', '2. Loss Aversion'), not by the location or stage of the copy (e.g., 'Headline', 'Body', 'CTA…	3	9
+ab-testing	eval-3	with_skill	FAIL	16.3s	6265	6	FAIL	References multiple model categories	The output consistently uses the singular term 'principles' (e.g., 'psychological principles', 'impactful psychological principles', 'Using these principles'). It does not reference or distinguish be…	3	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.6s	6129	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	3	FAIL	Applies Zero-Price Effect	No mention of the Zero-Price Effect (the disproportionate value placed on free items vs low-cost items) found in the text.	5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	4	FAIL	Explains how models interact in trial vs freemium	The text compares the models side-by-side for specific psychological principles but does not explain how they 'interact' within a business strategy (e.g., using freemium as top-of-funnel to feed tria…	5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	9.5s	5591	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	5986	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	5986	2	FAIL	References or defers to ab-testing skill	The model provides a direct textual response with a framework ('Marketing Psychology'). It does not reference an 'ab-testing skill' explicitly by name, nor does it use any tool calls to invoke such a…	6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	5986	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	12.9s	5986	4	FAIL	Does not attempt full test design using psychology patterns	The model *does* attempt a full test design using psychology patterns. It defines the hypothesis, creates specific Variations (A, B, C) grounded in psychological principles (e.g., Variant 1 B uses 'S…	6	9

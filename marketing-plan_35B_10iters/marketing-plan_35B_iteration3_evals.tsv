@@ -1,0 +1,44 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	4	FAIL	Produces 13-section plan structured by AARRR	The model did not produce the plan. It stated: 'I need more context to build this plan.' and 'Once you provide this, I will... Draft Sections 1–13 of the plan.' No plan content exists.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	5	FAIL	Section 3 scores against the embedded 17-section rubric	No output generated. The model promised to 'Conduct the 17-section Current State Audit' in the future.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	6	FAIL	Section 9 (90-day roadmap) has owner-assigned moves, not just actions	No output generated. The roadmap was not produced.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	7	FAIL	Section 10 names funding-stage capability unlocks explicitly	No output generated.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	8	FAIL	Section 11 maps marketing skills + MCPs to each AARRR stage	No output generated.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	9	FAIL	Section 12 cross-references all 139 marketing-ideas with client-specific status	No output generated.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	10	FAIL	Output is Notion-paste-ready markdown	No output files were captured. The output is a conversational request for information, not a formatted plan.	1	3
+ab-testing	eval-1	with_skill	FAIL	10.1s	169660	11	FAIL	Plan is specific to the client (their budget, team, current channels), not generic	No plan was generated. The model explicitly stated it lacked the necessary context (funnel, ICP, etc.) to generate a defensible strategy.	1	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	1	FAIL	Recognizes pre-seed tier and uses Tier 1 budget profile	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	2	FAIL	Skips paid acquisition recommendations until budget unlocks	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	3	FAIL	Leans Acquisition on organic + lifecycle + ambassador	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	4	FAIL	Names what unlocks when seed closes	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	5	FAIL	Accounts for product being in beta	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	6	FAIL	Identifies binding-constraint AARRR stage (likely Activation or Referral)	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	7	FAIL	Executive summary can be lifted into an investor update	judge did not provide concrete evidence	2	3
+ab-testing	eval-2	with_skill	FAIL	11.7s	169926	8	FAIL	Plan is operationally honest — doesn't pretend paid budget exists	judge did not provide concrete evidence	2	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	2	FAIL	Ingests prior audit scoring directly into Section 3	Model states: "Once I have this, I will: 1. Score the Audit... 3. Draft Section 3..." indicating it has not ingested prior scoring but is asking for the raw audit to perform scoring first.	3	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	3	FAIL	Does not re-score what's already been scored	Model explicitly states: "1. Score the Audit against the 17-section current-state rubric..." which implies re-scoring rather than using existing scores.	3	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	4	FAIL	Notes the scoring date and flags any shifted material	No mention of scoring dates or flagging shifted material in the output. The model is still requesting input data.	3	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	5	FAIL	Uses audit gaps to inform 90-day roadmap and AARRR section moves	Model is asking for the audit to begin the process; it has not performed any analysis or referenced gaps, roadmap, or AARRR moves yet.	3	3
+ab-testing	eval-3	with_skill	FAIL	7.0s	169337	6	FAIL	Still produces a full 13-section plan, not just Section 3	Model output ends with a request for information and a preview of immediate next steps (Sections 3-8), but does not produce a full 13-section plan.	3	3
+ab-testing	eval-4	with_skill	FAIL	8.4s	169515	1	FAIL	Reads ~/marketing-plans/acme-saas/progress.md	judge did not provide concrete evidence	4	3
+ab-testing	eval-4	with_skill	FAIL	8.4s	169515	2	FAIL	Resumes from next unfinished section based on state machine	judge did not provide concrete evidence	4	3
+ab-testing	eval-4	with_skill	FAIL	8.4s	169515	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	8.4s	169515	4	FAIL	Handles finalized state by asking user how to proceed (revise / fresh / re-open)	judge did not provide concrete evidence	4	3
+ab-testing	eval-4	with_skill	FAIL	8.4s	169515	5	FAIL	Saves each newly confirmed section to the progress file	judge did not provide concrete evidence	4	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	1	FAIL	Recognizes hybrid hardware+software archetype	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	2	FAIL	Acquisition leans on PR, retail, Amazon, Shopify SEO, paid	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	3	FAIL	Activation covers unboxing, setup, first session, paywall	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	4	FAIL	Retention covers lifecycle, community	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	5	FAIL	Referral covers gifting, reviews	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	6	FAIL	Revenue covers blended LTV with hardware + subscription + accessories	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	7	FAIL	Recognizes Series A tier in budget recommendations	judge did not provide concrete evidence	5	3
+ab-testing	eval-5	with_skill	FAIL	10.4s	169865	8	FAIL	Idea bank skips ideas that conflict with brand fit, with explicit rationale	judge did not provide concrete evidence	5	3
+ab-testing	eval-6	with_skill	FAIL	3.3s	169157	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	3.3s	169157	2	FAIL	Names marketing-plan as the comprehensive fCMO artifact	The phrase 'marketing-plan' is not mentioned in the output. The model says 'To generate a comprehensive marketing plan...' but does not explicitly name it as the 'comprehensive fCMO artifact' as requ…	6	3
+ab-testing	eval-6	with_skill	FAIL	3.3s	169157	3	FAIL	Recommends channel-specific skills for single-channel quick plans	No mention of 'channel-specific skills' or 'single-channel quick plans' is present in the output.	6	3
+ab-testing	eval-6	with_skill	FAIL	3.3s	169157	4	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	3.3s	169157	5	PASS			6	3

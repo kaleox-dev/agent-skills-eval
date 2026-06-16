@@ -1,0 +1,87 @@
+
+[1m▶ paywalls[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    when should we show upgrade prompts? we don't want to be annoying but we also need to convert free users to paid.
+    [90moutput:[0m  The user is asking about when to show upgrade prompts in their product. This is a classic paywall/CRO question that falls under my paywall skill. They're concerned about balancing conversion with use…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing detection in model output. User input was direct question, not casual phrasing.
+    8.6s · 5921 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    Design a feature gate paywall. When free users click on 'Advanced Analytics' in our dashboard, we want to show them an upgrade prompt.
+    [90moutput:[0m  The user wants to design a feature gate paywall for when free users click on 'Advanced Analytics' in their dashboard. This is a classic feature lock paywall scenario. Let me first understand their pr…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes relevant plan comparison
+         [90mevidence:[0m No plan comparison table or Free vs Pro feature list present in output
+    15.4s · 6502 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    Help me design the upgrade paywall for our project management tool. Free users can have 3 projects, and we want to show an upgrade screen when they try to create a 4th project.
+    [90moutput:[0m  The user wants help designing an upgrade paywall for their project management tool. They've provided some key context: - Product: Project management tool - Free tier: 3 projects - Trigger: User tries…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md file in output
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes headline, value demo, comparison, social proof, CTA
+         [90mevidence:[0m Missing social proof element - no testimonials, user counts, or trust indicators present
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses user's emotional state at the limit
+         [90mevidence:[0m No explicit discussion of user frustration/excitement at hitting limit; only mentions "loss-aversion" as headline type
+    17.7s · 6708 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    Our free trial expires in 14 days and users see a generic 'Your trial has expired' screen. Upgrade rate from this screen is only 2%. How do we improve it?
+    [90moutput:[0m  The user is asking about improving their trial expiration screen conversion rate. They're currently at 2% upgrade rate from a generic "Your trial has expired" screen. This is a clear paywall/upgrade …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides clear plan options
+         [90mevidence:[0m No concrete plan options provided - only mentions "Continue with Pro - $X/mo" as placeholder and discusses testing "1 vs. 2 visible plans" but doesn't present actual plan options
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes social proof
+         [90mevidence:[0m No social proof elements (testimonials, user counts, reviews, etc.) found in the output
+    18.9s · 6794 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    What are common mistakes to avoid with in-app paywalls? I don't want to be pushy or make users feel tricked.
+    [90moutput:[0m  The user is asking about common mistakes to avoid with in-app paywalls, specifically wanting to avoid being pushy or making users feel tricked. This is a great question about paywall optimization and…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.6s · 6727 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="paywalls"> <description>When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade s…
+    [90muser:[0m    Can you help me optimize our public pricing page? We want more visitors to choose the Pro plan over the Basic plan.
+    [90moutput:[0m  The user is asking about optimizing their public pricing page to get more visitors to choose the Pro plan over the Basic plan. However, based on the skill definition I have, this skill is specificall…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as public pricing page optimization
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (4 items), Model Output (text provided in the pr…
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (4 items), Model Output (text provided in the pr…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that paywalls is for in-app upgrade prompts
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (4 items), Model Output (text provided in the pr…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt public pricing page optimization
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Assertions (4 items), Model Output (text provided in the pr…
+    9.8s · 6017 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 68.2%[0m  [90m· 14.51s avg · 6445 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-894/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "paywalls",
+      "slug": "paywalls",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.725,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-894/benchmark.json"
+    }
+  ],
+  "iteration": 894,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-894",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-894/report/index.html"
+}

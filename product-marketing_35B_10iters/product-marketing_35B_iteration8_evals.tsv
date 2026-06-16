@@ -1,0 +1,29 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.9s	2076	1	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	1.9s	2076	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	1.9s	2076	3	FAIL	Covers applicable sections	The output mentions 'context document' generally but does not list, name, or cover any specific applicable sections (e.g., target audience, value proposition, etc.).	1	8
+ab-testing	eval-1	with_skill	FAIL	1.9s	2076	4	FAIL	Walks through sections conversationally one at a time	The model offers 'Start from scratch' as an option where it *would* walk through sections one by one, but it does not perform this action in the current turn. It presents options instead.	1	8
+ab-testing	eval-1	with_skill	FAIL	1.9s	2076	5	FAIL	Creates file at .agents/product-marketing.md	The output states: 'No output files were captured.' and the text offers to draft the file but does not state that it has been created.	1	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	2	FAIL	Identifies sections that need updating	No output files captured and no text output provided indicating identification of sections.	2	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	3	FAIL	Updates Target Audience with VP of Engineering	No output files captured; no evidence of updating.	2	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	4	FAIL	Adds new persona for the expanded audience	No output files captured; no evidence of adding personas.	2	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	5	FAIL	Updates Product Overview for enterprise tier	No output files captured; no evidence of updating product overview.	2	8
+ab-testing	eval-2	with_skill	FAIL	2.5s	2132	6	FAIL	Preserves unchanged sections	No output files captured; no evidence of preserving sections.	2	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	2	FAIL	Checks for existing context doc	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	5	FAIL	Notes some sections may be sparse early on	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	6	FAIL	Skips non-applicable sections rather than forcing all 12	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	15.1s	3501	7	FAIL	Creates file at .agents/product-marketing.md	judge did not provide concrete evidence	3	8
+ab-testing	eval-4	with_skill	FAIL	3.0s	2163	1	FAIL	Activates auto-draft workflow mode	Model output is a request for input, not an activation confirmation.	4	8
+ab-testing	eval-4	with_skill	FAIL	3.0s	2163	2	FAIL	Scans codebase for existing marketing materials	Model states 'I can certainly do that. To proceed, please share your codebase with me' indicating no scan occurred.	4	8
+ab-testing	eval-4	with_skill	FAIL	3.0s	2163	3	FAIL	Drafts context from found information	No context was drafted as no information was provided or analyzed.	4	8
+ab-testing	eval-4	with_skill	FAIL	3.0s	2163	4	FAIL	Flags sections needing manual input	No flags were generated; the model is waiting for input.	4	8
+ab-testing	eval-4	with_skill	FAIL	3.0s	2163	5	FAIL	Presents draft for review before saving	No draft was presented.	4	8
+ab-testing	eval-5	with_skill	FAIL	3.6s	2246	1	PASS	Checks both file locations	The model output only contains a general statement 'Let me check if we have a product marketing context document already set up' and an XML block describing the task. It does not reference specific f…	5	8
+ab-testing	eval-5	with_skill	FAIL	3.6s	2246	2	PASS	Reports whether context doc exists	The model output does not contain a report stating whether the document exists or not. It only states the intent to check.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.6s	2246	3	FAIL	References or defers to copywriting skill for the actual copy	The model does not mention a specific 'copywriting skill'. It attempts to gather information via a questionnaire or existing context file, but does not defer to a specific skill agent or module named…	5	8
+ab-testing	eval-5	with_skill	FAIL	3.6s	2246	4	PASS	Offers to create if missing	The output does not contain an offer to create the document. It stops after stating the intent to check.	5	8
+ab-testing	eval-5	with_skill	FAIL	3.6s	2246	5	FAIL	Explains how other skills use it	The output does not contain any explanation of how other skills use the context document.	5	8

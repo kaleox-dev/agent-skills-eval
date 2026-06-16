@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	1	FAIL	Checks for product-marketing.md	Since I don't have access to any product marketing context files in this conversation	1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	3	FAIL	Applies the 5 principles	No 5 principles referenced or applied in output	1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.2s	11828	6	FAIL	Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)	Sections promised for future ('I can...Provide a full content outline') but not delivered in current output	1	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	18.2s	12384	6	FAIL	Cross-references cro or ab-testing skill	No explicit reference to cro or ab-testing skill mentioned in output	2	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	1	FAIL	Flags form length as likely culprit	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	2	FAIL	Cites 5-10% per field rule	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	3	FAIL	Recommends reducing to email or email + name	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	4	FAIL	Asks what fields are actually used	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	5	FAIL	Suggests progressive profiling	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-3	with_skill	FAIL	14.1s	12081	6	FAIL	Cross-references cro skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: Model output (text), Assertions (list of 6 items). * Constr…	3	6
+ab-testing	eval-4	with_skill	FAIL	18.5s	12428	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.5s	12428	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.5s	12428	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.5s	12428	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	18.5s	12428	5	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	11.9s	11879	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.9s	11879	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.9s	11879	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.9s	11879	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	11.9s	11879	5	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	2	FAIL	Asks about ICP fit of leads	Diagnostic questions ask about buyer journey stage, conversion rate, nurture sequence, and common prospect questions - no explicit ICP fit questioning.	6	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	3	FAIL	References Lead Quality Signals	No explicit reference to Lead Quality Signals. Mentions freebie-seekers and Wrong Audience but does not reference Lead Quality Signals framework.	6	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	4	FAIL	Cross-references emails skill for nurture	Discusses nurture sequence recommendations but does not cross-reference an emails skill or reference skill instructions.	6	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	5	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	11.4s	11872	6	FAIL	Mentions tracking time to conversion by source	Mentions Time from download to trial signup but does not mention tracking by source.	6	6

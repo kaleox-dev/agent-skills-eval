@@ -1,0 +1,143 @@
+
+[1m▶ marketing-plan[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    /marketing-plan acme-saas — pick up where we left off
+    [90moutput:[0m  The user is invoking the `/marketing-plan` skill for a client called "acme-saas" and wants to resume where we left off. According to the methodology in the skill documentation, I need to check the st…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Reads ~/marketing-plans/acme-saas/progress.md
+         [90mevidence:[0m Model states: 'Since I don't have access to the actual file system, I need to ask the user about the state' - no file read attempted
+      [31m#2[0m [31mFAIL[0m [90m—[0m Resumes from next unfinished section based on state machine
+         [90mevidence:[0m Model never determines state or resumes - asks user for clarification instead
+      [31m#4[0m [31mFAIL[0m [90m—[0m Handles finalized state by asking user how to proceed (revise / fresh / re-open)
+         [90mevidence:[0m Model cannot determine state (no file read), so cannot handle finalized state specifically
+      [31m#5[0m [31mFAIL[0m [90m—[0m Saves each newly confirmed section to the progress file
+         [90mevidence:[0m No output files were captured; no section was saved
+    14.2s · 169892 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I'm starting a fractional CMO engagement with a Series A B2B SaaS doing $2M ARR, 12-person team with 1 marketer, $20K/month marketing budget. They want a marketing plan we can share with the team and…
+    [90moutput:[0m  The user wants a marketing plan for a Series A B2B SaaS company. Let me analyze what I have and what I need: **Given:** - Series A B2B SaaS - $2M ARR - 12-person team - 1 marketer - $20K/month market…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m  [31m✗ 11[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks for client name or uses a slug
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Walks through INIT phase with structured intake
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces 13-section plan structured by AARRR
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Section 3 scores against the embedded 17-section rubric
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Section 9 (90-day roadmap) has owner-assigned moves, not just actions
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Section 10 names funding-stage capability unlocks explicitly
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Section 11 maps marketing skills + MCPs to each AARRR stage
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#9[0m [31mFAIL[0m [90m—[0m Section 12 cross-references all 139 marketing-ideas with client-specific status
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#10[0m [31mFAIL[0m [90m—[0m Output is Notion-paste-ready markdown
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+      [31m#11[0m [31mFAIL[0m [90m—[0m Plan is specific to the client (their budget, team, current channels), not generic
+         [90mevidence:[0m judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions and return a strict JSON-only r…
+    27.1s · 170916 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    we have an audit already done — can you take that and turn it into a real plan
+    [90moutput:[0m  The user is asking me to turn an existing audit into a marketing plan. They mention they already have an audit done, which means I should be in a position to use that audit data to build the plan. Ho…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Asks for the audit output
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Ingests prior audit scoring directly into Section 3
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not re-score what's already been scored
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes the scoring date and flags any shifted material
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses audit gaps to inform 90-day roadmap and AARRR section moves
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Still produces a full 13-section plan, not just Section 3
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: A set of assertions, a model output (which seems to be a co…
+    10.3s · 169561 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    Just give me a quick marketing plan. Don't make it long.
+    [90moutput:[0m  The user is asking for a quick marketing plan and wants it to be short. However, according to the skill instructions, this skill is designed to produce a comprehensive 13-section marketing plan that …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names marketing-plan as the comprehensive fCMO artifact
+         [90mevidence:[0m No mention of 'fCMO' or 'comprehensive fCMO artifact' in output
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends channel-specific skills for single-channel quick plans
+         [90mevidence:[0m No channel-specific skills mentioned; offers '3–5 highest-leverage moves' instead
+    8.9s · 169552 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    We're pre-seed bootstrapped, $0 paid marketing budget, 4-person team building a D2C consumer app. Founder wants a 90-day plan + 12-month roadmap they can show investors during the upcoming raise. The…
+    [90moutput:[0m  The user is asking for a marketing plan for their D2C consumer app. They've provided some key information: - Pre-seed bootstrapped - $0 paid marketing budget - 4-person team - D2C consumer app - Prod…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes pre-seed tier and uses Tier 1 budget profile
+         [90mevidence:[0m Output asks intake questions rather than demonstrating Tier 1 budget profile in plan
+      [31m#2[0m [31mFAIL[0m [90m—[0m Skips paid acquisition recommendations until budget unlocks
+         [90mevidence:[0m No acquisition recommendations provided; output is intake questionnaire
+      [31m#3[0m [31mFAIL[0m [90m—[0m Leans Acquisition on organic + lifecycle + ambassador
+         [90mevidence:[0m No acquisition strategy demonstrated in output
+      [31m#4[0m [31mFAIL[0m [90m—[0m Names what unlocks when seed closes
+         [90mevidence:[0m No mention of seed-close unlocks in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Accounts for product being in beta
+         [90mevidence:[0m Beta status noted in analysis but not incorporated into recommendations
+      [31m#6[0m [31mFAIL[0m [90m—[0m Identifies binding-constraint AARRR stage (likely Activation or Referral)
+         [90mevidence:[0m No AARRR stage identified; asks for funnel numbers instead
+      [31m#7[0m [31mFAIL[0m [90m—[0m Executive summary can be lifted into an investor update
+         [90mevidence:[0m No executive summary present in output
+      [31m#8[0m [31mFAIL[0m [90m—[0m Plan is operationally honest — doesn't pretend paid budget exists
+         [90mevidence:[0m Acknowledges $0 budget but no operational plan provided
+    15.6s · 170008 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I need a plan for a hybrid hardware+software wellness company. They sell a physical product and a subscription app. Series A, $100K/month marketing budget, 8-person team including a marketing lead.
+    [90moutput:[0m  The user is asking for a marketing plan for a hybrid hardware+software wellness company. This is a Series A company with $100K/month marketing budget and an 8-person team including a marketing lead. …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes hybrid hardware+software archetype
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Acquisition leans on PR, retail, Amazon, Shopify SEO, paid
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Activation covers unboxing, setup, first session, paywall
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Retention covers lifecycle, community
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Referral covers gifting, reviews
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Revenue covers blended LTV with hardware + subscription + accessories
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recognizes Series A tier in budget recommendations
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Idea bank skips ideas that conflict with brand fit, with explicit rationale
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agentskills.io evaluation run. * **Role:** Strict JSON-only evaluator. * **Input:** * Grading p…
+    1m56s · 178415 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 13.3%[0m  [90m· 32.10s avg · 171391 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-833/benchmark.json[0m
+{
+  "passed": 4,
+  "failed": 39,
+  "skills": [
+    {
+      "skill": "marketing-plan",
+      "slug": "marketing-plan",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.09302325581395349,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-833/benchmark.json"
+    }
+  ],
+  "iteration": 833,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-833",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-833/report/index.html"
+}

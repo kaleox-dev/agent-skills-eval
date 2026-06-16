@@ -1,0 +1,391 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' and the text body contains no file creation or markdown content labeled as such.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	3	FAIL	Evaluates time-to-value	The model asks 'What is your current activation definition?' and 'Where exactly is the drop-off?' but does not evaluate the user's specific time-to-value metrics or provide an evaluation based on pro…	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8307	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	7	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	13.1s	8524	8	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	2	FAIL	Applies stalled users framework	The model provides a general 'Leaky Bucket' diagnostic framework and steps to fix onboarding. It does not apply a specific 'stalled users framework' (which typically involves categorizing users by st…	3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	5	FAIL	Suggests multi-channel onboarding	The model suggests an 'Email Sequence' but does not mention or suggest other channels such as in-app tooltips, push notifications, SMS, or social media re-engagement. It is strictly email-focused.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	6	FAIL	Cross-references emails for re-engagement	The model provides a generic 3-email sequence template. It does not 'cross-reference' existing email content or analyze previous email performance/open rates to tailor the re-engagement strategy.	3	1
+ab-testing	eval-3	with_skill	FAIL	12.4s	8427	7	FAIL	Provides specific re-engagement triggers	The model provides a time-based sequence (Hour 1, Day 1, Day 3). It does not provide behavioral or event-based triggers (e.g., 'trigger if user opens app but doesn't perform core action', 'trigger if…	3	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	9.1s	8096	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	9.5s	8210	6	FAIL	Recommends testing different approaches	The model does not explicitly recommend A/B testing or experimenting with different approaches. Instead, it provides a 'quick decision matrix' to select a specific approach based on product type and …	5	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	7804	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	7804	2	FAIL	References or defers to signup skill	The model provides general advice and asks follow-up questions but never explicitly references a specific 'signup skill' or internal tool/module by name, nor does it defer execution to such a skill.	6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	7804	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	7804	4	PASS			6	1
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	1	FAIL	Checks for product-marketing.md	Output files section states 'No output files were captured.' The model output is plain text, not a markdown file check.	1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.1s	8362	8	FAIL	Includes measurement metrics	The text mentions moving 'from 30% to 40%+' regarding activation rate and mentions 'CTR' in the context of empty states, but it does not provide specific measurement metrics or a dashboard of KPIs to…	1	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	7	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	11.7s	8404	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	2	FAIL	Applies stalled users framework	Model discusses 'activation problem', 'second-session activation', and 'drop-off', but does not explicitly use or name the 'stalled users framework' or apply its specific terminology (e.g., 'stalled'…	3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	5	FAIL	Suggests multi-channel onboarding	Model suggests 'Re-engagement Emails' and 'In-app messages' (mentioned in diagnostic questions as a possibility, but not explicitly recommended as a combined multi-channel strategy in the actions). T…	3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	6	FAIL	Cross-references emails for re-engagement	Model suggests 'Set Up Re-engagement Emails' with a timeline (5 min, 24 hours, 72 hours), but does not mention 'cross-referencing' emails with other data points or user behaviors to tailor the re-eng…	3	2
+ab-testing	eval-3	with_skill	FAIL	8.8s	8117	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.5s	8463	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	11.1s	8435	6	FAIL	Recommends testing different approaches	The output provides a decision framework based on product characteristics but does not explicitly recommend testing different approaches (e.g., A/B testing, experimentation). It prescribes a specific…	5	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	7748	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	7748	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	7748	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.1s	7748	4	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is raw text, not a file named product-marketing.md.	1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	14.0s	8653	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	6	FAIL	Recommends progress indicators	The model does not explicitly recommend a visual progress indicator (like a step counter '1 of 5') for the user to track their advancement through the checklist. It mentions an 'Auto-Processing... pr…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	7	FAIL	Addresses skipped items	The model addresses the scenario where a user does *not* invite (Step 4 alternative path and 'Handling the Solo User' section), but it does not provide a general mechanism or recommendation for handl…	2	3
+ab-testing	eval-2	with_skill	FAIL	13.0s	8544	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	6	FAIL	Cross-references emails for re-engagement	"While the model recommends using emails for re-engagement ('Send a ""We miss you"" email'), it provides generic copy examples. It does not 'cross-reference' emails in the sense of analyzing historical …"	3	3
+ab-testing	eval-3	with_skill	FAIL	15.1s	8745	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	11.5s	8399	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.0s	9103	6	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.8s	8172	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.8s	8172	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.8s	8172	3	FAIL	Explains that onboarding covers post-signup	The model mentions 'onboarding' only once in the context of: 'The onboarding flow should lead there, not to a profile form.' It does not explicitly explain that onboarding covers post-signup activiti…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.8s	8172	4	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	6	FAIL	Addresses empty states as opportunities	No explicit checklist with 3-7 items found. Section 6 has 4 rows in a table, but it is not labeled as a checklist. Section 'Immediate Action Plan' has 4 items, but they are narrative steps, not a dis…	1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	13.5s	8608	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	5	FAIL	Starts with quickest win	The model explicitly states in Step 1: 'This is the highest friction step.' While it argues for doing it while motivation is high, uploading a file is generally higher effort/friction than inviting v…	2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	7	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	10.7s	8342	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.8s	8731	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	11.7s	8426	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	11.0s	8425	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	2	FAIL	References or defers to signup skill	No mention of a 'signup skill' or deferred signup expertise. The model provides generic UX advice (reduce fields, add social login) without referencing a specific system skill.	6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	3	FAIL	Explains that onboarding covers post-signup	The model does not define or explain the distinction between signup and onboarding. It only mentions 'deferring non-critical info' to 'after first value' or 'later in onboarding' without explaining w…	6	4
+ab-testing	eval-6	with_skill	FAIL	4.4s	7605	4	PASS			6	4
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The output is plain text, not a file named product-marketing.md.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.1s	8570	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	15.0s	8741	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	5	FAIL	Suggests multi-channel onboarding	The model only explicitly suggests 'Email/SMS' in one section: 'Send a single, high-value email 24 hours after signup'. It does not suggest a broader multi-channel strategy (e.g., in-app messages, pu…	3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	6	FAIL	Cross-references emails for re-engagement	The model provides a template for *sending* an email ('Subject: ... Body: ...'), but there is no evidence of it analyzing or cross-referencing existing email content, open rates, or specific email co…	3	5
+ab-testing	eval-3	with_skill	FAIL	12.5s	8520	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.8s	8223	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	11.1s	8438	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	9.2s	8240	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	9.2s	8240	2	FAIL	References or defers to signup skill	The output provides a generic UX framework ('Time-to-Value', 'Progressive Profiling') and asks for more context ('What is your product?'). It does not reference a specific 'signup skill', tool, or de…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.2s	8240	3	FAIL	Explains that onboarding covers post-signup	While the output suggests collecting some fields 'Post-Signup' or 'in a profile setup', it does not explicitly define or explain 'onboarding' as a concept covering the post-signup phase. It focuses o…	6	5
+ab-testing	eval-6	with_skill	FAIL	9.2s	8240	4	PASS			6	5
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	5	FAIL	Applies checklist pattern with 3-7 items	No checklist with 3-7 items is present. Section 3A uses a 'Bad/Good/Better' comparison (3 items), Section 2 lists 4 bullet points, and Section 6 lists 4 questions. No standard checklist structure is …	1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	13.0s	8564	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	4	FAIL	Orders by increasing commitment	Step 1 is 'Upload' (high effort/technical), Step 2 is 'Invite' (medium effort/social), Step 3 is 'Comment' (low effort). This does not follow a 'quickest win' to 'highest commitment' trajectory; Step…	2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	5	FAIL	Starts with quickest win	The first item is 'Upload your first design', which requires file handling and format support, making it the most friction-heavy step compared to inviting (which can be a link copy) or commenting.	2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	7	FAIL	Addresses skipped items	The output addresses 'Stalled' users who start a step but get stuck, but does not provide strategies for users who skip steps entirely or ignore the checklist without interacting.	2	6
+ab-testing	eval-2	with_skill	FAIL	12.1s	8482	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	5	FAIL	Suggests multi-channel onboarding	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	6	FAIL	Cross-references emails for re-engagement	judge did not provide concrete evidence	3	6
+ab-testing	eval-3	with_skill	FAIL	13.1s	8569	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.6s	8213	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	14.4s	8747	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	7909	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	7909	2	FAIL	References or defers to signup skill	The model provides generic UX advice but contains no explicit reference to a 'signup skill', 'signup agent', or specific internal tool/module designated for signup flows. It asks for context instead …	6	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	7909	3	FAIL	Explains that onboarding covers post-signup	The model mentions 'onboarding' only once in the context of future recommendations: 'Empty state or onboarding checklist recommendations to follow the signup.' It does not explicitly define or explai…	6	6
+ab-testing	eval-6	with_skill	FAIL	6.8s	7909	4	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a direct text response, not a file reference.	1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	5	FAIL	Applies checklist pattern with 3-7 items	The model provides a numbered list of 5 recommendations ('1. The Empty State Intervention' through '5. Skip Team Invites'). While the count is within 3-7, the item labeled '4. Use Dummy Data or Examp…	1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	15.4s	8793	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	10.3s	8301	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	1	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	5	FAIL	Suggests multi-channel onboarding	"The model suggests Email (Phase 1), In-App Guidance/Checklist (Phase 2), and Trigger-Based Notifications including ""Push/SMS"" (Phase 3). However, the prompt asks for 'onboarding' suggestions specific…"	3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.3s	8437	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.2s	8227	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.1s	8852	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	1	FAIL	Recognizes this as signup flow optimization, not onboarding	Model output explicitly states: 'This is a classic onboarding optimization problem.'	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	2	FAIL	References or defers to signup skill	The model provides a generic UX response and does not reference any specific 'signup skill', 'signup module', or defer to such a specialized agent/skill.	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	3	FAIL	Explains that onboarding covers post-signup	The model misidentifies the problem as 'onboarding optimization' rather than signup. It mentions 'post-signup flow' in the context of the 'Aha Moment', but does not provide a definition or explanatio…	6	7
+ab-testing	eval-6	with_skill	FAIL	8.6s	8126	4	FAIL	Does not attempt signup form redesign using onboarding patterns	The model attempts a form redesign (e.g., 'Split Form Strategy', 'Ruthless Field Audit', 'Optimize the Fields You Keep') and incorrectly labels this process as 'onboarding optimization', thereby usin…	6	7
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	3	FAIL	Evaluates time-to-value	Model asks for clarification on current flow and drop-off points rather than evaluating time-to-value.	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	4	FAIL	Recommends onboarding flow approach	Model asks 'What exactly does a user see...?' and does not provide a specific recommendation.	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern is present; model provides an unordered list of questions and strategies without a checklist structure.	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	6	FAIL	Addresses empty states as opportunities	Model asks 'where users usually leave' but does not address empty states as opportunities in its analysis.	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	7	FAIL	Provides experiment ideas	Model lists strategies like 'Pre-filled Templates' and 'Empty State Optimization' but explicitly states 'Once we clarify this, we can explore...', indicating these are potential topics, not specific …	1	8
+ab-testing	eval-1	with_skill	FAIL	3.6s	7556	8	FAIL	Includes measurement metrics	Model asks 'Based on your analytics...' but does not provide specific measurement metrics.	1	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	4	FAIL	Orders by increasing commitment	Section 2 orders items as: 1. Upload, 2. Invite, 3. Comment. The rationale provided for the first item is 'If they don't upload, nothing else matters', prioritizing core utility over 'quickest win' o…	2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	5	FAIL	Starts with quickest win	Section 2 starts with 'Upload Your First Design'. The text justifies this as 'The Foundation' and 'core utility', not as the 'quickest win' or lowest friction step (e.g., inviting is often easier/qui…	2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	7	FAIL	Addresses skipped items	The output does not provide specific strategies for handling users who skip items (e.g., re-engagement flows, gentle reminders, or UI changes for incomplete steps). It only mentions 'Make It Dismissi…	2	8
+ab-testing	eval-2	with_skill	FAIL	10.4s	8263	8	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	5	FAIL	Suggests multi-channel onboarding	The model suggests Email (Section 3) and In-App Recovery (Section 3), but these are categorized under 'Re-engagement Strategy' for users who have already left or are inactive. It does not explicitly …	3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	6	FAIL	Cross-references emails for re-engagement	The model provides a sequence of *new* emails to send ('We Miss You' email sequence). It does not suggest analyzing or 'cross-referencing' existing email content or history to inform the strategy; it…	3	8
+ab-testing	eval-3	with_skill	FAIL	13.6s	8612	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	8.4s	8070	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	13.3s	8559	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	7928	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	7928	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	7928	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	7.0s	7928	4	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is a direct text response, not a file named product-marketing.md.	1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	5	FAIL	Applies checklist pattern with 3-7 items	The output contains a table of 5 experiments, but these are not presented as a checklist pattern for onboarding steps. The 'Next Steps' section has 4 items, but they are strategic actions, not the sp…	1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	10.9s	8357	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	4	FAIL	Orders by increasing commitment	The logic explicitly states: 'Upload Design (High Value, High Friction)... Do this first' and 'Invite Team (High Value, Social Friction)... Do this second'. High friction/commitment actions are place…	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	5	FAIL	Starts with quickest win	The first item is 'Upload Your First Design', described as having 'High Friction'. The 'quickest win' (Leave Comment) is explicitly placed last.	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8634	8	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	5	FAIL	Suggests multi-channel onboarding	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	6	FAIL	Cross-references emails for re-engagement	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	12.7s	8540	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	9.0s	8150	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	13.1s	8629	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	7.4s	8021	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	7.4s	8021	2	FAIL	References or defers to signup skill	The model does not mention a 'signup skill' by name. It refers to 'Optimized flow' and 'Signup Optimization' conceptually, but fails to explicitly reference the specific artifact/skill 'signup skill'…	6	9
+ab-testing	eval-6	with_skill	FAIL	7.4s	8021	3	FAIL	Explains that onboarding covers post-signup	The model does not explicitly define onboarding as 'post-signup'. It focuses on 'Signup Optimization' and 'Immediate Actions', contrasting signup with 'getting them into the product', but does not us…	6	9
+ab-testing	eval-6	with_skill	FAIL	7.4s	8021	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	5	FAIL	Suggests multi-channel onboarding	The model only suggested 'Welcome + Re-engagement Email Sequence'. There were no suggestions for SMS, push notifications, in-app messages, or other channels.	3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	6	FAIL	Recommends testing different approaches	The model provides a 'Decision Framework' and specific recommendations based on product type (e.g., 'If your product is a simple mobile app...'). It advises tracking metrics like 'Activation Rate' an…	5	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	4	FAIL	Does not attempt signup form redesign using onboarding patterns	The model explicitly references 'Onboarding skill principles' to justify minimizing friction ('Per the **Onboarding** skill principles, we need to minimize friction...') and suggests moving fields to…	6	10

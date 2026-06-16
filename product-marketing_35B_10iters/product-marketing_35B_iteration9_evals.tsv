@@ -1,0 +1,29 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.7s	2057	1	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	1.7s	2057	2	FAIL	Offers two options: auto-draft or start from scratch	The model only offers the Auto-draft option ('Would you like me to proceed with the Auto-draft?'). It does not offer a 'start from scratch' option.	1	9
+ab-testing	eval-1	with_skill	FAIL	1.7s	2057	3	FAIL	Covers applicable sections	The model output does not list or cover any specific sections of the product-marketing document.	1	9
+ab-testing	eval-1	with_skill	FAIL	1.7s	2057	4	FAIL	Walks through sections conversationally one at a time	The model does not walk through sections; it stops after asking about the file and offering auto-draft.	1	9
+ab-testing	eval-1	with_skill	FAIL	1.7s	2057	5	FAIL	Creates file at .agents/product-marketing.md	Output files: No output files were captured.	1	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	1	FAIL	Reads existing product-marketing.md	Model states: "I don't see `.agents/product-marketing.md` ... in the repository" and provides options for drafting or starting from scratch, implying no file was read.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	2	FAIL	Identifies sections that need updating	Model states: "Since there's no existing context..." and does not list any sections.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	3	FAIL	Updates Target Audience with VP of Engineering	No output files were captured, and no updates were performed.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	4	FAIL	Adds new persona for the expanded audience	No output files were captured, and no additions were performed.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	5	FAIL	Updates Product Overview for enterprise tier	No output files were captured, and no updates were performed.	2	9
+ab-testing	eval-2	with_skill	FAIL	2.1s	2094	6	FAIL	Preserves unchanged sections	No file was read or preserved because the model claimed the file did not exist.	2	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	3	FAIL	Offers auto-draft or start-from-scratch options	Model only suggests 'Option 1: Auto-draft from codebase' and a 'hybrid approach'. It does not offer a 'start-from-scratch' option.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	4	FAIL	Adapts questions for early-stage B2C mobile app	Questions are generic (name, description, target audience, differentiation). Examples given (hikers, AllTrails) assume a specific vertical not provided in the prompt. No specific adaptation for 'mobi…	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	5	FAIL	Notes some sections may be sparse early on	Model says 'you might not have a large codebase... yet' but does not explicitly note that the resulting document sections may be sparse.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	6	FAIL	Skips non-applicable sections rather than forcing all 12	Model outlines a plan to draft a file but does not explicitly state it will skip sections or reference a 12-section structure.	3	9
+ab-testing	eval-3	with_skill	FAIL	3.8s	2260	7	FAIL	Creates file at .agents/product-marketing.md	Output files: No output files were captured. Model only states 'I'll draft' it in the future.	3	9
+ab-testing	eval-4	with_skill	FAIL	2.6s	2123	1	FAIL	Activates auto-draft workflow mode	No explicit statement or mechanism indicating the activation of an 'auto-draft workflow mode' was found in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	2.6s	2123	2	FAIL	Scans codebase for existing marketing materials	The model states 'I'll scan your codebase...' as a future action conditional on the user sharing files ('To get started, please share your relevant files...'). No scan was actually performed, as 'No …	4	9
+ab-testing	eval-4	with_skill	FAIL	2.6s	2123	3	FAIL	Drafts context from found information	The model states it will 'draft a .agents/product-marketing.md file' in the future. No draft was produced in the output.	4	9
+ab-testing	eval-4	with_skill	FAIL	2.6s	2123	4	FAIL	Flags sections needing manual input	The model asks the user to share files but does not flag specific sections of a draft or codebase as needing manual input, as no analysis or draft was generated.	4	9
+ab-testing	eval-4	with_skill	FAIL	2.6s	2123	5	FAIL	Presents draft for review before saving	The model states it will 'present the draft to you' in the future. No draft was presented in the current output.	4	9
+ab-testing	eval-5	with_skill	FAIL	2.3s	2122	1	PASS	Checks both file locations	Model only checked '.agents/product-marketing.md'. It did not check a second location.	5	9
+ab-testing	eval-5	with_skill	FAIL	2.3s	2122	2	PASS	Reports whether context doc exists	Model output is '<read_file path=\".agents/product-marketing.md\" />' followed by 'Output files: No output files were captured.' It does not explicitly report existence or non-existence in text, and …	5	9
+ab-testing	eval-5	with_skill	FAIL	2.3s	2122	3	FAIL	References or defers to copywriting skill for the actual copy	The model does not reference any specific 'copywriting skill' or tool call; it offers to ask questions or provide a template directly.	5	9
+ab-testing	eval-5	with_skill	FAIL	2.3s	2122	4	PASS	Offers to create if missing	Model output does not contain an offer to create the document. It only states 'Let me check...' and shows a failed read attempt.	5	9
+ab-testing	eval-5	with_skill	FAIL	2.3s	2122	5	FAIL	Explains how other skills use it	Model output contains no explanation of how other skills use the document.	5	9

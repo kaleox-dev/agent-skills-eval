@@ -1,0 +1,141 @@
+
+[1m▶ marketing-plan[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    /marketing-plan acme-saas — pick up where we left off
+    [90moutput:[0m  I am ready to resume the marketing plan for **acme-saas**. To pick up exactly where we left off, I am checking the current state of our plan folder at `~/marketing-plans/acme-saas/`. **Please confirm…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Reads ~/marketing-plans/acme-saas/progress.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Resumes from next unfinished section based on state machine
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Saves each newly confirmed section to the progress file
+         [90mevidence:[0m judge did not provide concrete evidence
+    5.7s · 169268 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    We're pre-seed bootstrapped, $0 paid marketing budget, 4-person team building a D2C consumer app. Founder wants a 90-day plan + 12-month roadmap they can show investors during the upcoming raise. The…
+    [90moutput:[0m  I will use the `/marketing-plan` skill to generate a comprehensive 12-month marketing plan. To start, I need some context on the client. Please provide: 1. **Client Name or Domain:** (e.g., `quietude…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes pre-seed tier and uses Tier 1 budget profile
+         [90mevidence:[0m Model did not generate a plan; it asked for funding status and budget details instead of assuming or recognizing the tier.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Skips paid acquisition recommendations until budget unlocks
+         [90mevidence:[0m No plan was generated to evaluate paid acquisition strategies. Model only requested information.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Leans Acquisition on organic + lifecycle + ambassador
+         [90mevidence:[0m No marketing tactics were provided. Model only asked for current channels.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Names what unlocks when seed closes
+         [90mevidence:[0m No content regarding post-seed unlocks was generated.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Accounts for product being in beta
+         [90mevidence:[0m No product stage analysis was performed; model asked for product description and funnel state.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Identifies binding-constraint AARRR stage (likely Activation or Referral)
+         [90mevidence:[0m No AARRR analysis was performed; model asked for current metrics.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Executive summary can be lifted into an investor update
+         [90mevidence:[0m No executive summary or investor update content was generated.
+      [31m#8[0m [31mFAIL[0m [90m—[0m Plan is operationally honest — doesn't pretend paid budget exists
+         [90mevidence:[0m No plan was generated to evaluate operational honesty regarding budget.
+    5.2s · 169340 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    we have an audit already done — can you take that and turn it into a real plan
+    [90moutput:[0m  Yes — we can do that. To turn the audit into an executable plan, I’ll need two things: 1. **The audit itself** (scores, findings, or the summary you want used). 2. **Context to customize the strategy…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Ingests prior audit scoring directly into Section 3
+         [90mevidence:[0m Model states it can 'Write Section 3 (Current State) directly from it' but has not yet done so; it is asking for the input first. No Section 3 is present in the output.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not re-score what's already been scored
+         [90mevidence:[0m Model states: 'Score it against the embedded 17-section rubric if it’s not already scored.' This implies it may re-score, and no evidence exists that it identified existing scores and skipped them.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes the scoring date and flags any shifted material
+         [90mevidence:[0m The output contains no mention of scoring dates, timestamps, or flagging shifted material.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses audit gaps to inform 90-day roadmap and AARRR section moves
+         [90mevidence:[0m The output does not contain a 90-day roadmap, nor does it reference AARRR section moves based on audit gaps. It only lists intake questions.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Still produces a full 13-section plan, not just Section 3
+         [90mevidence:[0m The output does not produce a plan. It is a request for information ('Yes — we can do that... I’ll need two things'). No plan sections are generated.
+    5.4s · 169278 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I'm starting a fractional CMO engagement with a Series A B2B SaaS doing $2M ARR, 12-person team with 1 marketer, $20K/month marketing budget. They want a marketing plan we can share with the team and…
+    [90moutput:[0m  To build this plan to the fidelity required for a Series A board and a team of 12, I need to ground the strategy in their specific unit economics, their specific product category, and their specific …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m  [31m✗ 9[0m  [31m✗ 10[0m  [31m✗ 11[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Produces 13-section plan structured by AARRR
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Section 3 scores against the embedded 17-section rubric
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#6[0m [31mFAIL[0m [90m—[0m Section 9 (90-day roadmap) has owner-assigned moves, not just actions
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#7[0m [31mFAIL[0m [90m—[0m Section 10 names funding-stage capability unlocks explicitly
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#8[0m [31mFAIL[0m [90m—[0m Section 11 maps marketing skills + MCPs to each AARRR stage
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#9[0m [31mFAIL[0m [90m—[0m Section 12 cross-references all 139 marketing-ideas with client-specific status
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#10[0m [31mFAIL[0m [90m—[0m Output is Notion-paste-ready markdown
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#11[0m [31mFAIL[0m [90m—[0m Plan is specific to the client (their budget, team, current channels), not generic
+         [90mevidence:[0m judge did not provide concrete evidence
+    11.9s · 169957 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    I need a plan for a hybrid hardware+software wellness company. They sell a physical product and a subscription app. Series A, $100K/month marketing budget, 8-person team including a marketing lead.
+    [90moutput:[0m  To produce the comprehensive fCMO-level 12-month marketing plan required for this engagement, I need to ingest the specific context of your company. A generic plan will fail because the hybrid hardwa…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes hybrid hardware+software archetype
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Acquisition leans on PR, retail, Amazon, Shopify SEO, paid
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Activation covers unboxing, setup, first session, paywall
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Retention covers lifecycle, community
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Referral covers gifting, reviews
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Revenue covers blended LTV with hardware + subscription + accessories
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recognizes Series A tier in budget recommendations
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Idea bank skips ideas that conflict with brand fit, with explicit rationale
+         [90mevidence:[0m judge returned unparseable response: { "assertion_results": [ { "text": "Recognizes hybrid hardware+software archetype", "passed": true, "evidence": "Model explicitly references 'hybrid hardware/soft…
+    9.5s · 169779 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-plan"> <description>When the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing pla…
+    [90muser:[0m    Just give me a quick marketing plan. Don't make it long.
+    [90moutput:[0m  Understood. I will keep the output concise and actionable, avoiding the full 13-section depth unless you need it later. To generate this plan, I need a few details: 1. **Client/Product:** What are yo…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Resists short-plan request and explains why
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names marketing-plan as the comprehensive fCMO artifact
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends channel-specific skills for single-channel quick plans
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#4[0m [31mFAIL[0m [90m—[0m Offers alternatives clearly
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#5[0m [31mFAIL[0m [90m—[0m Does not silently produce a stripped-down plan
+         [90mevidence:[0m judge did not provide concrete evidence
+    3.7s · 169195 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 12.5%[0m  [90m· 6.90s avg · 169470 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-848/benchmark.json[0m
+{
+  "passed": 5,
+  "failed": 38,
+  "skills": [
+    {
+      "skill": "marketing-plan",
+      "slug": "marketing-plan",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.11627906976744186,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-848/benchmark.json"
+    }
+  ],
+  "iteration": 848,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-848",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-848/report/index.html"
+}

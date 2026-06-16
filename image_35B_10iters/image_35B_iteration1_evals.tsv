@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	1	FAIL	Checks for product-marketing.md	judge did not provide concrete evidence	1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	8.2s	11193	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	3	FAIL	Recommends real screenshots at 2x resolution	Mentions setting a standard viewport (e.g., 1440x900) and using Capture full size screenshot, but never mentions 2x resolution.	2	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	5.1s	10868	6	FAIL	Notes this as a common mistake	The text states 'AI models should not be used...' but does not explicitly characterize this behavior as a 'common mistake'.	2	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	3	FAIL	Recommends minimal text	Model suggests 'Option A with Ideogram (if you need short, perfect text)' but does not explicitly recommend 'minimal text' as a general design principle in the provided output.	3	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	4	FAIL	Suggests Canva or Figma over AI	Model recommends 'Option C (Hybrid)' or 'Option A with Ideogram', not Canva/Figma over AI as a primary preference.	3	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	5	FAIL	Mentions Ideogram for text-heavy designs	Model mentions Ideogram for 'perfect text' or 'short, perfect text', not specifically 'text-heavy designs'.	3	1
+ab-testing	eval-3	with_skill	FAIL	5.9s	10956	6	FAIL	Recommends testing at display size	No mention of testing at display size in the output.	3	1
+ab-testing	eval-4	with_skill	FAIL	8.0s	11193	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.0s	11193	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.0s	11193	3	FAIL	Notes Instagram 4:5 variant	The output lists Instagram Story (9:16) and Instagram Feed (1:1). It lists Facebook Post as 4:5, but does not explicitly identify an 'Instagram 4:5' variant. Instagram Feed is listed as 1:1.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.0s	11193	4	FAIL	Suggests programmatic text overlays for variants	The output explicitly advises: 'Do NOT bake text into the AI generation' and 'Add text in post-processing'. It does not mention programmatic overlays.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.0s	11193	5	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.9s	11225	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	4	FAIL	Lists required og:image meta tags	The output only provides `<meta property="og:image" ... />` inside an HTML code block for usage, but it does not list the full set of required OG meta tags (og:title, og:description, og:type, etc.) n…	6	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	5	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	12.1s	11736	6	FAIL	Notes this is best for high-volume blogs	The output explicitly states 'Since you're shipping 2 posts a week... You need a system, not just a prompt' and recommends this for a SaaS that 'just launched'. It does not claim this approach is bes…	6	1

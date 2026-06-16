@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The model provided only a text response, not the requested file.	1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	The output references 'Anchoring Effect' (Section 1 & 3) and 'Rule of 100' (Section 3). However, it fails to mention or apply 'charm pricing'. The prices used ($29, $79, $199) are not analyzed throug…	1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	16.3s	6336	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.0s	6302	6	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	17.5s	6425	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	13.5s	6044	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	7.3s	5349	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	15.2s	6333	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	15.2s	6333	2	FAIL	References or defers to ab-testing skill	The model references the 'Marketing Psychology' skill ('grounded in the Marketing Psychology skill') but does not explicitly mention or defer to an 'ab-testing' skill by name. The prompt requires ref…	6	8
+ab-testing	eval-6	with_skill	FAIL	15.2s	6333	3	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	15.2s	6333	4	FAIL	Does not attempt full test design using psychology patterns	The model explicitly attempts a full test design using psychology patterns, including specific Hypotheses (Section 1), Variable Isolation (Section 2), Detailed Variations with copy examples (Section …	6	8

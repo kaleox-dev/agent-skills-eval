@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to those files, I'll need to ask clarifying questions' - did not actually check the file	1	1
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	2	FAIL	Asks about buyer stage and goal	Questions section asks about existing content, email capture rate, nurture sequence, prospect questions, and budget - no question about buyer stage or goal	1	1
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	3	FAIL	Applies the 5 principles	No explicit reference to or application of '5 principles' from skill instructions in the output	1	1
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.0s	12359	6	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	12276	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	1	FAIL	Flags form length as likely culprit	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	2	FAIL	Cites 5-10% per field rule	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	3	FAIL	Recommends reducing to email or email + name	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	4	FAIL	Asks what fields are actually used	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	5	FAIL	Suggests progressive profiling	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-3	with_skill	FAIL	14.0s	11961	6	FAIL	Cross-references cro skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	1
+ab-testing	eval-4	with_skill	FAIL	24.5s	12903	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	24.5s	12903	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	24.5s	12903	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	24.5s	12903	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	24.5s	12903	5	FAIL	Defers to free-tools skill	Model states 'Without knowing your specific context, here's my advice' - gives full recommendations without deferring to ask about user's technical capability first	4	1
+ab-testing	eval-5	with_skill	FAIL	14.4s	12125	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.4s	12125	2	FAIL	Cites 2-5x improvement vs generic CTAs	No mention of 2-5x improvement or comparison to generic CTAs in output.	5	1
+ab-testing	eval-5	with_skill	FAIL	14.4s	12125	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.4s	12125	4	FAIL	Keeps blog post ungated to preserve SEO	No explicit mention of SEO preservation as rationale for keeping blog ungated.	5	1
+ab-testing	eval-5	with_skill	FAIL	14.4s	12125	5	FAIL	Explains why upgrades convert better	No explicit explanation of conversion rate advantage of upgrades vs gating.	5	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	4	FAIL	Cross-references emails skill for nurture	No explicit reference to an emails skill; only mentions 'email nurture sequence' and 'follow-up emails' without skill citation	6	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	5	FAIL	Suggests a decision-stage lead magnet alternative	Suggests 'Swap to a different format (template, assessment, mini-course)' but does not frame these as decision-stage alternatives	6	1
+ab-testing	eval-6	with_skill	FAIL	13.5s	12052	6	FAIL	Mentions tracking time to conversion by source	No mention of tracking time to conversion by source; only mentions 'Trial sign-up within 30-90 days' without source tracking	6	1

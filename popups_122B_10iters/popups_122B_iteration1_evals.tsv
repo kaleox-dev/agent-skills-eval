@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	1	FAIL	Checks for product-marketing.md	Model states: 'However, I don't have access to file systems, so I'll proceed with asking clarifying questions' - no actual check performed	1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	6	FAIL	Applies copy formulas from the skill	No specific copy formulas referenced or applied from skill documentation	1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	8	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	22.0s	4790	9	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	11.4s	3905	7	FAIL	Addresses compliance considerations	Model only asks 'Any compliance requirements? (GDPR, CCPA, etc.)' as a question without providing compliance guidance	2	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	1	FAIL	Triggers on casual phrasing	No evidence of model recognizing or responding to casual phrasing in the input.	3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	5	FAIL	Suggests excluding existing subscribers	Model says 'Don't show to visitors who already converted' but does not specifically mention existing subscribers.	3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.1s	4040	7	FAIL	Suggests A/B testing to optimize	No mention of A/B testing or experimentation in the output.	3	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	6	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	14.4s	4141	7	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	6	FAIL	Recommends audience targeting	Model asks 'Target audience?' as a clarifying question but provides no actual targeting recommendation	5	1
+ab-testing	eval-5	with_skill	FAIL	18.5s	4564	7	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	10.0s	3827	1	FAIL	Recognizes overlap with form optimization	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions. Let me analyze each assert…	6	1
+ab-testing	eval-6	with_skill	FAIL	10.0s	3827	2	FAIL	References or defers to cro skill	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions. Let me analyze each assert…	6	1
+ab-testing	eval-6	with_skill	FAIL	10.0s	3827	3	FAIL	Notes popups need minimal fields due to context	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions. Let me analyze each assert…	6	1
+ab-testing	eval-6	with_skill	FAIL	10.0s	3827	4	FAIL	Does not attempt detailed form redesign	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model's output against the provided assertions. Let me analyze each assert…	6	1

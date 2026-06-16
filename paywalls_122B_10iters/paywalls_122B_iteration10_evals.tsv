@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. Model states 'Let me first check if there's any product marketing context file to read' but no actual file check occurred.	1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	4	FAIL	Includes headline, value demo, comparison, social proof, CTA	Missing social proof element - no testimonials, user counts, or trust indicators in paywall structure.	1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.1s	6268	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	1	FAIL	Identifies as trial expiration trigger	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	2	FAIL	Applies trial expiration paywall guidance	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	3	FAIL	Recommends showing user's accomplishments during trial	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	4	FAIL	Uses loss framing (what they'd lose)	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	5	FAIL	Provides clear plan options	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	6	FAIL	Includes social proof	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	7	FAIL	Diagnoses why current 2% rate is low	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-2	with_skill	FAIL	12.3s	6293	8	FAIL	Provides specific redesign recommendations	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions for an agentskills.io evaluation. I need to grade each assertion based on whether the m…	2	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing detection or triggering. User input was a straightforward product question, not casual phrasing.	3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.3s	6347	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	2	FAIL	Applies feature lock paywall guidance	Model asks clarifying questions instead of applying guidance; states 'I'll create... Once I Have Context' but provides no actual guidance.	4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	3	FAIL	Recommends showing preview of the feature	No preview recommendation made; only states 'we want users to see what they're missing' without concrete preview guidance.	4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	4	FAIL	Explains specific benefit of the feature	Model asks 'What does Advanced Analytics actually do?' instead of explaining benefits.	4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	5	FAIL	Includes relevant plan comparison	No plan comparison included in output.	4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	6	FAIL	Provides clear CTA and escape hatch	No CTA or escape hatch provided; output contains only questions.	4	10
+ab-testing	eval-4	with_skill	FAIL	7.8s	5815	7	FAIL	Provides copy recommendations	No copy recommendations provided; model states 'I'll create: Complete paywall UI copy' but never delivers it.	4	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	16.0s	6589	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	11.1s	6184	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	11.1s	6184	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	11.1s	6184	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	11.1s	6184	4	FAIL	Does not attempt public pricing page optimization	I'd be happy to help optimize your pricing page!	6	10

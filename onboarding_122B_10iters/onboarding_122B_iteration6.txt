@@ -1,0 +1,89 @@
+
+[1m▶ onboarding[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    our users sign up but then never come back. like 50% don't even log in a second time. what do we do?
+    [90moutput:[0m  The user is describing a classic onboarding/activation problem - 50% of users sign up but don't return for a second login. This is a clear activation and retention issue that falls squarely within th…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing trigger mechanism in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests multi-channel onboarding
+         [90mevidence:[0m Only mentions email re-engagement, no multi-channel approach suggested
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references emails for re-engagement
+         [90mevidence:[0m No actual email analysis or cross-referencing performed
+    10.5s · 8045 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    How do we handle the empty state when a new user first logs in? Right now they just see a blank dashboard.
+    [90moutput:[0m  The user is asking about handling the empty state when a new user first logs in. They mention that currently users just see a blank dashboard. This is a classic onboarding problem - empty states are …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    15.4s · 8453 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    What should our onboarding checklist include? We're a design collaboration tool. Users need to upload a design, invite a team member, and leave a comment to get full value.
+    [90moutput:[0m  The user is asking about what their onboarding checklist should include. They've provided key information: - Product: Design collaboration tool - Core actions for value: Upload a design, invite a tea…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    16.6s · 8555 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Our signup form has 8 fields and people keep dropping off. Can you help us fix the signup flow?
+    [90moutput:[0m  The user is asking about signup form optimization - they have 8 fields and people are dropping off. This is about signup/registration optimization, not onboarding specifically. Looking at the skill d…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt signup form redesign using onboarding patterns
+         [90mevidence:[0m Provides form redesign advice: Cut Fields Aggressively - Keep only Email + Password, Remove 3-4 fields for 15-25% conversion lift, What are the 8 fields currently? I can tell you which to cut
+    9.2s · 7966 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Should we use tooltips, a product tour, or a setup wizard for onboarding? What works best?
+    [90moutput:[0m  The user is asking about which onboarding approach works best: tooltips, product tours, or setup wizards. This is a common onboarding optimization question that falls squarely within my onboarding sk…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    19.1s · 8782 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Help me optimize our onboarding flow. We have a project management tool and only 30% of trial users create their first project within the first week. We need to get them to value faster.
+    [90moutput:[0m  The user is asking for help optimizing their onboarding flow for a project management tool. They've shared a key metric: only 30% of trial users create their first project within the first week. This…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Defines the activation/aha moment
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates time-to-value
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends onboarding flow approach
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies checklist pattern with 3-7 items
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses empty states as opportunities
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides experiment ideas
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes measurement metrics
+         [90mevidence:[0m judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…
+    19.9s · 8826 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 72.0%[0m  [90m· 15.13s avg · 8438 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-876/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "onboarding",
+      "slug": "onboarding",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6923076923076923,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-876/benchmark.json"
+    }
+  ],
+  "iteration": 876,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-876",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-876/report/index.html"
+}

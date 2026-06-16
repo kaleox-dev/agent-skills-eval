@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	1	FAIL	Checks for product-marketing.md	The model output contains no reference to 'product-marketing.md'. It is a direct response to a prompt about email deliverability hero images.	1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	9.0s	11298	7	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	5	FAIL	Suggests specific screenshot tools	No specific screenshot tools (e.g., Snagit, Lightshot, browser extensions) are mentioned; the model only instructs the user to take the screenshot.	2	6
+ab-testing	eval-2	with_skill	FAIL	5.5s	10925	6	FAIL	Notes this as a common mistake	The model states the practice is 'not recommended' and 'unprofessional' but does not explicitly label it as a 'common mistake'.	2	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	2	FAIL	Warns about avatar overlap area	No mention of avatar, profile picture, or overlap areas in the output.	3	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	3	FAIL	Recommends minimal text	No recommendation for 'minimal text'; asks for the 'exact text' and discusses 'simple' text for Ideogram.	3	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	4	FAIL	Suggests Canva or Figma over AI	Lists 'Option A (AI Generation)' and 'Option B (Design Tool)' with Figma/Canva as equal options, not a clear preference/over AI.	3	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	5	FAIL	Mentions Ideogram for text-heavy designs	Mentions Ideogram 'if the text is simple', not specifically for 'text-heavy designs'.	3	6
+ab-testing	eval-3	with_skill	FAIL	3.6s	10740	6	FAIL	Recommends testing at display size	No mention of testing at display size or checking how it looks on different screen sizes.	3	6
+ab-testing	eval-4	with_skill	FAIL	11.8s	11580	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.8s	11580	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	11.8s	11580	3	FAIL	Notes Instagram 4:5 variant	The output only lists Instagram Feed (1:1) and Instagram Stories (9:16). It does not mention the 4:5 aspect ratio or its dimensions (e.g., 1080x1350).	4	6
+ab-testing	eval-4	with_skill	FAIL	11.8s	11580	4	FAIL	Suggests programmatic text overlays for variants	The output suggests creating negative space in the prompt or keeping text central in the design tool. It does not suggest adding text overlays programmatically during the resizing process.	4	6
+ab-testing	eval-4	with_skill	FAIL	11.8s	11580	5	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	7.5s	11111	6	FAIL	Provides command line tool example	Model mentions 'Convert existing images to WebP using CLI tools' but provides no specific CLI command (e.g., cwebp, sharp CLI).	5	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	4	FAIL	Lists required og:image meta tags	The output shows `openGraph: { title: ..., images: [...] }` for Next.js metadata, but does not list the specific HTML meta tag syntax (e.g., `<meta property="og:image" content="...">`).	6	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	5	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	18.7s	12484	6	FAIL	Notes this is best for high-volume blogs	The model cites 'scalability', 'Unlimited scale', and 'zero marginal cost per image' as benefits, but does not explicitly state it is 'best for high-volume blogs' or use that specific phrasing.	6	6

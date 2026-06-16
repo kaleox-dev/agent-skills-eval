@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	1	FAIL	Checks for product-marketing.md	Model states: 'since I don't have access to file systems, I'll proceed with asking the necessary questions' - No actual file check performed	1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	5	FAIL	Minimal form fields (email only)	Design shows '[Email Input Field]' but does not explicitly confirm email-only or minimal fields requirement	1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	6	FAIL	Applies copy formulas from the skill	No explicit reference to copy formulas (AIDA, PAS, etc.) from skill instructions - general best practices only	1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	8	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	21.1s	4730	9	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	13.0s	4023	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	5	FAIL	Suggests excluding existing subscribers	Output mentions 'Converted users | Exclude entirely' but does not explicitly mention 'subscribers'	3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	12.7s	4025	7	FAIL	Suggests A/B testing to optimize	No mention of A/B testing or split testing in the output	3	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	15.0s	4165	7	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	6	FAIL	Recommends audience targeting	Only asks 'Who benefits most from it? (Target audience/segment)' as a question but provides no actual audience targeting recommendations	5	4
+ab-testing	eval-5	with_skill	FAIL	13.5s	4093	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	10.2s	3841	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.2s	3841	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.2s	3841	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.2s	3841	4	PASS			6	4

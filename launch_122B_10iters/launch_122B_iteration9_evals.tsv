@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output	1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	4	FAIL	Recommends five-phase launch approach	Only 4 phases shown (Week 1-2 Internal, Week 3-4 Alpha, Week 5 Beta, Week 6 Full) despite introduction mentioning '5-phase launch approach'	1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	7	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	16.6s	4294	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	12.8s	3944	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	2	FAIL	Applies ongoing launch strategy / update matrix	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	3	FAIL	Identifies as major feature update	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	4	FAIL	Scales tactics appropriately (not full launch)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	5	FAIL	Recommends announcement channels	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	6	FAIL	Includes email, blog, social, and in-app notification	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-3	with_skill	FAIL	8.5s	3591	7	FAIL	Provides feature announcement framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: A set of assertions, a …	3	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	17.0s	4307	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	5	FAIL	Notes borrowed strategies take time to build	No explicit statement that borrowed strategies take time to build. Timeline shows 1-8 weeks for partnership building but does not explicitly note this requirement for borrowed strategies specifically	5	9
+ab-testing	eval-5	with_skill	FAIL	18.4s	4452	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	15.7s	4220	1	FAIL	Recognizes this as broader marketing ideas request	judge returned unparseable response: The user is asking me to grade an agent's evaluation run. I need to evaluate whether the model's output correctly handled the assertions provided. Let me analyze …	6	9
+ab-testing	eval-6	with_skill	FAIL	15.7s	4220	2	FAIL	References or defers to marketing-ideas skill	judge returned unparseable response: The user is asking me to grade an agent's evaluation run. I need to evaluate whether the model's output correctly handled the assertions provided. Let me analyze …	6	9
+ab-testing	eval-6	with_skill	FAIL	15.7s	4220	3	FAIL	Does not attempt full marketing brainstorm using launch strategy patterns	judge returned unparseable response: The user is asking me to grade an agent's evaluation run. I need to evaluate whether the model's output correctly handled the assertions provided. Let me analyze …	6	9
+ab-testing	eval-6	with_skill	FAIL	15.7s	4220	4	FAIL	May provide some launch-related tactical ideas	judge returned unparseable response: The user is asking me to grade an agent's evaluation run. I need to evaluate whether the model's output correctly handled the assertions provided. Let me analyze …	6	9

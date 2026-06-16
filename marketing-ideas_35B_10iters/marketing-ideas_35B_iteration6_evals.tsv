@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	1	FAIL	Checks for product-marketing.md	The output files section states: 'No output files were captured.' and the model output is plain text, not a file named product-marketing.md.	1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	2	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	5	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	6	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	7	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	12.8s	13737	8	PASS			1	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	1	FAIL	Applies 'leads fast' use case filter	judge did not provide concrete evidence	2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	3	FAIL	Recommends outbound tactics	judge did not provide concrete evidence	2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	6	FAIL	Notes that fast leads means paid or outbound	judge did not provide concrete evidence	2	6
+ab-testing	eval-2	with_skill	FAIL	8.2s	13206	7	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	14.5s	13861	6	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	5	FAIL	Notes authority building is longer-term	The model explicitly states in the introduction that it is providing strategies to 'build thought leadership quickly'. It does not mention that it is a longer-term effort; rather, it focuses on 'Imme…	4	6
+ab-testing	eval-4	with_skill	FAIL	14.0s	13824	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	15.9s	14122	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	13408	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	13408	2	FAIL	References or defers to referrals skill	Model output contains no reference to a 'referrals skill'. It offers a direct framework and asks for more details to customize the strategy, implying it is handling the design itself rather than defe…	6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	13408	3	FAIL	Does not attempt detailed referral program design	Model output provides a detailed 5-step framework including specific model options (A, B, C), a reward table with examples, trigger definitions, mechanics (Unique Referral Links, Clear Communication)…	6	6
+ab-testing	eval-6	with_skill	FAIL	9.7s	13408	4	PASS			6	6

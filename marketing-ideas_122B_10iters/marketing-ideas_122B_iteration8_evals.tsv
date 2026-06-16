@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file found in output	1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	7	FAIL	Prioritizes by likely impact	No explicit impact ranking or prioritization of the 5 ideas provided	1	8
+ab-testing	eval-1	with_skill	FAIL	19.1s	13926	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	3	FAIL	Recommends outbound tactics	No cold outreach, cold email, or direct outbound tactics recommended - only paid acquisition channels	2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	6	FAIL	Notes that fast leads means paid or outbound	No explicit statement connecting fast leads to paid or outbound channels as a principle	2	8
+ab-testing	eval-2	with_skill	FAIL	16.7s	13705	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection or special handling in the output. The model treats input as a standard business request.	3	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	16.7s	13704	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	16.0s	13653	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	1	FAIL	Provides approximately 20 ideas	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	2	FAIL	Ideas span multiple categories	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	3	FAIL	Organizes by category or effort/impact	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	4	FAIL	Provides brief implementation context per idea	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	5	FAIL	Output follows structured format	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-5	with_skill	FAIL	35.2s	15264	6	FAIL	Ideas are relevant to project management software	judge returned unparseable response: The user is asking me to grade an agentskills.io evaluation run. I need to evaluate the model output against 6 assertions and return a strict JSON response. Let m…	5	8
+ab-testing	eval-6	with_skill	FAIL	11.3s	13260	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.3s	13260	2	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	11.3s	13260	3	FAIL	Does not attempt detailed referral program design	Provides Two-Sided Referrals, Affiliate Program, Viral Loops with structure, examples, best for, why it works, plus table with 5 program types	6	8
+ab-testing	eval-6	with_skill	FAIL	11.3s	13260	4	PASS			6	8

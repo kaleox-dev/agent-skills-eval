@@ -1,0 +1,75 @@
+
+[1m▶ programmatic-seo[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We built 500 programmatic pages but Google isn't indexing most of them. Only 80 are in the index. What's going wrong?
+    [90moutput:[0m  This is a classic **Programmatic SEO (pSEO) Indexation Crisis**. Having 500 pages with only 80 indexed suggests you are facing either **Thin Content penalties**, **Crawl Budget issues**, or **Structu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.4s · 9590 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    we want to rank for '[tool name] integration' keywords. we integrate with 50+ tools and want a page for each. like 'Slack integration', 'Salesforce integration' etc.
+    [90moutput:[0m  This is a classic and highly effective **Integrations Playbook** in Programmatic SEO. Since you have 50+ integrations, you have a significant opportunity to capture high-intent traffic from users of …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    16.6s · 9817 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    We want to create programmatic SEO pages for our CRM. We're thinking of 'CRM for [industry]' pages — like 'CRM for Real Estate,' 'CRM for Healthcare,' etc. How should we approach this?
+    [90moutput:[0m  This is a classic and highly effective **Programmatic SEO (pSEO)** strategy. You are targeting the **Persona** playbook, specifically the pattern: `"[Product] for [Industry/Audience]"`. Because "CRM"…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured. The output is a raw text response, not a file named product-marketing.md.
+    18.9s · 10049 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Create a comparison page strategy. We want pages like 'Notion vs Asana', 'Notion vs Monday', etc. for all our competitors. We have 15 competitors.
+    [90moutput:[0m  This is a classic **Playbook #4: Comparisons** strategy. Since you have 15 competitors, you are looking at **15 unique comparison pages** (assuming your product is Product A, and you compare A vs B, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes keyword research for variations
+         [90mevidence:[0m The output provides example meta titles and URLs but does not include any keyword research process, tools used, or a list of semantic variations/LSI keywords. It assumes the competitor names are the …
+      [31m#7[0m [31mFAIL[0m [90m—[0m Cross-references competitors skill
+         [90mevidence:[0m The output discusses the *competitors* (Asana, Monday, etc.) and their features relative to Notion. It does not mention or analyze the 'competitors skill' (referring to the user's competitors in the …
+    21.1s · 10260 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Can you audit our existing programmatic SEO pages for technical issues? We have crawl errors and some pages return 404s.
+    [90moutput:[0m  To audit your existing programmatic SEO (pSEO) pages for technical issues like crawl errors and 404s, I need to shift from the `programmatic-seo` skill (which is for building) to the `seo-audit` skil…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that programmatic-seo is for strategy and template design
+         [90mevidence:[0m The model states `programmatic-seo` skill is 'for building', but does not mention 'strategy and template design'.
+    12.9s · 9466 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="programmatic-seo"> <description>When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "p…
+    [90muser:[0m    Help me create a glossary section for our marketing automation platform. We want to define 200+ marketing terms and rank for '[term] definition' keywords.
+    [90moutput:[0m  This is a classic **Glossary Playbook** execution. Since you are a **Marketing Automation Platform**, you have a distinct advantage: you can embed your product context directly into the definitions, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    29.0s · 11370 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 87.2%[0m  [90m· 18.81s avg · 10092 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-986/benchmark.json[0m
+{
+  "passed": 36,
+  "failed": 5,
+  "skills": [
+    {
+      "skill": "programmatic-seo",
+      "slug": "programmatic-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8780487804878049,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-986/benchmark.json"
+    }
+  ],
+  "iteration": 986,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-986",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-986/report/index.html"
+}

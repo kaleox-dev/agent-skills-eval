@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	1	FAIL	Checks for product-marketing.md	Agent mentions 'First check if there's product marketing context to read' but no product-marketing.md file was found or referenced. No output files captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	2	FAIL	Defines the activation/aha moment	Agent asks about activation definition ('Is 'create first project' the activation event...?') rather than defining it. States general 'aha moment' concept without specific definition.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	3	FAIL	Evaluates time-to-value	No time-to-value evaluation provided. Agent mentions 'first week' metric but doesn't evaluate it.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	4	FAIL	Recommends onboarding flow approach	Agent states 'Once I have this context, I can provide a tailored onboarding flow redesign' - no recommendations actually provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern with 3-7 items present in output.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	6	FAIL	Addresses empty states as opportunities	Agent asks 'Do users land on an empty dashboard?' but does not address empty states as opportunities.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	7	FAIL	Provides experiment ideas	No experiment ideas provided. Agent defers to future recommendations.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	8	FAIL	Includes measurement metrics	No measurement metrics included in output.	1	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	4	FAIL	Orders by increasing commitment	Upload (20-30s) listed before Comment (10-20s) - commitment decreases then increases, not strictly increasing	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	5	FAIL	Starts with quickest win	Claims 'lowest friction' for Upload (20-30s) but Comment is listed at 10-20s which is quicker	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	8	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	2	FAIL	Applies stalled users framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	3	FAIL	Identifies potential root causes for drop-off	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	4	FAIL	Recommends first-session experience improvements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	5	FAIL	Suggests multi-channel onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	6	FAIL	Cross-references emails for re-engagement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	7	FAIL	Provides specific re-engagement triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	6	FAIL	Recommends testing different approaches	Model only promises "I can... suggest experiments to test" after getting context, does not actually recommend testing different approaches in the output	5	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	3	FAIL	Explains that onboarding covers post-signup	No explicit explanation found; model only mentions 'impacts onboarding downstream' without defining onboarding scope.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	4	PASS			6	9

@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	5.6s	2318	1	FAIL	Checks for existing product-marketing.md	Model states 'I'll look for any existing product marketing context documents' but no file check evidence provided in output	1	5
+ab-testing	eval-1	with_skill	FAIL	5.6s	2318	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	5.6s	2318	3	FAIL	Covers applicable sections	No specific sections mentioned in response beyond 'foundational positioning and messaging information'	1	5
+ab-testing	eval-1	with_skill	FAIL	5.6s	2318	4	FAIL	Walks through sections conversationally one at a time	Option 2 describes conversational walkthrough but no actual section-by-section interaction occurred yet	1	5
+ab-testing	eval-1	with_skill	FAIL	5.6s	2318	5	FAIL	Creates file at .agents/product-marketing.md	Output files section states 'No output files were captured'	1	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	1	FAIL	Reads existing product-marketing.md	No output files were captured.	2	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	2	FAIL	Identifies sections that need updating	No document content was read to identify sections.	2	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	3	FAIL	Updates Target Audience with VP of Engineering	No file write operation performed.	2	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	4	FAIL	Adds new persona for the expanded audience	No new persona added to document.	2	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	5	FAIL	Updates Product Overview for enterprise tier	No Product Overview section modified.	2	5
+ab-testing	eval-2	with_skill	FAIL	2.5s	2064	6	FAIL	Preserves unchanged sections	No document was modified, nothing preserved.	2	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	1	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	3	FAIL	Offers auto-draft or start-from-scratch options	Model decided for itself 'I should walk them through the sections conversationally (option 2 from the workflow)' rather than offering both options to the user	3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	5	FAIL	Notes some sections may be sparse early on	No explicit mention in output that sections may be sparse early on; only says 'We'll start with the basics and build out the full document together'	3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	6	FAIL	Skips non-applicable sections rather than forcing all 12	No evidence in output about skipping non-applicable sections; mentions 'full document' without qualification	3	5
+ab-testing	eval-3	with_skill	FAIL	7.1s	2434	7	FAIL	Creates file at .agents/product-marketing.md	Output files: 'No output files were captured.' Model stated intent but no file creation evidence	3	5
+ab-testing	eval-4	with_skill	FAIL	5.4s	2298	1	FAIL	Activates auto-draft workflow mode	Model states 'I don't see any file system access or ability to read their repository' and asks for materials instead of activating workflow.	4	5
+ab-testing	eval-4	with_skill	FAIL	5.4s	2298	2	FAIL	Scans codebase for existing marketing materials	Model explicitly states 'I don't have direct access to their codebase unless they provide me with the content' - no scanning occurred.	4	5
+ab-testing	eval-4	with_skill	FAIL	5.4s	2298	3	FAIL	Drafts context from found information	No context document was drafted. Output only asks user to 'share these materials' before any drafting can occur.	4	5
+ab-testing	eval-4	with_skill	FAIL	5.4s	2298	4	FAIL	Flags sections needing manual input	No sections were flagged. Model only lists what materials it needs from user, not which sections need manual input.	4	5
+ab-testing	eval-4	with_skill	FAIL	5.4s	2298	5	FAIL	Presents draft for review before saving	No draft was presented. Output states 'Once I have these materials, I'll...Draft all 12 sections' - future tense, no actual draft.	4	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2074	1	FAIL	Checks both file locations	File search tool invoked but 'No output files were captured' - no evidence both locations were checked	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2074	2	FAIL	Reports whether context doc exists	Output states 'No output files were captured' - does not clearly report existence status	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2074	3	FAIL	Summarizes contents if found	No file contents were found or summarized in output	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2074	4	FAIL	Offers to create if missing	No offer to create the document is present in the response	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2074	5	FAIL	Explains how other skills use it	Output mentions 'other marketing skills have context' but provides no explanation of how they use it	5	5
+ab-testing	eval-6	with_skill	FAIL	6.4s	2422	1	FAIL	Recognizes this as a copywriting task	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	6.4s	2422	2	FAIL	May check for or suggest creating product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	6.4s	2422	3	FAIL	References or defers to copywriting skill for the actual copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	6.4s	2422	4	FAIL	Does not attempt to write homepage copy using context creation patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5

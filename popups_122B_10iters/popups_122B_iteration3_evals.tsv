@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to external files, so I'll proceed with what I know' - did not verify file existence	1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	3	FAIL	Includes compelling headline	Only provides framework examples ('Wait! Before you go...' or 'One last thing...') not a complete deliverable headline	1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	4	FAIL	Includes lead magnet or incentive	Output asks user 'What incentive can you offer?' rather than providing a specific lead magnet or incentive	1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	8	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	3661	9	FAIL	Includes conversion benchmarks	Output asks 'Do you have an existing popup? If so, what's your current conversion rate' but provides no benchmarks	1	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	5	FAIL	Includes urgency element	Urgency mentioned as headline style option ("Your 10% Discount Awaits") but not applied in recommended copy ("Get 10% Off Your First Order")	2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	20.0s	4622	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	2	FAIL	Applies frequency and rules guidance	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	3	FAIL	Addresses balance between conversions and UX	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	4	FAIL	Recommends frequency capping	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	5	FAIL	Suggests excluding existing subscribers	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	6	FAIL	Recommends less intrusive alternatives	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.2s	3808	7	FAIL	Suggests A/B testing to optimize	judge returned unparseable response: The user wants me to grade an agentskills.io evaluation run. I need to evaluate 7 assertions against the model output provided. Let me go through each assertion a…	3	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	6	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.3s	3964	7	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	6	FAIL	Recommends audience targeting	No audience targeting recommendations found; only asks 'What's the target audience?' as a clarifying question	5	3
+ab-testing	eval-5	with_skill	FAIL	15.8s	4302	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	3698	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	3698	2	FAIL	References or defers to cro skill	I should use the popups skill to provide guidance.	6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	3698	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	8.5s	3698	4	PASS			6	3

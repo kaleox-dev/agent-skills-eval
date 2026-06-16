@@ -1,0 +1,87 @@
+
+[1m▶ lead-magnets[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?
+    [90moutput:[0m  To recommend the right lead magnet, I need to understand a bit more about your current situation and goals. A generic "best" doesn't exist, but a best fit for **your** specific growth stage does. Ple…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No output files were captured.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies the 5 principles
+         [90mevidence:[0m Model asks clarifying questions instead of applying a fixed set of principles. No evidence of '5 principles' being applied.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)
+         [90mevidence:[0m Model explicitly states: 'Once you reply... I can give you a detailed plan...'. The current output lacks the specific sections for content, gating, distribution, and measurement as a final recommenda…
+    7.8s · 11724 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    What's the difference between a lead magnet and a free tool? Should I build one or the other?
+    [90moutput:[0m  Great question. While both are used to capture leads, they serve different purposes and attract different types of users. Here’s the breakdown: ### The Core Difference * **Lead Magnet (Static Content…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Compares SEO and shareability characteristics
+         [90mevidence:[0m The model mentions 'shelf life' and 'rank for search terms' under Free Tools, but there is no explicit comparison of 'shareability' characteristics between the two formats in the output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Defers to free-tools skill
+         [90mevidence:[0m The model output ends with 'What problem does your product solve? I can help you decide which format best addresses it,' but it does not explicitly defer to a specific 'free-tools skill' or invoke a …
+    8.6s · 11790 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our lead form asks for name, email, company, role, company size, and phone. We're not getting enough signups. Could the form be the problem?
+    [90moutput:[0m  Yes, **the form is almost certainly the problem.** Based on lead generation best practices and benchmarks, asking for **6 fields** (especially phone and company size) is a major friction point that d…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Asks what fields are actually used
+         [90mevidence:[0m The model advises removing specific fields (phone, company size) and reducing the form, but it does not explicitly ask the user what fields are actually used in their specific context. It assumes sta…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references cro skill
+         [90mevidence:[0m The output does not contain any reference to a 'cro skill', 'CRO', or any specific external skill library/tool name in that context.
+    11.5s · 12099 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a 50-page ebook we spent 3 months writing. Conversion on the landing page is only 4%. Should we keep iterating?
+    [90moutput:[0m  4% is indeed low for an organic landing page (benchmarks suggest 15–25% for SaaS, 20–35% for Education/Agency). However, before you decide whether to iterate or replace the asset, we need to diagnose…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references cro or ab-testing skill
+         [90mevidence:[0m The model provides general CRO advice but does not explicitly reference or call out a specific 'CRO' or 'AB-testing' skill module, tag, or external resource in the text.
+    15.1s · 12453 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our checklist gets a lot of downloads but very few of them ever sign up for a trial. Is the lead magnet broken?
+    [90moutput:[0m  A checklist that generates downloads but no trial sign-ups is rarely "broken" in terms of quality—it’s likely **misaligned with your product journey** or **lacking a bridge** to the next step. Checkl…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m References Lead Quality Signals
+         [90mevidence:[0m The output mentions 'downloads' and 'trial sign-ups' as metrics, but does not explicitly reference 'Lead Quality Signals' or use that specific terminology. It focuses on alignment and bridge mechanis…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions tracking time to conversion by source
+         [90mevidence:[0m The output suggests 'Review your last 50 checklist downloads' and 'A/B Test', but does not mention tracking 'time to conversion' specifically by source.
+    9.6s · 11935 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a top-performing blog post on email subject lines. Can we use it as a lead magnet?
+    [90moutput:[0m  Converting a top-performing blog post into a lead magnet is a classic and effective strategy. It is often called a **"Content Upgrade."** However, there is a critical distinction: **You should not si…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps blog post ungated to preserve SEO
+         [90mevidence:[0m While the model advises not gating the post itself ('You should not simply gate the blog post itself'), it does NOT provide the rationale of 'to preserve SEO'. The provided rationale is 'If the user …
+    14.3s · 12423 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 67.8%[0m  [90m· 11.14s avg · 12071 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-802/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "lead-magnets",
+      "slug": "lead-magnets",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6764705882352942,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-802/benchmark.json"
+    }
+  ],
+  "iteration": 802,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-802",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-802/report/index.html"
+}

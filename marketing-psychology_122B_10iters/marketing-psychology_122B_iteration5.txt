@@ -1,0 +1,89 @@
+
+[1m▶ marketing-psychology[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    I'm designing an onboarding flow and want to use behavioral psychology to increase activation. What models should I apply?
+    [90moutput:[0m  The user is asking about applying behavioral psychology to an onboarding flow to increase activation. This is a perfect use case for the marketing-psychology skill. I need to help them understand whi…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies Hick's Law
+         [90mevidence:[0m No mention of Hick's Law in the output. Only 12 models listed, none reference Hick's Law.
+    18.1s · 5983 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    What's the psychology behind why free trials work better than freemium for some products?
+    [90moutput:[0m  The user is asking about the psychological principles behind why free trials work better than freemium models for certain products. This is a great marketing psychology question that touches on sever…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    21.8s · 6389 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    How can I use psychology to increase conversions on our pricing page? We sell a B2B SaaS tool with three tiers ($29, $79, $199/month).
+    [90moutput:[0m  The user is asking about using psychology to increase conversions on a pricing page for a B2B SaaS tool with three tiers ($29, $79, $199/month). This is a perfect application for the marketing-psycho…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No mention of product-marketing.md in output. Output references 'marketing-psychology skill' but not the specific file.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies pricing psychology models (anchoring, charm pricing, Rule of 100)
+         [90mevidence:[0m Anchoring and Charm Pricing mentioned, but Rule of 100 only appears in thinking section, not applied in recommendations.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Applies loss aversion to tier differentiation
+         [90mevidence:[0m Loss aversion mentioned in section 3 and 6 but not specifically applied to tier differentiation.
+    25.1s · 6615 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    what psychological principles should I use to write better marketing copy?
+    [90moutput:[0m  The user is asking about psychological principles for writing better marketing copy. This falls directly under the marketing-psychology skill I have access to. I should provide them with a comprehens…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Recommends copy-relevant mental models
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains each principle briefly
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides specific copywriting application per principle
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Organizes by where each applies in copy
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+      [31m#6[0m [31mFAIL[0m [90m—[0m References multiple model categories
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…
+    22.8s · 6422 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    Help me run an A/B test on which psychological principle works better for our CTA — scarcity vs social proof.
+    [90moutput:[0m  The user wants to run an A/B test comparing two psychological principles for their CTA: scarcity vs social proof. This is a perfect application of the marketing-psychology skill. I should help them: …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to ab-testing skill
+         [90mevidence:[0m Model references 'marketing-psychology skill' not ab-testing skill
+      [31m#4[0m [31mFAIL[0m [90m—[0m Does not attempt full test design using psychology patterns
+         [90mevidence:[0m Provides full test design with 'A/B Test Design' section including test structure, CTA copy, implementation rules, and metrics
+    16.7s · 6004 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    Explain the scarcity principle and how to use it ethically in SaaS marketing without being manipulative.
+    [90moutput:[0m  The user is asking about the scarcity principle in marketing psychology, specifically for SaaS marketing, and wants to know how to use it ethically without being manipulative. This is a perfect fit f…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    19.7s · 6151 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 65.1%[0m  [90m· 20.71s avg · 6261 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-855/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "marketing-psychology",
+      "slug": "marketing-psychology",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6571428571428571,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-855/benchmark.json"
+    }
+  ],
+  "iteration": 855,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-855",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-855/report/index.html"
+}

@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	1	FAIL	Checks for product-marketing.md	Model states 'I should check if there's any product marketing context available' but no tool call or actual file check is shown in output.	1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	4	FAIL	Recommends keyword research per variation	No explicit keyword research recommendation found. Mentions competitor analysis ('Search "CRM for [industry]"') but not keyword research per variation.	1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	20.2s	9696	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	1	FAIL	Identifies as Comparisons playbook	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	2	FAIL	Recommends template structure for scale	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	3	FAIL	Addresses unique data per comparison	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	4	FAIL	Includes keyword research for variations	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	5	FAIL	Provides URL structure recommendation	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	6	FAIL	Includes internal linking strategy	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	7	FAIL	Cross-references competitors skill	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-2	with_skill	FAIL	21.8s	9818	8	FAIL	Applies quality checks	judge returned unparseable response: The user is asking me to grade an agent's output against a set of assertions for an agentskills.io evaluation. I need to evaluate each assertion based on the mode…	2	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	1	FAIL	Triggers on casual phrasing	No mention of detecting or triggering on casual phrasing in the model output.	3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	19.7s	9660	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	1	FAIL	Diagnoses indexation problem	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	2	FAIL	Investigates thin content as likely cause	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	3	FAIL	Checks crawl budget considerations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	4	FAIL	Checks internal linking to programmatic pages	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	5	FAIL	Checks XML sitemap and robots.txt	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	6	FAIL	Recommends specific fixes for indexation	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-4	with_skill	FAIL	14.8s	9250	7	FAIL	Warns about Google's thin content policies	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response to a programmatic SEO indexation problem based on 7 specific assertions. * Input: …	4	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	6	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	17.8s	9490	7	FAIL	Recommends starting with highest-volume terms	No explicit recommendation to start with highest-volume terms; asks "Any priority terms to start with?" but does not provide guidance	5	5
+ab-testing	eval-6	with_skill	FAIL	10.3s	8882	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.3s	8882	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.3s	8882	3	FAIL	Explains that programmatic-seo is for strategy and template design	Model mentions 'new programmatic SEO strategy task' but does not explicitly explain 'strategy and template design'	6	5
+ab-testing	eval-6	with_skill	FAIL	10.3s	8882	4	PASS			6	5

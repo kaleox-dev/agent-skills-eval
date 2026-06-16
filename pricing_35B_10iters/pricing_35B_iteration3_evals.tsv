@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output is raw text, not a file named product-marketing.md.	1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	15.0s	11833	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.0s	11557	7	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	1	FAIL	Triggers on casual phrasing	The model responds to a specific, structured inquiry ('new product with no existing data') rather than casual, open-ended phrasing. The prompt provided to the model was a specific question, and the m…	3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	3	FAIL	Applies MaxDiff for feature importance	The output mentions 'Competitor & Alternative', 'Van Westendorp', 'Fake Door Test', and 'Gabor-Granger'. It does not mention MaxDiff (Maximum Difference Scaling) or describe how to use it for feature…	3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.1s	11725	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	5	FAIL	Applies pricing psychology (Hick's Law)	The term 'Hick's Law' is not mentioned, nor is there an explanation of decision-making time or complexity reduction based on the number of choices. The output discusses 'decision paralysis' qualitati…	4	3
+ab-testing	eval-4	with_skill	FAIL	12.7s	11608	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	13.4s	11723	6	FAIL	Cross-references cro or marketing-psychology	The model uses general marketing concepts ('cognitive biases', 'decision fatigue', 'social proof') but does not explicitly mention 'cro' (Conversion Rate Optimization) or use the specific term 'marke…	5	3
+ab-testing	eval-6	with_skill	FAIL	7.7s	11073	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	7.7s	11073	2	FAIL	References or defers to cro skill	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	7.7s	11073	3	FAIL	Explains that pricing is about pricing decisions	judge did not provide concrete evidence	6	3
+ab-testing	eval-6	with_skill	FAIL	7.7s	11073	4	FAIL	Does not attempt full page CRO audit	judge did not provide concrete evidence	6	3

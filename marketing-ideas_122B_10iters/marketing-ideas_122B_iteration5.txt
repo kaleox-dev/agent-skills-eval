@@ -1,0 +1,77 @@
+
+[1m▶ marketing-ideas[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to build authority and thought leadership in the HR tech space. We're a newer company and nobody knows who we are yet.
+    [90moutput:[0m  The user is asking for marketing ideas specifically focused on building authority and thought leadership in the HR tech space. They're a newer company with no brand recognition yet. This is a perfect…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes authority building is longer-term
+         [90mevidence:[0m Model asks 'what's your timeline?' but does not explicitly note authority building is longer-term; only asks user about timeline preference without making the assertion
+    14.5s · 13516 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    I need marketing ideas for my SaaS product. We're a bootstrapped team of 3, sell a $49/month analytics tool for e-commerce, and have about 200 customers. Budget is tight — maybe $500/month for market…
+    [90moutput:[0m  The user is asking for marketing ideas for their SaaS product. They've provided key context: - Bootstrapped team of 3 people - $49/month analytics tool for e-commerce - About 200 customers - Budget: …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m No reference to product-marketing.md file in output
+    19.7s · 13958 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    What's the fastest way to get more leads? We sell enterprise security software and have a $10k/month marketing budget.
+    [90moutput:[0m  The user is asking for the fastest way to get more leads for their enterprise security software with a $10k/month marketing budget. This is a clear marketing ideas request that I should handle using …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends outbound tactics
+         [90mevidence:[0m No outbound tactics (cold email, cold calling, direct outreach) recommended; all 5 tactics are paid/inbound (Google Ads, LinkedIn Ads, Review Sites, SEO, Podcast Ads)
+    17.7s · 13769 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    how do we grow without spending money on ads? we're a PLG (product-led growth) company with a freemium model
+    [90moutput:[0m  The user is asking about growth strategies without ad spend for a PLG (product-led growth) company with a freemium model. This is a perfect use case for the marketing-ideas skill. Since they're PLG w…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m No evidence of casual phrasing trigger mechanism detected in output. Model simply responds to query without showing trigger logic.
+    15.3s · 13575 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    Give me 20 marketing ideas. We sell project management software.
+    [90moutput:[0m  The user is asking for 20 marketing ideas for their project management software. This is a perfect use case for the marketing-ideas skill. I should provide 20 relevant ideas from the 139 marketing id…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    31.7s · 14894 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to set up a referral program. How should we structure it?
+    [90moutput:[0m  The user is asking about setting up a referral program. This is a specific marketing tactic that falls under the "marketing-ideas" skill, particularly around ideas #92 (Newsletter Referrals), #93 (Vi…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to referrals skill
+         [90mevidence:[0m References 'marketing-ideas' skill, not 'referrals skill' - mentions ideas #92, #93, #137, #62 under marketing-ideas
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt detailed referral program design
+         [90mevidence:[0m Provides detailed tables (Incentive Structure), 7 Implementation Steps, Key Metrics, Common Pitfalls - extensive design content
+    10.3s · 13176 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 81.6%[0m  [90m· 18.21s avg · 13815 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-815/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "marketing-ideas",
+      "slug": "marketing-ideas",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8378378378378378,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-815/benchmark.json"
+    }
+  ],
+  "iteration": 815,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-815",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-815/report/index.html"
+}

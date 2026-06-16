@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured. The model output is a conversational response asking for input, not a generated markdown file.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	2	FAIL	Applies three pricing axes framework	The model output lists three questions (Target Customers, Core Value, Go-to-market) but does not apply or discuss a 'three pricing axes framework'. It merely asks for clarification before proceeding.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	3	FAIL	Evaluates multiple pricing metrics	The model mentions 'choose the best value metric' in the future tense but does not currently evaluate any pricing metrics.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	4	FAIL	Discusses which metric aligns with value delivered	No discussion of metrics is present. The model asks 'What is the core value your platform delivers?' but does not discuss alignment.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	5	FAIL	Recommends good-better-best tier structure	The model output contains no recommendation on tier structure. It states it will help structure tiers once answers are provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	6	FAIL	Addresses pricing psychology	No mention of pricing psychology, anchoring, or similar concepts is found in the output.	1	9
+ab-testing	eval-1	with_skill	FAIL	3.2s	10609	7	FAIL	Provides specific pricing recommendation with rationale	The model explicitly states it needs more information before helping with pricing, providing no specific recommendation or rationale.	1	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.8s	11720	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	1	FAIL	Triggers on casual phrasing	The model output does not contain any evidence of triggering on casual phrasing. It responds directly to the implicit request for pricing strategy without acknowledging or adapting to a specific 'cas…	3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	6	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	11.2s	11338	7	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	5	FAIL	Applies pricing psychology (Hick's Law)	While the output mentions 'anchoring' and 'decoy' concepts implicitly, it does not explicitly apply Hick's Law (which states that choice complexity increases decision time). In fact, it suggests addi…	4	9
+ab-testing	eval-4	with_skill	FAIL	12.9s	11640	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	4	FAIL	Applies charm pricing or Rule of 100	The output uses prices like $79, $49, and $129 (which technically fit charm pricing), but it does not mention or apply the 'Rule of 100' (which suggests using percentages for low-priced items and abs…	5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	14.0s	11718	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	6.5s	10950	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	6.5s	10950	2	FAIL	References or defers to cro skill	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	6.5s	10950	3	FAIL	Explains that pricing is about pricing decisions	judge did not provide concrete evidence	6	9
+ab-testing	eval-6	with_skill	FAIL	6.5s	10950	4	PASS			6	9

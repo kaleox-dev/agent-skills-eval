@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	1	FAIL	Checks for product-marketing.md	No file checks or references to product-marketing.md in output. Output begins with general pricing psychology advice without file verification.	1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	Anchoring applied in Section 1. Charm pricing mentioned in mental models list but not applied in recommendations. Rule of 100 listed in mental models (item 10) but never applied in actual recommendat…	1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	4	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	21.7s	6370	7	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	1	FAIL	Explains scarcity principle clearly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	2	FAIL	Provides legitimate SaaS applications	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	3	FAIL	Distinguishes ethical from manipulative use	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	4	FAIL	Provides specific examples	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	5	FAIL	References related mental models	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-2	with_skill	FAIL	17.5s	6026	6	FAIL	Addresses ethical considerations directly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model reasoning shows 'The user is asking about psychological principles' with no indication of phrasing analysis.	3	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	25.2s	6629	6	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	2	FAIL	Applies Hick's Law	No mention of Hick's Law in the output. Only Goal-Gradient, IKEA, Endowment, Zeigarnik, Activation Energy, Commitment, BJ Fogg, EAST, COM-B, Foot-in-the-Door, Peak-End mentioned.	4	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	18.5s	6089	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	3	FAIL	Applies Zero-Price Effect	Zero-Price Effect listed in initial points but not explained or applied in trial vs freemium context in detailed sections	5	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	20.9s	6319	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	15.3s	5840	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	15.3s	5840	2	FAIL	References or defers to ab-testing skill	Model references 'marketing-psychology skill' and 'A/B testing methodology' but not 'ab-testing skill' specifically.	6	7
+ab-testing	eval-6	with_skill	FAIL	15.3s	5840	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	15.3s	5840	4	FAIL	Does not attempt full test design using psychology patterns	Model provides full test design including Variant A/B CTAs, implementation checklist, sample size, metrics, and timeline structure.	6	7

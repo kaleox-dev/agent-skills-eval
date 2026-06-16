@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' and text is a conversational markdown response, not a specific 'product-marketing.md' file download or content block labeled as such.	1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	3	FAIL	Provides ideas from the 139 marketing ideas catalog	The model outputs 3 specific ideas ('Competitor Importer', 'Niche Community', 'Strategic Partner'). There is no mention of a '139 marketing ideas catalog' or reference to specific items from such a c…	1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	7	FAIL	Prioritizes by likely impact	The ideas are numbered 1, 2, 3, but the text does not explicitly state the ranking criteria is 'likely impact' or compare their relative impact scores to justify the order. It lists them as '3 high-l…	1	9
+ab-testing	eval-1	with_skill	FAIL	15.2s	13969	8	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	3	FAIL	Recommends outbound tactics	The output recommends inbound channels: Google Ads (Search), LinkedIn Sponsored Content (Paid Social), and SEO/Parasite SEO. It does not recommend active outbound tactics such as cold email, cold cal…	2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	10.5s	13459	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	1	FAIL	Triggers on casual phrasing	The model output begins with 'Since you are a PLG (Product-Led Growth) company with a Freemium model...', which is a direct response to specific technical terminology rather than casual phrasing. It …	3	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	5	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	13.3s	13759	6	PASS			3	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	5	FAIL	Notes authority building is longer-term	The model emphasizes speed and quick wins, stating 'build authority quickly', 'Immediate', 'Month 1', and 'low budget if you do the analysis yourself'. It does not characterize authority building as …	4	9
+ab-testing	eval-4	with_skill	FAIL	14.2s	13843	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	15.8s	14131	6	PASS			5	9
+ab-testing	eval-6	with_skill	FAIL	10.3s	13495	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	10.3s	13495	2	FAIL	References or defers to referrals skill	The model does not explicitly name a 'referrals skill', 'referrals agent', or defer to a specific internal skill module. It references general strategies and IDs (e.g., 'Ideas #137', 'Ideas #93') but…	6	9
+ab-testing	eval-6	with_skill	FAIL	10.3s	13495	3	FAIL	Does not attempt detailed referral program design	The model provides a comprehensive, detailed framework including specific incentive types (Credit/Cash, Feature Access, etc.), trigger timing (On Signup, On First Payment), recurring vs one-time stru…	6	9
+ab-testing	eval-6	with_skill	FAIL	10.3s	13495	4	PASS			6	9

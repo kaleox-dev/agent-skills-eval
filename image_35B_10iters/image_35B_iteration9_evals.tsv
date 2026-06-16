@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	1	FAIL	Checks for product-marketing.md	The model output is a direct textual response providing advice and prompts. It does not check, reference, or include the content of a file named 'product-marketing.md'.	1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	2	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	5	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	6	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	8.9s	11141	7	PASS			1	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	1	FAIL	Refuses to use AI generation for product UI	judge did not provide concrete evidence	2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	3	FAIL	Recommends real screenshots at 2x resolution	The model suggests capturing a 'real screenshot' but does not mention '2x resolution' or specify any technical resolution requirements.	2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	5	FAIL	Suggests specific screenshot tools	The model states 'I can guide you on how to do this cleanly' and 'I can help you guide you through capturing a clean screenshot', but does not list or suggest any specific screenshot tools (e.g., Gre…	2	9
+ab-testing	eval-2	with_skill	FAIL	5.5s	10916	6	FAIL	Notes this as a common mistake	The model describes the hallucination issue and offers solutions, but does not explicitly state that generating product UI via AI is a 'common mistake'.	2	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	1	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	2	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	3	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	4	PASS			3	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	5	FAIL	Mentions Ideogram for text-heavy designs	The model mentions 'Ideogram if you want the text baked in' but does not characterize it as being for 'text-heavy designs'; it suggests it for baking in short text.	3	9
+ab-testing	eval-3	with_skill	FAIL	4.2s	10796	6	FAIL	Recommends testing at display size	The model output contains no mention of testing the design at display size.	3	9
+ab-testing	eval-4	with_skill	FAIL	11.1s	11522	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.1s	11522	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	11.1s	11522	3	FAIL	Notes Instagram 4:5 variant	The output only mentions Instagram Feed (1:1) and Instagram Stories (9:16). It does not mention the 4:5 aspect ratio variant for Instagram.	4	9
+ab-testing	eval-4	with_skill	FAIL	11.1s	11522	4	FAIL	Suggests programmatic text overlays for variants	The output suggests using 'Canva's Brand Kit to add your logo/text consistently' and mentions 'clean background for text overlay' in a prompt template, but it does not suggest 'programmatic' text ove…	4	9
+ab-testing	eval-4	with_skill	FAIL	11.1s	11522	5	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	8.9s	11291	6	FAIL	Provides command line tool example	The output mentions CDN features (Cloudflare, etc.), HTML `<picture>` implementation, and Server-Side Detection. It does not provide any command line tool examples (e.g., `cwebp`, `sharp`, `imagemagi…	5	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	3	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	4	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	5	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	16.8s	12242	6	FAIL	Notes this is best for high-volume blogs	The model recommends this workflow for '2 posts/week' and describes it as a 'SaaS' use case. It does not explicitly state this is best for 'high-volume blogs'; in fact, it contrasts it with Canva whi…	6	9

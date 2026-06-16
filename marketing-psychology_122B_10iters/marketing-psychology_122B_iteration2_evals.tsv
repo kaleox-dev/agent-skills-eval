@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	1	FAIL	Checks for product-marketing.md	However, since I don't have access to external files in this conversation	1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	Rule of 100 only mentioned in initial list, not applied in recommendations	1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	4	FAIL	Applies loss aversion to tier differentiation	Loss aversion discussed for pricing page generally, not specifically for tier differentiation	1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	23.9s	6553	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	1	FAIL	Explains scarcity principle clearly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	2	FAIL	Provides legitimate SaaS applications	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	3	FAIL	Distinguishes ethical from manipulative use	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	4	FAIL	Provides specific examples	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	5	FAIL	References related mental models	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-2	with_skill	FAIL	18.7s	6117	6	FAIL	Addresses ethical considerations directly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	2	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model states: 'The user is asking about psychological principles for writing better marketing copy. This is a direct fit for the marketing-psycholo…	3	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	28.7s	6834	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	1	FAIL	Applies Goal-Gradient Effect	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	2	FAIL	Applies Hick's Law	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	3	FAIL	Applies IKEA Effect or Endowment Effect	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	4	FAIL	Applies Zeigarnik Effect or commitment principles	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	5	FAIL	Explains how each applies to onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	18.3s	6079	6	FAIL	Provides actionable recommendations per model	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Role: Strict JSON-only evaluator. * Input: Assertions list, Model …	4	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	3	FAIL	Applies Zero-Price Effect	Zero-Price Effect is not explicitly discussed in the final output; only mentioned in internal thinking process.	5	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	36.4s	7593	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	16.8s	5952	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	16.8s	5952	2	FAIL	References or defers to ab-testing skill	No explicit reference to 'ab-testing skill' - only general 'skill set' mentioned: "leveraging the mental models in my skill set"	6	2
+ab-testing	eval-6	with_skill	FAIL	16.8s	5952	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	16.8s	5952	4	FAIL	Does not attempt full test design using psychology patterns	Model provides full test design with: Hypothesis section, Test Design table, Sample Size & Duration, Key Metrics, Analysis Framework	6	2

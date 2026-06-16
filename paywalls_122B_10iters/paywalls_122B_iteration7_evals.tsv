@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	1	FAIL	Checks for product-marketing.md	Mentions 'Let me check if there's any product marketing context file' but no actual file read or reference provided	1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	4	FAIL	Includes headline, value demo, comparison, social proof, CTA	Missing comparison and social proof elements - only headline, value demo, and CTA are present in the copy recommendations section	1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	6	FAIL	Addresses user's emotional state at the limit	Only mentions 'Respect their work' and 'Don't lose data' but does not address emotional states like frustration, disappointment, or anxiety at hitting the limit	1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	18.4s	6797	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	6	FAIL	Includes social proof	No testimonials, user metrics, or external validation present	2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	18.9s	6832	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in input or model response; structured guide output only	3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	2	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.7s	6041	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	5	FAIL	Includes relevant plan comparison	No plan comparison table or Free vs Pro feature comparison provided; only mentioned as "Single plan vs. plan comparison" experiment to test	4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	6	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	14.7s	6487	7	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	16.0s	6600	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	6007	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	6007	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	6007	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	6007	4	FAIL	Does not attempt public pricing page optimization	I'd be happy to help you optimize your pricing page! ... Common Pricing Page Levers ... Once you share a bit more about your setup, I can give you specific recommendations	6	7

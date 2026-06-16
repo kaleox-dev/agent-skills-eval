@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output. Model begins directly with launch plan without checking for existing files.	1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	4	FAIL	Recommends five-phase launch approach	Output shows 4 phases in timeline table: 'Internal Launch', 'Alpha Launch', 'Beta Launch', 'Full Launch' - not 5 phases	1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	17.3s	4358	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	12.4s	3926	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model simply states 'Great question!' without indicating trigger activation.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.0s	3821	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	5	FAIL	Suggests analyzing which channels produced signups	Model asks 'What channels did you use for launch?' but does not suggest analyzing which channels produced signups	4	5
+ab-testing	eval-4	with_skill	FAIL	13.0s	3994	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	12.3s	3932	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	12.2s	3923	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	12.2s	3923	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	12.2s	3923	3	FAIL	Does not attempt full marketing brainstorm using launch strategy patterns	Provides 10 high-impact, low-budget marketing tactics with detailed descriptions across Content & SEO, Community & Partnerships, Email & Direct Outreach, and Launch & Momentum sections.	6	5
+ab-testing	eval-6	with_skill	FAIL	12.2s	3923	4	PASS			6	5

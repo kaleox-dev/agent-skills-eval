@@ -1,0 +1,85 @@
+
+[1m▶ pricing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    We have a Basic ($19), Pro ($49), and Enterprise (custom) plan. The Pro plan gets 70% of signups. Should we add a plan between Pro and Enterprise?
+    [90moutput:[0m  This is a common dilemma. When the "middle" tier (Pro) captures the majority of signups (70%), it usually indicates one of two things: 1. **Pro is the "Goldilocks" zone:** It’s perfectly priced and p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies pricing psychology (Hick's Law)
+         [90mevidence:[0m The model mentions 'cognitive load' but does not reference Hick's Law. It suggests adding a tier (expanding options) without explicitly discussing Hick's Law as the governing psychological principle …
+    11.5s · 11499 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    Help me figure out pricing for our new SaaS product. It's a customer support platform for e-commerce stores. We're not sure whether to charge per agent, per ticket, or flat rate. Currently thinking $…
+    [90moutput:[0m  To give you specific pricing advice, I need to understand your product and market better. However, based on your description (Customer Support for E-commerce) and price range ($49-199), I can provide…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files explicitly state: 'No output files were captured.' The model output is a direct textual response, not a file generation.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies three pricing axes framework
+         [90mevidence:[0m The model discusses 'Value Metric' (Per Agent vs Per Ticket) and 'Tier Structure', but does not explicitly identify or apply a standard 'three pricing axes framework' (e.g., Price, Features, Support,…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses pricing psychology
+         [90mevidence:[0m The output focuses on value metrics, features, and competitive analysis. It does not mention psychological pricing tactics such as anchoring, charm pricing ($99 vs $100), decoy effect, or framing eff…
+    10.6s · 11427 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    We want to raise our prices by 30%. We've been at $29/month for 2 years and we've added a lot of features. How do we do this without losing customers?
+    [90moutput:[0m  Raising prices by 30% is a significant move, but the fact that you’ve been at $29/month for two years and have added significant value is the perfect context for it. You are likely **underpriced** re…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests annual billing as softening measure
+         [90mevidence:[0m The entire model output was reviewed. There is no mention of 'annual billing', 'yearly', 'annual', or any recommendation to switch to annual plans to soften the price impact. The output focuses on mo…
+    12.0s · 11540 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    how do we figure out what people will actually pay? we're launching a new product and have no idea what to charge.
+    [90moutput:[0m  Since you have no existing data, we need to rely on **market research** and **psychological testing** rather than historical analysis. This is actually a great position to be in because you aren't fi…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model output begins with 'Since you have no existing data...' which addresses the implicit context of the prompt but does not exhibit any specific trigger behavior or reaction to 'casual phrasing…
+    14.6s · 11694 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    Our pricing page conversion rate is only 1.5%. Can you review the page and suggest improvements?
+    [90moutput:[0m  This is a critical issue. A 1.5% conversion rate for a SaaS pricing page is generally considered low. Benchmarks vary by industry and motion, but typical ranges are: * **Self-serve SMB:** 2–4%+ * **M…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as pricing page CRO, not pricing strategy
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that pricing is about pricing decisions
+         [90mevidence:[0m judge did not provide concrete evidence
+    6.8s · 11016 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    What pricing psychology tactics should we use on our pricing page? We want the $79 plan to be the most popular.
+    [90moutput:[0m  To make the **$79 plan** the "recommended" middle tier (the Better tier), you need to use psychological triggers that make the $79 plan look like the "no-brainer" value choice compared to the $49 pla…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Applies charm pricing or Rule of 100
+         [90mevidence:[0m The model uses integer pricing ($49, $79, $149). It does not employ charm pricing (ending in 9 or 5, though 49/79 are close, 79 is often considered charm, but the prompt specifically asks for the tac…
+    12.8s · 11719 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 70.0%[0m  [90m· 11.38s avg · 11483 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-948/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "pricing",
+      "slug": "pricing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7297297297297297,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-948/benchmark.json"
+    }
+  ],
+  "iteration": 948,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-948",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-948/report/index.html"
+}

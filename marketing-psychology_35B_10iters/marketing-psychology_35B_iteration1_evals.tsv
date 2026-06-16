@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	1	FAIL	Checks for product-marketing.md	The 'Output files' section explicitly states: 'No output files were captured.' No file named 'product-marketing.md' exists in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	The output mentions 'Anchoring' and 'Rule of 100' in section 2. However, it does not mention or apply 'charm pricing' (e.g., $9.99). The assertion requires all three models.	1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.1s	6412	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	15.4s	6122	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	16.7s	6358	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	3	FAIL	Applies IKEA Effect or Endowment Effect	The model output does not mention 'IKEA Effect' or 'Endowment Effect'. It mentions 'Foot-in-the-Door', 'Commitment & Consistency', and 'Mental Accounting', but not the specific effects requested in t…	4	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	15.4s	6061	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	3	FAIL	Applies Zero-Price Effect	The model output does not mention or explain the Zero-Price Effect. It discusses 'Value Perception & Anchoring' and 'Loss Aversion', but fails to cite the specific behavioral phenomenon where demand …	5	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	10.2s	5643	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	13.6s	6016	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.6s	6016	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.6s	6016	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	13.6s	6016	4	FAIL	Does not attempt full test design using psychology patterns	The output explicitly provides a 'full test design' including: Section 1 (Hypothesis), Section 2 (Test Variables/Mental Models with copy examples and visual cues), Section 3 (Experimental Design & Co…	6	1

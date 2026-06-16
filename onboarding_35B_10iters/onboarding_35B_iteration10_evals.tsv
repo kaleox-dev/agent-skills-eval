@@ -1,0 +1,40 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	11.5s	8424	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.7s	8526	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	5	FAIL	Suggests multi-channel onboarding	The model only suggested 'Welcome + Re-engagement Email Sequence'. There were no suggestions for SMS, push notifications, in-app messages, or other channels.	3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	6	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	9.3s	8184	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	7.2s	7952	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.2s	8259	6	FAIL	Recommends testing different approaches	The model provides a 'Decision Framework' and specific recommendations based on product type (e.g., 'If your product is a simple mobile app...'). It advises tracking metrics like 'Activation Rate' an…	5	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	7.3s	7948	4	FAIL	Does not attempt signup form redesign using onboarding patterns	The model explicitly references 'Onboarding skill principles' to justify minimizing friction ('Per the **Onboarding** skill principles, we need to minimize friction...') and suggests moving fields to…	6	10

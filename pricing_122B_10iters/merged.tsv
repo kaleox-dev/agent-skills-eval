@@ -1,0 +1,371 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output	1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	5	FAIL	Recommends good-better-best tier structure	No tier structure recommendation provided	1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	6	FAIL	Addresses pricing psychology	No pricing psychology concepts mentioned (anchoring, decoy, etc.)	1	1
+ab-testing	eval-1	with_skill	FAIL	15.5s	11508	7	FAIL	Provides specific pricing recommendation with rationale	Per-agent recommendation given but no specific price points within $49-199 range	1	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	4	FAIL	Provides communication strategy	Only promises to help draft communication later: 'Once you answer the questions above, I can help you... Draft the communication to existing customers' - no actual strategy provided	2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	6	FAIL	Suggests annual billing as softening measure	No mention of annual billing or billing frequency as a softening measure in the entire output	2	1
+ab-testing	eval-2	with_skill	FAIL	12.8s	11290	7	FAIL	Notes some churn is expected	Mentions churn risks ('Some customers may leave during the notice period') but does not explicitly note that some churn is expected as a general principle	2	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger in output. Output begins with 'Great question!' but does not reference triggering on casual language.	3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	3	FAIL	Applies MaxDiff for feature importance	MaxDiff method not mentioned anywhere in the output. Only Van Westendorp, Gabor-Granger, Conjoint Analysis, and Competitive Benchmarking are covered.	3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	6	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	13.3s	11306	7	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	5	FAIL	Applies pricing psychology (Hick's Law)	"No explicit reference to Hick's Law in output; only mentions ""decision paralysis"" without citing the specific framework name"	4	1
+ab-testing	eval-4	with_skill	FAIL	16.3s	11557	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	14.7s	11468	6	FAIL	Cross-references cro or marketing-psychology	No explicit cross-reference to CRO or marketing-psychology documentation or frameworks	5	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	10934	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Model states: 'This is a pricing optimization question, so I should use the pricing skill' - does not distinguish CRO from pricing strategy	6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	10934	2	FAIL	References or defers to cro skill	Model explicitly states 'I should use the pricing skill' - no reference to cro skill	6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	10934	3	FAIL	Explains that pricing is about pricing decisions	No explanation provided about pricing being about pricing decisions in the output	6	1
+ab-testing	eval-6	with_skill	FAIL	8.0s	10934	4	PASS			6	1
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	2	FAIL	Applies three pricing axes framework	Model does not apply a 'three pricing axes framework' - only discusses pricing metrics	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	5	FAIL	Recommends good-better-best tier structure	Lists 'Design 2-3 tier structure (Good-Better-Best framework)' as future help, not a recommendation	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	6	FAIL	Addresses pricing psychology	No discussion of pricing psychology principles (anchoring, decoy, etc.)	1	2
+ab-testing	eval-1	with_skill	FAIL	10.9s	11142	7	FAIL	Provides specific pricing recommendation with rationale	Model asks for more context before giving recommendations: 'Once you answer the context questions above, I can help you... Set specific price points'	1	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	4	FAIL	Provides communication strategy	Model states 'Communication templates for customers' will be provided 'Once you answer the context questions above' - no actual templates or strategy delivered	2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	12.9s	11290	7	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection mechanism in output. Model responds with 'Great question!' but does not demonstrate specific triggering on casual phrasing.	3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	6	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	12.1s	11211	7	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	1	FAIL	Applies good-better-best tier structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	2	FAIL	Analyzes current tier performance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	3	FAIL	Evaluates whether 4th tier addresses real gap	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	4	FAIL	Considers choice paralysis risk	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	5	FAIL	Applies pricing psychology (Hick's Law)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-4	with_skill	FAIL	14.7s	11436	6	FAIL	Provides specific recommendation with rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's evaluation run based on provided assertions and model output. * Input: 6 assertions, Model …	4	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	1	FAIL	Applies pricing psychology tactics	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	2	FAIL	Applies anchoring effect	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	3	FAIL	Applies decoy effect or visual emphasis	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	4	FAIL	Applies charm pricing or Rule of 100	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	5	FAIL	Provides specific pricing page recommendations	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-5	with_skill	FAIL	16.8s	11662	6	FAIL	Cross-references cro or marketing-psychology	judge returned unparseable response: The user wants me to evaluate a model's output against a set of assertions. I need to grade each assertion based on whether the model output demonstrates the requ…	5	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Model states: 'This is a pricing-related question, so I should use the pricing skill.' - References pricing skill, not CRO.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	2	FAIL	References or defers to cro skill	No mention of 'cro skill' anywhere. Model says 'I should use the pricing skill' instead.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	3	FAIL	Explains that pricing is about pricing decisions	No explanation provided about pricing being about pricing decisions. Model focuses on gathering context only.	6	2
+ab-testing	eval-6	with_skill	FAIL	10.3s	11127	4	FAIL	Does not attempt full page CRO audit	Model provides 'most common pricing page killers' table with 7 issues and quick fixes - this constitutes an audit attempt.	6	2
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md file in output	1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	2	FAIL	Applies three pricing axes framework	No formal three pricing axes framework applied; only three pricing metrics discussed without framework structure	1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	4	FAIL	Discusses which metric aligns with value delivered	Does not explicitly discuss alignment between pricing metric and value delivered to customers	1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	5	FAIL	Recommends good-better-best tier structure	Output states 'Once I have answers to the questions above, I can give you a specific pricing structure with tiers' - no tier structure recommended	1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	6	FAIL	Addresses pricing psychology	No discussion of pricing psychology concepts (anchoring, decoy, etc.) in output	1	3
+ab-testing	eval-1	with_skill	FAIL	11.5s	11173	7	FAIL	Provides specific pricing recommendation with rationale	Output defers specific pricing: 'Once I have answers to the questions above, I can give you a specific pricing structure'	1	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	6	FAIL	Suggests annual billing as softening measure	No mention of annual billing in model output	2	3
+ab-testing	eval-2	with_skill	FAIL	12.1s	11233	7	FAIL	Notes some churn is expected	Model focuses on minimizing churn but does not acknowledge that some churn will be expected/acceptable	2	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	2	FAIL	Applies Van Westendorp price sensitivity method	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	3	FAIL	Applies MaxDiff for feature importance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	4	FAIL	Recommends competitive benchmarking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	5	FAIL	Explains how to run each method	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	6	FAIL	Suggests practical alternatives (customer interviews, competitive analysis)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-3	with_skill	FAIL	10.7s	11107	7	FAIL	Provides executable pricing research plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: List of assertions, Model output (text). * Output Format: S…	3	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	1	FAIL	Applies good-better-best tier structure	Model references 'Good-Better structure is working' but does not apply or demonstrate the tier structure in recommendations	4	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	3	FAIL	Evaluates whether 4th tier addresses real gap	Model asks 'Is there a real gap or are they just trying to capture more value?' but does not evaluate it	4	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	5	FAIL	Applies pricing psychology (Hick's Law)	No mention of Hick's Law or pricing psychology terminology in output	4	3
+ab-testing	eval-4	with_skill	FAIL	12.1s	11239	6	FAIL	Provides specific recommendation with rationale	'Before I recommend, I need to understand a few things' and 'Share answers to the questions above, and I'll give you a specific recommendation' - defers recommendation	4	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	4	FAIL	Applies charm pricing or Rule of 100	Model recommends 'round pricing ($79, not $79.99)' - opposite of charm pricing; Rule of 100 not mentioned anywhere in output	5	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	18.4s	11785	6	FAIL	Cross-references cro or marketing-psychology	Model references 'pricing skill' and 'pricing fundamentals' but no explicit cross-reference to 'cro' or 'marketing-psychology' files/sections	5	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	11130	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	11130	2	FAIL	References or defers to cro skill	I should use the pricing skill (references pricing skill, not CRO skill)	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	11130	3	FAIL	Explains that pricing is about pricing decisions	No explanation of pricing as pricing decisions found; focuses on page elements and conversion optimization instead	6	3
+ab-testing	eval-6	with_skill	FAIL	10.4s	11130	4	PASS			6	3
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product marketing context file first' but no file check was performed; output files show 'No output files were captured'	1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	4	FAIL	Discusses which metric aligns with value delivered	Model mentions 'Aligns with usage' for per-ticket but does not explicitly discuss which metric aligns with value delivered to customers	1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	6	FAIL	Addresses pricing psychology	No discussion of pricing psychology concepts (anchoring, decoy pricing, price framing, etc.) in output	1	4
+ab-testing	eval-1	with_skill	FAIL	12.8s	11325	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	6	FAIL	Suggests annual billing as softening measure	No mention of annual billing found in output; only monthly pricing discussed ($29/month, $38/month)	2	4
+ab-testing	eval-2	with_skill	FAIL	20.4s	11939	7	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Model responds to pricing question without indicating trigger mechanism.	3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	16.3s	11587	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	4	FAIL	Considers choice paralysis risk	"No mention of choice paralysis risk in output; only states ""3 tiers is industry standard"" without discussing over-tiering risks"	4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	5	FAIL	Applies pricing psychology (Hick's Law)	"Hick's Law not mentioned anywhere in output; model references ""Good-Better-Best framework"" but not Hick's Law specifically"	4	4
+ab-testing	eval-4	with_skill	FAIL	14.7s	11367	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	20.5s	11987	6	FAIL	Cross-references cro or marketing-psychology	No explicit references to 'CRO' or 'marketing-psychology' documents or knowledge base found in output	5	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	10975	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	10975	2	FAIL	References or defers to cro skill	"Model states ""This falls under the pricing skill I have access to"" - references pricing skill, not cro skill"	6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	10975	3	FAIL	Explains that pricing is about pricing decisions	No statement in output explaining pricing is about pricing decisions	6	4
+ab-testing	eval-6	with_skill	FAIL	8.6s	10975	4	PASS			6	4
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	1	FAIL	Checks for product-marketing.md	No file references or tool calls present in output. Output mentions 'I should use the pricing skill' but no actual file check.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	2	FAIL	Applies three pricing axes framework	No three pricing axes framework applied. Model compares three pricing metrics in table but does not apply a formal framework.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	5	FAIL	Recommends good-better-best tier structure	Model states 'I can help you... Design your tier structure (Good-Better-Best)' as future action, not an actual recommendation.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	6	FAIL	Addresses pricing psychology	No mention of pricing psychology concepts (anchoring, decoy, framing, etc.) in output.	1	5
+ab-testing	eval-1	with_skill	FAIL	13.4s	11374	7	FAIL	Provides specific pricing recommendation with rationale	Model explicitly states 'Once you answer the questions above, I can help you' - no specific price points or final recommendation given.	1	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	4	FAIL	Provides communication strategy	Only mentions timing ('Announce 60-90 days in advance') but no substantive communication content, channels, or messaging strategy provided	2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.1s	11346	7	FAIL	Notes some churn is expected	No explicit statement acknowledging that some churn is expected; only mentions 'reduces churn' and 'Zero churn risk' for grandfathering option	2	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	1	FAIL	Triggers on casual phrasing	No reference to casual phrasing or trigger based on phrasing style detected in output.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	3	FAIL	Applies MaxDiff for feature importance	MaxDiff not mentioned anywhere in the output.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	5	FAIL	Explains how to run each method	Competitive Benchmarking and Usage-Value Correlation lack clear 'how to run' instructions.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	6	FAIL	Suggests practical alternatives (customer interviews, competitive analysis)	Customer interviews not explicitly mentioned as an alternative method.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.6s	11209	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	1	FAIL	Applies good-better-best tier structure	Model mentions '3 tiers is industry standard (Good-Better-Best)' but does not apply this framework to analyze or recommend. Only acknowledges existing structure.	4	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	2	FAIL	Analyzes current tier performance	Model only notes 'Pro gets 70% of signups' without deeper performance analysis. Explicitly asks for more metrics: 'What's your ARPU across all plans? What's your conversion rate?'	4	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	3	FAIL	Evaluates whether 4th tier addresses real gap	Model provides framework/scenarios but explicitly defers evaluation: 'Before recommending whether to add a plan, I need to understand a few key things.' No definitive gap evaluation made.	4	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	4	FAIL	Considers choice paralysis risk	Only brief mention in Scenario B: 'If adding a tier creates decision paralysis.' No substantive analysis of choice paralysis risk.	4	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	5	FAIL	Applies pricing psychology (Hick's Law)	Hick's Law is not mentioned anywhere in the output. 'Decision paralysis' mentioned once but not linked to Hick's Law.	4	5
+ab-testing	eval-4	with_skill	FAIL	14.3s	11433	6	FAIL	Provides specific recommendation with rationale	No specific recommendation given. Model explicitly states 'Before recommending whether to add a plan, I need to understand a few key things' and ends with asking for more information.	4	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	15.0s	11570	6	FAIL	Cross-references cro or marketing-psychology	Model mentions 'reference materials' but does not explicitly cross-reference 'cro' or 'marketing-psychology' documents by name.	5	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	10924	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	10924	2	FAIL	References or defers to cro skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	10924	3	FAIL	Explains that pricing is about pricing decisions	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-6	with_skill	FAIL	7.5s	10924	4	FAIL	Does not attempt full page CRO audit	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	5
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to their file system' - no evidence file was actually checked or found.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	2	FAIL	Applies three pricing axes framework	No explicit 'three pricing axes framework' mentioned or applied in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	3	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	4	PASS			1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	5	FAIL	Recommends good-better-best tier structure	Model lists 'Tier structure' as something it will help with AFTER gathering context - no actual recommendation provided.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	6	FAIL	Addresses pricing psychology	No mention of pricing psychology concepts (anchoring, decoy, framing, etc.) in output.	1	6
+ab-testing	eval-1	with_skill	FAIL	11.7s	11213	7	FAIL	Provides specific pricing recommendation with rationale	Model explicitly states 'Before I can give you specific recommendations, I need to understand your business better' - no specific pricing given.	1	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	5	FAIL	Addresses new vs existing customer timing	Model asks 'Whether to do this for all customers or segment by usage/tenure' but does not provide explicit new vs existing customer timing recommendations	2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	10.1s	11078	7	FAIL	Notes some churn is expected	Model discusses 'minimizing churn' and 'churn risk assessment' but never explicitly states some churn is expected/inevitable	2	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	1	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	5	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	6	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	9.4s	11017	7	FAIL	Provides executable pricing research plan	Plan requires 'Once I have more context' before execution. No concrete timeline, survey template, or implementation steps provided.	3	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	1	FAIL	Applies good-better-best tier structure	Model mentions 'Good-Better-Best framework' but does not apply it to analyze the current pricing structure - only states '3 tiers is standard' without using the framework to evaluate tier organizatio…	4	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	2	FAIL	Analyzes current tier performance	Model asks for performance data ('What's your current conversion rate? What's your ARPU?') rather than analyzing existing tier performance.	4	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	3	FAIL	Evaluates whether 4th tier addresses real gap	No evaluation made - model states 'Before I recommend whether to add a tier, I need to understand your situation better' and asks clarifying questions instead.	4	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	5	FAIL	Applies pricing psychology (Hick's Law)	Hick's Law is not mentioned anywhere in the output.	4	6
+ab-testing	eval-4	with_skill	FAIL	9.5s	11041	6	FAIL	Provides specific recommendation with rationale	Model explicitly defers recommendation: 'Before I recommend whether to add a tier, I need to understand your situation better' - no specific recommendation provided.	4	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	17.3s	11801	6	FAIL	Cross-references cro or marketing-psychology	No explicit mention of 'CRO' or 'marketing-psychology' terms in the output	5	6
+ab-testing	eval-6	with_skill	FAIL	9.9s	11055	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.9s	11055	2	FAIL	References or defers to cro skill	Model states 'I should use the pricing skill' - references pricing skill, not cro skill	6	6
+ab-testing	eval-6	with_skill	FAIL	9.9s	11055	3	FAIL	Explains that pricing is about pricing decisions	No statement found explaining pricing is about pricing decisions; output focuses on pricing page CRO	6	6
+ab-testing	eval-6	with_skill	FAIL	9.9s	11055	4	PASS			6	6
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	1	FAIL	Checks for product-marketing.md	No file reference or check mentioned in output	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	2	FAIL	Applies three pricing axes framework	Output only asks questions, does not apply pricing axes framework	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	3	FAIL	Evaluates multiple pricing metrics	Mentions per agent/ticket/flat rate but does not evaluate them	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	4	FAIL	Discusses which metric aligns with value delivered	Asks about value proposition but does not discuss metric alignment	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	5	FAIL	Recommends good-better-best tier structure	States 'can help structure pricing tiers' but provides no recommendation	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	6	FAIL	Addresses pricing psychology	No mention of pricing psychology in output	1	7
+ab-testing	eval-1	with_skill	FAIL	8.0s	10927	7	FAIL	Provides specific pricing recommendation with rationale	Output explicitly states 'I need to understand your situation better' before providing recommendations	1	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	1	FAIL	Applies price increase strategies	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	2	FAIL	Recommends grandfathering or grace period approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	3	FAIL	Recommends tying increase to new value	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	4	FAIL	Provides communication strategy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	5	FAIL	Addresses new vs existing customer timing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	6	FAIL	Suggests annual billing as softening measure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-2	with_skill	FAIL	9.8s	11061	7	FAIL	Notes some churn is expected	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's response based on specific assertions. * Input: A list of assertions, a model output (text)…	2	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	1	FAIL	Triggers on casual phrasing	No explicit trigger mechanism shown in output	3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	2	FAIL	Applies Van Westendorp price sensitivity method	Only mentions 'Van Westendorp method (I can help design this)' - does not apply it	3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	3	FAIL	Applies MaxDiff for feature importance	No mention of MaxDiff in output	3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	5	FAIL	Explains how to run each method	Methods listed but no explanation of how to run them	3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	9.4s	11013	7	FAIL	Provides executable pricing research plan	Output asks questions first, no executable plan provided	3	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.6s	11180	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	15.3s	11541	6	FAIL	Cross-references cro or marketing-psychology	No cross-references to cro or marketing-psychology documentation or resources found in output	5	7
+ab-testing	eval-6	with_skill	FAIL	11.3s	11183	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Model states 'This is a pricing-related question, so I should use the pricing skill' - does not distinguish CRO from pricing strategy	6	7
+ab-testing	eval-6	with_skill	FAIL	11.3s	11183	2	FAIL	References or defers to cro skill	Model says 'I should use the pricing skill' - never mentions 'cro' skill or conversion rate optimization skill	6	7
+ab-testing	eval-6	with_skill	FAIL	11.3s	11183	3	FAIL	Explains that pricing is about pricing decisions	No explanation of pricing being about pricing decisions found in output - only diagnostic questions and best practices provided	6	7
+ab-testing	eval-6	with_skill	FAIL	11.3s	11183	4	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	1	FAIL	Checks for product-marketing.md	Model states 'I should also check if there's a product marketing context file first' but no file is actually checked or referenced in output.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	2	FAIL	Applies three pricing axes framework	No three pricing axes framework is applied in the output.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	3	FAIL	Evaluates multiple pricing metrics	Model mentions 'per agent vs. per ticket vs. flat rate' but provides no evaluation of these metrics.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	4	FAIL	Discusses which metric aligns with value delivered	No discussion of metric alignment with value delivered in output.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	5	FAIL	Recommends good-better-best tier structure	No tier structure is recommended; model only states it 'can help you...Design tier structure' after gathering more info.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	6	FAIL	Addresses pricing psychology	No pricing psychology concepts addressed in the output.	1	8
+ab-testing	eval-1	with_skill	FAIL	8.8s	10991	7	FAIL	Provides specific pricing recommendation with rationale	Model explicitly states 'Once I understand this, I can help you' - no specific pricing recommendation provided.	1	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	1	FAIL	Applies price increase strategies	Model asks 11 questions before providing any strategy. Output states 'Before I give advice, I need to gather more context' and 'Once I have this context, I can advise on' - no actual strategies appli…	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	2	FAIL	Recommends grandfathering or grace period approach	Output mentions 'grace periods, grandfathering' only in future promises ('I can advise on') without any actual recommendation.	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	3	FAIL	Recommends tying increase to new value	Output mentions 'how to frame the increase around new features' as future advice, not an actual recommendation.	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	4	FAIL	Provides communication strategy	Output lists 'communication strategy' under 'What I'll Help You With' but provides no actual communication strategy.	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	5	FAIL	Addresses new vs existing customer timing	Output mentions 'Customer segmentation (who gets grandfathered vs. who pays new prices)' as future help, not addressed in output.	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	6	FAIL	Suggests annual billing as softening measure	No mention of annual billing anywhere in the output.	2	8
+ab-testing	eval-2	with_skill	FAIL	8.7s	10969	7	FAIL	Notes some churn is expected	Output states goal is 'minimal churn' but never acknowledges that some churn is expected/inevitable.	2	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	1	FAIL	Triggers on casual phrasing	No evidence of model recognizing or responding to casual phrasing in user input. Output begins with standard greeting 'Great question!' without indication of casual language detection.	3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	3	FAIL	Applies MaxDiff for feature importance	MaxDiff method is not mentioned anywhere in the output. Only Van Westendorp, Usage-Value Correlation, Competitor Benchmarking, and Customer Interviews are covered.	3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	11.7s	11196	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	1	FAIL	Applies good-better-best tier structure	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	2	FAIL	Analyzes current tier performance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	3	FAIL	Evaluates whether 4th tier addresses real gap	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	4	FAIL	Considers choice paralysis risk	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	5	FAIL	Applies pricing psychology (Hick's Law)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	11230	6	FAIL	Provides specific recommendation with rationale	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	4	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	4	FAIL	Applies charm pricing or Rule of 100	No mention of charm pricing (e.g., $79 vs $80) or Rule of 100 principle in the output	5	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	20.7s	12001	6	FAIL	Cross-references cro or marketing-psychology	Output mentions 'reference materials on pricing psychology' but does not explicitly cross-reference CRO or marketing-psychology resources	5	8
+ab-testing	eval-6	with_skill	FAIL	8.4s	10956	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Model says 'This is a pricing optimization question, so I should use the pricing skill' - does not explicitly distinguish pricing page CRO from pricing strategy	6	8
+ab-testing	eval-6	with_skill	FAIL	8.4s	10956	2	FAIL	References or defers to cro skill	Model explicitly states 'I should use the pricing skill' - no reference to cro skill	6	8
+ab-testing	eval-6	with_skill	FAIL	8.4s	10956	3	FAIL	Explains that pricing is about pricing decisions	No explanation provided about what pricing is about; model only asks context-gathering questions	6	8
+ab-testing	eval-6	with_skill	FAIL	8.4s	10956	4	PASS			6	8
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md in output	1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	2	FAIL	Applies three pricing axes framework	No mention of 'three pricing axes framework' in output	1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	3	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	4	PASS			1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	5	FAIL	Recommends good-better-best tier structure	No tier structure recommended; output says 'Structure your tiers' as future help after context gathering	1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	6	FAIL	Addresses pricing psychology	No mention of pricing psychology concepts (anchoring, decoy, etc.)	1	9
+ab-testing	eval-1	with_skill	FAIL	9.8s	11062	7	FAIL	Provides specific pricing recommendation with rationale	Output states 'Once I have more context, I can help you... Set specific price points' but provides no specific prices	1	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	4	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	5	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	14.0s	11410	7	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	2	FAIL	Applies Van Westendorp price sensitivity method	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	3	FAIL	Applies MaxDiff for feature importance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	4	FAIL	Recommends competitive benchmarking	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	5	FAIL	Explains how to run each method	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	6	FAIL	Suggests practical alternatives (customer interviews, competitive analysis)	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	13.0s	11311	7	FAIL	Provides executable pricing research plan	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	3	FAIL	Evaluates whether 4th tier addresses real gap	The model states 'there may be a gap' but does not definitively evaluate if the gap is real, saying 'Before I can give good advice, I need more context' and 'Once I have that, I can give you a specif…	4	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	5	FAIL	Applies pricing psychology (Hick's Law)	No explicit reference to Hick's Law in the output; only mentions 'decision paralysis' without naming the pricing psychology principle	4	9
+ab-testing	eval-4	with_skill	FAIL	16.3s	11594	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	19.4s	11883	6	FAIL	Cross-references cro or marketing-psychology	Model mentions 'pricing psychology principles in the reference materials' and 'pricing skill' but does not explicitly cross-reference 'cro' or 'marketing-psychology' as document names or tags.	5	9
+ab-testing	eval-6	with_skill	FAIL	9.6s	10904	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.6s	10904	2	FAIL	References or defers to cro skill	No mention of CRO skill in model output; only references 'pricing skill' in thought process (not visible in final output)	6	9
+ab-testing	eval-6	with_skill	FAIL	9.6s	10904	3	FAIL	Explains that pricing is about pricing decisions	Model discusses page elements for conversion optimization, not pricing decisions (e.g., no mention of pricing strategy, value proposition, or decision frameworks)	6	9
+ab-testing	eval-6	with_skill	FAIL	9.6s	10904	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output	1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	2	FAIL	Applies three pricing axes framework	No three pricing axes framework mentioned or applied in output	1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	5	FAIL	Recommends good-better-best tier structure	Output only mentions 'Structure your tiers (Good-Better-Best framework)' as a future action, does not actually recommend or provide tier structure	1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	6	FAIL	Addresses pricing psychology	No discussion of pricing psychology concepts (anchoring, decoy, price sensitivity, etc.) in output	1	10
+ab-testing	eval-1	with_skill	FAIL	9.3s	11028	7	FAIL	Provides specific pricing recommendation with rationale	Output explicitly states 'Before I can give specific recommendations, I need to understand your situation better' - no specific pricing recommendation provided	1	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	12.1s	11253	7	FAIL	Notes some churn is expected	Output focuses on 'minimize churn' and 'reduce churn risk' but never explicitly acknowledges that some churn is expected or inevitable	2	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	1	FAIL	Triggers on casual phrasing	No evidence of trigger mechanism for casual phrasing in output	3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	3	FAIL	Applies MaxDiff for feature importance	MaxDiff only mentioned in recommendations ('Run a MaxDiff study to understand which features matter most') without explanation of how to apply it	3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	4	FAIL	Recommends competitive benchmarking	Competitors asked about in context questions but competitive benchmarking not explicitly recommended as a pricing research method	3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	5	FAIL	Explains how to run each method	Van Westendorp explained with four questions, but MaxDiff has no explanation of how to run it	3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	6	FAIL	Suggests practical alternatives (customer interviews, competitive analysis)	Customer interviews suggested ('Do 5-10 customer interviews') but competitive analysis not explicitly recommended as alternative method	3	10
+ab-testing	eval-3	with_skill	FAIL	13.1s	11312	7	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	1	FAIL	Applies good-better-best tier structure	Model mentions 'Pro → Business → Enterprise is standard' but does not explicitly apply good-better-best framework to analyze or recommend tier structure.	4	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	4	FAIL	Considers choice paralysis risk	No mention of choice paralysis or related concepts in output.	4	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	5	FAIL	Applies pricing psychology (Hick's Law)	No mention of Hick's Law or pricing psychology principles in output.	4	10
+ab-testing	eval-4	with_skill	FAIL	10.9s	11156	6	FAIL	Provides specific recommendation with rationale	Model states 'Before I recommend, I need to understand a few things' and ends with 'What's your Enterprise price point... That will tell us if the gap is worth filling' - defers specific recommendati…	4	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	19.3s	11874	6	FAIL	Cross-references cro or marketing-psychology	No explicit references to 'cro' or 'marketing-psychology' files or documents found in output	5	10
+ab-testing	eval-6	with_skill	FAIL	8.4s	10970	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	Output mentions 'pricing page conversion rate' but does not explicitly distinguish CRO from pricing strategy; states 'pricing-related question that falls within my skill scope' without CRO/strategy d…	6	10
+ab-testing	eval-6	with_skill	FAIL	8.4s	10970	2	FAIL	References or defers to cro skill	No mention of 'cro skill' or CRO skill in output; model references 'my skill scope' generically without naming CRO	6	10
+ab-testing	eval-6	with_skill	FAIL	8.4s	10970	3	FAIL	Explains that pricing is about pricing decisions	Output discusses pricing structure, tiers, and price points but never states 'pricing is about pricing decisions' or equivalent explanation	6	10
+ab-testing	eval-6	with_skill	FAIL	8.4s	10970	4	PASS			6	10

@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	2.4s	2131	1	FAIL	Checks for existing product-marketing.md	judge did not provide concrete evidence	1	5
+ab-testing	eval-1	with_skill	FAIL	2.4s	2131	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	2.4s	2131	3	FAIL	Covers applicable sections	The output defines the document's purpose ('positioning, audience, and messaging') but does not explicitly list or 'cover' the specific applicable sections of the product-marketing.md structure. It r…	1	5
+ab-testing	eval-1	with_skill	FAIL	2.4s	2131	4	FAIL	Walks through sections conversationally one at a time	This is presented only as an option ('2. Start from scratch: I’ll walk you through each section...'). The model is currently asking the user to choose, not actively walking through sections yet.	1	5
+ab-testing	eval-1	with_skill	FAIL	2.4s	2131	5	FAIL	Creates file at .agents/product-marketing.md	The 'Output files' section explicitly states: 'No output files were captured.' The model has not created the file yet.	1	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	3	FAIL	Updates Target Audience with VP of Engineering	Model output does not contain an updated document or file write. It explicitly asks the user for details: 'Please provide these details, and I’ll update the document accordingly.' No changes were mad…	2	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	4	FAIL	Adds new persona for the expanded audience	Model output does not contain an updated document. It acknowledges the need for a VP of Eng persona but requests input: 'VP of Engineering Expansion... Why do VPs of Eng care?'	2	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	5	FAIL	Updates Product Overview for enterprise tier	Model output does not contain an updated document. It asks for enterprise details: 'Enterprise Tier Details... What’s included? Pricing?'	2	5
+ab-testing	eval-2	with_skill	FAIL	5.4s	2438	6	FAIL	Preserves unchanged sections	No output files were captured. The document was not modified, so unchanged sections were not preserved in a final version.	2	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	2	FAIL	Checks for existing context doc	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	4	FAIL	Adapts questions for early-stage B2C mobile app	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	5	FAIL	Notes some sections may be sparse early on	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	6	FAIL	Skips non-applicable sections rather than forcing all 12	judge did not provide concrete evidence	3	5
+ab-testing	eval-3	with_skill	FAIL	3.6s	2246	7	FAIL	Creates file at .agents/product-marketing.md	judge did not provide concrete evidence	3	5
+ab-testing	eval-4	with_skill	FAIL	2.8s	2150	1	FAIL	Activates auto-draft workflow mode	The model asks the user to provide the codebase ('Could you share your codebase?') rather than automatically initiating a scan or workflow. No automated mode activation is observed.	4	5
+ab-testing	eval-4	with_skill	FAIL	2.8s	2150	2	FAIL	Scans codebase for existing marketing materials	The output states 'I'll scan your codebase for...' as a future intention, but explicitly asks the user to upload files or provide a URL. No actual scanning took place in this turn.	4	5
+ab-testing	eval-4	with_skill	FAIL	2.8s	2150	3	FAIL	Drafts context from found information	No context was drafted because no information was provided or scanned. The output lists what *will* be scanned, not what was found.	4	5
+ab-testing	eval-4	with_skill	FAIL	2.8s	2150	4	FAIL	Flags sections needing manual input	The model does not flag specific sections needing manual input based on analyzed data; it asks the user to identify areas they are unsure about.	4	5
+ab-testing	eval-4	with_skill	FAIL	2.8s	2150	5	FAIL	Presents draft for review before saving	The output explicitly states 'Once I’ve gathered what I can, I’ll draft... and present it'. No draft was presented in this output.	4	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2128	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2128	2	FAIL	Reports whether context doc exists	Model does not report existence; it asks the user 'Do you have a product that needs marketing context?' and provides conditional creation steps 'If we don't have the context document yet', indicating…	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2128	3	FAIL	Summarizes contents if found	No contents were summarized because the model did not find or report any existing document. The output contains only questions and offers for creation.	5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2128	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	2.2s	2128	5	FAIL	Explains how other skills use it	The model output contains no explanation of how other skills use the product marketing context document.	5	5
+ab-testing	eval-6	with_skill	FAIL	2.9s	2189	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	2.9s	2189	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	2.9s	2189	3	FAIL	References or defers to copywriting skill for the actual copy	The model does not mention a specific 'copywriting skill' or defer to an external tool/skill for generation; it defers to the user providing input details ('Please provide a brief overview... Once yo…	6	5
+ab-testing	eval-6	with_skill	FAIL	2.9s	2189	4	PASS			6	5

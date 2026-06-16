@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	1	FAIL	Checks for product-marketing.md	No output files were captured. The output is a direct text response, not a file named product-marketing.md.	1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	3	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	4	FAIL	Recommends five-phase launch approach	The output explicitly structures the plan into three phases: '### Phase 1: The "Waitlist & Whisper" (Weeks 1–2)', '### Phase 2: The "Alpha" Leak (Weeks 3–4)', and '### Phase 3: The "Early Access" Hyp…	1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	5	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	16.8s	4656	8	PASS			1	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	4	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	5	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	9.5s	3863	7	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	2	FAIL	Applies ongoing launch strategy / update matrix	judge did not provide concrete evidence	3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	5	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	6	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	12.1s	4179	7	PASS			3	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	12.1s	4229	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	5	FAIL	Notes borrowed strategies take time to build	The text states 'Immediate Action Plan (Next 7 Days)' and focuses on rapid execution ('Send 5 personalized emails/DMs per day'). It does not explicitly state that these strategies 'take time to build…	5	7
+ab-testing	eval-5	with_skill	FAIL	11.4s	4163	6	FAIL	Suggests starting well before launch day	The text begins with the assumption: 'Since you are in the **Launch** phase'. The 'Immediate Action Plan' is labeled 'Next 7 Days', implying activities are happening concurrently with or immediately …	5	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	3832	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	3832	2	FAIL	References or defers to marketing-ideas skill	The model output contains no mention of 'marketing-ideas', 'skill', or any specific tool name. It responds as a general assistant.	6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	3832	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	3832	4	PASS			6	7

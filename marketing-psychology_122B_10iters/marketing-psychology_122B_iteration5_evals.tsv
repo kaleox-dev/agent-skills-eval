@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	1	FAIL	Checks for product-marketing.md	No mention of product-marketing.md in output. Output references 'marketing-psychology skill' but not the specific file.	1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	2	FAIL	Applies pricing psychology models (anchoring, charm pricing, Rule of 100)	Anchoring and Charm Pricing mentioned, but Rule of 100 only appears in thinking section, not applied in recommendations.	1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	4	FAIL	Applies loss aversion to tier differentiation	Loss aversion mentioned in section 3 and 6 but not specifically applied to tier differentiation.	1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	25.1s	6615	7	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	19.7s	6151	6	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	2	FAIL	Recommends copy-relevant mental models	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	3	FAIL	Explains each principle briefly	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	4	FAIL	Provides specific copywriting application per principle	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	5	FAIL	Organizes by where each applies in copy	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-3	with_skill	FAIL	22.8s	6422	6	FAIL	References multiple model categories	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	2	FAIL	Applies Hick's Law	No mention of Hick's Law in the output. Only 12 models listed, none reference Hick's Law.	4	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	18.1s	5983	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	21.8s	6389	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	16.7s	6004	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	16.7s	6004	2	FAIL	References or defers to ab-testing skill	Model references 'marketing-psychology skill' not ab-testing skill	6	5
+ab-testing	eval-6	with_skill	FAIL	16.7s	6004	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	16.7s	6004	4	FAIL	Does not attempt full test design using psychology patterns	Provides full test design with 'A/B Test Design' section including test structure, CTA copy, implementation rules, and metrics	6	5

@@ -1,0 +1,71 @@
+
+[1m▶ marketing-ideas[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    What's the fastest way to get more leads? We sell enterprise security software and have a $10k/month marketing budget.
+    [90moutput:[0m  For enterprise security software, "fast" leads usually means high-intent search traffic or targeted outreach, as trust is the primary barrier. With a $10k/month budget, you have enough to test paid c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    8.0s · 13188 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to build authority and thought leadership in the HR tech space. We're a newer company and nobody knows who we are yet.
+    [90moutput:[0m  Building authority in a crowded, trust-heavy space like HR Tech as a new company is challenging but very possible. Since you lack brand recognition, you need to "borrow" authority or create it throug…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.3s · 13655 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    I need marketing ideas for my SaaS product. We're a bootstrapped team of 3, sell a $49/month analytics tool for e-commerce, and have about 200 customers. Budget is tight — maybe $500/month for market…
+    [90moutput:[0m  Thanks for the context. With a $49/month price point, $500/month budget, and a small team, you are in the **Early Stage/Growth Stage** transition. You have product-market fit (200 paying customers is…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files: No output files were captured.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Prioritizes by likely impact
+         [90mevidence:[0m Ideas are listed 1-4 but no explicit prioritization logic (e.g., 'High', 'Medium', 'Low' impact or ranked list) is provided, only a suggested 30-day plan sequence.
+    14.0s · 13840 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    how do we grow without spending money on ads? we're a PLG (product-led growth) company with a freemium model
+    [90moutput:[0m  Since you are a **Product-Led Growth (PLG)** company with a **freemium** model, you have a massive unfair advantage: your product is your primary marketing channel. You don't need to pay for ads beca…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    15.0s · 13914 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    Give me 20 marketing ideas. We sell project management software.
+    [90moutput:[0m  To give you the most relevant marketing ideas, I’ve selected a mix of high-impact strategies specifically tailored for **Project Management Software**. Since this is a crowded market, the key is ofte…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    11.4s · 13567 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to set up a referral program. How should we structure it?
+    [90moutput:[0m  Setting up a referral program is one of the highest-ROI marketing activities you can do. To give you the best structure, I need to understand your specific context. However, based on the **139 Market…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    11.3s · 13588 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 93.1%[0m  [90m· 12.01s avg · 13625 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-823/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "marketing-ideas",
+      "slug": "marketing-ideas",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.918918918918919,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-823/benchmark.json"
+    }
+  ],
+  "iteration": 823,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-823",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-823/report/index.html"
+}

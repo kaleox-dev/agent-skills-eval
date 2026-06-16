@@ -1,0 +1,77 @@
+
+[1m▶ launch[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    we just shipped a major feature update. how should we announce it? it's not a full product launch, just a big new feature.
+    [90moutput:[0m  Since you’ve already shipped the feature, we are jumping straight into **Phase 4/5 Execution** and **Ongoing Launch Strategy**. Because this is a major feature (not a brand new product), the goal is …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    10.9s · 4093 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Our launch flopped. We launched 3 weeks ago and only got 50 signups. We expected at least 500. What went wrong and what can we do now?
+    [90moutput:[0m  I’m sorry to hear that the launch didn’t meet expectations. A 10x miss on signups (50 vs. 500) is painful, but it’s also a very common data point that tells us exactly *where* to look. Since we are 3…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific recovery plan
+         [90mevidence:[0m The output explicitly defers the specific plan: 'Once I have that, I can give you a specific, step-by-step recovery plan'. It provides general triage (email 50 users, audit landing page) but refuses …
+    11.6s · 4172 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We want to launch on Product Hunt. Any tips? We've never done it before.
+    [90moutput:[0m  Launching on Product Hunt (PH) is a high-reward opportunity, but as you noted, it is highly competitive and requires significant preparation. It is not a "set and forget" button; it is an all-day eve…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    13.2s · 4261 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We're launching a new B2B SaaS product for design teams in 6 weeks. It's a design review tool. We have a small audience (500 email subscribers, 2k Twitter followers). Help us plan the launch.
+    [90moutput:[0m  This is a classic "small audience, high-impact product" scenario. Because you are launching a **Design Review Tool** to **Design Teams**, you have a significant advantage: your target audience lives …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states 'No output files were captured.' The response is a direct text reply, not a file named product-marketing.md.
+    15.8s · 4617 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Give me some creative marketing ideas to promote our product. We're bootstrapped and don't have a big budget.
+    [90moutput:[0m  Since you haven't specified what you are launching or your current stage, I will provide a broad range of **creative, low-cost marketing strategies** tailored for bootstrapped founders. These rely on…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to marketing-ideas skill
+         [90mevidence:[0m The model output contains no mention of 'marketing-ideas skill', nor does it explicitly defer to a specific tool or skill with that name. It answers directly as an AI assistant.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt full marketing brainstorm using launch strategy patterns
+         [90mevidence:[0m The model explicitly attempts to apply 'launch strategy patterns' by providing a section on '6. Leverage Product Hunt (Rented)' which details 'Preparation', 'Build a waitlist', 'Create a strong narra…
+    9.0s · 3909 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    How do we leverage partnerships and borrowed audiences for our launch? We don't have a big audience of our own.
+    [90moutput:[0m  Since you don’t have a large owned audience (email list, blog traffic, community), **borrowed channels are not just an option—they are your primary engine for growth.** You cannot wait for people to …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes borrowed strategies take time to build
+         [90mevidence:[0m The text provides an 'Immediate Action Plan' starting 'Today' and 'This Week'. It does not explicitly state that these strategies take significant time to build or mature; rather, it focuses on immed…
+    14.8s · 4500 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 81.6%[0m  [90m· 12.54s avg · 4259 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-786/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "launch",
+      "slug": "launch",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8421052631578947,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-786/benchmark.json"
+    }
+  ],
+  "iteration": 786,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-786",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-786/report/index.html"
+}

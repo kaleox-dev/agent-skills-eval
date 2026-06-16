@@ -1,0 +1,391 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	1	FAIL	Checks for product-marketing.md	Model states 'Let me first check if there's any product marketing context file to read' and asks user to 'share that context first' but no file was actually read - Output files: No output files were …	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	3	FAIL	Evaluates time-to-value	Model asks 'What's your current time-to-value?' as a question but provides no actual evaluation of time-to-value.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	4	FAIL	Recommends onboarding flow approach	Model lists 'Onboarding flow redesign' under 'What I Can Help With' but states 'Once I have more context, I can provide' - no actual recommendation given.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	5	FAIL	Applies checklist pattern with 3-7 items	Model mentions 'Checklist optimization - 3-7 items ordered by value' as future help but does not provide any checklist in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	6	FAIL	Addresses empty states as opportunities	Empty states mentioned as 'Likely Issue' in table with 'Pre-populate with example project' as quick win, but not addressed as a strategic recommendation.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	7	FAIL	Provides experiment ideas	Model lists 'Experiment roadmap - A/B tests to validate improvements' as future help but provides no actual experiment ideas.	1	1
+ab-testing	eval-1	with_skill	FAIL	10.7s	8008	8	FAIL	Includes measurement metrics	Model lists 'Metrics dashboard - What to track and how to measure success' as future help but includes no actual measurement metrics.	1	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	7	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	16.8s	8516	8	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing in user input or model response to it.	3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	2	FAIL	Applies stalled users framework	No explicit reference to 'stalled users framework' in output.	3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	5	FAIL	Suggests multi-channel onboarding	No mention of multiple onboarding channels in output.	3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	6	FAIL	Cross-references emails for re-engagement	Only mentions 'No email follow-up' once, no cross-referencing of emails.	3	1
+ab-testing	eval-3	with_skill	FAIL	8.5s	7797	7	FAIL	Provides specific re-engagement triggers	Mentions 'Trigger-based re-engagement' but no specific triggers like timing or conditions.	3	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	11.2s	8028	6	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	5	FAIL	Addresses tooltip fatigue and tour length	No explicit mention of 'tooltip fatigue' or tour length concerns; only indirect references like 'Can feel like a chore' for tours and '1-3 required steps max' for wizards	5	1
+ab-testing	eval-5	with_skill	FAIL	11.7s	8162	6	PASS			5	1
+ab-testing	eval-6	with_skill	FAIL	8.8s	7930	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	8.8s	7930	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	8.8s	7930	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	8.8s	7930	4	PASS			6	1
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	1	FAIL	Checks for product-marketing.md	Since I don't have access to check for those files in this context - explicitly states cannot check files	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	2	FAIL	Defines the activation/aha moment	"Asks ""What's your true activation event?"" rather than defining it"	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	3	FAIL	Evaluates time-to-value	"Asks ""What's the average time from signup to first project creation?"" rather than evaluating"	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	4	FAIL	Recommends onboarding flow approach	"No concrete flow approach provided; only ""What I Can Help You With Once I Have More Context"""	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern used in output; uses sections with questions and tables instead	1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	7	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.2s	8173	8	FAIL	Includes measurement metrics	Asks about metrics but provides no specific measurement metrics in recommendations	1	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	4	FAIL	Orders by increasing commitment	Model states 'Order by value (most impactful first)' not increasing commitment; contradicts the principle	2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	7	FAIL	Addresses skipped items	No guidance on handling skipped/incomplete checklist items found in output	2	2
+ab-testing	eval-2	with_skill	FAIL	16.1s	8485	8	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger mechanism in output	3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	2	FAIL	Applies stalled users framework	Model output does not mention 'stalled users framework'	3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	4	FAIL	Recommends first-session experience improvements	Model states 'Once I understand your specific situation, I can give you targeted recommendations' - no actual recommendations provided	3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	5	FAIL	Suggests multi-channel onboarding	No multi-channel suggestions (SMS, push, in-app) in output	3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	6	FAIL	Cross-references emails for re-engagement	Model asks about 'Email open rates for welcome emails?' as diagnostic question, not cross-referencing for re-engagement	3	2
+ab-testing	eval-3	with_skill	FAIL	9.1s	7908	7	FAIL	Provides specific re-engagement triggers	Model mentions 'Re-engagement tactics' as future deliverable, no specific triggers provided	3	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	1	FAIL	Applies empty states as opportunities guidance	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	2	FAIL	Recommends alternatives to blank dashboard	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	3	FAIL	Suggests sample data or templates	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	4	FAIL	Provides clear first action CTA	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	5	FAIL	Addresses blank canvas paralysis	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-4	with_skill	FAIL	10.8s	8040	6	FAIL	Provides specific empty state design recommendations	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…	4	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	3	FAIL	Notes that combination approaches often work	No mention of combining approaches; only states 'Sometimes that's *none* of these'	5	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	5	FAIL	Addresses tooltip fatigue and tour length	Mentions tours 'can feel interruptive if overdone' but no explicit reference to tooltip fatigue or tour length limits	5	2
+ab-testing	eval-5	with_skill	FAIL	9.4s	7970	6	FAIL	Recommends testing different approaches	No mention of A/B testing, experimentation, or validating approaches with data	5	2
+ab-testing	eval-6	with_skill	FAIL	9.5s	7982	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.5s	7982	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.5s	7982	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.5s	7982	4	PASS			6	2
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	1	FAIL	Checks for product-marketing.md	Output does not show evidence of checking for product-marketing.md file; thinking mentions it but final output lacks concrete evidence of file check	1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	3	FAIL	Evaluates time-to-value	Output discusses reducing steps but does not explicitly evaluate or measure time-to-value metrics	1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	16.8s	8564	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	7	FAIL	Addresses skipped items	No explicit handling for skipped checklist items; only mentions 'Skip invite step initially' as an experiment idea, not addressing skipped items in general	2	3
+ab-testing	eval-2	with_skill	FAIL	14.6s	8387	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing detection in output. Model does not reference user communication style.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	2	FAIL	Applies stalled users framework	Output discusses 'activation problem' and 'drop-off' but does not explicitly apply a 'stalled users framework'.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	5	FAIL	Suggests multi-channel onboarding	No mention of multi-channel onboarding strategies in output.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	6	FAIL	Cross-references emails for re-engagement	Email verification mentioned but no cross-referencing of emails for re-engagement purposes.	3	3
+ab-testing	eval-3	with_skill	FAIL	8.4s	7866	7	FAIL	Provides specific re-engagement triggers	No specific re-engagement triggers (timing, content, conditions) provided in output.	3	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	4	FAIL	Provides clear first action CTA	"Model describes what a CTA should be (""One clear button to get started"") but asks clarifying questions instead of providing a specific actionable CTA"	4	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	8.2s	7845	6	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	3	FAIL	Notes that combination approaches often work	No explicit statement about combination approaches; only implied in 'Common Pattern by Product Type' table and 'If you're in a hurry' section without explicit mention of combinations often working	5	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	4	FAIL	Provides best practices for each	'General Best Practices (Regardless of Approach)' section is generic, not specific to each approach; only 'Risk' notes provided per approach, not comprehensive best practices for each	5	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	5	FAIL	Addresses tooltip fatigue and tour length	Tour length addressed ('Keep it under 5 steps', '3-5 steps max') but no mention of 'tooltip fatigue' specifically; only 'Easy to ignore. Make them contextual, not intrusive' for tooltips	5	3
+ab-testing	eval-5	with_skill	FAIL	12.9s	8256	6	FAIL	Recommends testing different approaches	No recommendation to test or A/B test different onboarding approaches in the output	5	3
+ab-testing	eval-6	with_skill	FAIL	9.8s	7993	1	FAIL	Recognizes this as signup flow optimization, not onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	3
+ab-testing	eval-6	with_skill	FAIL	9.8s	7993	2	FAIL	References or defers to signup skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	3
+ab-testing	eval-6	with_skill	FAIL	9.8s	7993	3	FAIL	Explains that onboarding covers post-signup	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	3
+ab-testing	eval-6	with_skill	FAIL	9.8s	7993	4	FAIL	Does not attempt signup form redesign using onboarding patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Role: Strict JSON-only evaluator. * Task: Grade an agentskills.io evaluation run based on provided assertions and …	6	3
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to check for those files in this context' - did not verify file existence	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	2	FAIL	Defines the activation/aha moment	Model asks 'What's your current activation definition?' instead of defining it	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	3	FAIL	Evaluates time-to-value	No time-to-value evaluation provided; only mentions 'Too many steps before they can experience value' as assumption	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	4	FAIL	Recommends onboarding flow approach	Model states 'I can give you specific flow redesign recommendations' but provides none	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern used in recommendations (none provided)	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	6	FAIL	Addresses empty states as opportunities	Mentions 'Empty states that feel overwhelming' as issue but provides no opportunity recommendations	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	7	FAIL	Provides experiment ideas	Model promises 'experiment ideas' but provides none in output	1	4
+ab-testing	eval-1	with_skill	FAIL	10.6s	7911	8	FAIL	Includes measurement metrics	Model asks about metrics but provides no measurement metrics	1	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	7	FAIL	Addresses skipped items	No explicit guidance on handling items users skip; only mentions 'Allow users to dismiss the checklist and return later'	2	4
+ab-testing	eval-2	with_skill	FAIL	15.8s	8347	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in user input; output focuses on activation metrics.	3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	2	FAIL	Applies stalled users framework	No explicit reference to 'stalled users framework' in output.	3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	3	FAIL	Identifies potential root causes for drop-off	Output asks questions about drop-off ('Do you have data on where they drop off?') but does not identify specific causes.	3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	5	FAIL	Suggests multi-channel onboarding	No mention of multi-channel approaches in output.	3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	6	FAIL	Cross-references emails for re-engagement	No mention of email or email re-engagement in output.	3	4
+ab-testing	eval-3	with_skill	FAIL	9.1s	7777	7	FAIL	Provides specific re-engagement triggers	No specific re-engagement triggers provided; output asks for more information before making recommendations.	3	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	16.6s	8393	6	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	14.5s	8417	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	8.9s	7938	1	FAIL	Recognizes this as signup flow optimization, not onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	8.9s	7938	2	FAIL	References or defers to signup skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	8.9s	7938	3	FAIL	Explains that onboarding covers post-signup	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-6	with_skill	FAIL	8.9s	7938	4	FAIL	Does not attempt signup form redesign using onboarding patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	6	4
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	1	FAIL	Checks for product-marketing.md	Model states 'Since I don't have access to any external files in this conversation' - no file found or referenced	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	2	FAIL	Defines the activation/aha moment	Model asks 'Is 'create first project' your true 'aha moment'' but does not define it themselves	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	3	FAIL	Evaluates time-to-value	Model mentions 'Time-to-Value Is Everything' as a principle but provides no evaluation for this product	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	4	FAIL	Recommends onboarding flow approach	Model says 'I can provide specific recommendations' but provides none - only asks questions	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern used in output - only numbered questions to user	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	6	FAIL	Addresses empty states as opportunities	Model asks about empty dashboard but does not address empty states as opportunities in recommendations	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	7	FAIL	Provides experiment ideas	Model states 'Experiment ideas to test' but provides zero experiment ideas	1	5
+ab-testing	eval-1	with_skill	FAIL	8.7s	7896	8	FAIL	Includes measurement metrics	Model asks about metrics but includes no measurement metrics in output	1	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	7	FAIL	Addresses skipped items	No explicit guidance on handling users who skip checklist items; only mentions 'Allow users to hide it (don't trap them)' which is about dismissal, not skipping	2	5
+ab-testing	eval-2	with_skill	FAIL	14.7s	8391	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output. Output begins with 'This is a classic activation problem' - no reference to casual language.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	2	FAIL	Applies stalled users framework	Output mentions 'stalled users' once in 'bring back stalled users' but no framework is applied or referenced.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	5	FAIL	Suggests multi-channel onboarding	No mention of multi-channel onboarding in output.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	6	FAIL	Cross-references emails for re-engagement	No mention of email cross-referencing. Output only says 'Set up re-engagement' without specifics.	3	5
+ab-testing	eval-3	with_skill	FAIL	8.6s	7885	7	FAIL	Provides specific re-engagement triggers	Output mentions 're-engagement' but provides no specific triggers (time-based, behavior-based, etc.).	3	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	5	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.5s	7946	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	1	FAIL	Compares tooltips, product tours, and setup wizards	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	2	FAIL	Explains when each works best	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	3	FAIL	Notes that combination approaches often work	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	4	FAIL	Provides best practices for each	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	5	FAIL	Addresses tooltip fatigue and tour length	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-5	with_skill	FAIL	13.5s	8326	6	FAIL	Recommends testing different approaches	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agent's output based on specific assertions. * Input: A list of assertions and a model output (text…	5	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	8.8s	7931	4	PASS			6	5
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	2	FAIL	Defines the activation/aha moment	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	3	FAIL	Evaluates time-to-value	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	4	FAIL	Recommends onboarding flow approach	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	5	FAIL	Applies checklist pattern with 3-7 items	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	6	FAIL	Addresses empty states as opportunities	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	7	FAIL	Provides experiment ideas	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-1	with_skill	FAIL	19.9s	8826	8	FAIL	Includes measurement metrics	judge returned unparseable response: The user wants me to evaluate an agent's output against 8 assertions. I need to grade each assertion strictly based on the model output provided, looking for conc…	1	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	1	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	2	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	3	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	4	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	5	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	6	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	7	PASS			2	6
+ab-testing	eval-2	with_skill	FAIL	16.6s	8555	8	PASS			2	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing trigger mechanism in output	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	2	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	3	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	4	PASS			3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	5	FAIL	Suggests multi-channel onboarding	Only mentions email re-engagement, no multi-channel approach suggested	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	6	FAIL	Cross-references emails for re-engagement	No actual email analysis or cross-referencing performed	3	6
+ab-testing	eval-3	with_skill	FAIL	10.5s	8045	7	PASS			3	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	1	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	2	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	3	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	4	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	5	PASS			4	6
+ab-testing	eval-4	with_skill	FAIL	15.4s	8453	6	PASS			4	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	1	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	2	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	3	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	4	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	5	PASS			5	6
+ab-testing	eval-5	with_skill	FAIL	19.1s	8782	6	PASS			5	6
+ab-testing	eval-6	with_skill	FAIL	9.2s	7966	1	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.2s	7966	2	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.2s	7966	3	PASS			6	6
+ab-testing	eval-6	with_skill	FAIL	9.2s	7966	4	FAIL	Does not attempt signup form redesign using onboarding patterns	Provides form redesign advice: Cut Fields Aggressively - Keep only Email + Password, Remove 3-4 fields for 15-25% conversion lift, What are the 8 fields currently? I can tell you which to cut	6	6
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	1	FAIL	Checks for product-marketing.md	Model states 'I don't have access to their file system, so I can't actually check for these files' - did not find or read the file	1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	2	FAIL	Defines the activation/aha moment	No definition provided; model asks 'Is that the true aha moment?' without answering	1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	3	FAIL	Evaluates time-to-value	No time-to-value evaluation present in output	1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	4	FAIL	Recommends onboarding flow approach	Provides general hypotheses ('Reduce to 1-2 steps max') but no concrete flow design or approach specification	1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern with 3-7 items present in output	1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	6	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	7	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	11.4s	8126	8	FAIL	Includes measurement metrics	Mentions 'specific metrics to track' but no actual metrics defined	1	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	1	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	2	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	3	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	4	FAIL	Orders by increasing commitment	Order starts with 2-minute upload step followed by 1-minute steps, violating increasing commitment (time/effort decreases instead of increases).	2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	5	FAIL	Starts with quickest win	First checklist item takes 2 minutes while two subsequent steps take 1 minute each, not starting with shortest action.	2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	6	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	7	PASS			2	7
+ab-testing	eval-2	with_skill	FAIL	13.4s	8291	8	PASS			2	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	1	FAIL	Triggers on casual phrasing	No evidence of casual phrasing detection in output; response is professional/structured without indicating trigger detection	3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	2	FAIL	Applies stalled users framework	Mentions 'Re-engage Stalled Users' with timing (24h, 72h) but no framework application shown	3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	3	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	4	PASS			3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	5	FAIL	Suggests multi-channel onboarding	Mentions email and in-app messages but no multi-channel onboarding strategy suggested	3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	6	FAIL	Cross-references emails for re-engagement	Mentions welcome email and re-engagement emails but no cross-referencing of existing email content shown	3	7
+ab-testing	eval-3	with_skill	FAIL	18.1s	8549	7	FAIL	Provides specific re-engagement triggers	Provides timing triggers (24h, 72h) but no specific behavioral or event-based triggers	3	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	2	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	3	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	4	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	5	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	10.5s	8038	6	PASS			4	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	1	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	2	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	3	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	5	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	14.4s	8406	6	PASS			5	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	7936	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	7936	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	7936	3	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	9.0s	7936	4	PASS			6	7
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	1	FAIL	Checks for product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	2	FAIL	Defines the activation/aha moment	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	3	FAIL	Evaluates time-to-value	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	4	FAIL	Recommends onboarding flow approach	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	5	FAIL	Applies checklist pattern with 3-7 items	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	6	FAIL	Addresses empty states as opportunities	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	7	FAIL	Provides experiment ideas	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.3s	8033	8	FAIL	Includes measurement metrics	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	1	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	6	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	7	FAIL	Addresses skipped items	No explicit guidance on handling users who skip items mid-checklist; only mentions 'Allow users to hide it after completion'	2	8
+ab-testing	eval-2	with_skill	FAIL	11.2s	8101	8	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	2	FAIL	Applies stalled users framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	3	FAIL	Identifies potential root causes for drop-off	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	4	FAIL	Recommends first-session experience improvements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	5	FAIL	Suggests multi-channel onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	6	FAIL	Cross-references emails for re-engagement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-3	with_skill	FAIL	8.8s	7904	7	FAIL	Provides specific re-engagement triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run. * **Input:** * Grading p…	3	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	5	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	12.2s	8008	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	3	FAIL	Notes that combination approaches often work	"No explicit mention of combination approaches working together; only mentions ""Start with a setup wizard or checklist"" and ""Use tooltips only for specific next actions"" without framing as combination…"	5	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	5	FAIL	Addresses tooltip fatigue and tour length	"Tour length addressed (""Tour is short (3-5 steps max)""), but tooltip fatigue not explicitly addressed - only mentions ""Can feel intrusive; users dismiss them"" in risk column"	5	8
+ab-testing	eval-5	with_skill	FAIL	10.3s	8047	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	8.1s	7864	1	FAIL	Recognizes this as signup flow optimization, not onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent evaluation run based on specific assertions. * **Role:** Strict JSON-only evaluator. * **…	6	8
+ab-testing	eval-6	with_skill	FAIL	8.1s	7864	2	FAIL	References or defers to signup skill	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent evaluation run based on specific assertions. * **Role:** Strict JSON-only evaluator. * **…	6	8
+ab-testing	eval-6	with_skill	FAIL	8.1s	7864	3	FAIL	Explains that onboarding covers post-signup	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent evaluation run based on specific assertions. * **Role:** Strict JSON-only evaluator. * **…	6	8
+ab-testing	eval-6	with_skill	FAIL	8.1s	7864	4	FAIL	Does not attempt signup form redesign using onboarding patterns	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Task:** Grade an agent evaluation run based on specific assertions. * **Role:** Strict JSON-only evaluator. * **…	6	8
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	1	FAIL	Checks for product-marketing.md	Agent mentions 'First check if there's product marketing context to read' but no product-marketing.md file was found or referenced. No output files captured.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	2	FAIL	Defines the activation/aha moment	Agent asks about activation definition ('Is 'create first project' the activation event...?') rather than defining it. States general 'aha moment' concept without specific definition.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	3	FAIL	Evaluates time-to-value	No time-to-value evaluation provided. Agent mentions 'first week' metric but doesn't evaluate it.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	4	FAIL	Recommends onboarding flow approach	Agent states 'Once I have this context, I can provide a tailored onboarding flow redesign' - no recommendations actually provided.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	5	FAIL	Applies checklist pattern with 3-7 items	No checklist pattern with 3-7 items present in output.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	6	FAIL	Addresses empty states as opportunities	Agent asks 'Do users land on an empty dashboard?' but does not address empty states as opportunities.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	7	FAIL	Provides experiment ideas	No experiment ideas provided. Agent defers to future recommendations.	1	9
+ab-testing	eval-1	with_skill	FAIL	6.9s	7749	8	FAIL	Includes measurement metrics	No measurement metrics included in output.	1	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	1	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	2	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	3	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	4	FAIL	Orders by increasing commitment	Upload (20-30s) listed before Comment (10-20s) - commitment decreases then increases, not strictly increasing	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	5	FAIL	Starts with quickest win	Claims 'lowest friction' for Upload (20-30s) but Comment is listed at 10-20s which is quicker	2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	6	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	7	PASS			2	9
+ab-testing	eval-2	with_skill	FAIL	13.7s	8300	8	PASS			2	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	2	FAIL	Applies stalled users framework	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	3	FAIL	Identifies potential root causes for drop-off	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	4	FAIL	Recommends first-session experience improvements	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	5	FAIL	Suggests multi-channel onboarding	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	6	FAIL	Cross-references emails for re-engagement	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-3	with_skill	FAIL	7.5s	7785	7	FAIL	Provides specific re-engagement triggers	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agentskills.io evaluation run based on provided asserti…	3	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	1	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	2	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	3	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	4	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	5	PASS			4	9
+ab-testing	eval-4	with_skill	FAIL	10.1s	7978	6	PASS			4	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	1	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	2	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	3	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	4	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	5	PASS			5	9
+ab-testing	eval-5	with_skill	FAIL	12.0s	8058	6	FAIL	Recommends testing different approaches	"Model only promises ""I can... suggest experiments to test"" after getting context, does not actually recommend testing different approaches in the output"	5	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	1	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	2	PASS			6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	3	FAIL	Explains that onboarding covers post-signup	No explicit explanation found; model only mentions 'impacts onboarding downstream' without defining onboarding scope.	6	9
+ab-testing	eval-6	with_skill	FAIL	9.4s	7983	4	PASS			6	9
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	1	FAIL	Checks for product-marketing.md	Since I don't have access to the file system to check for product-marketing.md	1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	3	FAIL	Evaluates time-to-value	Time to first project | ? | <24 hours (current value is ?)	1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	7	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	17.6s	8577	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	7	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	14.2s	8364	8	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	1	FAIL	Triggers on casual phrasing	User input is a structured business problem (50% signup drop-off), not casual phrasing. Model output does not demonstrate trigger on casual language.	3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	2	FAIL	Applies stalled users framework	Model discusses activation/retention issues but does not explicitly reference or apply a 'stalled users framework'.	3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	4	FAIL	Recommends first-session experience improvements	Model states 'Once I have more context, I can help you...' but provides no concrete first-session improvement recommendations.	3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	5	FAIL	Suggests multi-channel onboarding	No mention of multi-channel onboarding approaches in the output.	3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	6	FAIL	Cross-references emails for re-engagement	Email verification mentioned but no cross-referencing for re-engagement purposes discussed.	3	10
+ab-testing	eval-3	with_skill	FAIL	8.1s	7845	7	FAIL	Provides specific re-engagement triggers	Model defers recommendations pending more context; no specific re-engagement triggers provided.	3	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	4	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	17.5s	8527	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	4	FAIL	Provides best practices for each	No specific best practices provided separately for tooltips, product tours, and setup wizards. Only general 'Common Mistakes to Avoid' and product-type recommendations.	5	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.8s	8079	6	FAIL	Recommends testing different approaches	Output says 'With that, I can give you a specific flow recommendation with experiment ideas' - conditional promise, not a general recommendation to test approaches	5	10
+ab-testing	eval-6	with_skill	FAIL	9.6s	7997	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	9.6s	7997	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	9.6s	7997	3	FAIL	Explains that onboarding covers post-signup	No explicit statement about onboarding covering post-signup activities found in output.	6	10
+ab-testing	eval-6	with_skill	FAIL	9.6s	7997	4	PASS			6	10

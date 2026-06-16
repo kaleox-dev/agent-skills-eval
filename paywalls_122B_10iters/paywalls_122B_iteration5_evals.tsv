@@ -1,0 +1,41 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	1	FAIL	Checks for product-marketing.md	No reference to product-marketing.md file in output; model mentions 'skill materials' but no specific file	1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	4	FAIL	Includes headline, value demo, comparison, social proof, CTA	Missing social proof element; has headline, value demo, comparison, CTA but no testimonials or social proof	1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	7	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	14.1s	6425	8	FAIL	Warns against anti-patterns	No explicit anti-pattern warnings; ⚠️ marks on some copy options but not framed as anti-pattern guidance	1	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	5	FAIL	Provides clear plan options	No specific plan options provided; asks 'What's your pricing model (per seat, usage, flat)?' without giving recommendations	2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	6	FAIL	Includes social proof	No testimonials, user counts, ratings, or social proof elements in output	2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	7	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	13.7s	6398	8	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	1	FAIL	Triggers on casual phrasing	No mention of casual phrasing detection or response in output. User input was professional/business language, model did not address casual phrasing.	3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	6	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	11.4s	6194	7	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	5	FAIL	Includes relevant plan comparison	No plan comparison table or pricing tiers shown in output.	4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	6	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	10.4s	6123	7	FAIL	Provides copy recommendations	Copy recommendations promised but not delivered - Suggest specific copy variations to A/B test listed as future action.	4	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	14.2s	6445	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	6154	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	6154	2	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	6154	3	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	10.1s	6154	4	FAIL	Does not attempt public pricing page optimization	"I'd be happy to help you optimize your pricing page!" and provides multiple optimization recommendations including comparison tables, pricing presentation, social proof, and objection handling	6	5

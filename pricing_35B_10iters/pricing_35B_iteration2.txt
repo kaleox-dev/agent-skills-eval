@@ -1,0 +1,87 @@
+
+[1m▶ pricing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    Help me figure out pricing for our new SaaS product. It's a customer support platform for e-commerce stores. We're not sure whether to charge per agent, per ticket, or flat rate. Currently thinking $…
+    [90moutput:[0m  To give you a precise recommendation, I need to understand your product's specific value dynamics. Pricing a support platform is nuanced because the "right" metric depends entirely on **what drives v…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is a conversational response, not a file check.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies three pricing axes framework
+         [90mevidence:[0m The model discusses 'Per Agent', 'Per Ticket', and 'Flat Rate' as metrics. It does not explicitly apply a 'three pricing axes framework' (which typically refers to dimensions like Price, Value, and C…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Addresses pricing psychology
+         [90mevidence:[0m The text mentions 'anchor the price' but does not discuss broader pricing psychology concepts like decoy effect, charm pricing, loss aversion, or mental accounting. 'Anchoring' is a single tactic, no…
+    9.4s · 11275 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    We have a Basic ($19), Pro ($49), and Enterprise (custom) plan. The Pro plan gets 70% of signups. Should we add a plan between Pro and Enterprise?
+    [90moutput:[0m  This is a classic pricing structure question. Before answering "yes" or "no," we need to diagnose **why** Pro is capturing 70% of signups and whether the "Pro" tier is acting as a ceiling for custome…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Considers choice paralysis risk
+         [90mevidence:[0m The model mentions increasing 'cognitive load' in the context of pre-product/market fit ('If you are pre-product/market fit: Adding tiers now increases cognitive load for early users'), but fails to …
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies pricing psychology (Hick's Law)
+         [90mevidence:[0m The term 'Hick's Law' is not mentioned, nor is the principle that choice complexity impacts decision time or conversion rates discussed in general terms. The model mentions 'confusing your Pro users'…
+    12.1s · 11542 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    We want to raise our prices by 30%. We've been at $29/month for 2 years and we've added a lot of features. How do we do this without losing customers?
+    [90moutput:[0m  Raising prices is a sign of a maturing product, but doing it wrong can trigger churn. A 30% increase (from $29 to ~$37-40/mo) is significant enough to cause sticker shock but small enough to be justi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests annual billing as softening measure
+         [90mevidence:[0m The entire output mentions monthly pricing ('$29/mo', '$37-40/mo'). There is no mention of annual billing, discounts for annual plans, or using annual billing as a softening measure.
+    13.0s · 11628 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    how do we figure out what people will actually pay? we're launching a new product and have no idea what to charge.
+    [90moutput:[0m  Since you are launching a **new product** with **no existing data**, we need to use predictive research methods rather than retrospective analysis. We can't look at your current churn or ARPU yet. He…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies MaxDiff for feature importance
+         [90mevidence:[0m The output discusses Competitor Benchmarking, Price Waterfall, Van Westendorp, Gabor-Granger, and WTP Interviews. It does not mention MaxDiff (Multiple Choice Discrete Choice) for feature importance …
+    14.4s · 11738 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    Our pricing page conversion rate is only 1.5%. Can you review the page and suggest improvements?
+    [90moutput:[0m  I can certainly help you analyze and improve your pricing page conversion. However, I cannot see your current pricing page. To give you specific, high-impact recommendations, I need some context. Ple…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to cro skill
+         [90mevidence:[0m The model output provides generic advice and asks for context but never explicitly names, references, or defers to a specific 'cro skill' or tool definition.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Explains that pricing is about pricing decisions
+         [90mevidence:[0m The model focuses on conversion metrics (ARPU, churn) and page layout/UX, but does not contain text explaining that 'pricing is about pricing decisions' as a conceptual distinction.
+    5.2s · 10831 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="pricing"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free…
+    [90muser:[0m    What pricing psychology tactics should we use on our pricing page? We want the $79 plan to be the most popular.
+    [90moutput:[0m  To make the **$79 plan** the most popular choice, you need to engineer your pricing page so that $79 appears to be the "smart" or "best value" option compared to the alternatives. This is a classic a…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references cro or marketing-psychology
+         [90mevidence:[0m The output contains no external links, references to specific CRO literature (e.g., Nielsen Norman Group, Optimizely studies), or citations of marketing psychology research papers or frameworks beyon…
+    13.6s · 11772 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 69.0%[0m  [90m· 11.28s avg · 11464 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-942/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "pricing",
+      "slug": "pricing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7027027027027027,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-942/benchmark.json"
+    }
+  ],
+  "iteration": 942,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-942",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-942/report/index.html"
+}

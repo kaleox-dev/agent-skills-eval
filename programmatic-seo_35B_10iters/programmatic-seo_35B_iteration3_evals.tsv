@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	1	FAIL	Checks for product-marketing.md	The output contains no reference to 'product-marketing.md'. The model provided a generic text response with no file generation or specific file checks.	1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	6	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	7	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	19.4s	10097	8	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	6	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	7	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	17.1s	9855	8	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	6	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	14.6s	9620	7	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	6	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	15.7s	9713	7	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	2	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	6	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	17.8s	10018	7	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	13.8s	9567	1	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	13.8s	9567	2	FAIL	References or defers to seo-audit skill	The output contains no mention of 'seo-audit skill', 'seo-audit', or any specific tool/skill name. It treats the interaction as a direct consultation.	6	3
+ab-testing	eval-6	with_skill	FAIL	13.8s	9567	3	FAIL	Explains that programmatic-seo is for strategy and template design	The model focuses entirely on technical fixes (404s, slugs, SSR, server response). It does not define the scope of 'programmatic-seo' as strategy/template design, nor does it distinguish it from the …	6	3
+ab-testing	eval-6	with_skill	FAIL	13.8s	9567	4	PASS			6	3

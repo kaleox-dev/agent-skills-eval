@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	1	FAIL	Checks for product-marketing.md	No output files were captured. The model output is a text response, not a file check.	1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	3	FAIL	Applies the 5 principles	The model output does not explicitly reference or apply a specific set of '5 principles'. It provides recommendations based on 'typical pain points' and 'strategic advice', but fails to demonstrate t…	1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	4	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	8.4s	11782	6	FAIL	Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)	The output explicitly states it will provide these details in the 'Next Steps' ('Please answer... and I will provide... Specific content outline... Gating strategy... Promotion plan'). It does not ou…	1	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	14.4s	12378	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	4	FAIL	Asks what fields are actually used	The model assumes usage based on general best practices ('Nice to have', 'Critical', 'Low') but never explicitly asks the user 'what fields are actually used' in their specific context.	3	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	12.0s	12156	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	11900	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	11900	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	11900	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	11900	4	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.6s	11900	5	FAIL	Defers to free-tools skill	The model output does not contain any text deferring to a specific 'free-tools skill'. It provides a general heuristic in Section 5 without referencing any external tools or skills.	4	3
+ab-testing	eval-5	with_skill	FAIL	12.5s	12252	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.5s	12252	2	FAIL	Cites 2-5x improvement vs generic CTAs	Model provides specific conversion benchmarks (e.g., "25-45%", "3-8%") but does not contain any comparative data showing a 2-5x improvement specifically versus generic CTAs.	5	3
+ab-testing	eval-5	with_skill	FAIL	12.5s	12252	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.5s	12252	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	12.5s	12252	5	PASS			5	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	1	FAIL	Diagnoses as lead quality / buyer stage mismatch	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	2	FAIL	Asks about ICP fit of leads	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	3	FAIL	References Lead Quality Signals	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	4	FAIL	Cross-references emails skill for nurture	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	5	FAIL	Suggests a decision-stage lead magnet alternative	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3
+ab-testing	eval-6	with_skill	FAIL	8.7s	11850	6	FAIL	Mentions tracking time to conversion by source	judge returned unparseable response: { "assertion_results": [ { "text": "Diagnoses as lead quality / buyer stage mismatch", "passed": true, "evidence": "Under 'Scenario B: Too Broad / Top-Funnel', th…	6	3

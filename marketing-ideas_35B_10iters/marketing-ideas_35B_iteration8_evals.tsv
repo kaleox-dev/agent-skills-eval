@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	1	FAIL	Checks for product-marketing.md	Output files section explicitly states: 'No output files were captured.' The model output is plain text, not a markdown file.	1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	2	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	6	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	7	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	11.8s	13579	8	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	6	FAIL	Notes that fast leads means paid or outbound	The model states 'leads here likely means qualified meetings or demo requests' and attributes speed to 'high-intent capture and direct outreach efficiency'. It does not explicitly define 'fast leads'…	2	8
+ab-testing	eval-2	with_skill	FAIL	10.0s	13393	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	15.6s	13938	6	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	5	FAIL	Notes authority building is longer-term	The output states: 'This is the fastest way to become a source of truth' (referring to data content) and 'Getting on stage... signals legitimacy instantly.' It does not explicitly state that authorit…	4	8
+ab-testing	eval-4	with_skill	FAIL	11.3s	13515	6	FAIL	Provides structured output with timelines	While the output has a 'Recommended Next Steps' section with actions like 'Start submitting proposals this week' and 'Commit to posting 3 times next week', it does not provide a structured output *wi…	4	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	4	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.3s	13686	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	13729	1	PASS			6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	13729	2	FAIL	References or defers to referrals skill	The model references '139 Marketing Ideas' as a source for structure but does not explicitly invoke or defer to a specific 'referrals skill' or module. It acts as a general knowledge assistant rather…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	13729	3	FAIL	Does not attempt detailed referral program design	The model provides detailed referral program designs, including specific structures ('Two-Sided Incentive', 'Status & Access Loop'), specific reward examples ('$20–$50'), and step-by-step implementat…	6	8
+ab-testing	eval-6	with_skill	FAIL	12.6s	13729	4	PASS			6	8

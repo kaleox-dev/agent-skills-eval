@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	1	FAIL	Checks for product-marketing.md	Model states: 'Since I don't have access to your .agents/product-marketing.md file, could you please provide the following details?'	1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	2	FAIL	Asks about buyer stage and goal	Model asks about 'Pain Point', 'Current Assets', and 'Goal Priority' (volume vs quality), but does not explicitly ask about the buyer stage as a calibration question.	1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	3	FAIL	Applies the 5 principles	Model admits 'I don't have access to your .agents/product-marketing.md file', implying it cannot apply principles defined within that file. No evidence of specific principle application is found in t…	1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	11.1s	12030	6	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	2	FAIL	Recommends format A/B test	The model recommends A/B testing headline/form variants for the *current* format (Option A), and creating *new* formats as a pivot (Option B). It does not recommend A/B testing the format itself agai…	2	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	5	FAIL	Asks about traffic source (cold vs warm)	The model states: '4% is on the lower end for a dedicated landing page with warm traffic... but it can be normal for cold traffic'. It uses this distinction for initial diagnosis but does not explici…	2	4
+ab-testing	eval-2	with_skill	FAIL	14.3s	12354	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	4	FAIL	Asks what fields are actually used	The model does not ask what fields are used. Instead, it prescribes specific fields (Email/Name) and tells the user when to ask for more data.	3	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	8.1s	11753	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	8.7s	11787	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.7s	11787	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.7s	11787	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.7s	11787	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	8.7s	11787	5	FAIL	Defers to free-tools skill	The model provides a 'Skill Check' note stating: 'This falls under **lead-magnets** ... but uses the logic of a **free-tools** skill for implementation.' It does not explicitly defer the entire decis…	4	4
+ab-testing	eval-5	with_skill	FAIL	8.5s	11793	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.5s	11793	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.5s	11793	3	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.5s	11793	4	FAIL	Keeps blog post ungated to preserve SEO	The model states 'a blog post itself is not a lead magnet because it is already ungated' but never explicitly advises keeping it ungated *to preserve SEO*. It focuses on repurposing content rather th…	5	4
+ab-testing	eval-5	with_skill	FAIL	8.5s	11793	5	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	3	FAIL	References Lead Quality Signals	The model discusses optimizing gating strategy (asking for company size/title) to increase 'lead quality' but does not explicitly reference or list specific 'Lead Quality Signals' as a distinct conce…	6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	4	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	5	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	10.7s	12047	6	FAIL	Mentions tracking time to conversion by source	The model mentions checking 'Click-Through Rate (CTR)' and 'Trial Signups', but does not mention tracking 'time to conversion' nor breaking it down 'by source'.	6	4

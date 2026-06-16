@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	1	FAIL	Checks for product-marketing.md	Output files explicitly state: 'No output files were captured.' The model output is a direct textual response, not a file generation.	1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	2	FAIL	Applies three pricing axes framework	The model discusses 'Value Metric' (Per Agent vs Per Ticket) and 'Tier Structure', but does not explicitly identify or apply a standard 'three pricing axes framework' (e.g., Price, Features, Support,…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	3	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	4	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	5	PASS			1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	6	FAIL	Addresses pricing psychology	The output focuses on value metrics, features, and competitive analysis. It does not mention psychological pricing tactics such as anchoring, charm pricing ($99 vs $100), decoy effect, or framing eff…	1	8
+ab-testing	eval-1	with_skill	FAIL	10.6s	11427	7	PASS			1	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	1	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	2	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	3	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	4	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	5	PASS			2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	6	FAIL	Suggests annual billing as softening measure	The entire model output was reviewed. There is no mention of 'annual billing', 'yearly', 'annual', or any recommendation to switch to annual plans to soften the price impact. The output focuses on mo…	2	8
+ab-testing	eval-2	with_skill	FAIL	12.0s	11540	7	PASS			2	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	1	FAIL	Triggers on casual phrasing	The model output begins with 'Since you have no existing data...' which addresses the implicit context of the prompt but does not exhibit any specific trigger behavior or reaction to 'casual phrasing…	3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	2	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	3	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	4	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	5	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	6	PASS			3	8
+ab-testing	eval-3	with_skill	FAIL	14.6s	11694	7	PASS			3	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	1	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	2	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	3	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	4	PASS			4	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	5	FAIL	Applies pricing psychology (Hick's Law)	The model mentions 'cognitive load' but does not reference Hick's Law. It suggests adding a tier (expanding options) without explicitly discussing Hick's Law as the governing psychological principle …	4	8
+ab-testing	eval-4	with_skill	FAIL	11.5s	11499	6	PASS			4	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	1	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	2	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	3	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	4	FAIL	Applies charm pricing or Rule of 100	The model uses integer pricing ($49, $79, $149). It does not employ charm pricing (ending in 9 or 5, though 49/79 are close, 79 is often considered charm, but the prompt specifically asks for the tac…	5	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	5	PASS			5	8
+ab-testing	eval-5	with_skill	FAIL	12.8s	11719	6	PASS			5	8
+ab-testing	eval-6	with_skill	FAIL	6.8s	11016	1	FAIL	Recognizes this as pricing page CRO, not pricing strategy	judge did not provide concrete evidence	6	8
+ab-testing	eval-6	with_skill	FAIL	6.8s	11016	2	FAIL	References or defers to cro skill	judge did not provide concrete evidence	6	8
+ab-testing	eval-6	with_skill	FAIL	6.8s	11016	3	FAIL	Explains that pricing is about pricing decisions	judge did not provide concrete evidence	6	8
+ab-testing	eval-6	with_skill	FAIL	6.8s	11016	4	PASS			6	8

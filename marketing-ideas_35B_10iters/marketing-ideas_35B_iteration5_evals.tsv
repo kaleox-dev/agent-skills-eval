@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	2	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	3	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	4	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	5	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	6	PASS			1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	7	FAIL	Prioritizes by likely impact	The model lists 4 ideas and provides a 'Quick Implementation Plan', but explicitly ranks them only by 'relevance' ('here are the 4 most relevant ideas'). It does not sort or rank them by a specific m…	1	5
+ab-testing	eval-1	with_skill	FAIL	12.4s	13678	8	PASS			1	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	1	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	2	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	3	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	4	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	5	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	6	PASS			2	5
+ab-testing	eval-2	with_skill	FAIL	11.5s	13428	7	PASS			2	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	1	FAIL	Triggers on casual phrasing	The model output does not contain any meta-commentary, acknowledgment, or reference to the user's phrasing style (casual vs. formal). It simply proceeds with the response: 'Since you are a **Product-…	3	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	2	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	3	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	4	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	5	PASS			3	5
+ab-testing	eval-3	with_skill	FAIL	16.4s	14073	6	PASS			3	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	1	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	2	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	3	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	4	PASS			4	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	5	FAIL	Notes authority building is longer-term	The output describes Strategy 1 as creating 'linkable assets' and 'Expected outcome: Backlinks...'. Strategy 2 is called 'fastest way to build trust'. No statement indicates that authority building i…	4	5
+ab-testing	eval-4	with_skill	FAIL	9.6s	13370	6	PASS			4	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	1	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	2	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	3	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	4	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	5	PASS			5	5
+ab-testing	eval-5	with_skill	FAIL	19.7s	14381	6	PASS			5	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13488	1	PASS			6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13488	2	FAIL	References or defers to referrals skill	Model attempts to answer the question directly with a 'General Framework' and 'Quick Start Plan' without referencing or deferring to any specific 'referrals skill' or internal tool. It provides the d…	6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13488	3	FAIL	Does not attempt detailed referral program design	Model provides detailed designs including specific incentive structures ('$500 credit', '20% off'), trigger strategies ('Right after an Aha! moment'), and tool recommendations ('Friendbuy', 'Referral…	6	5
+ab-testing	eval-6	with_skill	FAIL	11.7s	13488	4	FAIL	May briefly mention as a marketing idea	The response is not a brief mention; it is a comprehensive guide with multiple sections, examples for B2B/B2C/Enterprise, and a 5-step launch plan.	6	5

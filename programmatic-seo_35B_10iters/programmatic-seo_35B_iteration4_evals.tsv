@@ -1,0 +1,42 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model output is raw text, not a file named product-marketing.md.	1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	6	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	7	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	15.6s	9689	8	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	6	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	7	FAIL	Cross-references competitors skill	The output describes a strategy for creating comparison pages based on a provided list of 15 competitors. It does not demonstrate an analysis of the competitors' own SEO skills, nor does it reference…	2	4
+ab-testing	eval-2	with_skill	FAIL	17.5s	9864	8	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	6	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	14.9s	9630	7	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	3	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	4	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	5	FAIL	Checks XML sitemap and robots.txt	The model checks 'Sitemap Status' ('Are all 500 URLs in your sitemap?') and suggests splitting sitemaps. However, it does NOT mention or instruct the user to check 'robots.txt'. The assertion require…	4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	6	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	12.7s	9402	7	PASS			4	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	3	FAIL	Recommends hub/index page	The output defines the URL structure as `yourdomain.com/glossary/[term-slug]` and discusses subdomains as 'Bad', but never explicitly recommends or describes the design/content of a central hub or in…	5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	6	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	18.8s	10242	7	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	6.6s	8779	1	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	6.6s	8779	2	FAIL	References or defers to seo-audit skill	No mention of 'seo-audit skill' or any specific agent tool/label in the output.	6	4
+ab-testing	eval-6	with_skill	FAIL	6.6s	8779	3	FAIL	Explains that programmatic-seo is for strategy and template design	Model mentions 'template design' only as a source of errors ('templates still tries to generate a page'), not to define the scope of the 'programmatic-seo' skill for strategy/template design.	6	4
+ab-testing	eval-6	with_skill	FAIL	6.6s	8779	4	PASS			6	4

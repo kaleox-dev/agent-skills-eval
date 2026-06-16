@@ -62,3 +62,42 @@
     [90moutput:[0m  The user is asking about the best image format for their website. This is a common web performance and SEO question. Based on the image skill documentation I have access to, there's a detailed sectio…
     [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
     8.3s · 11050 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="image"> <description>When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or…
+    [90muser:[0m    We're a SaaS that just launched. Need OG images for every blog post we ship — about 2 per week. Doing it manually is killing us.
+    [90moutput:[0m  The user is a SaaS company that just launched and needs OG (Open Graph) images for their blog posts. They're publishing about 2 posts per week and want to automate this because doing it manually is t…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends programmatic OG image generation
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names Vercel OG, Satori, or Cloudinary
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions template + dynamic data approach
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Lists required og:image meta tags
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Specifies 1200x630 dimensions
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes this is best for high-volume blogs
+         [90mevidence:[0m judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * **Role:** Strict JSON-only evaluator. * **Task:** Grade an agent's response based on provided assertions. * **Inpu…
+    14.4s · 11681 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 48.5%[0m  [90m· 10.00s avg · 11174 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-760/benchmark.json[0m
+{
+  "passed": 17,
+  "failed": 19,
+  "skills": [
+    {
+      "skill": "image",
+      "slug": "image",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.4722222222222222,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-760/benchmark.json"
+    }
+  ],
+  "iteration": 760,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-760",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-760/report/index.html"
+}

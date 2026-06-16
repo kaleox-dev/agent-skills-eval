@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	1	FAIL	Checks for product-marketing.md	Output files: No output files were captured.	1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	3	FAIL	Provides ideas from the 139 marketing ideas catalog	Output mentions specific idea numbers like 'Idea #15 & #18', 'Idea #37 & #92', 'Idea #87 & #63', 'Idea #1', etc. It does not explicitly state that the list is drawn from a specific '139 marketing ide…	1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	6	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	7	FAIL	Prioritizes by likely impact	The ideas are numbered 1-4 and titled 'Top 4 Marketing Ideas', but there is no explicit prioritization metric, scoring, or statement linking the order to 'likely impact' or 'priority' in a verifiable…	1	10
+ab-testing	eval-1	with_skill	FAIL	12.0s	13637	8	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	4	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	5	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	6	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	9.8s	13374	7	PASS			2	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	13.7s	13780	6	PASS			3	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	4	FAIL	Includes community and media appearances	The model mentions that journalists 'cite your data' (Strategy 1) and promoting tools in 'HR Slack groups' (Strategy 5), but fails to recommend specific tactics for obtaining community speaking roles…	4	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	5	FAIL	Notes authority building is longer-term	The model provides short-term resource estimates ('2–3 weeks', '1–2 hours/week', '1–2 weeks') but does not explicitly characterize authority building as a 'longer-term' or 'long-game' strategy, nor d…	4	10
+ab-testing	eval-4	with_skill	FAIL	13.7s	13611	6	PASS			4	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	2	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	3	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	18.9s	14493	6	PASS			5	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	13506	1	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	13506	2	FAIL	References or defers to referrals skill	Model does not explicitly reference a 'referrals skill' or system instruction. It instead treats the request as a general capability, providing generic frameworks and tool recommendations without ack…	6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	13506	3	FAIL	Does not attempt detailed referral program design	Model attempts a very detailed design by providing specific frameworks ("3 Core Elements"), three distinct model types ("Double-Sided Credit", "Tiered Milestone", "Viral Loop") with implementation ex…	6	10
+ab-testing	eval-6	with_skill	FAIL	10.4s	13506	4	PASS			6	10

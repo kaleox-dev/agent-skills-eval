@@ -1,0 +1,38 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	1	FAIL	Checks for product-marketing.md	Output files section states: 'No output files were captured.' The model provided inline text only.	1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	3	FAIL	Provides ideas from the 139 marketing ideas catalog	The output cites 'Idea #11', 'Idea #15/18', 'Idea #38', 'Idea #137/93'. There is no evidence in the output provided that these numbers correspond to a specific '139 marketing ideas catalog' (e.g., 13…	1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	7	FAIL	Prioritizes by likely impact	The output lists 4 ideas and labels the section '4 high-impact marketing ideas'. It does not explicitly rank them by impact (e.g., 1 is highest impact, 4 is lowest) nor does it provide a ranking mech…	1	2
+ab-testing	eval-1	with_skill	FAIL	10.5s	13465	8	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	15.6s	13944	7	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	11.8s	13573	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	5	FAIL	Notes authority building is longer-term	The model claims Strategy 1 (Proprietary Data) is the 'fastest way to build domain authority' and Strategy 3 (SEO) provides 'Steady, long-tail organic traffic' without explicitly stating that authori…	4	2
+ab-testing	eval-4	with_skill	FAIL	11.9s	13577	6	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	3	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	16.7s	14148	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	9.6s	13331	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	9.6s	13331	2	FAIL	References or defers to referrals skill	The output provides generic marketing advice based on common scenarios. It does not explicitly mention a 'referrals skill' nor does it defer to a specific system capability or documentation regarding…	6	2
+ab-testing	eval-6	with_skill	FAIL	9.6s	13331	3	FAIL	Does not attempt detailed referral program design	The output attempts a detailed design by providing 4 specific options with concrete reward structures (e.g., 'Give $20, Get $20', '10-20% of first year's contract value'), implementation triggers, an…	6	2
+ab-testing	eval-6	with_skill	FAIL	9.6s	13331	4	PASS			6	2

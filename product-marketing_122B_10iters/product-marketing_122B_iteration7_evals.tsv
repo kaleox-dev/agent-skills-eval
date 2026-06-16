@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	6.7s	2415	1	FAIL	Checks for existing product-marketing.md	I don't have access to their actual file system, so I can't check if the file exists.	1	7
+ab-testing	eval-1	with_skill	FAIL	6.7s	2415	2	PASS			1	7
+ab-testing	eval-1	with_skill	FAIL	6.7s	2415	3	FAIL	Covers applicable sections	No sections were covered; model only presented options to user	1	7
+ab-testing	eval-1	with_skill	FAIL	6.7s	2415	4	FAIL	Walks through sections conversationally one at a time	Model stated it would walk through sections but did not begin this process	1	7
+ab-testing	eval-1	with_skill	FAIL	6.7s	2415	5	FAIL	Creates file at .agents/product-marketing.md	No output files were captured	1	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	1	FAIL	Reads existing product-marketing.md	No output files were captured - file_read tool called but no content returned	2	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	2	FAIL	Identifies sections that need updating	No file content was read, no sections identified in output	2	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	3	FAIL	Updates Target Audience with VP of Engineering	No document updates performed - only file_read tool call made	2	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	4	FAIL	Adds new persona for the expanded audience	No persona added - no content modifications in output	2	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	5	FAIL	Updates Product Overview for enterprise tier	No Product Overview updates made - no file write operations	2	7
+ab-testing	eval-2	with_skill	FAIL	2.6s	2076	6	FAIL	Preserves unchanged sections	No document was actually updated, nothing to preserve	2	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	1	FAIL	Triggers on casual phrasing	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	2	FAIL	Checks for existing context doc	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	3	FAIL	Offers auto-draft or start-from-scratch options	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	4	FAIL	Adapts questions for early-stage B2C mobile app	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	5	FAIL	Notes some sections may be sparse early on	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	6	FAIL	Skips non-applicable sections rather than forcing all 12	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-3	with_skill	FAIL	6.2s	2371	7	FAIL	Creates file at .agents/product-marketing.md	judge returned unparseable response: Thinking Process: 1. **Analyze the Request:** * Task: Grade an agentskills.io evaluation run. * Input: * 7 Assertions to verify. * Model Output (text response + f…	3	7
+ab-testing	eval-4	with_skill	FAIL	7.8s	2492	1	PASS			4	7
+ab-testing	eval-4	with_skill	FAIL	7.8s	2492	2	FAIL	Scans codebase for existing marketing materials	However, I don't actually have access to their codebase - I can't read files from their local filesystem.	4	7
+ab-testing	eval-4	with_skill	FAIL	7.8s	2492	3	FAIL	Drafts context from found information	No draft content was produced; model only requested files from user.	4	7
+ab-testing	eval-4	with_skill	FAIL	7.8s	2492	4	FAIL	Flags sections needing manual input	No specific sections were flagged for manual input.	4	7
+ab-testing	eval-4	with_skill	FAIL	7.8s	2492	5	FAIL	Presents draft for review before saving	No draft was presented for review.	4	7
+ab-testing	eval-5	with_skill	FAIL	5.5s	2362	1	FAIL	Checks both file locations	Model states 'Since I can't actually check the file system' - no actual file checks performed	5	7
+ab-testing	eval-5	with_skill	FAIL	5.5s	2362	2	FAIL	Reports whether context doc exists	No existence report provided - model says 'Let me check now' but never reports results	5	7
+ab-testing	eval-5	with_skill	FAIL	5.5s	2362	3	FAIL	Summarizes contents if found	No document found, no summary provided	5	7
+ab-testing	eval-5	with_skill	FAIL	5.5s	2362	4	PASS			5	7
+ab-testing	eval-5	with_skill	FAIL	5.5s	2362	5	FAIL	Explains how other skills use it	Mentions 'other marketing skills have context' but does not explain HOW they use it	5	7
+ab-testing	eval-6	with_skill	FAIL	6.2s	2405	1	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.2s	2405	2	PASS			6	7
+ab-testing	eval-6	with_skill	FAIL	6.2s	2405	3	FAIL	References or defers to copywriting skill for the actual copy	Output references 'product-marketing skill instructions' but does not explicitly reference a 'copywriting skill'	6	7
+ab-testing	eval-6	with_skill	FAIL	6.2s	2405	4	PASS			6	7

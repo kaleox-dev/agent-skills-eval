@@ -1,0 +1,89 @@
+
+[1m▶ lead-magnets[0m  [90m[0m
+  [90m6 evals  target=RedHatAI/Qwen3.5-122B-A10B-NVFP4  judge=RedHatAI/Qwen3.5-122B-A10B-NVFP4  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our lead form asks for name, email, company, role, company size, and phone. We're not getting enough signups. Could the form be the problem?
+    [90moutput:[0m  The user is asking about their lead form - they're asking for 6 fields (name, email, company, role, company size, and phone) and not getting enough signups. They want to know if the form could be the…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Asks what fields are actually used
+         [90mevidence:[0m No direct question about which fields are actually used in business operations; asks about lead magnet type, goals, ICP instead
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references cro skill
+         [90mevidence:[0m Mentions 'skill guidelines' and 'reference materials in the skill' but does not explicitly cross-reference a CRO skill by name
+    12.9s · 11954 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?
+    [90moutput:[0m  The user is asking for lead magnet recommendations for their B2B SaaS company that sells project management software to marketing agencies. This is a perfect use case for the lead-magnets skill. Let …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m "Since I don't have access to check for `.agents/product-marketing.md` or similar files in this conversation" - model acknowledged it could not check, did not actually check the file
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks about buyer stage and goal
+         [90mevidence:[0m Asks about goal ("What's your primary goal right now?") but no explicit question about buyer stage; stage mentioned as assumption "Target Stage: Consideration" not asked from user
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies the 5 principles
+         [90mevidence:[0m No reference to or application of any "5 principles" in the output; skill instructions not cited or followed explicitly
+    22.1s · 12736 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a top-performing blog post on email subject lines. Can we use it as a lead magnet?
+    [90moutput:[0m  The user is asking about using a top-performing blog post on email subject lines as a lead magnet. This is a great question that falls squarely within the lead magnets skill scope. Let me think about…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Cites 2-5x improvement vs generic CTAs
+         [90mevidence:[0m No mention of 2-5x improvement vs generic CTAs in output
+    12.4s · 11959 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our checklist gets a lot of downloads but very few of them ever sign up for a trial. Is the lead magnet broken?
+    [90moutput:[0m  The user is asking about a lead magnet performance issue - their checklist is getting downloads but not converting to trial signups. This is a common lead magnet problem that I can help diagnose and …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks about ICP fit of leads
+         [90mevidence:[0m No question asked about ICP or lead persona fit; asks about checklist topic and product instead
+      [31m#3[0m [31mFAIL[0m [90m—[0m References Lead Quality Signals
+         [90mevidence:[0m No explicit reference to Lead Quality Signals concept or framework
+      [31m#4[0m [31mFAIL[0m [90m—[0m Cross-references emails skill for nurture
+         [90mevidence:[0m Mentions "post-download email sequence" but does not cross-reference an emails skill
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions tracking time to conversion by source
+         [90mevidence:[0m No mention of tracking time to conversion or conversion by source
+    10.3s · 11787 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    What's the difference between a lead magnet and a free tool? Should I build one or the other?
+    [90moutput:[0m  The user is asking about the difference between a lead magnet and a free tool, and whether they should build one or the other. This is a strategic question about lead generation assets. Let me think …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Defers to free-tools skill
+         [90mevidence:[0m Model stated: 'I have enough general knowledge to answer this strategic question without needing to call that skill' - no tool call made
+    14.6s · 12115 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a 50-page ebook we spent 3 months writing. Conversion on the landing page is only 4%. Should we keep iterating?
+    [90moutput:[0m  The user is asking about a lead magnet situation - they have a 50-page ebook that's been taking 3 months to create, and the landing page conversion rate is only 4%. They want to know if they should k…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Cross-references cro or ab-testing skill
+         [90mevidence:[0m No explicit mention of 'CRO skill' or 'ab-testing skill' in output.
+    16.4s · 12264 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 65.6%[0m  [90m· 14.77s avg · 12136 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-798/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "lead-magnets",
+      "slug": "lead-magnets",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6470588235294118,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-798/benchmark.json"
+    }
+  ],
+  "iteration": 798,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-798",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-798/report/index.html"
+}

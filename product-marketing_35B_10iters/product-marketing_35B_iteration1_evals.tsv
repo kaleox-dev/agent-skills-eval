@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	1.9s	2068	1	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	1.9s	2068	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	1.9s	2068	3	FAIL	Covers applicable sections	Model does not list or cover the sections of the document in the output.	1	1
+ab-testing	eval-1	with_skill	FAIL	1.9s	2068	4	FAIL	Walks through sections conversationally one at a time	Model offers this as an option but does not actually perform the walkthrough in the current output.	1	1
+ab-testing	eval-1	with_skill	FAIL	1.9s	2068	5	FAIL	Creates file at .agents/product-marketing.md	Output files section states: 'No output files were captured.'	1	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	1	FAIL	Reads existing product-marketing.md	judge did not provide concrete evidence	2	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	2	FAIL	Identifies sections that need updating	judge did not provide concrete evidence	2	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	3	FAIL	Updates Target Audience with VP of Engineering	judge did not provide concrete evidence	2	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	4	FAIL	Adds new persona for the expanded audience	judge did not provide concrete evidence	2	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	5	FAIL	Updates Product Overview for enterprise tier	judge did not provide concrete evidence	2	1
+ab-testing	eval-2	with_skill	FAIL	17.6s	3806	6	FAIL	Preserves unchanged sections	judge did not provide concrete evidence	2	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	1	FAIL	Triggers on casual phrasing	judge did not provide concrete evidence	3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	4	FAIL	Adapts questions for early-stage B2C mobile app	The model output mentions 'early-stage apps' generally but does not specify 'B2C mobile app' or tailor the response specifically to those constraints. The output is generic for any early-stage app.	3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	5	FAIL	Notes some sections may be sparse early on	The model output does not contain text indicating that sections may be sparse. It offers to 'fill in the gaps' or 'walk you through each section', but does not explicitly note sparsity.	3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	6	FAIL	Skips non-applicable sections rather than forcing all 12	The model output does not mention skipping sections or the total number 12. It offers to walk through sections one by one, but does not confirm skipping behavior.	3	1
+ab-testing	eval-3	with_skill	FAIL	2.9s	2163	7	FAIL	Creates file at .agents/product-marketing.md	Output files: No output files were captured. The model only discussed creating the file but did not produce it.	3	1
+ab-testing	eval-4	with_skill	FAIL	2.5s	2123	1	FAIL	Activates auto-draft workflow mode	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	2.5s	2123	2	FAIL	Scans codebase for existing marketing materials	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	2.5s	2123	3	FAIL	Drafts context from found information	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	2.5s	2123	4	FAIL	Flags sections needing manual input	judge did not provide concrete evidence	4	1
+ab-testing	eval-4	with_skill	FAIL	2.5s	2123	5	FAIL	Presents draft for review before saving	judge did not provide concrete evidence	4	1
+ab-testing	eval-5	with_skill	FAIL	6.7s	2540	1	FAIL	Checks both file locations	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	6.7s	2540	2	FAIL	Reports whether context doc exists	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	6.7s	2540	3	FAIL	Summarizes contents if found	judge did not provide concrete evidence	5	1
+ab-testing	eval-5	with_skill	FAIL	6.7s	2540	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	6.7s	2540	5	FAIL	Explains how other skills use it	judge did not provide concrete evidence	5	1
+ab-testing	eval-6	with_skill	FAIL	2.7s	2174	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.7s	2174	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.7s	2174	3	FAIL	References or defers to copywriting skill for the actual copy	Model states 'I'll draft a compelling homepage structure', indicating it will generate the copy itself rather than explicitly deferring to a specific skill agent or tool. No mention of a copywriting …	6	1
+ab-testing	eval-6	with_skill	FAIL	2.7s	2174	4	PASS			6	1
