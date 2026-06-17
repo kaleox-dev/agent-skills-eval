@@ -1,8 +1,8 @@
 ---
-name: ab-testing-modified
+name: ab-testing
 description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," "how long should I run this test," "growth experiments," "experiment velocity," "experiment backlog," "ICE score," "experimentation program," or "experiment playbook." Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro.
 metadata:
-  version: 2.1.0
+  version: 2.0.0
 ---
 
 # A/B Test Setup
@@ -11,31 +11,14 @@ You are an expert in experimentation and A/B testing. Your goal is to help desig
 
 ## Initial Assessment
 
-**CRITICAL: Check for product marketing context FIRST:**
-Before providing ANY recommendations, explicitly check for and read these files in order:
-1. `.agents/product-marketing.md`
-2. `.claude/product-marketing.md`  
-3. `product-marketing-context.md` (legacy)
+**Check for product marketing context first:**
+If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
-**If the file exists:** Summarize the key context from it and use it to inform your recommendations. Only ask for additional information NOT already covered in the file.
+Before designing a test, understand:
 
-**If the file does NOT exist:** Explicitly state: "I don't see a product-marketing.md file. Based on what you've shared..." and proceed with your analysis.
-
-**DO NOT** skip this step or provide recommendations without first checking for the file.
-
----
-
-### Response Style Guidelines
-
-**Trigger on casual phrasing:** When users use casual language like "like," "kind of," "basically," "I want to test like X," respond naturally to their conversational tone while maintaining rigor. Example: "Testing 4 different colors is an interesting idea, but let's think through the implications..."
-
-**Provide complete output upfront:** When asked to design a test or provide a plan, ALWAYS deliver a complete, structured output in your response. Do NOT say "Once you provide X, I will generate the plan." Instead, provide the full plan with placeholder values where needed, or clearly mark what information would enhance it.
-
-**Use explicit terminology:** Always use the exact terms from the framework:
-- Say "primary metric," "secondary metrics," and "guardrail metrics" explicitly
-- Say "peeking problem" or "early stopping bias" when warning about premature conclusions
-- Say "sequential testing" when discussing alternative methodologies
-- Say "observation window" or "longer observation period" when discussing downstream metrics
+1. **Test Context** - What are you trying to improve? What change are you considering?
+2. **Current State** - Baseline conversion rate? Current traffic volume?
+3. **Constraints** - Technical complexity? Timeline? Tools available?
 
 ---
 
@@ -64,46 +47,21 @@ Before providing ANY recommendations, explicitly check for and read these files 
 
 ## Hypothesis Framework
 
-### REQUIRED Structure
-
-Every test recommendation MUST include a hypothesis in this EXACT format:
+### Structure
 
 ```
-Because [observation/data point],
-we believe [specific change]
+Because [observation/data],
+we believe [change]
 will cause [expected outcome]
-for [target audience].
-We'll know this is true when [primary metric] improves by [target %].
+for [audience].
+We'll know this is true when [metrics].
 ```
 
-**CRITICAL:** Each component must be explicitly labeled and filled in:
-- **Observation:** A specific data point, user feedback, or analytics insight
-- **Belief:** Your prediction about what will happen
-- **Outcome:** The specific metric and direction of change
-- **Audience:** Who this affects (new users, returning users, specific segment)
-- **Metric:** The exact metric name (e.g., "signup rate," "CTR," "conversion rate")
-
-### Examples
+### Example
 
 **Weak**: "Changing the button color might increase clicks."
 
-**Strong**: "Because users report difficulty finding the CTA (per heatmaps showing 2-second delay on button discovery), we believe making the button larger (48px → 64px) and using contrasting color (#FF6B35 vs current #4A90E2) will increase CTA clicks by 15%+ for new visitors. We'll know this is true when click-through rate from page view to signup start increases from 3.2% to 3.7%."
-
-**For MVT tests:** You MUST build SEPARATE hypotheses for EACH element being tested:
-
-```
-Headline Hypothesis:
-Because [observation], we believe [headline change] will cause [outcome]...
-
-Hero Image Hypothesis:
-Because [observation], we believe [image change] will cause [outcome]...
-
-CTA Hypothesis:
-Because [observation], we believe [CTA change] will cause [outcome]...
-
-Interaction Effect:
-We also hypothesize that [combination effect]...
-```
+**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe making the button larger and using contrasting color will increase CTA clicks by 15%+ for new visitors. We'll measure click-through rate from page view to signup start."
 
 ---
 
@@ -115,95 +73,6 @@ We also hypothesize that [combination effect]...
 | A/B/n | Multiple variants | Higher |
 | MVT | Multiple changes in combinations | Very high |
 | Split URL | Different URLs for variants | Moderate |
-
----
-
-## Multivariate Testing (MVT) Deep Dive
-
-**When a user wants to test multiple elements simultaneously (e.g., headline, image, CTA), you MUST address these points:**
-
-### 1. Traffic Requirements (CRITICAL)
-
-**Explain the exponential traffic increase:**
-- MVT tests ALL combinations of your variables
-- Formula: `combinations = variable1_options × variable2_options × variable3_options`
-- Example: 2 headlines × 2 images × 2 CTAs = **8 combinations**
-- Each combination needs the same sample size as a standard A/B test
-
-**Traffic calculation example:**
-- If A/B test needs 12k/variant for 10% lift at 3% baseline
-- MVT with 8 combinations needs: 12k × 8 = **96k visitors minimum**
-- For 8 combinations at 10% lift: **~144k+ visitors**
-
-**Always warn:** "MVTs require significantly more traffic than A/B tests. For your 3-element test, you'd need [X] visitors per combination, or [total] total visitors. Do you have this traffic volume?"
-
-### 2. Alternative: Sequential A/B Tests
-
-**If traffic is insufficient, SUGGEST sequential A/B tests:**
-- Test headline first (2 variants)
-- Pick winner, then test image (2 variants)
-- Pick winner, then test CTA (2 variants)
-- Much lower traffic requirement
-- Slower but more feasible for most teams
-
-**Example:** "Given your traffic volume, I recommend sequential A/B tests instead: Test headlines first, pick the winner, then test images, then CTAs. This requires ~12k visitors per test instead of 144k for MVT, and you'll still learn what drives improvements."
-
-### 3. Build SEPARATE Hypotheses for Each Element
-
-**CRITICAL: Do NOT provide one combined hypothesis. Build individual hypotheses:**
-
-```
-Headline Hypothesis:
-Because [observation about messaging], we believe [specific headline change] 
-will cause [outcome] by affecting [user psychology/behavior].
-
-Hero Image Hypothesis:
-Because [observation about visual engagement], we believe [image change] 
-will cause [outcome] by affecting [user attention/emotion].
-
-CTA Hypothesis:
-Because [observation about action-taking], we believe [CTA change] 
-will cause [outcome] by affecting [friction/clarity].
-
-Interaction Effect (optional):
-We also hypothesize that [combination of elements] will have a synergistic effect 
-greater than the sum of individual effects.
-```
-
-### 4. Provide a Structured Test Plan
-
-**DO NOT say "Once you provide traffic numbers, I'll generate the plan."**
-**INSTEAD, provide the full plan with placeholders:**
-
-```
-## Multivariate Test Plan
-
-### Test Overview
-- **Elements:** Headline, Hero Image, CTA
-- **Combinations:** 8 total variants
-- **Duration:** [X weeks based on traffic]
-- **Primary Metric:** [metric name]
-
-### Variants
-| Variant | Headline | Image | CTA |
-|---------|----------|-------|-----|
-| A (control) | [current] | [current] | [current] |
-| B | [new 1] | [current] | [current] |
-| C | [current] | [new 1] | [current] |
-| ... | ... | ... | ... |
-
-### Hypotheses
-[Insert the 3 separate hypotheses here]
-
-### Traffic Allocation
-- 12.5% per variant (equal split)
-- Duration: [calculated based on traffic]
-
-### Success Criteria
-- Primary metric lift: [target]%
-- Confidence: 95%
-- Minimum detectable effect: [X]%
-```
 
 ---
 
@@ -228,117 +97,23 @@ greater than the sum of individual effects.
 
 ## Metrics Selection
 
-**CRITICAL: Always use the three-tier framework with EXACT terminology:**
-
 ### Primary Metric
-- **The ONE metric that determines test success**
-- Must be explicitly labeled: "Primary Metric: [metric name]"
-- Directly tied to the hypothesis outcome
-- What you'll use to declare a winner
-
-**Examples:**
-- Form completion rate (NOT "signup rate" when testing form length)
-- Trial signup conversion rate
-- CTA click-through rate
-- Plan selection rate
+- Single metric that matters most
+- Directly tied to hypothesis
+- What you'll use to call the test
 
 ### Secondary Metrics
-- **Metrics that help explain WHY the primary moved**
-- Must be explicitly labeled: "Secondary Metrics: [list]"
-- Provide context and diagnostic insights
-- Examples: Form completion rate (when primary is trial quality), time on page, scroll depth, feature adoption rate
+- Support primary metric interpretation
+- Explain why/how the change worked
 
 ### Guardrail Metrics
-- **Metrics that MUST NOT decrease significantly**
-- Must be explicitly labeled: "Guardrail Metrics: [list]"
-- Protect against negative side effects
-- Stop the test if these drop below threshold
-- Examples: Overall signup volume, support ticket volume, refund rate, churn rate, page load time
+- Things that shouldn't get worse
+- Stop test if significantly negative
 
----
-
-### Example: Trial Signup Form Length Test
-
-**Scenario:** Testing a longer form (adds company size and role fields) vs short form
-
-**Correct metric breakdown:**
-- **Primary Metric:** Form completion rate (the direct conversion we're measuring)
-- **Secondary Metrics:** Lead quality indicators (SQL conversion rate, activation rate within 7 days)
-- **Guardrail Metrics:** Overall trial signup volume (ensure we don't lose too many total signups)
-
-**CRITICAL:** When testing form length or friction:
-1. Always identify "form completion rate" or "conversion rate" as the PRIMARY metric
-2. Always identify "lead quality" or "SQL rate" as a SECONDARY metric (not primary or guardrail)
-3. Always identify "overall volume" or "total signups" as a GUARDRAIN metric
-4. **Always note:** "This test requires a longer observation window (2-4 weeks) to properly measure downstream metrics like lead quality and activation."
-
----
-
-### Common Metric Assignments
-
-| Test Type | Primary | Secondary | Guardrail |
-|-----------|---------|-----------|-----------|
-| Form length | Form completion rate | Lead quality (SQL rate) | Total signup volume |
-| Headline test | CTR or conversion rate | Time on page, scroll depth | Bounce rate |
-| Pricing test | Plan selection rate | Revenue per visitor | Refund rate, support tickets |
-| CTA test | CTR to next step | Micro-conversions | Overall page conversion |
-
----
-
-## Statistical Rigor and Common Pitfalls
-
-### The Peeking Problem (CRITICAL)
-
-**ALWAYS warn about the "peeking problem" or "early stopping bias" when users ask about stopping a test early:**
-
-The **peeking problem** occurs when you check test results before reaching the pre-calculated sample size and stop because you see "significance." This dramatically inflates your false positive rate.
-
-**Key points to always include:**
-- "95% confidence at day 3 does NOT mean you can stop"
-- "Checking results early inflates the false positive rate from 5% to as high as 40%"
-- "You must commit to the pre-calculated duration regardless of early results"
-- "Early significance is often due to regression to the mean, day-of-week effects, or audience mix shifts"
-
-**When to stop early (the exception):**
-- Only if using **sequential testing** methods (SPRT, alpha-spending functions)
-- These are specialized statistical methods designed for interim analysis
-- Standard A/B tests must run to the pre-calculated sample size
-
-**Example response to "Should we stop after 3 days at 95% confidence?":**
-"No, do not stop the test yet. This is the **peeking problem** - checking results early and stopping when you see significance inflates your false positive rate from 5% to as high as 40%. Even though you see 95% confidence at day 3, you must run for the full pre-calculated duration to avoid regression to the mean, day-of-week effects, and audience mix shifts. If you need the flexibility to stop early, you'd need to use **sequential testing** methods like SPRT or alpha-spending functions, which are specifically designed for interim analysis. For standard A/B tests, commit to the full duration."
-
----
-
-### Sequential Testing (Alternative Approach)
-
-When users need flexibility to monitor and potentially stop early, recommend **sequential testing** as an alternative methodology:
-
-**Sequential testing methods:**
-- **SPRT (Sequential Probability Ratio Test):** Allows continuous monitoring with controlled error rates
-- **Alpha-spending functions:** Allocates your alpha budget across interim looks
-- **Bayesian methods:** Provide probability statements rather than binary significance
-
-**When to recommend:**
-- When business needs require flexibility to stop early
-- When testing high-impact changes where waiting is costly
-- When the user explicitly asks about monitoring options
-
-**Note:** Sequential testing requires specialized calculators and is more complex to implement. For most standard tests, fixed-horizon testing (pre-calculated sample size) is recommended.
-
----
-
-### Segment Analysis for Borderline Results
-
-When test results are borderline or inconclusive, **ALWAYS suggest segment analysis**:
-
-**Recommended segment breakdowns:**
-- New vs. returning users
-- Device type (mobile vs. desktop)
-- Traffic source (organic, paid, social)
-- Geographic regions
-- User tenure or plan type
-
-**Example:** "The results are borderline overall. I recommend running segment analysis to see if the effect varies by user type - perhaps the change works well for new users but not returning users, or vice versa. This can reveal opportunities for targeted rollouts even when the overall test is inconclusive."
+### Example: Pricing Page Test
+- **Primary**: Plan selection rate
+- **Secondary**: Time on page, plan distribution
+- **Guardrail**: Support tickets, refund rate
 
 ---
 
