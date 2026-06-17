@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	6	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	7	FAIL	Warns about the peeking problem	No mention of peeking or early stopping.	1	2
+ab-testing	eval-1	with_skill	FAIL	12.6s	15207	8	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output.	2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	5	FAIL	Questions whether button color alone is high-impact	Model discusses test feasibility, not impact.	2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	6	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	16.6s	15490	7	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	3	FAIL	Recommends running for full pre-calculated duration	Recommends 1-2 weeks, not full pre-calculated duration	3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	8.5s	14832	6	PASS			3	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	3	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	6	FAIL	Builds hypotheses for each element	Only one combined hypothesis provided	4	2
+ab-testing	eval-4	with_skill	FAIL	10.4s	15009	7	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	2	FAIL	Identifies form completion rate as primary metric	Model identifies Trial-to-Paid Conversion Rate as primary.	5	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	3	FAIL	Identifies lead quality as secondary metric	Model lists it as secondary, not primary.	5	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.4s	15175	6	FAIL	Notes need for longer observation window for downstream metrics	Model did not mention observation window.	5	2
+ab-testing	eval-6	with_skill	FAIL	7.2s	14615	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on A/B test design, not copywriting.	6	2
+ab-testing	eval-6	with_skill	FAIL	7.2s	14615	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	7.2s	14615	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	7.2s	14615	4	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	2	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	3	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	4	FAIL	Distinguishes statistical significance from practical significance	Only discusses statistical significance, not practical.	7	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	5	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	7.3s	14647	6	PASS			7	2

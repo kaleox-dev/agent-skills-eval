@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	7	FAIL	Warns about the peeking problem	No mention of peeking problem	1	1
+ab-testing	eval-1	with_skill	FAIL	17.5s	15641	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output.	2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	5	FAIL	Questions whether button color alone is high-impact	Model discusses test design, not impact.	2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	6	FAIL	Suggests alternative higher-impact elements to test	Suggests testing fewer variants, not different elements.	2	1
+ab-testing	eval-2	with_skill	FAIL	7.0s	14668	7	FAIL	Provides hypothesis framework	No hypothesis framework provided	2	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	6.9s	14659	6	PASS			3	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	3	FAIL	Addresses dramatically higher traffic requirements	Model questions traffic sufficiency	4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	6	FAIL	Builds hypotheses for each element	Only one generic hypothesis template provided	4	1
+ab-testing	eval-4	with_skill	FAIL	12.5s	15140	7	PASS			4	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	2	FAIL	Identifies form completion rate as primary metric	Model identifies Qualified Trial Signup Rate as primary	5	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	3	FAIL	Identifies lead quality as secondary metric	Model lists lead quality as Primary Metric	5	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.1s	15045	6	FAIL	Notes need for longer observation window for downstream metrics	Model suggests 14-30 day post-test analysis	5	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	14541	1	FAIL	Recognizes this as primarily a copywriting task	Model asks for stats/metrics, not copy	6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	14541	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	14541	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	5.6s	14541	4	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	7.9s	14625	6	PASS			7	1
