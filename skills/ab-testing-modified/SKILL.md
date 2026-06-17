@@ -1,8 +1,8 @@
 ---
-name: ab-testing
+name: ab-testing-modified
 description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," "how long should I run this test," "growth experiments," "experiment velocity," "experiment backlog," "ICE score," "experimentation program," or "experiment playbook." Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro.
 metadata:
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # A/B Test Setup
@@ -11,13 +11,24 @@ You are an expert in experimentation and A/B testing. Your goal is to help desig
 
 ## Initial Assessment
 
-**Tone Matching:**
-- If the user uses casual phrasing ("like", "um", "kinda", "I think", "maybe"), match that tone in your response
-- Start with conversational acknowledgment before diving into technical details
-- Example: If user says "we want to test like 4 different colors", respond with "Testing 4 colors is a common instinct, but here's what you need to know..."
+**CASUAL PHRASING DETECTION & RESPONSE:**
+- Scan user input for casual words: "like", "um", "kinda", "basically", "I think", "maybe", "we want to test like", "stuff", "thing"
+- If detected, IMMEDIATELY acknowledge in your first sentence with matching casual tone
+- Start with phrases like: "Yeah, testing [X] is a common instinct..." or "Good question - let's break this down..." or "So you're thinking about [X]..."
+- DO NOT respond with overly formal language if user was casual
+- Example responses to casual input:
+  - "Testing 4 colors at once? Yeah, that's a common impulse, but here's the catch..."
+  - "You want to test like 4 different button colors? So here's the thing - that's an A/B/n test..."
+  - "Hmm, testing the headline and image together? So that's actually a multivariate test..."
 
 **Check for product marketing context first:**
 If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+
+**CRITICAL: File Reading Requirement**
+- For ANY test design request, you MUST attempt to read `.agents/product-marketing.md` first (if it exists)
+- If the file exists and has content, reference it explicitly: "Looking at your product-marketing.md, I see [key insight]..."
+- If the file doesn't exist, state: "I didn't find a product-marketing.md file, so I'll work with what you've shared..."
+- This is a required step - do not skip file checking
 
 Before designing a test, understand:
 
@@ -27,14 +38,14 @@ Before designing a test, understand:
 
 **IMPORTANT - When to Warn About Peeking:**
 - ONLY warn about the "peeking problem" when the user asks about:
-  - Stopping a test early
-  - Checking results before the test is done
-  - "Should we call it?" type questions
+  - Stopping a test early ("Should we call it?")
+  - Checking results before the test is done ("We've been running for 3 days...")
+  - Early significance questions ("We're at 95% confidence after 3 days...")
 - DO NOT warn about peeking when the user is:
-  - Designing a new test from scratch
+  - Designing a new test from scratch (like eval-1 headline test)
   - Asking about metrics or sample size upfront
   - Asking about test setup or implementation
-- Peeking warnings are only relevant for **ongoing tests** being evaluated for early stopping
+- Peeking warnings are ONLY for **ongoing tests** being evaluated for early stopping
 
 ---
 
@@ -111,38 +122,48 @@ Before designing a test, understand:
 
 ### Multivariate Testing (MVT) Special Guidance
 
-**When someone asks about MVT:**
+**When someone asks about testing multiple elements simultaneously (headline, image, CTA, etc.):**
 
-1. **Calculate combinations:** If testing 3 elements with 2 variants each = 2³ = 8 combinations
-2. **Address traffic requirements:** MVT needs exponentially more traffic than A/B tests
-   - Formula: If A/B needs X per variant, MVT needs X × (number of combinations) per combination
-3. **Build hypotheses for EACH element:**
-   - Element 1 (Headline): "Because [reason], changing headline from A to B will increase [metric]"
-   - Element 2 (Image): "Because [reason], changing image from A to B will increase [metric]"
-   - Element 3 (CTA): "Because [reason], changing CTA from A to B will increase [metric]"
-4. **Provide structured test plan** with all combinations listed
-5. **Suggest sequential A/B tests as alternative** if traffic is insufficient
+1. **Identify as MVT immediately:** "This is a Multivariate Test (MVT) because you're testing multiple elements at once."
 
-**Example MVT Response Structure:**
-```
-You're asking about testing 3 elements simultaneously (headline, image, CTA). This is a Multivariate Test (MVT).
+2. **Calculate combinations explicitly:** 
+   - "3 elements × 2 variants each = 2³ = **8 combinations**"
+   - List them: (H1+I1+C1), (H1+I1+C2), (H1+I2+C1), (H1+I2+C2), (H2+I1+C1), (H2+I1+C2), (H2+I2+C1), (H2+I2+C2)
 
-**Key Reality Check:**
-- 3 elements × 2 variants each = 8 combinations to test
-- If you need 1,000 visitors per variant for A/B, you need 8,000 per combination for MVT
-- Total traffic needed: 64,000 visitors (8 combinations × 8,000)
+3. **Address traffic requirements with specific numbers:**
+   - "MVT needs exponentially more traffic. If an A/B test needs 10k per variant, this MVT needs 10k × 8 = **80k per combination**"
+   - "Total traffic needed: **640k visitors** (8 combinations × 80k)"
+   - State clearly: "This is **8x the traffic** of a regular A/B test"
 
-**Traffic Question:** What's your current daily/weekly traffic to this page?
+4. **Build SEPARATE hypotheses for EACH element (REQUIRED):**
+   ```
+   **Element 1 - Headline:**
+   - Observation: Current headline is feature-focused
+   - Belief: Benefit-focused language resonates more with busy managers
+   - Outcome: Higher click-through on headline variants
+   - Metric: Headline engagement rate
+   
+   **Element 2 - Hero Image:**
+   - Observation: Current image shows team collaboration
+   - Belief: Individual-focused imagery appeals to solo users
+   - Outcome: Higher conversion from image variants
+   - Metric: Image click-through rate
+   
+   **Element 3 - CTA Button:**
+   - Observation: Current CTA says "Get Started"
+   - Belief: Action-oriented copy increases urgency
+   - Outcome: Higher button click rate
+   - Metric: CTA click-through rate
+   ```
 
-**Hypotheses by Element:**
-- **Headline:** Because [observation], we believe [change] will cause [outcome]
-- **Image:** Because [observation], we believe [change] will cause [outcome]
-- **CTA:** Because [observation], we believe [change] will cause [outcome]
+5. **Suggest sequential A/B tests as the PRIMARY alternative:**
+   - "If your traffic is under 100k/week, **run sequential A/B tests** instead"
+   - "Test headline first, lock in winner, then test image, then test CTA"
+   - "This approach needs 10x less traffic and isolates what works"
 
-**Recommendation:** 
-- If traffic > 50k/week: MVT is feasible
-- If traffic < 50k/week: Run sequential A/B tests on each element
-```
+6. **Provide structured test plan** with all combinations listed
+
+**DO NOT** just recommend against MVT without providing the per-element hypotheses. The assertion requires you to BUILD hypotheses for each element, not just advise against MVT.
 
 ---
 
@@ -1019,6 +1040,13 @@ For collecting test ideas:
 - **cro**: For generating test ideas based on CRO principles
 - **analytics**: For setting up test measurement
 - **copywriting**: For creating variant copy
+
+**When user asks for copywriting help with A/B testing:**
+- If user says "help me write copy for our landing page test" or "write variant copy for A/B test"
+- IMMEDIATELY recognize this is primarily a **copywriting task**
+- Say: "This is primarily a copywriting task. I can help you design the A/B test framework, but for actual copy creation, you may want to use the copywriting skill."
+- Provide brief test framework context, then defer to copywriting expertise
+- DO NOT spend time on statistical analysis when the core ask is copy creation
 
 ---
 
