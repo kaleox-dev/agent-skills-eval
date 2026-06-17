@@ -1,0 +1,73 @@
+{
+  "root": "./skills/ab-testing",
+  "workspace": "./agent-skills-workspace",
+  "target": "Qwen/Qwen3.5-122B-A10B-FP8",
+  "judge": "Qwen/Qwen3.5-122B-A10B-FP8",
+  "baseUrl": "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1",
+  "apiKeyEnv": "OPENAI_API_KEY",
+  "baseline": true,
+  "strict": true,
+  "judgeParams": {
+    "temperature": 0,
+    "top_p": 1,
+    "top_k": 1,
+    "enable_thinking": false,
+    "max_tokens": 2048,
+    "extra_body": {
+      "guided_json": {
+        "type": "object",
+        "properties": {
+          "assertion_results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "The full assertion text being evaluated"
+                },
+                "passed": {
+                  "type": "boolean",
+                  "description": "true if assertion passed, false otherwise"
+                },
+                "evidence": {
+                  "type": "string",
+                  "description": "Concrete evidence from the output (quote, snippet, or reference)"
+                }
+              },
+              "required": ["text", "passed", "evidence"],
+              "additionalProperties": false
+            },
+            "description": "Array of results for each assertion"
+          },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "passed": {
+                "type": "integer",
+                "description": "Number of passed assertions"
+              },
+              "failed": {
+                "type": "integer",
+                "description": "Number of failed assertions"
+              },
+              "total": {
+                "type": "integer",
+                "description": "Total number of assertions"
+              },
+              "pass_rate": {
+                "type": "number",
+                "description": "Pass rate as decimal (0-1)"
+              }
+            },
+            "required": ["passed", "failed", "total", "pass_rate"],
+            "additionalProperties": false,
+            "description": "Summary statistics"
+          }
+        },
+        "required": ["assertion_results", "summary"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

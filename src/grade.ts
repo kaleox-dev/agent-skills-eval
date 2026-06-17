@@ -49,6 +49,27 @@ function extractJsonObject(value: string): string {
   return trimmed;
 }
 
+function parseJudgeJson(raw: string): unknown {
+  const trimmed = raw.trim();
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    const start = trimmed.indexOf("{");
+    const end = trimmed.lastIndexOf("}");
+
+    if (start !== -1 && end !== -1 && end > start) {
+      const candidate = trimmed.slice(start, end + 1);
+      try {
+        return JSON.parse(candidate);
+      } catch {
+        // Fall through to throw
+      }
+    }
+
+    throw new Error(`Judge returned unparseable response: ${trimmed.slice(0, 500)}`);
+  }
+}
+
 function summarize(grades: AssertionResult[]): GradingJson["summary"] {
   const passed = grades.filter((r) => r.passed).length;
   const total = grades.length;
@@ -122,6 +143,8 @@ function renderRubricPrompt(
     .join("\n\n") || "No output files were captured.";
 
   return [
+    "/no_think",
+    "",
     "You are grading an agentskills.io evaluation run.",
     "",
     "Grading principles:",
@@ -159,14 +182,37 @@ async function callJudge(
   prompt: string,
   params?: Record<string, unknown>
 ): Promise<ProviderResult> {
+  const judgeParams = {
+    temperature: 0,
+    top_p: 1,
+    top_k: 1,
+    enable_thinking: false,
+    ...params,
+  };
+
   if (provider.completeChat && provider.capabilities?.systemRole) {
     return provider.completeChat({
-      system: "You are a strict JSON-only evaluator.",
-      user: prompt,
-      params,
+      system:
+        "/no_think\n\n" +
+        "You are a strict JSON-only evaluator. " +
+        "Return exactly one valid JSON object. " +
+        "The first character must be { and the last character must be }. " +
+        "Do not include markdown, reasoning, analysis, Thinking Process, or any text outside the JSON.",
+      user: "/no_think\n\n" + prompt,
+      params: judgeParams,
     });
   }
-  return provider.complete(prompt);
+
+  // Fallback for providers without completeChat: embed instructions in prompt
+  // Note: params cannot be passed to complete(), so temperature/thinking controls
+  // only work when completeChat is available.
+  return provider.complete(
+    "/no_think\n\n" +
+      "You are a strict JSON-only evaluator. " +
+      "Return exactly one valid JSON object. " +
+      "No markdown. No reasoning. No text outside JSON.\n\n" +
+      prompt
+  );
 }
 
 // ─── deterministic tool-call assertions ──────────────────────────────────────
@@ -387,7 +433,7 @@ export async function gradeOutputs(args: GradeOutputsArgs): Promise<GradeOutputs
     const response = await callJudge(args.judge.provider, lastPrompt, args.judgeParams);
     lastText = response.output || response.error || "";
     try {
-      rubricResults = normalizeRubricGrading(JSON.parse(extractJsonObject(lastText)), args.assertions);
+      rubricResults = normalizeRubricGrading(parseJudgeJson(lastText), args.assertions);
       break;
     } catch {
       badResponse = lastText;

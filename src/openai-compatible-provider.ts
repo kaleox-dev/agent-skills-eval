@@ -170,6 +170,12 @@ export class OpenAICompatibleProvider implements Provider {
         delete params.max_tokens;
       }
 
+      // Extract extra_body if present and merge it into the request body
+      if (params.extra_body && typeof params.extra_body === "object") {
+        Object.assign(body, params.extra_body);
+        delete params.extra_body;
+      }
+
       Object.assign(body, params);
 
       if (args.tools && args.tools.length > 0) {
