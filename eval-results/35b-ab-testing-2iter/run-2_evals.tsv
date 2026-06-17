@@ -1,45 +1,45 @@
 Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	2	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	3	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	4	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	5	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	6	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	7	PASS			1	2
-ab-testing	eval-1	with_skill	FAIL	15.3s	15368	8	PASS			1	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output.	2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	2	PASS			2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	3	PASS			2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	4	PASS			2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	5	PASS			2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	6	PASS			2	2
-ab-testing	eval-2	with_skill	FAIL	7.9s	14731	7	PASS			2	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	1	PASS			3	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	2	PASS			3	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	3	PASS			3	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	4	PASS			3	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	5	PASS			3	2
-ab-testing	eval-3	with_skill	FAIL	6.3s	14583	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing	3	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	1	PASS			4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	2	PASS			4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	3	FAIL	Addresses dramatically higher traffic requirements	Model warns MVT needs more traffic, not addresses higher req.	4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	4	PASS			4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	5	PASS			4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	6	FAIL	Builds hypotheses for each element	Only one primary hypothesis provided	4	2
-ab-testing	eval-4	with_skill	FAIL	10.7s	14939	7	PASS			4	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	1	PASS			5	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	2	FAIL	Identifies form completion rate as primary metric	Model identifies Signed Up Rate as primary	5	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	3	FAIL	Identifies lead quality as secondary metric	Model lists it as 'Hidden Metric'	5	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	4	PASS			5	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	5	PASS			5	2
-ab-testing	eval-5	with_skill	FAIL	14.5s	15237	6	PASS			5	2
-ab-testing	eval-6	with_skill	FAIL	4.7s	14361	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on A/B test design, not copywriting.	6	2
-ab-testing	eval-6	with_skill	FAIL	4.7s	14361	2	PASS			6	2
-ab-testing	eval-6	with_skill	FAIL	4.7s	14361	3	PASS			6	2
-ab-testing	eval-6	with_skill	FAIL	4.7s	14361	4	PASS			6	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	1	PASS			7	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	2	PASS			7	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	3	PASS			7	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	4	PASS			7	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	5	FAIL	Provides clear recommendation on shipping	No shipping recommendation provided.	7	2
-ab-testing	eval-7	with_skill	FAIL	6.1s	14473	6	FAIL	Suggests segment analysis or follow-up if borderline	No segment analysis suggested.	7	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	1	FAIL	Checks for product-marketing.md	No output files captured	1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	6	FAIL	Defines secondary and guardrail metrics	No secondary/guardrail metrics defined	1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	7	FAIL	Warns about the peeking problem	No mention of peeking problem	1	2
+ab-testing	eval-1	with_skill	FAIL	10.3s	14983	8	FAIL	Provides structured test plan output	No test plan provided, only questions	1	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	1	FAIL	Triggers on casual phrasing	No casual phrasing detected in output.	2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	5	FAIL	Questions whether button color alone is high-impact	Model discusses sample size, not impact.	2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	6	FAIL	Suggests alternative higher-impact elements to test	Suggests testing fewer variants, not different elements.	2	2
+ab-testing	eval-2	with_skill	FAIL	13.3s	15222	7	FAIL	Provides hypothesis framework	No hypothesis framework provided.	2	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	3	FAIL	Recommends running for full pre-calculated duration	Model advises waiting 7+ days, ignoring pre-calc duration.	3	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.4s	14583	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing	3	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	1	FAIL	Identifies as multivariate test (MVT)	Explicitly advises against MVT	4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	3	FAIL	Addresses dramatically higher traffic requirements	Model advises against MVT due to low traffic, not higher.	4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	6	FAIL	Builds hypotheses for each element	No hypotheses built; suggests sequential tests	4	2
+ab-testing	eval-4	with_skill	FAIL	13.2s	15217	7	FAIL	Provides structured test plan	No structured plan provided, only advice.	4	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	3	FAIL	Identifies lead quality as secondary metric	Model lists it as 'Lead Quality Proxy' under Secondary Metrics	5	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	13.5s	15180	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	14511	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	14511	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	14511	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	6.1s	14511	4	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	2	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	3	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	4	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	5	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.6s	14878	6	FAIL	Suggests segment analysis or follow-up if borderline	No segment analysis suggested.	7	2
