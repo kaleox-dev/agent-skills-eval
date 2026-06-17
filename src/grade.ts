@@ -159,7 +159,8 @@ function renderRubricPrompt(
     "",
     "Rules:",
     "- Include every assertion exactly once and copy the full assertion text verbatim into text.",
-    "- Use short concrete evidence: quote, snippet, or file reference.",
+    "- Use VERY SHORT evidence (max 50 chars): quote snippet or file reference only.",
+    "- Do NOT include long explanations in evidence.",
     "- Summary may be included, but it will be recomputed by the caller.",
     previousBadResponse ? `Previous response was not parseable JSON. Try again. Bad response: ${truncate(previousBadResponse, 500)}` : "",
     "",
@@ -423,25 +424,61 @@ export async function gradeOutputs(args: GradeOutputsArgs): Promise<GradeOutputs
     };
   }
 
-  let badResponse = "";
+  // Grade each assertion individually to avoid response truncation
+  const rubricResults: AssertionResult[] = [];
   let lastPrompt = "";
   let lastText = "";
-  let rubricResults: AssertionResult[] | undefined;
 
-  for (let attempt = 0; attempt < 2; attempt++) {
-    lastPrompt = renderRubricPrompt(args, badResponse || undefined);
+  for (const assertionText of args.assertions) {
+    const singleAssertionPrompt = [
+      "/no_think",
+      "",
+      "You are grading a single assertion for an agentskills.io evaluation.",
+      "",
+      "Assertion to grade:",
+      JSON.stringify(assertionText),
+      "",
+      "Model output:",
+      args.modelOutput || "(empty output)",
+      args.toolCalls && args.toolCalls.length > 0
+        ? `\n\nTool calls (structured):\n${serializeToolCalls(args.toolCalls)}`
+        : "",
+      "",
+      "Output files:",
+      (args.outputFiles ?? [])
+        .map((file) => `<output_file path="${file.path}" kind="${file.kind}">\n${file.content}\n</output_file>`)
+        .join("\n\n") || "No output files were captured.",
+      "",
+      "Return STRICT JSON only. No markdown. Shape:",
+      '{"text":"<assertion text>","passed":true/false,"evidence":"<short evidence>"}',
+      "",
+      "Rules:",
+      "- Copy the full assertion text into the 'text' field.",
+      "- Use VERY SHORT evidence (max 50 chars): quote snippet or file reference only.",
+      "- Do NOT include long explanations.",
+    ].filter(Boolean).join("\n");
+
+    lastPrompt = singleAssertionPrompt;
     const response = await callJudge(args.judge.provider, lastPrompt, args.judgeParams);
     lastText = response.output || response.error || "";
-    try {
-      rubricResults = normalizeRubricGrading(parseJudgeJson(lastText), args.assertions);
-      break;
-    } catch {
-      badResponse = lastText;
-    }
-  }
 
-  if (!rubricResults) {
-    rubricResults = failClosed(args.assertions, badResponse);
+    try {
+      const json = parseJudgeJson(lastText) as Record<string, unknown>;
+      rubricResults.push({
+        text: assertionText,
+        passed: json.passed === true,
+        evidence: typeof json.evidence === "string" && json.evidence.trim()
+          ? json.evidence.trim()
+          : "judge did not provide concrete evidence",
+      });
+    } catch {
+      // If individual assertion grading fails, mark as fail with evidence
+      rubricResults.push({
+        text: assertionText,
+        passed: false,
+        evidence: `judge returned unparseable response: ${truncate(lastText, 200)}`,
+      });
+    }
   }
 
   const combined = [...rubricResults, ...toolResults];
