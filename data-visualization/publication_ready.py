@@ -159,30 +159,85 @@ mod_122b = df.pivot(index='Eval', columns='Assertion', values='122B Modified')
 base_35b = df.pivot(index='Eval', columns='Assertion', values='35B Baseline')
 mod_35b = df.pivot(index='Eval', columns='Assertion', values='35B Modified')
 
+# Define max assertions per eval to mask missing ones
+max_assertions = {
+    'eval-1': 8, 'eval-2': 7, 'eval-3': 6, 'eval-4': 7,
+    'eval-5': 6, 'eval-6': 4, 'eval-7': 6
+}
+
+# Create numeric heatmap data and annotation dataframe separately
+def prepare_heatmap_data(df, max_assertions):
+    numeric_data = df.fillna(0).astype(float)
+    annot_data = df.copy()
+    
+    for eval_name, max_assert in max_assertions.items():
+        if eval_name in annot_data.index:
+            for col in annot_data.columns:
+                if col > max_assert:
+                    annot_data.loc[eval_name, col] = 'N/A'
+                    numeric_data.loc[eval_name, col] = np.nan
+    
+    return numeric_data, annot_data
+
+base_122b_num, base_122b_annot = prepare_heatmap_data(base_122b, max_assertions)
+mod_122b_num, mod_122b_annot = prepare_heatmap_data(mod_122b, max_assertions)
+base_35b_num, base_35b_annot = prepare_heatmap_data(base_35b, max_assertions)
+mod_35b_num, mod_35b_annot = prepare_heatmap_data(mod_35b, max_assertions)
+
 # 122B Baseline
-sns.heatmap(base_122b.fillna(0).astype(int), annot=True, fmt='d', cmap='Reds', ax=axes[0, 0],
-            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_122b.max().max())
+im00 = sns.heatmap(base_122b_num, annot=base_122b_annot, fmt='', cmap='Reds', ax=axes[0, 0],
+            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_122b.max().max(),
+            cbar=True, linewidths=0.5, linecolor='gray')
+
+# Set NaN cells to white background
+for i, row in enumerate(base_122b_annot.index):
+    for j, col in enumerate(base_122b_annot.columns):
+        if base_122b_annot.loc[row, col] == 'N/A':
+            rect = plt.Rectangle((j, i), 1, 1, facecolor='white', edgecolor='gray', linewidth=0.5)
+            axes[0, 0].add_patch(rect)
+            axes[0, 0].text(j + 0.5, i + 0.5, 'N/A', ha='center', va='center', color='black', fontsize=10)
 axes[0, 0].set_title('122B Baseline: Failures per Eval/Assertion', fontsize=13, fontweight='bold')
 axes[0, 0].set_xlabel('Assertion #')
 axes[0, 0].set_ylabel('Eval')
 
 # 122B Modified
-sns.heatmap(mod_122b.fillna(0).astype(int), annot=True, fmt='d', cmap='Reds', ax=axes[0, 1],
-            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_122b.max().max())
+im01 = sns.heatmap(mod_122b_num, annot=mod_122b_annot, fmt='', cmap='Reds', ax=axes[0, 1],
+            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_122b.max().max(),
+            cbar=True, linewidths=0.5, linecolor='gray')
+for i, row in enumerate(mod_122b_annot.index):
+    for j, col in enumerate(mod_122b_annot.columns):
+        if mod_122b_annot.loc[row, col] == 'N/A':
+            rect = plt.Rectangle((j, i), 1, 1, facecolor='white', edgecolor='gray', linewidth=0.5)
+            axes[0, 1].add_patch(rect)
+            axes[0, 1].text(j + 0.5, i + 0.5, 'N/A', ha='center', va='center', color='black', fontsize=10)
 axes[0, 1].set_title('122B Modified: Failures per Eval/Assertion', fontsize=13, fontweight='bold')
 axes[0, 1].set_xlabel('Assertion #')
 axes[0, 1].set_ylabel('Eval')
 
 # 35B Baseline
-sns.heatmap(base_35b.fillna(0).astype(int), annot=True, fmt='d', cmap='Reds', ax=axes[1, 0],
-            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_35b.max().max())
+im10 = sns.heatmap(base_35b_num, annot=base_35b_annot, fmt='', cmap='Reds', ax=axes[1, 0],
+            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_35b.max().max(),
+            cbar=True, linewidths=0.5, linecolor='gray')
+for i, row in enumerate(base_35b_annot.index):
+    for j, col in enumerate(base_35b_annot.columns):
+        if base_35b_annot.loc[row, col] == 'N/A':
+            rect = plt.Rectangle((j, i), 1, 1, facecolor='white', edgecolor='gray', linewidth=0.5)
+            axes[1, 0].add_patch(rect)
+            axes[1, 0].text(j + 0.5, i + 0.5, 'N/A', ha='center', va='center', color='black', fontsize=10)
 axes[1, 0].set_title('35B Baseline: Failures per Eval/Assertion', fontsize=13, fontweight='bold')
 axes[1, 0].set_xlabel('Assertion #')
 axes[1, 0].set_ylabel('Eval')
 
 # 35B Modified
-sns.heatmap(mod_35b.fillna(0).astype(int), annot=True, fmt='d', cmap='Reds', ax=axes[1, 1],
-            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_35b.max().max())
+im11 = sns.heatmap(mod_35b_num, annot=mod_35b_annot, fmt='', cmap='Reds', ax=axes[1, 1],
+            cbar_kws={'label': 'Failures'}, vmin=0, vmax=base_35b.max().max(),
+            cbar=True, linewidths=0.5, linecolor='gray')
+for i, row in enumerate(mod_35b_annot.index):
+    for j, col in enumerate(mod_35b_annot.columns):
+        if mod_35b_annot.loc[row, col] == 'N/A':
+            rect = plt.Rectangle((j, i), 1, 1, facecolor='white', edgecolor='gray', linewidth=0.5)
+            axes[1, 1].add_patch(rect)
+            axes[1, 1].text(j + 0.5, i + 0.5, 'N/A', ha='center', va='center', color='black', fontsize=10)
 axes[1, 1].set_title('35B Modified: Failures per Eval/Assertion', fontsize=13, fontweight='bold')
 axes[1, 1].set_xlabel('Assertion #')
 axes[1, 1].set_ylabel('Eval')
