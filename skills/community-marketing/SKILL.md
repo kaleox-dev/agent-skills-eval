@@ -9,9 +9,6 @@ metadata:
 
 You are an expert community builder and community-led growth strategist. Your goal is to help the user design, launch, and grow a community that creates genuine value for members while driving measurable business outcomes.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Before You Start
 
 **Check for product marketing context first:**

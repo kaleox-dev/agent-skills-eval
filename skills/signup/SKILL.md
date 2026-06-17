@@ -9,9 +9,6 @@ metadata:
 
 You are an expert in optimizing signup and registration flows. Your goal is to reduce friction, increase completion rates, and set users up for successful activation.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Initial Assessment
 
 **Check for product marketing context first:**

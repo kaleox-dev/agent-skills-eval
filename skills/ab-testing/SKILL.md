@@ -2,20 +2,17 @@
 name: ab-testing
 description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," "how long should I run this test," "growth experiments," "experiment velocity," "experiment backlog," "ICE score," "experimentation program," or "experiment playbook." Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro.
 metadata:
-  version: 2.1.0
+  version: 2.0.0
 ---
 
 # A/B Test Setup
 
 You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Initial Assessment
 
 **Check for product marketing context first:**
-If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Before designing a test, understand:
 
@@ -81,193 +78,20 @@ We'll know this is true when [metrics].
 
 ## Sample Size
 
-### Required Inputs
+### Quick Reference
 
-1. **Baseline conversion rate**: Your current rate
-2. **Minimum detectable effect (MDE)**: Smallest change worth detecting
-3. **Statistical significance level**: Usually 95% (α = 0.05)
-4. **Statistical power**: Usually 80% (β = 0.20)
-
-### What These Mean
-
-**Baseline conversion rate**: If your page converts at 5%, that's your baseline.
-
-**MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this based on:
-- Business impact (is a 5% lift meaningful?)
-- Implementation cost (worth the effort?)
-- Realistic expectations (what have past tests shown?)
-
-**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
-
-**Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
-
-### Quick Reference Tables
-
-#### Conversion Rate: 1%
-
-| Lift to Detect | Sample per Variant | Total Sample |
-|----------------|-------------------|--------------|
-| 5% (1% → 1.05%) | 1,500,000 | 3,000,000 |
-| 10% (1% → 1.1%) | 380,000 | 760,000 |
-| 20% (1% → 1.2%) | 97,000 | 194,000 |
-| 50% (1% → 1.5%) | 16,000 | 32,000 |
-| 100% (1% → 2%) | 4,200 | 8,400 |
-
-#### Conversion Rate: 3%
-
-| Lift to Detect | Sample per Variant | Total Sample |
-|----------------|-------------------|--------------|
-| 5% (3% → 3.15%) | 480,000 | 960,000 |
-| 10% (3% → 3.3%) | 120,000 | 240,000 |
-| 20% (3% → 3.6%) | 31,000 | 62,000 |
-| 50% (3% → 4.5%) | 5,200 | 10,400 |
-| 100% (3% → 6%) | 1,400 | 2,800 |
-
-#### Conversion Rate: 5%
-
-| Lift to Detect | Sample per Variant | Total Sample |
-|----------------|-------------------|--------------|
-| 5% (5% → 5.25%) | 280,000 | 560,000 |
-| 10% (5% → 5.5%) | 72,000 | 144,000 |
-| 20% (5% → 6%) | 18,000 | 36,000 |
-| 50% (5% → 7.5%) | 3,100 | 6,200 |
-| 100% (5% → 10%) | 810 | 1,620 |
-
-#### Conversion Rate: 10%
-
-| Lift to Detect | Sample per Variant | Total Sample |
-|----------------|-------------------|--------------|
-| 5% (10% → 10.5%) | 130,000 | 260,000 |
-| 10% (10% → 11%) | 34,000 | 68,000 |
-| 20% (10% → 12%) | 8,700 | 17,400 |
-| 50% (10% → 15%) | 1,500 | 3,000 |
-| 100% (10% → 20%) | 400 | 800 |
-
-#### Conversion Rate: 20%
-
-| Lift to Detect | Sample per Variant | Total Sample |
-|----------------|-------------------|--------------|
-| 5% (20% → 21%) | 60,000 | 120,000 |
-| 10% (20% → 22%) | 16,000 | 32,000 |
-| 20% (20% → 24%) | 4,000 | 8,000 |
-| 50% (20% → 30%) | 700 | 1,400 |
-| 100% (20% → 40%) | 200 | 400 |
-
-### Duration Calculator
-
-**Formula**
-```
-Duration (days) = (Sample per variant × Number of variants) / (Daily traffic × % exposed)
-```
-
-**Examples**
-
-*Scenario 1: High-traffic page*
-- Need: 10,000 per variant (2 variants = 20,000 total)
-- Daily traffic: 5,000 visitors
-- 100% exposed to test
-- Duration: 20,000 / 5,000 = **4 days**
-
-*Scenario 2: Medium-traffic page*
-- Need: 30,000 per variant (60,000 total)
-- Daily traffic: 2,000 visitors
-- 100% exposed
-- Duration: 60,000 / 2,000 = **30 days**
-
-*Scenario 3: Low-traffic with partial exposure*
-- Need: 15,000 per variant (30,000 total)
-- Daily traffic: 500 visitors
-- 50% exposed to test
-- Effective daily: 250
-- Duration: 30,000 / 250 = **120 days** (too long!)
-
-**Minimum Duration Rules**
-
-Even with sufficient sample size, run tests for at least:
-- **1 full week**: To capture day-of-week variation
-- **2 business cycles**: If B2B (weekday vs. weekend patterns)
-- **Through paydays**: If e-commerce (beginning/end of month)
-
-**Maximum Duration Guidelines**
-
-Avoid running tests longer than 4-8 weeks:
-- Novelty effects wear off
-- External factors intervene
-- Opportunity cost of other tests
-
-### Adjusting for Multiple Variants
-
-With more than 2 variants (A/B/n tests), you need more sample:
-
-| Variants | Multiplier |
-|----------|------------|
-| 2 (A/B) | 1x |
-| 3 (A/B/C) | ~1.5x |
-| 4 (A/B/C/D) | ~2x |
-| 5+ | Consider reducing variants |
-
-**Why?** More comparisons increase chance of false positives. You're comparing:
-- A vs B
-- A vs C
-- B vs C (sometimes)
-
-Apply Bonferroni correction or use tools that handle this automatically.
-
-### When Sample Size Requirements Are Too High
-
-Options when you can't get enough traffic:
-
-1. **Increase MDE**: Accept only detecting larger effects (20%+ lift)
-2. **Lower confidence**: Use 90% instead of 95% (risky, document it)
-3. **Reduce variants**: Test only the most promising variant
-4. **Combine traffic**: Test across multiple similar pages
-5. **Test upstream**: Test earlier in funnel where traffic is higher
-6. **Don't test**: Make decision based on qualitative data instead
-7. **Longer test**: Accept longer duration (weeks/months)
-
-### Sequential Testing
-
-If you must check results before reaching sample size:
-
-**What is it?** Statistical method that adjusts for multiple looks at data.
-
-**When to use**
-- High-risk changes
-- Need to stop bad variants early
-- Time-sensitive decisions
-
-**Tools that support it**
-- Optimizely (Stats Accelerator)
-- VWO (SmartStats)
-- PostHog (Bayesian approach)
-
-**Tradeoff**
-- More flexibility to stop early
-- Slightly larger sample size requirement
-- More complex analysis
-
-### Quick Decision Framework
-
-**Can I run this test?**
-```
-Daily traffic to page: _____
-Baseline conversion rate: _____
-MDE I care about: _____
-
-Sample needed per variant: _____ (from tables above)
-Days to run: Sample / Daily traffic = _____
-
-If days > 60: Consider alternatives
-If days > 30: Acceptable for high-impact tests
-If days < 14: Likely feasible
-If days < 7: Easy to run, consider running longer anyway
-```
+| Baseline | 10% Lift | 20% Lift | 50% Lift |
+|----------|----------|----------|----------|
+| 1% | 150k/variant | 39k/variant | 6k/variant |
+| 3% | 47k/variant | 12k/variant | 2k/variant |
+| 5% | 27k/variant | 7k/variant | 1.2k/variant |
+| 10% | 12k/variant | 3k/variant | 550/variant |
 
 **Calculators:**
 - [Evan Miller's](https://www.evanmiller.org/ab-testing/sample-size.html)
 - [Optimizely's](https://www.optimizely.com/sample-size-calculator/)
-- [AB Test Guide](https://www.abtestguide.com/calc/)
-- [VWO Duration](https://vwo.com/tools/ab-test-duration-calculator/)
+
+**For detailed sample size tables and duration calculations**: See [references/sample-size-guide.md](references/sample-size-guide.md)
 
 ---
 
@@ -342,15 +166,12 @@ If days < 7: Easy to run, consider running longer anyway
 ## Running the Test
 
 ### Pre-Launch Checklist
-- [ ] Hypothesis documented and reviewed
-- [ ] Primary metric defined and trackable
+- [ ] Hypothesis documented
+- [ ] Primary metric defined
 - [ ] Sample size calculated
-- [ ] Test duration estimated
 - [ ] Variants implemented correctly
-- [ ] Tracking verified in all variants
+- [ ] Tracking verified
 - [ ] QA completed on all variants
-- [ ] Stakeholders informed
-- [ ] Calendar hold for analysis date
 
 ### During the Test
 
@@ -365,7 +186,6 @@ If days < 7: Easy to run, consider running longer anyway
 - Add traffic from new sources
 
 ### The Peeking Problem
-
 Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.
 
 ---
@@ -405,258 +225,7 @@ Document every test with:
 - Results (sample, metrics, significance)
 - Decision and learnings
 
-### Test Plan Template
-
-```markdown
-# A/B Test: [Name]
-
-## Overview
-- **Owner**: [Name]
-- **Test ID**: [ID in testing tool]
-- **Page/Feature**: [What's being tested]
-- **Planned dates**: [Start] - [End]
-
-## Hypothesis
-
-Because [observation/data],
-we believe [change]
-will cause [expected outcome]
-for [audience].
-We'll know this is true when [metrics].
-
-## Test Design
-
-| Element | Details |
-|---------|---------|
-| Test type | A/B / A/B/n / MVT |
-| Duration | X weeks |
-| Sample size | X per variant |
-| Traffic allocation | 50/50 |
-| Tool | [Tool name] |
-| Implementation | Client-side / Server-side |
-
-## Variants
-
-### Control (A)
-[Screenshot]
-- Current experience
-- [Key details about current state]
-
-### Variant (B)
-[Screenshot or mockup]
-- [Specific change #1]
-- [Specific change #2]
-- Rationale: [Why we think this will win]
-
-## Metrics
-
-### Primary
-- **Metric**: [metric name]
-- **Definition**: [how it's calculated]
-- **Current baseline**: [X%]
-- **Minimum detectable effect**: [X%]
-
-### Secondary
-- [Metric 1]: [what it tells us]
-- [Metric 2]: [what it tells us]
-- [Metric 3]: [what it tells us]
-
-### Guardrails
-- [Metric that shouldn't get worse]
-- [Another safety metric]
-
-## Segment Analysis Plan
-- Mobile vs. desktop
-- New vs. returning visitors
-- Traffic source
-- [Other relevant segments]
-
-## Success Criteria
-- Winner: [Primary metric improves by X% with 95% confidence]
-- Loser: [Primary metric decreases significantly]
-- Inconclusive: [What we'll do if no significant result]
-
-## Pre-Launch Checklist
-- [ ] Hypothesis documented and reviewed
-- [ ] Primary metric defined and trackable
-- [ ] Sample size calculated
-- [ ] Test duration estimated
-- [ ] Variants implemented correctly
-- [ ] Tracking verified in all variants
-- [ ] QA completed on all variants
-- [ ] Stakeholders informed
-- [ ] Calendar hold for analysis date
-```
-
-### Results Documentation Template
-
-```markdown
-# A/B Test Results: [Name]
-
-## Summary
-| Element | Value |
-|---------|-------|
-| Test ID | [ID] |
-| Dates | [Start] - [End] |
-| Duration | X days |
-| Result | Winner / Loser / Inconclusive |
-| Decision | [What we're doing] |
-
-## Hypothesis (Reminder)
-[Copy from test plan]
-
-## Results
-
-### Sample Size
-| Variant | Target | Actual | % of target |
-|---------|--------|--------|-------------|
-| Control | X | Y | Z% |
-| Variant | X | Y | Z% |
-
-### Primary Metric: [Metric Name]
-| Variant | Value | 95% CI | vs. Control |
-|---------|-------|--------|-------------|
-| Control | X% | [X%, Y%] | — |
-| Variant | X% | [X%, Y%] | +X% |
-
-**Statistical significance**: p = X.XX (95% = sig / not sig)
-**Practical significance**: [Is this lift meaningful for the business?]
-
-### Secondary Metrics
-
-| Metric | Control | Variant | Change | Significant? |
-|--------|---------|---------|--------|--------------|
-| [Metric 1] | X | Y | +Z% | Yes/No |
-| [Metric 2] | X | Y | +Z% | Yes/No |
-
-### Guardrail Metrics
-
-| Metric | Control | Variant | Change | Concern? |
-|--------|---------|---------|--------|----------|
-| [Metric 1] | X | Y | +Z% | Yes/No |
-
-### Segment Analysis
-
-**Mobile vs. Desktop**
-| Segment | Control | Variant | Lift |
-|---------|---------|---------|------|
-| Mobile | X% | Y% | +Z% |
-| Desktop | X% | Y% | +Z% |
-
-**New vs. Returning**
-| Segment | Control | Variant | Lift |
-|---------|---------|---------|------|
-| New | X% | Y% | +Z% |
-| Returning | X% | Y% | +Z% |
-
-## Interpretation
-
-### What happened?
-[Explanation of results in plain language]
-
-### Why do we think this happened?
-[Analysis and reasoning]
-
-### Caveats
-[Any limitations, external factors, or concerns]
-
-## Decision
-
-**Winner**: [Control / Variant]
-
-**Action**: [Implement variant / Keep control / Re-test]
-
-**Timeline**: [When changes will be implemented]
-
-## Learnings
-
-### What we learned
-- [Key insight 1]
-- [Key insight 2]
-
-### What to test next
-- [Follow-up test idea 1]
-- [Follow-up test idea 2]
-
-### Impact
-- **Projected lift**: [X% improvement in Y metric]
-- **Business impact**: [Revenue, conversions, etc.]
-```
-
-### Test Repository Entry Template
-
-For tracking all tests in a central location:
-
-```markdown
-| Test ID | Name | Page | Dates | Primary Metric | Result | Lift | Link |
-|---------|------|------|-------|----------------|--------|------|------|
-| 001 | Hero headline test | Homepage | 1/1-1/15 | CTR | Winner | +12% | [Link] |
-| 002 | Pricing table layout | Pricing | 1/10-1/31 | Plan selection | Loser | -5% | [Link] |
-| 003 | Signup form fields | Signup | 2/1-2/14 | Completion | Inconclusive | +2% | [Link] |
-```
-
-### Quick Test Brief Template
-
-For simple tests that don't need full documentation:
-
-```markdown
-## [Test Name]
-
-**What**: [One sentence description]
-**Why**: [One sentence hypothesis]
-**Metric**: [Primary metric]
-**Duration**: [X weeks]
-**Result**: [TBD / Winner / Loser / Inconclusive]
-**Learnings**: [Key takeaway]
-```
-
-### Stakeholder Update Template
-
-```markdown
-## A/B Test Update: [Name]
-
-**Status**: Running / Complete
-**Days remaining**: X (or complete)
-**Current sample**: X% of target
-
-### Preliminary observations
-[What we're seeing - without making decisions yet]
-
-### Next steps
-[What happens next]
-
-### Timeline
-- [Date]: Analysis complete
-- [Date]: Decision and recommendation
-- [Date]: Implementation (if winner)
-```
-
-### Experiment Prioritization Scorecard
-
-For deciding which tests to run:
-
-| Factor | Weight | Test A | Test B | Test C |
-|--------|--------|--------|--------|--------|
-| Potential impact | 30% | | | |
-| Confidence in hypothesis | 25% | | | |
-| Ease of implementation | 20% | | | |
-| Risk if wrong | 15% | | | |
-| Strategic alignment | 10% | | | |
-| **Total** | | | | |
-
-Scoring: 1-5 (5 = best)
-
-### Hypothesis Bank Template
-
-For collecting test ideas:
-
-```markdown
-| ID | Page/Area | Observation | Hypothesis | Potential Impact | Status |
-|----|-----------|-------------|------------|------------------|--------|
-| H1 | Homepage | Low scroll depth | Shorter hero will increase scroll | High | Testing |
-| H2 | Pricing | Users compare plans | Comparison table will help | Medium | Backlog |
-| H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
-```
+**For templates**: See [references/test-templates.md](references/test-templates.md)
 
 ---
 
@@ -764,13 +333,6 @@ Over time, your playbook becomes a library of proven growth patterns specific to
 - Cherry-picking segments
 - Over-interpreting inconclusive results
 
-### Sample Size Mistakes
-- **Underpowered tests**: Not enough sample to detect realistic effects. Fix: Be realistic about MDE, get more traffic, or don't test.
-- **Overpowered tests**: Waiting for sample size when you already have significance. Fix: This is actually fine—you committed to sample size, honor it.
-- **Wrong baseline rate**: Using wrong conversion rate for calculation. Fix: Use the specific metric and page, not site-wide averages.
-- **Ignoring segments**: Calculating for full traffic, then analyzing segments. Fix: If you plan segment analysis, calculate sample for smallest segment.
-- **Testing too many things**: Dividing traffic too many ways. Fix: Prioritize ruthlessly, run fewer concurrent tests.
-
 ---
 
 ## Task-Specific Questions
@@ -784,17 +346,12 @@ Over time, your playbook becomes a library of proven growth patterns specific to
 
 ---
 
-## Related Skills
+---
 
-- **cro**: For generating test ideas based on CRO principles
-- **analytics**: For setting up test measurement
-- **copywriting**: For creating variant copy
+## Reference Materials
 
-================================================================================
-REFERENCE MATERIALS
-================================================================================
 
---- sample-size-guide.md ---
+### Sample Size Guide
 
 # Sample Size Guide
 
@@ -1061,7 +618,9 @@ If days < 7: Easy to run, consider running longer anyway
 ```
 
 
---- test-templates.md ---
+---
+
+### Test Templates
 
 # A/B Test Templates Reference
 
@@ -1341,396 +900,286 @@ For collecting test ideas:
 | H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
 ```
 
+## Related Skills
+
+- **cro**: For generating test ideas based on CRO principles
+- **analytics**: For setting up test measurement
+- **copywriting**: For creating variant copy
+
 ---
 
-name: ab-testing
-description: ab testing and experimentation planning for product, growth, marketing, landing pages, onboarding flows, signup flows, pricing pages, CTAs, copy variants, multivariate tests, A/B/n tests, experiment readouts, statistical significance, sample size, peeking, launch decisions, and metric frameworks. Use for casual or formal requests like “should we test…”, “can we try variants…”, “is this result significant…”, “should we ship…”, “how long should this test run…”, or “help me design an experiment.” If the user primarily asks to write or rewrite page copy, recognize it as copywriting-first and defer to copywriting guidance while offering experiment setup support.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Reference Materials
 
-# A/B Testing Skill
+### Sample Size Guide
 
-Use this skill to design, critique, or interpret experiments. Produce practical, decision-ready outputs. Do not stop at clarifying questions unless the user explicitly asks only for questions.
+Reference for calculating sample sizes and test duration.
 
-## Non-negotiable behavior
+#### Sample Size Fundamentals
 
-Always do the following for A/B testing requests:
+**Required Inputs:**
 
-1. **Check for `product-marketing.md` first**
+1. **Baseline conversion rate**: Your current rate
+2. **Minimum detectable effect (MDE)**: Smallest change worth detecting
+3. **Statistical significance level**: Usually 95% (α = 0.05)
+4. **Statistical power**: Usually 80% (β = 0.20)
 
-   * Before producing the answer, check whether a `product-marketing.md` file is available in the current workspace, uploaded files, or skill/reference context.
-   * If it exists, read it and use it to ground positioning, audience, value proposition, and messaging assumptions.
-   * Explicitly mention one of:
+**What These Mean:**
 
-     * “I checked `product-marketing.md` and used it…”
-     * “I checked for `product-marketing.md`, but it was not available, so I’m proceeding with stated assumptions.”
-   * Do not silently skip this check.
+- **Baseline conversion rate**: If your page converts at 5%, that's your baseline.
+- **MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this based on business impact, implementation cost, and realistic expectations.
+- **Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
+- **Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
 
-2. **Give a complete best-effort answer now**
+#### Sample Size Quick Reference Tables
 
-   * Do not ask the user for more information before providing the core output.
-   * If inputs are missing, make reasonable assumptions, label them, and continue.
-   * You may include a short “inputs that would refine this” section at the end.
+**Conversion Rate: 1%**
 
-3. **Use the hypothesis framework**
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (1% → 1.05%) | 1,500,000 | 3,000,000 |
+| 10% (1% → 1.1%) | 380,000 | 760,000 |
+| 20% (1% → 1.2%) | 97,000 | 194,000 |
+| 50% (1% → 1.5%) | 16,000 | 32,000 |
+| 100% (1% → 2%) | 4,200 | 8,400 |
 
-   * For every proposed experiment, include:
+**Conversion Rate: 5%**
 
-     * **Observation**
-     * **Belief**
-     * **Outcome**
-     * **Metric**
-   * Do not merely mention a hypothesis framework; fill it in.
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (5% → 5.25%) | 280,000 | 560,000 |
+| 10% (5% → 5.5%) | 72,000 | 144,000 |
+| 20% (5% → 6%) | 18,000 | 36,000 |
+| 50% (5% → 7.5%) | 3,100 | 6,200 |
+| 100% (5% → 10%) | 810 | 1,620 |
 
-4. **Always include metric tiers**
+**Conversion Rate: 10%**
 
-   * Define:
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (10% → 10.5%) | 130,000 | 260,000 |
+| 10% (10% → 11%) | 34,000 | 68,000 |
+| 20% (10% → 12%) | 8,700 | 17,400 |
+| 50% (10% → 15%) | 1,500 | 3,000 |
+| 100% (10% → 20%) | 400 | 800 |
 
-     * **Primary metric**
-     * **Secondary metrics**
-     * **Guardrail metrics**
-   * Explain what each metric protects or proves.
+#### Duration Calculator
 
-5. **Always warn about peeking**
+**Formula:**
+```
+Duration (days) = (Sample per variant × Number of variants) / (Daily traffic × % exposed)
+```
 
-   * Include explicit wording about the peeking problem, early stopping, and false-positive inflation.
-   * Recommend running to the pre-calculated sample size and duration unless using a valid sequential testing method.
+**Examples:**
 
-6. **Always mention sequential testing when discussing early reads**
+- **High-traffic page**: Need 10,000 per variant, 5,000 daily traffic = 4 days
+- **Medium-traffic page**: Need 30,000 per variant, 2,000 daily traffic = 30 days
+- **Low-traffic with partial exposure**: Need 15,000 per variant, 500 daily traffic at 50% exposure = 120 days (too long!)
 
-   * If the user asks whether to stop early, interpret early significance, or monitor while running, mention sequential testing or group sequential methods as the correct alternative to informal peeking.
+**Minimum Duration Rules:**
+- **1 full week**: To capture day-of-week variation
+- **2 business cycles**: If B2B (weekday vs. weekend patterns)
+- **Through paydays**: If e-commerce (beginning/end of month)
 
-7. **Make clear recommendations**
+**Maximum Duration Guidelines:** Avoid running tests longer than 4-8 weeks due to novelty effects wearing off, external factors intervening, and opportunity cost.
 
-   * When interpreting results, end with one of:
+#### Adjusting for Multiple Variants
 
-     * **Ship**
-     * **Do not ship**
-     * **Keep running**
-     * **Inconclusive**
-   * Include why.
+| Variants | Multiplier |
+|----------|------------|
+| 2 (A/B) | 1x |
+| 3 (A/B/C) | ~1.5x |
+| 4 (A/B/C/D) | ~2x |
+| 5+ | Consider reducing variants |
 
-8. **Distinguish statistical and practical significance**
+#### Common Sample Size Mistakes
 
-   * Statistical significance answers: “Is the effect likely real?”
-   * Practical significance answers: “Is the effect large enough to matter for the business/user experience?”
-   * Discuss both when evaluating results.
+1. **Underpowered tests**: Not enough sample to detect realistic effects
+2. **Overpowered tests**: Waiting for sample size when you already have significance (actually fine)
+3. **Wrong baseline rate**: Using wrong conversion rate for calculation
+4. **Ignoring segments**: If you plan segment analysis, calculate sample for smallest segment
+5. **Testing too many things**: Prioritize ruthlessly, run fewer concurrent tests
 
-## Routing: A/B testing vs copywriting
+#### When Sample Size Requirements Are Too High
 
-If the user primarily asks to write, rewrite, improve, or generate landing page copy, treat the task as **copywriting-first**, even if they mention A/B testing.
+Options when you can't get enough traffic:
+1. Increase MDE (accept only detecting larger effects)
+2. Lower confidence (use 90% instead of 95%)
+3. Reduce variants
+4. Combine traffic across similar pages
+5. Test upstream where traffic is higher
+6. Don't test — use qualitative data instead
+7. Accept longer duration (weeks/months)
 
-For copywriting-first requests:
+### Test Templates
 
-* Say that the main task is copywriting or messaging.
-* Defer to copywriting guidance or a copywriting skill if available.
-* Do not produce a full statistical test plan unless asked.
-* Offer a lightweight experiment wrapper after the copy.
+Templates for planning, documenting, and analyzing experiments.
 
-Example response pattern:
-
-> This is primarily a copywriting task, not an experiment-design task. I’d handle the copy first, then optionally wrap the final variants in an A/B test with a clear hypothesis, primary metric, and guardrails.
-
-Still offer:
-
-* Variant naming
-* Hypothesis
-* Primary metric
-* Guardrails
-* Recommended test setup
-
-## Casual phrasing triggers
-
-Use this skill even when the user phrases the request casually, such as:
-
-* “Should we test…”
-* “Can we try…”
-* “Would it be worth testing…”
-* “What about testing four versions…”
-* “Is this result good enough…”
-* “Should we ship this…”
-
-When the prompt is casual, explicitly acknowledge it as an experiment question:
-
-> This is an A/B testing question even though it’s phrased casually.
-
-Then continue with a practical recommendation.
-
-## Standard output: experiment design
-
-For experiment design requests, use this structure:
+#### Test Plan Template
 
 ```markdown
-## Recommendation
-[One-sentence recommendation.]
+# A/B Test: [Name]
 
-## Test Type
-[A/B test, A/B/n test, multivariate test, sequential A/B tests, or holdout.]
-
-## `product-marketing.md` Check
-[Say whether it was found and used.]
-
-## Assumptions
-- [Assumption 1]
-- [Assumption 2]
+## Overview
+- **Owner**: [Name]
+- **Test ID**: [ID in testing tool]
+- **Page/Feature**: [What's being tested]
+- **Planned dates**: [Start] - [End]
 
 ## Hypothesis
-- **Observation:** ...
-- **Belief:** ...
-- **Outcome:** ...
-- **Metric:** ...
+
+Because [observation/data],
+we believe [change]
+will cause [expected outcome]
+for [audience].
+We'll know this is true when [metrics].
+
+## Test Design
+
+| Element | Details |
+|---------|---------|
+| Test type | A/B / A/B/n / MVT |
+| Duration | X weeks |
+| Sample size | X per variant |
+| Traffic allocation | 50/50 |
+| Tool | [Tool name] |
+| Implementation | Client-side / Server-side |
 
 ## Variants
-| Variant | Description | Why it may work |
-|---|---|---|
-| Control | ... | Baseline |
-| Variant B | ... | ... |
+
+### Control (A)
+[Screenshot]
+- Current experience
+
+### Variant (B)
+[Screenshot or mockup]
+- [Specific change #1]
+- [Specific change #2]
+- Rationale: [Why we think this will win]
 
 ## Metrics
-| Tier | Metric | Definition | Why it matters |
-|---|---|---|---|
-| Primary | ... | ... | ... |
-| Secondary | ... | ... | ... |
-| Guardrail | ... | ... | ... |
 
-## Sample Size and Duration
-[Use traffic, baseline rate, MDE, confidence, and power if provided. If not provided, state what is needed and give a directional recommendation.]
+### Primary
+- **Metric**: [metric name]
+- **Definition**: [how it's calculated]
+- **Current baseline**: [X%]
+- **Minimum detectable effect**: [X%]
 
-## Peeking and Stopping Rule
-Do not stop the test early just because interim results look significant. Repeatedly checking results before the planned sample size inflates the false-positive rate. Decide the sample size and duration before launch, then run to completion unless using a valid sequential testing design.
+### Secondary
+- [Metric 1]: [what it tells us]
+- [Metric 2]: [what it tells us]
 
-## Analysis Plan
-[How to evaluate results.]
+### Guardrails
+- [Metric that shouldn't get worse]
 
-## Launch Checklist
-- [ ] Random assignment is stable
-- [ ] Tracking is validated
-- [ ] Primary metric is defined before launch
-- [ ] Guardrails are monitored
-- [ ] Sample size and stopping rule are agreed before launch
+## Segment Analysis Plan
+- Mobile vs. desktop
+- New vs. returning visitors
+- Traffic source
+
+## Success Criteria
+- Winner: [Primary metric improves by X% with 95% confidence]
+- Loser: [Primary metric decreases significantly]
+- Inconclusive: [What we'll do if no significant result]
+
+## Pre-Launch Checklist
+- [ ] Hypothesis documented and reviewed
+- [ ] Primary metric defined and trackable
+- [ ] Sample size calculated
+- [ ] Test duration estimated
+- [ ] Variants implemented correctly
+- [ ] Tracking verified in all variants
+- [ ] QA completed on all variants
+- [ ] Stakeholders informed
+- [ ] Calendar hold for analysis date
 ```
 
-## Standard output: button color / low-impact tests
-
-When the user asks about testing button color, icon color, small visual tweaks, or other low-impact elements:
-
-1. Identify the test as A/B/n if there are more than two variants.
-2. Warn that each additional variant increases traffic requirements.
-3. Question whether the element is high-impact enough.
-4. Suggest higher-impact alternatives.
-5. Still provide a hypothesis framework.
-
-Required wording:
-
-> Button color alone is often a low-impact test unless there is a strong contrast, accessibility, or visual-hierarchy problem. If traffic is limited, consider testing higher-impact elements first, such as CTA copy, headline, offer, page layout, form length, pricing presentation, or social proof.
-
-For four button colors:
+#### Results Documentation Template
 
 ```markdown
-## Test Type
-This is an A/B/n test because there are more than two variants.
+# A/B Test Results: [Name]
 
-## Traffic Warning
-Four variants split traffic across four cells, so each variant receives only 25% of traffic. That materially increases the time needed to reach significance.
+## Summary
+| Element | Value |
+|---------|-------|
+| Test ID | [ID] |
+| Dates | [Start] - [End] |
+| Duration | X days |
+| Result | Winner / Loser / Inconclusive |
+| Decision | [What we're doing] |
 
-## Higher-Impact Alternatives
-Before testing color alone, consider testing:
-- CTA copy
-- Headline
-- Offer framing
-- Form length
-- Hero section layout
-- Social proof
+## Results
+
+### Sample Size
+| Variant | Target | Actual | % of target |
+|---------|--------|--------|-------------|
+| Control | X | Y | Z% |
+| Variant | X | Y | Z% |
+
+### Primary Metric: [Metric Name]
+| Variant | Value | 95% CI | vs. Control |
+|---------|-------|--------|-------------|
+| Control | X% | [X%, Y%] | — |
+| Variant | X% | [X%, Y%] | +X% |
+
+**Statistical significance**: p = X.XX (95% = sig / not sig)
+**Practical significance**: [Is this lift meaningful for the business?]
+
+### Segment Analysis
+
+**Mobile vs. Desktop**
+| Segment | Control | Variant | Lift |
+|---------|---------|---------|------|
+| Mobile | X% | Y% | +Z% |
+| Desktop | X% | Y% | +Z% |
+
+## Interpretation
+
+### What happened?
+[Explanation of results in plain language]
+
+### Why do we think this happened?
+[Analysis and reasoning]
+
+### Caveats
+[Any limitations, external factors, or concerns]
+
+## Decision
+
+**Winner**: [Control / Variant]
+
+**Action**: [Implement variant / Keep control / Re-test]
+
+## Learnings
+
+### What we learned
+- [Key insight 1]
+- [Key insight 2]
+
+### What to test next
+- [Follow-up test idea 1]
+- [Follow-up test idea 2]
 ```
 
-## Standard output: peeking / stopping early
+#### Experiment Prioritization Scorecard
 
-When the user asks about early results, stopping early, “it’s already significant,” or similar:
+For deciding which tests to run:
+
+| Factor | Weight | Score (1-5) |
+|--------|--------|-------------|
+| Potential impact | 30% | |
+| Confidence in hypothesis | 25% | |
+| Ease of implementation | 20% | |
+| Risk if wrong | 15% | |
+| Strategic alignment | 10% | |
+| **Total** | | |
+
+#### Hypothesis Bank Template
+
+For collecting test ideas:
 
 ```markdown
-## Recommendation
-Keep running unless the test has already reached the pre-calculated sample size and minimum duration, or unless you designed it as a sequential test from the start.
-
-## Why
-Early significance can be misleading because repeated looks at the data inflate the false-positive rate. Day-of-week effects, campaign mix, device mix, and audience mix can also shift early results.
-
-## What to Do
-- Continue to the pre-planned sample size and duration.
-- Check guardrail metrics for harm.
-- Use sequential testing or group sequential methods for future tests if you need valid continuous monitoring.
+| ID | Page/Area | Observation | Hypothesis | Potential Impact | Status |
+|----|-----------|-------------|------------|------------------|--------|
+| H1 | Homepage | Low scroll depth | Shorter hero will increase scroll | High | Testing |
+| H2 | Pricing | Users compare plans | Comparison table will help | Medium | Backlog |
 ```
-
-Always mention:
-
-* peeking problem
-* early stopping
-* false-positive inflation
-* full pre-calculated duration/sample size
-* day-of-week or audience-mix effects
-* sequential testing as the valid alternative
-
-## Standard output: multivariate tests
-
-When the user wants to test multiple page elements at once, identify it as a multivariate test unless they are bundling all changes into one variant.
-
-Required points:
-
-* MVT tests combinations of elements.
-* Calculate the number of combinations.
-* Warn that traffic requirements grow quickly.
-* Suggest sequential A/B tests if traffic is insufficient.
-* Build hypotheses for each element individually.
-
-Example:
-
-```markdown
-## Test Type
-This is a multivariate test because you want to test multiple elements and their combinations.
-
-## Number of Combinations
-If testing:
-- 2 headlines
-- 2 hero images
-- 2 CTA buttons
-
-Then total combinations = 2 × 2 × 2 = 8 combinations.
-
-## Traffic Warning
-Eight combinations means traffic is split across eight cells. Unless the page has high traffic, this will take much longer than a simple A/B test.
-
-## Alternative if Traffic Is Limited
-Run sequential A/B tests:
-1. Test headline first.
-2. Test hero image second.
-3. Test CTA third.
-4. Combine the winners into one final validation test.
-```
-
-### Element-level hypotheses
-
-Always provide separate hypotheses for each element:
-
-```markdown
-## Hypotheses by Element
-
-### Headline
-- **Observation:** Visitors may not immediately understand the core value proposition.
-- **Belief:** A clearer benefit-driven headline will improve relevance and motivation.
-- **Outcome:** More visitors will continue into the signup flow.
-- **Metric:** Signup rate or CTA click-through rate.
-
-### Hero Image
-- **Observation:** The current image may not show the product, audience, or outcome clearly.
-- **Belief:** A more contextual hero image will help visitors visualize value faster.
-- **Outcome:** More visitors will engage with the page and CTA.
-- **Metric:** CTA click-through rate, scroll depth, and signup rate.
-
-### CTA Button
-- **Observation:** The CTA may not be visually prominent or action-oriented enough.
-- **Belief:** A clearer CTA treatment or stronger CTA copy will reduce hesitation.
-- **Outcome:** More visitors will click and complete the intended action.
-- **Metric:** CTA click-through rate and downstream signup completion rate.
-```
-
-Do not provide only one aggregate hypothesis when individual elements are being tested.
-
-## Standard output: signup form / lead quality tests
-
-For signup flow, trial form, lead capture, demo request, or form-friction tests, use this metric hierarchy unless the user gives a different goal:
-
-```markdown
-## Metrics
-
-| Tier | Metric | Definition | Why it matters |
-|---|---|---|---|
-| Primary | Form completion rate | Completed forms / form starts, or completed forms / eligible visitors | Measures whether the form change improves completion of the target action. |
-| Secondary | Lead quality | Qualified leads, activated trials, sales-accepted leads, or trial-to-paid conversion among submitted forms | Ensures more completions are not lower-quality leads. |
-| Secondary | Form start rate | Form starts / visitors | Shows whether more users are entering the flow. |
-| Secondary | Field-level drop-off | Abandonment by field or step | Identifies where friction changes. |
-| Guardrail | Spam or invalid submissions | Invalid, fake, duplicate, or low-intent submissions | Protects against inflated completion from poor-quality leads. |
-| Guardrail | Support burden or refund/cancel rate | Support tickets, cancellations, complaints, or early churn | Protects downstream customer experience. |
-```
-
-Required downstream-window language:
-
-> Downstream metrics such as activation, sales acceptance, trial-to-paid conversion, churn, or lead quality need a longer observation window than the primary form completion metric. The form completion result may be available immediately, but downstream quality should be monitored over 7, 14, or 30+ days depending on the sales or activation cycle.
-
-## Standard output: result interpretation / ship decision
-
-When the user provides experiment results, use this structure:
-
-```markdown
-## Recommendation
-[Ship / Do not ship / Keep running / Inconclusive.]
-
-## Statistical Significance
-[Evaluate confidence, p-value, confidence interval, sample size, and whether the result meets the 95% confidence threshold if applicable.]
-
-## Practical Significance
-[Discuss whether the absolute lift and relative lift are meaningful for the business or user experience.]
-
-## Sample Size Check
-[Assess whether the sample size is sufficient for the observed effect size.]
-
-## Guardrails
-[Check whether key guardrails moved negatively.]
-
-## Segment or Follow-up Analysis
-If the result is borderline or heterogeneous, inspect segments such as device, traffic source, geography, new vs returning users, plan type, or browser before making a final decision.
-
-## Final Decision
-[Clear decision and why.]
-```
-
-Required wording:
-
-* “95% confidence threshold” when using p < 0.05.
-* “Statistical significance is not the same as practical significance.”
-* “A small statistically significant lift may not be worth shipping if implementation cost, risk, or guardrail impact is high.”
-* If borderline, suggest segment analysis.
-
-## Sample size guidance
-
-If baseline rate, MDE, power, or traffic are provided, address them directly.
-
-Minimum default assumptions when missing:
-
-* Confidence: 95%
-* Power: 80%
-* Two-sided test unless there is a strong reason for one-sided
-* Minimum duration: at least one full business cycle, usually 1–2 weeks minimum
-* Avoid tests that would need many weeks or months unless strategically important
-
-If exact calculation is not possible, say:
-
-> I cannot calculate the exact sample size without baseline conversion rate, desired minimum detectable effect, and traffic split, but here is the decision logic and what to calculate.
-
-Do not merely say “we need enough traffic.” Explain how traffic, baseline rate, MDE, and number of variants affect duration.
-
-## File or document output
-
-If the user asks for a test plan, brief, or document:
-
-* Produce the structured plan in the response.
-* If tools are available for file creation and the user asked for a file, create the file.
-* Do not say “I can create this later.”
-* Do not end with only a promise to create a template.
-
-## Quality checklist before answering
-
-Before finalizing, verify:
-
-* [ ] Checked or explicitly addressed `product-marketing.md`
-* [ ] Identified test type
-* [ ] Provided Observation / Belief / Outcome / Metric hypothesis
-* [ ] Defined primary, secondary, and guardrail metrics
-* [ ] Addressed sample size or stated assumptions
-* [ ] Warned about peeking and early stopping
-* [ ] Mentioned sequential testing when relevant
-* [ ] Produced a structured plan or decision now
-* [ ] Built separate hypotheses for each element in MVT
-* [ ] Used form completion rate as primary for form-friction tests
-* [ ] Used lead quality as secondary for signup/lead tests
-* [ ] Mentioned longer observation windows for downstream metrics
-* [ ] Distinguished statistical and practical significance for readouts
-* [ ] Gave a clear ship / do not ship / keep running / inconclusive recommendation for result interpretation
-

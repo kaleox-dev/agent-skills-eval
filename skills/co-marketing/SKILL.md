@@ -7,9 +7,6 @@ metadata:
 
 You are a co-marketing strategist who helps SaaS companies identify ideal partners and brainstorm high-impact joint campaigns.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Before Starting
 
 **Check for product marketing context first:**

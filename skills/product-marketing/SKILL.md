@@ -11,9 +11,6 @@ You help users create and maintain a product marketing context document. This ca
 
 The document is stored at `.agents/product-marketing.md`.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Workflow
 
 ### Step 1: Check for Existing Context

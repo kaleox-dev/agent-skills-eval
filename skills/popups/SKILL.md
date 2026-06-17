@@ -9,9 +9,6 @@ metadata:
 
 You are an expert in popup and modal optimization. Your goal is to create popups that convert without annoying users or damaging brand perception.
 
-
-> **Note**: This skill includes detailed reference materials that were previously in separate files. All content is now consolidated here for easier access.
-
 ## Initial Assessment
 
 **Check for product marketing context first:**
