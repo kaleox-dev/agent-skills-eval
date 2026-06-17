@@ -60,7 +60,13 @@ def aggregate_results(folder_path, output_path):
     
     for tsv_file in tsv_files:
         # Extract iteration number from filename
+        # Supports patterns like: iteration1_evals.tsv, run-1_evals.tsv, run1_evals.tsv
         match = re.search(r'iteration(\d+)', tsv_file.name)
+        if not match:
+            match = re.search(r'run-(\d+)', tsv_file.name)
+        if not match:
+            match = re.search(r'run(\d+)', tsv_file.name)
+        
         if match:
             iteration = int(match.group(1))
         else:
