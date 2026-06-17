@@ -1,0 +1,10 @@
+
+[1m▶ ab-testing[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill,without_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  ## Recommendation **Keep running.** Do not stop the test early just because Variant B is currently showing a 95% confidence win. ## Why You are encountering the **peeking problem**. Repeatedly checki…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    7.9s · 19481 tokens · [32mPASS[0m
