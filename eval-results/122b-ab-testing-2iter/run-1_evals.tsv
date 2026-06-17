@@ -1,0 +1,45 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	6	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	7	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.8s	15435	8	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	6	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	14.0s	15022	7	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.5s	14671	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing or alternative statistical approaches like alpha spending functions.	3	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	3	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	4	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	6	FAIL	Builds hypotheses for each element	The model provides one 'Strong Hypothesis (Example)' covering the interaction of all elements, but does not build distinct hypotheses for each individual element (Headline, Image, CTA) separately.	4	1
+ab-testing	eval-4	with_skill	FAIL	13.2s	14977	7	FAIL	Provides structured test plan	The model states 'Please reply with your traffic numbers... Once I have those, I will... Provide a Test Plan Template'. It has not yet provided the plan.	4	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	1	FAIL	Applies three-tier metric framework (primary, secondary, guardrail)	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	2	FAIL	Identifies form completion rate as primary metric	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	3	FAIL	Identifies lead quality as secondary metric	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	4	FAIL	Defines guardrail metrics to protect against negative outcomes	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	5	FAIL	Explains quantity vs quality tradeoff	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-5	with_skill	FAIL	14.1s	15055	6	FAIL	Notes need for longer observation window for downstream metrics	judge returned unparseable response: { "assertion_results": [ { "text": "Applies three-tier metric framework (primary, secondary, guardrail)", "passed": true, "evidence": "The output explicitly struc…	5	1
+ab-testing	eval-6	with_skill	FAIL	6.5s	14423	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.5s	14423	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.5s	14423	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	6.5s	14423	4	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	13.0s	14989	6	PASS			7	1

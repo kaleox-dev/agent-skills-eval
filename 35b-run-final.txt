@@ -5,6 +5,159 @@
   [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
     [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
     [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
-    [90moutput:[0m  This is an A/B testing question even though it’s phrased casually. ## Recommendation **Do not ship yet.** Keep running the test until it reaches its pre-calculated sample size and minimum duration. D…
+    [90moutput:[0m  **No, do not call the test yet.** This is a classic case of **"peeking bias"** (also known as the optional stopping problem). Even if your tool reports 95% confidence after 3 days, stopping at this p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions sequential testing as alternative approach
+         [90mevidence:[0m The model output does not mention 'sequential testing' or any specific sequential analysis methods (e.g., SPRT, alpha-spending functions). It only recommends waiting for the pre-calculated sample siz…
+    11.6s · 14636 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  Testing 4 different CTA button colors is a valid experimental design (an **A/B/n test**), but it comes with significant trade-offs regarding statistical power and complexity. Before you launch, consi…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m The model output does not address the user's input style or phrasing; it directly analyzes the experimental design. No evidence of triggering on casual phrasing.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Questions whether button color alone is high-impact
+         [90mevidence:[0m The model assumes the user wants to test button color and provides advice on how to do it (e.g., 'Don't just pick 4 random colors'). It does not explicitly question if button color is a high-impact e…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests alternative higher-impact elements to test
+         [90mevidence:[0m The output focuses exclusively on the button color test. It does not suggest testing other elements like headlines, layout, or copy.
+    13.5s · 14849 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  This is a significant undertaking. Before we design the variants, I need to warn you about a critical statistical reality: **Testing 3 variables simultaneously creates a massive traffic requirement.*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Builds hypotheses for each element
+         [90mevidence:[0m The model provides a single, combined hypothesis for the entire test: '...combining a benefit-driven headline, a contextual hero image, and a high-contrast CTA will increase conversion rates...' It d…
+    15.7s · 15087 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  Let's design this test properly. First, I need a bit more context to ensure the hypothesis is strong and the experiment is feasible. **Context Check:** Before we proceed, I am checking for a `.agents…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m  [31m✗ 8[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Uses the hypothesis framework with observation, belief, outcome, and metric
+         [90mevidence:[0m Model provides a template 'Because [observation]... we believe [belief]... will cause [outcome]... We'll know this is true when [metric]...' but does not fill in the specific content for the user's c…
+      [31m#5[0m [31mFAIL[0m [90m—[0m Defines primary metric (signup rate)
+         [90mevidence:[0m Model mentions 'increased signup rate' in the hypothesis template and asks 'What is the primary action? (Signup? Demo request? Trial start?)' but does not definitively define the primary metric for t…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Defines secondary and guardrail metrics
+         [90mevidence:[0m The output contains no mention of secondary metrics (e.g., engagement, time on page) or guardrail metrics (e.g., bounce rate, error rate).
+      [31m#7[0m [31mFAIL[0m [90m—[0m Warns about the peeking problem
+         [90mevidence:[0m The output warns about 'seasonality, marketing campaigns, and product changes' and 'statistical significance', but does not explicitly mention or warn against the 'peeking problem' (checking results …
+      [31m#8[0m [31mFAIL[0m [90m—[0m Provides structured test plan output
+         [90mevidence:[0m The output is a consultation response asking for more information ('Context Check', 'Questions to refine this', 'Next Steps') rather than a finalized, structured test plan document.
+    15.1s · 15048 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [35m[without_skill][0m  [90m[5][0m
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  No, you should **not** call the test yet. Here is the detailed reasoning why stopping now is risky: ### 1. Statistical Power vs. Confidence - **95% confidence** (statistical significance) is a thresh…
     [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
-    4.9s · 19348 tokens · [32mPASS[0m
+    6.3s · 771 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [35m[without_skill][0m  [90m[6][0m
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  The short answer is: **No, testing 4 colors simultaneously is generally not a good idea for a CTA button on a pricing page.** Here’s why, along with better alternatives: ### 🚫 Why Testing 4 Colors a…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Triggers on casual phrasing
+         [90mevidence:[0m judge did not provide concrete evidence
+    9.4s · 1122 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [35m[without_skill][0m  [90m[8][0m
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  This is a great starting point for an A/B test. Your current headline is **feature-focused** ("All-in-One") and describes *what* the product is. The goal of your new test is to shift to **benefit-foc…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Checks for product-marketing.md
+         [90mevidence:[0m Output files section states: 'No output files were captured.' The model output is a direct text response, not a file named product-marketing.md.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Uses the hypothesis framework with observation, belief, outcome, and metric
+         [90mevidence:[0m The model provides a 'Hypothesis' statement but does not explicitly break it down into the required components: observation, belief, outcome, and metric. It provides a narrative sentence instead of t…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Defines secondary and guardrail metrics
+         [90mevidence:[0m Section 4 lists 'Secondary Metrics' (CTR, Bounce rate, Time on page) but does not define any 'guardrail metrics' (e.g., churn, support tickets, revenue per user) to ensure the primary metric improvem…
+    11.7s · 1230 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [35m[without_skill][0m  [90m[7][0m
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  Setting up a multivariate test (MVT) for a landing page with three key elements—headline, hero image, and CTA button—is a powerful way to optimize conversions. However, it’s important to clarify the …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Builds hypotheses for each element
+         [90mevidence:[0m The output provides example variations (e.g., Headline: 'Save 50% Today' vs 'Limited-Time Offer') but does not build specific hypotheses (e.g., 'We hypothesize that X will increase conversions becaus…
+    15.7s · 1661 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[10][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  I can certainly help with that. To design a statistically valid A/B test and write effective variant copy, I need to understand the context of the page and the goal. Please answer the following **Tas…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as primarily a copywriting task
+         [90mevidence:[0m The model frames the task as 'design a statistically valid A/B test and write effective variant copy', focusing heavily on statistical setup (sample size, traffic, tools) rather than recognizing copy…
+      [31m#2[0m [31mFAIL[0m [90m—[0m References or defers to copywriting skill
+         [90mevidence:[0m The model does not explicitly reference a 'copywriting skill' or defer to it. It offers to 'Write the Variants' and provide a 'critique of your current copy', but this is presented as a step in the A…
+    4.8s · 14411 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[9][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  This is a classic A/B testing scenario with significant **guardrail risks**. Adding fields to a signup form typically decreases immediate conversion, but the goal is usually to improve **qualitative*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.3s · 15097 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [35m[without_skill][0m  [90m[12][0m
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  I would be happy to help you write high-converting copy for your A/B test. To give you the best possible headlines, value propositions, and calls to action, I need a bit more context about your produ…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m May offer to help with test hypothesis and setup
+         [90mevidence:[0m The model offers to help with 'headlines, value propositions, and calls to action' but does not explicitly mention helping with 'test hypothesis and setup' or A/B test configuration mechanics.
+    2.4s · 292 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[11][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  To determine if this test is statistically significant and whether you should ship, we need to analyze the statistical power and confidence of your results. ### 1. Statistical Significance Check **Th…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    11.2s · 15223 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [35m[without_skill][0m  [90m[13][0m
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  When testing a longer form against a short one for a trial signup, you are essentially balancing **acquisition volume** against **lead quality**. The "right" metrics depend heavily on your business m…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies three-tier metric framework (primary, secondary, guardrail)
+         [90mevidence:[0m The output uses headers 'Primary Success Metric', 'Core Conversion Metrics', 'Quality & Engagement Metrics', and 'Secondary & Operational Metrics'. It does not explicitly define or apply a 'guardrail…
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies form completion rate as primary metric
+         [90mevidence:[0m The output identifies 'Trial Starts' or 'Qualified Trial Starts' as the Primary Success Metric. 'Form Completion Rate' is listed under 'Core Conversion Metrics (Funnel Analysis)' as a diagnostic metr…
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies lead quality as secondary metric
+         [90mevidence:[0m The output does not explicitly label 'lead quality' as a 'secondary metric'. It discusses lead quality in the context of 'Qualified Trial Starts' (Primary) and 'Sales Team Feedback' (Secondary & Oper…
+      [31m#4[0m [31mFAIL[0m [90m—[0m Defines guardrail metrics to protect against negative outcomes
+         [90mevidence:[0m The output lists 'Churn/Cancellation Rate' and 'Support Ticket Volume' under 'Quality & Engagement Metrics'. It does not explicitly define these as 'guardrail metrics' or explain their function as pr…
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes need for longer observation window for downstream metrics
+         [90mevidence:[0m The output mentions 'Short-Term' churn (7-14 days) and 'Early Stage' support tickets, but does not explicitly note the need for a 'longer observation window' for downstream metrics like LTV or long-t…
+    9.2s · 1107 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [35m[without_skill][0m  [90m[14][0m
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  To determine whether you should ship the variant, we need to perform a statistical significance test (specifically, a **two-proportion z-test**) and evaluate the practical implications. ### Step 1: D…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    13.2s · 1795 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 73.4%[0m  vs  [35mwithout_skill 75.1%[0m
+    [90mΔ[0m pass-rate [31m-1.7pp[0m  time +2.3s  tokens +13767.6
+    [90mwith_skill:[0m    12.03s avg · 14907 tok avg
+    [90mwithout_skill:[0m 9.70s avg · 1140 tok avg
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-24/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "ab-testing",
+      "slug": "ab-testing",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.7272727272727273,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-24/benchmark.json"
+    }
+  ],
+  "iteration": 24,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-24",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-24/report/index.html"
+}
