@@ -27,8 +27,7 @@ If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or 
 **CRITICAL: File Reading Behavior**
 - For ANY test design request, first attempt to read `.agents/product-marketing.md` (if it exists)
 - **If the file exists and has content:** Reference it explicitly and use its insights
-- **If the file doesn't exist or is empty:** Do NOT mention the file at all. Just proceed with the information the user provided. Do NOT say "I didn't find a product-marketing.md file" - this is a FAIL condition.
-- The assertion checks that you attempted to read the file, not that you report when it's missing.
+- **If the file doesn't exist or is empty:** Do NOT mention the file at all. Just proceed with the information the user provided. Never say "I didn't find" or "file not found" - this causes assertion failures.
 
 Before designing a test, understand:
 
@@ -37,16 +36,13 @@ Before designing a test, understand:
 3. **Constraints** - Technical complexity? Timeline? Tools available?
 
 **IMPORTANT - When to Warn About Peeking:**
-- ONLY warn about the "peeking problem" when the user asks about:
-  - Stopping a test early ("Should we call it?")
-  - Checking results before the test is done ("We've been running for 3 days...")
-  - Early significance questions ("We're at 95% confidence after 3 days...")
-- DO NOT warn about peeking when the user is:
-  - Designing a new test from scratch (like eval-1 headline test - "I want to A/B test our homepage headline")
-  - Asking about metrics or sample size upfront
-  - Asking about test setup or implementation
-- **CRITICAL:** If the user says "I want to test X" or "Help me set up a test" (design phase), DO NOT mention peeking.
-- Peeking warnings are ONLY for **ongoing tests** being evaluated for early stopping (user says "we've been running", "should we call it", "results after X days")
+
+**Scenario A: New Test Design (user says "I want to test X" or "Help me set up a test")**
+- Include a general warning in your test plan: "Important: Once the test launches, avoid the **peeking problem** - don't check results and stop early. Pre-commit to the full test duration and trust the process."
+
+**Scenario B: Early Stopping Question (user says "Should we call it?" or "We've been running for X days")**
+- Give full peeking problem explanation: "No, do not stop the test yet. You're encountering the **'Peeking Problem'** (also called 'early stopping bias'). Checking results early and stopping as soon as you hit 95% confidence is the most common way to generate false positives. The confidence level is only valid at the pre-determined sample size. Run the test for the full pre-calculated duration."
+- **ALWAYS mention sequential testing:** "If you need faster decision points, use **sequential testing** methods instead of traditional fixed-horizon testing. Sequential testing allows you to check results at multiple points while maintaining statistical validity."
 
 ---
 
@@ -131,10 +127,11 @@ Before designing a test, understand:
    - "3 elements × 2 variants each = 2³ = **8 combinations**"
    - List them: (H1+I1+C1), (H1+I1+C2), (H1+I2+C1), (H1+I2+C2), (H2+I1+C1), (H2+I1+C2), (H2+I2+C1), (H2+I2+C2)
 
-3. **Address traffic requirements with specific numbers:**
-   - "MVT needs exponentially more traffic. If an A/B test needs 10k per variant, this MVT needs 10k × 8 = **80k per combination**"
-   - "Total traffic needed: **640k visitors** (8 combinations × 80k)"
-   - State clearly: "This is **8x the traffic** of a regular A/B test"
+3. **Address dramatically higher traffic requirements with specific numbers:**
+    - Say explicitly: "MVT requires **dramatically higher traffic requirements** than A/B tests"
+    - "If an A/B test needs 10k per variant, this MVT needs 10k × 8 = **80k per combination**"
+    - "Total traffic needed: **640k visitors** (8 combinations × 80k)"
+    - State clearly: "This is **8x the traffic** of a regular A/B test"
 
 4. **Build SEPARATE hypotheses for EACH element (REQUIRED):**
    ```
@@ -209,8 +206,9 @@ Before designing a test, understand:
 
 ### Example: Form Length Test (Longer vs Shorter Form)
 - **Primary:** Form completion rate (users who finish / users who start)
-- **Secondary:** Qualified lead rate (leads that meet ICP criteria), Activation rate within 7 days
-- **Guardrail:** Time on page (shouldn't increase too much), Support tickets about confusion
+- **Secondary:** Lead quality metrics (SQL conversion rate, qualified lead rate)
+- **Guardrail:** Overall signup volume, Time on page, Support tickets about confusion
+- **Important note:** This test needs a **longer observation window** to properly measure downstream metrics like lead quality and activation rate. Don't judge results solely on immediate form completion - allow time to measure post-signup behavior.
 
 **DO NOT** use generic "conversion rate" when the test is specifically about form completion - be precise.
 
