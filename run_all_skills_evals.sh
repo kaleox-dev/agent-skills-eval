@@ -1,113 +1,109 @@
 #!/bin/bash
-# run_all_skills_evals.sh
-# Run evaluations for ALL skills on both 122B and 35B models (10 iterations each)
+
+# Run A/B testing skill evaluations on ALL skills for 122B and 35B models
+# 10 iterations each
 
 set -e
 
-# API credentials
-export OPENAI_API_KEY="${OPENAI_API_KEY:-}"
-export OPENAI_TEMPERATURE="0"
+# Configuration
+# IMPORTANT: Set OPENAI_API_KEY environment variable before running
+# export OPENAI_API_KEY="your_api_key_here"
+if [ -z "$OPENAI_API_KEY" ]; then
+    echo "ERROR: OPENAI_API_KEY environment variable not set"
+    echo "Please set it: export OPENAI_API_KEY=\"your_key\""
+    exit 1
+fi
 
-# Number of iterations per skill
-ITERATIONS="${1:-10}"
+ROOT_DIR="/home/lily/agent-skills-eval"
+SKILLS_DIR="$ROOT_DIR/skills"
+OUTPUT_DIR="$ROOT_DIR/eval-results/batch-evals"
 
-# Get all skills (including ab-testing)
-SKILLS=$(ls -1 ./skills/ | sort)
+# Model configurations
+declare -A MODELS
+MODELS["122B"]="Qwen/Qwen3.5-122B-A10B-FP8|https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1"
+MODELS["35B"]="Qwen/Qwen3.6-35B-A3B-fp8-no-thinking|https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1"
 
-echo "========================================="
-echo "Running Evaluations for ALL Skills"
-echo "Iterations per skill: $ITERATIONS"
-echo "Total skills: $(echo $SKILLS | wc -w)"
-echo "========================================="
-echo ""
+ITERATIONS=10
 
-# Function to run a skill on a specific model
-# JUDGE_MODEL is always the 122B model for consistent grading
-run_skill() {
-    local skill=$1
-    local model_display=$2
+# Create output directory
+mkdir -p "$OUTPUT_DIR"
+
+# Get list of skills (excluding ab-testing-4b which is 4B specific)
+SKILLS=($(ls "$SKILLS_DIR" | grep -v "ab-testing-4b" | sort))
+
+echo "=========================================="
+echo "Running evaluations on ${#SKILLS[@]} skills"
+echo "Models: 122B, 35B"
+echo "Iterations: $ITERATIONS per skill/model"
+echo "Output: $OUTPUT_DIR"
+echo "=========================================="
+
+# Function to run evaluations for a skill
+run_skill_evals() {
+    local model_name=$1
+    local model_id=$2
     local model_url=$3
-    local model_label=$4
+    local skill_name=$4
+    
+    local output_folder="$OUTPUT_DIR/${model_name,,}_${skill_name}"
     
     echo ""
-    echo "========================================="
-    echo "Skill: $skill | Model: $model_label"
-    echo "========================================="
+    echo "=========================================="
+    echo "Running $skill_name on $model_name"
+    echo "Output: $output_folder"
+    echo "=========================================="
     
-    # Auto-generate folder name: ads_122B_10iters, ads_35B_10iters
-    local output_folder="${skill}_${model_label}_${ITERATIONS}iters"
+    OPENAI_API_KEY="$OPENAI_API_KEY" \
+    ./run_skill_evals.sh \
+        --model "$model_id" \
+        --url "$model_url" \
+        --skill "$SKILLS_DIR/$skill_name" \
+        --iterations $ITERATIONS \
+        --output-folder "$output_folder"
     
-    export OPENAI_BASE_URL="$model_url"
-    
-    # Create folder if it doesn't exist
-    mkdir -p "$output_folder"
-    
-    for i in $(seq 1 $ITERATIONS); do
-        echo "--- Iteration $i/$ITERATIONS ---"
-        
-        local txt_file="$output_folder/${skill}_${model_label}_iteration${i}.txt"
-        
-        # Use the same model as judge (since --base-url applies to both target and judge)
-        # For 122B runs: judge is 122B
-        # For 35B runs: judge is 35B (we can't use 122B as judge since the tool doesn't support separate URLs)
-        local JUDGE_MODEL="$model_display"
-        
-        # OPENAI_BASE_URL is already set above for the target model
-        npx agent-skills-eval ./skills/$skill \
-            --target "$model_display" \
-            --judge "$JUDGE_MODEL" \
-            --strict 2>&1 | tee "$txt_file"
-        
-        # Generate TSV
-        python3 parse_evals.py "$txt_file" "${txt_file%.txt}_evals.tsv" --iteration $i
-    done
-    
-    # Generate merged and aggregate
-    echo "Generating merged.tsv and aggregate.tsv..."
-    python3 merge_tsv.py "$output_folder"/*_evals.tsv -o "$output_folder/merged.tsv"
-    python3 aggregate_tsv.py "$output_folder" -o "$output_folder/aggregate.tsv"
-    
-    echo "Done with $skill on $model_label (self-judged)"
+    echo ""
+    echo "Generated files:"
+    ls -lh "$output_folder"/*.tsv 2>/dev/null || echo "No TSV files found"
 }
 
-# Process each skill
-for skill in $SKILLS; do
-    echo "========================================="
-    echo "Processing skill: $skill"
-    echo "========================================="
+# Main loop
+for skill in "${SKILLS[@]}"; do
+    echo ""
+    echo "##########################################"
+    echo "# Processing skill: $skill"
+    echo "##########################################"
     
-    # Run on 122B model (skip if folder already exists with merged.tsv)
-    folder_122B="${skill}_122B_${ITERATIONS}iters"
-    if [ -f "$folder_122B/merged.tsv" ]; then
-        echo "Skipping $skill on 122B (already completed)"
-    else
-        run_skill "$skill" \
-            "RedHatAI/Qwen3.5-122B-A10B-NVFP4" \
-            "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1" \
-            "122B"
-    fi
+    # Run for 122B
+    model_data="${MODELS["122B"]}"
+    model_id="${model_data%%|*}"
+    model_url="${model_data##*|}"
+    run_skill_evals "122B" "$model_id" "$model_url" "$skill"
     
-    # Run on 35B model (skip if folder already exists with merged.tsv)
-    folder_35B="${skill}_35B_${ITERATIONS}iters"
-    if [ -f "$folder_35B/merged.tsv" ]; then
-        echo "Skipping $skill on 35B (already completed)"
-    else
-        run_skill "$skill" \
-            "Qwen/Qwen3.6-35B-A3B-fp8" \
-            "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1" \
-            "35B"
-    fi
+    # Run for 35B
+    model_data="${MODELS["35B"]}"
+    model_id="${model_data%%|*}"
+    model_url="${model_data##*|}"
+    run_skill_evals "35B" "$model_id" "$model_url" "$skill"
     
     echo ""
-    echo "========================================="
     echo "Completed skill: $skill"
-    echo "========================================="
-    echo ""
+    echo "Sleeping 5 seconds before next skill..."
+    sleep 5
 done
 
-echo "========================================="
-echo "ALL SKILLS COMPLETE!"
-echo "========================================="
 echo ""
-echo "Folders created:"
-ls -d */ 2>/dev/null | grep -E "_122B|_35B" | sort
+echo "=========================================="
+echo "ALL EVALUATIONS COMPLETED!"
+echo "=========================================="
+echo "Results saved to: $OUTPUT_DIR"
+echo ""
+echo "To generate summaries, run:"
+echo "  cd $ROOT_DIR"
+echo "  for dir in $OUTPUT_DIR/*; do"
+echo "    if [ -d \"\$dir\" ]; then"
+echo "      python3 aggregate_tsv.py \"\$dir\" -o \"\$dir/aggregate.tsv\""
+echo "      python3 pass_rate_summary_tsv.py \"\$dir\" -o \"\$dir/pass_rate_summary.tsv\""
+echo "      cp \"\$dir/run-\"*_evals.tsv \"\$dir/merged.tsv\" 2>/dev/null || true"
+echo "    fi"
+echo "  done"
+echo "=========================================="
