@@ -2,89 +2,133 @@
 
 This document describes the end-to-end evaluation pipeline for testing skills on different models via the Inferx API.
 
-## Overview
+## Quick Start
 
-The pipeline runs skill evaluations against target models, parses results, and generates summary reports including pass rates, failure analysis, and aggregated metrics.
+### Running a Single Skill Evaluation
 
-## Components
-
-### Scripts
-
-- **`run_skill_evals.sh`** - Main runner script that executes evaluations and generates all output files
-- **`parse_evals.py`** - Parses raw evaluation output (txt) into structured TSV format
-- **`merge_tsv.py`** - Merges multiple iteration TSV files into one
-- **`aggregate_tsv.py`** - Creates aggregate summary with fail counts per assertion across iterations
-- **`pass_rate_summary_tsv.py`** - Calculates pass rates for with_skill vs without_skill modes
-
-### Config Files
-
-- **`eval-config.json`** - Configuration for 122B model evaluations
-- **`eval-config-35b.json`** - Configuration for 35B model evaluations
-
-## Usage
-
-### Running Evaluations
-
-**Basic syntax:**
+**Basic syntax (no config file needed):**
 ```bash
-OPENAI_API_KEY="your-key" ./run_skill_evals.sh \
-  --config <config-file> \
-  --skill "<skill-path>" \
-  --iterations <N> \
-  --output-folder "<folder-name>"
-```
-
-### 35B Model Examples
-
-**2 iterations (quick test):**
-```bash
-OPENAI_API_KEY="ix_xxx" ./run_skill_evals.sh \
-  --config ./eval-config-35b.json \
-  --skill "./skills/ab-testing" \
-  --iterations 2 \
-  --output-folder "eval-results/35b-ab-testing-2iter"
-```
-
-**10 iterations (full evaluation):**
-```bash
-OPENAI_API_KEY="ix_xxx" ./run_skill_evals.sh \
-  --config ./eval-config-35b.json \
-  --skill "./skills/ab-testing" \
-  --iterations 10 \
-  --output-folder "eval-results/35b-ab-testing-10iter"
-```
-
-### 122B Model Examples
-
-**2 iterations (quick test):**
-```bash
-OPENAI_API_KEY="ix_xxx" ./run_skill_evals.sh \
-  --config ./eval-config.json \
-  --skill "./skills/ab-testing" \
-  --iterations 2 \
-  --output-folder "eval-results/122b-ab-testing-2iter"
-```
-
-**10 iterations (full evaluation):**
-```bash
-OPENAI_API_KEY="ix_xxx" ./run_skill_evals.sh \
-  --config ./eval-config.json \
+export OPENAI_API_KEY="your-api-key"
+./run_skill_evals.sh \
+  --model "Qwen/Qwen3.5-122B-A10B-FP8" \
+  --url "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1" \
   --skill "./skills/ab-testing" \
   --iterations 10 \
   --output-folder "eval-results/122b-ab-testing-10iter"
 ```
 
+### Running ALL Skills (Batch Mode)
+```bash
+export OPENAI_API_KEY="your-api-key"
+./run_all_skills_evals.sh
+```
+This runs all 45 skills on both 122B and 35B models (10 iterations each = ~900 total runs).
+
+---
+
+## Model Endpoints
+
+| Model | Display Name | Endpoint URL |
+|-------|--------------|--------------|
+| **122B** | `Qwen/Qwen3.5-122B-A10B-FP8` | `https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1` |
+| **35B** | `Qwen/Qwen3.6-35B-A3B-fp8-no-thinking` | `https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1` |
+| **4B** | `Qwen/Qwen3.5-4B` | `https://model.inferx.net/funccall/tn-83s8b4zqey/default/Qwen3.5-4B/v1` |
+
+---
+
+## Scripts Overview
+
+### Core Scripts
+
+| Script | Purpose | When to Use |
+|--------|---------|-------------|
+| **`run_skill_evals.sh`** | Main runner - executes evaluations, generates all output files | Running a single skill on a single model |
+| **`run_all_skills_evals.sh`** | Batch runner - runs all skills on 122B and 35B | Full evaluation across all skills |
+| **`aggregate_tsv.py`** | Creates aggregate summary with fail counts per assertion | After running evaluations, to summarize |
+| **`pass_rate_summary_tsv.py`** | Calculates pass rates (with_skill vs without_skill) | After running evaluations, to get pass rates |
+| **`merge_tsv.py`** | Merges multiple iteration TSV files | Manual merging (usually done by run_skill_evals.sh) |
+| **`parse_evals.py`** | Parses raw txt output to TSV | Manual parsing (usually done by run_skill_evals.sh) |
+
+### Visualization Scripts
+
+| Script | Purpose | Output |
+|--------|---------|--------|
+| **`publication_ready.py`** | Generates publication-ready charts (Figures 1-3) | `figure1_hero_improvement.png`, `figure2_per_eval_breakdown.png`, `figure3_heatmap_baseline_vs_modified.png` |
+| **`compare_models.py`** | Compare performance across models | Model comparison charts |
+
+---
+
+## Usage Examples
+
+### Single Skill Evaluation (122B, 10 iterations)
+```bash
+export OPENAI_API_KEY="ix_xxx"
+./run_skill_evals.sh \
+  --model "Qwen/Qwen3.5-122B-A10B-FP8" \
+  --url "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1" \
+  --skill "./skills/ab-testing" \
+  --iterations 10 \
+  --output-folder "eval-results/122b-ab-testing-10iter"
+```
+
+### Single Skill Evaluation (35B, 10 iterations)
+```bash
+export OPENAI_API_KEY="ix_xxx"
+./run_skill_evals.sh \
+  --model "Qwen/Qwen3.6-35B-A3B-fp8-no-thinking" \
+  --url "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1" \
+  --skill "./skills/ab-testing-modified" \
+  --iterations 10 \
+  --output-folder "eval-results/35b-ab-testing-modified-10iter"
+```
+
+### Single Skill Evaluation (4B, 1 iteration - quick test)
+```bash
+export OPENAI_API_KEY="ix_xxx"
+./run_skill_evals.sh \
+  --model "Qwen/Qwen3.5-4B" \
+  --url "https://model.inferx.net/funccall/tn-83s8b4zqey/default/Qwen3.5-4B/v1" \
+  --skill "./skills/ab-testing-4b" \
+  --iterations 1 \
+  --output-folder "eval-results/4b-ab-testing-test"
+```
+
+### Generate Summary Files (if not auto-generated)
+```bash
+# From a folder with run-N_evals.tsv files
+cd eval-results/122b-ab-testing-10iter
+
+# Generate aggregate.tsv
+python3 ../aggregate_tsv.py . -o aggregate.tsv
+
+# Generate pass_rate_summary.tsv
+python3 ../pass_rate_summary_tsv.py . -o pass_rate_summary.tsv
+
+# Generate merged.tsv (for single run)
+cp run-1_evals.tsv merged.tsv
+# Or for multiple runs:
+python3 ../merge_tsv.py run-1_evals.tsv run-2_evals.tsv ... -o merged.tsv
+```
+
+### Generate Visualizations
+```bash
+cd data-visualization
+python3 publication_ready.py
+```
+
+---
+
 ## Output Files
 
-Each run generates the following files in the output folder:
+Each evaluation run generates these files in the output folder:
 
-| File | Description |
-|------|-------------|
-| `run-1.txt`, `run-2.txt`, ... | Raw evaluation output with ANSI codes |
-| `run-1_evals.tsv`, `run-2_evals.tsv`, ... | Parsed TSV with assertion-level results |
-| `merged.tsv` | All iterations combined into single TSV |
-| `aggregate.tsv` | Fail count per (eval, assertion) across iterations |
-| `pass_rate_summary.tsv` | Pass rates for with_skill vs without_skill by run |
+| File | Description | Generated By |
+|------|-------------|--------------|
+| `run-1.txt`, `run-2.txt`, ... | Raw evaluation output with ANSI codes | `run_skill_evals.sh` |
+| `run-1_evals.tsv`, `run-2_evals.tsv`, ... | Parsed TSV with assertion-level results | `parse_evals.py` (called by runner) |
+| `merged.tsv` | All iterations combined into single TSV | `merge_tsv.py` (called by runner) |
+| `aggregate.tsv` | Fail count per (eval, assertion) across iterations | `aggregate_tsv.py` |
+| `pass_rate_summary.tsv` | Pass rates for with_skill vs without_skill by run | `pass_rate_summary_tsv.py` |
 
 ### TSV Schema
 
@@ -102,51 +146,90 @@ Each run generates the following files in the output folder:
 - `Run` - Run number
 - `Iteration` - Iteration number
 
-**`pass_rate_summary.tsv` columns:**
-- `Run` - Run identifier
-- `with_skill_Percent` - Pass rate with skill enabled
-- `without_skill_Percent` - Pass rate without skill
-
 **`aggregate.tsv` columns:**
 - `Eval` - Eval identifier
 - `Assertion #` - Assertion number
 - `Fail Count` - Number of iterations this assertion failed
 
-## Model Configuration
+**`pass_rate_summary.tsv` columns:**
+- `Run` - Run identifier
+- `with_skill_Percent` - Pass rate with skill enabled
+- `without_skill_Percent` - Pass rate without skill
 
-### 35B Model (Qwen3.6-35B-A3B-FP8)
-- **URL:** `https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1`
-- **Display:** `Qwen/Qwen3.6-35B-A3B-fp8`
-- **Config:** `eval-config-35b.json`
+---
 
-### 122B Model (Qwen3.5-122B-A10B-FP8)
-- **URL:** `https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1`
-- **Display:** `Qwen/Qwen3.5-122B-A10B-FP8`
-- **Config:** `eval-config.json`
+## Skills Directory Structure
+
+```
+skills/
+├── ab-testing/           # Original A/B testing skill
+├── ab-testing-modified/  # Improved version with better failure handling
+├── ab-testing-4b/        # Simplified version for 4B model
+├── ad-creative/
+├── ads/
+├── ai-seo/
+├── analytics/
+├── ... (45 total skills)
+```
+
+### Skill Differences
+
+| Skill | Target Model | Key Features |
+|-------|--------------|--------------|
+| `ab-testing` | 122B, 35B | Original skill, comprehensive but complex |
+| `ab-testing-modified` | 122B, 35B | Fixed file-checking, better hypothesis framework, explicit MVT guidance |
+| `ab-testing-4b` | 4B | Simplified instructions, explicit "DON'T ASK QUESTIONS", direct output templates |
+
+---
 
 ## Folder Structure
 
 ```
 eval-results/
-├── 35b-ab-testing-2iter/
+├── 122b-ab-testing-10iter/
 │   ├── run-1.txt
 │   ├── run-1_evals.tsv
 │   ├── run-2.txt
 │   ├── run-2_evals.tsv
+│   ├── ...
 │   ├── merged.tsv
 │   ├── aggregate.tsv
 │   └── pass_rate_summary.tsv
-├── 35b-ab-testing-10iter/
-├── 122b-ab-testing-2iter/
-└── 122b-ab-testing-10iter/
+├── 35b-ab-testing-modified-10iter/
+├── 4b-ab-testing-test/
+└── batch-evals/           # Output from run_all_skills_evals.sh
+    ├── 122b_ad-creative/
+    ├── 35b_ad-creative/
+    ├── 122b_ads/
+    └── ...
 ```
 
-## Notes
+**Note:** `eval-results/` is in `.gitignore` - never commit evaluation results.
 
-- **API Key:** Never commit API keys. Use environment variable or inline: `OPENAI_API_KEY="xxx" ./script.sh`
-- **Iterations:** More iterations = more reliable pass rate estimates (recommended: 10 for final evaluation)
-- **Output Folder:** Use descriptive names like `<model>-<skill>-<iterations>iter`
-- **Git Ignore:** `eval-results/` is ignored to avoid committing large result files
+---
+
+## Key Findings (A/B Testing Skill)
+
+### Performance Summary
+
+| Model | Baseline Skill | Modified/Simplified Skill | Improvement | Failure Reduction |
+|-------|----------------|---------------------------|-------------|-------------------|
+| **122B** | 78.2% | 95.5% | +17.3pp | 84.2% |
+| **35B** | 72.7% | 93.4% | +20.7pp | 78.9% |
+| **4B** | 36.4% | 79.5% | +43.1pp | 67.9% |
+
+### Key Insights
+
+1. **Modified skill dramatically improves 122B and 35B** - ~80% fewer failures
+2. **4B model needs simplified instructions** - Original skill made performance worse (-20pp), simplified skill improved it (+43pp)
+3. **Main failure patterns fixed:**
+   - Silent file checking (model was creating files when it shouldn't)
+   - Context-aware peeking warnings (only warn when relevant)
+   - OBOM hypothesis framework (explicit structure)
+   - MVT guidance (exact traffic calculations)
+   - Casual phrasing detection
+
+---
 
 ## Troubleshooting
 
@@ -162,3 +245,16 @@ eval-results/
 ### Aggregation Issues
 - Verify all `run-N_evals.tsv` files exist before running aggregate
 - Check that iteration numbers are sequential (1, 2, 3...)
+
+### Low Pass Rates
+- Check if the skill instructions match the model's capabilities
+- For small models (4B), use simplified skill versions
+- Review `aggregate.tsv` to identify which assertions are failing most
+
+---
+
+## Security Notes
+
+- **NEVER commit API keys** - Use environment variables: `export OPENAI_API_KEY="xxx"`
+- **eval-results/ is ignored** - Contains potential API keys in raw output
+- **Check before pushing** - Run `grep -r "ix_" --include="*.sh" --include="*.py"` to verify no hardcoded keys
