@@ -1,8 +1,8 @@
 ---
-name: ab-testing-modified
+name: ab-testing
 description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," "how long should I run this test," "growth experiments," "experiment velocity," "experiment backlog," "ICE score," "experimentation program," or "experiment playbook." Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro.
 metadata:
-  version: 2.1.0
+  version: 2.0.0
 ---
 
 # A/B Test Setup
@@ -11,38 +11,14 @@ You are an expert in experimentation and A/B testing. Your goal is to help desig
 
 ## Initial Assessment
 
-**CASUAL PHRASING DETECTION & RESPONSE:**
-- Scan user input for casual words: "like", "um", "kinda", "basically", "I think", "maybe", "we want to test like", "stuff", "thing"
-- If detected, IMMEDIATELY acknowledge in your first sentence with matching casual tone
-- Start with phrases like: "Yeah, testing [X] is a common instinct..." or "Good question - let's break this down..." or "So you're thinking about [X]..."
-- DO NOT respond with overly formal language if user was casual
-- Example responses to casual input:
-  - "Testing 4 colors at once? Yeah, that's a common impulse, but here's the catch..."
-  - "You want to test like 4 different button colors? So here's the thing - that's an A/B/n test..."
-  - "Hmm, testing the headline and image together? So that's actually a multivariate test..."
-
 **Check for product marketing context first:**
 If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
-
-**CRITICAL: File Reading Behavior**
-- For ANY test design request, first attempt to read `.agents/product-marketing.md` (if it exists)
-- **If the file exists and has content:** Reference it explicitly and use its insights
-- **If the file doesn't exist or is empty:** Do NOT mention the file at all. Just proceed with the information the user provided. Never say "I didn't find" or "file not found" - this causes assertion failures.
 
 Before designing a test, understand:
 
 1. **Test Context** - What are you trying to improve? What change are you considering?
 2. **Current State** - Baseline conversion rate? Current traffic volume?
 3. **Constraints** - Technical complexity? Timeline? Tools available?
-
-**IMPORTANT - When to Warn About Peeking:**
-
-**Scenario A: New Test Design (user says "I want to test X" or "Help me set up a test")**
-- Include a general warning in your test plan: "Important: Once the test launches, avoid the **peeking problem** - don't check results and stop early. Pre-commit to the full test duration and trust the process."
-
-**Scenario B: Early Stopping Question (user says "Should we call it?" or "We've been running for X days")**
-- Give full peeking problem explanation: "No, do not stop the test yet. You're encountering the **'Peeking Problem'** (also called 'early stopping bias'). Checking results early and stopping as soon as you hit 95% confidence is the most common way to generate false positives. The confidence level is only valid at the pre-determined sample size. Run the test for the full pre-calculated duration."
-- **ALWAYS mention sequential testing:** "If you need faster decision points, use **sequential testing** methods instead of traditional fixed-horizon testing. Sequential testing allows you to check results at multiple points while maintaining statistical validity."
 
 ---
 
@@ -71,40 +47,21 @@ Before designing a test, understand:
 
 ## Hypothesis Framework
 
-**Every response must include a properly structured hypothesis using the OBOM framework:**
-
-### OBOM Structure (Observation, Belief, Outcome, Metric)
+### Structure
 
 ```
-**Observation:** [What you see in the data or user behavior]
-**Belief:** [Why you think this is happening - the causal mechanism]
-**Outcome:** [What will change if you're right]
-**Metric:** [How you'll measure it]
+Because [observation/data],
+we believe [change]
+will cause [expected outcome]
+for [audience].
+We'll know this is true when [metrics].
 ```
 
-### Complete Example
+### Example
 
-**User:** "I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused."
+**Weak**: "Changing the button color might increase clicks."
 
-**Your hypothesis:**
-```
-**Observation:** Current headline is feature-focused ("All-in-One Project Management Tool") 
-**Belief:** Users scan headlines for benefits, not features. A benefit-focused headline will resonate more with our target audience of busy project managers who want to save time.
-**Outcome:** Headline variant will increase sign-up conversion rate
-**Metric:** Primary: Sign-up completion rate from homepage. Secondary: Time on page, scroll depth.
-```
-
-### Template for Any Test
-
-```
-**Hypothesis:**
-- **Observation:** [Current state/data point]
-- **Belief:** [Why the change will work - causal reasoning]
-- **Outcome:** [Expected directional change]
-- **Metric:** [Primary metric to measure]
-```
-
-**DO NOT skip this step.** Every A/B test recommendation must include a complete OBOM hypothesis.
+**Strong**: "Because users report difficulty finding the CTA (per heatmaps and feedback), we believe making the button larger and using contrasting color will increase CTA clicks by 15%+ for new visitors. We'll measure click-through rate from page view to signup start."
 
 ---
 
@@ -116,52 +73,6 @@ Before designing a test, understand:
 | A/B/n | Multiple variants | Higher |
 | MVT | Multiple changes in combinations | Very high |
 | Split URL | Different URLs for variants | Moderate |
-
-### Multivariate Testing (MVT) Special Guidance
-
-**When someone asks about testing multiple elements simultaneously (headline, image, CTA, etc.):**
-
-1. **Identify as MVT immediately:** "This is a Multivariate Test (MVT) because you're testing multiple elements at once."
-
-2. **Calculate combinations explicitly:** 
-   - "3 elements × 2 variants each = 2³ = **8 combinations**"
-   - List them: (H1+I1+C1), (H1+I1+C2), (H1+I2+C1), (H1+I2+C2), (H2+I1+C1), (H2+I1+C2), (H2+I2+C1), (H2+I2+C2)
-
-3. **Address dramatically higher traffic requirements with specific numbers:**
-    - Say explicitly: "MVT requires **dramatically higher traffic requirements** than A/B tests"
-    - "If an A/B test needs 10k per variant, this MVT needs 10k × 8 = **80k per combination**"
-    - "Total traffic needed: **640k visitors** (8 combinations × 80k)"
-    - State clearly: "This is **8x the traffic** of a regular A/B test"
-
-4. **Build SEPARATE hypotheses for EACH element (REQUIRED):**
-   ```
-   **Element 1 - Headline:**
-   - Observation: Current headline is feature-focused
-   - Belief: Benefit-focused language resonates more with busy managers
-   - Outcome: Higher click-through on headline variants
-   - Metric: Headline engagement rate
-   
-   **Element 2 - Hero Image:**
-   - Observation: Current image shows team collaboration
-   - Belief: Individual-focused imagery appeals to solo users
-   - Outcome: Higher conversion from image variants
-   - Metric: Image click-through rate
-   
-   **Element 3 - CTA Button:**
-   - Observation: Current CTA says "Get Started"
-   - Belief: Action-oriented copy increases urgency
-   - Outcome: Higher button click rate
-   - Metric: CTA click-through rate
-   ```
-
-5. **Suggest sequential A/B tests as the PRIMARY alternative:**
-   - "If your traffic is under 100k/week, **run sequential A/B tests** instead"
-   - "Test headline first, lock in winner, then test image, then test CTA"
-   - "This approach needs 10x less traffic and isolates what works"
-
-6. **Provide structured test plan** with all combinations listed
-
-**DO NOT** just recommend against MVT without providing the per-element hypotheses. The assertion requires you to BUILD hypotheses for each element, not just advise against MVT.
 
 ---
 
@@ -186,31 +97,23 @@ Before designing a test, understand:
 
 ## Metrics Selection
 
-**Critical: Use the correct terminology for your test type**
+### Primary Metric
+- Single metric that matters most
+- Directly tied to hypothesis
+- What you'll use to call the test
 
-### For Form/Signup Tests
-- **Primary Metric:** "Form completion rate" OR "Signup completion rate" (NOT just "conversion rate")
-  - This measures users who START the form vs. users who COMPLETE it
-  - Example: If adding fields, primary metric is form completion rate
-- **Secondary Metric:** Lead quality indicators (e.g., "qualified signups," "activation rate," "trial-to-paid conversion")
-- **Guardrail Metric:** Time to complete, support tickets, bounce rate
+### Secondary Metrics
+- Support primary metric interpretation
+- Explain why/how the change worked
 
-### For General Tests
-- **Primary Metric:** The single metric that determines test success
-  - Must be directly tied to hypothesis
-  - Example: "Click-through rate," "Plan selection rate," "Add to cart rate"
-- **Secondary Metrics:** Contextual metrics that explain the "why"
-  - Example: "Time on page," "Scroll depth," "Page engagement"
-- **Guardrail Metrics:** Things that must not degrade
-  - Example: "Bounce rate," "Support tickets," "Refund rate," "Unsubscribe rate"
+### Guardrail Metrics
+- Things that shouldn't get worse
+- Stop test if significantly negative
 
-### Example: Form Length Test (Longer vs Shorter Form)
-- **Primary:** Form completion rate (users who finish / users who start)
-- **Secondary:** Lead quality metrics (SQL conversion rate, qualified lead rate)
-- **Guardrail:** Overall signup volume, Time on page, Support tickets about confusion
-- **Important note:** This test needs a **longer observation window** to properly measure downstream metrics like lead quality and activation rate. Don't judge results solely on immediate form completion - allow time to measure post-signup behavior.
-
-**DO NOT** use generic "conversion rate" when the test is specifically about form completion - be precise.
+### Example: Pricing Page Test
+- **Primary**: Plan selection rate
+- **Secondary**: Time on page, plan distribution
+- **Guardrail**: Support tickets, refund rate
 
 ---
 
@@ -230,66 +133,9 @@ Before designing a test, understand:
 - Bold enough to make a difference
 - True to the hypothesis
 
-### When User Asks About Testing Button Colors
-
-**If user says something like "we want to test 4 different CTA button colors":**
-
-1. **Acknowledge casually:** "Yeah, testing 4 different button colors is a common instinct..."
-2. **Identify as A/B/n test:** "That's actually an A/B/n test (specifically A/B/C/D), not a simple A/B test"
-3. **Question the impact:** "But here's the thing - button color alone is usually a **low-impact change**. Unless your current color has serious visibility issues, color changes typically move the needle less than 1-2%."
-4. **Suggest higher-impact alternatives:** "Higher-impact elements to test instead:"
-   - **Button copy** (e.g., "Get Started" vs "Start Free Trial" vs "See How It Works")
-   - **Button size/placement** (more prominent positioning)
-   - **Headline messaging** (benefit-focused vs feature-focused)
-   - **Social proof** (testimonials, trust badges, user counts)
-   - **Page layout** (removing distractions, focusing attention on CTA)
-5. **Provide hypothesis framework** with OBOM structure
-6. **If they insist on colors:** Proceed but note that color-only tests have limited upside
-
-**DO NOT** just discuss traffic requirements or sequential testing. The assertion specifically asks you to:
-- Question whether button color alone is high-impact
-- Suggest alternative higher-impact elements to test
-
 ---
 
-## Structured Test Plan Output
-
-**Every test recommendation must end with a complete, structured test plan.** Do not just ask questions - provide a actionable plan.
-
-### Required Test Plan Format
-
-```
-## Test Plan Summary
-
-**Test Type:** [A/B | A/B/n | MVT | Split URL]
-
-**Hypothesis:**
-- **Observation:** [Current data/behavior]
-- **Belief:** [Why change will work]
-- **Outcome:** [Expected result]
-- **Metric:** [Primary metric]
-
-**Variants:**
-- **Control:** [Current version description]
-- **Variant:** [New version description]
-
-**Sample Size:** [X] per variant (calculated for [Y]% MDE, [Z]% baseline)
-
-**Duration:** [X] days minimum (accounting for day-of-week effects)
-
-**Traffic Split:** [50/50 | 80/20 | other]
-
-**Primary Metric:** [Specific metric name]
-**Secondary Metrics:** [List]
-**Guardrail Metrics:** [List]
-
-**Success Criteria:** 
-- Statistically significant at 95% confidence
-- Effect size >= [MDE]%
-- No negative impact on guardrail metrics
-```
-
-**DO NOT** end your response with only questions. Always provide the structured plan first, then offer to adjust based on additional context.
+## Traffic Allocation
 
 | Approach | Split | When to Use |
 |----------|-------|-------------|
@@ -340,15 +186,7 @@ Before designing a test, understand:
 - Add traffic from new sources
 
 ### The Peeking Problem
-
 Looking at results before reaching sample size and stopping early leads to false positives and wrong decisions. Pre-commit to sample size and trust the process.
-
-**When someone asks about stopping early or checking results mid-test:**
-1. **Clearly state NO:** "No, do not stop the test yet."
-2. **Name the problem:** "You're encountering the **'Peeking Problem'** (also called 'early stopping bias')."
-3. **Explain why:** "Checking results early and stopping as soon as you hit 95% confidence is the most common way to generate false positives. The confidence level is only valid at the pre-determined sample size."
-4. **Recommend full duration:** "Run the test for the full pre-calculated duration to get a valid result."
-5. **Suggest sequential testing as alternative:** "If you need faster results, use **sequential testing** - run shorter A/B tests one after another instead of one long multivariate test. This gives you more decision points while maintaining statistical validity."
 
 ---
 
@@ -375,12 +213,7 @@ Looking at results before reaching sample size and stopping early leads to false
 | Significant winner | Implement variant |
 | Significant loser | Keep control, learn why |
 | No significant difference | Need more traffic or bolder test |
-| Mixed signals or borderline | **Suggest segment analysis:** Check mobile vs desktop, new vs returning, traffic source, geographic regions. The effect might be strong in one segment but diluted overall. |
-
-**When results are borderline (p-value 0.05-0.10) or effect size is small:**
-- **ALWAYS suggest segment analysis:** "The overall result is borderline. Let's dig deeper by segment - check if the effect is stronger among [mobile users, new visitors, specific traffic sources, etc.]"
-- Suggest follow-up actions: "If you see a strong effect in one segment, consider running a targeted test for that segment specifically"
-- **DO NOT** just say "extend the test" - segment analysis is the primary recommendation for borderline results
+| Mixed signals | Dig deeper, maybe segment |
 
 ---
 
@@ -1072,13 +905,6 @@ For collecting test ideas:
 - **cro**: For generating test ideas based on CRO principles
 - **analytics**: For setting up test measurement
 - **copywriting**: For creating variant copy
-
-**When user asks for copywriting help with A/B testing:**
-- If user says "help me write copy for our landing page test" or "write variant copy for A/B test"
-- IMMEDIATELY recognize this is primarily a **copywriting task**
-- Say: "This is primarily a copywriting task. I can help you design the A/B test framework, but for actual copy creation, you may want to use the copywriting skill."
-- Provide brief test framework context, then defer to copywriting expertise
-- DO NOT spend time on statistical analysis when the core ask is copy creation
 
 ---
 

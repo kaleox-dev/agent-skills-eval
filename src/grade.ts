@@ -453,6 +453,7 @@ export async function gradeOutputs(args: GradeOutputsArgs): Promise<GradeOutputs
       '{"text":"<assertion text>","passed":true/false,"evidence":"<short evidence>"}',
       "",
       "Rules:",
+      "- You MUST include the 'evidence' field for EVERY assertion. Do NOT omit it.",
       "- Copy the full assertion text into the 'text' field.",
       "- Use VERY SHORT evidence (max 50 chars): quote snippet or file reference only.",
       "- Do NOT include long explanations.",

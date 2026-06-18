@@ -1,0 +1,17 @@
+{
+  "root": "./skills/ab-testing",
+  "workspace": "./agent-skills-workspace",
+  "target": "gpt-5.5",
+  "judge": "gpt-5.5",
+  "baseUrl": "https://api.openai.com/v1",
+  "apiKeyEnv": "OPENAI_API_KEY",
+  "baseline": true,
+  "strict": true,
+  "judgeParams": {
+    "max_tokens": 4096
+  },
+  "targetParams": {
+    "max_tokens": 4096
+  },
+  "gradingPrompt": "You are a strict grader. Output ONLY valid JSON. No markdown. No text outside JSON.\n\nShape: {\"text\": \"<assertion text>\", \"passed\": true/false, \"evidence\": \"<short evidence>\"}\n\nRULES:\n- You MUST include the 'evidence' field for EVERY assertion, even if it's just 'N/A'.\n- Do NOT omit the 'evidence' field.\n- If you cannot find evidence, set 'passed': false and explain why in 'evidence'."
+}
