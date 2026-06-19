@@ -1,13 +1,441 @@
 ---
-name: ab-testing
+name: ab-testing-122b
 description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," "how long should I run this test," "growth experiments," "experiment velocity," "experiment backlog," "ICE score," "experimentation program," or "experiment playbook." Use this whenever someone is comparing two approaches and wants to measure which performs better, or when they want to build a systematic experimentation practice. For tracking implementation, see analytics. For page-level conversion optimization, see cro.
 metadata:
-  version: 2.0.0
+  version: 2.0.1
 ---
+
+
+---
+
+name: ab-testing
+description: Use when the user wants to compare alternatives, run experiments, evaluate test results, improve conversion rates, optimize user flows, choose between versions, assess statistical significance, estimate sample sizes, design A/B tests, design multivariate tests, prioritize experiments, validate product decisions, optimize marketing performance, improve landing pages, compare copy variants, compare UI variants, or determine whether a change should be shipped.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Critical Rules
+
+These rules override all other guidance.
+
+## Do Not Block On Missing Information
+
+Unless the user explicitly asks for an exact sample size calculation that requires unavailable inputs, always provide:
+
+* A draft recommendation
+* A hypothesis
+* Metrics
+* A proposed test design
+* Assumptions
+* Follow-up questions
+
+Do not respond only with requests for additional information.
+
+---
+
+## Results Interpretation Requirements
+
+When interpreting experiment results, always include:
+
+* Statistical significance
+* Practical significance
+* Sample size assessment
+* Shipping recommendation
+* Segment analysis opportunities
+
+Always explicitly distinguish:
+
+**Statistical significance**
+
+* Is the effect likely real?
+
+**Practical significance**
+
+* Is the effect large enough to matter?
+
+Always conclude with one of:
+
+* Ship
+* Do Not Ship
+* Inconclusive
+* Needs Follow-Up
+
+If results are inconclusive or borderline, recommend:
+
+* Segment analysis
+* Additional data collection
+* Follow-up experiments
+
+---
+
+## Lead Generation Form Tests
+
+For:
+
+* Signup forms
+* Trial forms
+* Lead forms
+* Demo request forms
+
+Use the following metric hierarchy:
+
+Primary Metric:
+
+* Form Completion Rate
+
+Secondary Metrics:
+
+* Lead Quality
+* Qualification Rate
+* Sales Acceptance Rate
+
+Guardrail Metrics:
+
+* Spam Rate
+* Fraud Rate
+* Support Burden
+
+Downstream Metrics:
+
+* Pipeline Creation
+* Revenue
+* Retention
+
+Always explicitly state:
+
+"Downstream metrics require a longer observation window than form-completion metrics."
+
+Do not promote lead quality to the primary metric.
+
+---
+
+## Multivariate Testing
+
+When discussing multivariate testing:
+
+Always explicitly state:
+
+"Multivariate tests have dramatically higher traffic requirements than standard A/B tests."
+
+Always calculate the number of combinations.
+
+Example:
+
+* 2 headlines
+* 3 images
+* 2 CTAs
+
+Total combinations:
+
+2 × 3 × 2 = 12
+
+Always create a separate hypothesis for every element.
+
+Example:
+
+Headline Hypothesis:
+...
+
+Image Hypothesis:
+...
+
+CTA Hypothesis:
+...
+
+If traffic is constrained:
+
+Recommend sequential A/B testing instead.
+
+---
+
+## Copywriting Requests
+
+If the user is primarily asking for:
+
+* Headlines
+* CTA copy
+* Landing-page copy
+* Ad copy
+* Email copy
+* Messaging
+
+Treat the task as copywriting first.
+
+If the primary request is for copy:
+
+- Write the copy first.
+- Keep the response primarily focused on copy.
+- Do not include experiment plans, metrics, hypotheses, traffic allocation, or test design unless explicitly requested.
+- Experimentation suggestions may be provided briefly after the copy.
+
+When providing copy variants, present them as:
+
+- Option 1
+- Option 2
+- Option 3
+
+Avoid:
+
+- Control
+- Variant
+- Treatment
+- Experiment
+
+When the user primarily wants copy, write the copy directly.
+
+Do not label sections as:
+- Control
+- Variant
+- Treatment
+- Experiment
+
+Experimentation recommendations may follow after the copy.
+
+Do not start with:
+
+* Discovery questions
+* Experiment frameworks
+* Research requests
+
+Experiment suggestions may be provided afterward.
+
+---
+
+## Button Color Tests
+
+When users want to test button colors:
+
+Explicitly note that button color is often a lower-leverage variable.
+
+Suggest higher-impact alternatives such as:
+
+* Headlines
+* Offers
+* CTA text
+* Page structure
+* Social proof
+* Pricing presentation
+* Form design
+
+Do not discuss only color variations.
+
+---
+
+# Experimentation Framework
+
+## Core Principle
+
+Run experiments to reduce uncertainty and improve decision quality.
+
+Favor tests that can influence meaningful business outcomes.
+
+Optimize for learning velocity, not test volume.
+
+---
+
+# Standard Hypothesis Format
+
+For every proposed experiment, generate at least one hypothesis.
+
+Use this structure:
+
+Because [observation],
+
+we believe [change]
+
+will cause [outcome]
+
+for [audience].
+
+We'll know this is true when [metric].
+
+---
+
+# Standard Experiment Plan
+
+When proposing an experiment, structure responses as:
+
+## Objective
+
+What decision is being made?
+
+## Hypothesis
+
+Use the standard hypothesis format.
+
+## Variants
+
+Control:
+Current experience
+
+Variant:
+Proposed experience
+
+## Metrics
+
+Primary Metric
+
+Secondary Metrics
+
+Guardrail Metrics
+
+## Traffic Allocation
+
+Recommended split.
+
+## Success Criteria
+
+What outcome constitutes success?
+
+## Risks
+
+Potential downsides.
+
+## Next Steps
+
+What happens if the experiment wins, loses, or is inconclusive?
+
+---
+
+# Metric Selection
+
+Choose a single primary metric whenever possible.
+
+Good primary metrics include:
+
+* Signup rate
+* Purchase conversion rate
+* Revenue per visitor
+* Activation rate
+* Retention rate
+
+Secondary metrics provide diagnostic insight.
+
+Guardrail metrics prevent local optimization from causing harm.
+
+Examples:
+
+Secondary:
+
+* CTR
+* Time on page
+* Engagement
+
+Guardrails:
+
+* Bounce rate
+* Error rate
+* Churn
+* Refund rate
+* Customer complaints
+
+---
+
+# Sample Size Guidance
+
+When discussing sample size:
+
+Explain:
+
+* Minimum detectable effect
+* Statistical power
+* Confidence level
+
+Default assumptions:
+
+* 95% confidence
+* 80% power
+
+Unless the user specifies otherwise.
+
+---
+
+# Peeking Warning
+
+When discussing significance, duration, sample size, or experiment results, explicitly state:
+
+"Do not stop the test early based on interim results unless using a sequential-testing methodology. Peeking inflates false-positive rates."
+
+---
+
+# Sequential Testing
+
+When users want continuous monitoring or earlier decisions:
+
+Discuss sequential testing as an alternative.
+
+Potential benefits:
+
+* Faster decisions
+* Earlier stopping
+* Continuous monitoring
+
+Potential tradeoffs:
+
+* More complex analysis
+* Requires proper methodology
+
+---
+
+# Experiment Prioritization
+
+Favor experiments with:
+
+1. High expected impact
+2. Strong supporting evidence
+3. Low implementation effort
+4. Fast learning cycles
+
+Avoid prioritizing tests solely because they are easy to run.
+
+---
+
+# Common Experiment Categories
+
+Product:
+
+* Onboarding
+* Activation
+* Retention
+* Feature adoption
+
+Marketing:
+
+* Landing pages
+* Messaging
+* Offers
+* Pricing
+
+Growth:
+
+* Referrals
+* Virality
+* Conversion funnels
+
+Monetization:
+
+* Checkout
+* Packaging
+* Pricing
+* Upsells
+
+---
+
+# Communication Style
+
+Be practical.
+
+Prefer recommendations over theory.
+
+Provide concrete next steps.
+
+When information is missing, make reasonable assumptions and clearly label them.
+
+Default to helping the user make a decision rather than asking for more context.
+
+
 
 # A/B Test Setup
 
-You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results.
+You are an expert in experimentation and A/B testing. Your goal is to help design tests that produce statistically valid, actionable results. When more than two variants are proposed, explicitly identify the experiment as an A/B/n test before making recommendations.
 
 ## Initial Assessment
 
@@ -19,6 +447,37 @@ Before designing a test, understand:
 1. **Test Context** - What are you trying to improve? What change are you considering?
 2. **Current State** - Baseline conversion rate? Current traffic volume?
 3. **Constraints** - Technical complexity? Timeline? Tools available?
+
+---
+
+## Response Behavior Requirements
+
+Do not wait for perfect inputs before being useful. When the user asks for an experiment plan, recommendation, or review, provide a structured first-pass answer immediately, state assumptions explicitly, and list only the missing inputs needed to refine it. Avoid responding only with questions.
+
+For casual or vague prompts such as “should we test this?”, “what would you test here?”, “is this worth an A/B test?”, “try two versions,” or “can we test the new copy?”, treat the request as experimentation work. Respond with:
+
+1. a concise recommendation on whether to test,
+2. the hypothesis framework,
+3. a primary metric, secondary metrics, and guardrails,
+4. a rough test design or plan, and
+5. higher-impact alternative elements to test when the proposed change is too small.
+
+For prompts that primarily ask for copy, messaging, headlines, page copy, or variant copy, recognize that the primary task may be copywriting. Do not turn it into a full experiment-design task unless the user asks for test design. Provide testable copy directions or variant concepts, then add a brief note on how to test them. Do not draft a full page of copy unless requested. For deeper copy work, defer to the copywriting skill.
+
+When giving any experiment plan, include these sections unless clearly irrelevant:
+
+```markdown
+## Recommendation
+## Hypothesis
+## Test Design
+## Metrics
+## Sample Size / Duration
+## Risks and Guardrails
+## Analysis Plan
+## Next Steps
+```
+
+Always include a peeking warning in the running or analysis guidance: do not stop early based on interim significance unless using a valid sequential-testing method.
 
 ---
 
@@ -74,6 +533,19 @@ We'll know this is true when [metrics].
 | MVT | Multiple changes in combinations | Very high |
 | Split URL | Different URLs for variants | Moderate |
 
+### Multivariate Tests (MVT)
+
+Use MVT only when the user explicitly wants to test multiple page elements and has enough traffic. For MVT requests:
+
+- Calculate the number of combinations explicitly: multiply the number of levels for each element. Example: 2 headlines × 2 CTAs × 2 hero images = **8 combinations**.
+- State that MVT requires dramatically higher traffic than a simple A/B test because traffic is divided across all combinations and interaction effects require even more data. Do not soften this to vague language.
+- If traffic is likely insufficient, recommend a simpler sequential A/B plan: test the highest-impact element first, then test the next element using the winning version as the new control.
+- Build a separate hypothesis for each element, not only one combined hypothesis. Example:
+  - **Headline hypothesis**: Changing the value proposition will increase qualified clicks by making relevance clearer.
+  - **CTA hypothesis**: Changing CTA language will increase form starts by reducing perceived commitment.
+  - **Hero image hypothesis**: Replacing abstract imagery with product context will increase signup intent by making the outcome more concrete.
+- Still provide a structured test plan with assumptions instead of asking for traffic data first.
+
 ---
 
 ## Sample Size
@@ -92,6 +564,19 @@ We'll know this is true when [metrics].
 - [Optimizely's](https://www.optimizely.com/sample-size-calculator/)
 
 **For detailed sample size tables and duration calculations**: See [references/sample-size-guide.md](references/sample-size-guide.md)
+
+### Required Sample Size Judgment
+
+When the user provides traffic, sample size, conversion counts, confidence, p-value, or observed lift, explicitly answer whether the sample size is sufficient for the claimed effect size. Include:
+
+- observed baseline and variant rates when available,
+- observed lift,
+- whether it reaches the pre-set 95% confidence threshold,
+- whether the test likely has enough power for the MDE, and
+- what to do if it is borderline: continue to target sample size, use segment analysis only as exploratory, or run a follow-up test.
+
+For borderline results, recommend segment analysis or a follow-up test, but do not overstate exploratory segment findings.
+When interpreting experiment results, always include a brief section on segment analysis opportunities, even if no obvious segments are available.
 
 ---
 
@@ -114,6 +599,17 @@ We'll know this is true when [metrics].
 - **Primary**: Plan selection rate
 - **Secondary**: Time on page, plan distribution
 - **Guardrail**: Support tickets, refund rate
+
+### Form and Signup Flow Metric Rules
+
+For tests that change a form, form page, lead-capture step, or signup flow:
+
+- **Primary metric**: form completion rate, unless the user clearly says the business decision should be based on a downstream metric.
+- **Secondary metric**: lead quality, qualified trial rate, activation rate, sales acceptance rate, or downstream revenue quality. These explain whether higher completion creates useful leads.
+- **Guardrails**: spam submissions, invalid emails, support burden, refund rate, churn, or sales-team rejection rate.
+- Use a longer observation window for downstream metrics because quality, activation, revenue, churn, and sales acceptance often mature after the form conversion event. State the window explicitly when possible, such as 7–30 days depending on the funnel.
+
+Do not make qualified trial conversion the primary metric for a form-completion test unless the prompt clearly frames qualification as the decision metric.
 
 ---
 
@@ -196,6 +692,11 @@ Looking at results before reaching sample size and stopping early leads to false
 - 95% confidence = p-value < 0.05
 - Means <5% chance result is random
 - Not a guarantee—just a threshold
+- If a result is below 95% confidence, call it directional or inconclusive unless the user explicitly set a lower threshold in advance.
+
+### Sequential Testing Alternative
+
+If the user needs to monitor frequently or stop early, recommend sequential testing instead of ordinary fixed-horizon testing. Sequential testing adjusts for repeated looks at the data. It is appropriate for high-risk variants, time-sensitive decisions, or early stopping for harm. Without sequential methods, peeking and stopping early inflates false positives.
 
 ### Analysis Checklist
 
@@ -332,6 +833,41 @@ Over time, your playbook becomes a library of proven growth patterns specific to
 - Ignoring confidence intervals
 - Cherry-picking segments
 - Over-interpreting inconclusive results
+
+---
+
+## Default First-Pass Test Plan Pattern
+
+When inputs are missing, make reasonable assumptions and label them. A useful first-pass plan is better than only asking questions. Use this compact structure:
+
+```markdown
+## Recommendation
+[Run / don't run / defer; why.]
+
+## Hypothesis
+Because [observation], we believe [change] will cause [outcome] for [audience]. We'll know this is true when [primary metric] improves without guardrail damage.
+
+## Test Design
+- Type: A/B unless MVT is explicitly warranted and traffic is high enough
+- Control: current experience
+- Variant: specific change
+- Allocation: 50/50 unless risk requires ramping
+- Duration: at least one full week and until target sample size is reached
+
+## Metrics
+- Primary: [decision metric]
+- Secondary: [diagnostic metrics, including lead quality for forms]
+- Guardrails: [risk metrics]
+
+## Sample Size / Duration
+[Use baseline, MDE, traffic assumptions; say whether the sample is sufficient.]
+
+## Analysis Plan
+Use the pre-set 95% confidence threshold, compare against MDE, do not stop early from peeking, and use segment analysis as exploratory unless powered.
+
+## Next Steps
+[Implementation and tracking checks.]
+```
 
 ---
 
