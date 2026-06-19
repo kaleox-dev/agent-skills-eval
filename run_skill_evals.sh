@@ -8,6 +8,7 @@ set -e
 
 MODEL_DISPLAY=""
 MODEL_URL=""
+JUDGE_URL=""
 SKILL_PATH="./skills/ab-testing"
 ITERATIONS=2
 OUTPUT_FOLDER="eval-results/model-skill-2iter"
@@ -21,6 +22,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --url)
       MODEL_URL="$2"
+      shift 2
+      ;;
+    --judge-url)
+      JUDGE_URL="$2"
       shift 2
       ;;
     --skill)
@@ -55,6 +60,14 @@ mkdir -p "$OUTPUT_FOLDER"
 if [ -n "$MODEL_URL" ]; then
   export OPENAI_BASE_URL="$MODEL_URL"
 fi
+
+# Set judge URL if provided, otherwise use model URL
+if [ -n "$JUDGE_URL" ]; then
+  export JUDGE_BASE_URL="$JUDGE_URL"
+else
+  export JUDGE_BASE_URL="$MODEL_URL"
+fi
+
 export OPENAI_TEMPERATURE="0"
 
 echo "========================================="
@@ -74,10 +87,19 @@ for i in $(seq 1 $ITERATIONS); do
     npx agent-skills-eval "$SKILL_PATH" \
       --config "$CONFIG_FILE" \
       2>&1 | tee "$txt_file"
+  elif [ -n "$JUDGE_URL" ]; then
+    npx agent-skills-eval "$SKILL_PATH" \
+      --target "$MODEL_DISPLAY" \
+      --base-url "$MODEL_URL" \
+      --judge-base-url "$JUDGE_URL" \
+      --baseline \
+      --strict \
+      2>&1 | tee "$txt_file"
   else
     npx agent-skills-eval "$SKILL_PATH" \
       --target "$MODEL_DISPLAY" \
       --judge "$MODEL_DISPLAY" \
+      --base-url "$MODEL_URL" \
       --baseline \
       --strict \
       2>&1 | tee "$txt_file"
