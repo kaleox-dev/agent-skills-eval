@@ -13,6 +13,7 @@ interface CliOptions {
   target?: string;
   judge?: string;
   baseUrl?: string;
+  judgeBaseUrl?: string;
   apiKeyEnv?: string;
   include?: string[];
   exclude?: string[];
@@ -56,8 +57,9 @@ async function main(): Promise<void> {
     .option("--workspace <path>", "Workspace directory for artifacts")
     .option("--baseline", "Run both with_skill and without_skill modes")
     .option("--target <model>", "Target model name")
-    .option("--judge <model>", "Judge model name; defaults to --target")
-    .option("--base-url <url>", "OpenAI-compatible API base URL")
+    .option("--judge <model>", "Judge model name; defaults to 122B")
+    .option("--base-url <url>", "OpenAI-compatible API base URL for target model")
+    .option("--judge-base-url <url>", "OpenAI-compatible API base URL for judge model; defaults to --base-url")
     .option("--api-key-env <name>", "Environment variable containing the API key")
     .option("--include <glob>", "Include skill relPath glob", list, [])
     .option("--exclude <glob>", "Exclude skill relPath glob", list, [])
@@ -79,9 +81,13 @@ async function main(): Promise<void> {
   const root = program.args[0] !== undefined && program.args[0] !== "." ? program.args[0] : config.root ?? ".";
   const workspace = opts.workspace ?? config.workspace ?? "./agent-skills-workspace";
   const targetModel = opts.target ?? config.target ?? "gpt-4o-mini";
-  const judgeModel = opts.judge ?? config.judge ?? targetModel;
+  // Always use 122B as the judge for consistent, high-quality grading
+  const JUDGE_MODEL = "Qwen/Qwen3.5-122B-A10B-FP8";
+  const judgeModel = opts.judge ?? config.judge ?? JUDGE_MODEL;
   const apiKeyEnv = opts.apiKeyEnv ?? config.apiKeyEnv ?? "OPENAI_API_KEY";
   const baseUrl = opts.baseUrl ?? config.baseUrl ?? process.env.OPENAI_BASE_URL;
+  // Judge can have its own base URL, defaults to target's URL if not specified
+  const judgeBaseUrl = opts.judgeBaseUrl ?? config.judgeBaseUrl ?? baseUrl;
   const apiKey = process.env[apiKeyEnv];
   const include = opts.include && opts.include.length > 0 ? opts.include : config.include;
   const exclude = opts.exclude && opts.exclude.length > 0 ? opts.exclude : config.exclude;
@@ -120,9 +126,13 @@ async function main(): Promise<void> {
     apiKey,
     model: targetModel,
   });
+  const judgeBaseUrlEffective = judgeBaseUrl ?? baseUrl;
+  if (!judgeBaseUrlEffective) {
+    throw new Error("judge base URL is required");
+  }
   const judge = new OpenAICompatibleProvider({
     providerName: "openai-compatible",
-    baseUrl,
+    baseUrl: judgeBaseUrlEffective,
     apiKey,
     model: judgeModel,
   });

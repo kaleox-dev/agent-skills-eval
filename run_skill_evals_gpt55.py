@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 """
-Run skill evaluations and generate summary files.
-Always uses 122B model as the judge for consistent, high-quality grading.
+Run skill evaluations for gpt-5.5 using eval-config-gpt5.5.json.
+Always uses 122B model as the judge for consistent grading.
 
 Usage:
-    python3 run_skill_evals.py --model "Qwen/Qwen3.6-35B-A3B-fp8" \
-        --model-url "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-fp8-no-thinking/v1" \
-        --skill "./skills/ab-testing" \
-        --iterations 1 \
-        --output-folder "eval-results/35b-ab-testing-1iter"
+    python3 run_skill_evals_gpt55.py --iterations 1 --output-folder "gpt55-eval-results"
 """
 
 import sys
@@ -16,28 +12,36 @@ import os
 import subprocess
 import re
 import csv
+import json
 from pathlib import Path
 from collections import defaultdict
 
-# Fixed 122B judge configuration
-JUDGE_MODEL = "Qwen/Qwen3.5-122B-A10B-FP8"
-JUDGE_URL = "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1"
+
+def load_config():
+    """Load eval-config-gpt5.5.json."""
+    config_path = Path(__file__).parent / 'eval-config-gpt5.5.json'
+    if not config_path.exists():
+        print(f"Error: {config_path} not found")
+        sys.exit(1)
+    
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+    
+    return config
 
 
-def run_eval(target_model, target_url, skill_path, iteration, output_file):
-    """Run a single evaluation iteration with 122B as the judge."""
+def run_eval(model_display, skill_path, iteration, output_file):
+    """Run a single evaluation iteration with 122B as judge."""
     env = os.environ.copy()
+    env['OPENAI_BASE_URL'] = 'https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1'
     env['OPENAI_TEMPERATURE'] = '0'
     if 'OPENAI_API_KEY' not in env:
         print("Warning: OPENAI_API_KEY not set")
     
-    # Target uses its own URL, judge uses 122B URL
     cmd = [
         'npx', 'agent-skills-eval', skill_path,
-        '--target', target_model,
-        '--judge', JUDGE_MODEL,
-        '--base-url', target_url,  # Target model URL
-        '--judge-base-url', JUDGE_URL,  # Judge model URL (122B)
+        '--target', model_display,
+        '--judge', 'Qwen/Qwen3.5-122B-A10B-NVFP4',
         '--baseline',
         '--strict'
     ]
@@ -60,7 +64,7 @@ def strip_ansi(text):
     return ansi_pattern.sub('', text)
 
 
-def parse_eval_output(content, iteration=1):
+def parse_eval_output(content, iteration=1, skill_name='ab-testing'):
     """Parse the evaluation output and return a list of rows."""
     all_rows = []
     lines = content.split('\n')
@@ -136,7 +140,7 @@ def parse_eval_output(content, iteration=1):
             for assert_num in sorted(assertions.keys()):
                 data = assertions[assert_num]
                 all_rows.append({
-                    'skill': 'ab-testing',
+                    'skill': skill_name,
                     'eval': current_eval,
                     'mode': current_mode,
                     'overall_result': overall_result,
@@ -320,24 +324,12 @@ def write_pass_rate_summary(run_data, output_path):
 def main():
     args = sys.argv[1:]
     
-    model_display = None
-    model_url = None
-    skill_path = None
     iterations = 1
     output_folder = None
     
     i = 0
     while i < len(args):
-        if args[i] == '--model' and i + 1 < len(args):
-            model_display = args[i + 1]
-            i += 2
-        elif args[i] == '--model-url' and i + 1 < len(args):
-            model_url = args[i + 1]
-            i += 2
-        elif args[i] == '--skill' and i + 1 < len(args):
-            skill_path = args[i + 1]
-            i += 2
-        elif args[i] == '--iterations' and i + 1 < len(args):
+        if args[i] == '--iterations' and i + 1 < len(args):
             iterations = int(args[i + 1])
             i += 2
         elif args[i] == '--output-folder' and i + 1 < len(args):
@@ -346,17 +338,20 @@ def main():
         else:
             i += 1
     
-    if not all([model_display, model_url, skill_path, output_folder]):
-        print("Usage: python3 run_skill_evals.py --model <model_display> --model-url <url> --skill <skill_path> --iterations <n> --output-folder <folder>")
-        print("Note: Judge is always 122B model (Qwen/Qwen3.5-122B-A10B-NVFP4)")
+    if not output_folder:
+        print("Usage: python3 run_skill_evals_gpt55.py --iterations <n> --output-folder <folder>")
         sys.exit(1)
+    
+    # Load config
+    config = load_config()
+    model_display = config.get('target', 'gpt-5.5')
+    skill_path = config.get('root', './skills/ab-testing')
     
     # Create output folder
     Path(output_folder).mkdir(parents=True, exist_ok=True)
     
     print(f"=========================================")
     print(f"Running {skill_path} evals on {model_display}")
-    print(f"Judge: {JUDGE_MODEL} (fixed)")
     print(f"Output folder: {output_folder}")
     print(f"=========================================\n")
     
@@ -367,14 +362,14 @@ def main():
         run_name = f"{Path(output_folder).name}-iteration{iteration}"
         txt_file = os.path.join(output_folder, f"{run_name}.txt")
         
-        run_eval(model_display, model_url, skill_path, iteration, txt_file)
+        run_eval(model_display, skill_path, iteration, txt_file)
         txt_files.append(txt_file)
         
         # Parse and generate TSV
         with open(txt_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        rows = parse_eval_output(content, iteration)
+        rows = parse_eval_output(content, iteration, skill_path.split('/')[-1])
         rows = [r for r in rows if r['mode'] == 'with_skill']
         
         tsv_file = os.path.join(output_folder, f"{run_name}_evals.tsv")

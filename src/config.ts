@@ -12,6 +12,7 @@ export interface AgentSkillsEvalConfig {
   target?: string;
   judge?: string;
   baseUrl?: string;
+  judgeBaseUrl?: string;
   apiKeyEnv?: string;
   include?: string[];
   exclude?: string[];
@@ -121,6 +122,7 @@ export function normalizeConfig(raw: unknown): AgentSkillsEvalConfig {
     target: asString(record.target, "target"),
     judge: asString(record.judge, "judge"),
     baseUrl: asString(record.baseUrl, "baseUrl"),
+    judgeBaseUrl: asString(record.judgeBaseUrl, "judgeBaseUrl"),
     apiKeyEnv: asString(record.apiKeyEnv, "apiKeyEnv"),
     include: asStringArray(record.include, "include"),
     exclude: asStringArray(record.exclude, "exclude"),
