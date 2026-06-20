@@ -14,6 +14,7 @@ export interface AgentSkillsEvalConfig {
   baseUrl?: string;
   judgeBaseUrl?: string;
   apiKeyEnv?: string;
+  judgeApiKey?: string;
   include?: string[];
   exclude?: string[];
   concurrency?: number;
@@ -124,6 +125,7 @@ export function normalizeConfig(raw: unknown): AgentSkillsEvalConfig {
     baseUrl: asString(record.baseUrl, "baseUrl"),
     judgeBaseUrl: asString(record.judgeBaseUrl, "judgeBaseUrl"),
     apiKeyEnv: asString(record.apiKeyEnv, "apiKeyEnv"),
+    judgeApiKey: asString(record.judgeApiKey, "judgeApiKey"),
     include: asStringArray(record.include, "include"),
     exclude: asStringArray(record.exclude, "exclude"),
     concurrency: asNumber(record.concurrency, "concurrency"),

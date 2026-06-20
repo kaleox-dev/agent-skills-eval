@@ -15,6 +15,7 @@ interface CliOptions {
   baseUrl?: string;
   judgeBaseUrl?: string;
   apiKeyEnv?: string;
+  judgeApiKey?: string;
   include?: string[];
   exclude?: string[];
   concurrency?: string;
@@ -60,7 +61,8 @@ async function main(): Promise<void> {
     .option("--judge <model>", "Judge model name; defaults to 122B")
     .option("--base-url <url>", "OpenAI-compatible API base URL for target model")
     .option("--judge-base-url <url>", "OpenAI-compatible API base URL for judge model; defaults to --base-url")
-    .option("--api-key-env <name>", "Environment variable containing the API key")
+    .option("--api-key-env <name>", "Environment variable containing the API key for target model")
+    .option("--judge-api-key <key>", "API key for judge model; overrides --api-key-env for judge")
     .option("--include <glob>", "Include skill relPath glob", list, [])
     .option("--exclude <glob>", "Exclude skill relPath glob", list, [])
     .option("--concurrency <number>", "Eval cases to run in parallel")
@@ -89,6 +91,8 @@ async function main(): Promise<void> {
   // Judge can have its own base URL, defaults to target's URL if not specified
   const judgeBaseUrl = opts.judgeBaseUrl ?? config.judgeBaseUrl ?? baseUrl;
   const apiKey = process.env[apiKeyEnv];
+  // Judge API key: use --judge-api-key if provided, otherwise use config.judgeApiKey, then JUDGE_API_KEY env, then fall back to target's key
+  const judgeApiKey = opts.judgeApiKey ?? config.judgeApiKey ?? process.env.JUDGE_API_KEY ?? apiKey;
   const include = opts.include && opts.include.length > 0 ? opts.include : config.include;
   const exclude = opts.exclude && opts.exclude.length > 0 ? opts.exclude : config.exclude;
   const concurrency = opts.concurrency !== undefined
@@ -133,7 +137,7 @@ async function main(): Promise<void> {
   const judge = new OpenAICompatibleProvider({
     providerName: "openai-compatible",
     baseUrl: judgeBaseUrlEffective,
-    apiKey,
+    apiKey: judgeApiKey ?? apiKey,
     model: judgeModel,
   });
 

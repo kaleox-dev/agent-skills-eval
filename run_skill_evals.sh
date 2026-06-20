@@ -9,6 +9,7 @@ set -e
 MODEL_DISPLAY=""
 MODEL_URL=""
 JUDGE_URL=""
+JUDGE_API_KEY=""
 SKILL_PATH="./skills/ab-testing"
 ITERATIONS=2
 OUTPUT_FOLDER="eval-results/model-skill-2iter"
@@ -26,6 +27,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --judge-url)
       JUDGE_URL="$2"
+      shift 2
+      ;;
+    --judge-api-key)
+      JUDGE_API_KEY="$2"
       shift 2
       ;;
     --skill)
@@ -88,13 +93,24 @@ for i in $(seq 1 $ITERATIONS); do
       --config "$CONFIG_FILE" \
       2>&1 | tee "$txt_file"
   elif [ -n "$JUDGE_URL" ]; then
-    npx agent-skills-eval "$SKILL_PATH" \
-      --target "$MODEL_DISPLAY" \
-      --base-url "$MODEL_URL" \
-      --judge-base-url "$JUDGE_URL" \
-      --baseline \
-      --strict \
-      2>&1 | tee "$txt_file"
+    if [ -n "$JUDGE_API_KEY" ]; then
+      npx agent-skills-eval "$SKILL_PATH" \
+        --target "$MODEL_DISPLAY" \
+        --base-url "$MODEL_URL" \
+        --judge-base-url "$JUDGE_URL" \
+        --judge-api-key "$JUDGE_API_KEY" \
+        --baseline \
+        --strict \
+        2>&1 | tee "$txt_file"
+    else
+      npx agent-skills-eval "$SKILL_PATH" \
+        --target "$MODEL_DISPLAY" \
+        --base-url "$MODEL_URL" \
+        --judge-base-url "$JUDGE_URL" \
+        --baseline \
+        --strict \
+        2>&1 | tee "$txt_file"
+    fi
   else
     npx agent-skills-eval "$SKILL_PATH" \
       --target "$MODEL_DISPLAY" \
