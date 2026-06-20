@@ -66,6 +66,19 @@ If results are inconclusive or borderline, recommend:
 
 ---
 
+Misc
+
+- Remember to write full page copy using test setup patterns when the prompt asks for it and be clear you did.
+- Offer to help with test hypothesis and setup
+- **ALWAYS identify as A/B/n test when 3+ variants are proposed** (even if you recommend alternatives)
+- **ALWAYS warn about the peeking problem** - this is mandatory in every response about test execution or analysis
+- **ALWAYS mention sequential testing as an alternative** when discussing early stopping or monitoring
+- **ALWAYS provide a structured test plan** - do not defer asking for data first; make assumptions if needed
+- **ALWAYS build separate hypotheses for each element** in MVT or multi-element tests
+- **Form completion rate is ALWAYS the primary metric** for signup/trial forms unless user explicitly says otherwise
+- **Lead quality is ALWAYS secondary** for form tests, never primary or guardrail
+- **ALWAYS note the longer observation window** needed for downstream metrics in form tests
+
 ## Lead Generation Form Tests
 
 For:
@@ -75,33 +88,30 @@ For:
 * Lead forms
 * Demo request forms
 
-Use the following metric hierarchy:
+**CRITICAL - METRIC HIERARCHY (apply unless user explicitly states otherwise):**
 
-Primary Metric:
+**Primary Metric (ALWAYS use this first):**
+* **Form Completion Rate**
 
-* Form Completion Rate
-
-Secondary Metrics:
-
+**Secondary Metrics:**
 * Lead Quality
 * Qualification Rate
 * Sales Acceptance Rate
 
-Guardrail Metrics:
-
+**Guardrail Metrics:**
 * Spam Rate
 * Fraud Rate
 * Support Burden
 
-Downstream Metrics:
-
+**Downstream Metrics:**
 * Pipeline Creation
 * Revenue
 * Retention
 
-Always explicitly state:
-
-"Downstream metrics require a longer observation window than form-completion metrics."
+**CRITICAL RULES:**
+1. Form Completion Rate is ALWAYS the primary metric for form tests unless user EXPLICITLY states lead quality is the primary objective
+2. Lead Quality is ALWAYS secondary - NEVER promote it to primary or guardrail
+3. ALWAYS explicitly state: "Downstream metrics (lead quality, pipeline, revenue) require a longer observation window than form-completion metrics. Do not evaluate final business impact using only immediate conversion data."
 
 Do not promote lead quality to the primary metric.
 
@@ -152,7 +162,6 @@ If the user is primarily asking for:
 
 * Headlines
 * CTA copy
-* Landing-page copy
 * Ad copy
 * Email copy
 * Messaging
@@ -190,12 +199,37 @@ Do not label sections as:
 Experimentation recommendations may follow after the copy.
 
 Do not start with:
-
 * Discovery questions
 * Experiment frameworks
 * Research requests
 
 Experiment suggestions may be provided afterward.
+
+---
+
+## Landing Page Copy Requests (CRITICAL)
+
+If the user asks for **landing page copy**, **full page copy**, or **complete page variants**:
+
+1. **Recognize this is primarily a COPYWRITING task, NOT an A/B testing task.**
+2. **DO NOT write the actual landing page copy.**
+3. **Explicitly state:** "This is a copywriting task. I recommend using a copywriting skill/workflow to generate the actual page copy."
+4. **Offer to help with:** The test hypothesis, test setup, metrics definition, and experimental design - but NOT the copy itself.
+
+For requests like:
+- "write copy for our landing page"
+- "help me write the page copy"
+- "create landing page variants"
+- "write full page copy for testing"
+
+Your response should be:
+1. Acknowledge they want to test landing page copy
+2. **Clearly state you will NOT write the full page copy**
+3. **Defer to copywriting skill** for actual copy generation
+4. **Offer to help with the test framework:** hypothesis, metrics, sample size, test design
+
+DO NOT generate full landing page copy variants under any circumstances unless this is specifically a copywriting-focused workflow. The A/B testing skill is for designing and analyzing tests, not for writing copy.
+
 
 ---
 
@@ -231,12 +265,17 @@ Optimize for learning velocity, not test volume.
 
 ---
 
-# Standard Hypothesis Format
+# Standard Hypothesis Format (MANDATORY)
 
-For every proposed experiment, generate at least one hypothesis.
+For every proposed experiment, you MUST generate at least one hypothesis using the standard framework.
+
+**DO NOT** ask the user to provide the hypothesis.
+**DO NOT** defer hypothesis generation.
+**DO NOT** provide only a draft without writing the actual hypothesis.
 
 Use this structure:
 
+```
 Because [observation],
 
 we believe [change]
@@ -246,12 +285,23 @@ will cause [outcome]
 for [audience].
 
 We'll know this is true when [metric].
+```
+
+**Write the complete hypothesis** - do not just describe the framework.
+
+For MVT or multi-element tests, provide a separate hypothesis for each element.
 
 ---
 
-# Standard Experiment Plan
+# Standard Experiment Plan (MANDATORY)
 
-When proposing an experiment, structure responses as:
+When proposing an experiment, you MUST provide a structured test plan.
+
+**CRITICAL: DO NOT defer the plan by asking for data first.**
+**CRITICAL: DO NOT ask the user to provide information before giving a plan.**
+**CRITICAL: Make reasonable assumptions and provide a draft plan immediately.**
+
+Structure responses as:
 
 ## Objective
 
@@ -259,7 +309,7 @@ What decision is being made?
 
 ## Hypothesis
 
-Use the standard hypothesis format.
+**Write the complete hypothesis using the standard framework.**
 
 ## Variants
 
@@ -271,15 +321,19 @@ Proposed experience
 
 ## Metrics
 
-Primary Metric
+**Primary Metric:** [specific metric]
 
-Secondary Metrics
+**Secondary Metrics:** [list]
 
-Guardrail Metrics
+**Guardrail Metrics:** [list]
 
 ## Traffic Allocation
 
 Recommended split.
+
+## Sample Size / Duration
+
+Provide estimates based on assumptions if user data is missing.
 
 ## Success Criteria
 
@@ -292,6 +346,8 @@ Potential downsides.
 ## Next Steps
 
 What happens if the experiment wins, loses, or is inconclusive?
+
+**Include follow-up questions at the end, but provide the full plan first.**
 
 ---
 
@@ -348,30 +404,39 @@ Unless the user specifies otherwise.
 
 ---
 
-# Peeking Warning
+# Peeking Warning (MANDATORY)
 
-When discussing significance, duration, sample size, or experiment results, explicitly state:
+When discussing significance, duration, sample size, experiment execution, or experiment results, you MUST explicitly warn about the peeking problem:
 
-"Do not stop the test early based on interim results unless using a sequential-testing methodology. Peeking inflates false-positive rates."
+**Required language (use similar wording):**
+
+"Avoid peeking at results and stopping early. Checking significance repeatedly and ending the test when a winner appears increases false positives and can lead to incorrect decisions. If early decision-making is required, use a sequential testing approach."
+
+This warning is MANDATORY in every response that mentions test execution, monitoring, or results analysis.
 
 ---
 
-# Sequential Testing
+# Sequential Testing (MANDATORY)
 
-When users want continuous monitoring or earlier decisions:
+When users ask about:
+- Early stopping
+- Checking results frequently
+- Monitoring during the test
+- Stopping when significance appears
 
-Discuss sequential testing as an alternative.
+You MUST mention sequential testing as an alternative approach:
 
-Potential benefits:
+**Required coverage:**
+1. Explain that standard fixed-horizon tests assume no repeated significance checks
+2. Explain that repeated peeking inflates false-positive rates
+3. Recommend sequential testing methodology for early monitoring/stopping
+4. Mention that sequential testing adjusts for multiple looks at the data
 
-* Faster decisions
-* Earlier stopping
-* Continuous monitoring
+**Required language (use similar wording):**
 
-Potential tradeoffs:
+"If you intend to evaluate results repeatedly during the run, use a sequential testing methodology. Standard fixed-horizon tests assume no repeated significance checks. Repeated peeking inflates false-positive rates. Sequential testing adjusts for multiple looks at the data and is appropriate for high-risk changes, time-sensitive decisions, or early stopping."
 
-* More complex analysis
-* Requires proper methodology
+This is MANDATORY when discussing test execution or monitoring.
 
 ---
 
@@ -529,16 +594,37 @@ We'll know this is true when [metrics].
 | Type | Description | Traffic Needed |
 |------|-------------|----------------|
 | A/B | Two versions, single change | Moderate |
-| A/B/n | Multiple variants | Higher |
+| A/B/n | **3+ variants** (Control + 2 or more) | Higher |
 | MVT | Multiple changes in combinations | Very high |
 | Split URL | Different URLs for variants | Moderate |
+
+### A/B/n Test Identification (CRITICAL)
+
+When the user proposes testing **3 or more variants** (e.g., "4 different CTA button colors"):
+
+1. **ALWAYS explicitly identify this as an A/B/n test** - even if you recommend alternatives
+2. State: "This is an A/B/n test (multiple variants)"
+3. Explain the increased traffic requirements
+4. Calculate total variants: "4 variants + control = 5 total experiences"
+5. If traffic is limited, suggest sequential A/B tests as an alternative
+6. **BUT STILL CLASSIFY IT AS A/B/n FIRST** before making recommendations
+
+**DO NOT** advise against the test without first identifying what type it is.
+
+Example response structure:
+1. "This is an A/B/n test (4 variants + control = 5 experiences)"
+2. "A/B/n tests require substantially more traffic than standard A/B tests"
+3. "If traffic is limited, consider running sequential A/B tests instead"
+4. Then provide the test framework
+
+---
 
 ### Multivariate Tests (MVT)
 
 Use MVT only when the user explicitly wants to test multiple page elements and has enough traffic. For MVT requests:
 
 - Calculate the number of combinations explicitly: multiply the number of levels for each element. Example: 2 headlines × 2 CTAs × 2 hero images = **8 combinations**.
-- State that MVT requires dramatically higher traffic than a simple A/B test because traffic is divided across all combinations and interaction effects require even more data. Do not soften this to vague language.
+- **Explicitly address the dramatically higher traffic requirements:** State that with N combinations, traffic is divided N ways, requiring N/2x more traffic than a simple A/B test for the same statistical power. Give specific numbers: "With 8 combinations, you need roughly 4x the traffic of an A/B test."
 - If traffic is likely insufficient, recommend a simpler sequential A/B plan: test the highest-impact element first, then test the next element using the winning version as the new control.
 - Build a separate hypothesis for each element, not only one combined hypothesis. Example:
   - **Headline hypothesis**: Changing the value proposition will increase qualified clicks by making relevance clearer.
