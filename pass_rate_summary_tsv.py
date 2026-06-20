@@ -60,7 +60,7 @@ def calculate_pass_rates(folder_path):
 
 
 def write_summary(run_data, output_path):
-    """Write pass rate summary to TSV."""
+    """Write pass rate summary to TSV (with_skill only)."""
     rows = []
     
     # Sort runs naturally
@@ -76,17 +76,12 @@ def write_summary(run_data, output_path):
         if data['with_skill']['total'] > 0:
             with_skill_pct = (data['with_skill']['pass'] / data['with_skill']['total']) * 100
         
-        without_skill_pct = 0.0
-        if data['without_skill']['total'] > 0:
-            without_skill_pct = (data['without_skill']['pass'] / data['without_skill']['total']) * 100
-        
         rows.append({
             'Run': run_name,
-            'with_skill_Percent': round(with_skill_pct, 1),
-            'without_skill_Percent': round(without_skill_pct, 1)
+            'with_skill_Percent': round(with_skill_pct, 1)
         })
     
-    headers = ['Run', 'with_skill_Percent', 'without_skill_Percent']
+    headers = ['Run', 'with_skill_Percent']
     
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=headers, delimiter='\t')

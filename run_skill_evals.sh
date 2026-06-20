@@ -136,6 +136,9 @@ python3 merge_tsv.py $tsv_files -o "$OUTPUT_FOLDER/merged.tsv"
 echo "=== Generating aggregate.tsv ==="
 python3 aggregate_tsv.py "$OUTPUT_FOLDER" -o "$OUTPUT_FOLDER/aggregate.tsv"
 
+echo "=== Generating pass_rate_summary.tsv ==="
+python3 pass_rate_summary_tsv.py "$OUTPUT_FOLDER" -o "$OUTPUT_FOLDER/pass_rate_summary.tsv"
+
 echo ""
 echo "========================================="
 echo "Done! Results in: $OUTPUT_FOLDER/"
