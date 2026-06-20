@@ -37,22 +37,22 @@ If the user's primary request is:
 
 then treat the request as a copywriting task first.
 
-Required behavior:
+**Required behavior:**
 
 * Recognize that this is primarily a copywriting request.
-* **Determine if they want experiment variants or just copy:**
-  * If they want **experiment/test variants**: Generate the specific copy variants requested (headlines, CTAs, etc.)
-  * If they want **full page copy**: Only generate full page variants if explicitly requested
-  * If they want **specific elements only**: Generate only those elements
-
+* **For full page copy requests (landing pages, complete pages):** DO NOT generate the copy. Defer to copywriting skill.
+* **For specific elements (headlines, CTAs, button copy):** You MAY provide specific copy examples, but keep it minimal.
 * Do NOT generate a full experiment plan for simple copy requests.
-* Do NOT expand specific element requests into full-page variants.
 
-Instead for simple copy requests:
+**For landing page / full page copy requests:**
+* State: "This is a copywriting task - I recommend using a copywriting workflow for the actual copy."
+* Offer to help with test hypothesis, metrics, and experimental design instead.
+* DO NOT write the landing page copy.
 
-* Generate the specific copy elements requested
-* Optionally provide a short testing recommendation or hypothesis
-* Keep the response focused on the copy task
+**For specific element requests:**
+* Provide brief copy examples if helpful
+* Keep response focused on the copy element
+* Optionally provide testing guidance
 
 ---
 
@@ -507,10 +507,11 @@ Example:
 = 12 total combinations
 ```
 
-3. Explain that traffic requirements increase dramatically.
-4. **Provide specific traffic/sample size requirements** based on the combinations.
-5. Provide a separate hypothesis for each tested element.
-6. Recommend sequential A/B testing if traffic is insufficient.
+3. Explain that traffic requirements increase dramatically compared to A/B tests.
+4. **DO NOT assume or invent traffic numbers.** Use only traffic information provided by the user.
+5. **Explicitly state the dramatically higher traffic requirements:** Explain that with 12 combinations, traffic is divided 12 ways, requiring 6x more traffic than a simple A/B test for the same statistical power.
+6. Provide a separate hypothesis for each tested element.
+7. Recommend sequential A/B testing if user-provided traffic is insufficient.
 
 ---
 
@@ -663,20 +664,26 @@ If confidence level is available, explicitly reference the 95% confidence thresh
 
 ## Copywriting Requests
 
-If the user is primarily asking for copy variants:
+**CRITICAL: When the user asks for landing page copy, full page copy, or complete page variants:**
 
-1. Treat the request as a copywriting task first.
-2. **If the user explicitly asks for experiment variants or test copies**, generate the variant copy.
-3. Then provide testing guidance.
+1. **Recognize this is a copywriting task, NOT an A/B testing setup task.**
+2. **DO NOT write the actual landing page copy.**
+3. **Explicitly state:** "This is a copywriting task. I recommend using a copywriting skill/workflow to generate the actual page copy."
+4. **Offer to help with:** The test hypothesis, test setup, metrics definition, and experimental design - but NOT the copy itself.
 
-DO NOT GENERATE FULL PAGE COPY UNLESS THE USER EXPLICITLY REQUESTS A COMPLETE LANDING PAGE OR FULL-PAGE VARIANTS.
+For requests like:
+- "write copy for our landing page"
+- "help me write the page copy"
+- "create landing page variants"
+- "write full page copy for testing"
 
-For typical copy requests (headlines, CTAs, emails, ads):
-- Generate only the specific copy elements requested
-- Do not expand into full-page variants
-- Provide testing guidance for those specific elements
+Your response should be:
+1. Acknowledge they want to test landing page copy
+2. **Clearly state you will NOT write the full page copy**
+3. **Defer to copywriting skill** for actual copy generation
+4. **Offer to help with the test framework:** hypothesis, metrics, sample size, test design
 
-Do not force full experiment-planning workflows when the user only wants specific copy elements.
+DO NOT generate full landing page copy variants under any circumstances unless this is specifically a copywriting-focused workflow. The A/B testing skill is for designing and analyzing tests, not for writing copy.
 
 
 ## Initial Assessment
