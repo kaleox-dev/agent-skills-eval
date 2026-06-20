@@ -91,7 +91,6 @@ for i in $(seq 1 $ITERATIONS); do
   if [ -n "$CONFIG_FILE" ]; then
     npx agent-skills-eval "$SKILL_PATH" \
       --config "$CONFIG_FILE" \
-      --no-baseline \
       2>&1 | tee "$txt_file"
   elif [ -n "$JUDGE_URL" ]; then
     if [ -n "$JUDGE_API_KEY" ]; then
@@ -100,7 +99,6 @@ for i in $(seq 1 $ITERATIONS); do
         --base-url "$MODEL_URL" \
         --judge-base-url "$JUDGE_URL" \
         --judge-api-key "$JUDGE_API_KEY" \
-        --no-baseline \
         --strict \
         2>&1 | tee "$txt_file"
     else
@@ -108,7 +106,6 @@ for i in $(seq 1 $ITERATIONS); do
         --target "$MODEL_DISPLAY" \
         --base-url "$MODEL_URL" \
         --judge-base-url "$JUDGE_URL" \
-        --no-baseline \
         --strict \
         2>&1 | tee "$txt_file"
     fi
@@ -117,7 +114,6 @@ for i in $(seq 1 $ITERATIONS); do
       --target "$MODEL_DISPLAY" \
       --judge "$MODEL_DISPLAY" \
       --base-url "$MODEL_URL" \
-      --no-baseline \
       --strict \
       2>&1 | tee "$txt_file"
   fi
