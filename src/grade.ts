@@ -425,61 +425,77 @@ export async function gradeOutputs(args: GradeOutputsArgs): Promise<GradeOutputs
   }
 
   // Grade each assertion individually to avoid response truncation
+  // Each assertion is graded 3 times; if ANY attempt passes, the assertion passes.
   const rubricResults: AssertionResult[] = [];
   let lastPrompt = "";
   let lastText = "";
+  const MAX_RETRIES = 3;
 
   for (const assertionText of args.assertions) {
-    const singleAssertionPrompt = [
-      "/no_think",
-      "",
-      "You are grading a single assertion for an agentskills.io evaluation.",
-      "",
-      "Assertion to grade:",
-      JSON.stringify(assertionText),
-      "",
-      "Model output:",
-      args.modelOutput || "(empty output)",
-      args.toolCalls && args.toolCalls.length > 0
-        ? `\n\nTool calls (structured):\n${serializeToolCalls(args.toolCalls)}`
-        : "",
-      "",
-      "Output files:",
-      (args.outputFiles ?? [])
-        .map((file) => `<output_file path="${file.path}" kind="${file.kind}">\n${file.content}\n</output_file>`)
-        .join("\n\n") || "No output files were captured.",
-      "",
-      "Return STRICT JSON only. No markdown. Shape:",
-      '{"text":"<assertion text>","passed":true/false,"evidence":"<short evidence>"}',
-      "",
-      "Rules:",
-      "- You MUST include the 'evidence' field for EVERY assertion. Do NOT omit it.",
-      "- Copy the full assertion text into the 'text' field.",
-      "- Use VERY SHORT evidence (max 50 chars): quote snippet or file reference only.",
-      "- Do NOT include long explanations.",
-    ].filter(Boolean).join("\n");
+    let attemptPassed = false;
+    let bestEvidence = "judge did not provide concrete evidence";
 
-    lastPrompt = singleAssertionPrompt;
-    const response = await callJudge(args.judge.provider, lastPrompt, args.judgeParams);
-    lastText = response.output || response.error || "";
+    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+      const singleAssertionPrompt = [
+        "/no_think",
+        "",
+        "You are grading a single assertion for an agentskills.io evaluation.",
+        "",
+        `Attempt ${attempt + 1} of ${MAX_RETRIES}.`,
+        "",
+        "Assertion to grade:",
+        JSON.stringify(assertionText),
+        "",
+        "Model output:",
+        args.modelOutput || "(empty output)",
+        args.toolCalls && args.toolCalls.length > 0
+          ? `\n\nTool calls (structured):\n${serializeToolCalls(args.toolCalls)}`
+          : "",
+        "",
+        "Output files:",
+        (args.outputFiles ?? [])
+          .map((file) => `<output_file path="${file.path}" kind="${file.kind}">\n${file.content}\n</output_file>`)
+          .join("\n\n") || "No output files were captured.",
+        "",
+        "Return STRICT JSON only. No markdown. Shape:",
+        '{"text":"<assertion text>","passed":true/false,"evidence":"<short evidence>"}',
+        "",
+        "Rules:",
+        "- You MUST include the 'evidence' band for EVERY assertion. Do NOT omit it.",
+        "- Copy the full assertion text into the 'text' field.",
+        "- Use VERY SHORT evidence (max 50 chars): quote snippet or file reference only.",
+        "- Do NOT include long explanations.",
+      ].filter(Boolean).join("\n");
 
-    try {
-      const json = parseJudgeJson(lastText) as Record<string, unknown>;
-      rubricResults.push({
-        text: assertionText,
-        passed: json.passed === true,
-        evidence: typeof json.evidence === "string" && json.evidence.trim()
+      lastPrompt = singleAssertionPrompt;
+      const response = await callJudge(args.judge.provider, lastPrompt, args.judgeParams);
+      lastText = response.output || response.error || "";
+
+      try {
+        const json = parseJudgeJson(lastText) as Record<string, unknown>;
+        const passed = json.passed === true;
+        const evidence = typeof json.evidence === "string" && json.evidence.trim()
           ? json.evidence.trim()
-          : "judge did not provide concrete evidence",
-      });
-    } catch {
-      // If individual assertion grading fails, mark as fail with evidence
-      rubricResults.push({
-        text: assertionText,
-        passed: false,
-        evidence: `judge returned unparseable response: ${truncate(lastText, 200)}`,
-      });
+          : "judge did not provide concrete evidence";
+
+        if (passed) {
+          attemptPassed = true;
+          bestEvidence = evidence;
+          break; // Stop early if we got a pass
+        }
+        bestEvidence = evidence;
+      } catch {
+        // Continue to next attempt on parse failure
+        bestEvidence = `attempt ${attempt + 1}: judge returned unparseable response`;
+      }
     }
+
+    rubricResults.push({
+      text: assertionText,
+      passed: attemptPassed,
+      evidence: bestEvidence,
+    });
+  }
   }
 
   const combined = [...rubricResults, ...toolResults];
