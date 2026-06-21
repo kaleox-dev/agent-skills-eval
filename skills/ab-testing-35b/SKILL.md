@@ -522,10 +522,12 @@ Whenever multiple elements are varied simultaneously:
    3 headlines × 2 images × 2 CTAs = 12 total combinations
    ```
 
-2. **Explicitly address dramatically higher traffic requirements:**
-   - State: "With N combinations, traffic is divided N ways"
-   - Give specific comparison: "With 12 combinations, you need roughly 6x the traffic of an A/B test for the same statistical power"
-   - **DO NOT just say "requires more traffic" - be specific about the multiplier**
+2. **Explicitly address dramatically higher traffic requirements with specific language:**
+   - EXPLAIN WHY: "With N combinations, traffic is divided N ways, meaning each combination gets only 1/N of the total traffic"
+   - GIVE SPECIFIC COMPARISON: "With 12 combinations, you need roughly 6x the traffic of an A/B test (which has 2 variants) for the same statistical power per combination"
+   - STATE THE MULTIPLIER: "MVT requires N/2 times more traffic than a simple A/B test"
+   - **DO NOT just say "requires more traffic" or "requires massive traffic" - explicitly state the multiplier and explain the division of traffic**
+   - Example: "With 8 combinations, traffic is split 8 ways. Each combination gets only 1/8 of your traffic, requiring 4x more total visitors than an A/B test to achieve the same statistical power."
 
 3. **DO NOT ask for traffic data before providing a plan.**
    - Make reasonable assumptions if user doesn't provide traffic
@@ -566,11 +568,13 @@ This is MANDATORY when discussing test execution or monitoring.
 
 ---
 
-## Peeking Warning (Mandatory)
+## Peeking Warning (MANDATORY - Include in EVERY test planning response)
 
-Whenever discussing test execution, include a warning similar to:
+**You MUST include a peeking warning in every response that involves test planning, execution, or analysis.**
 
-```text
+**Required language (use exactly or very similar wording):**
+
+```
 Avoid peeking at results and stopping early.
 
 Checking significance repeatedly and ending the test when a winner appears increases false positives and can lead to incorrect decisions.
@@ -578,7 +582,7 @@ Checking significance repeatedly and ending the test when a winner appears incre
 If early decision-making is required, use a sequential testing approach.
 ```
 
-This warning should appear in all test-planning responses.
+**This warning is MANDATORY and must appear in all test-planning responses.**
 
 ---
 
@@ -804,8 +808,18 @@ We'll know this is true when [metrics].
 
 ### Primary Metric
 - Single metric that matters most
-- Directly tied to hypothesis
+- **Directly tied to the business goal of the test**
 - What you'll use to call the test
+
+**CRITICAL RULES FOR PRIMARY METRIC SELECTION:**
+
+- **Homepage headline test** (affecting signups/conversions): Primary metric = **signup rate** or **conversion rate** (NOT CTR)
+- **Landing page test** (affecting form submissions): Primary metric = **form completion rate**
+- **CTA button test**: Primary metric = **click-through rate** ONLY if the goal is clicks; if goal is downstream conversion, use **conversion rate**
+- **Pricing page test**: Primary metric = **plan selection rate** or **purchase conversion rate**
+- **Email subject line test**: Primary metric = **open rate**
+
+**DO NOT use CTR as the primary metric for tests where the business goal is downstream conversion (signups, purchases, form submissions).**
 
 ### Secondary Metrics
 - Support primary metric interpretation
@@ -819,6 +833,11 @@ We'll know this is true when [metrics].
 - **Primary**: Plan selection rate
 - **Secondary**: Time on page, plan distribution
 - **Guardrail**: Support tickets, refund rate
+
+### Example: Homepage Headline Test (for signups)
+- **Primary**: Signup rate (conversion rate)
+- **Secondary**: CTR to signup page, time on page
+- **Guardrail**: Bounce rate, return visitor rate
 
 ---
 
