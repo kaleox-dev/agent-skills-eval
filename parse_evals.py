@@ -20,7 +20,7 @@ def strip_ansi(text):
     return ansi_pattern.sub('', text)
 
 
-def parse_eval_output(content, iteration=1, workspace_iteration="unknown"):
+def parse_eval_output(content, iteration=1, workspace_iteration="unknown", skill="unknown"):
     """Parse the evaluation output and return a list of rows."""
     all_rows = []
 
@@ -123,7 +123,7 @@ def parse_eval_output(content, iteration=1, workspace_iteration="unknown"):
             for assert_num in sorted(assertions.keys()):
                 data = assertions[assert_num]
                 all_rows.append({
-                    'skill': 'ab-testing',
+                    'skill': skill,
                     'eval': current_eval,
                     'mode': current_mode,
                     'overall_result': overall_result,
@@ -181,6 +181,7 @@ def write_tsv(rows, output_path):
 def main():
     iteration = 1
     workspace_iteration = "unknown"
+    skill = "unknown"
     args = sys.argv[1:]
     
     # Parse --iteration flag
@@ -197,9 +198,16 @@ def main():
             workspace_iteration = args[idx + 1]
             args = args[:idx] + args[idx+2:]
     
+    # Parse --skill flag
+    if '--skill' in args:
+        idx = args.index('--skill')
+        if idx + 1 < len(args):
+            skill = args[idx + 1]
+            args = args[:idx] + args[idx+2:]
+    
     if len(args) < 1:
-        print("Usage: python3 parse_evals.py <input_file> [output_file] [--iteration N] [--workspace-iteration X]")
-        print("Example: python3 parse_evals.py iteration-1-output.txt ads_evals.tsv --iteration 1 --workspace-iteration 168")
+        print("Usage: python3 parse_evals.py <input_file> [output_file] [--iteration N] [--workspace-iteration X] [--skill NAME]")
+        print("Example: python3 parse_evals.py iteration-1-output.txt ads_evals.tsv --iteration 1 --workspace-iteration 168 --skill ads")
         sys.exit(1)
 
     input_path = Path(args[0])
@@ -213,7 +221,7 @@ def main():
         output_path = input_path.with_name(input_path.stem + "_evals.tsv")
 
     content = input_path.read_text(encoding='utf-8')
-    rows = parse_eval_output(content, iteration, workspace_iteration)
+    rows = parse_eval_output(content, iteration, workspace_iteration, skill)
 
     # Filter to only with_skill mode
     rows = [r for r in rows if r['mode'] == 'with_skill']

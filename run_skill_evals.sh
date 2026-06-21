@@ -125,7 +125,9 @@ for i in $(seq 1 $ITERATIONS); do
     workspace_iter="unknown"
   fi
   
-  python3 parse_evals.py "$txt_file" "$tsv_file" --iteration $i --workspace-iteration "$workspace_iter"
+  # Extract skill name from SKILL_PATH (e.g., "./skills/ab-testing" -> "ab-testing")
+  skill_name=$(basename "$SKILL_PATH")
+  python3 parse_evals.py "$txt_file" "$tsv_file" --iteration $i --workspace-iteration "$workspace_iter" --skill "$skill_name"
   echo "Generated: $tsv_file (Workspace Iteration: $workspace_iter)"
 done
 
