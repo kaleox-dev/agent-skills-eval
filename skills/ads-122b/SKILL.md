@@ -195,6 +195,132 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 ---
 
+## Google Ads Campaign Structure
+
+### Campaign Organization for 50+ Keywords
+
+When managing 50+ keywords, organize by **intent themes** into separate campaigns:
+
+```
+Campaign: [Brand] - Branded terms only
+  Ad Group: Brand Core
+    Keywords: [brand name], [brand + product], [brand + pricing]
+    
+Campaign: [Intent] - High commercial intent
+  Ad Group: [Solution] + [Action]
+    Keywords: "buy [solution]", "[solution] pricing", "[solution] demo"
+    
+Campaign: [Competitor] - Competitor terms
+  Ad Group: Competitor Alternatives
+    Keywords: "[competitor] alternative", "[competitor] vs [brand]"
+    
+Campaign: [Problem] - Top-of-funnel problem awareness
+  Ad Group: Problem + Solution
+    Keywords: "how to [solve problem]", "[problem] solution"
+```
+
+### Match Types Strategy
+
+Use a **layered approach** to control traffic quality:
+
+| Match Type | Usage | When to Use |
+|------------|-------|-------------|
+| **Exact** `[keyword]` | Primary driver | High-intent terms, proven converters |
+| **Phrase** `"keyword"` | Expansion | When exact is too narrow, need variations |
+| **Broad** `keyword` | Discovery | Only with strong negative list + smart bidding |
+| **Negative** `-keyword` | Filter | Exclude irrelevant traffic, competitors (if not targeting) |
+
+**Recommended progression:**
+1. Start with **Exact** matches for proven terms
+2. Add **Phrase** matches for related variations
+3. Use **Broad** only with robust negative keyword list and conversion-based bidding
+4. Continuously add **Negative** keywords from search term reports
+
+### Negative Keyword Lists
+
+**Create these negative keyword lists upfront:**
+
+**General Negatives (apply to all campaigns):**
+```
+free, cheap, discount, coupon, torrent, download, pdf, jobs, hiring, salary, course, training, tutorial, definition, what is, how to (unless problem-aware campaign)
+```
+
+**Campaign-Specific Negatives:**
+
+*For Brand Campaigns:*
+```
+competitor-name, alternative, vs, review, scam, login, support, careers
+```
+
+*For Competitor Campaigns:*
+```
+free, cheap, login, support, careers, jobs, definition
+```
+
+*For Problem-Aware Campaigns:*
+```
+free, diy, template, example, sample, pdf, definition
+```
+
+**Update weekly** based on search term reports - add any irrelevant terms that triggered ads.
+
+### Frequency Capping
+
+Prevent ad fatigue and wasted spend:
+
+| Campaign Type | Frequency Cap | Window |
+|---------------|---------------|--------|
+| **Search** | No cap (or 10/day) | Per day |
+| **Display/Retargeting** | 3-5 impressions | Per day |
+| **Video (YouTube)** | 1-2 impressions | Per day |
+| **Social (Meta/LinkedIn)** | 2-3 impressions | Per day |
+
+**Why it matters:**
+- **Overexposure** → Ad fatigue, brand annoyance, wasted spend
+- **Underexposure** → Message doesn't stick, low recall
+- **Ideal**: User sees ad 3-7 times before converting (for consideration campaigns)
+
+**Implementation:**
+- Google Ads: Campaign settings > Frequency capping
+- Meta: Ad set level > Frequency cap
+- LinkedIn: Campaign level > Frequency management
+
+---
+
+## Success Metrics & KPIs
+
+Define success **before launch** with specific targets:
+
+### Primary Success Metrics (by Objective)
+
+| Objective | Primary KPI | Target Example |
+|-----------|-------------|----------------|
+| **Brand Awareness** | Impressions, Reach, CPM | CPM < $5, Reach 100k+ |
+| **Consideration** | CTR, CPC, Time on Site | CTR > 2%, CPC < $2, Time > 2min |
+| **Lead Generation** | CPA, Lead Volume, Form Completion | CPA < $50, 100 leads/mo |
+| **Sales/Revenue** | ROAS, Revenue, Customer Acquisition Cost | ROAS > 400%, CAC < $100 |
+| **Trial Signups** | Trial CPA, Trial-to-Paid Rate | Trial CPA < $30, 20% conversion |
+
+### Secondary Metrics (Health Indicators)
+
+- **Quality Score** (Google): Target > 7/10
+- **Landing Page Experience**: Bounce rate < 50%, Load time < 3s
+- **Ad Relevance**: > 80% "Above Average" ratings
+- **Conversion Rate**: By funnel stage (visit→lead > 5%, lead→customer > 10%)
+
+### Downstream Metrics (Long-term Success)
+
+**Must track beyond initial conversion:**
+- **Lead-to-Opportunity Rate**: What % of leads become qualified opportunities?
+- **Opportunity-to-Close Rate**: What % of opportunities convert to customers?
+- **Customer Lifetime Value (LTV)**: Average revenue per customer over time
+- **Payback Period**: How long until CAC is recovered?
+- **Churn Rate**: Are ad-acquired customers sticking?
+
+**Question to ask:** "What's your current lead-to-close rate and average deal size?" (This helps calculate true ROAS, not just first-touch)
+
+---
+
 ## Retargeting Strategies
 
 ### Funnel-Based Approach
