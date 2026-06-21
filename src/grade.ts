@@ -496,7 +496,6 @@ export async function gradeOutputs(args: GradeOutputsArgs): Promise<GradeOutputs
       evidence: bestEvidence,
     });
   }
-  }
 
   const combined = [...rubricResults, ...toolResults];
   return {

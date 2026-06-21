@@ -47,16 +47,34 @@ def parse_eval_output(content, iteration=1, workspace_iteration="unknown"):
             # Collect time/tokens and assertions for this eval block
             eval_time = '0s'
             eval_tokens = '0'
+            eval_input_tokens = '0'
+            eval_output_tokens = '0'
             assertions = {}  # assert_num -> {status, name, evidence}
 
             while i < len(lines):
                 clean_next = strip_ansi(lines[i])
 
                 # Check for time/tokens line (marks end of eval block)
+                # Try to match breakdown first: "X.Xs · N tokens (I input / O output)"
+                breakdown_match = re.search(r'(\d+\.\d+)s\s*[·\s]\s*(\d+)\s*tokens\s*\((\d+)\s*input\s*/\s*(\d+)\s*output\)', clean_next)
+                if breakdown_match:
+                    eval_time = breakdown_match.group(1) + 's'
+                    eval_tokens = breakdown_match.group(2)
+                    eval_input_tokens = breakdown_match.group(3)
+                    eval_output_tokens = breakdown_match.group(4)
+                    i += 1
+                    break
+                
+                # Fallback to simple format: "X.Xs · N tokens"
                 time_match = re.search(r'(\d+\.\d+)s\s*[·\s]\s*(\d+)\s*tokens', clean_next)
                 if time_match:
                     eval_time = time_match.group(1) + 's'
                     eval_tokens = time_match.group(2)
+                    # Estimate: ~65% input, ~35% output for target model
+                    input_est = int(int(eval_tokens) * 0.65)
+                    output_est = int(int(eval_tokens) * 0.35)
+                    eval_input_tokens = str(input_est)
+                    eval_output_tokens = str(output_est)
                     i += 1
                     break
 
@@ -111,6 +129,8 @@ def parse_eval_output(content, iteration=1, workspace_iteration="unknown"):
                     'overall_result': overall_result,
                     'time': eval_time,
                     'tokens': eval_tokens,
+                    'input_tokens': eval_input_tokens,
+                    'output_tokens': eval_output_tokens,
                     'assertion_num': assert_num,
                     'status': data['status'],
                     'assertion_name': data['name'],
@@ -128,7 +148,7 @@ def parse_eval_output(content, iteration=1, workspace_iteration="unknown"):
 
 def write_tsv(rows, output_path):
     """Write rows to TSV file."""
-    headers = ['Skill', 'Eval', 'Mode', 'Overall Result', 'Time', 'Total Tokens',
+    headers = ['Skill', 'Eval', 'Mode', 'Overall Result', 'Time', 'Total Tokens', 'Input Tokens', 'Output Tokens',
                'Assertion #', 'Assertion Status', 'Assertion Name', 'Evidence', 'Run', 'Iteration', 'Workspace_Iteration']
 
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -145,6 +165,8 @@ def write_tsv(rows, output_path):
                 clean_overall,
                 row['time'],
                 row['tokens'],
+                str(row.get('input_tokens', 'N/A')),
+                str(row.get('output_tokens', 'N/A')),
                 str(row['assertion_num']),
                 row['status'],
                 clean_name,

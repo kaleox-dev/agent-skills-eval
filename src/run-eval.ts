@@ -43,7 +43,12 @@ export interface RunEvalResult {
   slug: string;
   modes: Record<RunMode, {
     outputDir: string;
-    timing: { total_tokens: number; duration_ms: number };
+    timing: { 
+      total_tokens: number; 
+      input_tokens: number; 
+      output_tokens: number;
+      duration_ms: number 
+    };
     grading: GradingJson;
     rawOutput: string;
     toolCalls?: ToolCall[];
@@ -154,9 +159,16 @@ function mergeParams(
   return any ? merged : undefined;
 }
 
-function timingFrom(result: ProviderResult): { total_tokens: number; duration_ms: number } {
+function timingFrom(result: ProviderResult): { 
+  total_tokens: number; 
+  input_tokens: number; 
+  output_tokens: number;
+  duration_ms: number 
+} {
   return {
     total_tokens: (result.inputTokens ?? 0) + (result.outputTokens ?? 0),
+    input_tokens: result.inputTokens ?? 0,
+    output_tokens: result.outputTokens ?? 0,
     duration_ms: result.latencyMs ?? 0,
   };
 }

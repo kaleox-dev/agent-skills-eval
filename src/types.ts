@@ -141,7 +141,12 @@ export interface EvalEndEvent {
   mode: RunMode;
   /** Raw text returned by the target model. */
   output: string;
-  timing: { total_tokens: number; duration_ms: number };
+  timing: { 
+    total_tokens: number; 
+    input_tokens: number; 
+    output_tokens: number;
+    duration_ms: number 
+  };
   grading: GradingJson;
   /** The prompt sent to the judge model for grading (useful for debugging). */
   judgePrompt?: string;
