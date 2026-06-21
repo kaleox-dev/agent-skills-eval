@@ -67,7 +67,9 @@ Account
 └── Campaign 2...
 ```
 
-### Naming Conventions
+### Naming Conventions (MUST INCLUDE IN OUTPUT)
+
+**CRITICAL: When discussing campaign structure, MUST include specific naming convention examples. DO NOT omit.**
 
 ```
 [Platform]_[Objective]_[Audience]_[Offer]_[Date]
@@ -76,6 +78,8 @@ Examples:
 META_Conv_Lookalike-Customers_FreeTrial_2024Q1
 GOOG_Search_Brand_Demo_Ongoing
 LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
+GOOG_Search_HighIntent_TrialSignups_2024Q2
+META_Awareness_Lookalike-1Pct_LeadMagnet_2024Q2
 ```
 
 ### Budget Allocation
@@ -158,7 +162,9 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 ---
 
-## Campaign Optimization
+## Campaign Optimization (APPLY FRAMEWORK, PROVIDE BENCHMARKS)
+
+**CRITICAL: When asked about benchmarking or "is this good?", PROVIDE industry benchmarks. DO NOT ask "What industry are you in?" before giving context.**
 
 ### Key Metrics by Objective
 
@@ -167,6 +173,30 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 | Awareness | CPM, Reach, Video view rate |
 | Consideration | CTR, CPC, Time on site |
 | Conversion | CPA, ROAS, Conversion rate |
+
+### Industry Benchmarks (PROVIDE THESE WHEN ASKED IF METRICS ARE "GOOD")
+
+**SaaS B2B:**
+- CPC: $5-15 (Google), $3-10 (LinkedIn)
+- CPL: $50-200 (lead), $200-500 (demo)
+- CTR: 2-4% (Search), 0.5-1% (Display)
+- ROAS: 300-500%
+
+**E-commerce:**
+- CPC: $1-5 (Google), $0.50-3 (Meta)
+- CPA: $15-40 (purchase)
+- CTR: 1.5-3% (Search), 1-2% (Social)
+- ROAS: 300-400%
+
+**Professional Services:**
+- CPC: $5-20
+- CPL: $100-300
+- CTR: 2-4%
+- CPC: $5-20
+
+**Mobile Apps:**
+- CPI: $2-10 (iOS), $1-5 (Android)
+- CPA: $5-20 (registration)
 
 ### Optimization Levers
 
@@ -236,16 +266,18 @@ Use a **layered approach** to control traffic quality:
 3. Use **Broad** only with robust negative keyword list and conversion-based bidding
 4. Continuously add **Negative** keywords from search term reports
 
-### Negative Keyword Lists
+### Negative Keyword Lists (MUST INCLUDE IN OUTPUT)
 
-**Create these negative keyword lists upfront:**
+**CRITICAL: When discussing Google Ads campaigns with keywords, MUST include negative keyword lists. DO NOT just mention "create negative lists" without providing them.**
+
+**Create these negative keyword lists upfront (INCLUDE THESE):**
 
 **General Negatives (apply to all campaigns):**
 ```
 free, cheap, discount, coupon, torrent, download, pdf, jobs, hiring, salary, course, training, tutorial, definition, what is, how to (unless problem-aware campaign)
 ```
 
-**Campaign-Specific Negatives:**
+**Campaign-Specific Negatives (INCLUDE THESE):**
 
 *For Brand Campaigns:*
 ```
@@ -317,11 +349,13 @@ Define success **before launch** with specific targets:
 - **Payback Period**: How long until CAC is recovered?
 - **Churn Rate**: Are ad-acquired customers sticking?
 
-**Question to ask:** "What's your current lead-to-close rate and average deal size?" (This helps calculate true ROAS, not just first-touch)
+**Note:** Track downstream conversion rates (lead-to-close, average deal size) to calculate true ROAS, not just first-touch.
 
 ---
 
-## Retargeting Strategies
+## Retargeting Strategies (PROVIDE PLATFORM RECOMMENDATIONS)
+
+**CRITICAL: When asked about retargeting, MUST recommend specific platforms. DO NOT ask "What platform are you using?" before giving recommendations.**
 
 ### Funnel-Based Approach
 
@@ -338,6 +372,23 @@ Define success **before launch** with specific targets:
 | Hot (cart/trial) | 1-7 days | Higher OK |
 | Warm (key pages) | 7-30 days | 3-5x/week |
 | Cold (any visit) | 30-90 days | 1-2x/week |
+
+### Platform-Specific Retargeting (INCLUDE ALL IN OUTPUT)
+
+**Google Ads:**
+- Audience lists: Website visitors, app users, YouTube viewers
+- Best for: Search RLSA, Display remarketing, YouTube retargeting
+- Window: 30 days standard, up to 540 days
+
+**Meta Ads:**
+- Audience lists: Website visitors, engagers, video viewers, custom audiences
+- Best for: Feed ads, Stories, Reels retargeting
+- Window: 1-180 days flexible
+
+**LinkedIn Ads:**
+- Audience lists: Website retargeting, engagement audiences, contact lists
+- Best for: B2B decision-maker retargeting
+- Window: 30-90 days typical
 
 ### Exclusions to Set Up
 - Existing customers (unless upsell)
