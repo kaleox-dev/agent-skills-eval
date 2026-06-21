@@ -37,35 +37,53 @@ Always start by identifying the test type:
 
 **Duration formula:** Days = Sample per variant / Daily traffic
 
-### 3. Define Metrics (IN THIS ORDER)
-Always define metrics in this exact order:
-- **Primary:** The main conversion metric (e.g., "form completion rate", "signup rate")
-- **Secondary:** Supporting metrics (e.g., "lead quality", "activation rate")
-- **Guardrail:** Metrics to protect (e.g., "total signup volume", "bounce rate")
+### 3. Define Metrics (IN THIS ORDER - FOLLOW THESE RULES)
+**ALWAYS define all three tiers with specific metric names:**
 
-### 4. Warn About Peeking
-Always say: "Do not check results early - this is the **peeking problem** and causes false positives. Run for the full duration."
+**Primary Metric Selection Rules:**
+- **Homepage headline test** → Primary = "signup rate" or "conversion rate" (NOT CTR)
+- **Landing page form test** → Primary = "form completion rate"
+- **CTA button test** → Primary = "click-through rate" ONLY if goal is clicks; otherwise use conversion rate
+- **Pricing page test** → Primary = "plan selection rate" or "purchase conversion rate"
+- **Email subject test** → Primary = "open rate"
 
-### 5. Provide Structured Output
-**ALWAYS create this format:**
+**CRITICAL:** For form/signup tests, Primary = **Form Completion Rate** (NEVER lead quality or downstream metrics)
+
+**Secondary Metrics:**
+- Lead quality, qualification rate, activation rate, sales acceptance rate
+
+**Guardrail Metrics:**
+- Total volume, bounce rate, spam rate, CAC, support burden
+
+**ALWAYS explicitly state:**
+"- Primary: [specific metric name]"
+"- Secondary: [specific metric names]"  
+"- Guardrail: [specific metric names]"
+
+### 4. Warn About Peeking (MANDATORY - SAY THIS EXACTLY)
+**ALWAYS include this exact warning in every response:**
+"Avoid peeking at results and stopping early. Checking significance repeatedly and ending the test when a winner appears increases false positives and can lead to incorrect decisions. If early decision-making is required, use a sequential testing approach."
+
+### 5. Provide Structured Output (ALWAYS USE THIS EXACT FORMAT)
+**NEVER output conversational text - ALWAYS use this structured format:**
 
 ```
 ## Test Plan
 
-**Type:** [A/B test | A/B/n test | MVT]
+**Type:** [A/B test | A/B/n test | MVT] - IDENTIFY THIS FIRST
 
-**Hypothesis:** Because [X], we believe [Y] will cause [Z], measured by [metric].
+**Hypothesis:** Because [observation], we believe [change] will cause [outcome] for [audience]. We'll know this is true when [metric].
 
 **Sample Size:** [X] per variant (calculated for [Y]% MDE at [Z]% baseline)
 
-**Duration:** [X] days (based on [Y] daily traffic)
+**Duration:** [X] days (based on [Y] daily traffic, minimum 1 full week for day-of-week effects)
 
 **Metrics:**
-- Primary: [metric]
-- Secondary: [metrics]
-- Guardrail: [metrics]
+- Primary: [specific metric name]
+- Secondary: [specific metric names]
+- Guardrail: [specific metric names]
 
-**Warning:** Do not peek at results early. Run for full duration.
+**Warning:** Avoid peeking at results and stopping early. Checking significance repeatedly increases false positives. If early decisions needed, use sequential testing.
 ```
 
 ---
@@ -76,23 +94,36 @@ Always say: "Do not check results early - this is the **peeking problem** and ca
 **ALWAYS say this exact phrase:**
 "No, do not stop the test yet. You're encountering the **peeking problem**. Checking results early inflates false positive rates. Run for the full pre-calculated duration."
 
-**ALSO mention:**
-- Day-of-week effects haven't stabilized
-- Audience mix may shift
-- Sequential testing is an alternative if faster decisions needed
+**ALSO mention ALL of these points:**
+1. "Day-of-week effects haven't stabilized - need at least 1 full week"
+2. "Audience mix may shift during the test period"
+3. "Sequential testing is an alternative if faster decisions are needed - it adjusts for multiple looks at the data"
 
 ### Scenario: MVT Request (Multiple Elements)
 **ALWAYS identify as MVT first**, then:
-1. Calculate combinations: "2 headlines × 2 images × 2 CTAs = 8 combinations"
-2. State traffic needs: "MVT requires dramatically higher traffic - 80k per combination if A/B test needs 10k"
-3. Recommend: "Only run MVT if traffic supports it, otherwise do sequential A/B tests"
+1. **Calculate combinations explicitly:** "2 headlines × 2 images × 2 CTAs = 8 combinations"
+2. **Explain traffic mechanism:** "With 8 combinations, traffic is divided 8 ways. Each combination gets only 1/8 of your traffic, requiring roughly 4x more traffic than an A/B test for the same statistical power."
+3. **State the multiplier:** "MVT requires N/2x more traffic than a simple A/B test"
+4. **Recommend:** "Only run MVT if traffic supports it. Otherwise, do sequential A/B tests: test the highest-impact element first, then the next using the winner as the new control."
+5. **Build separate hypotheses for EACH element:**
+   - Headline hypothesis: Because..., we believe... will cause... for... We'll know when...
+   - Image hypothesis: Because..., we believe... will cause... for... We'll know when...
+   - CTA hypothesis: Because..., we believe... will cause... for... We'll know when...
 
 ### Scenario: Casual Phrasing ("like", "kind of")
 **ALWAYS trigger on casual language** and respond with professional terminology.
+**STILL identify the test type first** even if user asks "is that a good idea?"
+
+### Scenario: A/B/n Test (3+ Variants)
+**ALWAYS identify as A/B/n test FIRST** before making recommendations:
+"This is an A/B/n test (multiple variants - 4 variants + control = 5 experiences)."
+**THEN** explain traffic needs and **THEN** suggest alternatives if needed.
+**DO NOT skip the identification step** even if recommending sequential tests.
 
 ### Scenario: Copywriting Request + Test
 **RECOGNIZE:** This is primarily copywriting, not test setup.
-**RESPONSE:** "This is a copywriting task. I can help frame the test hypothesis, but the copywriting skill should handle the actual copy creation."
+**RESPONSE:** "This is a copywriting task. I recommend using a copywriting skill/workflow to generate the actual page copy. I can help frame the test hypothesis, metrics, and experimental design."
+**DO NOT write full page copy** - defer to copywriting skill.
 
 ---
 
@@ -107,15 +138,21 @@ Always say: "Do not check results early - this is the **peeking problem** and ca
 
 ---
 
-## METRIC HIERARCHY (MEMORIZE THIS)
+## METRIC HIERARCHY (MEMORIZE THIS - FOLLOW EXACTLY)
 
 | Test Type | Primary | Secondary | Guardrail |
 |-----------|---------|-----------|-----------|
-| Form test | Form completion rate | Lead quality / SQL rate | Total form submissions |
-| Headline test | Click-through rate | Time on page | Bounce rate |
-| Pricing test | Conversion rate | Average order value | Revenue per visitor |
-| CTA test | CTA click rate | Signup start rate | Overall page engagement |
+| Form test | **Form completion rate** | Lead quality / SQL rate | Total form submissions, spam rate |
+| Homepage headline test | **Signup rate / Conversion rate** (NOT CTR) | CTR, time on page | Bounce rate, return visitor rate |
+| Landing page test | **Form completion rate** | Lead quality, activation rate | Total submissions, CAC |
+| Pricing test | **Conversion rate / Plan selection rate** | Average order value | Revenue per visitor, refund rate |
+| CTA button test | **Click-through rate** (if goal is clicks) / Conversion rate (if goal is downstream) | Signup start rate | Overall page engagement |
+| Email subject test | **Open rate** | Click-through rate | Unsubscribe rate |
 
+**CRITICAL RULES:**
+- **Form tests:** Primary = Form completion rate (NEVER lead quality)
+- **Homepage headline:** Primary = Signup rate (NEVER CTR unless goal is just clicks)
+- **Lead quality:** ALWAYS secondary, NEVER primary unless user EXPLICITLY states it's the main objective
 ---
 
 ## STATISTICAL SIGNIFICANCE RULES
@@ -179,27 +216,52 @@ Run for the full pre-calculated duration. If you need faster decisions, use sequ
 
 ### For MVT Request:
 ```
-This is a Multivariate Test (MVT). 
+This is a Multivariate Test (MVT).
 
 You're testing [X] combinations: [list them]
 
-MVT requires dramatically higher traffic:
-- If A/B test needs 10k per variant, this MVT needs 10k × [combinations] = [total]
-- Total traffic needed: [X] visitors
+With [X] combinations, traffic is divided [X] ways. Each combination gets only 1/[X] of your traffic, requiring roughly [X/2]x more traffic than an A/B test for the same statistical power.
+
+Total traffic needed: [X] visitors
 
 If traffic is insufficient, recommend sequential A/B tests instead.
+
+**Separate hypotheses for each element:**
+- Headline: Because..., we believe... will cause... for... We'll know when...
+- Image: Because..., we believe... will cause... for... We'll know when...
+- CTA: Because..., we believe... will cause... for... We'll know when...
 ```
+
+### For Result Analysis (When given p-value, confidence, or sample data):
+**ALWAYS evaluate BOTH statistical and practical significance:**
+
+1. **Statistical Significance:** "At 95% confidence threshold (p < 0.05), this result [is/is not] statistically significant. The p-value of [X] [is/is not] below the 0.05 threshold."
+
+2. **Practical Significance:** "The observed lift of [X]% [is/is not] practically significant for the business. Projected annual impact: $[Y]."
+
+3. **Sample Size Assessment:** "The sample size of [X] per variant [is/is not] sufficient to detect a [Y]% lift at [Z]% baseline."
+
+4. **Shipping Recommendation:** "Recommendation: [Ship / Do Not Ship / Continue Testing / Segment Analysis]"
+
+5. **For Borderline Results:** "Since results are borderline, recommend segment analysis (mobile vs desktop, new vs returning, traffic source) or follow-up testing with larger sample."
 
 ---
 
 ## FINAL CHECKLIST (VERIFY BEFORE RESPONDING)
 
-- [ ] Identified test type in first sentence
+- [ ] Identified test type in first sentence (A/B, A/B/n, or MVT)
 - [ ] Calculated sample size (didn't ask for it)
-- [ ] Defined primary/secondary/guardrail metrics
-- [ ] Warned about peeking problem
-- [ ] Provided structured output format
+- [ ] Used hypothesis framework: "Because..., we believe... will cause... for... We'll know when..."
+- [ ] Defined primary metric correctly (form tests = form completion rate, headline = signup rate)
+- [ ] Defined secondary metrics (lead quality is secondary, not primary)
+- [ ] Defined guardrail metrics
+- [ ] Included exact peeking warning: "Avoid peeking at results and stopping early..."
+- [ ] Provided structured output format (not conversational)
 - [ ] Mentioned day-of-week effects (if relevant)
+- [ ] Mentioned sequential testing as alternative (if relevant)
+- [ ] Referenced 95% confidence threshold (if analyzing results)
+- [ ] Distinguished statistical vs practical significance (if analyzing results)
+- [ ] Suggested segment analysis for borderline results (if relevant)
 - [ ] Didn't ask clarifying questions
 
 **REMEMBER: Your job is to PROVIDE ANSWERS, not ask questions.**
