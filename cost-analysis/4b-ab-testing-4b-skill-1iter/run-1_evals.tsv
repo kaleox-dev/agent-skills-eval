@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	1	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	2	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	3	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	4	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	5	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	6	PASS			1	1	iteration-259
+ab-testing	eval-1	with_skill	FAIL	6.0s	8432	5480	2951	7	PASS			1	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	1	FAIL	Identifies as A/B/n test (multiple variants)	attempt 3: judge returned unparseable response	2	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	2	PASS			2	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	3	PASS			2	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	4	PASS			2	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	5	PASS			2	1	iteration-259
+ab-testing	eval-2	with_skill	FAIL	8.5s	8664	5631	3032	6	PASS			2	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	1	PASS			3	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	2	PASS			3	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	3	PASS			3	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	4	PASS			3	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	5	PASS			3	1	iteration-259
+ab-testing	eval-3	with_skill	FAIL	4.5s	8187	5321	2865	6	PASS			3	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	1	PASS			4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	2	PASS			4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	3	PASS			4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	4	FAIL	Calculates number of combinations	Model identifies test as Multivariate Test (MVT) instead of calculating combinations.	4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	5	PASS			4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	6	PASS			4	1	iteration-259
+ab-testing	eval-4	with_skill	FAIL	6.0s	8399	5459	2939	7	FAIL	Provides structured test plan	Model requests missing data instead of providing a plan.	4	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	1	PASS			5	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	2	PASS			5	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	3	PASS			5	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	4	PASS			5	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	5	PASS			5	1	iteration-259
+ab-testing	eval-5	with_skill	FAIL	7.5s	8963	5825	3137	6	PASS			5	1	iteration-259
+ab-testing	eval-6	with_skill	FAIL	2.1s	8221	5343	2877	1	PASS			6	1	iteration-259
+ab-testing	eval-6	with_skill	FAIL	2.1s	8221	5343	2877	2	PASS			6	1	iteration-259
+ab-testing	eval-6	with_skill	FAIL	2.1s	8221	5343	2877	3	PASS			6	1	iteration-259
+ab-testing	eval-6	with_skill	FAIL	2.1s	8221	5343	2877	4	PASS			6	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	1	PASS			7	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	2	FAIL	Addresses whether sample size is sufficient for this effect size	Your sample size was too small to validate the magnitude of the effect seen.	7	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	3	FAIL	References 95% confidence threshold	p-value 0.076 > 0.05 threshold	7	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	4	PASS			7	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	5	PASS			7	1	iteration-259
+ab-testing	eval-7	with_skill	FAIL	3.9s	8584	5579	3004	6	PASS			7	1	iteration-259
