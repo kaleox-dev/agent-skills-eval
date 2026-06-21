@@ -138,14 +138,19 @@ When discussing MVT:
 
 1. Identify each variable being tested.
 2. Estimate the number of combinations explicitly (show the math: e.g., "2 headlines × 2 CTAs × 2 images = 8 combinations").
-3. **Explicitly address the dramatically higher traffic requirements:** State that with N combinations, traffic is divided N ways, requiring significantly more traffic than a simple A/B test. Give specific language: "With 8 combinations, traffic is split 8 ways, requiring roughly 4x the traffic of an A/B test for the same statistical power."
+3. **Explicitly address the dramatically higher traffic requirements:** State that with N combinations, traffic is divided N ways, requiring significantly more traffic than a simple A/B test. Give specific language: "With 8 combinations, traffic is split 8 ways, requiring roughly 4x the traffic of an A/B test for the same statistical power." **You must explicitly mention the traffic multiplier and explain that each combination gets only 1/N of your traffic.**
 4. Create a separate hypothesis for each variable.
 5. Assess feasibility based on user-provided or assumed traffic.
 6. **Still provide a structured test plan with assumptions** instead of asking for traffic data first.
 
 Only after discussing feasibility should alternatives be suggested.
 
-If traffic appears insufficient, discuss:
+If traffic appears insufficient, you MUST explicitly suggest alternative higher-impact elements to test instead, such as:
+- "Instead of testing button colors, consider testing the headline value proposition or pricing structure"
+- "Higher-impact elements to test: headline messaging, hero image, pricing tiers, or form length"
+- "Button colors typically have minimal impact; focus on message, offer, or layout instead"
+
+Then discuss:
 - Sequential A/B tests
 - Reduced-factor designs
 - Testing the highest-impact variable first

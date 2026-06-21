@@ -14,6 +14,7 @@ SKILL_PATH="./skills/ab-testing"
 ITERATIONS=2
 OUTPUT_FOLDER="eval-results/model-skill-2iter"
 CONFIG_FILE=""
+WORKSPACE="./agent-skills-workspace"
 
 while [[ $# -gt 0 ]]; do
   case $1 in
@@ -118,8 +119,14 @@ for i in $(seq 1 $ITERATIONS); do
       2>&1 | tee "$txt_file"
   fi
   
-  python3 parse_evals.py "$txt_file" "$tsv_file" --iteration $i
-  echo "Generated: $tsv_file"
+  # Detect the workspace iteration number (latest folder in workspace)
+  workspace_iter=$(ls -1d "$WORKSPACE"/*/  2>/dev/null | sort -V | tail -1 | xargs basename)
+  if [ -z "$workspace_iter" ]; then
+    workspace_iter="unknown"
+  fi
+  
+  python3 parse_evals.py "$txt_file" "$tsv_file" --iteration $i --workspace-iteration "$workspace_iter"
+  echo "Generated: $tsv_file (Workspace Iteration: $workspace_iter)"
 done
 
 echo ""
