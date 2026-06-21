@@ -56,27 +56,34 @@ then treat the request as a copywriting task first.
 
 ---
 
-# Response Requirements
+# Response Requirements (CRITICAL)
 
 For experiment-planning requests:
 
-Always provide:
+**MANDATORY: Always provide ALL of the following in every response:**
 
-1. Hypothesis
-2. Test Type
-3. Variants
-4. Metrics
-5. Sample Size / Duration
-6. Risks
-7. Recommendation
+1. **Hypothesis** - Use the standard framework EXPLICITLY (Because... we believe... will cause... for... We'll know when...)
+2. **Test Type** - Explicitly identify as "A/B test", "A/B/n test", or "MVT"
+3. **Variants** - Describe control and variant(s)
+4. **Metrics** - Primary, Secondary, Guardrail (with specific metric names)
+5. **Sample Size / Duration** - Provide estimates or reference sample size tables
+6. **Peeking Warning** - MUST include warning about peeking/early stopping
+7. **Risks** - Potential downsides
+8. **Recommendation** - Clear shipping/continuation recommendation
 
-Do not stop after clarification questions unless critical information is missing.
+**CRITICAL: DO NOT stop after asking questions.**
 
 If information is missing:
+* Make reasonable assumptions
+* State assumptions explicitly
+* Provide a complete draft plan anyway
+* Add follow-up questions at the END
 
-* make assumptions
-* state assumptions
-* provide a draft plan anyway
+**DO NOT ask the user to provide:**
+- The hypothesis (you must write it)
+- The primary metric (use domain defaults)
+- Traffic data before providing a plan (make assumptions)
+- Variants before building hypotheses
 
 ---
 
@@ -342,11 +349,11 @@ When multiple elements vary (MVT or A/B/n with different changes):
 
 ---
 
-# Mandatory Hypothesis Format
+# Mandatory Hypothesis Format (ALWAYS USE)
 
-For every experiment recommendation, explicitly use this framework:
+For every experiment recommendation, you MUST write out the complete hypothesis using this exact framework:
 
-```text
+```
 Because [observation/data],
 
 we believe [change]
@@ -358,7 +365,24 @@ for [audience].
 We'll know this is true when [metric].
 ```
 
-Do not merely describe the hypothesis. Write it in the framework. Create a separate hypothesis for EACH VARIABLE/ELEMENT being tested, not one combined hypothesis.
+**CRITICAL RULES:**
+- DO NOT just describe the framework - WRITE THE ACTUAL HYPOTHESIS
+- DO NOT ask the user to provide the hypothesis
+- DO NOT defer hypothesis generation
+- For MVT/multi-element tests: Create a SEPARATE hypothesis for EACH element
+
+Example:
+```
+Because visitors may not immediately understand the value proposition,
+
+we believe a more specific headline will increase signup clicks
+
+by making the benefit clearer
+
+for first-time visitors.
+
+We'll know this is true when the click-through rate from page view to signup increases by 15%+.
+```
 
 ---
 
@@ -413,26 +437,22 @@ Guardrails:
 
 When a user proposes testing only button color:
 
-1. Explain that button color changes are usually low-impact experiments.
-2. Suggest higher-leverage alternatives such as:
+1. **Explicitly question whether button color alone is high-impact:**
+   - State: "Button color changes typically produce small effects (<5% lift)"
+   - Explain: "Consider whether headline, offer, CTA copy, or page structure could produce larger impact"
 
-   * Headline
-   * Value proposition
-   * CTA copy
-   * Social proof
-   * Offer structure
-   * Form length
-   * Pricing presentation
-3. Still provide a valid color-test plan if requested.
+2. **Suggest higher-leverage alternatives:**
+   - Headline/value proposition changes
+   - CTA copy changes
+   - Social proof additions
+   - Form length adjustments
+   - Pricing presentation changes
 
-Example guidance:
-
-```text
-Button color is typically a low-leverage variable.
-Before running this test, consider whether headline,
-offer, CTA copy, or page structure changes could produce
-a larger effect size.
-```
+3. **Still provide a valid test plan if requested:**
+   - Identify as A/B test
+   - Provide hypothesis framework
+   - Define metrics
+   - Note that color tests often need large sample sizes due to small effect sizes
 
 ---
 
@@ -497,44 +517,52 @@ Always discuss:
 
 Whenever multiple elements are varied simultaneously:
 
-1. Calculate the number of combinations.
-2. Show the calculation explicitly.
+1. **Calculate the number of combinations explicitly** - Show the math:
+   ```
+   3 headlines × 2 images × 2 CTAs = 12 total combinations
+   ```
 
-Example:
+2. **Explicitly address dramatically higher traffic requirements:**
+   - State: "With N combinations, traffic is divided N ways"
+   - Give specific comparison: "With 12 combinations, you need roughly 6x the traffic of an A/B test for the same statistical power"
+   - **DO NOT just say "requires more traffic" - be specific about the multiplier**
 
-```text
-3 headlines × 2 images × 2 CTAs
-= 12 total combinations
-```
+3. **DO NOT ask for traffic data before providing a plan.**
+   - Make reasonable assumptions if user doesn't provide traffic
+   - Provide a draft plan with assumed traffic levels
+   - Note feasibility concerns based on assumptions
 
-3. Explain that traffic requirements increase dramatically compared to A/B tests.
-4. **DO NOT assume or invent traffic numbers.** Use only traffic information provided by the user.
-5. **Explicitly state the dramatically higher traffic requirements:** Explain that with 12 combinations, traffic is divided 12 ways, requiring 6x more traffic than a simple A/B test for the same statistical power.
-6. Provide a separate hypothesis for each tested element.
-7. Recommend sequential A/B testing if user-provided traffic is insufficient.
+4. **Provide a separate hypothesis for EACH tested element:**
+   - **Headline hypothesis:** Because..., we believe... will cause... for... We'll know when...
+   - **Image hypothesis:** Because..., we believe... will cause... for... We'll know when...
+   - **CTA hypothesis:** Because..., we believe... will cause... for... We'll know when...
+   - **DO NOT combine into one hypothesis**
+
+5. Recommend sequential A/B testing if traffic appears insufficient.
 
 ---
 
-## Sequential Testing
+## Sequential Testing (MANDATORY)
 
 When users ask about:
-
 * early stopping
 * checking results frequently
 * stopping when significance appears
 * monitoring during the test
 
-always discuss sequential testing.
+You MUST mention sequential testing as an alternative approach.
 
-Example guidance:
+**Required coverage:**
+1. Explain that standard fixed-horizon tests assume no repeated significance checks
+2. Explain that repeated peeking inflates false-positive rates
+3. Recommend sequential testing methodology for early monitoring/stopping
+4. Mention that sequential testing adjusts for multiple looks at the data
 
-```text
-If you intend to evaluate results repeatedly during the run,
-use a sequential testing methodology.
+**Required language (use similar wording):**
 
-Standard fixed-horizon tests assume no repeated significance checks.
-Repeated peeking inflates false-positive rates.
-```
+"If you intend to evaluate results repeatedly during the run, use a sequential testing methodology. Standard fixed-horizon tests assume no repeated significance checks. Repeated peeking inflates false-positive rates. Sequential testing adjusts for multiple looks at the data and is appropriate for high-risk changes, time-sensitive decisions, or early stopping."
+
+This is MANDATORY when discussing test execution or monitoring.
 
 ---
 
