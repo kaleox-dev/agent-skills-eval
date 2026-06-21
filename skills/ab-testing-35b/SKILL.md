@@ -522,12 +522,20 @@ Whenever multiple elements are varied simultaneously:
    3 headlines × 2 images × 2 CTAs = 12 total combinations
    ```
 
-2. **Explicitly address dramatically higher traffic requirements with specific language:**
-   - EXPLAIN WHY: "With N combinations, traffic is divided N ways, meaning each combination gets only 1/N of the total traffic"
-   - GIVE SPECIFIC COMPARISON: "With 12 combinations, you need roughly 6x the traffic of an A/B test (which has 2 variants) for the same statistical power per combination"
-   - STATE THE MULTIPLIER: "MVT requires N/2 times more traffic than a simple A/B test"
-   - **DO NOT just say "requires more traffic" or "requires massive traffic" - explicitly state the multiplier and explain the division of traffic**
-   - Example: "With 8 combinations, traffic is split 8 ways. Each combination gets only 1/8 of your traffic, requiring 4x more total visitors than an A/B test to achieve the same statistical power."
+2. **Explicitly address dramatically higher traffic requirements with EXACT required language:**
+
+   **YOU MUST include ALL of the following points:**
+   
+   a) **Explain the mechanism:** "With N combinations, traffic is divided N ways, meaning each combination receives only 1/N of your total traffic"
+   
+   b) **Give a specific multiplier comparison:** "This means you need roughly [N/2]x more traffic than a simple A/B test (which has 2 variants) to achieve the same statistical power per combination"
+   
+   c) **State the consequence:** "Each combination gets significantly less data, making it harder to detect meaningful differences"
+   
+   **DO NOT just state a number like "requires 216k visitors" without explaining WHY.**
+   
+   **REQUIRED EXAMPLE FORMAT:**
+   "With 12 combinations (3 headlines × 2 images × 2 CTAs), traffic is split 12 ways. Each combination gets only 1/12 of your visitors. This means you need roughly 6x more traffic than an A/B test for the same statistical power per combination. MVT requires dramatically higher traffic because the data is spread thin across all combinations."
 
 3. **DO NOT ask for traffic data before providing a plan.**
    - Make reasonable assumptions if user doesn't provide traffic
