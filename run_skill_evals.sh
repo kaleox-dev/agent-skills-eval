@@ -132,12 +132,16 @@ for i in $(seq 1 $ITERATIONS); do
 done
 
 echo ""
-echo "=== Generating merged.tsv ==="
-tsv_files=""
-for i in $(seq 1 $ITERATIONS); do
-  tsv_files="$tsv_files $OUTPUT_FOLDER/run-${i}_evals.tsv"
-done
-python3 merge_tsv.py $tsv_files -o "$OUTPUT_FOLDER/merged.tsv"
+if [ "$ITERATIONS" -ge 2 ]; then
+  echo "=== Generating merged.tsv ==="
+  tsv_files=""
+  for i in $(seq 1 $ITERATIONS); do
+    tsv_files="$tsv_files $OUTPUT_FOLDER/run-${i}_evals.tsv"
+  done
+  python3 merge_tsv.py $tsv_files -o "$OUTPUT_FOLDER/merged.tsv"
+else
+  echo "=== Skipping merged.tsv (only 1 iteration) ==="
+fi
 
 echo "=== Generating aggregate.tsv ==="
 python3 aggregate_tsv.py "$OUTPUT_FOLDER" -o "$OUTPUT_FOLDER/aggregate.tsv"
