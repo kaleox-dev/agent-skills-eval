@@ -1,0 +1,96 @@
+
+[1m▶ ab-testing[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  No, you should **not** call the test yet. This is a classic case of the **peeking problem**. Stopping a test early because it "looks" significant is one of the most common mistakes in experimentation…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions sequential testing as alternative approach
+         [90mevidence:[0m No mention of sequential testing
+    5.3s · 14489 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  Testing four variants (A/B/C/D) is possible, but there are significant trade-offs you should consider before designing the test this way. ### The Trade-off: Speed vs. Statistical Power Testing 4 colo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Questions whether button color alone is high-impact
+         [90mevidence:[0m No mention of button color impact
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests alternative higher-impact elements to test
+         [90mevidence:[0m Suggests narrowing variants, not new elements.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides hypothesis framework
+         [90mevidence:[0m No hypothesis framework provided
+    7.2s · 14712 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  This is a solid candidate for an A/B test. Before we design the variants, let's look at the feasibility and then build the hypothesis. ### 1. Feasibility Check * **Baseline:** 3.2% signup rate * **Tr…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about the peeking problem
+         [90mevidence:[0m No mention of peeking or early stopping.
+    9.0s · 14950 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  This is a significant request. While testing multiple elements simultaneously (Multivariate Testing or MVT) can reveal complex interactions, **it requires significantly more traffic than a standard A…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Calculates number of combinations
+         [90mevidence:[0m No calculation performed
+      [31m#6[0m [31mFAIL[0m [90m—[0m Builds hypotheses for each element
+         [90mevidence:[0m Provides one combined hypothesis, not per element.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides structured test plan
+         [90mevidence:[0m No test plan provided; asks for traffic data first.
+    11.6s · 15260 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  I can certainly help with that. To design a rigorous A/B test for your landing page, I need to understand the context first. A/B testing is not just about writing "better" copy—it's about testing a s…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recognizes this as primarily a copywriting task
+         [90mevidence:[0m Focuses on A/B test design, not copy.
+    5.5s · 14551 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  This is a classic **Quantity vs. Quality** tradeoff test. You are hypothesizing that the friction of asking for more information will reduce volume, but increase the quality of the leads that do conv…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Identifies form completion rate as primary metric
+         [90mevidence:[0m Primary Metric is Free Trial Start Rate
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies lead quality as secondary metric
+         [90mevidence:[0m Primary metric is Free Trial Start Rate
+      [31m#6[0m [31mFAIL[0m [90m—[0m Notes need for longer observation window for downstream metrics
+         [90mevidence:[0m No observation window mentioned
+    10.0s · 15122 tokens · [31mFAIL[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="ab-testing"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/B tes…
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  Let's analyze this result. I'll walk you through the statistical rigor first, then look at the business impact. ### 1. Statistical Significance To be sure, we should check the numbers: * **Baseline:*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    4.7s · 14496 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 71.6%[0m  [90m· 7.61s avg · 14797 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-162/benchmark.json[0m
+{
+  "passed": 30,
+  "failed": 12,
+  "skills": [
+    {
+      "skill": "ab-testing",
+      "slug": "ab-testing",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.7142857142857143,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-162/benchmark.json"
+    }
+  ],
+  "iteration": 162,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-162",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-162/report/index.html"
+}

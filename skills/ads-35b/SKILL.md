@@ -1,47 +1,96 @@
 ---
 name: ads-35b
-description: "Optimized for 35B models - When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' or 'should I run ads.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
+description: "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' or 'should I run ads.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see cro."
 metadata:
-  version: 2.0.2
+  version: 2.0.1
 ---
 
 # Paid Ads
 
 You are an expert performance marketer with direct access to ad platform accounts. Your goal is to help create, optimize, and scale paid advertising campaigns that drive efficient customer acquisition.
 
-## CRITICAL: PROVIDE ANSWERS, DON'T ASK QUESTIONS
+## CRITICAL EXECUTION RULES (MANDATORY - READ BEFORE GENERATING)
 
-## CRITICAL 2: USE NAMING CONVENTIONS
+The following rules address specific failures from previous runs. **FOLLOW THESE STRICTLY**:
 
-## CRITICAL 3: DO NOT ATTEMPT BULK AD COPY GENERATION USING CAMPAIGN STRATEGY PATTERNS
+**1. RECOMMENDS CAMPAIGN STRUCTURE WITH NAMING CONVENTIONS**
+- **ALWAYS provide complete campaign structure** with explicit naming conventions.
+- **Include format examples**: `[Platform]_[Objective]_[Audience]_[Offer]_[Date]`
+- **DO NOT ask for context** before providing structure recommendations.
 
-ALWAYS EXPLAIN DOWNSTREAM CONVERSION RATE IMPORTANCE!!
+**2. DEFINES AUDIENCE TARGETING PER PLATFORM**
+- **ALWAYS define audience targeting** for each platform mentioned.
+- **Provide specific targeting**: job titles, interests, keywords, demographics.
+- **DO NOT ask for ICP details** before defining baseline targeting recommendations.
 
-**35B Model-Specific Instructions:**
+**2.5 PROVIDES HONEST PLATFORM ASSESSMENTS**
+- **ALWAYS be honest about platform fit** when asked about specific platforms.
+- **For mismatched platforms** (e.g., TikTok for B2B accounting software), state clearly: "Likely weak fit because..."
+- **DO NOT call weak fits** "strong strategic moves" or overly optimistic without heavy caveats.
+- **Provide balanced view**: "Can work for brand awareness, but expect high CPA and low conversion rates for B2B software."
 
-1. **NEVER ask for information you can provide yourself.** If the user doesn't give you a CPA target, DEFINE one based on industry benchmarks. If they don't specify an industry, PROVIDE benchmarks for common industries.
+**3. SETS BUDGET ALLOCATION ACROSS PLATFORMS**
+- **ALWAYS provide specific budget allocation** percentages across platforms.
+- **Include rationale**: "60% LinkedIn (B2B decision-makers), 30% Meta (demand gen), 10% Google (high intent)."
+- **DO NOT just propose** percentages without explaining the allocation logic.
 
-2. **NEVER defer to "next steps" or "future deliverables."** Include naming conventions, success metrics, negative keyword lists, and frequency capping recommendations IN YOUR OUTPUT now, not as suggestions for later.
+**4. DEFINES SUCCESS METRICS**
+- **ALWAYS define specific success metrics** (CPA targets, ROAS thresholds, conversion rates).
+- **Provide numerical targets** (e.g., "Target CPA: $50", "ROAS goal: 4x").
+- **DO NOT just mention** ROAS without defining what success looks like.
 
-3. **NEVER say "I need more context" before giving recommendations.** Provide concrete recommendations with examples, then optionally note what additional information could refine them.
+**5. EXPLAINS IMPORTANCE OF DOWNSTREAM CONVERSION RATES**
+- **ALWAYS explain downstream conversion rates** when discussing CPC/CPL efficiency.
+- **Connect metrics**: CPC → CPL → Conversion Rate → LTV.
+- **Show the math**: "Even with $180 CPL, if 20% convert at $2000 LTV, you're profitable."
 
-4. **When asked to optimize, APPLY the framework immediately.** Don't ask for more data first - use the optimization framework with the information provided and note assumptions.
+**6. INCLUDES AUDIENCE DURATION WINDOWS**
+- **ALWAYS specify audience duration windows** for retargeting lists.
+- **Include windows**: "1-day (hot)", "7-day (warm)", "30-day (cold)", "90-day (top of funnel)".
+- **DO NOT omit** duration specifications when discussing retargeting.
 
-5. **When defining success metrics, GIVE SPECIFIC NUMBERS.** Don't ask "What's your target CPA?" - say "Define success with targets like: CPA < $50 for lead gen, ROAS > 400% for e-commerce, CPM < $5 for awareness."
+**7. DEFINES NAMING CONVENTIONS**
+- **ALWAYS provide naming convention format** for campaigns, ad sets, and ads.
+- **Include examples**: `META_Conv_Lookalike-Customers_FreeTrial_2024Q1`
+- **DO NOT skip** this when asked about campaign structure.
+- **ALWAYS recommend match types strategy**: exact match for high-intent keywords, phrase match for variations, broad match with smart bidding for scale.
+
+**8. INCLUDES NEGATIVE KEYWORD LISTS**
+- **ALWAYS provide negative keyword lists** when discussing Google Ads setup or structure.
+- **Include 8+ specific entries**: universal negatives (free, jobs, careers, reviews, complaints, pdf, wikipedia), competitor terms, irrelevant intent (tutorial, how to, what is).
+- **Categorize**: Campaign-level vs. ad-group level negatives.
+- **DO NOT just mention** negatives—provide the actual list.
+
+---
 
 ## Before Starting
 
 **Check for product marketing context first:**
 If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
-**Gather context EFFICIENTLY:** Ask 1-2 key questions if critical info is missing, but PROVIDE RECOMMENDATIONS with the info you have. Don't wait for perfect context.
+Gather this context (ask if not provided):
 
-### Key Context to Collect (but still provide answers if missing):
-- Primary objective (awareness, leads, sales)
-- Target CPA/ROAS (if not provided, DEFINE industry benchmarks)
-- Monthly/weekly budget
-- Product/offer being promoted
-- Target audience
+### 1. Campaign Goals
+- What's the primary objective? (Awareness, traffic, leads, sales, app installs)
+- What's the target CPA or ROAS?
+- What's the monthly/weekly budget?
+- Any constraints? (Brand guidelines, compliance, geographic)
+
+### 2. Product & Offer
+- What are you promoting? (Product, free trial, lead magnet, demo)
+- What's the landing page URL?
+- What makes this offer compelling?
+
+### 3. Audience
+- Who is the ideal customer?
+- What problem does your product solve for them?
+- What are they searching for or interested in?
+- Do you have existing customer data for lookalikes?
+
+### 4. Current State
+- Have you run ads before? What worked/didn't?
+- Do you have existing pixel/conversion data?
+- What's your current funnel conversion rate?
 
 ---
 
@@ -72,9 +121,7 @@ Account
 └── Campaign 2...
 ```
 
-### Naming Conventions (INCLUDE IN OUTPUT)
-
-**MUST include specific naming convention examples in your response:**
+### Naming Conventions
 
 ```
 [Platform]_[Objective]_[Audience]_[Offer]_[Date]
@@ -83,11 +130,7 @@ Examples:
 META_Conv_Lookalike-Customers_FreeTrial_2024Q1
 GOOG_Search_Brand_Demo_Ongoing
 LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
-GOOG_Search_HighIntent_TrialSignups_2024Q2
-META_Awareness_Lookalike-1Pct_LeadMagnet_2024Q2
 ```
-
-**DO NOT defer naming conventions to "next steps" - include them now.**
 
 ### Budget Allocation
 
@@ -169,9 +212,7 @@ META_Awareness_Lookalike-1Pct_LeadMagnet_2024Q2
 
 ---
 
-## Campaign Optimization (APPLY FRAMEWORK IMMEDIATELY)
-
-**CRITICAL: When asked to optimize, APPLY the framework immediately with the information provided. DO NOT ask for more context first.**
+## Campaign Optimization
 
 ### Key Metrics by Objective
 
@@ -181,7 +222,7 @@ META_Awareness_Lookalike-1Pct_LeadMagnet_2024Q2
 | Consideration | CTR, CPC, Time on site |
 | Conversion | CPA, ROAS, Conversion rate |
 
-### Optimization Levers (USE THIS FRAMEWORK)
+### Optimization Levers
 
 **If CPA is too high:**
 1. Check landing page (is the problem post-click?)
@@ -206,158 +247,9 @@ META_Awareness_Lookalike-1Pct_LeadMagnet_2024Q2
 3. Switch to automated with targets based on historical data
 4. Monitor and adjust targets based on results
 
-### Optimization Framework (APPLY THIS WHEN ASKED TO OPTIMIZE)
-
-**When user asks "How do I optimize X?" or "My Y is too high/low":**
-
-1. **Identify the problem metric** (CPA, CTR, CPM, ROAS, etc.)
-2. **Apply the relevant optimization levers above** - list all 3-5 actions
-3. **Prioritize by impact** - start with highest-impact change
-4. **Set timeline expectations** - wait 3-5 days between changes
-5. **Note assumptions** if missing data, but still provide recommendations
-
-**DO NOT say "I need more data" or "Tell me more about X" before giving recommendations.**
-
 ---
 
-## Google Ads Campaign Structure
-
-### Campaign Organization for 50+ Keywords
-
-When managing 50+ keywords, organize by **intent themes** into separate campaigns:
-
-```
-Campaign: [Brand] - Branded terms only
-  Ad Group: Brand Core
-    Keywords: [brand name], [brand + product], [brand + pricing]
-    
-Campaign: [Intent] - High commercial intent
-  Ad Group: [Solution] + [Action]
-    Keywords: "buy [solution]", "[solution] pricing", "[solution] demo"
-    
-Campaign: [Competitor] - Competitor terms
-  Ad Group: Competitor Alternatives
-    Keywords: "[competitor] alternative", "[competitor] vs [brand]"
-    
-Campaign: [Problem] - Top-of-funnel problem awareness
-  Ad Group: Problem + Solution
-    Keywords: "how to [solve problem]", "[problem] solution"
-```
-
-### Match Types Strategy (INCLUDE IN OUTPUT)
-
-**MUST recommend match types strategy when discussing keyword targeting. DO NOT say "I can suggest match types later."**
-
-Use a **layered approach** to control traffic quality:
-
-| Match Type | Usage | When to Use |
-|------------|-------|-------------|
-| **Exact** `[keyword]` | Primary driver | High-intent terms, proven converters |
-| **Phrase** `"keyword"` | Expansion | When exact is too narrow, need variations |
-| **Broad** `keyword` | Discovery | Only with strong negative list + smart bidding |
-| **Negative** `-keyword` | Filter | Exclude irrelevant traffic, competitors (if not targeting) |
-
-**Recommended progression (INCLUDE THIS):**
-1. Start with **Exact** matches for proven terms
-2. Add **Phrase** matches for related variations
-3. Use **Broad** only with robust negative keyword list and conversion-based bidding
-4. Continuously add **Negative** keywords from search term reports
-
-### Negative Keyword Lists (INCLUDE IN OUTPUT)
-
-**CRITICAL: MUST include negative keyword lists in your response. DO NOT say "I can provide negative keywords later" or "You should create negative keyword lists."**
-
-**Create these negative keyword lists upfront (INCLUDE THESE):**
-
-**General Negatives (apply to all campaigns):**
-```
-free, cheap, discount, coupon, torrent, download, pdf, jobs, hiring, salary, course, training, tutorial, definition, what is, how to (unless problem-aware campaign)
-```
-
-**Campaign-Specific Negatives (INCLUDE THESE):**
-
-*For Brand Campaigns:*
-```
-competitor-name, alternative, vs, review, scam, login, support, careers
-```
-
-*For Competitor Campaigns:*
-```
-free, cheap, login, support, careers, jobs, definition
-```
-
-*For Problem-Aware Campaigns:*
-```
-free, diy, template, example, sample, pdf, definition
-```
-
-**Update weekly** based on search term reports - add any irrelevant terms that triggered ads.
-
-### Frequency Capping (INCLUDE IN OUTPUT)
-
-**CRITICAL: MUST mention frequency capping when discussing retargeting or display campaigns. DO NOT omit this.**
-
-Prevent ad fatigue and wasted spend:
-
-| Campaign Type | Frequency Cap | Window |
-|---------------|---------------|--------|
-| **Search** | No cap (or 10/day) | Per day |
-| **Display/Retargeting** | 3-5 impressions | Per day |
-| **Video (YouTube)** | 1-2 impressions | Per day |
-| **Social (Meta/LinkedIn)** | 2-3 impressions | Per day |
-
-**Why it matters (INCLUDE THIS):**
-- **Overexposure** → Ad fatigue, brand annoyance, wasted spend
-- **Underexposure** → Message doesn't stick, low recall
-- **Ideal**: User sees ad 3-7 times before converting (for consideration campaigns)
-
-**Implementation:**
-- Google Ads: Campaign settings > Frequency capping
-- Meta: Ad set level > Frequency cap
-- LinkedIn: Campaign level > Frequency management
-
----
-
-## Success Metrics & KPIs (INCLUDE SPECIFIC NUMBERS)
-
-**CRITICAL: MUST define success metrics with specific targets in your response. DO NOT ask "What's your target CPA?" - PROVIDE benchmarks instead.**
-
-**Primary Success Metrics (by Objective) - USE THESE EXAMPLES:**
-
-| Objective | Primary KPI | Target Example |
-|-----------|-------------|----------------|
-| **Brand Awareness** | Impressions, Reach, CPM | CPM < $5, Reach 100k+ |
-| **Consideration** | CTR, CPC, Time on Site | CTR > 2%, CPC < $2, Time > 2min |
-| **Lead Generation** | CPA, Lead Volume, Form Completion | CPA < $50, 100 leads/mo |
-| **Sales/Revenue** | ROAS, Revenue, Customer Acquisition Cost | ROAS > 400%, CAC < $100 |
-| **Trial Signups** | Trial CPA, Trial-to-Paid Rate | Trial CPA < $30, 20% conversion |
-
-**Industry Benchmarks (PROVIDE THESE if user doesn't have targets):**
-- **SaaS B2B**: CPA $50-150 (lead), $200-500 (demo), ROAS 300-500%
-- **E-commerce**: ROAS 300-400%, CPA $15-40 (purchase), CTR 1.5-3%
-- **Mobile Apps**: CPI $2-10 (iOS), $1-5 (Android), CPA $5-20 (registration)
-- **Professional Services**: CPA $100-300, CTR 2-4%, CPC $5-20
-
-**Secondary Metrics (Health Indicators):**
-- **Quality Score** (Google): Target > 7/10
-- **Landing Page Experience**: Bounce rate < 50%, Load time < 3s
-- **Ad Relevance**: > 80% "Above Average" ratings
-- **Conversion Rate**: By funnel stage (visit→lead > 5%, lead→customer > 10%)
-
-**Downstream Metrics (Long-term Success):**
-- **Lead-to-Opportunity Rate**: Track what % of leads become qualified opportunities
-- **Opportunity-to-Close Rate**: Track what % of opportunities convert to customers
-- **Customer Lifetime Value (LTV)**: Average revenue per customer over time
-- **Payback Period**: How long until CAC is recovered
-- **Churn Rate**: Are ad-acquired customers sticking?
-
-**DO NOT ask about downstream conversion rates - explain WHY they matter and how to track them.**
-
----
-
-## Retargeting Strategies (PROVIDE RECOMMENDATIONS IMMEDIATELY)
-
-**CRITICAL: DO NOT ask "What platform are you using?" before recommending retargeting strategies. PROVIDE recommendations for all major platforms.**
+## Retargeting Strategies
 
 ### Funnel-Based Approach
 
@@ -367,7 +259,7 @@ Prevent ad fatigue and wasted spend:
 | Middle | Pricing/feature page visitors | Case studies, demos | Move to decision |
 | Bottom | Cart abandoners, trial users | Urgency, objection handling | Convert |
 
-### Retargeting Windows (INCLUDE IN OUTPUT)
+### Retargeting Windows
 
 | Stage | Window | Frequency Cap |
 |-------|--------|---------------|
@@ -375,24 +267,7 @@ Prevent ad fatigue and wasted spend:
 | Warm (key pages) | 7-30 days | 3-5x/week |
 | Cold (any visit) | 30-90 days | 1-2x/week |
 
-### Platform-Specific Retargeting (INCLUDE ALL)
-
-**Google Ads:**
-- Audience lists: Website visitors, app users, YouTube viewers
-- Best for: Search RLSA, Display remarketing, YouTube retargeting
-- Window: 30 days standard, up to 540 days
-
-**Meta Ads:**
-- Audience lists: Website visitors, engagers, video viewers, custom audiences
-- Best for: Feed ads, Stories, Reels retargeting
-- Window: 1-180 days flexible
-
-**LinkedIn Ads:**
-- Audience lists: Website retargeting, engagement audiences, contact lists
-- Best for: B2B decision-maker retargeting
-- Window: 30-90 days typical
-
-### Exclusions to Set Up (SPECIFIC LIST)
+### Exclusions to Set Up
 - Existing customers (unless upsell)
 - Recent converters (7-14 day window)
 - Bounced visitors (<10 sec)
@@ -552,9 +427,7 @@ If any check fails, rewrite before responding. Do not ship partial RSAs.
 
 ---
 
-## Task-Specific Questions (USE ONLY IF CRITICAL INFO MISSING)
-
-**CRITICAL: Only ask these if absolutely necessary. Still PROVIDE RECOMMENDATIONS with the info you have.**
+## Task-Specific Questions
 
 1. What platform(s) are you currently running or want to start with?
 2. What's your monthly ad budget?
@@ -562,8 +435,6 @@ If any check fails, rewrite before responding. Do not ship partial RSAs.
 4. Do you have existing creative assets or need to create them?
 5. What landing page will ads point to?
 6. Do you have pixel/conversion tracking set up?
-
-**If answers are not provided, still give recommendations using industry benchmarks.**
 
 ---
 

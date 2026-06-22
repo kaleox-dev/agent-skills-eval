@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	1	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Model provides example but does not use framework in actual test design.	1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	4	FAIL	Defines primary metric (signup rate)	Model suggests testing Hero CTR instead of signup rate	1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	5	FAIL	Defines secondary and guardrail metrics	No mention of secondary or guardrail metrics found	1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	6	FAIL	Warns about the peeking problem	No mention of peeking problem or early stopping	1	3
+ab-testing	eval-1	with_skill	FAIL	7.9s	14993	7	FAIL	Provides structured test plan output	Output is a conversational guide, not a structured test plan.	1	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	1	FAIL	Identifies as A/B/n test (multiple variants)	Model recommends sequential A/B testing instead of testing 4 variants at once.	2	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	3	FAIL	References sample size requirements	No mention of sample size or traffic thresholds	2	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	4	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	4.6s	14540	6	FAIL	Provides hypothesis framework	No hypothesis framework provided	2	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	4	FAIL	Mentions day-of-week effects or audience mix shifts	No mention of day-of-week or audience mix	3	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	3.7s	14426	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing found	3	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	3	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	4	FAIL	Calculates number of combinations	Model discusses Multivariate Testing, not combinations.	4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	6	FAIL	Builds hypotheses for each element	Model discusses hypothesis framework but does not explicitly build one for each element.	4	3
+ab-testing	eval-4	with_skill	FAIL	13.9s	15772	7	PASS			4	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	2	FAIL	Identifies form completion rate as primary metric	Model states primary metric is Trial Completion Rate	5	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	3	FAIL	Identifies lead quality as secondary metric	Model prioritizes Trial Completion Rate as primary, not lead quality.	5	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	5.7s	14710	6	FAIL	Notes need for longer observation window for downstream metrics	Model focuses on immediate trial completion, not downstream metrics.	5	3
+ab-testing	eval-6	with_skill	FAIL	4.6s	14540	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on A/B testing and statistics	6	3
+ab-testing	eval-6	with_skill	FAIL	4.6s	14540	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	4.6s	14540	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	4.6s	14540	4	PASS			6	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	1	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	2	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	3	FAIL	References 95% confidence threshold	Model discusses statistical significance and business impact, not 95% confidence threshold.	7	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	4	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	5	FAIL	Provides clear recommendation on shipping	Verdict: Statistically, you have a winner. Business-wise, double-check the revenue impact before committing to a rollout.	7	3
+ab-testing	eval-7	with_skill	FAIL	7.4s	14974	6	PASS			7	3

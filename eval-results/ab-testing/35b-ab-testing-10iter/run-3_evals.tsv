@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	1	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Missing explicit 'observation' and 'outcome' fields	1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	2	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	3	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	4	FAIL	Defines primary metric (signup rate)	Proposes CTR as primary metric instead	1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	5	PASS			1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	6	FAIL	Warns about the peeking problem	No mention of peeking or p-hacking	1	3
+ab-testing	eval-1	with_skill	FAIL	12.3s	15354	7	PASS			1	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	1	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	2	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	3	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	4	FAIL	Questions whether button color alone is high-impact	No mention of impact magnitude	2	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	5	PASS			2	3
+ab-testing	eval-2	with_skill	FAIL	10.1s	15057	6	PASS			2	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	1	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	2	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	3	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	4	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	5	PASS			3	3
+ab-testing	eval-3	with_skill	FAIL	6.7s	14662	6	PASS			3	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	1	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	2	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	3	FAIL	Addresses dramatically higher traffic requirements	warns MVT requires enormous traffic	4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	4	FAIL	Calculates number of combinations	Mentions 8 combos but no calculation logic	4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	5	PASS			4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	6	FAIL	Builds hypotheses for each element	Asks user to provide hypotheses, does not build them.	4	3
+ab-testing	eval-4	with_skill	FAIL	9.5s	14982	7	FAIL	Provides structured test plan	Asks user for inputs; no plan provided.	4	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	1	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	2	FAIL	Identifies form completion rate as primary metric	Primary Metric: Qualified Trial Starts	5	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	3	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	4	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	5	PASS			5	3
+ab-testing	eval-5	with_skill	FAIL	11.6s	15343	6	FAIL	Notes need for longer observation window for downstream metrics	No mention of observation window duration	5	3
+ab-testing	eval-6	with_skill	FAIL	2.6s	14209	1	FAIL	Recognizes this as primarily a copywriting task	Focuses on A/B test design, not copywriting.	6	3
+ab-testing	eval-6	with_skill	FAIL	2.6s	14209	2	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	2.6s	14209	3	PASS			6	3
+ab-testing	eval-6	with_skill	FAIL	2.6s	14209	4	PASS			6	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	1	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	2	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	3	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	4	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	5	PASS			7	3
+ab-testing	eval-7	with_skill	FAIL	9.4s	15079	6	PASS			7	3

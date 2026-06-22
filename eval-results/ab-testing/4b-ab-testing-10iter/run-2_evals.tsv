@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	1	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	4	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	5	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	6	FAIL	Warns about the peeking problem	No mention of peeking problem	1	2
+ab-testing	eval-1	with_skill	FAIL	10.8s	15444	7	PASS			1	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	1	FAIL	Identifies as A/B/n test (multiple variants)	Model recommends sequential pairwise testing and single variable changes, explicitly stating 4-color tests violate core principles.	2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	7.6s	14984	6	FAIL	Provides hypothesis framework	Model explains why 4-color test is bad but does not provide a specific hypothesis framework.	2	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	4	FAIL	Mentions day-of-week effects or audience mix shifts	No mention of day-of-week or audience mix	3	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	4.7s	14575	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing found	3	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	1	FAIL	Identifies as multivariate test (MVT)	Model recommends sequential A/B/n tests instead of MVT.	4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	3	FAIL	Addresses dramatically higher traffic requirements	Model suggests sequential tests to manage traffic thinning.	4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	4	FAIL	Calculates number of combinations	Model discusses sequential testing and sample size, not calculating combinations.	4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	6	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	11.2s	15466	7	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	2	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	3	FAIL	Identifies lead quality as secondary metric	Model lists Net New Trial Users and Paid Plan Conversion as Guardrail/Secondary, not explicitly as 'lead quality' metric.	5	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	8.5s	15043	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	14572	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on A/B testing and experiment design, not copywriting.	6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	14572	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	14572	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	5.2s	14572	4	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	2	FAIL	Addresses whether sample size is sufficient for this effect size	12k per arm needed >18k to detect this effect.	7	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	3	FAIL	References 95% confidence threshold	Z=1.58 < 1.96; Chi-square=2.4 < 3.84	7	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	4	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	5	FAIL	Provides clear recommendation on shipping	Recommendation: Hold or Abandon	7	2
+ab-testing	eval-7	with_skill	FAIL	10.2s	15527	6	FAIL	Suggests segment analysis or follow-up if borderline	Model recommends 'Hold or Abandon' and 'Re-test' rather than segment analysis.	7	2

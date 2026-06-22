@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	1	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	2	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	3	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	4	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	5	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	6	PASS			1	1	iteration-541
+ad-creative	eval-1	with_skill	FAIL	15.5s	21524	13990	7533	7	PASS			1	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	1	FAIL	Respects Google RSA character limits (30 char headlines, 90 char descriptions)	Headline 31 chars: 'CRM Without the Enterprise Bloat'	2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	2	PASS			2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	3	FAIL	Generates 4+ description variations	Only 3 descriptions provided per RSA	2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	4	FAIL	Includes target keyword in headlines	No target keyword found in headlines.	2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	5	PASS			2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	6	FAIL	Suggests ad extensions	No ad extensions suggested.	2	1	iteration-541
+ad-creative	eval-2	with_skill	FAIL	16.4s	21590	14033	7556	7	PASS			2	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	1	PASS			3	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	2	PASS			3	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	3	PASS			3	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	4	PASS			3	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	5	PASS			3	1	iteration-541
+ad-creative	eval-3	with_skill	FAIL	17.0s	21726	14121	7604	6	PASS			3	1	iteration-541
+ad-creative	eval-4	with_skill	FAIL	6.5s	20627	13407	7219	1	FAIL	Respects LinkedIn character limits (150/70/100)	Model asks for context, does not generate copy.	4	1	iteration-541
+ad-creative	eval-4	with_skill	FAIL	6.5s	20627	13407	7219	2	PASS			4	1	iteration-541
+ad-creative	eval-4	with_skill	FAIL	6.5s	20627	13407	7219	3	PASS			4	1	iteration-541
+ad-creative	eval-4	with_skill	FAIL	6.5s	20627	13407	7219	4	FAIL	Provides multiple angles relevant to security buyers	Model asks for context instead of providing angles.	4	1	iteration-541
+ad-creative	eval-4	with_skill	FAIL	6.5s	20627	13407	7219	5	FAIL	Suggests LinkedIn ad format recommendations	Model asks for context instead of suggesting formats.	4	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	1	FAIL	Activates batch generation workflow	Model asks for context instead of generating.	5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	2	FAIL	Generates for all three platforms	Model asked questions instead of generating.	5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	3	FAIL	Respects each platform's character limits	No ads generated yet	5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	4	FAIL	Identifies angles that work across platforms	Asks for context, does not identify angles.	5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	5	FAIL	Notes TikTok needs video concepts	Model asked for context, did not provide concepts.	5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	6	PASS			5	1	iteration-541
+ad-creative	eval-5	with_skill	FAIL	4.5s	20512	13332	7179	7	FAIL	Generates multiple variations per angle per platform	Model asks for context instead of generating.	5	1	iteration-541
+ad-creative	eval-6	with_skill	FAIL	5.9s	20546	13354	7191	1	PASS			6	1	iteration-541
+ad-creative	eval-6	with_skill	FAIL	5.9s	20546	13354	7191	2	PASS			6	1	iteration-541

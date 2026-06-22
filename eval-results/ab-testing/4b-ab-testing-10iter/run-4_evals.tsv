@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	1	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Model asks for context instead of using framework	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	2	FAIL	Identifies as A/B test type	Model asks for context instead of identifying test type	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	3	FAIL	Addresses sample size calculation based on traffic and baseline rate	Model asks for baseline and traffic to calculate sample size	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	4	FAIL	Defines primary metric (signup rate)	No mention of signup rate in output	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	5	FAIL	Defines secondary and guardrail metrics	No mention of guardrail metrics	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	6	FAIL	Warns about the peeking problem	No mention of peeking problem	1	4
+ab-testing	eval-1	with_skill	FAIL	4.3s	14541	7	FAIL	Provides structured test plan output	Model asks clarifying questions instead of providing a test plan.	1	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	9.2s	15095	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	4.8s	14583	6	PASS			3	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	1	FAIL	Identifies as multivariate test (MVT)	Model recommends sequential testing instead of full MVT	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	2	FAIL	Explains MVT tests combinations of elements	Testing 3 variables simultaneously creates 27 combinations, causing statistical noise.	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	3	FAIL	Addresses dramatically higher traffic requirements	Testing 3 variables simultaneously creates massive sample size requirements.	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	4	FAIL	Calculates number of combinations	No calculation of combinations provided	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	5	FAIL	Suggests sequential A/B tests as alternative if traffic insufficient	Model suggests sequential testing but does not explicitly state it as an alternative for insufficient traffic.	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	6	FAIL	Builds hypotheses for each element	Model asks clarifying questions instead of building hypotheses.	4	4
+ab-testing	eval-4	with_skill	FAIL	7.1s	14867	7	FAIL	Provides structured test plan	Model asks for data before designing plan	4	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	2	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	3	FAIL	Identifies lead quality as secondary metric	Model prioritizes Sign-Up Completion Rate as primary metric	5	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	4	FAIL	Defines guardrail metrics to protect against negative outcomes	No guardrail metrics defined	5	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	8.7s	15156	6	FAIL	Notes need for longer observation window for downstream metrics	Model output does not mention downstream metrics or observation windows.	5	4
+ab-testing	eval-6	with_skill	FAIL	7.3s	14943	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on ab-testing and metrics, not copywriting.	6	4
+ab-testing	eval-6	with_skill	FAIL	7.3s	14943	2	FAIL	References or defers to copywriting skill	Draft a specific hypothesis statement for your test	6	4
+ab-testing	eval-6	with_skill	FAIL	7.3s	14943	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	7.3s	14943	4	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	1	FAIL	Evaluates against statistical significance criteria	P-value 0.14 > 0.05 threshold	7	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	3	FAIL	References 95% confidence threshold	P-value 0.14 > 0.05 threshold	7	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	4	FAIL	Distinguishes statistical significance from practical significance	Model focuses on P-value and confidence intervals, ignoring practical significance.	7	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	5	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	11.0s	15575	6	PASS			7	4

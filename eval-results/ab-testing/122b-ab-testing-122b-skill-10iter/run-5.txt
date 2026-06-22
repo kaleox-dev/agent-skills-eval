@@ -1,0 +1,72 @@
+
+[1m▶ ab-testing-122b[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  **No, do not call the test yet.** Stopping a test early because you see a "winner" at 95% confidence is the **peeking problem**, and it dramatically increases your risk of a **false positive**. Here …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    9.4s · 18772 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  This is an **A/B/n test** (specifically, a 5-experience test: 1 control + 4 variants). While testing colors can be part of a broader optimization strategy, **testing 4 different colors simultaneously…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    19.3s · 19499 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  This is a classic and high-value test. Changing a headline from a feature description ("All-in-One Tool") to a benefit-focused message is one of the highest-leverage changes you can make on a homepag…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    19.6s · 19549 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  This is a **Multivariate Test (MVT)** request. Before we proceed, I must highlight a critical constraint: **Multivariate tests have dramatically higher traffic requirements than standard A/B tests.**…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    22.9s · 19689 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  This is a **copywriting task**, not an A/B testing design task. I cannot generate the full landing page copy for you, as that requires a dedicated copywriting workflow to ensure the messaging aligns …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    4.9s · 18367 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  This is a classic **form field reduction vs. qualification** trade-off test. Since you are adding fields to a trial signup form, you are intentionally increasing friction to potentially improve lead …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    23.6s · 19673 tokens · [32mPASS[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="ab-testing-122b"> <description>When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions "A/…
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  Based on the data provided, here is the analysis of your A/B test results. ### **Executive Summary** * **Statistical Significance:** **Yes.** The result is statistically significant at the 95% confid…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.6s · 19292 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 100.0%[0m  [90m· 16.62s avg · 19263 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-137/benchmark.json[0m
+{
+  "passed": 42,
+  "failed": 0,
+  "skills": [
+    {
+      "skill": "ab-testing-122b",
+      "slug": "ab-testing-122b",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 1,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-137/benchmark.json"
+    }
+  ],
+  "iteration": 137,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-137",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-137/report/index.html"
+}

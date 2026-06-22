@@ -1,0 +1,78 @@
+
+[1m▶ ab-testing-4b[0m  [90m[0m
+  [90m7 evals  target=Qwen/Qwen3.5-4B  judge=Qwen/Qwen3.5-4B  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    Our test has been running for 3 days and Variant B is winning with 95% confidence. Should we call it?
+    [90moutput:[0m  No, do not stop the test yet. You're encountering the **peeking problem**. Checking results early inflates false positive rates. Run for the full pre-calculated duration. 1. **Day-of-week effects hav…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions day-of-week effects or audience mix shifts
+         [90mevidence:[0m No output files were captured.
+    1.6s · 8176 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    I want to A/B test our homepage headline. We currently say 'The All-in-One Project Management Tool' and want to test something benefit-focused. We get about 15,000 visitors/month and our current sign…
+    [90moutput:[0m  This is an A/B test (two variants). **Hypothesis:** Because users currently don't know the core benefit, we believe a benefit-focused headline will cause an increase in signup rate for our homepage v…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    2.3s · 8317 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    we want to test like 4 different CTA button colors on our pricing page. is that a good idea?
+    [90moutput:[0m  This is an **A/B/n test** (multiple variants - 5 experiences total: control + 4 variants). With 5 variants, each gets only 1/5 of your traffic, which reduces statistical power compared to a simple A/…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    4.6s · 8633 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.
+    [90moutput:[0m  This is a **Multivariate Test (MVT)**. You are testing 3 elements simultaneously: 2 headlines × 2 images × 2 CTAs = **8 combinations**. **Combinations:** 2 headlines × 2 images × 2 CTAs = 8 combinati…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    5.0s · 8693 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    Can you help me write copy for our new landing page? We want to test it against the current version.
+    [90moutput:[0m  This is a copywriting task. I recommend using a copywriting skill/workflow to generate the actual page copy first, as I need the creative content to evaluate how it might perform in an experiment. Ho…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m May offer to help with test hypothesis and setup
+         [90mevidence:[0m Model offers to help with hypothesis after copy is provided.
+    1.9s · 8197 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    What metrics should I track for an A/B test on our trial signup page? We're testing a longer form (adds company size and role fields) against the current short form.
+    [90moutput:[0m  This is an A/B test. Here's your test plan: ```markdown ## Test Plan **Type:** A/B test - IDENTIFY THIS FIRST **Hypothesis:** Because users perceive longer forms as less user-friendly and drop off ea…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    4.7s · 8605 tokens · [32mPASS[0m
+
+  [1m#7 eval-7[0m  [36m[with_skill][0m  [90m[7][0m
+    [90msystem:[0m  <skill name="ab-testing-4b"> <description>When the user wants to plan, design, or implement an A/B test or experiment. Optimized for smaller models - provides direct instructions to avoid asking ques…
+    [90muser:[0m    We ran an A/B test on our pricing page for 4 weeks. Control: 2.1% conversion. Variant: 2.4% conversion. 12,000 visitors per variant. Is this statistically significant? Should we ship it?
+    [90moutput:[0m  This is an **A/B test** (two variants). Here is the evaluation based on your data: **Statistical Analysis:** * **Baseline:** 2.1% * **Variant:** 2.4% * **Relative Lift:** 14.3% * **Sample Size:** 12,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m References 95% confidence threshold
+         [90mevidence:[0m p-value (~0.115) is greater than 0.05
+    5.9s · 8905 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 91.7%[0m  [90m· 3.73s avg · 8504 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-214/benchmark.json[0m
+{
+  "passed": 39,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "ab-testing-4b",
+      "slug": "ab-testing-4b",
+      "relPath": "",
+      "evals": 7,
+      "passRate": 0.9285714285714286,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-214/benchmark.json"
+    }
+  ],
+  "iteration": 214,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-214",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-214/report/index.html"
+}
