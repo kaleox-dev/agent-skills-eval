@@ -75,7 +75,7 @@ After completion, check `pipeline/output/skill-models/{skill-name}/` for:
 
 - **Read-only originals**: Base skills are never modified.
 - **History tracking**: Prevents repeating the same fixes.
-- **Max iterations**: Defaults to 5 to prevent overfitting.
+- **Max iterations**: Defaults to 1 (single pass optimization).
 - **Graceful degradation**: If evals fail, the pipeline skips that iteration instead of crashing.
 
 ## Manual Steps (Advanced)

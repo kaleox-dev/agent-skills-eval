@@ -20,7 +20,7 @@ from analyze_results import analyze_tsv
 from generate_prompt import generate_optimization_prompt
 
 # Configuration
-MAX_ITERATIONS = 5
+MAX_ITERATIONS = 1
 TARGET_PASS_RATE = 97.0
 BASE_URL = "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1"
 API_KEY = os.getenv("OPENAI_API_KEY")

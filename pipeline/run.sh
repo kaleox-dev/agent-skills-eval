@@ -12,7 +12,7 @@ cd "$PROJECT_ROOT"
 # Parse arguments
 SKILL=""
 BASE_PATH=""
-MAX_ITERATIONS=5
+MAX_ITERATIONS=1
 
 while [[ $# -gt 0 ]]; do
     case $1 in
