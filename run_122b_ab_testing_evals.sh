@@ -5,9 +5,9 @@
 set -e
 
 # Model configuration
-MODEL_NAME="Qwen/Qwen3.5-122B-A10B-FP8"
-MODEL_URL="https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1"
-MODEL_DISPLAY="Qwen/Qwen3.5-122B-A10B-FP8"
+MODEL_NAME="Qwen3.5-122B-A10B-NVFP4"
+MODEL_URL="https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1"
+MODEL_DISPLAY="RedHatAI/Qwen3.5-122B-A10B-NVFP4"
 
 # API credentials
 export OPENAI_API_KEY="${OPENAI_API_KEY:-}"

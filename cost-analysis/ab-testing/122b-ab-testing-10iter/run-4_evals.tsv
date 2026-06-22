@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	1	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	2	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	3	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	4	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	5	PASS			1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	6	FAIL	Warns about the peeking problem	No mention of peeking problem found.	1	4
+ab-testing	eval-1	with_skill	FAIL	24.2s	15630	7	PASS			1	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	1	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	2	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	3	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	4	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	5	PASS			2	4
+ab-testing	eval-2	with_skill	FAIL	15.4s	15009	6	PASS			2	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	1	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	2	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	3	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	4	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	5	PASS			3	4
+ab-testing	eval-3	with_skill	FAIL	10.0s	14697	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing	3	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	1	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	2	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	3	FAIL	Addresses dramatically higher traffic requirements	MVTs require significantly more traffic than A/B tests.	4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	4	FAIL	Calculates number of combinations	Mentions 2x2x2=8 and 3x3x3=27 variants	4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	5	PASS			4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	6	FAIL	Builds hypotheses for each element	Asks user for hypothesis, does not build one.	4	4
+ab-testing	eval-4	with_skill	FAIL	10.3s	14724	7	FAIL	Provides structured test plan	Plan deferred pending traffic data	4	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	1	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	2	FAIL	Identifies form completion rate as primary metric	Listed as Secondary Metric	5	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	3	FAIL	Identifies lead quality as secondary metric	Model recommends Qualified Trial Starts as Primary	5	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	4	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	5	PASS			5	4
+ab-testing	eval-5	with_skill	FAIL	16.3s	15027	6	PASS			5	4
+ab-testing	eval-6	with_skill	FAIL	9.1s	14557	1	FAIL	Recognizes this as primarily a copywriting task	move beyond just 'writing copy'	6	4
+ab-testing	eval-6	with_skill	FAIL	9.1s	14557	2	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	9.1s	14557	3	PASS			6	4
+ab-testing	eval-6	with_skill	FAIL	9.1s	14557	4	PASS			6	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	1	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	2	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	3	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	4	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	5	PASS			7	4
+ab-testing	eval-7	with_skill	FAIL	15.2s	15004	6	PASS			7	4

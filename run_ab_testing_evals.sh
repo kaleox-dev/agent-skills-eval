@@ -5,9 +5,10 @@
 set -e
 
 # Model configuration (override via environment or defaults)
-MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3.5-122B-A10B-FP8}"
-MODEL_URL="${MODEL_URL:-https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1}"
-MODEL_DISPLAY="${MODEL_DISPLAY:-Qwen/Qwen3.5-122B-A10B-FP8}"
+# For 35B: MODEL_DISPLAY="Qwen/Qwen3.6-35B-A3B-fp8" MODEL_URL="https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.6-35B-A3B-FP8-no-think/v1"
+MODEL_NAME="${MODEL_NAME:-Qwen3.5-122B-A10B-NVFP4}"
+MODEL_URL="${MODEL_URL:-https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1}"
+MODEL_DISPLAY="${MODEL_DISPLAY:-RedHatAI/Qwen3.5-122B-A10B-NVFP4}"
 
 # API credentials
 export OPENAI_API_KEY="${OPENAI_API_KEY:-}"

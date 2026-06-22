@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	1	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	2	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	4	FAIL	Defines primary metric (signup rate)	Email Signup Conversion	1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	5	FAIL	Defines secondary and guardrail metrics	No secondary or guardrail metrics defined in output	1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	6	FAIL	Warns about the peeking problem	No mention of peeking problem	1	1
+ab-testing	eval-1	with_skill	FAIL	18.3s	16023	7	PASS			1	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	1	FAIL	Identifies as A/B/n test (multiple variants)	Model recommends sequential A/B tests instead of A/B/n	2	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	3	FAIL	References sample size requirements	No mention of sample size requirements found	2	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	4	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	5	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	9.6s	14820	6	PASS			2	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	4	FAIL	Mentions day-of-week effects or audience mix shifts	No mention of day-of-week or audience mix	3	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	9.8s	14844	6	FAIL	Mentions sequential testing as alternative approach	No output files were captured.	3	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	1	FAIL	Identifies as multivariate test (MVT)	Model recommends sequential A/B testing instead of MVT.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	3	FAIL	Addresses dramatically higher traffic requirements	Model recommends sequential A/B testing to save traffic.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	4	FAIL	Calculates number of combinations	Model discusses A/B testing strategy, not combination calculation.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	6	FAIL	Builds hypotheses for each element	Model only builds a hypothesis for the Headline element, not for Hero Image or CTA Button.	4	1
+ab-testing	eval-4	with_skill	FAIL	8.1s	14621	7	FAIL	Provides structured test plan	Model recommends sequential A/B testing instead of MVT and asks for context before designing a plan.	4	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	2	FAIL	Identifies form completion rate as primary metric	Model selected 'Trial Signup Conversion Rate' as primary metric	5	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	7.3s	14985	6	FAIL	Notes need for longer observation window for downstream metrics	Model output does not mention observation window or downstream metrics.	5	1
+ab-testing	eval-6	with_skill	FAIL	2.4s	14259	1	FAIL	Recognizes this as primarily a copywriting task	Model focuses on A/B testing metrics and hypothesis design	6	1
+ab-testing	eval-6	with_skill	FAIL	2.4s	14259	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.4s	14259	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.4s	14259	4	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	1	FAIL	Evaluates against statistical significance criteria	p-value 0.027 (one-tail) or 0.054 (two-tail) fails 95% confidence threshold.	7	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	2	FAIL	Addresses whether sample size is sufficient for this effect size	Model states: 'If you aimed for 20% lift, you're underpowered'	7	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	3	FAIL	References 95% confidence threshold	p-value 0.054 exceeds 0.05 threshold	7	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	5	FAIL	Provides clear recommendation on shipping	Do NOT deploy yet at 95% confidence	7	1
+ab-testing	eval-7	with_skill	FAIL	9.0s	15190	6	PASS			7	1

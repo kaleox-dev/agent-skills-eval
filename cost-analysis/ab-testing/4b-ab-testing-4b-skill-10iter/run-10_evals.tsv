@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	1	PASS			1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	2	PASS			1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	3	PASS			1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	4	PASS			1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	5	FAIL	Defines secondary and guardrail metrics	Model lists CTR, time on page, lead quality as secondary; bounce rate, total volume as guardrail.	1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	6	PASS			1	10	iteration-221
+ab-testing	eval-1	with_skill	FAIL	9.8s	9359	7	PASS			1	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	1	PASS			2	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	2	PASS			2	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	3	PASS			2	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	4	PASS			2	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	5	FAIL	Suggests alternative higher-impact elements to test	Model suggests A/B/n test and color change, not alternative elements.	2	10	iteration-221
+ab-testing	eval-2	with_skill	FAIL	5.1s	8700	6	PASS			2	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	1	PASS			3	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	2	PASS			3	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	3	PASS			3	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	4	PASS			3	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	5	PASS			3	10	iteration-221
+ab-testing	eval-3	with_skill	FAIL	1.8s	8207	6	PASS			3	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	1	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	2	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	3	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	4	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	5	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	6	PASS			4	10	iteration-221
+ab-testing	eval-4	with_skill	FAIL	7.9s	9100	7	PASS			4	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	1	PASS			5	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	2	PASS			5	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	3	PASS			5	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	4	FAIL	Defines guardrail metrics to protect against negative outcomes	Guardrail: Total form submissions, spam rate, bounce rate	5	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	5	PASS			5	10	iteration-221
+ab-testing	eval-5	with_skill	FAIL	4.6s	8638	6	PASS			5	10	iteration-221
+ab-testing	eval-6	with_skill	FAIL	5.7s	8713	1	PASS			6	10	iteration-221
+ab-testing	eval-6	with_skill	FAIL	5.7s	8713	2	PASS			6	10	iteration-221
+ab-testing	eval-6	with_skill	FAIL	5.7s	8713	3	PASS			6	10	iteration-221
+ab-testing	eval-6	with_skill	FAIL	5.7s	8713	4	PASS			6	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	1	PASS			7	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	2	PASS			7	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	3	FAIL	References 95% confidence threshold	p-value 0.076 > 0.05	7	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	4	PASS			7	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	5	PASS			7	10	iteration-221
+ab-testing	eval-7	with_skill	FAIL	2.4s	8347	6	PASS			7	10	iteration-221

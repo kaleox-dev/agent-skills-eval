@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	1	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Missing explicit belief, outcome, and metric fields	1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	2	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	3	PASS			1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	4	FAIL	Defines primary metric (signup rate)	No mention of signup rate metric	1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	5	FAIL	Defines secondary and guardrail metrics	No secondary or guardrail metrics defined.	1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	6	FAIL	Warns about the peeking problem	No mention of peeking or early stopping	1	2
+ab-testing	eval-1	with_skill	FAIL	11.0s	15193	7	FAIL	Provides structured test plan output	Output asks for user input before providing plan	1	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	1	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	2	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	3	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	4	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	5	PASS			2	2
+ab-testing	eval-2	with_skill	FAIL	9.2s	14950	6	PASS			2	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	1	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	2	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	3	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	4	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	5	PASS			3	2
+ab-testing	eval-3	with_skill	FAIL	6.9s	14679	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing	3	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	1	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	2	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	3	FAIL	Addresses dramatically higher traffic requirements	MVTs require massive traffic; recommends A/B if low.	4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	4	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	5	PASS			4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	6	FAIL	Builds hypotheses for each element	Hypothesis targets combination, not each element.	4	2
+ab-testing	eval-4	with_skill	FAIL	12.7s	15382	7	PASS			4	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	1	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	2	FAIL	Identifies form completion rate as primary metric	Primary metric is Trial Signup Conversion Rate	5	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	3	FAIL	Identifies lead quality as secondary metric	Lead quality is downstream, not secondary	5	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	4	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	5	PASS			5	2
+ab-testing	eval-5	with_skill	FAIL	10.7s	15225	6	PASS			5	2
+ab-testing	eval-6	with_skill	FAIL	4.6s	14429	1	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.6s	14429	2	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.6s	14429	3	PASS			6	2
+ab-testing	eval-6	with_skill	FAIL	4.6s	14429	4	PASS			6	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	1	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	2	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	3	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	4	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	5	PASS			7	2
+ab-testing	eval-7	with_skill	FAIL	9.7s	15156	6	PASS			7	2

@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	1	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	2	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	3	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	4	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	5	PASS			1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	6	FAIL	Warns about the peeking problem	No mention of peeking or early stopping.	1	10
+ab-testing	eval-1	with_skill	FAIL	9.0s	14950	7	PASS			1	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	1	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	2	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	3	PASS			2	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	4	FAIL	Questions whether button color alone is high-impact	No mention of button color impact	2	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	5	FAIL	Suggests alternative higher-impact elements to test	Suggests narrowing variants, not new elements.	2	10
+ab-testing	eval-2	with_skill	FAIL	7.2s	14712	6	FAIL	Provides hypothesis framework	No hypothesis framework provided	2	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	1	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	2	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	3	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	4	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	5	PASS			3	10
+ab-testing	eval-3	with_skill	FAIL	5.3s	14489	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing	3	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	1	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	2	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	3	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	4	FAIL	Calculates number of combinations	No calculation performed	4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	5	PASS			4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	6	FAIL	Builds hypotheses for each element	Provides one combined hypothesis, not per element.	4	10
+ab-testing	eval-4	with_skill	FAIL	11.6s	15260	7	FAIL	Provides structured test plan	No test plan provided; asks for traffic data first.	4	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	1	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	2	FAIL	Identifies form completion rate as primary metric	Primary Metric is Free Trial Start Rate	5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	3	FAIL	Identifies lead quality as secondary metric	Primary metric is Free Trial Start Rate	5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	4	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	5	PASS			5	10
+ab-testing	eval-5	with_skill	FAIL	10.0s	15122	6	FAIL	Notes need for longer observation window for downstream metrics	No observation window mentioned	5	10
+ab-testing	eval-6	with_skill	FAIL	5.5s	14551	1	FAIL	Recognizes this as primarily a copywriting task	Focuses on A/B test design, not copy.	6	10
+ab-testing	eval-6	with_skill	FAIL	5.5s	14551	2	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	5.5s	14551	3	PASS			6	10
+ab-testing	eval-6	with_skill	FAIL	5.5s	14551	4	PASS			6	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	1	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	2	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	3	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	4	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	5	PASS			7	10
+ab-testing	eval-7	with_skill	FAIL	4.7s	14496	6	PASS			7	10

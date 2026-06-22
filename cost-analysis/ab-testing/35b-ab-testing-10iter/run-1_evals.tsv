@@ -1,0 +1,43 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	1	FAIL	Uses the hypothesis framework with observation, belief, outcome, and metric	Missing explicit observation and belief sections	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	2	FAIL	Identifies as A/B test type	No explicit A/B test identification found	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	3	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	4	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	5	PASS			1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	6	FAIL	Warns about the peeking problem	No mention of peeking or early stopping.	1	1
+ab-testing	eval-1	with_skill	FAIL	9.6s	15036	7	FAIL	Provides structured test plan output	No output files captured	1	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	1	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	2	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	3	PASS			2	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	4	FAIL	Questions whether button color alone is high-impact	No mention of color impact alone	2	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	5	FAIL	Suggests alternative higher-impact elements to test	No alternative elements suggested	2	1
+ab-testing	eval-2	with_skill	FAIL	8.3s	14833	6	FAIL	Provides hypothesis framework	No hypothesis stated	2	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	1	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	2	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	3	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	4	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	5	PASS			3	1
+ab-testing	eval-3	with_skill	FAIL	5.5s	14500	6	FAIL	Mentions sequential testing as alternative approach	No mention of sequential testing found.	3	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	1	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	2	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	3	FAIL	Addresses dramatically higher traffic requirements	States MVT requires significantly more traffic	4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	4	FAIL	Calculates number of combinations	No calculation performed	4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	5	PASS			4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	6	FAIL	Builds hypotheses for each element	No hypotheses built yet	4	1
+ab-testing	eval-4	with_skill	FAIL	6.8s	14653	7	FAIL	Provides structured test plan	No test plan provided; only questions asked.	4	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	1	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	2	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	3	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	4	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	5	PASS			5	1
+ab-testing	eval-5	with_skill	FAIL	11.4s	15328	6	FAIL	Notes need for longer observation window for downstream metrics	No mention of observation window duration	5	1
+ab-testing	eval-6	with_skill	FAIL	2.2s	14167	1	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.2s	14167	2	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.2s	14167	3	PASS			6	1
+ab-testing	eval-6	with_skill	FAIL	2.2s	14167	4	PASS			6	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	1	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	2	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	3	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	4	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	5	PASS			7	1
+ab-testing	eval-7	with_skill	FAIL	9.1s	15014	6	PASS			7	1
