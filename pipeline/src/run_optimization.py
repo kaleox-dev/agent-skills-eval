@@ -71,12 +71,22 @@ def run_evals(skill_path: str, skill_name: str, output_folder: str, iterations: 
     print(f"Running evals: {' '.join(cmd)}")
     result = subprocess.run(cmd, capture_output=True, text=True)
     
-    if result.returncode != 0:
+    # Check if TSV was generated (success indicator)
+    output_path = Path(output_folder)
+    tsv_generated = list(output_path.glob("*_evals.tsv"))
+    
+    if result.returncode != 0 and not tsv_generated:
         print(f"Evals failed: {result.stderr}")
-        # Don't raise - we'll analyze partial results
         return False
     
-    return True
+    # Even if returncode is non-zero, if TSV was generated, consider it success
+    # (The script may return non-zero for "merged.tsv not generated" which is OK for single run)
+    if tsv_generated:
+        print(f"Evals completed. TSV generated: {tsv_generated[0]}")
+        return True
+    
+    print(f"Evals failed: No TSV generated. stderr: {result.stderr}")
+    return False
 
 def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = MAX_ITERATIONS):
     """
@@ -129,22 +139,22 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
         
         # 2. Analyze results
         merged_tsv = Path(eval_folder) / "merged.tsv"
-        if not merged_tsv.exists():
-            # Try to find merged.tsv
-            merged_tsv_list = list(Path(eval_folder).glob("merged.tsv"))
-            merged_tsv = merged_tsv_list[0] if merged_tsv_list else None
         
-        if merged_tsv and merged_tsv.stat().st_size > 100:  # Check if file has content beyond header
+        # If merged.tsv doesn't exist (single run), use run-1_evals.tsv
+        if not merged_tsv.exists():
+            merged_tsv = Path(eval_folder) / "run-1_evals.tsv"
+        
+        if merged_tsv.exists() and merged_tsv.stat().st_size > 100:  # Check if file has content beyond header
             analysis = analyze_tsv(str(merged_tsv), str(output_dir / f"analysis_iter{iteration}.json"))
         else:
-            print(f"No valid merged.tsv found or file is empty: {merged_tsv}")
+            print(f"No valid TSV found or file is empty: {merged_tsv}")
             # Create a dummy analysis with 0% pass rate to trigger optimization
             analysis = {
                 "skill_name": skill_name,
                 "total_assertions": 0,
                 "total_failures": 0,
                 "pass_rate": 0.0,
-                "top_failure_patterns": [{"assertion": "No evals run", "fail_count": 1, "sample_evidence": "merged.tsv empty or missing"}]
+                "top_failure_patterns": [{"assertion": "No evals run", "fail_count": 1, "sample_evidence": "TSV empty or missing"}]
             }
             with open(output_dir / f"analysis_iter{iteration}.json", 'w') as f:
                 json.dump(analysis, f, indent=2)
@@ -192,9 +202,10 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
         
         next_skill_dir.mkdir(parents=True, exist_ok=True)
         
-        # Copy evals to new skill dir
-        if (current_skill_path / "evals").exists():
-            shutil.copytree(current_skill_path / "evals", next_skill_dir / "evals", dirs_exist_ok=True)
+        # Copy evals from original (NOT from current_skill_path which may not have them)
+        original_evals = output_dir / "evals_original"
+        if original_evals.exists():
+            shutil.copytree(original_evals, next_skill_dir / "evals", dirs_exist_ok=True)
         
         # Write enhanced skill
         with open(next_skill_dir / "SKILL.md", 'w') as f:

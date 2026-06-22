@@ -1,59 +1,44 @@
 {
   "skill_name": "co-marketing-iter1",
-  "total_assertions": 310,
-  "total_passed": 224,
-  "total_failures": 86,
-  "pass_rate": 72.3,
+  "total_assertions": 31,
+  "total_passed": 24,
+  "total_failures": 7,
+  "pass_rate": 77.4,
   "top_failure_patterns": [
     {
       "assertion": "Checks for product-marketing.md",
-      "fail_count": 10,
+      "fail_count": 1,
       "sample_evidence": "No output files were captured."
     },
     {
-      "assertion": "Uses brainstorming prompts",
-      "fail_count": 10,
-      "sample_evidence": "No prompts used; provided 5 ideas directly."
-    },
-    {
-      "assertion": "Includes all 6 scoring dimensions",
-      "fail_count": 10,
-      "sample_evidence": "Only 2 axes (Impact, Velocity) used."
-    },
-    {
       "assertion": "Mentions Crossbeam or account overlap data",
-      "fail_count": 7,
-      "sample_evidence": "No mention of Crossbeam or account overlap data."
+      "fail_count": 1,
+      "sample_evidence": "No mention of Crossbeam or account overlap data"
+    },
+    {
+      "assertion": "Uses brainstorming prompts",
+      "fail_count": 1,
+      "sample_evidence": "No brainstorming prompts used"
     },
     {
       "assertion": "Keeps it short and personal",
-      "fail_count": 7,
-      "sample_evidence": "Email is long and uses formal structure"
+      "fail_count": 1,
+      "sample_evidence": "Email is long and includes meta-analysis."
+    },
+    {
+      "assertion": "Includes all 6 scoring dimensions",
+      "fail_count": 1,
+      "sample_evidence": "Only 4 dimensions listed: Readiness, Reciprocity, Strategic Fit, Risk"
     },
     {
       "assertion": "Weights by goal",
-      "fail_count": 7,
-      "sample_evidence": "No weights or goal metrics provided"
-    },
-    {
-      "assertion": "Mentions measuring lead quality not just volume",
-      "fail_count": 7,
-      "sample_evidence": "No mention of lead quality metrics"
-    },
-    {
-      "assertion": "Mentions what to prepare for the call",
-      "fail_count": 6,
-      "sample_evidence": "No preparation steps mentioned."
+      "fail_count": 1,
+      "sample_evidence": "Weights assigned to criteria, not goals"
     },
     {
       "assertion": "Recommends post-campaign debrief",
-      "fail_count": 6,
-      "sample_evidence": "No mention of debrief or review meeting."
-    },
-    {
-      "assertion": "Applies scoring criteria",
-      "fail_count": 4,
-      "sample_evidence": "No scoring matrix or criteria applied."
+      "fail_count": 1,
+      "sample_evidence": "No mention of debrief"
     }
   ]
 }

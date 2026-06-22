@@ -2,50 +2,38 @@ You are an expert Skill Engineer optimizing an AI skill based on evaluation resu
 
 CURRENT STATUS:
 - Skill: co-marketing-iter1
-- Pass Rate: 72.3%
+- Pass Rate: 77.4%
 - Target: 97%
-- Total Failures: 86
+- Total Failures: 7
 
 TOP FAILURE PATTERNS:
 1. Assertion: "Checks for product-marketing.md"
-   Fail Count: 10
+   Fail Count: 1
    Sample Evidence: "No output files were captured."
 
-2. Assertion: "Uses brainstorming prompts"
-   Fail Count: 10
-   Sample Evidence: "No prompts used; provided 5 ideas directly."
+2. Assertion: "Mentions Crossbeam or account overlap data"
+   Fail Count: 1
+   Sample Evidence: "No mention of Crossbeam or account overlap data"
 
-3. Assertion: "Includes all 6 scoring dimensions"
-   Fail Count: 10
-   Sample Evidence: "Only 2 axes (Impact, Velocity) used."
+3. Assertion: "Uses brainstorming prompts"
+   Fail Count: 1
+   Sample Evidence: "No brainstorming prompts used"
 
-4. Assertion: "Mentions Crossbeam or account overlap data"
-   Fail Count: 7
-   Sample Evidence: "No mention of Crossbeam or account overlap data."
+4. Assertion: "Keeps it short and personal"
+   Fail Count: 1
+   Sample Evidence: "Email is long and includes meta-analysis."
 
-5. Assertion: "Keeps it short and personal"
-   Fail Count: 7
-   Sample Evidence: "Email is long and uses formal structure"
+5. Assertion: "Includes all 6 scoring dimensions"
+   Fail Count: 1
+   Sample Evidence: "Only 4 dimensions listed: Readiness, Reciprocity, Strategic Fit, Risk"
 
 6. Assertion: "Weights by goal"
-   Fail Count: 7
-   Sample Evidence: "No weights or goal metrics provided"
+   Fail Count: 1
+   Sample Evidence: "Weights assigned to criteria, not goals"
 
-7. Assertion: "Mentions measuring lead quality not just volume"
-   Fail Count: 7
-   Sample Evidence: "No mention of lead quality metrics"
-
-8. Assertion: "Mentions what to prepare for the call"
-   Fail Count: 6
-   Sample Evidence: "No preparation steps mentioned."
-
-9. Assertion: "Recommends post-campaign debrief"
-   Fail Count: 6
-   Sample Evidence: "No mention of debrief or review meeting."
-
-10. Assertion: "Applies scoring criteria"
-   Fail Count: 4
-   Sample Evidence: "No scoring matrix or criteria applied."
+7. Assertion: "Recommends post-campaign debrief"
+   Fail Count: 1
+   Sample Evidence: "No mention of debrief"
 
 
 

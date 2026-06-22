@@ -12,10 +12,10 @@ from collections import Counter
 
 def analyze_tsv(tsv_path: str, output_path: str = None):
     """
-    Analyze a merged.tsv file and extract failure patterns.
+    Analyze a merged.tsv file (or single run TSV) and extract failure patterns.
     
     Args:
-        tsv_path: Path to merged.tsv
+        tsv_path: Path to merged.tsv or run-1_evals.tsv
         output_path: Optional path to save analysis JSON (default: same dir as tsv)
     """
     tsv_file = Path(tsv_path)
@@ -24,6 +24,20 @@ def analyze_tsv(tsv_path: str, output_path: str = None):
     
     # Load TSV
     df = pd.read_csv(tsv_file, sep='\t')
+    
+    # If merged.tsv is empty (header only), look for run-1_evals.tsv
+    if len(df) <= 1:  # Only header or empty
+        parent_dir = tsv_file.parent
+        run_tsv = parent_dir / "run-1_evals.tsv"
+        if run_tsv.exists():
+            df = pd.read_csv(run_tsv, sep='\t')
+        else:
+            # Try to find any run-*_evals.tsv
+            run_files = list(parent_dir.glob("run-*_evals.tsv"))
+            if run_files:
+                df = pd.read_csv(run_files[0], sep='\t')
+            else:
+                raise FileNotFoundError(f"No valid TSV data found in {tsv_file.parent}")
     
     # Filter for failures only
     failures = df[df['Assertion Status'] == 'FAIL']
