@@ -6,7 +6,6 @@
       "prompt": "Here's our app on the App Store: https://apps.apple.com/us/app/example/id123456789. Can you audit our listing and tell me what to fix?",
       "expected_output": "Should check for product-marketing.md first. Should detect this is an Apple App Store URL and run the full ASO audit workflow. Should fetch the listing and extract Apple-specific fields (title 30 chars, subtitle 30 chars, description, promotional text 170 chars, category, screenshots, video, ratings). Should classify the app's brand maturity tier (Dominant/Established/Challenger) before scoring. Should score all 6 dimensions (Title & Subtitle 20%, Description 15%, Visual Assets 25%, Ratings & Reviews 20%, Metadata & Freshness 10%, Conversion Signals 10%) with weighted total out of 100 and a grade. Should output a scorecard, top 3 quick wins, detailed findings, keyword suggestions, visual recommendations, and prioritized action plan with specific 'change X from Y to Z' recommendations including character counts.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies as Apple App Store URL",
         "Classifies brand maturity tier",
         "Scores all 6 dimensions with weights",
