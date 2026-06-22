@@ -1,0 +1,71 @@
+
+[1m▶ aso-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    Instagram's App Store listing has just 'Instagram' as the title and barely any keywords. Should they fix that?
+    [90moutput:[0m  # ASO Audit: Instagram **Store:** Apple App Store / Google Play **URL:** `apps.apple.com/us/app/instagram/id389801252` / `play.google.com/store/apps/details?id=com.instagram.android` **Audit date:** …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    25.7s · 24627 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    We're a small fintech startup with about 5,000 downloads. Our Play Store listing has a 2.8 rating and we haven't updated the description in 8 months. Help us figure out what to fix first.
+    [90moutput:[0m  # ASO Audit: Your Fintech App **Store:** Google Play **URL:** [Assumed based on context] **Audit date:** May 22, 2026 **Brand tier:** **Challenger** — With 5,000 downloads, you are in the Challenger …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    24.7s · 24542 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    Here's our app on the App Store: https://apps.apple.com/us/app/example/id123456789. Can you audit our listing and tell me what to fix?
+    [90moutput:[0m  # ASO Audit: Example **Store:** Apple App Store **URL:** https://apps.apple.com/us/app/example/id123456789 **Audit date:** 2026-03-15 **Brand tier:** Challenger — The app name "Example" and placehold…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    28.9s · 24942 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    Compare our app https://apps.apple.com/us/app/ourapp/id111 against these two competitors: https://apps.apple.com/us/app/competitor1/id222 and https://apps.apple.com/us/app/competitor2/id333
+    [90moutput:[0m  # ASO Audit: Competitor Comparison Analysis **Store:** Apple App Store **URLs:** User App, Competitor 1, Competitor 2 **Audit date:** 2026-05-22 **Brand tier:** Challenger — Assuming these are standa…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    38.2s · 25862 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    We only have 3 screenshots and no preview video. Does this really matter that much?
+    [90moutput:[0m  Yes, it matters significantly. In fact, having only 3 screenshots and no video is one of the most common reasons apps fail to convert search traffic into installs. Based on the ASO best practices, he…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions screenshot caption indexing (Apple, 2025)
+         [90mevidence:[0m No mention of caption indexing or 2025
+    10.0s · 23148 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="aso-35b"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my a…
+    [90muser:[0m    Should I run a Custom Product Page experiment on iOS for our paid search campaigns?
+    [90moutput:[0m  To give you a precise recommendation, I need a bit more context about your app and current setup. However, I can provide the strategic framework to decide. The short answer is: **Yes, you should, but…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies Custom Product Pages as iOS-specific
+         [90mevidence:[0m No mention of iOS or platform specificity.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play equivalents
+         [90mevidence:[0m No mention of Google Play
+    12.0s · 23380 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 91.0%[0m  [90m· 23.24s avg · 24417 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-579/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "aso-35b",
+      "slug": "aso-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.918918918918919,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-579/benchmark.json"
+    }
+  ],
+  "iteration": 579,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-579",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-579/report/index.html"
+}

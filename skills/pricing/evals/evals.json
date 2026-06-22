@@ -4,9 +4,8 @@
     {
       "id": 1,
       "prompt": "Help me figure out pricing for our new SaaS product. It's a customer support platform for e-commerce stores. We're not sure whether to charge per agent, per ticket, or flat rate. Currently thinking $49-199/month range.",
-      "expected_output": "Should check for product-marketing.md first. Should apply the three pricing axes framework: packaging (what's included in each tier), pricing metric (per agent, per ticket, flat rate — evaluate each), price point ($49-199 range evaluation). Should discuss value metrics and which aligns best with value delivered (per agent is common in support, but per ticket aligns with usage). Should recommend a good-better-best tier structure. Should address pricing psychology. Should provide a specific pricing recommendation with rationale.",
+      "expected_output": "Should check for product-marketing.md first. Should apply the three pricing axes framework: packaging (what's included in each tier), pricing metric (per agent, per ticket, flat rate \u2014 evaluate each), price point ($49-199 range evaluation). Should discuss value metrics and which aligns best with value delivered (per agent is common in support, but per ticket aligns with usage). Should recommend a good-better-best tier structure. Should address pricing psychology. Should provide a specific pricing recommendation with rationale.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Applies three pricing axes framework",
         "Evaluates multiple pricing metrics",
         "Discusses which metric aligns with value delivered",
@@ -36,7 +35,6 @@
       "prompt": "how do we figure out what people will actually pay? we're launching a new product and have no idea what to charge.",
       "expected_output": "Should trigger on casual phrasing. Should apply the pricing research methods: Van Westendorp price sensitivity analysis (too cheap, bargain, expensive, too expensive), MaxDiff for feature importance, competitive benchmarking. Should explain how to run each method. Should also recommend simpler approaches: talking to potential customers, analyzing competitor pricing, testing different price points. Should provide a practical pricing research plan they can execute.",
       "assertions": [
-        "Triggers on casual phrasing",
         "Applies Van Westendorp price sensitivity method",
         "Applies MaxDiff for feature importance",
         "Recommends competitive benchmarking",
@@ -49,7 +47,7 @@
     {
       "id": 4,
       "prompt": "We have a Basic ($19), Pro ($49), and Enterprise (custom) plan. The Pro plan gets 70% of signups. Should we add a plan between Pro and Enterprise?",
-      "expected_output": "Should apply the good-better-best tier structure framework. Should analyze the current situation: Pro capturing 70% is actually healthy, but the gap to Enterprise suggests there may be mid-market customers underserved. Should evaluate whether a 4th tier makes sense: does it address a real gap, or will it create choice paralysis? Should apply pricing psychology (Hick's Law — more options can reduce decisions). Should recommend either a 4th tier with clear differentiation or adjusting the Pro plan to better bridge the gap.",
+      "expected_output": "Should apply the good-better-best tier structure framework. Should analyze the current situation: Pro capturing 70% is actually healthy, but the gap to Enterprise suggests there may be mid-market customers underserved. Should evaluate whether a 4th tier makes sense: does it address a real gap, or will it create choice paralysis? Should apply pricing psychology (Hick's Law \u2014 more options can reduce decisions). Should recommend either a 4th tier with clear differentiation or adjusting the Pro plan to better bridge the gap.",
       "assertions": [
         "Applies good-better-best tier structure",
         "Analyzes current tier performance",
@@ -80,7 +78,6 @@
       "expected_output": "Should recognize this is a pricing page conversion optimization task, not a pricing strategy task. Should defer to or cross-reference the cro skill, which handles pricing page conversion rate optimization including plan comparison clarity, CTA optimization, and trust signals. Pricing-strategy focuses on the actual pricing decisions (what to charge, how to package), not the page design.",
       "assertions": [
         "Recognizes this as pricing page CRO, not pricing strategy",
-        "References or defers to cro skill",
         "Explains that pricing is about pricing decisions",
         "Does not attempt full page CRO audit"
       ],

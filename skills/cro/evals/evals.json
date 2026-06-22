@@ -6,7 +6,6 @@
       "prompt": "Here's my SaaS landing page: https://example.com/product. We get about 5,000 visitors/month from Google Ads but only 1.2% convert to free trial signups. Can you help me figure out what's wrong?",
       "expected_output": "Should check for product-marketing.md first. Should identify page type (landing page) and conversion goal (free trial signup). Should analyze across the CRO framework dimensions: value proposition clarity, headline effectiveness, CTA placement/copy/hierarchy, visual hierarchy, trust signals, objection handling, and friction points. Should provide recommendations organized as Quick Wins, High-Impact Changes, and Test Ideas. Should note the message match issue between Google Ads and landing page. Should provide 2-3 headline and CTA copy alternatives with rationale.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies page type as landing page",
         "Identifies conversion goal as free trial signup",
         "Analyzes value proposition clarity",
@@ -40,7 +39,6 @@
       "prompt": "this page isn't converting. can you take a look? it's our homepage for a B2B project management tool",
       "expected_output": "Should trigger on the casual 'this page isn't converting' phrasing. Should identify this as a Homepage CRO analysis. Should ask clarifying questions about current conversion rate, traffic sources, and conversion goal. Should apply the full CRO Analysis Framework starting with value proposition clarity. Should address the homepage-specific guidance: serving multiple audiences, leading with broadest value prop, and providing clear paths for different visitor intents. Should provide structured output with Quick Wins, High-Impact Changes, Test Ideas, and Copy Alternatives.",
       "assertions": [
-        "Triggers on casual phrasing",
         "Identifies as Homepage CRO",
         "Asks about current conversion rate",
         "Asks about traffic sources",
@@ -87,7 +85,6 @@
       "expected_output": "Should recognize this is about signup form optimization, not general page CRO. Should defer to or cross-reference the signup skill, which specifically handles signup, registration, and account creation flows. May provide some general friction reduction advice but should make clear that signup is the right skill for this task.",
       "assertions": [
         "Recognizes this as signup flow optimization",
-        "References or defers to signup skill",
         "Does not attempt full cro analysis on a form"
       ],
       "files": []

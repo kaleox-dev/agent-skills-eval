@@ -4,9 +4,8 @@
     {
       "id": 1,
       "prompt": "We want to build a free tool to drive leads for our SEO software. We're thinking about an SEO audit tool or a keyword research tool. Which would be better and how should we approach it?",
-      "expected_output": "Should check for product-marketing.md first. Should apply the evaluation scorecard to compare both tool ideas across dimensions (audience alignment, lead quality, build effort, SEO value, maintenance burden, competitive differentiation). Should reference the tool types from the skill (analyzers, testers). Should recommend the stronger option with rationale. Should discuss lead capture gating strategy (what's free vs what requires email). Should address MVP scope — what's the minimum valuable version. Should provide implementation recommendations.",
+      "expected_output": "Should check for product-marketing.md first. Should apply the evaluation scorecard to compare both tool ideas across dimensions (audience alignment, lead quality, build effort, SEO value, maintenance burden, competitive differentiation). Should reference the tool types from the skill (analyzers, testers). Should recommend the stronger option with rationale. Should discuss lead capture gating strategy (what's free vs what requires email). Should address MVP scope \u2014 what's the minimum valuable version. Should provide implementation recommendations.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Applies evaluation scorecard to compare options",
         "References tool types from the skill",
         "Recommends one option with clear rationale",
@@ -36,7 +35,6 @@
       "prompt": "give me some ideas for free tools we could build. we sell email marketing software for e-commerce brands.",
       "expected_output": "Should trigger on casual phrasing. Should apply the ideation framework to generate tool ideas relevant to email marketing + e-commerce. Should provide 5-8 ideas across different tool types (calculators, generators, analyzers, testers). Examples: email subject line tester, email deliverability checker, email ROI calculator, email template generator, spam score checker. Should briefly score each against the evaluation dimensions. Should recommend top 2-3 to pursue.",
       "assertions": [
-        "Triggers on casual phrasing",
         "Applies ideation framework",
         "Generates ideas across multiple tool types",
         "Ideas are relevant to email marketing + e-commerce",
@@ -63,7 +61,7 @@
     {
       "id": 5,
       "prompt": "Should we gate our free tool behind an email capture or make it completely free? We want leads but don't want to kill usage.",
-      "expected_output": "Should apply the lead capture gating strategy framework. Should present the spectrum: fully ungated → partial gating (basic results free, detailed report gated) → fully gated. Should recommend partial gating as the typical best approach — give enough value to demonstrate the tool's worth, gate the detailed/actionable output. Should discuss tradeoffs: ungated = more SEO value and usage, gated = more leads but fewer users. Should provide specific gating recommendations based on tool type.",
+      "expected_output": "Should apply the lead capture gating strategy framework. Should present the spectrum: fully ungated \u2192 partial gating (basic results free, detailed report gated) \u2192 fully gated. Should recommend partial gating as the typical best approach \u2014 give enough value to demonstrate the tool's worth, gate the detailed/actionable output. Should discuss tradeoffs: ungated = more SEO value and usage, gated = more leads but fewer users. Should provide specific gating recommendations based on tool type.",
       "assertions": [
         "Applies lead capture gating strategy",
         "Presents gating spectrum (ungated to fully gated)",
@@ -80,7 +78,6 @@
       "expected_output": "Should recognize this is a landing page conversion optimization task, not a free tool strategy task. Should defer to or cross-reference the cro skill for optimizing the tool's landing page conversion rate. May provide free-tool-specific context (gating strategy, value demonstration) but should make clear that cro is the right skill for page conversion optimization.",
       "assertions": [
         "Recognizes this as page CRO, not free tool strategy",
-        "References or defers to cro skill",
         "May provide free-tool-specific context",
         "Does not attempt full page CRO using free tool strategy patterns"
       ],

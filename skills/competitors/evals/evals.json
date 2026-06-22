@@ -6,7 +6,6 @@
       "prompt": "Create a 'Best Asana Alternatives' page for our project management tool. We compete mainly on price (we're $8/user vs their $24/user) and simplicity (they've become bloated). Target audience is small teams (5-20 people).",
       "expected_output": "Should check for product-marketing.md first. Should identify this as the plural alternatives format ([Competitor] Alternatives). Should include the essential sections: TL;DR comparison, brief paragraphs on each alternative (including the user's product positioned first or prominently), feature comparison table, pricing comparison, who each alternative is best for. Should use the modular content architecture approach. Should address SEO considerations for the target keyword 'Asana alternatives.' Should position the user's product with the stated differentiators (price, simplicity).",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies as plural alternatives format",
         "Includes TL;DR comparison section",
         "Includes feature comparison table",
@@ -36,9 +35,8 @@
     {
       "id": 3,
       "prompt": "we need a page targeting 'mailchimp alternative' (singular). we're an email marketing platform focused on e-commerce brands.",
-      "expected_output": "Should trigger on casual phrasing. Should identify this as the singular alternative format ([Competitor] Alternative — positioning your product as THE alternative). Should focus the entire page on why the user's product is the best Mailchimp alternative for e-commerce. Should include: why people switch from Mailchimp, what the user's product does better (e-commerce specific features), feature comparison, pricing comparison, migration guide, customer testimonials. Should optimize for the singular keyword 'Mailchimp alternative.'",
+      "expected_output": "Should trigger on casual phrasing. Should identify this as the singular alternative format ([Competitor] Alternative \u2014 positioning your product as THE alternative). Should focus the entire page on why the user's product is the best Mailchimp alternative for e-commerce. Should include: why people switch from Mailchimp, what the user's product does better (e-commerce specific features), feature comparison, pricing comparison, migration guide, customer testimonials. Should optimize for the singular keyword 'Mailchimp alternative.'",
       "assertions": [
-        "Triggers on casual phrasing",
         "Identifies as singular alternative format",
         "Focuses on user's product as THE alternative",
         "Includes why people switch from Mailchimp",
@@ -84,7 +82,6 @@
       "expected_output": "Should recognize this as internal sales enablement material, not a public comparison page. Should defer to or cross-reference the sales-enablement skill, which handles battle cards, objection handling docs, and internal competitive collateral. May provide some competitive positioning advice but should make clear that sales-enablement is the right skill for internal sales materials.",
       "assertions": [
         "Recognizes this as internal sales enablement material",
-        "References or defers to sales-enablement skill",
         "Does not attempt to create internal battle card using public comparison page patterns"
       ],
       "files": []

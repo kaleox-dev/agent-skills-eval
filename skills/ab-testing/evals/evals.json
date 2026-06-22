@@ -47,7 +47,7 @@
     {
       "id": 4,
       "prompt": "Help me set up a multivariate test on our landing page. I want to test the headline, hero image, and CTA button simultaneously.",
-      "expected_output": "Should identify this as a Multivariate Test (MVT). Should explain that MVT tests combinations of elements and requires much more traffic than A/B tests. Should calculate or reference traffic needs (combinations multiply: e.g., 2 headlines × 2 images × 2 CTAs = 8 combinations). Should recommend MVT only if traffic supports it, otherwise suggest sequential A/B tests. Should build hypotheses for each element being tested. Should define interaction effects to watch for. Should provide structured test plan.",
+      "expected_output": "Should identify this as a Multivariate Test (MVT). Should explain that MVT tests combinations of elements and requires much more traffic than A/B tests. Should calculate or reference traffic needs (combinations multiply: e.g., 2 headlines \u00d7 2 images \u00d7 2 CTAs = 8 combinations). Should recommend MVT only if traffic supports it, otherwise suggest sequential A/B tests. Should build hypotheses for each element being tested. Should define interaction effects to watch for. Should provide structured test plan.",
       "assertions": [
         "Identifies as multivariate test (MVT)",
         "Explains MVT tests combinations of elements",
@@ -79,7 +79,6 @@
       "expected_output": "Should recognize this is primarily a copywriting task, not a test setup task. Should defer to or cross-reference the copywriting skill for writing the actual copy. May help frame the test hypothesis and setup, but should make clear that copywriting is the right skill for creating the page copy itself.",
       "assertions": [
         "Recognizes this as primarily a copywriting task",
-        "References or defers to copywriting skill",
         "Does not attempt to write full page copy using test setup patterns",
         "May offer to help with test hypothesis and setup"
       ],

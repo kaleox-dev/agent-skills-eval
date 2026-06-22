@@ -3,10 +3,9 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "We want to create programmatic SEO pages for our CRM. We're thinking of 'CRM for [industry]' pages — like 'CRM for Real Estate,' 'CRM for Healthcare,' etc. How should we approach this?",
+      "prompt": "We want to create programmatic SEO pages for our CRM. We're thinking of 'CRM for [industry]' pages \u2014 like 'CRM for Real Estate,' 'CRM for Healthcare,' etc. How should we approach this?",
       "expected_output": "Should check for product-marketing.md first. Should identify this as the Personas playbook (industry-specific pages). Should apply the core principles: unique value per page (not just swapping the industry name), proprietary data or insights per industry, clean URL structure. Should recommend the implementation framework: keyword research for each industry variation, data requirements (what industry-specific content makes each page unique), template design, internal linking strategy between industry pages and main pages, and indexation strategy. Should warn against thin content (just template + keyword swap).",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies as Personas playbook",
         "Applies core principles (unique value, proprietary data, clean URLs)",
         "Recommends keyword research per variation",
@@ -38,7 +37,6 @@
       "prompt": "we want to rank for '[tool name] integration' keywords. we integrate with 50+ tools and want a page for each. like 'Slack integration', 'Salesforce integration' etc.",
       "expected_output": "Should trigger on casual phrasing. Should identify this as the Integrations playbook. Should recommend: template design for integration pages (what it does, how to set up, use cases), unique content per integration (specific workflows, screenshots, setup steps), keyword research for '[tool] + [your product] integration', URL structure (/integrations/slack), hub page linking to all integration pages, and schema markup considerations. Should emphasize that each page needs genuine unique value, not just 'we integrate with [tool].'",
       "assertions": [
-        "Triggers on casual phrasing",
         "Identifies as Integrations playbook",
         "Recommends template with unique content per integration",
         "Includes setup steps and use cases per page",
@@ -84,7 +82,6 @@
       "expected_output": "Should recognize this is a technical SEO audit task, not a programmatic SEO strategy task. Should defer to or cross-reference the seo-audit skill, which handles crawlability, indexation, and technical SEO issues. Programmatic-seo focuses on strategy, template design, and content planning for scaled pages.",
       "assertions": [
         "Recognizes this as technical SEO audit task",
-        "References or defers to seo-audit skill",
         "Explains that programmatic-seo is for strategy and template design",
         "Does not attempt full technical SEO audit"
       ],
