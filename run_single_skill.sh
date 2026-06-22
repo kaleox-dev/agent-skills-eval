@@ -64,8 +64,8 @@ run_skill() {
 
 # Run 122B
 run_skill \
-    "RedHatAI/Qwen3.5-122B-A10B-NVFP4" \
-    "https://dev4.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-NVFP4/v1" \
+    "Qwen/Qwen3.5-122B-A10B-FP8" \
+    "https://model.inferx.net/funccall/tn-83s8b4zqey/endpoints/Qwen3.5-122B-A10B-FP8/v1" \
     "122B"
 
 # Run 35B (using the working endpoint)
