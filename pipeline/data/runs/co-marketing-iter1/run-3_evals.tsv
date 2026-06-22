@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	1	FAIL	Checks for product-marketing.md	No output files were captured.	1	3	iteration-512
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	2	PASS			1	3	iteration-512
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	3	PASS			1	3	iteration-512
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	4	FAIL	Mentions Crossbeam or account overlap data	No mention of Crossbeam or account overlap data.	1	3	iteration-512
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	5	PASS			1	3	iteration-512
+co-marketing	eval-1	with_skill	FAIL	20.4s	3744	2433	1310	6	PASS			1	3	iteration-512
+co-marketing	eval-2	with_skill	FAIL	10.5s	3208	2085	1122	1	PASS			2	3	iteration-512
+co-marketing	eval-2	with_skill	FAIL	10.5s	3208	2085	1122	2	FAIL	Proposes campaigns across multiple types (content, events, integration, community)	Missing community and integration campaigns	2	3	iteration-512
+co-marketing	eval-2	with_skill	FAIL	10.5s	3208	2085	1122	3	PASS			2	3	iteration-512
+co-marketing	eval-2	with_skill	FAIL	10.5s	3208	2085	1122	4	PASS			2	3	iteration-512
+co-marketing	eval-2	with_skill	FAIL	10.5s	3208	2085	1122	5	FAIL	Uses brainstorming prompts	Model asks clarifying questions, not prompts.	2	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	1	FAIL	Includes subject with both company names	Subject: Co-marketing idea: [Your Company] + [Partner Company]	3	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	2	PASS			3	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	3	PASS			3	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	4	PASS			3	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	5	FAIL	Keeps it short and personal	Includes long analysis section	3	3	iteration-512
+co-marketing	eval-3	with_skill	FAIL	7.1s	2962	1925	1036	6	PASS			3	3	iteration-512
+co-marketing	eval-4	with_skill	FAIL	15.7s	3482	2263	1218	1	PASS			4	3	iteration-512
+co-marketing	eval-4	with_skill	FAIL	15.7s	3482	2263	1218	2	FAIL	Includes all 6 scoring dimensions	Only 5 dimensions listed in table	4	3	iteration-512
+co-marketing	eval-4	with_skill	FAIL	15.7s	3482	2263	1218	3	FAIL	Weights by goal	Model asks for goal instead of applying weights	4	3	iteration-512
+co-marketing	eval-4	with_skill	FAIL	15.7s	3482	2263	1218	4	PASS			4	3	iteration-512
+co-marketing	eval-4	with_skill	FAIL	15.7s	3482	2263	1218	5	PASS			4	3	iteration-512
+co-marketing	eval-5	with_skill	FAIL	17.9s	3639	2365	1273	1	PASS			5	3	iteration-512
+co-marketing	eval-5	with_skill	FAIL	17.9s	3639	2365	1273	2	PASS			5	3	iteration-512
+co-marketing	eval-5	with_skill	FAIL	17.9s	3639	2365	1273	3	FAIL	Lists agreement components	No agreement components listed	5	3	iteration-512
+co-marketing	eval-5	with_skill	FAIL	17.9s	3639	2365	1273	4	FAIL	Mentions measuring lead quality not just volume	No mention of lead quality metrics	5	3	iteration-512
+co-marketing	eval-5	with_skill	FAIL	17.9s	3639	2365	1273	5	FAIL	Recommends post-campaign debrief	No mention of debrief or review meeting.	5	3	iteration-512
+co-marketing	eval-6	with_skill	FAIL	8.1s	2891	1879	1011	1	PASS			6	3	iteration-512
+co-marketing	eval-6	with_skill	FAIL	8.1s	2891	1879	1011	2	PASS			6	3	iteration-512
+co-marketing	eval-6	with_skill	FAIL	8.1s	2891	1879	1011	3	PASS			6	3	iteration-512
+co-marketing	eval-6	with_skill	FAIL	8.1s	2891	1879	1011	4	PASS			6	3	iteration-512

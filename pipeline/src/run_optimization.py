@@ -90,14 +90,24 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
     output_dir = Path(f"pipeline/output/skill-models/{skill_name}")
     output_dir.mkdir(parents=True, exist_ok=True)
     
+    # Create a temporary skill directory with the EXACT skill name
+    # (eval harness requires directory name to match frontmatter.name)
+    temp_skill_dir = Path(f"pipeline/output/skill-models/{skill_name}/{skill_name}")
+    temp_skill_dir.mkdir(parents=True, exist_ok=True)
+    
     # Copy original skill and evals (read-only reference)
     original_dir = Path(base_skill_path).parent
+    shutil.copy2(original_dir / "SKILL.md", temp_skill_dir / "SKILL.md")
+    if (original_dir / "evals").exists():
+        shutil.copytree(original_dir / "evals", temp_skill_dir / "evals", dirs_exist_ok=True)
+    
+    # Also save original for reference
     shutil.copy2(original_dir / "SKILL.md", output_dir / "SKILL.md.original")
     if (original_dir / "evals").exists():
         shutil.copytree(original_dir / "evals", output_dir / "evals_original", dirs_exist_ok=True)
     
     history = []
-    current_skill_path = output_dir / "SKILL.md.original"
+    current_skill_path = temp_skill_dir  # Pass directory, not file
     
     for iteration in range(1, max_iterations + 1):
         print(f"\n{'='*60}")
@@ -120,13 +130,23 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
         merged_tsv = Path(eval_folder) / "merged.tsv"
         if not merged_tsv.exists():
             # Try to find merged.tsv
-            merged_tsv = list(Path(eval_folder).glob("*.tsv"))[0] if list(Path(eval_folder).glob("*.tsv")) else None
+            merged_tsv_list = list(Path(eval_folder).glob("merged.tsv"))
+            merged_tsv = merged_tsv_list[0] if merged_tsv_list else None
         
-        if merged_tsv:
+        if merged_tsv and merged_tsv.stat().st_size > 100:  # Check if file has content beyond header
             analysis = analyze_tsv(str(merged_tsv), str(output_dir / f"analysis_iter{iteration}.json"))
         else:
-            print("No merged.tsv found, skipping analysis")
-            continue
+            print(f"No valid merged.tsv found or file is empty: {merged_tsv}")
+            # Create a dummy analysis with 0% pass rate to trigger optimization
+            analysis = {
+                "skill_name": skill_name,
+                "total_assertions": 0,
+                "total_failures": 0,
+                "pass_rate": 0.0,
+                "top_failure_patterns": [{"assertion": "No evals run", "fail_count": 1, "sample_evidence": "merged.tsv empty or missing"}]
+            }
+            with open(output_dir / f"analysis_iter{iteration}.json", 'w') as f:
+                json.dump(analysis, f, indent=2)
         
         pass_rate = analysis['pass_rate']
         print(f"\nPass Rate: {pass_rate}%")
@@ -143,7 +163,7 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
         # 3. Generate prompt for optimization
         prompt_path = output_dir / f"prompt_iter{iteration}.txt"
         prompt = generate_optimization_prompt(
-            skill_path=str(current_skill_path),
+            skill_path=str(current_skill_path / "SKILL.md"),
             analysis_path=str(output_dir / f"analysis_iter{iteration}.json"),
             history_path=str(output_dir / "history.json") if history else None
         )
@@ -162,11 +182,24 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
             continue
         
         # 5. Save enhanced skill for next iteration
-        next_skill_path = output_dir / f"SKILL.md.iter{iteration+1}"
-        with open(next_skill_path, 'w') as f:
+        # Create new directory with same name (overwrite old)
+        next_skill_dir = Path(f"pipeline/output/skill-models/{skill_name}/{skill_name}")
+        
+        # Remove old skill dir if exists
+        if next_skill_dir.exists():
+            shutil.rmtree(next_skill_dir)
+        
+        next_skill_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Copy evals to new skill dir
+        if (current_skill_path / "evals").exists():
+            shutil.copytree(current_skill_path / "evals", next_skill_dir / "evals", dirs_exist_ok=True)
+        
+        # Write enhanced skill
+        with open(next_skill_dir / "SKILL.md", 'w') as f:
             f.write(enhanced_skill)
         
-        print(f"Enhanced skill saved to: {next_skill_path}")
+        print(f"Enhanced skill saved to: {next_skill_dir / 'SKILL.md'}")
         
         # 6. Update history
         for pattern in analysis['top_failure_patterns']:
@@ -176,7 +209,7 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
             json.dump(history, f, indent=2)
         
         # Update current skill path for next iteration
-        current_skill_path = next_skill_path
+        current_skill_path = next_skill_dir
     
     print(f"\nOptimization complete for {skill_name}")
     print(f"Output directory: {output_dir}")
