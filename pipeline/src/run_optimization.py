@@ -51,7 +51,7 @@ def call_122b_model(prompt: str) -> str:
     
     return response.json()['choices'][0]['message']['content']
 
-def run_evals(skill_path: str, skill_name: str, output_folder: str, config_path: str = None):
+def run_evals(skill_path: str, skill_name: str, output_folder: str, iterations: int = 1, config_path: str = None):
     """Run the evaluation harness on the skill."""
     # Determine config based on skill name suffix
     if config_path is None:
@@ -64,7 +64,7 @@ def run_evals(skill_path: str, skill_name: str, output_folder: str, config_path:
         "bash", "./run_skill_evals.sh",
         "--config", config_path,
         "--skill", skill_path,
-        "--iterations", "10",
+        "--iterations", str(iterations),
         "--output-folder", output_folder
     ]
     
@@ -114,12 +114,13 @@ def optimize_skill(skill_name: str, base_skill_path: str, max_iterations: int = 
         print(f"ITERATION {iteration}/{max_iterations}")
         print(f"{'='*60}")
         
-        # 1. Run evals on current skill version
+        # 1. Run evals on current skill version (1 iteration only)
         eval_folder = f"pipeline/data/runs/{skill_name}-iter{iteration}"
         success = run_evals(
             skill_path=str(current_skill_path),
             skill_name=skill_name,
-            output_folder=eval_folder
+            output_folder=eval_folder,
+            iterations=1  # Only 1 iteration
         )
         
         if not success:
