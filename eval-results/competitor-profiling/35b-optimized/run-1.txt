@@ -1,0 +1,67 @@
+
+[1m▶ competitor-profiling-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  I recommend updating the existing profile rather than starting fresh - this preserves history and enables diffing. Re-pull: pricing page, SEO metrics, changelog. Add a **Change Log section** at the b…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    4.4s · 11032 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    We have 12 competitors. Profile all of them.
+    [90moutput:[0m  I will run all three phases: Phase 1 (Scraping), Phase 2 (SEO Data), Phase 3 (Synthesis). I will save raw data to `competitor-profiles/raw/YYYY-MM-DD/` with subfolders scrapes/, seo/, reviews/. I wil…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    5.7s · 11143 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  I will run all three phases: Phase 1 (Scraping), Phase 2 (SEO Data), Phase 3 (Synthesis). I will save raw data to `competitor-profiles/raw/YYYY-MM-DD/` with subfolders scrapes/, seo/, reviews/. I wil…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    6.9s · 11304 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    What pages should I scrape for a competitor profile?
+    [90moutput:[0m  I will run all three phases: Phase 1 (Scraping), Phase 2 (SEO Data), Phase 3 (Synthesis). I will save raw data to `competitor-profiles/raw/YYYY-MM-DD/` with subfolders scrapes/, seo/, reviews/. I wil…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    11.5s · 11590 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    I want a profile but I don't care about SEO data — just pricing, positioning, and customer logos. Can you skip the DataForSEO calls?
+    [90moutput:[0m  I will run all three phases: Phase 1 (Scraping), Phase 2 (SEO Data), Phase 3 (Synthesis). I will save raw data to `competitor-profiles/raw/YYYY-MM-DD/` with subfolders scrapes/, seo/, reviews/. I wil…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    6.1s · 11122 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    Should I trust the customer logo wall on the competitor's homepage as evidence of who their customers are?
+    [90moutput:[0m  **No, you should not take customer logo walls at face value.** They are marketing assets, not verified customer lists. Here is the critical framework for evaluating them, based on the competitor prof…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes including date pulled
+         [90mevidence:[0m No date mentioned in output.
+    8.4s · 11499 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 96.7%[0m  [90m· 7.18s avg · 11282 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-664/benchmark.json[0m
+{
+  "passed": 30,
+  "failed": 1,
+  "skills": [
+    {
+      "skill": "competitor-profiling-35b",
+      "slug": "competitor-profiling-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.967741935483871,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-664/benchmark.json"
+    }
+  ],
+  "iteration": 664,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-664",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-664/report/index.html"
+}
