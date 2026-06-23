@@ -1,0 +1,65 @@
+
+[1m▶ ad-creative-122b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    we need linkedin ads for our enterprise security product. audience is CISOs and IT directors.
+    [90moutput:[0m  Here are high-performing LinkedIn ad variations for your enterprise security product, tailored specifically for CISOs and IT Directors. I have generated **3 distinct psychological angles** (Problem-A…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    18.3s · 13439 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    I need Google Ads copy for our CRM product. We're targeting the keyword 'best CRM for small business'. Need responsive search ads.
+    [90moutput:[0m  Here is a complete set of Google Ads Responsive Search Ads (RSAs) optimized for the keyword **"best CRM for small business"**. These variations are designed to maximize Quality Score by including the…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    16.9s · 13351 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    Generate ad creative for our Meta (Facebook/Instagram) campaign. We sell an AI writing assistant for content marketers. Main value prop: write blog posts 5x faster. Target audience: content marketing…
+    [90moutput:[0m  Here is a complete set of high-performing Meta ad creative variations tailored for your AI writing assistant, targeting Content Marketing Managers at B2B SaaS companies. ### **Campaign Strategy Overv…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    26.5s · 14029 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    Here's our ad performance data: Ad A (pain point angle) - CTR 2.1%, CPC $3.20, Conv rate 4.5%. Ad B (social proof angle) - CTR 1.4%, CPC $4.10, Conv rate 6.2%. Ad C (feature angle) - CTR 0.8%, CPC $5…
+    [90moutput:[0m  ### Performance Analysis Based on the data provided, here is the breakdown of your current creative performance: * **Ad A (Pain Point):** **Mixed Signal.** * **CTR (2.1%):** Above average (Good creat…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    34.3s · 14563 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    Help me plan our overall paid advertising strategy. We have a $20k monthly budget and want to figure out which platforms to use and how to allocate spend.
+    [90moutput:[0m  To plan a $20k monthly paid advertising strategy effectively, we need to align your budget with your specific business goals (B2B vs. B2C), current funnel maturity, and target audience. Since you hav…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m
+    22.0s · 13539 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ad-creative-122b"> <description>When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising p…
+    [90muser:[0m    I need to generate a big batch of ad variations for a multi-platform campaign launching next week. We're a meal delivery service targeting busy professionals. Need ads for Google, Meta, and TikTok.
+    [90moutput:[0m  Here is a comprehensive batch of ad variations for your meal delivery service targeting busy professionals, optimized for Google Ads, Meta (Facebook/Instagram), and TikTok. ### **Campaign Context & A…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    30.8s · 14338 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 100.0%[0m  [90m· 24.79s avg · 13877 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-26/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 0,
+  "skills": [
+    {
+      "skill": "ad-creative-122b",
+      "slug": "ad-creative-122b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 1,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-26/benchmark.json"
+    }
+  ],
+  "iteration": 26,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-26",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-26/report/index.html"
+}

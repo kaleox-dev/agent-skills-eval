@@ -1,0 +1,35 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	1	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	2	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	3	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	4	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	5	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	6	PASS			1	1	iteration-12
+ad-creative	eval-1	with_skill	FAIL	17.9s	21470	13955	7514	7	PASS			1	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	1	PASS			2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	2	FAIL	Generates 10-15 headline variations	Only 15 headlines total across 3 variations	2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	3	FAIL	Generates 4+ description variations	Only 6 descriptions total, not 4+ per variation	2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	4	FAIL	Includes target keyword in headlines	No target keyword provided or used	2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	5	FAIL	Notes pinning should be used sparingly per skill guidance	No notes pinning observed in output	2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	6	FAIL	Suggests ad extensions	No ad extensions mentioned in output	2	1	iteration-12
+ad-creative	eval-2	with_skill	FAIL	9.1s	20813	13528	7284	7	PASS			2	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	1	PASS			3	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	2	PASS			3	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	3	PASS			3	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	4	PASS			3	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	5	PASS			3	1	iteration-12
+ad-creative	eval-3	with_skill	FAIL	34.8s	22951	14918	8032	6	PASS			3	1	iteration-12
+ad-creative	eval-4	with_skill	FAIL	5.9s	20536	13348	7187	1	FAIL	Respects LinkedIn character limits (150/70/100)	No output files were captured.	4	1	iteration-12
+ad-creative	eval-4	with_skill	FAIL	5.9s	20536	13348	7187	2	PASS			4	1	iteration-12
+ad-creative	eval-4	with_skill	FAIL	5.9s	20536	13348	7187	3	FAIL	Uses risk-reduction and compliance language	Model asks for details, does not use language.	4	1	iteration-12
+ad-creative	eval-4	with_skill	FAIL	5.9s	20536	13348	7187	4	FAIL	Provides multiple angles relevant to security buyers	Model asks for details, provides no angles	4	1	iteration-12
+ad-creative	eval-4	with_skill	FAIL	5.9s	20536	13348	7187	5	FAIL	Suggests LinkedIn ad format recommendations	Model asks for details, does not suggest formats.	4	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	1	FAIL	Activates batch generation workflow	Model asks for details, does not generate ads	5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	2	FAIL	Generates for all three platforms	Model only asked for details, did not generate ads.	5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	3	PASS			5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	4	PASS			5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	5	PASS			5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	6	PASS			5	1	iteration-12
+ad-creative	eval-5	with_skill	FAIL	9.7s	20834	13542	7291	7	FAIL	Generates multiple variations per angle per platform	Model asks for info, did not generate ads	5	1	iteration-12
+ad-creative	eval-6	with_skill	FAIL	6.1s	20587	13381	7205	1	PASS			6	1	iteration-12
+ad-creative	eval-6	with_skill	FAIL	6.1s	20587	13381	7205	2	PASS			6	1	iteration-12
