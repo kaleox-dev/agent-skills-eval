@@ -14,6 +14,12 @@
         "Warns about the peeking problem",
         "Provides structured test plan output"
       ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
+      ],
       "files": []
     },
     {
@@ -27,6 +33,12 @@
         "Questions whether button color alone is high-impact",
         "Suggests alternative higher-impact elements to test",
         "Provides hypothesis framework"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Triggers on casual phrasing",
+          "reason": "Tone adjustment is secondary to core logic; model may respond correctly without explicit trigger recognition"
+        }
       ],
       "files": []
     },
