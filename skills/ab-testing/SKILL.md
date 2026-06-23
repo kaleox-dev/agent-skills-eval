@@ -346,15 +346,12 @@ Over time, your playbook becomes a library of proven growth patterns specific to
 
 ---
 
-## Related Skills
+---
 
-- **cro**: For generating test ideas based on CRO principles
-- **analytics**: For setting up test measurement
-- **copywriting**: For creating variant copy
+## Reference Materials
 
-## Reference Files
 
-### sample-size-guide.md
+### Sample Size Guide
 
 # Sample Size Guide
 
@@ -620,9 +617,10 @@ If days < 14: Likely feasible
 If days < 7: Easy to run, consider running longer anyway
 ```
 
+
 ---
 
-### test-templates.md
+### Test Templates
 
 # A/B Test Templates Reference
 
@@ -902,5 +900,286 @@ For collecting test ideas:
 | H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
 ```
 
+## Related Skills
+
+- **cro**: For generating test ideas based on CRO principles
+- **analytics**: For setting up test measurement
+- **copywriting**: For creating variant copy
+
 ---
 
+## Reference Materials
+
+### Sample Size Guide
+
+Reference for calculating sample sizes and test duration.
+
+#### Sample Size Fundamentals
+
+**Required Inputs:**
+
+1. **Baseline conversion rate**: Your current rate
+2. **Minimum detectable effect (MDE)**: Smallest change worth detecting
+3. **Statistical significance level**: Usually 95% (α = 0.05)
+4. **Statistical power**: Usually 80% (β = 0.20)
+
+**What These Mean:**
+
+- **Baseline conversion rate**: If your page converts at 5%, that's your baseline.
+- **MDE (Minimum Detectable Effect)**: The smallest improvement you care about detecting. Set this based on business impact, implementation cost, and realistic expectations.
+- **Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
+- **Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
+
+#### Sample Size Quick Reference Tables
+
+**Conversion Rate: 1%**
+
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (1% → 1.05%) | 1,500,000 | 3,000,000 |
+| 10% (1% → 1.1%) | 380,000 | 760,000 |
+| 20% (1% → 1.2%) | 97,000 | 194,000 |
+| 50% (1% → 1.5%) | 16,000 | 32,000 |
+| 100% (1% → 2%) | 4,200 | 8,400 |
+
+**Conversion Rate: 5%**
+
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (5% → 5.25%) | 280,000 | 560,000 |
+| 10% (5% → 5.5%) | 72,000 | 144,000 |
+| 20% (5% → 6%) | 18,000 | 36,000 |
+| 50% (5% → 7.5%) | 3,100 | 6,200 |
+| 100% (5% → 10%) | 810 | 1,620 |
+
+**Conversion Rate: 10%**
+
+| Lift to Detect | Sample per Variant | Total Sample |
+|----------------|-------------------|--------------|
+| 5% (10% → 10.5%) | 130,000 | 260,000 |
+| 10% (10% → 11%) | 34,000 | 68,000 |
+| 20% (10% → 12%) | 8,700 | 17,400 |
+| 50% (10% → 15%) | 1,500 | 3,000 |
+| 100% (10% → 20%) | 400 | 800 |
+
+#### Duration Calculator
+
+**Formula:**
+```
+Duration (days) = (Sample per variant × Number of variants) / (Daily traffic × % exposed)
+```
+
+**Examples:**
+
+- **High-traffic page**: Need 10,000 per variant, 5,000 daily traffic = 4 days
+- **Medium-traffic page**: Need 30,000 per variant, 2,000 daily traffic = 30 days
+- **Low-traffic with partial exposure**: Need 15,000 per variant, 500 daily traffic at 50% exposure = 120 days (too long!)
+
+**Minimum Duration Rules:**
+- **1 full week**: To capture day-of-week variation
+- **2 business cycles**: If B2B (weekday vs. weekend patterns)
+- **Through paydays**: If e-commerce (beginning/end of month)
+
+**Maximum Duration Guidelines:** Avoid running tests longer than 4-8 weeks due to novelty effects wearing off, external factors intervening, and opportunity cost.
+
+#### Adjusting for Multiple Variants
+
+| Variants | Multiplier |
+|----------|------------|
+| 2 (A/B) | 1x |
+| 3 (A/B/C) | ~1.5x |
+| 4 (A/B/C/D) | ~2x |
+| 5+ | Consider reducing variants |
+
+#### Common Sample Size Mistakes
+
+1. **Underpowered tests**: Not enough sample to detect realistic effects
+2. **Overpowered tests**: Waiting for sample size when you already have significance (actually fine)
+3. **Wrong baseline rate**: Using wrong conversion rate for calculation
+4. **Ignoring segments**: If you plan segment analysis, calculate sample for smallest segment
+5. **Testing too many things**: Prioritize ruthlessly, run fewer concurrent tests
+
+#### When Sample Size Requirements Are Too High
+
+Options when you can't get enough traffic:
+1. Increase MDE (accept only detecting larger effects)
+2. Lower confidence (use 90% instead of 95%)
+3. Reduce variants
+4. Combine traffic across similar pages
+5. Test upstream where traffic is higher
+6. Don't test — use qualitative data instead
+7. Accept longer duration (weeks/months)
+
+### Test Templates
+
+Templates for planning, documenting, and analyzing experiments.
+
+#### Test Plan Template
+
+```markdown
+# A/B Test: [Name]
+
+## Overview
+- **Owner**: [Name]
+- **Test ID**: [ID in testing tool]
+- **Page/Feature**: [What's being tested]
+- **Planned dates**: [Start] - [End]
+
+## Hypothesis
+
+Because [observation/data],
+we believe [change]
+will cause [expected outcome]
+for [audience].
+We'll know this is true when [metrics].
+
+## Test Design
+
+| Element | Details |
+|---------|---------|
+| Test type | A/B / A/B/n / MVT |
+| Duration | X weeks |
+| Sample size | X per variant |
+| Traffic allocation | 50/50 |
+| Tool | [Tool name] |
+| Implementation | Client-side / Server-side |
+
+## Variants
+
+### Control (A)
+[Screenshot]
+- Current experience
+
+### Variant (B)
+[Screenshot or mockup]
+- [Specific change #1]
+- [Specific change #2]
+- Rationale: [Why we think this will win]
+
+## Metrics
+
+### Primary
+- **Metric**: [metric name]
+- **Definition**: [how it's calculated]
+- **Current baseline**: [X%]
+- **Minimum detectable effect**: [X%]
+
+### Secondary
+- [Metric 1]: [what it tells us]
+- [Metric 2]: [what it tells us]
+
+### Guardrails
+- [Metric that shouldn't get worse]
+
+## Segment Analysis Plan
+- Mobile vs. desktop
+- New vs. returning visitors
+- Traffic source
+
+## Success Criteria
+- Winner: [Primary metric improves by X% with 95% confidence]
+- Loser: [Primary metric decreases significantly]
+- Inconclusive: [What we'll do if no significant result]
+
+## Pre-Launch Checklist
+- [ ] Hypothesis documented and reviewed
+- [ ] Primary metric defined and trackable
+- [ ] Sample size calculated
+- [ ] Test duration estimated
+- [ ] Variants implemented correctly
+- [ ] Tracking verified in all variants
+- [ ] QA completed on all variants
+- [ ] Stakeholders informed
+- [ ] Calendar hold for analysis date
+```
+
+#### Results Documentation Template
+
+```markdown
+# A/B Test Results: [Name]
+
+## Summary
+| Element | Value |
+|---------|-------|
+| Test ID | [ID] |
+| Dates | [Start] - [End] |
+| Duration | X days |
+| Result | Winner / Loser / Inconclusive |
+| Decision | [What we're doing] |
+
+## Results
+
+### Sample Size
+| Variant | Target | Actual | % of target |
+|---------|--------|--------|-------------|
+| Control | X | Y | Z% |
+| Variant | X | Y | Z% |
+
+### Primary Metric: [Metric Name]
+| Variant | Value | 95% CI | vs. Control |
+|---------|-------|--------|-------------|
+| Control | X% | [X%, Y%] | — |
+| Variant | X% | [X%, Y%] | +X% |
+
+**Statistical significance**: p = X.XX (95% = sig / not sig)
+**Practical significance**: [Is this lift meaningful for the business?]
+
+### Segment Analysis
+
+**Mobile vs. Desktop**
+| Segment | Control | Variant | Lift |
+|---------|---------|---------|------|
+| Mobile | X% | Y% | +Z% |
+| Desktop | X% | Y% | +Z% |
+
+## Interpretation
+
+### What happened?
+[Explanation of results in plain language]
+
+### Why do we think this happened?
+[Analysis and reasoning]
+
+### Caveats
+[Any limitations, external factors, or concerns]
+
+## Decision
+
+**Winner**: [Control / Variant]
+
+**Action**: [Implement variant / Keep control / Re-test]
+
+## Learnings
+
+### What we learned
+- [Key insight 1]
+- [Key insight 2]
+
+### What to test next
+- [Follow-up test idea 1]
+- [Follow-up test idea 2]
+```
+
+#### Experiment Prioritization Scorecard
+
+For deciding which tests to run:
+
+| Factor | Weight | Score (1-5) |
+|--------|--------|-------------|
+| Potential impact | 30% | |
+| Confidence in hypothesis | 25% | |
+| Ease of implementation | 20% | |
+| Risk if wrong | 15% | |
+| Strategic alignment | 10% | |
+| **Total** | | |
+
+#### Hypothesis Bank Template
+
+For collecting test ideas:
+
+```markdown
+| ID | Page/Area | Observation | Hypothesis | Potential Impact | Status |
+|----|-----------|-------------|------------|------------------|--------|
+| H1 | Homepage | Low scroll depth | Shorter hero will increase scroll | High | Testing |
+| H2 | Pricing | Users compare plans | Comparison table will help | Medium | Backlog |
+```
