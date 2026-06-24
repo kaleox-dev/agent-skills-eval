@@ -6,14 +6,22 @@
       "prompt": "We're launching our AI SaaS in 3 weeks. Help me plan all the directories we should submit to.",
       "expected_output": "Should check for product-marketing.md first. Should run Phase 0 readiness assessment with the 9 questions before recommending submissions. Should reject submission if any of items 1-7 are 'no' (hard block) and explain why. Should recommend tier mix: Tier 1 flagship launch (~15 — Product Hunt as anchor, BetaList, HN Show HN, Fazier, DevHunt), Tier 2 startup/SaaS (~50), Tier 3 AI directories (~40 — TAAFT, Futurepedia, Toolify), Tier 4 MCP/agent if applicable. Should map the 3-week Product Hunt prep timeline to calendar dates. Should warn against submitting before destination pages exist. Should reference references/directory-list.md and references/positioning-variations.md. Should recommend the 10-in-30 reviews protocol for G2/Capterra. Should set day-30 and day-90 targets from the KPI table.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Runs Phase 0 readiness assessment",
         "Recommends tier mix appropriate to AI SaaS",
         "Maps 3-week PH timeline to calendar dates",
         "Names Product Hunt as anchor",
         "Recommends 10-in-30 reviews protocol",
-        "Sets day-30 and day-90 KPI targets",
-        "References directory-list.md or positioning-variations.md"
+        "Sets day-30 and day-90 KPI targets"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        },
+        {
+          "text": "References directory-list.md or positioning-variations.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },

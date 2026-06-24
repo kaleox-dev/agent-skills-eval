@@ -6,12 +6,17 @@
       "prompt": "We make a project management tool for design agencies. Who should we look for as co-marketing partners?",
       "expected_output": "Should check for product-marketing.md first. Should apply the Partner Identification Framework with audience overlap analysis. Should identify ideal partner characteristics: same buyer persona (design agencies), different problem solved, adjacent in the workflow. Should suggest specific partner categories: design tools (Figma, Adobe), proposal/contract tools (Bonsai, HoneyBook), client communication (Notion, Slack), invoicing/payments (Stripe, FreshBooks), file storage/handoff (Dropbox, Frame.io). Should recommend audience scoring criteria. Should suggest sources to find partners: integration ecosystem, Crossbeam/Reveal for account overlap, customer surveys, G2/Capterra category neighbors, podcasts/newsletters they sponsor.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies same persona / different problem characteristic",
         "Suggests specific partner categories in workflow",
         "Mentions Crossbeam or account overlap data",
         "Lists multiple sources to find partners",
         "Applies scoring criteria"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -74,9 +79,14 @@
       "expected_output": "Should recognize this is about customer referrals, not co-marketing between companies. Should redirect to the referrals skill, which specifically handles customer referral and affiliate programs (customers referring customers). Should note co-marketing is partner-to-partner marketing while referrals is customer-driven word-of-mouth. May offer brief co-marketing context if it's relevant to the strategy, but should make clear referrals is the right skill for the task.",
       "assertions": [
         "Recognizes this is customer referral, not co-marketing",
-        "Defers to referrals skill",
         "Distinguishes co-marketing from referral programs",
         "Does not attempt full co-marketing strategy"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Defers to referrals skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     }

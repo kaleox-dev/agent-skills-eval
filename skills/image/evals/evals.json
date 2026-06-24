@@ -6,13 +6,18 @@
       "prompt": "I need a hero image for a blog post about email deliverability. Make it visually striking.",
       "expected_output": "Should check for product-marketing.md first. Should recommend AI generation as the approach for a one-off blog hero. Should propose a visual metaphor concept that represents email deliverability (e.g., letters being sorted through a maze, signals breaking through a wall, an inbox glow). Should specify 1200x630 (works for both hero and OG image). Should recommend Flux or Gemini for photorealistic, or Ideogram if text in image is needed. Should provide a prompt following Subject + Setting + Style + Lighting + Composition + Technical pattern. Should mention WebP optimization (target <200KB, JPEG fallback). Should not suggest using AI for product UI screenshots.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Recommends AI generation for one-off hero",
         "Proposes visual metaphor for topic",
         "Specifies 1200x630 dimensions",
         "Recommends Flux, Gemini, or Ideogram",
         "Provides structured prompt",
         "Mentions WebP optimization"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },

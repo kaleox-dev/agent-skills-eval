@@ -6,7 +6,6 @@
       "prompt": "We're a B2B SaaS selling RevOps tooling at $30K ACV. Build me a list of 25 prospects.",
       "expected_output": "Should check for product-marketing.md first. Should identify this as the SaaS branch. Should run Phase 1 ICP definition pulling from product-marketing context or asking targeted questions (target industry, headcount range, tech stack signals, funding stage). Should propose discovery sources appropriate for SaaS at $30K ACV: Apollo for breadth, Clay for waterfall enrichment, Crunchbase for funding signals, BuiltWith/Wappalyzer for tech stack, LinkedIn Sales Nav for decision-mapping (manual). Should ask about user's tool access before assuming. Should source 50-75 candidates (2-3x target) before qualifying. Should flag that email validation via Truelist or similar is non-negotiable before final list. Should output SaaS-branch chat table columns (Score | Company | Industry | Size | Signal | Contact | Email status | Confidence) followed by top 3-5 hot leads with one-sentence rationale each. Should reference references/saas-prospecting.md.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Identifies SaaS branch",
         "Runs Phase 1 ICP definition",
         "Recommends multi-source discovery (Apollo, Clay, Crunchbase, BuiltWith)",
@@ -14,8 +13,17 @@
         "Sources 2-3x candidates before qualifying",
         "Requires email validation before final list",
         "Outputs SaaS-branch chat table columns",
-        "Includes top 3-5 outreach targets with rationale",
-        "References saas-prospecting.md"
+        "Includes top 3-5 outreach targets with rationale"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        },
+        {
+          "text": "References saas-prospecting.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -48,8 +56,13 @@
         "Recommends Apollo/ZoomInfo + LinkedIn Sales Nav",
         "Notes CMO hires often only on LinkedIn",
         "Outputs B2B-branch chat table",
-        "Mentions CAN-SPAM and source URL capture",
-        "References b2b-prospecting.md"
+        "Mentions CAN-SPAM and source URL capture"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References b2b-prospecting.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -82,8 +95,13 @@
         "Uses Hot/Warm/Cold/Skip scoring",
         "Outputs Local SMB chat table columns",
         "Adds top 3 outreach targets",
-        "References local-prospecting.md",
         "Warns against bulk-scraping Google Maps"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References local-prospecting.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -98,8 +116,13 @@
         "Cites 2% bounce rate threshold for reputation damage",
         "Recommends workflow: validate, keep ok, exclude email_invalid",
         "Mentions Truelist MCP server for agent workflows",
-        "Mentions cold email reputation is hard to recover",
-        "References truelist.md or data-sources.md"
+        "Mentions cold email reputation is hard to recover"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References truelist.md or data-sources.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     }

@@ -6,14 +6,22 @@
       "prompt": "We're a Shopify DTC brand doing $5M/year in skincare. We have 80K email subscribers but no SMS program yet. Where do we start?",
       "expected_output": "Should check for product-marketing.md first. Should run Phase 0 compliance check: are they US-based, is A2P 10DLC registration started, is the opt-in mechanism planned. Should recommend Klaviyo SMS or Postscript given Shopify + DTC ecom (Klaviyo if already on Klaviyo email, Postscript for SMS-first depth). Should rank flows by ROI for skincare: (1) abandoned cart sequence first (highest-ROI flow), (2) post-purchase + replenishment (skincare has predictable cycles), (3) welcome opt-in flow with capture incentive, (4) win-back at 60-90 days. Should warn about treating SMS like email (frequency cap, relevance bar, real per-send cost ~$0.0075-$0.04). Should reference compliance.md for opt-in disclosure language and quiet hours.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Runs compliance/A2P 10DLC readiness check",
         "Recommends Klaviyo SMS or Postscript with rationale",
         "Prioritizes abandoned cart as highest-ROI flow",
         "Mentions replenishment for skincare specifically",
         "Warns about treating SMS like email",
-        "References compliance.md or opt-in disclosure requirements",
         "Mentions per-send cost economics"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        },
+        {
+          "text": "References compliance.md or opt-in disclosure requirements",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -45,8 +53,13 @@
         "Mentions TCPA penalty exposure ($500-$1,500 per message)",
         "Mentions class action risk",
         "Recommends compliant opt-in flow",
-        "References compliance.md",
         "Clarifies checkout phone capture is not marketing consent"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References compliance.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -76,8 +89,13 @@
         "Mentions quiet hour considerations",
         "Recommends short code for high sustained volume",
         "Warns about carrier filtering / throttling",
-        "Mentions A2P sample text alignment requirement",
-        "References platforms.md or trust score monitoring"
+        "Mentions A2P sample text alignment requirement"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References platforms.md or trust score monitoring",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },

@@ -1,0 +1,69 @@
+
+[1m▶ analytics-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    What UTM parameters should we use? We run ads on Google, Meta, and LinkedIn, plus send a weekly newsletter and post on LinkedIn organically.
+    [90moutput:[0m  # UTM Parameter Strategy for Multi-Channel Marketing ## Overview **Tools:** GA4, GTM, Marketing Attribution **Assumptions:** You need to distinguish between paid social platforms, organic social, PPC…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.5s · 15804 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    Help me set up analytics tracking for our B2B SaaS product. We use GA4 and GTM. We need to track signups, feature usage, and upgrade events.
+    [90moutput:[0m  # B2B SaaS Analytics Tracking Plan **Assumptions:** - **Business Model:** B2B SaaS (likely Freemium or Free Trial) - **Tech Stack:** Google Analytics 4 (GA4), Google Tag Manager (GTM) - **Key Goals:*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    21.1s · 16436 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    our tracking seems broken — we're seeing duplicate events and our conversion numbers in GA4 don't match what our database shows. help?
+    [90moutput:[0m  Assuming you are using **Google Analytics 4 (GA4)** via **Google Tag Manager (GTM)** or **gtag.js** (the most common stack causing these specific symptoms), I will provide a complete troubleshooting …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    23.0s · 16468 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    We're launching an e-commerce store and need to set up tracking from scratch. What events do we absolutely need?
+    [90moutput:[0m  Since you haven't specified your tech stack (e.g., Shopify, WooCommerce, custom React/Node), I will provide a **complete, implementation-ready tracking plan** based on standard e-commerce patterns. *…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Organizes by priority (must-have vs nice-to-have)
+         [90mevidence:[0m No priority labels found in output
+    32.4s · 17077 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    Help me set up tracking for our A/B test. We want to measure which version of our pricing page converts better.
+    [90moutput:[0m  Since you didn't specify your tech stack, I will assume a **SaaS/B2B model** using **GA4** and **Google Tag Manager (GTM)**, which is the most common setup for pricing page testing. If you are using …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt to design the full experiment
+         [90mevidence:[0m Model provides full tracking plan, GTM setup, and analysis steps.
+    21.6s · 16253 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="analytics-35b"> <description>When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analyt…
+    [90muser:[0m    We need to make sure our tracking is GDPR compliant. We have European users and we're using GA4, Hotjar, and Facebook Pixel.
+    [90moutput:[0m  Assumptions: You are using Google Tag Manager (GTM) for implementation (best practice for GDPR), have a Consent Management Platform (CMP) or custom consent banner, and need to block GA4, Hotjar, and …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    22.8s · 16544 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 91.7%[0m  [90m· 22.57s avg · 16430 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-42/benchmark.json[0m
+{
+  "passed": 32,
+  "failed": 2,
+  "skills": [
+    {
+      "skill": "analytics-35b",
+      "slug": "analytics-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9411764705882353,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-42/benchmark.json"
+    }
+  ],
+  "iteration": 42,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-42",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-42/report/index.html"
+}

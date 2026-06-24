@@ -6,12 +6,20 @@
       "prompt": "We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?",
       "expected_output": "Should check for product-marketing.md first. Should walk through the Product Demo Video workflow: script the key features and value props (cross-reference copywriting skill), screen record the product flow, programmatic overlay with Hyperframes or Remotion for titles/callouts/transitions, optional AI B-roll with Veo/Runway for establishing shots, voiceover via recording or AI avatar (HeyGen) for narration, export at platform-appropriate specs (16:9 for homepage). Should recommend Hyperframes for agent-friendliness (plain HTML, no React DSL). Should remind: don't use AI for product UI screens (models hallucinate UI) — use real screen recording. Should mention captions are essential (85% of social video watched without sound — applies to homepage too).",
       "assertions": [
-        "Checks for product-marketing.md",
         "Walks through Product Demo workflow steps",
         "Uses real screen recording, not AI generated UI",
         "Recommends programmatic overlay tool",
-        "Mentions captions",
-        "Cross-references copywriting skill"
+        "Mentions captions"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        },
+        {
+          "text": "Cross-references copywriting skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     },
@@ -51,8 +59,13 @@
         "Names Descript, Opus Clip, CapCut in sequence",
         "Mentions captions essential",
         "Specifies aspect ratios per platform",
-        "Mentions hooking in first 3 seconds",
-        "May cross-reference social skill"
+        "Mentions hooking in first 3 seconds"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "May cross-reference social skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     },

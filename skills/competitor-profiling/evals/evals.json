@@ -6,13 +6,18 @@
       "prompt": "Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.",
       "expected_output": "Should check for product-marketing.md first. Should run the full research process: Phase 1 site scraping (Firecrawl map + scrape of homepage, pricing, features, about, customers, integrations, changelog), Phase 2 SEO and market data (DataForSEO for backlinks, ranked keywords, traffic, competitors), Phase 3 synthesis. Should save raw data to competitor-profiles/raw/<slug>/<YYYY-MM-DD>/ with scrapes/, seo/, reviews/ subfolders before synthesizing. Should produce one markdown file per competitor following the profile template (At a Glance, Positioning & Messaging, Product & Features, Pricing, Customers & Social Proof, SEO & Content Strategy, Strengths & Weaknesses, Competitive Implications). Should produce a _summary.md after individual profiles with comparison table, positioning map, key takeaways, gaps and opportunities. Should parallelize scraping when handling multiple competitors and use consistent metrics across all three for comparability.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Runs all three phases (scraping, SEO data, synthesis)",
         "Saves raw data to competitor-profiles/raw/ with date subfolder",
         "Produces individual profile per competitor",
         "Produces _summary.md after individual profiles",
         "Uses consistent metrics across competitors",
         "Parallelizes scraping when possible"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },

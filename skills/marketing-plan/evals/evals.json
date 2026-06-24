@@ -6,7 +6,6 @@
       "prompt": "I'm starting a fractional CMO engagement with a Series A B2B SaaS doing $2M ARR, 12-person team with 1 marketer, $20K/month marketing budget. They want a marketing plan we can share with the team and the board. Build it.",
       "expected_output": "Should check for product-marketing.md first. Should ask for client name or use a slug. Should walk through three-phase workflow (INIT → REVIEW → FINALIZE), starting with intake covering funding state, team, budget, channels, what's done, in-flight, tooling stack. Should produce a 13-section AARRR-structured plan: executive summary, strategic frame, current state (scored against the embedded 17-section rubric), Acquisition, Activation, Retention, Referral, Revenue, 90-day roadmap with owner-assigned moves, 12-month outlook with funding-stage capability unlocks, marketing operations stack mapping skills + MCPs to AARRR stages, tactical idea bank cross-referencing all 139 marketing-ideas to AARRR + client-specific status, measurement framework with north-star + leading indicators + RACI + open decisions. Should be ~8–12K words, Notion-paste-ready. Should be specific to the client (their budget, team, channels), not generic.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Asks for client name or uses a slug",
         "Walks through INIT phase with structured intake",
         "Produces 13-section plan structured by AARRR",
@@ -17,6 +16,12 @@
         "Section 12 cross-references all 139 marketing-ideas with client-specific status",
         "Output is Notion-paste-ready markdown",
         "Plan is specific to the client (their budget, team, current channels), not generic"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },

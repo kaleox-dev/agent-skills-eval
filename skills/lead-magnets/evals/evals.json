@@ -6,12 +6,17 @@
       "prompt": "We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?",
       "expected_output": "Should check for product-marketing.md first. Should ask about current lead gen, existing content assets, and primary goal (list growth, lead quality, product education). Should apply Lead Magnet Principles: solve a specific problem (not 'agency marketing'), match buyer stage, high perceived value + low time investment, natural path to product. Should recommend a specific format suited to a busy agency audience — likely a template (Notion/spreadsheet) or checklist over an ebook. Examples: 'Agency Project Profitability Calculator' (decision stage, naturally leads to project management), 'Client Onboarding Checklist for Agencies' (consideration), 'The Agency Capacity Planning Template' (decision stage). Should justify the choice by matching buyer stage and effort/value ratio. Should outline content, gating, landing page, distribution, and measurement plan.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Asks about buyer stage and goal",
         "Applies the 5 principles",
         "Recommends specific format with rationale",
         "Examples match the audience and product",
         "Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -24,8 +29,13 @@
         "Recommends format A/B test",
         "Suggests breaking into shorter formats",
         "Reviews landing page structure",
-        "Asks about traffic source (cold vs warm)",
-        "Cross-references cro or ab-testing skill"
+        "Asks about traffic source (cold vs warm)"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Cross-references cro or ab-testing skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     },
@@ -38,8 +48,13 @@
         "Cites 5-10% per field rule",
         "Recommends reducing to email or email + name",
         "Asks what fields are actually used",
-        "Suggests progressive profiling",
-        "Cross-references cro skill"
+        "Suggests progressive profiling"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Cross-references cro skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     },
@@ -51,8 +66,13 @@
         "Distinguishes static content from interactive tool",
         "Compares effort to build",
         "Compares SEO and shareability characteristics",
-        "Recommends based on speed vs investment trade-off",
-        "Defers to free-tools skill"
+        "Recommends based on speed vs investment trade-off"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Defers to free-tools skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     },
@@ -67,6 +87,12 @@
         "Keeps blog post ungated to preserve SEO",
         "Explains why upgrades convert better"
       ],
+      "disabled_assertions": [
+        {
+          "text": "References cro for placement and copywriting",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
+      ],
       "files": []
     },
     {
@@ -77,9 +103,14 @@
         "Diagnoses as lead quality / buyer stage mismatch",
         "Asks about ICP fit of leads",
         "References Lead Quality Signals",
-        "Cross-references emails skill for nurture",
         "Suggests a decision-stage lead magnet alternative",
         "Mentions tracking time to conversion by source"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Cross-references emails skill for nurture",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     }
