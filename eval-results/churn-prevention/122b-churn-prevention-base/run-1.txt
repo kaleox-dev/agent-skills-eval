@@ -1,0 +1,69 @@
+
+[1m▶ churn-prevention[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    what should we show users when they click the cancel button? right now they just go straight to cancellation with no attempt to save them
+    [90moutput:[0m  You are currently losing 10–30% of your potential revenue by skipping the save step. An instant cancellation is a "leak" you can easily patch. Here is the exact structure you should implement immedia…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    17.0s · 17337 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    How do we identify which customers are at risk of churning before they actually cancel? We want to be proactive.
+    [90moutput:[0m  To identify customers at risk of churning before they cancel, you need to move from **reactive** (waiting for the cancel click) to **proactive** (detecting behavioral signals). This involves building…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    17.7s · 17362 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We keep losing customers because their credit cards expire. About 15% of our churn is from failed payments. How do we fix this?
+    [90moutput:[0m  This is a classic case of **involuntary churn**, and the good news is that it is often the easiest type of churn to fix. You are losing revenue not because customers hate your product, but because of…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes recovery benchmarks
+         [90mevidence:[0m No specific benchmarks cited
+    17.0s · 17341 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our SaaS product has a 7% monthly churn rate and we need to bring it down. We're a $49/month project management tool with about 2,000 paying customers. Can you help us design a churn prevention strat…
+    [90moutput:[0m  A 7% monthly churn rate is a critical issue. For a SaaS with 2,000 customers at $49/mo, you are losing approximately **$6,860 in MRR every month** (roughly 140 customers). At this rate, your customer…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    26.6s · 17835 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our exit survey shows that 40% of cancellations say 'too expensive' as the reason. What save offers should we try?
+    [90moutput:[0m  Since **40% of your churn is price-driven**, you have a massive opportunity to recover revenue. However, a blanket discount strategy often fails because it trains customers to cancel-and-return for d…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    20.8s · 17638 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We want to set up a win-back email sequence for customers who already cancelled. Can you help write those emails?
+    [90moutput:[0m  To write an effective win-back sequence, I need to distinguish between two scenarios because the strategy differs significantly: 1. **Post-Cancel Win-Back:** Emails sent to users *after* they have su…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt to write a full email sequence
+         [90mevidence:[0m Provides 4 full email templates
+    22.1s · 17751 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 92.4%[0m  [90m· 20.18s avg · 17544 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-46/benchmark.json[0m
+{
+  "passed": 35,
+  "failed": 2,
+  "skills": [
+    {
+      "skill": "churn-prevention",
+      "slug": "churn-prevention",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9459459459459459,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-46/benchmark.json"
+    }
+  ],
+  "iteration": 46,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-46",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-46/report/index.html"
+}

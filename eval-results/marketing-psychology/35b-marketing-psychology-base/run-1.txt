@@ -1,0 +1,73 @@
+
+[1m▶ marketing-psychology[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    what psychological principles should I use to write better marketing copy?
+    [90moutput:[0m  To write marketing copy that actually converts, you need to move beyond "nice writing" and start leveraging how the human brain processes information and makes decisions. Here are the most powerful p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    15.4s · 6034 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    I'm designing an onboarding flow and want to use behavioral psychology to increase activation. What models should I apply?
+    [90moutput:[0m  To increase activation (getting users to their "Aha!" moment quickly and effectively), you need to reduce friction, build momentum, and trigger the right psychological responses at the right time. He…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    18.2s · 6237 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    Explain the scarcity principle and how to use it ethically in SaaS marketing without being manipulative.
+    [90moutput:[0m  The **Scarcity Principle** (often paired with Urgency) is rooted in the psychological bias that people perceive items, opportunities, or time as more valuable when they are limited in availability or…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Provides legitimate SaaS applications
+         [90mevidence:[0m Discusses marketing tactics, not apps
+    18.3s · 6251 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    How can I use psychology to increase conversions on our pricing page? We sell a B2B SaaS tool with three tiers ($29, $79, $199/month).
+    [90moutput:[0m  To increase conversions on your B2B SaaS pricing page, we need to apply **Pricing Psychology** and **Behavioral Science** to structure your tiers ($29, $79, $199) in a way that guides users toward yo…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies pricing psychology models (anchoring, charm pricing, Rule of 100)
+         [90mevidence:[0m No mention of Rule of 100
+      [31m#3[0m [31mFAIL[0m [90m—[0m Applies loss aversion to tier differentiation
+         [90mevidence:[0m Loss aversion used for risk reversal, not tier diff.
+    16.3s · 6128 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    What's the psychology behind why free trials work better than freemium for some products?
+    [90moutput:[0m  To understand why free trials often outperform freemium models (or vice versa) for specific products, we need to look at the specific psychological mechanics of **commitment**, **effort**, and **valu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.4s · 5956 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-psychology"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,…
+    [90muser:[0m    Help me run an A/B test on which psychological principle works better for our CTA — scarcity vs social proof.
+    [90moutput:[0m  To run an effective A/B test comparing **Scarcity** vs. **Social Proof**, we need to move beyond vague concepts like "urgency" and "popularity" and isolate specific, measurable psychological triggers…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt full test design using psychology patterns
+         [90mevidence:[0m Model provides detailed psychology-based test design
+    18.0s · 6185 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 86.1%[0m  [90m· 17.12s avg · 6132 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-83/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 4,
+  "skills": [
+    {
+      "skill": "marketing-psychology",
+      "slug": "marketing-psychology",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.875,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-83/benchmark.json"
+    }
+  ],
+  "iteration": 83,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-83",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-83/report/index.html"
+}

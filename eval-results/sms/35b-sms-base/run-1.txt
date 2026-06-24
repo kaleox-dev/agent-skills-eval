@@ -1,0 +1,83 @@
+
+[1m▶ sms[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Our SMS list is 50K subscribers. We send 3 promotional messages per week. Opt-out rate has crept up to 4% per send. What's wrong?
+    [90moutput:[0m  Your opt-out rate is **critically high**. A healthy promotional send opt-out rate is **<1.5%**, and typically **<0.5%** for well-segmented audiences. A 4% opt-out rate per send means you are actively…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions 'every send must justify itself' principle
+         [90mevidence:[0m Phrase not found in output
+    11.5s · 18672 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Can I just send SMS without any opt-in if customers gave me their phone number at checkout?
+    [90moutput:[0m  **No. You cannot send marketing SMS based solely on a phone number collected at checkout.** Under US law (TCPA) and most other jurisdictions, this is a significant compliance violation. Here is why, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Lists express written consent requirements
+         [90mevidence:[0m Model does not list requirements
+    12.3s · 18719 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We're a Shopify DTC brand doing $5M/year in skincare. We have 80K email subscribers but no SMS program yet. Where do we start?
+    [90moutput:[0m  Since you have an 80K email list and zero SMS program, you have a massive advantage: a proven audience you can convert. At $5M/year, you are in the "sweet spot" for **Postscript** or **Klaviyo SMS**,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    22.7s · 19431 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Write me an abandoned cart SMS sequence. We sell custom apparel, average order $80.
+    [90moutput:[0m  Here is a compliant, high-ROI abandoned cart SMS sequence tailored for custom apparel. ### 1. Strategy & Compliance Check **The "Custom" Constraint:** Custom apparel differs from standard ecom becaus…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Character counts shown, target ~160 GSM-7
+         [90mevidence:[0m Counts are ~100, not ~160
+    19.8s · 19196 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Should we put emojis in our SMS messages? Other brands seem to use them a lot.
+    [90moutput:[0m  The short answer is: **Use them sparingly, one per message, and only when they add clarity or tone.** While other brands use them heavily, that doesn't mean it's optimal for your economics or deliver…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends max 1 emoji per message
+         [90mevidence:[0m Model says "Stick to 1–2 emojis max"
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends previewing segment count
+         [90mevidence:[0m No mention of previewing segment count
+    10.6s · 18381 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We just submitted our A2P 10DLC registration and our sends are working. Can we start scaling to 100K+ messages per day?
+    [90moutput:[0m  Holding. Scaling a single 10DLC number to 100K+ messages per day will fail and likely get your number permanently blocked by carriers. ### The Hard Limit of 10DLC Standard 10DLC (even with a "Verifie…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Asks about phone number type (10DLC vs toll-free vs short code)
+         [90mevidence:[0m States types but does not ask user
+      [31m#3[0m [31mFAIL[0m [90m—[0m Calculates time-to-send for 100K volume
+         [90mevidence:[0m No calculation provided, only scaling advice
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions quiet hour considerations
+         [90mevidence:[0m No mention of quiet hours
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions A2P sample text alignment requirement
+         [90mevidence:[0m No mention of sample text alignment
+    13.9s · 18684 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 79.1%[0m  [90m· 15.13s avg · 18847 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-115/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "sms",
+      "slug": "sms",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7906976744186046,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-115/benchmark.json"
+    }
+  ],
+  "iteration": 115,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-115",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-115/report/index.html"
+}

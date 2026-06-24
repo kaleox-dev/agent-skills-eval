@@ -1,0 +1,103 @@
+
+[1m▶ aso[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Compare our app https://apps.apple.com/us/app/ourapp/id111 against these two competitors: https://apps.apple.com/us/app/competitor1/id222 and https://apps.apple.com/us/app/competitor2/id333
+    [90moutput:[0m  I'll need to fetch the live listing data for all three apps to perform a comparative ASO audit. This will allow me to score each listing, identify keyword gaps, and highlight where your app is weaker…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Scores all 3 apps with same framework
+         [90mevidence:[0m No output files captured
+      [31m#2[0m [31mFAIL[0m [90m—[0m Builds comparison table
+         [90mevidence:[0m No output files captured
+      [31m#3[0m [31mFAIL[0m [90m—[0m Identifies where user's app is weaker
+         [90mevidence:[0m No output files captured
+      [31m#4[0m [31mFAIL[0m [90m—[0m Identifies keyword gaps vs competitors
+         [90mevidence:[0m No output files captured; no analysis performed.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Produces competitor-informed action list
+         [90mevidence:[0m No output files captured
+    3.9s · 21268 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Here's our app on the App Store: https://apps.apple.com/us/app/example/id123456789. Can you audit our listing and tell me what to fix?
+    [90moutput:[0m  I need to fetch the App Store listing data to perform a proper audit. Let me retrieve the current listing details. ```bash curl -s -L -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) A…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies as Apple App Store URL
+         [90mevidence:[0m No output files captured
+      [31m#2[0m [31mFAIL[0m [90m—[0m Classifies brand maturity tier
+         [90mevidence:[0m No classification performed
+      [31m#3[0m [31mFAIL[0m [90m—[0m Scores all 6 dimensions with weights
+         [90mevidence:[0m No output files captured
+      [31m#4[0m [31mFAIL[0m [90m—[0m Provides scorecard with grade
+         [90mevidence:[0m No scorecard or grade provided in output.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Lists top 3 quick wins
+         [90mevidence:[0m No output files were captured.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommendations include character counts
+         [90mevidence:[0m No recommendations or counts in output
+      [31m#7[0m [31mFAIL[0m [90m—[0m Recommendations are specific (X to Y format)
+         [90mevidence:[0m No recommendations provided in output.
+    5.9s · 21313 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Instagram's App Store listing has just 'Instagram' as the title and barely any keywords. Should they fix that?
+    [90moutput:[0m  This is a classic case of where textbook ASO advice would suggest "add keywords to the title," but doing so for Instagram would likely be a mistake. The answer depends entirely on **Brand Tier**. Her…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    19.3s · 22087 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    Should I run a Custom Product Page experiment on iOS for our paid search campaigns?
+    [90moutput:[0m  Yes. Custom Product Pages (CPPs) are the highest-ROI adjustment you can make for paid search campaigns on iOS. **Why:** 1. **Message Match:** Paid search keywords are narrow and intent-driven. A CPP …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes Google Play equivalents
+         [90mevidence:[0m Output discusses iOS/CPPs only
+    7.1s · 21549 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We're a small fintech startup with about 5,000 downloads. Our Play Store listing has a 2.8 rating and we haven't updated the description in 8 months. Help us figure out what to fix first.
+    [90moutput:[0m  To give you a specific, prioritized audit, I need the **Google Play Store URL** for your app. In the meantime, based on the red flags you've mentioned (2.8 rating, 8-month description gap, low downlo…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Identifies as Google Play app
+         [90mevidence:[0m No Play Store URL provided
+      [31m#2[0m [31mFAIL[0m [90m—[0m Classifies as Challenger tier
+         [90mevidence:[0m Model assumes Challenger tier without URL
+      [31m#4[0m [31mFAIL[0m [90m—[0m Flags stale update (>3 months)
+         [90mevidence:[0m No URL provided; no audit performed
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Google Play indexes full description
+         [90mevidence:[0m Model did not address the assertion
+    27.6s · 22312 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="aso"> <description>When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app l…
+    [90muser:[0m    We only have 3 screenshots and no preview video. Does this really matter that much?
+    [90moutput:[0m  Yes, it matters significantly—particularly for **Apple**, but also for **Google Play**. This is likely the single biggest bottleneck for your conversion rate. Here is the hard data: ### 1. The "90%" …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Notes Visual Assets is 25% of score
+         [90mevidence:[0m No mention of 25% score weight
+      [31m#7[0m [31mFAIL[0m [90m—[0m Flags <5 screenshots as always-flag issue
+         [90mevidence:[0m Model suggests adding 2-3 more, not flagging as always-issue
+    19.6s · 22159 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 49.4%[0m  [90m· 13.90s avg · 21781 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-45/benchmark.json[0m
+{
+  "passed": 17,
+  "failed": 19,
+  "skills": [
+    {
+      "skill": "aso",
+      "slug": "aso",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.4722222222222222,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-45/benchmark.json"
+    }
+  ],
+  "iteration": 45,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-45",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-45/report/index.html"
+}

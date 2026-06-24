@@ -1,0 +1,33 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+video	eval-1	with_skill	FAIL	11.7s	7416	4820	2595	1	PASS			1	1	iteration-119
+video	eval-1	with_skill	FAIL	11.7s	7416	4820	2595	2	PASS			1	1	iteration-119
+video	eval-1	with_skill	FAIL	11.7s	7416	4820	2595	3	PASS			1	1	iteration-119
+video	eval-1	with_skill	FAIL	11.7s	7416	4820	2595	4	PASS			1	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	1	PASS			2	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	2	PASS			2	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	3	FAIL	Mentions HeyGen MCP server for agents	Mentions HeyGen, not HeyGen MCP server	2	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	4	PASS			2	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	5	PASS			2	1	iteration-119
+video	eval-2	with_skill	FAIL	19.4s	7881	5122	2758	6	FAIL	Warns about authenticity tradeoff	No warning about authenticity found.	2	1	iteration-119
+video	eval-3	with_skill	FAIL	6.6s	7007	4554	2452	1	PASS			3	1	iteration-119
+video	eval-3	with_skill	FAIL	6.6s	7007	4554	2452	2	PASS			3	1	iteration-119
+video	eval-3	with_skill	FAIL	6.6s	7007	4554	2452	3	PASS			3	1	iteration-119
+video	eval-3	with_skill	FAIL	6.6s	7007	4554	2452	4	FAIL	Warns about common prompt mistakes	No warning about prompt mistakes found	3	1	iteration-119
+video	eval-3	with_skill	FAIL	6.6s	7007	4554	2452	5	FAIL	Notes Sora reliability caveats	Model recommends Veo/Runway, not Sora	3	1	iteration-119
+video	eval-4	with_skill	FAIL	12.8s	7475	4858	2616	1	PASS			4	1	iteration-119
+video	eval-4	with_skill	FAIL	12.8s	7475	4858	2616	2	PASS			4	1	iteration-119
+video	eval-4	with_skill	FAIL	12.8s	7475	4858	2616	3	FAIL	Mentions captions essential	Captions mentioned as feature, not essential	4	1	iteration-119
+video	eval-4	with_skill	FAIL	12.8s	7475	4858	2616	4	FAIL	Specifies aspect ratios per platform	Only mentions 9:16, not per-platform	4	1	iteration-119
+video	eval-4	with_skill	FAIL	12.8s	7475	4858	2616	5	PASS			4	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	1	PASS			5	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	2	FAIL	Names HeyGen MCP server	Mentions HeyGen MCP server in text	5	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	3	PASS			5	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	4	FAIL	Recommends testing 5 manually first	Model recommends programmatic generation, not manual testing.	5	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	5	FAIL	Mentions reply tracking / ROI	No mention of tracking or ROI metrics	5	1	iteration-119
+video	eval-5	with_skill	FAIL	21.4s	8006	5203	2802	6	FAIL	Mentions captions	No mention of captions found.	5	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	1	PASS			6	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	2	PASS			6	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	3	PASS			6	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	4	PASS			6	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	5	PASS			6	1	iteration-119
+video	eval-6	with_skill	FAIL	14.7s	7522	4889	2632	6	FAIL	Asks about stack or animation needs	Model provides decision matrix, does not ask questions	6	1	iteration-119

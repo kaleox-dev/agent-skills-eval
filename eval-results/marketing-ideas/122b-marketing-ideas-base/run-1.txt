@@ -1,0 +1,71 @@
+
+[1m▶ marketing-ideas[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    how do we grow without spending money on ads? we're a PLG (product-led growth) company with a freemium model
+    [90moutput:[0m  Since you are a **Product-Led Growth (PLG)** company with a **freemium model** and **zero ad budget**, your growth engine must rely on **viral mechanics, product experience, and organic distribution*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    17.2s · 10066 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    What's the fastest way to get more leads? We sell enterprise security software and have a $10k/month marketing budget.
+    [90moutput:[0m  For **Enterprise Security Software** with a **$10k/month budget** and a goal for the **fastest leads**, you need to bypass long-term plays like SEO or brand building. You need to intercept high-inten…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    17.2s · 10069 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to build authority and thought leadership in the HR tech space. We're a newer company and nobody knows who we are yet.
+    [90moutput:[0m  Building authority and thought leadership is the perfect strategy for a newer HR tech company. In a crowded market like HR, trust is the primary currency. Since you are starting from zero awareness, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Includes original research and content
+         [90mevidence:[0m Suggests creating research, does not include it.
+    17.8s · 10090 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    I need marketing ideas for my SaaS product. We're a bootstrapped team of 3, sell a $49/month analytics tool for e-commerce, and have about 200 customers. Budget is tight — maybe $500/month for market…
+    [90moutput:[0m  Given your constraints (bootstrapped, 3-person team, $500/mo budget) and your product specifics (e-commerce analytics, $49/mo price point), you need **high-leverage, low-cost tactics** that rely on y…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    22.6s · 10401 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    We want to set up a referral program. How should we structure it?
+    [90moutput:[0m  Setting up a referral program is one of the highest-leverage marketing moves you can make. It aligns incentives, lowers your Customer Acquisition Cost (CAC), and brings in higher-quality leads becaus…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Does not attempt detailed referral program design
+         [90mevidence:[0m Provides detailed framework, incentives, and mechanics.
+      [31m#3[0m [31mFAIL[0m [90m—[0m May briefly mention as a marketing idea
+         [90mevidence:[0m Detailed 6-section framework provided
+    18.2s · 10174 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-ideas"> <description>When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'gro…
+    [90muser:[0m    Give me 20 marketing ideas. We sell project management software.
+    [90moutput:[0m  Here are 20 tailored marketing ideas for your project management (PM) software, categorized by strategy to help you prioritize based on your current resources and goals. Since the PM space is crowded…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    31.5s · 11205 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 86.1%[0m  [90m· 20.77s avg · 10334 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-78/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "marketing-ideas",
+      "slug": "marketing-ideas",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9117647058823529,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-78/benchmark.json"
+    }
+  ],
+  "iteration": 78,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-78",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-78/report/index.html"
+}

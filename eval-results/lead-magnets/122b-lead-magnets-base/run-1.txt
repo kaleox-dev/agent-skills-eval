@@ -1,0 +1,79 @@
+
+[1m▶ lead-magnets[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our lead form asks for name, email, company, role, company size, and phone. We're not getting enough signups. Could the form be the problem?
+    [90moutput:[0m  **Yes, absolutely.** Your form is almost certainly the primary bottleneck. Asking for **6 fields** (Name, Email, Company, Role, Company Size, Phone) is a classic mistake that kills conversion rates. …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    15.1s · 9308 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a 50-page ebook we spent 3 months writing. Conversion on the landing page is only 4%. Should we keep iterating?
+    [90moutput:[0m  **Short Answer:** **No, do not keep iterating on the 50-page ebook.** A 4% conversion rate on a dedicated landing page is significantly below the benchmark for this format (20-35% for organic traffic…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Reviews landing page structure
+         [90mevidence:[0m No review of structure found
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks about traffic source (cold vs warm)
+         [90mevidence:[0m Mentions cold traffic but does not ask user
+    16.7s · 9465 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?
+    [90moutput:[0m  To give you the most effective recommendation, I first need to check if there is existing product marketing context available to me. *Checking for `.agents/product-marketing.md`...* *(Assuming no spe…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Asks about buyer stage and goal
+         [90mevidence:[0m Asks about current state, assets, nurture, differentiation
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies the 5 principles
+         [90mevidence:[0m No mention of 5 principles
+    17.5s · 9511 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    What's the difference between a lead magnet and a free tool? Should I build one or the other?
+    [90moutput:[0m  This is a strategic question. Both lead magnets and free tools serve the same ultimate goal (capturing leads and demonstrating value), but they function differently in the user journey, require diffe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    22.1s · 9737 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a top-performing blog post on email subject lines. Can we use it as a lead magnet?
+    [90moutput:[0m  Yes, absolutely! Turning a top-performing blog post into a lead magnet is one of the most efficient ways to grow your email list. It leverages existing high-quality content and targets an audience th…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Cites 2-5x improvement vs generic CTAs
+         [90mevidence:[0m No 2-5x improvement cited
+    22.7s · 9803 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our checklist gets a lot of downloads but very few of them ever sign up for a trial. Is the lead magnet broken?
+    [90moutput:[0m  Not necessarily. A checklist that gets high downloads but low trial signups usually indicates a **mismatch in the buyer stage** or a **gap in the nurture sequence**, rather than a broken lead magnet.…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks about ICP fit of leads
+         [90mevidence:[0m Asks about checklist topic, not ICP fit
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions tracking time to conversion by source
+         [90mevidence:[0m No mention of tracking time or source
+    15.1s · 9415 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 76.7%[0m  [90m· 18.19s avg · 9540 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-76/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 7,
+  "skills": [
+    {
+      "skill": "lead-magnets",
+      "slug": "lead-magnets",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7586206896551724,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-76/benchmark.json"
+    }
+  ],
+  "iteration": 76,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-76",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-76/report/index.html"
+}

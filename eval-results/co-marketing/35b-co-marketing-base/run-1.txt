@@ -1,0 +1,77 @@
+
+[1m▶ co-marketing[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Draft a cold outreach email to a potential co-marketing partner. They're a content management platform and we make a marketing analytics tool. Both serve B2B marketing teams.
+    [90moutput:[0m  Subject: [Your Company] + [Their Company]: Co-marketing idea for B2B marketers Hey [Name], I’m [Your Name] from [Your Company]. We help B2B marketing teams measure the ROI of their campaigns through …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Specific observation about audience overlap
+         [90mevidence:[0m No audience overlap mentioned
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions what to prepare for the call
+         [90mevidence:[0m No preparation instructions found
+    3.2s · 2696 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We're partnering with a competitor — wait, not a competitor, a complementary CRM company. Help us brainstorm 5 campaign ideas we could run together.
+    [90moutput:[0m  This is a classic "blue ocean" co-marketing scenario. Partnering with a non-competing CRM is high-potential because you both likely solve a different part of the same customer workflow (e.g., one han…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Uses brainstorming prompts
+         [90mevidence:[0m No brainstorming prompts used
+    12.8s · 3507 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We've identified 5 potential partners but only have time for one campaign this quarter. How should we pick?
+    [90moutput:[0m  To pick the single best partner for this quarter, you need to move beyond "who seems nice" and evaluate based on **effort-to-impact ratio** and **strategic alignment**. Since you only have bandwidth …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes all 6 scoring dimensions
+         [90mevidence:[0m Only 2 dimensions listed
+      [31m#3[0m [31mFAIL[0m [90m—[0m Weights by goal
+         [90mevidence:[0m No mention of weighting by goal
+    13.4s · 3545 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    We make a project management tool for design agencies. Who should we look for as co-marketing partners?
+    [90moutput:[0m  To identify the best co-marketing partners for a **project management tool specifically for design agencies**, we need to look for companies that sit **adjacent** to your product in the creative work…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    19.3s · 3912 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our customer success team wants us to launch a referral program. Can you help us design one?
+    [90moutput:[0m  Based on your request for a **referral program**, I need to clarify the scope, as this falls under the **referrals** skill rather than the **co-marketing** skill defined in my current system context.…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    5.8s · 2852 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="co-marketing"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'part…
+    [90muser:[0m    Our partnership webinar with another SaaS company got 200 signups. How do we split the leads?
+    [90moutput:[0m  Splitting webinar leads effectively is one of the most common friction points in co-marketing. Since you had 200 signups, you have enough volume to test a few different models, but you also have enou…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Recommends post-campaign debrief
+         [90mevidence:[0m No mention of debrief found
+    18.4s · 3924 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 81.1%[0m  [90m· 12.15s avg · 3406 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-49/benchmark.json[0m
+{
+  "passed": 23,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "co-marketing",
+      "slug": "co-marketing",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7931034482758621,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-49/benchmark.json"
+    }
+  ],
+  "iteration": 49,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-49",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-49/report/index.html"
+}

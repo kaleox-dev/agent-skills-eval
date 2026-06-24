@@ -1,0 +1,50 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	1	PASS			1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	2	FAIL	Runs Phase 1 ICP definition	Model asked clarifying questions instead of running.	1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	3	FAIL	Recommends multi-source discovery (Apollo, Clay, Crunchbase, BuiltWith)	Mentions Apollo, Clay, Crunchbase but omits BuiltWith	1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	4	PASS			1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	5	FAIL	Sources 2-3x candidates before qualifying	Model asked for ICP details, did not source candidates.	1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	6	FAIL	Requires email validation before final list	No email validation mentioned	1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	7	FAIL	Outputs SaaS-branch chat table columns	Model asked for clarification, did not output table.	1	1	iteration-96
+prospecting	eval-1	with_skill	FAIL	6.8s	21267	13823	7443	8	FAIL	Includes top 3-5 outreach targets with rationale	Model asked for clarification, no targets listed.	1	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	1	FAIL	Identifies as SaaS branch	Model asks for clarification, does not identify.	2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	2	FAIL	Identifies funding signal + tech stack filter	Model states it lacks live access to verify criteria	2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	3	PASS			2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	4	PASS			2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	5	PASS			2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	6	PASS			2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	7	FAIL	Outputs signal column showing round + date	No signal column with round + date found	2	1	iteration-96
+prospecting	eval-2	with_skill	FAIL	17.0s	21782	14158	7623	8	FAIL	Requires email validation	No email validation performed	2	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	1	PASS			3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	2	FAIL	Runs Phase 1 ICP definition with NAICS or industry classification	asks user to confirm NAICS preference	3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	3	PASS			3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	4	PASS			3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	5	PASS			3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	6	FAIL	Recommends Apollo/ZoomInfo + LinkedIn Sales Nav	asks user if they have access to tools	3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	7	FAIL	Notes CMO hires often only on LinkedIn	Model asks about tool access, does not state this.	3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	8	FAIL	Outputs B2B-branch chat table	Model asked clarifying questions instead.	3	1	iteration-96
+prospecting	eval-3	with_skill	FAIL	10.5s	21477	13960	7516	9	FAIL	Mentions CAN-SPAM and source URL capture	Mentions Source URL, not CAN-SPAM	3	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	1	FAIL	Identifies B2B branch	Asks user for branch expansion details	4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	2	PASS			4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	3	PASS			4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	4	FAIL	Mentions trade show exhibitor lists	No mention of trade show exhibitor lists	4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	5	PASS			4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	6	FAIL	Warns about data spottiness for industrial	No warning about data spottiness found.	4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	7	FAIL	Recommends cross-verification with business websites + LinkedIn	Mentions LinkedIn, not business websites.	4	1	iteration-96
+prospecting	eval-4	with_skill	FAIL	7.9s	21336	13868	7467	8	PASS			4	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	1	PASS			5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	2	FAIL	Asks about business category if not specified	Model selected categories without asking.	5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	3	FAIL	Defaults radius to 20km	No mention of 20km radius in output.	5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	4	FAIL	Runs browser research workflow	Model admits: 'I cannot browse live real-time data'	5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	5	FAIL	Applies 4-tier website status classification	Only 2 tiers used: No Site, Social Only	5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	6	PASS			5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	7	PASS			5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	8	PASS			5	1	iteration-96
+prospecting	eval-5	with_skill	FAIL	37.6s	23726	15421	8304	9	FAIL	Warns against bulk-scraping Google Maps	No warning found in output.	5	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	1	PASS			6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	2	PASS			6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	3	FAIL	Warns Apollo accuracy is 60-80%	No mention of Apollo accuracy in output.	6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	4	PASS			6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	5	PASS			6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	6	FAIL	Mentions Truelist MCP server for agent workflows	mentions Truelist for agent workflows, not MCP server	6	1	iteration-96
+prospecting	eval-6	with_skill	FAIL	11.2s	21663	14080	7582	7	FAIL	Mentions cold email reputation is hard to recover	No mention of recovery difficulty	6	1	iteration-96

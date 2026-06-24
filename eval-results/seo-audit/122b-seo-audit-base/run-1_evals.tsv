@@ -1,0 +1,65 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	1	PASS			1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	2	FAIL	Follows audit priority order: crawlability first, then technical, on-page, content, authority	Model lists Technical before Crawlability	1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	3	FAIL	Checks robots.txt and XML sitemap	No actual check performed; only framework listed.	1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	4	PASS			1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	5	PASS			1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	6	PASS			1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	7	FAIL	Output has Executive Summary	No Executive Summary section found	1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	8	FAIL	Output has Prioritized Action Plan	No prioritized action plan provided	1	1	iteration-108
+seo-audit	eval-1	with_skill	FAIL	16.3s	15446	10039	5406	9	FAIL	Each finding has Issue, Impact, Evidence, Fix, and Priority	No findings with required fields found.	1	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	1	FAIL	Checks title tag, H1, URL alignment with target keyword	No audit performed; questions asked.	2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	2	FAIL	Evaluates content depth vs competitors	Asks user for competitor info, does not evaluate	2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	3	FAIL	Checks for keyword cannibalization	No mention of cannibalization	2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	4	FAIL	Checks indexation status and canonical tags	Asks user to check, does not perform check	2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	5	PASS			2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	6	PASS			2	1	iteration-108
+seo-audit	eval-2	with_skill	FAIL	14.7s	15344	9973	5370	7	FAIL	Provides actionable fixes organized by priority	Model asks for info, no fixes provided yet.	2	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	1	PASS			3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	2	FAIL	Checks redirect mapping (301s)	Model asks user for redirect details, does not check.	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	3	FAIL	Checks canonical tags on new pages	Model lists canonicals as a step, not a check.	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	4	FAIL	Checks robots.txt not blocking crawlers	No robots.txt check performed	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	5	FAIL	Checks XML sitemap updated and submitted	Model asks if sitemap submitted, does not check.	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	6	FAIL	Checks for redirect chains or loops	Mentions redirect chains but does not check them.	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	7	FAIL	Checks for soft 404s	No soft 404 check performed	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	8	PASS			3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	9	FAIL	Provides prioritized recovery plan	Asks for info before providing plan	3	1	iteration-108
+seo-audit	eval-3	with_skill	FAIL	11.0s	15092	9809	5282	10	FAIL	Mentions recovery timeline expectations	No timeline mentioned	3	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	1	FAIL	Addresses faceted navigation duplicate content	Model asks questions instead of addressing issue	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	2	FAIL	Addresses crawl budget for large catalog	Model asks questions instead of addressing issue	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	3	FAIL	Checks for parameterized URL issues	Model asks questions instead of checking URLs.	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	4	FAIL	Mentions product schema with detection limitation caveat	No mention of product schema or detection limits	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	5	FAIL	Checks for thin category pages	Model asked questions instead of checking.	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	6	FAIL	Checks for duplicate product descriptions	No check for duplicate descriptions found.	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	7	FAIL	Addresses out-of-stock page handling	No mention of out-of-stock handling	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	8	FAIL	Addresses pagination and infinite scroll	No mention of pagination or infinite scroll	4	1	iteration-108
+seo-audit	eval-4	with_skill	FAIL	16.9s	15464	10051	5412	9	FAIL	Findings include Impact ratings and specific fixes	No impact ratings or specific fixes provided	4	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	1	FAIL	Applies Content/Blog Sites framework	No framework applied; only questions asked.	5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	2	PASS			5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	3	PASS			5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	4	FAIL	Checks for topical clustering	Mentions cannibalization, not clustering	5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	5	FAIL	Checks for internal linking quality	Mentions 'poor internal linking' but does not check it.	5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	6	FAIL	Checks for author pages and E-E-A-T signals	Mentions E-E-A-T but does not check author pages	5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	7	PASS			5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	8	PASS			5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	9	PASS			5	1	iteration-108
+seo-audit	eval-5	with_skill	FAIL	12.8s	15060	9789	5271	10	PASS			5	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	1	PASS			6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	2	FAIL	Checks NAP consistency	Model asks for URL, does not check NAP.	6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	3	FAIL	Checks for local schema markup with detection caveat	No schema check performed; asked for URL first.	6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	4	PASS			6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	5	PASS			6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	6	PASS			6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	7	FAIL	Checks standard technical SEO factors too	No technical SEO factors checked	6	1	iteration-108
+seo-audit	eval-6	with_skill	FAIL	8.2s	14807	9624	5182	8	FAIL	Provides prioritized local SEO action plan	Asks for URL before providing plan	6	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	1	PASS			7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	2	PASS			7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	3	PASS			7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	4	PASS			7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	5	FAIL	Recommends specific diagnostic tools	No specific tool names mentioned	7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	6	PASS			7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	7	FAIL	Provides prioritized speed fixes	Asks for URL before providing fixes	7	1	iteration-108
+seo-audit	eval-7	with_skill	FAIL	9.3s	14883	9673	5209	8	PASS			7	1	iteration-108
+seo-audit	eval-8	with_skill	FAIL	6.0s	14644	9518	5125	1	PASS			8	1	iteration-108
+seo-audit	eval-8	with_skill	FAIL	6.0s	14644	9518	5125	2	PASS			8	1	iteration-108
+seo-audit	eval-8	with_skill	FAIL	6.0s	14644	9518	5125	3	PASS			8	1	iteration-108

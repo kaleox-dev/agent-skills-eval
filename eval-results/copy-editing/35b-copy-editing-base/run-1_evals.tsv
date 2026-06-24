@@ -1,0 +1,34 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	1	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	2	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	3	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	4	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	5	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	6	PASS			1	1	iteration-171
+copy-editing-35b	eval-1	with_skill	FAIL	11.7s	8471	5506	2964	7	PASS			1	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	1	PASS			2	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	2	PASS			2	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	3	PASS			2	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	4	FAIL	Rewrites with specific value and strong CTA	Output uses placeholders, not specific values	2	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	5	PASS			2	1	iteration-171
+copy-editing-35b	eval-2	with_skill	FAIL	3.1s	7812	5077	2734	6	PASS			2	1	iteration-171
+copy-editing-35b	eval-3	with_skill	FAIL	5.7s	8096	5262	2833	1	PASS			3	1	iteration-171
+copy-editing-35b	eval-3	with_skill	FAIL	5.7s	8096	5262	2833	2	PASS			3	1	iteration-171
+copy-editing-35b	eval-3	with_skill	FAIL	5.7s	8096	5262	2833	3	PASS			3	1	iteration-171
+copy-editing-35b	eval-3	with_skill	FAIL	5.7s	8096	5262	2833	4	FAIL	Cuts copy significantly (50%+ reduction)	Model claims ~30% reduction, not 50%+	3	1	iteration-171
+copy-editing-35b	eval-3	with_skill	FAIL	5.7s	8096	5262	2833	5	FAIL	Provides tighter rewrite with specific language	Rewrite still uses 'powerful', 'seamless'	3	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	1	PASS			4	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	2	PASS			4	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	3	PASS			4	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	4	PASS			4	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	5	FAIL	Does not fabricate specific numbers	Model uses 'zero' and '12 hours'	4	1	iteration-171
+copy-editing-35b	eval-4	with_skill	FAIL	8.3s	8212	5337	2874	6	PASS			4	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	1	PASS			5	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	2	PASS			5	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	3	PASS			5	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	4	PASS			5	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	5	PASS			5	1	iteration-171
+copy-editing-35b	eval-5	with_skill	FAIL	11.9s	8492	5519	2972	6	PASS			5	1	iteration-171
+copy-editing-35b	eval-6	with_skill	FAIL	17.5s	9065	5892	3172	1	PASS			6	1	iteration-171
+copy-editing-35b	eval-6	with_skill	FAIL	17.5s	9065	5892	3172	2	FAIL	Explains that copy-editing is for improving existing copy	Model skipped editing, created new copy	6	1	iteration-171
+copy-editing-35b	eval-6	with_skill	FAIL	17.5s	9065	5892	3172	3	FAIL	Does not attempt to write full page copy from scratch	Model wrote full homepage copy	6	1	iteration-171

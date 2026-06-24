@@ -1,0 +1,44 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	1	PASS			1	1	iteration-115
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	2	PASS			1	1	iteration-115
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	3	PASS			1	1	iteration-115
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	4	PASS			1	1	iteration-115
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	5	PASS			1	1	iteration-115
+sms	eval-1	with_skill	FAIL	22.7s	19431	12630	6800	6	PASS			1	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	1	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	2	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	3	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	4	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	5	FAIL	Character counts shown, target ~160 GSM-7	Counts are ~100, not ~160	2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	6	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	7	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	8	PASS			2	1	iteration-115
+sms	eval-2	with_skill	FAIL	19.8s	19196	12477	6718	9	PASS			2	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	1	PASS			3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	2	PASS			3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	3	FAIL	Lists express written consent requirements	Model does not list requirements	3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	4	PASS			3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	5	PASS			3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	6	PASS			3	1	iteration-115
+sms	eval-3	with_skill	FAIL	12.3s	18719	12167	6551	7	PASS			3	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	1	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	2	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	3	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	4	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	5	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	6	PASS			4	1	iteration-115
+sms	eval-4	with_skill	FAIL	11.5s	18672	12136	6535	7	FAIL	Mentions 'every send must justify itself' principle	Phrase not found in output	4	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	States types but does not ask user	5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	2	PASS			5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	3	FAIL	Calculates time-to-send for 100K volume	No calculation provided, only scaling advice	5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	4	FAIL	Mentions quiet hour considerations	No mention of quiet hours	5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	5	PASS			5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	6	PASS			5	1	iteration-115
+sms	eval-5	with_skill	FAIL	13.9s	18684	12144	6539	7	FAIL	Mentions A2P sample text alignment requirement	No mention of sample text alignment	5	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	1	PASS			6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	2	PASS			6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	3	FAIL	Recommends max 1 emoji per message	Model says "Stick to 1–2 emojis max"	6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	4	PASS			6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	5	PASS			6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	6	FAIL	Recommends previewing segment count	No mention of previewing segment count	6	1	iteration-115
+sms	eval-6	with_skill	FAIL	10.6s	18381	11947	6433	7	PASS			6	1	iteration-115

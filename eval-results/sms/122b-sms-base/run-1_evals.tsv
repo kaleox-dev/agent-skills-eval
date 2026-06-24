@@ -1,0 +1,44 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	1	PASS			1	1	iteration-114
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	2	PASS			1	1	iteration-114
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	3	PASS			1	1	iteration-114
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	4	PASS			1	1	iteration-114
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	5	PASS			1	1	iteration-114
+sms	eval-1	with_skill	FAIL	25.2s	19377	12595	6781	6	PASS			1	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	1	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	2	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	3	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	4	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	5	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	6	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	7	FAIL	Warns about discount on first send	No discount on the first message.	2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	8	PASS			2	1	iteration-114
+sms	eval-2	with_skill	FAIL	19.5s	19056	12386	6669	9	PASS			2	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	1	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	2	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	3	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	4	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	5	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	6	PASS			3	1	iteration-114
+sms	eval-3	with_skill	FAIL	14.5s	18717	12166	6550	7	PASS			3	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	1	PASS			4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	2	FAIL	Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)	Model cites <0.5% per send, not <2%	4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	3	PASS			4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	4	PASS			4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	5	PASS			4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	6	PASS			4	1	iteration-114
+sms	eval-4	with_skill	FAIL	22.5s	19252	12513	6738	7	FAIL	Mentions 'every send must justify itself' principle	No exact phrase found	4	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	Mentions short code only as future option	5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	2	PASS			5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	3	FAIL	Calculates time-to-send for 100K volume	No calculation of time-to-send provided.	5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	4	FAIL	Mentions quiet hour considerations	No mention of quiet hours found.	5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	5	PASS			5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	6	PASS			5	1	iteration-114
+sms	eval-5	with_skill	FAIL	21.7s	19113	12423	6689	7	FAIL	Mentions A2P sample text alignment requirement	No mention of sample text alignment.	5	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	1	PASS			6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	2	PASS			6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	3	PASS			6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	4	PASS			6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	5	PASS			6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	6	FAIL	Recommends previewing segment count	No mention of previewing segment count	6	1	iteration-114
+sms	eval-6	with_skill	FAIL	13.6s	18681	12142	6538	7	PASS			6	1	iteration-114

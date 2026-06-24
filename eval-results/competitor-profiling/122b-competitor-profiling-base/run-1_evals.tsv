@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	1	FAIL	Runs all three phases (scraping, SEO data, synthesis)	Model asks for clarification before starting.	1	1	iteration-52
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	2	FAIL	Saves raw data to competitor-profiles/raw/ with date subfolder	No output files were captured.	1	1	iteration-52
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	3	FAIL	Produces individual profile per competitor	Model asks for clarification before producing profiles.	1	1	iteration-52
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	4	FAIL	Produces _summary.md after individual profiles	No output files were captured.	1	1	iteration-52
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	5	FAIL	Uses consistent metrics across competitors	No output files captured	1	1	iteration-52
+competitor-profiling	eval-1	with_skill	FAIL	4.9s	9881	6422	3458	6	FAIL	Parallelizes scraping when possible	No evidence of parallelization	1	1	iteration-52
+competitor-profiling	eval-2	with_skill	FAIL	4.7s	9836	6393	3442	1	PASS			2	1	iteration-52
+competitor-profiling	eval-2	with_skill	FAIL	4.7s	9836	6393	3442	2	FAIL	Suggests top 5 based on relevance	Model asks user to choose depth, not suggest top 5.	2	1	iteration-52
+competitor-profiling	eval-2	with_skill	FAIL	4.7s	9836	6393	3442	3	FAIL	Defaults to quick scan for large list	Model asks user to choose depth level	2	1	iteration-52
+competitor-profiling	eval-2	with_skill	FAIL	4.7s	9836	6393	3442	4	PASS			2	1	iteration-52
+competitor-profiling	eval-2	with_skill	FAIL	4.7s	9836	6393	3442	5	PASS			2	1	iteration-52
+competitor-profiling	eval-3	with_skill	FAIL	12.1s	10285	6685	3599	1	PASS			3	1	iteration-52
+competitor-profiling	eval-3	with_skill	FAIL	12.1s	10285	6685	3599	2	PASS			3	1	iteration-52
+competitor-profiling	eval-3	with_skill	FAIL	12.1s	10285	6685	3599	3	PASS			3	1	iteration-52
+competitor-profiling	eval-3	with_skill	FAIL	12.1s	10285	6685	3599	4	PASS			3	1	iteration-52
+competitor-profiling	eval-3	with_skill	FAIL	12.1s	10285	6685	3599	5	PASS			3	1	iteration-52
+competitor-profiling	eval-4	with_skill	FAIL	13.5s	10333	6716	3616	1	PASS			4	1	iteration-52
+competitor-profiling	eval-4	with_skill	FAIL	13.5s	10333	6716	3616	2	PASS			4	1	iteration-52
+competitor-profiling	eval-4	with_skill	FAIL	13.5s	10333	6716	3616	3	PASS			4	1	iteration-52
+competitor-profiling	eval-4	with_skill	FAIL	13.5s	10333	6716	3616	4	PASS			4	1	iteration-52
+competitor-profiling	eval-4	with_skill	FAIL	13.5s	10333	6716	3616	5	PASS			4	1	iteration-52
+competitor-profiling	eval-5	with_skill	FAIL	6.2s	9772	6351	3420	1	PASS			5	1	iteration-52
+competitor-profiling	eval-5	with_skill	FAIL	6.2s	9772	6351	3420	2	FAIL	Runs Phase 1 and Phase 3	No output files captured	5	1	iteration-52
+competitor-profiling	eval-5	with_skill	FAIL	6.2s	9772	6351	3420	3	PASS			5	1	iteration-52
+competitor-profiling	eval-5	with_skill	FAIL	6.2s	9772	6351	3420	4	FAIL	Flags SEO section as skipped, not blank	No mention of SEO section or flags	5	1	iteration-52
+competitor-profiling	eval-5	with_skill	FAIL	6.2s	9772	6351	3420	5	PASS			5	1	iteration-52
+competitor-profiling	eval-6	with_skill	FAIL	13.8s	10627	6907	3719	1	PASS			6	1	iteration-52
+competitor-profiling	eval-6	with_skill	FAIL	13.8s	10627	6907	3719	2	PASS			6	1	iteration-52
+competitor-profiling	eval-6	with_skill	FAIL	13.8s	10627	6907	3719	3	FAIL	Mentions checking traffic/backlink profile against claim scale	No mention of traffic or backlink profile.	6	1	iteration-52
+competitor-profiling	eval-6	with_skill	FAIL	13.8s	10627	6907	3719	4	PASS			6	1	iteration-52
+competitor-profiling	eval-6	with_skill	FAIL	13.8s	10627	6907	3719	5	FAIL	Notes including date pulled	No date mentioned in output	6	1	iteration-52

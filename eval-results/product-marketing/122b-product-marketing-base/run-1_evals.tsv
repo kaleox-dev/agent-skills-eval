@@ -1,0 +1,30 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+product-marketing	eval-1	with_skill	FAIL	4.7s	2147	1395	751	1	PASS			1	1	iteration-92
+product-marketing	eval-1	with_skill	FAIL	4.7s	2147	1395	751	2	PASS			1	1	iteration-92
+product-marketing	eval-1	with_skill	FAIL	4.7s	2147	1395	751	3	FAIL	Covers applicable sections	No file created; only conversational prompt.	1	1	iteration-92
+product-marketing	eval-1	with_skill	FAIL	4.7s	2147	1395	751	4	FAIL	Walks through sections conversationally one at a time	Offers options, does not walk through sections.	1	1	iteration-92
+product-marketing	eval-1	with_skill	FAIL	4.7s	2147	1395	751	5	FAIL	Creates file at .agents/product-marketing.md	No output files captured	1	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	1	FAIL	Reads existing product-marketing.md	Model asked user for file location instead of reading.	2	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	2	PASS			2	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	3	FAIL	Updates Target Audience with VP of Engineering	Model asked for clarification instead of updating.	2	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	4	FAIL	Adds new persona for the expanded audience	Model asked for details, did not add persona.	2	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	5	FAIL	Updates Product Overview for enterprise tier	Model asked for file location instead of updating.	2	1	iteration-92
+product-marketing	eval-2	with_skill	FAIL	6.6s	2261	1469	791	6	FAIL	Preserves unchanged sections	No file edited; model asked for input.	2	1	iteration-92
+product-marketing	eval-3	with_skill	FAIL	26.9s	3464	2251	1212	1	PASS			3	1	iteration-92
+product-marketing	eval-3	with_skill	FAIL	26.9s	3464	2251	1212	2	PASS			3	1	iteration-92
+product-marketing	eval-3	with_skill	FAIL	26.9s	3464	2251	1212	3	PASS			3	1	iteration-92
+product-marketing	eval-3	with_skill	FAIL	26.9s	3464	2251	1212	4	FAIL	Skips non-applicable sections rather than forcing all 12	Filled all sections including N/A and TBD	3	1	iteration-92
+product-marketing	eval-3	with_skill	FAIL	26.9s	3464	2251	1212	5	FAIL	Creates file at .agents/product-marketing.md	No output files were captured.	3	1	iteration-92
+product-marketing	eval-4	with_skill	FAIL	4.0s	2089	1357	731	1	FAIL	Activates auto-draft workflow mode	Model asked for repo location instead.	4	1	iteration-92
+product-marketing	eval-4	with_skill	FAIL	4.0s	2089	1357	731	2	FAIL	Scans codebase for existing marketing materials	Model asks for repo location instead of scanning.	4	1	iteration-92
+product-marketing	eval-4	with_skill	FAIL	4.0s	2089	1357	731	3	FAIL	Drafts context from found information	Model asks for repo link, no draft created.	4	1	iteration-92
+product-marketing	eval-4	with_skill	FAIL	4.0s	2089	1357	731	4	FAIL	Flags sections needing manual input	Model asks for repo link instead of flagging sections.	4	1	iteration-92
+product-marketing	eval-4	with_skill	FAIL	4.0s	2089	1357	731	5	FAIL	Presents draft for review before saving	No draft presented; asked for repo link.	4	1	iteration-92
+product-marketing	eval-5	with_skill	FAIL	4.9s	2137	1389	747	1	PASS			5	1	iteration-92
+product-marketing	eval-5	with_skill	FAIL	4.9s	2137	1389	747	2	PASS			5	1	iteration-92
+product-marketing	eval-5	with_skill	FAIL	4.9s	2137	1389	747	3	FAIL	Summarizes contents if found	No existing document found	5	1	iteration-92
+product-marketing	eval-5	with_skill	FAIL	4.9s	2137	1389	747	4	PASS			5	1	iteration-92
+product-marketing	eval-5	with_skill	FAIL	4.9s	2137	1389	747	5	FAIL	Explains how other skills use it	won't have the foundational context	5	1	iteration-92
+product-marketing	eval-6	with_skill	FAIL	4.2s	2106	1368	737	1	PASS			6	1	iteration-92
+product-marketing	eval-6	with_skill	FAIL	4.2s	2106	1368	737	2	PASS			6	1	iteration-92
+product-marketing	eval-6	with_skill	FAIL	4.2s	2106	1368	737	3	FAIL	Does not attempt to write homepage copy using context creation patterns	I need to establish your Product Marketing Context first.	6	1	iteration-92

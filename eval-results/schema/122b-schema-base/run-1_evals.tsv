@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	1	PASS			1	1	iteration-106
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	2	PASS			1	1	iteration-106
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	3	PASS			1	1	iteration-106
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	4	PASS			1	1	iteration-106
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	5	PASS			1	1	iteration-106
+schema	eval-1	with_skill	FAIL	22.7s	8149	5296	2852	6	PASS			1	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	1	FAIL	Implements FAQPage schema in JSON-LD	Model asked for details instead of implementing.	2	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	2	PASS			2	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	3	FAIL	Provides complete code example	Model asked for details instead of providing code.	2	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	4	PASS			2	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	5	FAIL	Notes Google's FAQ schema guidelines	Model asks for details instead of noting guidelines.	2	1	iteration-106
+schema	eval-2	with_skill	FAIL	8.0s	7245	4709	2535	6	PASS			2	1	iteration-106
+schema	eval-3	with_skill	FAIL	9.7s	7351	4778	2572	1	FAIL	Implements Article or BlogPosting schema	Model provided template, not implementation	3	1	iteration-106
+schema	eval-3	with_skill	FAIL	9.7s	7351	4778	2572	2	PASS			3	1	iteration-106
+schema	eval-3	with_skill	FAIL	9.7s	7351	4778	2572	3	FAIL	Recommends BreadcrumbList alongside	Only recommends BlogPosting schema.	3	1	iteration-106
+schema	eval-3	with_skill	FAIL	9.7s	7351	4778	2572	4	PASS			3	1	iteration-106
+schema	eval-3	with_skill	FAIL	9.7s	7351	4778	2572	5	FAIL	Addresses CMS integration for dynamic fields	asks for tech stack, does not implement CMS integration	3	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	1	FAIL	Implements Product schema with full properties	Model asked for details instead of implementing.	4	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	2	PASS			4	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	3	PASS			4	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	4	FAIL	Includes BreadcrumbList	Mentions BreadcrumbList but no code provided	4	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	5	PASS			4	1	iteration-106
+schema	eval-4	with_skill	FAIL	16.2s	7715	5014	2700	6	PASS			4	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	1	PASS			5	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	2	FAIL	Checks for common schema errors	Lists issues but does not check a specific schema.	5	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	3	PASS			5	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	4	FAIL	Recommends Search Console structured data reports	No mention of Search Console reports	5	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	5	FAIL	Addresses warnings vs errors distinction	Mentions 'errors or warnings' but does not distinguish them.	5	1	iteration-106
+schema	eval-5	with_skill	FAIL	8.9s	7152	4648	2503	6	PASS			5	1	iteration-106
+schema	eval-6	with_skill	FAIL	6.1s	7010	4556	2453	1	PASS			6	1	iteration-106
+schema	eval-6	with_skill	FAIL	6.1s	7010	4556	2453	2	PASS			6	1	iteration-106

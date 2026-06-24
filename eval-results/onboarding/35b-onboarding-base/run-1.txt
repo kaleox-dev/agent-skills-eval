@@ -1,0 +1,81 @@
+
+[1m▶ onboarding[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Help me optimize our onboarding flow. We have a project management tool and only 30% of trial users create their first project within the first week. We need to get them to value faster.
+    [90moutput:[0m  To optimize your onboarding flow and improve the 30% activation rate, we need to focus on reducing the friction between signup and that first project creation. Let's start by defining what that "aha …
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Defines the activation/aha moment
+         [90mevidence:[0m Asks questions, does not define
+      [31m#2[0m [31mFAIL[0m [90m—[0m Evaluates time-to-value
+         [90mevidence:[0m No metrics or time data provided
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends onboarding flow approach
+         [90mevidence:[0m Asks questions, no recommendation
+      [31m#5[0m [31mFAIL[0m [90m—[0m Addresses empty states as opportunities
+         [90mevidence:[0m Asks about blank slate but does not address it
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides experiment ideas
+         [90mevidence:[0m Asks clarifying questions, no ideas provided
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes measurement metrics
+         [90mevidence:[0m No metrics mentioned in output
+    3.1s · 5561 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    How do we handle the empty state when a new user first logs in? Right now they just see a blank dashboard.
+    [90moutput:[0m  A blank dashboard is a classic onboarding killer. It creates "blank page syndrome" where the user doesn't know what to do next, leading to immediate churn. As the guidelines state: **Empty states are…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    11.9s · 6270 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    our users sign up but then never come back. like 50% don't even log in a second time. what do we do?
+    [90moutput:[0m  This is a critical issue. If 50% of users never return for a second login, you are leaking the majority of your potential customer base before they've even experienced your product. This is typically…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests multi-channel onboarding
+         [90mevidence:[0m No multi-channel onboarding mentioned
+    18.0s · 6737 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    What should our onboarding checklist include? We're a design collaboration tool. Users need to upload a design, invite a team member, and leave a comment to get full value.
+    [90moutput:[0m  Based on your description, you have a very clear, high-value activation loop: **Upload → Invite → Comment**. This is excellent because it forces the user to experience the three core pillars of a *co…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Orders by increasing commitment
+         [90mevidence:[0m Model orders by Upload, Comment, Invite (value then network)
+    21.8s · 7011 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Our signup form has 8 fields and people keep dropping off. Can you help us fix the signup flow?
+    [90moutput:[0m  I can help with that, but first I need to clarify one thing: **signup optimization** is a distinct skill from **onboarding optimization**. Since you specifically mentioned the **signup form** (8 fiel…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    10.5s · 6101 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Should we use tooltips, a product tour, or a setup wizard for onboarding? What works best?
+    [90moutput:[0m  The short answer: **It depends on your product complexity and user goals, but for most SaaS products, a hybrid approach works best.** Here’s the breakdown of when each works and why you shouldn’t pic…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    19.4s · 6842 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 80.3%[0m  [90m· 14.12s avg · 6420 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-85/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "onboarding",
+      "slug": "onboarding",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7714285714285715,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-85/benchmark.json"
+    }
+  ],
+  "iteration": 85,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-85",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-85/report/index.html"
+}

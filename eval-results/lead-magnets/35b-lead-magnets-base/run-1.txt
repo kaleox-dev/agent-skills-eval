@@ -1,0 +1,83 @@
+
+[1m▶ lead-magnets[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    What's the difference between a lead magnet and a free tool? Should I build one or the other?
+    [90moutput:[0m  The core difference lies in **interaction** and **personalization**. * A **Lead Magnet** is a static asset you *consume* (read, watch, or download). It provides education, inspiration, or a template.…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Compares SEO and shareability characteristics
+         [90mevidence:[0m No SEO/shareability comparison found
+    12.1s · 9157 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We're a B2B SaaS selling project management software to marketing agencies. What lead magnet should we create?
+    [90moutput:[0m  To recommend the best lead magnet, I need to understand a bit more about your current situation and goals. However, based on your industry (B2B SaaS for Marketing Agencies), I can already identify hi…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Applies the 5 principles
+         [90mevidence:[0m No mention of 5 principles
+      [31m#5[0m [31mFAIL[0m [90m—[0m Outlines all 5 output sections (recommendation, content, gating, distribution, measurement)
+         [90mevidence:[0m Missing content, gating, distribution, measurement
+    9.4s · 9052 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a 50-page ebook we spent 3 months writing. Conversion on the landing page is only 4%. Should we keep iterating?
+    [90moutput:[0m  4% is a common conversion rate for **cold traffic** or high-commitment assets like 50-page ebooks, but it is likely suboptimal. According to benchmarks, dedicated landing pages for ebooks/guides typi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    17.1s · 9447 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our lead form asks for name, email, company, role, company size, and phone. We're not getting enough signups. Could the form be the problem?
+    [90moutput:[0m  Yes, your form is almost certainly the primary problem. You are asking for **6 fields**, which is significantly above the industry average for standard lead magnets. Every additional field you add to…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Cites 5-10% per field rule
+         [90mevidence:[0m Model cites <5-10% for 6 fields, not per field.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Asks what fields are actually used
+         [90mevidence:[0m Model states 6 fields are used
+    15.9s · 9382 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    We have a top-performing blog post on email subject lines. Can we use it as a lead magnet?
+    [90moutput:[0m  Yes, absolutely. Converting a top-performing blog post into a lead magnet is one of the highest-ROI strategies you can employ. This is called a **Content Upgrade**. Content upgrades convert **2-5x be…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Keeps blog post ungated to preserve SEO
+         [90mevidence:[0m Model suggests gating content via lead magnet
+    13.0s · 9057 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="lead-magnets"> <description>When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions "lead magnet," "gated con…
+    [90muser:[0m    Our checklist gets a lot of downloads but very few of them ever sign up for a trial. Is the lead magnet broken?
+    [90moutput:[0m  A high download count with low trial sign-ups doesn’t necessarily mean the lead magnet is "broken," but it strongly suggests a **misalignment between the lead magnet’s promise and your product’s valu…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Diagnoses as lead quality / buyer stage mismatch
+         [90mevidence:[0m Suggests misalignment, not mismatch
+      [31m#2[0m [31mFAIL[0m [90m—[0m Asks about ICP fit of leads
+         [90mevidence:[0m No mention of ICP fit
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions tracking time to conversion by source
+         [90mevidence:[0m No mention of tracking time to conversion
+    13.3s · 9317 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 69.2%[0m  [90m· 13.44s avg · 9235 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-77/benchmark.json[0m
+{
+  "passed": 20,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "lead-magnets",
+      "slug": "lead-magnets",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6896551724137931,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-77/benchmark.json"
+    }
+  ],
+  "iteration": 77,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-77",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-77/report/index.html"
+}

@@ -1,0 +1,47 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	1	FAIL	Identifies page type as landing page	Model states 'No page content provided'	1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	2	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	3	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	4	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	5	FAIL	Notes message match between ads and landing page	No page content provided. No context found.	1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	6	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	7	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	8	PASS			1	1	iteration-189
+cro-35b	eval-1	with_skill	FAIL	13.5s	7608	4945	2662	9	PASS			1	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	1	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	2	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	3	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	4	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	5	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	6	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	7	PASS			2	1	iteration-189
+cro-35b	eval-2	with_skill	FAIL	17.4s	7868	5114	2753	8	PASS			2	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	1	FAIL	Identifies as Homepage CRO	No mention of 'Homepage CRO' in output	3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	2	FAIL	Asks about current conversion rate	Model gives optimization advice, no question asked	3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	3	FAIL	Asks about traffic sources	No mention of traffic sources in output	3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	4	PASS			3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	5	FAIL	Addresses serving multiple audiences	No page content provided.	3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	6	FAIL	Addresses clear paths for different visitor intents	No page content provided.	3	1	iteration-189
+cro-35b	eval-3	with_skill	FAIL	15.8s	7747	5035	2711	7	PASS			3	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	1	PASS			4	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	2	PASS			4	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	3	PASS			4	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	4	PASS			4	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	5	PASS			4	1	iteration-189
+cro-35b	eval-4	with_skill	FAIL	16.5s	7796	5067	2728	6	PASS			4	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	1	FAIL	Approaches as diagnostic audit	No diagnostic audit performed	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	2	FAIL	Checks for lost trust signals	No page content provided.	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	3	FAIL	Checks for weakened value proposition	No page content provided.	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	4	FAIL	Checks for CTA hierarchy changes	No page content provided.	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	5	FAIL	Checks for added friction	No page content provided.	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	6	FAIL	Checks for broken message match with traffic sources	Model gives generic advice, no specific check performed	5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	7	PASS			5	1	iteration-189
+cro-35b	eval-5	with_skill	FAIL	18.7s	7965	5177	2787	8	FAIL	Recommends reverting high-risk changes	No mention of reverting changes	5	1	iteration-189
+cro-35b	eval-6	with_skill	FAIL	19.7s	8019	5212	2806	1	PASS			6	1	iteration-189
+cro-35b	eval-6	with_skill	FAIL	19.7s	8019	5212	2806	2	PASS			6	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	1	FAIL	Applies Feature Page CRO framework	No page content provided	7	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	2	FAIL	Connects features to benefits	No product features or benefits mentioned	7	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	3	PASS			7	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	4	FAIL	Provides clear path to try/buy	No page content provided	7	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	5	PASS			7	1	iteration-189
+cro-35b	eval-7	with_skill	FAIL	16.7s	7839	5095	2743	6	PASS			7	1	iteration-189

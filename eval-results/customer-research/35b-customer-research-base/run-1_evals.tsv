@@ -1,0 +1,50 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+customer-research	eval-1	with_skill	FAIL	6.3s	10996	7147	3848	1	PASS			1	1	iteration-65
+customer-research	eval-1	with_skill	FAIL	6.3s	10996	7147	3848	2	PASS			1	1	iteration-65
+customer-research	eval-1	with_skill	FAIL	6.3s	10996	7147	3848	3	FAIL	Suggests organizing quotes by theme	No mention of organizing quotes by theme	1	1	iteration-65
+customer-research	eval-1	with_skill	FAIL	6.3s	10996	7147	3848	4	FAIL	References frequency and intensity scoring	No mention of scoring in output	1	1	iteration-65
+customer-research	eval-1	with_skill	FAIL	6.3s	10996	7147	3848	5	FAIL	Asks which deliverable is needed	Asks for goal, not deliverable	1	1	iteration-65
+customer-research	eval-2	with_skill	FAIL	2.8s	10721	6968	3752	1	PASS			2	1	iteration-65
+customer-research	eval-2	with_skill	FAIL	2.8s	10721	6968	3752	2	FAIL	Mentions Reddit, G2, or review sites as starting points	No mention of Reddit, G2, or review sites	2	1	iteration-65
+customer-research	eval-2	with_skill	FAIL	2.8s	10721	6968	3752	3	PASS			2	1	iteration-65
+customer-research	eval-2	with_skill	FAIL	2.8s	10721	6968	3752	4	PASS			2	1	iteration-65
+customer-research	eval-3	with_skill	FAIL	27.2s	12683	8243	4439	1	PASS			3	1	iteration-65
+customer-research	eval-3	with_skill	FAIL	27.2s	12683	8243	4439	2	PASS			3	1	iteration-65
+customer-research	eval-3	with_skill	FAIL	27.2s	12683	8243	4439	3	FAIL	Recommends competitor 4-star reviews for buried complaints	Model analyzed 1 and 3-star reviews, not 4-star.	3	1	iteration-65
+customer-research	eval-3	with_skill	FAIL	27.2s	12683	8243	4439	4	PASS			3	1	iteration-65
+customer-research	eval-3	with_skill	FAIL	27.2s	12683	8243	4439	5	PASS			3	1	iteration-65
+customer-research	eval-4	with_skill	FAIL	7.3s	11082	7203	3878	1	PASS			4	1	iteration-65
+customer-research	eval-4	with_skill	FAIL	7.3s	11082	7203	3878	2	PASS			4	1	iteration-65
+customer-research	eval-4	with_skill	FAIL	7.3s	11082	7203	3878	3	FAIL	Includes jobs to be done, pains, triggers, and desired outcomes in persona structure	Model asks for data instead of generating persona	4	1	iteration-65
+customer-research	eval-4	with_skill	FAIL	7.3s	11082	7203	3878	4	PASS			4	1	iteration-65
+customer-research	eval-4	with_skill	FAIL	7.3s	11082	7203	3878	5	FAIL	Notes minimum data threshold (5-10 data points)	No mention of 5-10 data points	4	1	iteration-65
+customer-research	eval-5	with_skill	FAIL	12.7s	11505	7478	4026	1	PASS			5	1	iteration-65
+customer-research	eval-5	with_skill	FAIL	12.7s	11505	7478	4026	2	PASS			5	1	iteration-65
+customer-research	eval-5	with_skill	FAIL	12.7s	11505	7478	4026	3	PASS			5	1	iteration-65
+customer-research	eval-5	with_skill	FAIL	12.7s	11505	7478	4026	4	PASS			5	1	iteration-65
+customer-research	eval-6	with_skill	FAIL	2.7s	10766	6997	3768	1	FAIL	Recommends reading competitor 4-star reviews specifically for buried complaints	Model asks for missing info, no analysis done	6	1	iteration-65
+customer-research	eval-6	with_skill	FAIL	2.7s	10766	6997	3768	2	PASS			6	1	iteration-65
+customer-research	eval-6	with_skill	FAIL	2.7s	10766	6997	3768	3	FAIL	Describes what to extract: what they love, what frustrates them, unmet needs	Model asked for inputs, did not extract.	6	1	iteration-65
+customer-research	eval-6	with_skill	FAIL	2.7s	10766	6997	3768	4	FAIL	Frames as competitive intelligence input	Model asks for inputs instead of framing	6	1	iteration-65
+customer-research	eval-7	with_skill	FAIL	5.1s	10976	7134	3841	1	PASS			7	1	iteration-65
+customer-research	eval-7	with_skill	FAIL	5.1s	10976	7134	3841	2	FAIL	Suggests relevant digital watering holes (subreddits, G2 categories, communities)	Mentions Reddit/G2 but asks for input first	7	1	iteration-65
+customer-research	eval-7	with_skill	FAIL	5.1s	10976	7134	3841	3	PASS			7	1	iteration-65
+customer-research	eval-7	with_skill	FAIL	5.1s	10976	7134	3841	4	FAIL	Mentions organizing findings into a VOC quote bank	No mention of quote bank	7	1	iteration-65
+customer-research	eval-8	with_skill	FAIL	3.9s	10816	7030	3785	1	FAIL	Recommends segmenting churn reasons before analyzing	Model asks for data, does not recommend segmentation	8	1	iteration-65
+customer-research	eval-8	with_skill	FAIL	3.9s	10816	7030	3785	2	FAIL	Warns against averaging across different churn causes	Model asks for data, no analysis provided	8	1	iteration-65
+customer-research	eval-8	with_skill	FAIL	3.9s	10816	7030	3785	3	PASS			8	1	iteration-65
+customer-research	eval-8	with_skill	FAIL	3.9s	10816	7030	3785	4	FAIL	Asks if win/loss interview data is also available	Model asks for exit survey data, not win/loss	8	1	iteration-65
+customer-research	eval-9	with_skill	FAIL	20.0s	12100	7865	4235	1	PASS			9	1	iteration-65
+customer-research	eval-9	with_skill	FAIL	20.0s	12100	7865	4235	2	PASS			9	1	iteration-65
+customer-research	eval-9	with_skill	FAIL	20.0s	12100	7865	4235	3	PASS			9	1	iteration-65
+customer-research	eval-10	with_skill	FAIL	3.1s	10752	6988	3763	1	PASS			10	1	iteration-65
+customer-research	eval-10	with_skill	FAIL	3.1s	10752	6988	3763	2	FAIL	Identifies the highest-signal quotes for messaging	Model asks for data instead of identifying quotes	10	1	iteration-65
+customer-research	eval-10	with_skill	FAIL	3.1s	10752	6988	3763	3	FAIL	References the copywriting skill for the actual copy writing step	No copywriting performed, only questions asked	10	1	iteration-65
+customer-research	eval-11	with_skill	FAIL	5.8s	11002	7151	3850	1	PASS			11	1	iteration-65
+customer-research	eval-11	with_skill	FAIL	5.8s	11002	7151	3850	2	FAIL	Suggests app store reviews as a primary source	Reviews listed as existing data, not primary source	11	1	iteration-65
+customer-research	eval-11	with_skill	FAIL	5.8s	11002	7151	3850	3	PASS			11	1	iteration-65
+customer-research	eval-11	with_skill	FAIL	5.8s	11002	7151	3850	4	PASS			11	1	iteration-65
+customer-research	eval-12	with_skill	FAIL	3.4s	10821	7033	3787	1	FAIL	Recognizes this as a zero-research bootstrap scenario	Model asks for product details instead of recognizing	12	1	iteration-65
+customer-research	eval-12	with_skill	FAIL	3.4s	10821	7033	3787	2	FAIL	Recommends forming hypotheses before gathering data	Model asks for info before digging, no hypothesis formed	12	1	iteration-65
+customer-research	eval-12	with_skill	FAIL	3.4s	10821	7033	3787	3	FAIL	Suggests a minimum viable research plan (interviews + online sources)	No interviews suggested, only online mining	12	1	iteration-65
+customer-research	eval-12	with_skill	FAIL	3.4s	10821	7033	3787	4	FAIL	Warns against building personas without any data	Model asks for info, does not warn	12	1	iteration-65

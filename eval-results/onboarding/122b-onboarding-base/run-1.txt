@@ -1,0 +1,77 @@
+
+[1m▶ onboarding[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    How do we handle the empty state when a new user first logs in? Right now they just see a blank dashboard.
+    [90moutput:[0m  A blank dashboard is the #1 killer of new user activation. It creates immediate cognitive load ("What do I do here?") and zero perceived value. To fix this, we need to transform that empty state from…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    12.7s · 6294 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Help me optimize our onboarding flow. We have a project management tool and only 30% of trial users create their first project within the first week. We need to get them to value faster.
+    [90moutput:[0m  To optimize your onboarding and get users to that "aha moment" (creating their first project) faster, I need to understand your current setup. A 30% activation rate suggests significant friction or c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Includes measurement metrics
+         [90mevidence:[0m No metrics or data points included.
+    11.8s · 6239 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    our users sign up but then never come back. like 50% don't even log in a second time. what do we do?
+    [90moutput:[0m  This is a classic **activation problem**. If 50% of users don't return after signing up, they are likely dropping off because they haven't experienced your product's core value (the "Aha Moment") yet…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies stalled users framework
+         [90mevidence:[0m No stalled users framework applied
+      [31m#4[0m [31mFAIL[0m [90m—[0m Suggests multi-channel onboarding
+         [90mevidence:[0m No mention of multi-channel strategies
+    12.7s · 6295 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    What should our onboarding checklist include? We're a design collaboration tool. Users need to upload a design, invite a team member, and leave a comment to get full value.
+    [90moutput:[0m  Based on your product type (Design Collaboration) and the specific actions required for value, here is a recommended onboarding checklist structure. The goal is to get users to the **"Aha Moment"** (…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Starts with quickest win
+         [90mevidence:[0m Starts with 'Upload your first design'
+      [31m#7[0m [31mFAIL[0m [90m—[0m Addresses skipped items
+         [90mevidence:[0m No mention of handling skipped items
+    16.7s · 6508 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Our signup form has 8 fields and people keep dropping off. Can you help us fix the signup flow?
+    [90moutput:[0m  I can certainly help with that! However, based on your description, you are facing a **Signup/Registration** optimization issue (reducing friction to get users *into* the product), rather than an **O…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    9.3s · 5973 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="onboarding"> <description>When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flo…
+    [90muser:[0m    Should we use tooltips, a product tour, or a setup wizard for onboarding? What works best?
+    [90moutput:[0m  There is no single "best" option; the right choice depends entirely on your **product complexity**, your **activation definition**, and your **user's intent**. However, the modern best practice for m…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends testing different approaches
+         [90mevidence:[0m No explicit recommendation to test approaches found.
+    20.7s · 6908 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 84.0%[0m  [90m· 13.97s avg · 6370 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-84/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 6,
+  "skills": [
+    {
+      "skill": "onboarding",
+      "slug": "onboarding",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8285714285714286,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-84/benchmark.json"
+    }
+  ],
+  "iteration": 84,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-84",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-84/report/index.html"
+}

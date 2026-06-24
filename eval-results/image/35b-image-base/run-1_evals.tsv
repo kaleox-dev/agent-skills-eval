@@ -1,0 +1,36 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	1	FAIL	Recommends AI generation for one-off hero	No AI tool recommended for hero	1	1	iteration-73
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	2	PASS			1	1	iteration-73
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	3	PASS			1	1	iteration-73
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	4	PASS			1	1	iteration-73
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	5	PASS			1	1	iteration-73
+image	eval-1	with_skill	FAIL	9.6s	9060	5889	3171	6	FAIL	Mentions WebP optimization	No mention of WebP in output	1	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	1	FAIL	Refuses to use AI generation for product UI	Offers to generate AI concept image	2	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	2	PASS			2	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	3	FAIL	Recommends real screenshots at 2x resolution	Model asks for screenshot, does not recommend 2x resolution	2	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	4	PASS			2	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	5	FAIL	Suggests specific screenshot tools	No tools mentioned, only workflow	2	1	iteration-73
+image	eval-2	with_skill	FAIL	5.5s	8769	5699	3069	6	FAIL	Notes this as a common mistake	Model did not note it as a common mistake	2	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	1	PASS			3	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	2	PASS			3	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	3	PASS			3	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	4	FAIL	Suggests Canva or Figma over AI	No mention of Canva or Figma.	3	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	5	FAIL	Mentions Ideogram for text-heavy designs	No mention of Ideogram found in output	3	1	iteration-73
+image	eval-3	with_skill	FAIL	4.1s	8649	5621	3027	6	FAIL	Recommends testing at display size	No mention of testing at display size	3	1	iteration-73
+image	eval-4	with_skill	FAIL	13.4s	9332	6065	3266	1	PASS			4	1	iteration-73
+image	eval-4	with_skill	FAIL	13.4s	9332	6065	3266	2	PASS			4	1	iteration-73
+image	eval-4	with_skill	FAIL	13.4s	9332	6065	3266	3	FAIL	Notes Instagram 4:5 variant	No mention of 4:5 ratio	4	1	iteration-73
+image	eval-4	with_skill	FAIL	13.4s	9332	6065	3266	4	FAIL	Suggests programmatic text overlays for variants	Suggests manual Canva text, not programmatic	4	1	iteration-73
+image	eval-4	with_skill	FAIL	13.4s	9332	6065	3266	5	PASS			4	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	1	PASS			5	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	2	PASS			5	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	3	FAIL	Lists optimization checklist items	No checklist provided, only format advice	5	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	4	PASS			5	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	5	PASS			5	1	iteration-73
+image	eval-5	with_skill	FAIL	12.5s	9245	6009	3235	6	FAIL	Provides command line tool example	No CLI examples provided in output	5	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	1	PASS			6	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	2	PASS			6	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	3	PASS			6	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	4	FAIL	Lists required og:image meta tags	Discusses tools, not meta tags	6	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	5	PASS			6	1	iteration-73
+image	eval-6	with_skill	FAIL	16.5s	9595	6236	3358	6	FAIL	Notes this is best for high-volume blogs	Model suggests Vercel OG for SaaS, not high-volume blogs	6	1	iteration-73

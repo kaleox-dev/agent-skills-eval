@@ -1,0 +1,83 @@
+
+[1m▶ churn-prevention[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    How do we identify which customers are at risk of churning before they actually cancel? We want to be proactive.
+    [90moutput:[0m  To identify customers at risk of churning before they cancel, we need to build a **Churn Prediction Model** based on usage signals, engagement health, and behavioral triggers. Since you want to be pr…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.4s · 17160 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our SaaS product has a 7% monthly churn rate and we need to bring it down. We're a $49/month project management tool with about 2,000 paying customers. Can you help us design a churn prevention strat…
+    [90moutput:[0m  A 7% monthly churn rate is significantly above the healthy benchmark for B2B SaaS (which should be under 2-3% monthly). With 2,000 customers at $49/month, this is costing you substantial MRR and grow…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Designs cancel flow with proper stages
+         [90mevidence:[0m No flow designed, only questions asked
+      [31m#4[0m [31mFAIL[0m [90m—[0m Maps save offers to cancellation reasons
+         [90mevidence:[0m No mention of mapping offers to reasons
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends health score model
+         [90mevidence:[0m No health score model mentioned
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized implementation plan
+         [90mevidence:[0m Asks for context before planning
+    9.7s · 16946 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    what should we show users when they click the cancel button? right now they just go straight to cancellation with no attempt to save them
+    [90moutput:[0m  You are leaving a significant amount of money on the table. Moving from "instant cancel" to a structured cancel flow typically improves save rates by **15-25%** (B2C) or **25-40%** (B2B) without dama…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes exit survey with 7 categories
+         [90mevidence:[0m Model lists 7 options in survey section
+    16.6s · 17305 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We keep losing customers because their credit cards expire. About 15% of our churn is from failed payments. How do we fix this?
+    [90moutput:[0m  This is **involuntary churn**, and it is highly recoverable. A 15% churn rate from failed payments is significantly higher than the industry average (typically 3-5% for mature SaaS, up to 10% for ear…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes recovery benchmarks
+         [90mevidence:[0m No benchmarks mentioned, only targets.
+    16.5s · 17304 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    We want to set up a win-back email sequence for customers who already cancelled. Can you help write those emails?
+    [90moutput:[0m  I can help you write those win-back emails. To make them effective, I need to tailor the messaging to *why* they left and *when* you're contacting them. Before we start, here is the **standard best-p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt to write a full email sequence
+         [90mevidence:[0m Model wrote 4 full email drafts.
+    11.4s · 17157 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="churn-prevention"> <description>When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use wh…
+    [90muser:[0m    Our exit survey shows that 40% of cancellations say 'too expensive' as the reason. What save offers should we try?
+    [90moutput:[0m  This is a classic churn signal. Since 40% of your users are price-sensitive, you have a large segment where a **dynamic save offer** tied directly to that reason will likely yield the highest ROI. Ho…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Notes that 'too expensive' often masks other issues
+         [90mevidence:[0m Model treats 'too expensive' as a single segment
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests deeper follow-up questions
+         [90mevidence:[0m No follow-up questions suggested.
+    17.4s · 17556 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 74.5%[0m  [90m· 14.33s avg · 17238 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-47/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "churn-prevention",
+      "slug": "churn-prevention",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7567567567567568,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-47/benchmark.json"
+    }
+  ],
+  "iteration": 47,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-47",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-47/report/index.html"
+}

@@ -1,0 +1,47 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	1	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	2	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	3	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	4	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	5	FAIL	Notes message match between ads and landing page	Model did not check actual content	1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	6	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	7	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	8	PASS			1	1	iteration-63
+cro	eval-1	with_skill	FAIL	14.5s	11493	7470	4022	9	FAIL	Provides 2-3 headline or CTA alternatives	No specific alternatives provided.	1	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	1	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	2	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	3	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	4	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	5	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	6	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	7	PASS			2	1	iteration-63
+cro	eval-2	with_skill	FAIL	15.7s	11542	7502	4039	8	PASS			2	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	1	FAIL	Identifies as Homepage CRO	Model asks for URL/copy, does not identify as CRO	3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	2	FAIL	Asks about current conversion rate	Model asks for URL/copy, not conversion rate	3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	3	FAIL	Asks about traffic sources	No mention of traffic sources found.	3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	4	PASS			3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	5	FAIL	Addresses serving multiple audiences	Mentions segmented CTAs for different personas	3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	6	PASS			3	1	iteration-63
+cro	eval-3	with_skill	FAIL	10.2s	11129	7233	3895	7	PASS			3	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	1	PASS			4	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	2	PASS			4	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	3	PASS			4	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	4	PASS			4	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	5	PASS			4	1	iteration-63
+cro	eval-4	with_skill	FAIL	16.2s	11575	7523	4051	6	PASS			4	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	1	FAIL	Approaches as diagnostic audit	No audit performed, only asked for info	5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	2	FAIL	Checks for lost trust signals	Model asks for page content, does not check signals	5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	3	PASS			5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	4	FAIL	Checks for CTA hierarchy changes	Model asks for page content, does not check CTA.	5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	5	PASS			5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	6	FAIL	Checks for broken message match with traffic sources	Model asks for info, does not check.	5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	7	FAIL	Provides fixes organized by impact	No fixes provided, only questions asked.	5	1	iteration-63
+cro	eval-5	with_skill	FAIL	5.0s	10560	6864	3695	8	FAIL	Recommends reverting high-risk changes	No mention of reverting changes	5	1	iteration-63
+cro	eval-6	with_skill	FAIL	11.3s	11003	7151	3851	1	PASS			6	1	iteration-63
+cro	eval-6	with_skill	FAIL	11.3s	11003	7151	3851	2	PASS			6	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	1	FAIL	Applies Feature Page CRO framework	Model asks for URL/content instead of applying framework	7	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	2	FAIL	Connects features to benefits	Model asks for URL/content, provides no analysis.	7	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	3	FAIL	Suggests use cases and examples	No specific use cases or examples provided.	7	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	4	FAIL	Provides clear path to try/buy	Model asks for URL/content, provides no analysis.	7	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	5	FAIL	Notes organic traffic source and search intent match	Model asks for URL/content, does not analyze page.	7	1	iteration-63
+cro	eval-7	with_skill	FAIL	3.5s	10486	6815	3670	6	FAIL	Suggests specific experiment hypotheses	No hypotheses provided, only context questions	7	1	iteration-63

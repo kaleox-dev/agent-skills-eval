@@ -1,0 +1,83 @@
+
+[1m▶ launch[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We want to launch on Product Hunt. Any tips? We've never done it before.
+    [90moutput:[0m  Launching on Product Hunt can be a fantastic way to get initial traction, but as the skill notes, it requires significant preparation and isn't just about hitting "post." Since you haven't done this …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Covers timing (day and time selection)
+         [90mevidence:[0m No specific day/time advice given
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions common mistakes to avoid
+         [90mevidence:[0m No mistakes listed, only steps
+    7.3s · 3572 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Our launch flopped. We launched 3 weeks ago and only got 50 signups. We expected at least 500. What went wrong and what can we do now?
+    [90moutput:[0m  I’m sorry to hear that the launch didn’t meet expectations. A result of 50 signups instead of 500 indicates a significant gap between your expectations and market reality, but **3 weeks is still earl…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Suggests analyzing which channels produced signups
+         [90mevidence:[0m Model asks for channel info, does not suggest analysis
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides specific recovery plan
+         [90mevidence:[0m Asks for context first, no plan yet
+    10.8s · 3879 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    we just shipped a major feature update. how should we announce it? it's not a full product launch, just a big new feature.
+    [90moutput:[0m  Since you’ve already shipped the feature, you are in **Phase 5: Full Launch** (or immediate post-launch) of the update cycle. The goal now is to maximize visibility, drive adoption among existing use…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Scales tactics appropriately (not full launch)
+         [90mevidence:[0m Model explicitly states Phase 5: Full Launch
+      [31m#5[0m [31mFAIL[0m [90m—[0m Includes email, blog, social, and in-app notification
+         [90mevidence:[0m No blog mentioned in output
+    15.9s · 4213 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    We're launching a new B2B SaaS product for design teams in 6 weeks. It's a design review tool. We have a small audience (500 email subscribers, 2k Twitter followers). Help us plan the launch.
+    [90moutput:[0m  This is a classic "David vs. Goliath" launch scenario. You have a small but potentially highly engaged audience, and you’re entering a crowded market (tools like Figma comments, Zeplin, or InVision).…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends five-phase launch approach
+         [90mevidence:[0m Model outlines a 3-phase ORB framework
+    24.0s · 4827 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    Give me some creative marketing ideas to promote our product. We're bootstrapped and don't have a big budget.
+    [90moutput:[0m  To give you the most relevant ideas, I need to know a bit more about what we're launching. However, since you're bootstrapped, the strategy shifts from "spending money" to "spending time and creativi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    13.9s · 4046 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="launch"> <description>When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,…
+    [90muser:[0m    How do we leverage partnerships and borrowed audiences for our launch? We don't have a big audience of our own.
+    [90moutput:[0m  Since you are starting with a small audience, **Borrowed Channels** are your most powerful lever. This skill is specifically designed for this scenario: using other people's credibility and audiences…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes borrowed strategies take time to build
+         [90mevidence:[0m Model says 'shortcut the hardest part'
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests starting well before launch day
+         [90mevidence:[0m No mention of timing or pre-launch
+    19.7s · 4469 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 76.2%[0m  [90m· 15.28s avg · 4168 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-75/benchmark.json[0m
+{
+  "passed": 26,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "launch",
+      "slug": "launch",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7428571428571429,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-75/benchmark.json"
+    }
+  ],
+  "iteration": 75,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-75",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-75/report/index.html"
+}

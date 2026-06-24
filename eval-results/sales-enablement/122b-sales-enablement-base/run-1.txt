@@ -1,0 +1,79 @@
+
+[1m▶ sales-enablement[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    i need a one-pager we can leave behind after sales meetings. something that summarizes our product and key benefits.
+    [90moutput:[0m  I can draft a high-impact **Post-Meeting Leave-Behind** one-pager for you. This asset is designed to be sent within 24 hours of a meeting to reinforce what you discussed, arm your champion, and drive…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies one-pager/leave-behind framework
+         [90mevidence:[0m Model asks for details instead of applying framework.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Includes headline, benefits, social proof, how it works, CTA
+         [90mevidence:[0m Model asked for details, did not generate content.
+      [31m#3[0m [31mFAIL[0m [90m—[0m Keeps to one page format
+         [90mevidence:[0m Model asks for details, does not provide one-pager.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Provides specific content for each section
+         [90mevidence:[0m Model asks user for details instead.
+    5.9s · 22767 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Our sales team keeps getting the same objections. The top ones are: 'we already use SurveyMonkey,' 'we don't have budget right now,' and 'our team is too small to need this.' Help me create an object…
+    [90moutput:[0m  This is a classic scenario where sales reps need a "cheat sheet" that moves beyond generic platitudes and gives them specific, tactical responses based on your actual differentiators. Since I don't h…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    28.3s · 24496 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me create a sales deck for our B2B SaaS product. We sell an employee engagement platform to HR directors at companies with 500-5000 employees. Our main differentiator is real-time pulse surveys …
+    [90moutput:[0m  To create a high-converting sales deck that your reps will actually use, I need to flesh out the specific details of your value proposition and proof points. The framework below is a strong start, bu…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Includes speaker notes or talking points
+         [90mevidence:[0m No speaker notes included in output.
+    29.1s · 24538 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Create a demo script for our analytics dashboard product. Typical demo is 30 minutes with a VP of Marketing.
+    [90moutput:[0m  Since I don't have your specific product details (name, specific features, target industry, or unique differentiators), I have created a **highly structured, fill-in-the-blank demo script** based on …
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies 5-part demo script structure
+         [90mevidence:[0m Script contains 6 scenes, not 5.
+    35.2s · 24764 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    We need a public comparison page showing how we stack up against Zendesk and Intercom.
+    [90moutput:[0m  I can help you draft the content for a public-facing comparison page. However, to ensure this is accurate and effective, I need to clarify the scope based on our guidelines. **Important Distinction:*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    10.9s · 22838 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sales-enablement"> <description>When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales …
+    [90muser:[0m    Help me build an ROI calculator we can use during sales calls. We need to show prospects how much money they'll save by switching to our product.
+    [90moutput:[0m  To build an ROI calculator that actually closes deals, we need to move beyond generic "efficiency gains" and tie the math directly to the prospect's specific pain points. A good ROI calculator is a c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends conservative assumptions
+         [90mevidence:[0m ROI example shows 1,569% return
+    23.9s · 23915 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 79.4%[0m  [90m· 22.23s avg · 23886 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-104/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 7,
+  "skills": [
+    {
+      "skill": "sales-enablement",
+      "slug": "sales-enablement",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-104/benchmark.json"
+    }
+  ],
+  "iteration": 104,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-104",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-104/report/index.html"
+}

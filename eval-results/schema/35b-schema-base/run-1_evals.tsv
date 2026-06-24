@@ -1,0 +1,32 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	1	FAIL	Implements Organization schema in JSON-LD	Model asks for details, provides template only	1	1	iteration-107
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	2	FAIL	Includes required and recommended properties	Model asks for missing details instead of providing schema	1	1	iteration-107
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	3	PASS			1	1	iteration-107
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	4	PASS			1	1	iteration-107
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	5	FAIL	Provides complete JSON-LD code	Contains placeholders and asks for missing details	1	1	iteration-107
+schema	eval-1	with_skill	FAIL	15.8s	7712	5012	2699	6	PASS			1	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	1	FAIL	Implements FAQPage schema in JSON-LD	No output files captured; only template provided	2	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	2	PASS			2	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	3	FAIL	Provides complete code example	Code is a template, not complete implementation	2	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	4	FAIL	Explains rich result benefits	No explanation of benefits provided	2	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	5	PASS			2	1	iteration-107
+schema	eval-2	with_skill	FAIL	5.5s	7121	4628	2492	6	PASS			2	1	iteration-107
+schema	eval-3	with_skill	FAIL	7.1s	7232	4700	2531	1	FAIL	Implements Article or BlogPosting schema	No output files captured	3	1	iteration-107
+schema	eval-3	with_skill	FAIL	7.1s	7232	4700	2531	2	PASS			3	1	iteration-107
+schema	eval-3	with_skill	FAIL	7.1s	7232	4700	2531	3	FAIL	Recommends BreadcrumbList alongside	No BreadcrumbList mentioned in output	3	1	iteration-107
+schema	eval-3	with_skill	FAIL	7.1s	7232	4700	2531	4	PASS			3	1	iteration-107
+schema	eval-3	with_skill	FAIL	7.1s	7232	4700	2531	5	FAIL	Addresses CMS integration for dynamic fields	Asks for tech stack, no CMS integration code	3	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	1	FAIL	Implements Product schema with full properties	No output files provided	4	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	2	PASS			4	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	3	PASS			4	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	4	FAIL	Includes BreadcrumbList	Model mentions BreadcrumbList but provides no code	4	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	5	FAIL	Provides complete JSON-LD code	Model asks for context before providing code	4	1	iteration-107
+schema	eval-4	with_skill	FAIL	11.4s	7531	4895	2635	6	PASS			4	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	1	PASS			5	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	2	FAIL	Checks for common schema errors	Model asks for info instead of checking schema	5	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	3	FAIL	Explains valid schema doesn't guarantee rich results	Model asks for info, does not explain.	5	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	4	FAIL	Recommends Search Console structured data reports	Model asks user to check GSC, does not recommend it.	5	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	5	FAIL	Addresses warnings vs errors distinction	Mentions errors/warnings but does not distinguish them	5	1	iteration-107
+schema	eval-5	with_skill	FAIL	4.9s	7007	4554	2452	6	PASS			5	1	iteration-107
+schema	eval-6	with_skill	FAIL	8.2s	7157	4652	2504	1	PASS			6	1	iteration-107
+schema	eval-6	with_skill	FAIL	8.2s	7157	4652	2504	2	PASS			6	1	iteration-107

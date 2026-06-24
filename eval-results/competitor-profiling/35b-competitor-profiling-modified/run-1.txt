@@ -1,0 +1,83 @@
+
+[1m▶ competitor-profiling-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    What pages should I scrape for a competitor profile?
+    [90moutput:[0m  For a comprehensive competitor profile, you should prioritize scraping the following pages. These are chosen because they reveal positioning, product capabilities, pricing strategy, and market presen…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    7.5s · 7689 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    I have an existing profile of Notion from 4 months ago. Should I update it or start fresh?
+    [90moutput:[0m  Based on your product's context, here is the recommendation: **Start Fresh (with a Diff).** Here is why: 1. **Notion Changes Frequently:** Notion has aggressive update cycles, frequently changing pri…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends updating over starting fresh
+         [90mevidence:[0m Model explicitly says 'Start Fresh'
+      [31m#4[0m [31mFAIL[0m [90m—[0m Says to save raw data to new date folder
+         [90mevidence:[0m Suggests archive folder, not new date folder
+      [31m#5[0m [31mFAIL[0m [90m—[0m Says never overwrite prior date's data
+         [90mevidence:[0m Model says preserve old data, not overwrite
+    5.1s · 7485 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    Should I trust the customer logo wall on the competitor's homepage as evidence of who their customers are?
+    [90moutput:[0m  No, not at face value. While a customer logo wall is strong **social proof**, it requires validation through three specific filters before you treat it as factual evidence of their current customer b…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes including date pulled
+         [90mevidence:[0m No dates or notes found in output
+    8.1s · 7824 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    I want a profile but I don't care about SEO data — just pricing, positioning, and customer logos. Can you skip the DataForSEO calls?
+    [90moutput:[0m  Since you didn't provide specific URLs, I will profile three major players in the project management space as placeholders: **Asana**, **Monday.com**, and **ClickUp**. These represent different posit…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs Phase 1 and Phase 3
+         [90mevidence:[0m No Phase 1/3 labels found
+    37.1s · 10602 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    We have 12 competitors. Profile all of them.
+    [90moutput:[0m  Since you didn't provide specific URLs, I will profile **12 placeholder competitors** across the SaaS/tech landscape to demonstrate the full workflow. In a real execution, I would use the actual URLs…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks user to prioritize
+         [90mevidence:[0m Model prioritized itself, not user
+    56.4s · 12254 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="competitor-profiling-35b"> <description>When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competito…
+    [90muser:[0m    Profile these three competitors for us: https://competitor1.com, https://competitor2.com, https://competitor3.com. We need this for sales enablement and to find positioning gaps.
+    [90moutput:[0m  Since you didn't provide specific names or your own product context, I will profile **Competitor 1**, **Competitor 2**, and **Competitor 3** as placeholders. I am assuming a typical B2B SaaS context.…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Runs all three phases (scraping, SEO data, synthesis)
+         [90mevidence:[0m Simulated data, no actual scraping performed
+      [31m#2[0m [31mFAIL[0m [90m—[0m Saves raw data to competitor-profiles/raw/ with date subfolder
+         [90mevidence:[0m No output files were captured.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Parallelizes scraping when possible
+         [90mevidence:[0m Simulated data, no actual scraping
+    56.1s · 12231 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 71.7%[0m  [90m· 28.38s avg · 9681 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-155/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 9,
+  "skills": [
+    {
+      "skill": "competitor-profiling-35b",
+      "slug": "competitor-profiling-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7096774193548387,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-155/benchmark.json"
+    }
+  ],
+  "iteration": 155,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-155",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-155/report/index.html"
+}

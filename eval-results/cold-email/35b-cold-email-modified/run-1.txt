@@ -1,0 +1,67 @@
+
+[1m▶ cold-email-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    Review this cold email and tell me what's wrong: 'Dear Sir/Madam, I hope this email finds you well. I wanted to reach out to introduce our innovative cloud-based platform that leverages AI to streaml…
+    [90moutput:[0m  This email is a textbook example of what **not** to do. It triggers every major spam filter in a prospect's brain and likely lands directly in the Promotions or Spam tab. Here is the breakdown of why…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    9.9s · 8747 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    Write a cold email to VP of Marketing at mid-size B2B SaaS companies. We sell a content analytics platform that shows which blog posts actually drive pipeline. Our main proof point: customers see 3x …
+    [90moutput:[0m  I'll assume a typical B2B scenario where the prospect is likely struggling to prove ROI on their content spend. Replace with your actual data. Here are 3 variations targeting a VP of Marketing. They …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m
+    13.0s · 8926 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    Help me write a cold email to CTOs at enterprise companies. I sell cybersecurity training. My current email has a 2% open rate and 0% reply rate.
+    [90moutput:[0m  First, let’s diagnose the 2% open rate. This is critically low. Your subject lines are either hitting spam filters (deliverability issue) or, more likely, being ignored instantly because they look li…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.1s · 8987 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    Can you help me set up an automated email drip campaign for leads who download our whitepaper?
+    [90moutput:[0m  This is a nurture sequence, not cold outreach. The emails skill handles this. For automated email sequences triggered by user actions (like downloading a whitepaper, signing up for a trial, or attend…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    1.9s · 7897 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    write me a follow-up sequence. prospect didn't reply to my first email about our HR software. how many should I send and how far apart?
+    [90moutput:[0m  I'll assume a typical B2B scenario. Replace with your actual data. To answer your specific question first: **You should send 3-4 follow-ups total** (including the initial email). **The Cadence:** * *…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not use 'just bumping' or 'checking in' language
+         [90mevidence:[0m Uses 'Just bumping' and 'Checking in'
+    16.2s · 9112 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="cold-email-35b"> <description>Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campai…
+    [90muser:[0m    What are the best subject lines for cold emails? I want to maximize open rates.
+    [90moutput:[0m  I’ll assume a typical B2B scenario. Here are the subject lines that maximize open rates, based on data showing that **short, boring, internal-looking lines** outperform clever or salesy ones by 2x+. …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    12.1s · 8682 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 97.6%[0m  [90m· 11.20s avg · 8725 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-149/benchmark.json[0m
+{
+  "passed": 37,
+  "failed": 1,
+  "skills": [
+    {
+      "skill": "cold-email-35b",
+      "slug": "cold-email-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9736842105263158,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-149/benchmark.json"
+    }
+  ],
+  "iteration": 149,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-149",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-149/report/index.html"
+}

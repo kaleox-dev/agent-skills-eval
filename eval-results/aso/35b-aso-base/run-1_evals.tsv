@@ -1,0 +1,37 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	1	FAIL	Identifies as Apple App Store URL	No output files captured	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	2	FAIL	Classifies brand maturity tier	No classification performed	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	3	FAIL	Scores all 6 dimensions with weights	No output files captured	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	4	FAIL	Provides scorecard with grade	No scorecard or grade provided in output.	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	5	FAIL	Lists top 3 quick wins	No output files were captured.	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	6	FAIL	Recommendations include character counts	No recommendations or counts in output	1	1	iteration-45
+aso	eval-1	with_skill	FAIL	5.9s	21313	13853	7459	7	FAIL	Recommendations are specific (X to Y format)	No recommendations provided in output.	1	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	1	FAIL	Identifies as Google Play app	No Play Store URL provided	2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	2	FAIL	Classifies as Challenger tier	Model assumes Challenger tier without URL	2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	3	PASS			2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	4	FAIL	Flags stale update (>3 months)	No URL provided; no audit performed	2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	5	FAIL	Notes Google Play indexes full description	Model did not address the assertion	2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	6	PASS			2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	7	PASS			2	1	iteration-45
+aso	eval-2	with_skill	FAIL	27.6s	22312	14502	7809	8	PASS			2	1	iteration-45
+aso	eval-3	with_skill	FAIL	19.3s	22087	14356	7730	1	PASS			3	1	iteration-45
+aso	eval-3	with_skill	FAIL	19.3s	22087	14356	7730	2	PASS			3	1	iteration-45
+aso	eval-3	with_skill	FAIL	19.3s	22087	14356	7730	3	PASS			3	1	iteration-45
+aso	eval-3	with_skill	FAIL	19.3s	22087	14356	7730	4	PASS			3	1	iteration-45
+aso	eval-3	with_skill	FAIL	19.3s	22087	14356	7730	5	PASS			3	1	iteration-45
+aso	eval-4	with_skill	FAIL	3.9s	21268	13824	7443	1	FAIL	Scores all 3 apps with same framework	No output files captured	4	1	iteration-45
+aso	eval-4	with_skill	FAIL	3.9s	21268	13824	7443	2	FAIL	Builds comparison table	No output files captured	4	1	iteration-45
+aso	eval-4	with_skill	FAIL	3.9s	21268	13824	7443	3	FAIL	Identifies where user's app is weaker	No output files captured	4	1	iteration-45
+aso	eval-4	with_skill	FAIL	3.9s	21268	13824	7443	4	FAIL	Identifies keyword gaps vs competitors	No output files captured; no analysis performed.	4	1	iteration-45
+aso	eval-4	with_skill	FAIL	3.9s	21268	13824	7443	5	FAIL	Produces competitor-informed action list	No output files captured	4	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	1	FAIL	Notes Visual Assets is 25% of score	No mention of 25% score weight	5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	2	PASS			5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	3	PASS			5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	4	PASS			5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	5	PASS			5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	6	PASS			5	1	iteration-45
+aso	eval-5	with_skill	FAIL	19.6s	22159	14403	7755	7	FAIL	Flags <5 screenshots as always-flag issue	Model suggests adding 2-3 more, not flagging as always-issue	5	1	iteration-45
+aso	eval-6	with_skill	FAIL	7.1s	21549	14006	7542	1	PASS			6	1	iteration-45
+aso	eval-6	with_skill	FAIL	7.1s	21549	14006	7542	2	PASS			6	1	iteration-45
+aso	eval-6	with_skill	FAIL	7.1s	21549	14006	7542	3	PASS			6	1	iteration-45
+aso	eval-6	with_skill	FAIL	7.1s	21549	14006	7542	4	FAIL	Notes Google Play equivalents	Output discusses iOS/CPPs only	6	1	iteration-45

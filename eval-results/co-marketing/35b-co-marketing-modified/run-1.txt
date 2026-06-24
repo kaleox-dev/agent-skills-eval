@@ -1,0 +1,67 @@
+
+[1m▶ co-marketing-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    Draft a cold outreach email to a potential co-marketing partner. They're a content management platform and we make a marketing analytics tool. Both serve B2B marketing teams.
+    [90moutput:[0m  Subject: CMS + Marketing Analytics co-marketing idea Hey there, I’m [Your Name] at [Your Company]. We build marketing analytics tools specifically for B2B teams to measure content performance. I’ve b…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Includes subject with both company names
+         [90mevidence:[0m Subject lacks specific company names
+    3.2s · 3295 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    We've identified 5 potential partners but only have time for one campaign this quarter. How should we pick?
+    [90moutput:[0m  I'll assume a typical B2B SaaS scenario. Replace with your actual data. To pick the **one** partner this quarter, you need to stop guessing and start scoring. Since you only have time for one, this i…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    12.8s · 4156 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    We're partnering with a competitor — wait, not a competitor, a complementary CRM company. Help us brainstorm 5 campaign ideas we could run together.
+    [90moutput:[0m  I'll assume a typical B2B SaaS scenario where you are a mid-market CRM provider and the partner is a complementary CRM (e.g., you focus on complex enterprise workflows while they focus on SMB simplic…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    14.5s · 4306 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    We make a project management tool for design agencies. Who should we look for as co-marketing partners?
+    [90moutput:[0m  I'll assume a typical B2B SaaS scenario for a design agency project management tool. Replace with your actual data where needed. To find the best co-marketing partners for your design agency PM tool,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    20.9s · 4829 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    Our partnership webinar with another SaaS company got 200 signups. How do we split the leads?
+    [90moutput:[0m  I'll assume a typical B2B SaaS scenario where both companies have similar ICPs but distinct product roles. Replace with your actual data. Here is the standard, equitable approach to splitting webinar…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    16.0s · 4413 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="co-marketing-35b"> <description>When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' '…
+    [90muser:[0m    Our customer success team wants us to launch a referral program. Can you help us design one?
+    [90moutput:[0m  I'll assume a typical B2B SaaS scenario. Replace with your actual data. **Important Note:** While I can provide a comprehensive structural framework for your referral program, **this specific task (c…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    10.9s · 3874 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 97.2%[0m  [90m· 13.05s avg · 4146 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-142/benchmark.json[0m
+{
+  "passed": 28,
+  "failed": 1,
+  "skills": [
+    {
+      "skill": "co-marketing-35b",
+      "slug": "co-marketing-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9655172413793104,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-142/benchmark.json"
+    }
+  ],
+  "iteration": 142,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-142",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-142/report/index.html"
+}

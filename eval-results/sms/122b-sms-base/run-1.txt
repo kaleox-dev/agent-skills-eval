@@ -1,0 +1,81 @@
+
+[1m▶ sms[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Can I just send SMS without any opt-in if customers gave me their phone number at checkout?
+    [90moutput:[0m  **No, you cannot send marketing SMS without explicit opt-in, even if the customer provided their number at checkout.** Providing a phone number for order processing (transactional purposes) is **not*…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    14.5s · 18717 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We're a Shopify DTC brand doing $5M/year in skincare. We have 80K email subscribers but no SMS program yet. Where do we start?
+    [90moutput:[0m  This is a high-potential starting point. With $5M in revenue and 80K email subscribers, you have a warm audience ready to convert. However, moving from "no SMS" to "active program" requires a strict …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    25.2s · 19377 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Write me an abandoned cart SMS sequence. We sell custom apparel, average order $80.
+    [90moutput:[0m  Here is a high-converting **Abandoned Cart SMS sequence** tailored for a custom apparel brand with an $80 average order value (AOV). Since custom apparel often involves personalization (names, logos,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m  [32m✓ 9[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Warns about discount on first send
+         [90mevidence:[0m No discount on the first message.
+    19.5s · 19056 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Our SMS list is 50K subscribers. We send 3 promotional messages per week. Opt-out rate has crept up to 4% per send. What's wrong?
+    [90moutput:[0m  **Immediate Red Flag:** A **4% opt-out rate per send** is catastrophic. Industry benchmarks for healthy SMS programs are **<0.5% per send** (and <2% is the absolute danger zone). At 4%, you are burni…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)
+         [90mevidence:[0m Model cites <0.5% per send, not <2%
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions 'every send must justify itself' principle
+         [90mevidence:[0m No exact phrase found
+    22.5s · 19252 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    Should we put emojis in our SMS messages? Other brands seem to use them a lot.
+    [90moutput:[0m  **Short answer:** Use them **sparingly and strategically**. One emoji per message is usually fine; more than that, or using them in the first sentence, can hurt deliverability and increase costs. Her…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [32m✓ 7[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Recommends previewing segment count
+         [90mevidence:[0m No mention of previewing segment count
+    13.6s · 18681 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="sms"> <description>When the user wants to plan, build, or optimize SMS or MMS marketing — including welcome flows, abandoned cart texts, post-purchase, win-back, promotional sends, or tr…
+    [90muser:[0m    We just submitted our A2P 10DLC registration and our sends are working. Can we start scaling to 100K+ messages per day?
+    [90moutput:[0m  **Short Answer: No, not immediately.** Even with A2P 10DLC registration approved, you cannot safely jump to **100,000 messages per day** right now. Doing so will almost certainly trigger carrier filt…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Asks about phone number type (10DLC vs toll-free vs short code)
+         [90mevidence:[0m Mentions short code only as future option
+      [31m#3[0m [31mFAIL[0m [90m—[0m Calculates time-to-send for 100K volume
+         [90mevidence:[0m No calculation of time-to-send provided.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions quiet hour considerations
+         [90mevidence:[0m No mention of quiet hours found.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions A2P sample text alignment requirement
+         [90mevidence:[0m No mention of sample text alignment.
+    21.7s · 19113 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 81.5%[0m  [90m· 19.47s avg · 19033 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-114/benchmark.json[0m
+{
+  "passed": 35,
+  "failed": 8,
+  "skills": [
+    {
+      "skill": "sms",
+      "slug": "sms",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.813953488372093,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-114/benchmark.json"
+    }
+  ],
+  "iteration": 114,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-114",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-114/report/index.html"
+}

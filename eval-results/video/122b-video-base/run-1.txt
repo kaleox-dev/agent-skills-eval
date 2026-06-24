@@ -1,0 +1,85 @@
+
+[1m▶ video[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
+    [90moutput:[0m  For a **10-second clip** of a person typing in a coffee shop for a **landing page**, you need high photorealism and smooth motion. Since this is for a landing page, it will likely be in **16:9 (lands…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Sora reliability caveats
+         [90mevidence:[0m No mention of Sora or its caveats
+    9.9s · 7185 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
+    [90moutput:[0m  To produce a **2-minute product demo video** for your SaaS homepage in the **fastest way possible**, the optimal strategy is a **Hybrid Approach**: 1. **Screen Capture** for the actual product UI (AI…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Recommends programmatic overlay tool
+         [90mevidence:[0m No programmatic overlay tool recommended
+    15.3s · 7555 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
+    [90moutput:[0m  This is a classic **repurposing workflow**. You have high-value long-form content (the 60-minute webinar) that needs to be broken down into snackable, platform-native clips (TikTok, Reels, Shorts, Li…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    16.5s · 7629 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  For weekly 60-second product update videos where you **don't want to be on camera**, the most efficient and scalable setup is a **Programmatic Video Pipeline** combined with **AI Voiceover**. This ap…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Recommends AI avatar approach
+         [90mevidence:[0m Why not AI Avatars? ... unnecessary
+      [31m#3[0m [31mFAIL[0m [90m—[0m Mentions HeyGen MCP server for agents
+         [90mevidence:[0m Mentions HeyGen as AI Avatar, not MCP server
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions custom avatars option
+         [90mevidence:[0m Why not AI Avatars? ... unnecessary
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about authenticity tradeoff
+         [90mevidence:[0m No mention of authenticity tradeoff
+    20.0s · 7826 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
+    [90moutput:[0m  This is a perfect use case for **Programmatic Video** at scale. Trying to generate 50 unique AI avatar videos manually or via text prompts would be inefficient and inconsistent. Instead, we should bu…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names HeyGen MCP server
+         [90mevidence:[0m No mention of HeyGen MCP server
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
+         [90mevidence:[0m No mention of testing 5 manually
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
+         [90mevidence:[0m No mention of reply tracking or ROI
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions captions
+         [90mevidence:[0m No mention of captions found.
+    13.3s · 7222 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="video"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI …
+    [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
+    [90moutput:[0m  The choice between **Hyperframes** and **Remotion** depends on your team's technical stack, the complexity of the animations needed, and whether you need to render at massive scale via the cloud. Her…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.8s · 7381 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 70.3%[0m  [90m· 14.97s avg · 7466 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-118/benchmark.json[0m
+{
+  "passed": 22,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "video",
+      "slug": "video",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.6875,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-118/benchmark.json"
+    }
+  ],
+  "iteration": 118,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-118",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-118/report/index.html"
+}

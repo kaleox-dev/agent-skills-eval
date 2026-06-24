@@ -1,0 +1,39 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	1	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	2	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	3	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	4	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	5	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	6	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	7	PASS			1	1	iteration-144
+cold-email	eval-1	with_skill	FAIL	9.2s	13640	8866	4774	8	PASS			1	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	1	PASS			2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	2	FAIL	Identifies subject line as likely open rate issue	Model blames deliverability, not subject line	2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	3	PASS			2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	4	PASS			2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	5	PASS			2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	6	PASS			2	1	iteration-144
+cold-email	eval-2	with_skill	FAIL	14.8s	14039	9125	4913	7	PASS			2	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	1	PASS			3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	2	PASS			3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	3	FAIL	Does not use 'just bumping' or 'checking in' language	Email 2: 'Bumping this in case'	3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	4	PASS			3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	5	PASS			3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	6	PASS			3	1	iteration-144
+cold-email	eval-3	with_skill	FAIL	14.8s	14030	9119	4910	7	FAIL	Follow-ups get progressively shorter	Follow-up 1 is longer than Follow-up 2	3	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	1	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	2	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	3	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	4	FAIL	Identifies vendor language vs peer language	No mention of vendor/peer language distinction	4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	5	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	6	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	7	PASS			4	1	iteration-144
+cold-email	eval-4	with_skill	FAIL	12.2s	13931	9055	4875	8	PASS			4	1	iteration-144
+cold-email	eval-5	with_skill	FAIL	13.1s	13675	8888	4786	1	PASS			5	1	iteration-144
+cold-email	eval-5	with_skill	FAIL	13.1s	13675	8888	4786	2	PASS			5	1	iteration-144
+cold-email	eval-5	with_skill	FAIL	13.1s	13675	8888	4786	3	PASS			5	1	iteration-144
+cold-email	eval-5	with_skill	FAIL	13.1s	13675	8888	4786	4	PASS			5	1	iteration-144
+cold-email	eval-5	with_skill	FAIL	13.1s	13675	8888	4786	5	FAIL	Notes distinction between open rate and reply rate	Model conflates metrics; no distinction made	5	1	iteration-144
+cold-email	eval-6	with_skill	FAIL	4.1s	13094	8511	4582	1	PASS			6	1	iteration-144
+cold-email	eval-6	with_skill	FAIL	4.1s	13094	8511	4582	2	PASS			6	1	iteration-144
+cold-email	eval-6	with_skill	FAIL	4.1s	13094	8511	4582	3	PASS			6	1	iteration-144
