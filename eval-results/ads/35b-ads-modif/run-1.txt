@@ -1,0 +1,71 @@
+
+[1m▶ ads-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    Should we advertise on TikTok? We sell accounting software to small businesses. Our current ads are on Google and Meta.
+    [90moutput:[0m  Yes, you should test it, but with a specific angle. Accounting software is inherently "boring" on TikTok, but the platform is currently exploding with "FinTok" and "BizTok" content where small busine…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    11.0s · 20917 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    we want to run retargeting ads for people who visited our site but didn't convert. how should we set this up?
+    [90moutput:[0m  Since you didn't specify your product or platform, I’ll assume you have a standard B2B or B2C SaaS/e-commerce offer with a basic conversion goal (sign-up or purchase). If you have high-AOV products, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    17.1s · 21338 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    Our Google Ads CPC is $12 and our cost per lead is $180. Is that good? We're getting about 80 leads/month from a $15k budget.
+    [90moutput:[0m  No, that is **not good**. You are currently bleeding money at a rate that is unsustainable for almost any B2B or high-ticket B2C model. Here is the breakdown of why this is critical, followed by imme…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Asks about downstream conversion rates
+         [90mevidence:[0m Model asks for LTV, not downstream CVR
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides industry context for benchmarking
+         [90mevidence:[0m Asks for industry/LTV, does not provide benchmarks
+    15.0s · 21237 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    Help me plan a paid advertising strategy. We're a B2B SaaS tool for HR teams, selling at $99/month per seat. We have $15k/month to spend on ads and want to generate demo requests. Where should we adv…
+    [90moutput:[0m  # Paid Ads Strategy: B2B SaaS Demo Requests Since you're selling a B2B SaaS tool ($99/mo seat) with a $15k/month budget and demo requests as the goal, here's your optimized strategy. ## Platform Sele…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    25.8s · 22060 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    Can you write some ad copy for our Facebook ads? We need headlines and descriptions for 5 different angles.
+    [90moutput:[0m  Got it. Since I don't have your specific product details yet, I’m going to assume you’re a **B2B SaaS company** selling a project management or workflow tool (a very common use case). If you’re selli…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m
+    13.5s · 21071 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ads-35b"> <description>When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the us…
+    [90muser:[0m    How do we structure our Google Ads campaigns? We have 50+ keywords we want to target for our CRM product.
+    [90moutput:[0m  To structure a Google Ads account for 50+ keywords, the biggest mistake teams make is dumping them all into one Ad Group. This kills Quality Score because your ad copy can't be relevant to every keyw…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Defines naming conventions
+         [90mevidence:[0m No naming conventions defined
+    19.5s · 21518 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 92.1%[0m  [90m· 16.98s avg · 21357 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-28/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 3,
+  "skills": [
+    {
+      "skill": "ads-35b",
+      "slug": "ads-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9117647058823529,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-28/benchmark.json"
+    }
+  ],
+  "iteration": 28,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-28",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-28/report/index.html"
+}
