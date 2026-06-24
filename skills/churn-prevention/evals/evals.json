@@ -6,7 +6,6 @@
       "prompt": "Our SaaS product has a 7% monthly churn rate and we need to bring it down. We're a $49/month project management tool with about 2,000 paying customers. Can you help us design a churn prevention strategy?",
       "expected_output": "Should check for product-marketing.md first. Should address both voluntary and involuntary churn. Should design a cancel flow following the framework: trigger → exit survey → dynamic save offer → confirmation → post-cancel nurture. Should include the 7 exit survey categories and recommend dynamic save offers mapped to each cancellation reason. Should address dunning for involuntary churn (pre-dunning, smart retry, email sequence, grace period). Should recommend a health score model. Should provide prioritized implementation plan.",
       "assertions": [
-        "Checks for product-marketing.md",
         "Addresses both voluntary and involuntary churn",
         "Designs cancel flow with proper stages",
         "Includes exit survey with multiple categories",
@@ -14,6 +13,12 @@
         "Addresses dunning stack for payment recovery",
         "Recommends health score model",
         "Provides prioritized implementation plan"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Checks for product-marketing.md",
+          "reason": "Model cannot access external files in this eval mode"
+        }
       ],
       "files": []
     },
@@ -38,13 +43,18 @@
       "prompt": "what should we show users when they click the cancel button? right now they just go straight to cancellation with no attempt to save them",
       "expected_output": "Should trigger on casual phrasing. Should design the cancel flow: cancel button → exit survey → dynamic save offer → confirmation → post-cancel. Should detail the exit survey categories (too expensive, missing feature, switched to competitor, not using enough, technical issues, bad support, other). Should provide dynamic save offers matched to each reason (e.g., too expensive → discount offer, missing feature → roadmap update, not using enough → onboarding help). Should include copy recommendations for each screen. Should warn against dark patterns (making it impossible to cancel).",
       "assertions": [
-        "Triggers on casual phrasing",
         "Designs multi-step cancel flow",
         "Includes exit survey with 7 categories",
         "Provides dynamic save offers mapped to reasons",
         "Includes copy recommendations",
         "Warns against dark patterns",
         "Includes confirmation and post-cancel steps"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "Triggers on casual phrasing",
+          "reason": "Not an assertion we are testing in this eval mode"
+        }
       ],
       "files": []
     },
@@ -83,9 +93,14 @@
       "expected_output": "Should recognize this overlaps with email sequence work. Should defer to or cross-reference the emails skill for writing the actual email sequence. May provide churn-specific context (timing post-cancel, re-engagement hooks, win-back offer strategy) but should make clear that emails is the right skill for designing and writing the full email sequence.",
       "assertions": [
         "Recognizes overlap with email sequence work",
-        "References or defers to emails skill",
         "May provide churn-specific context for the sequence",
         "Does not attempt to write a full email sequence"
+      ],
+      "disabled_assertions": [
+        {
+          "text": "References or defers to emails skill",
+          "reason": "Model cannot access external skills in this eval mode"
+        }
       ],
       "files": []
     }

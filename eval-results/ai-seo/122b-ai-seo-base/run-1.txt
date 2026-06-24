@@ -1,0 +1,79 @@
+
+[1m▶ ai-seo[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Should we block AI crawlers like GPTBot and PerplexityBot in our robots.txt? We're worried about content theft.
+    [90moutput:[0m  This is a critical business decision with a direct trade-off: **Blocking these crawlers prevents your content from being used for AI training, but it also guarantees you will never be cited or discov…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.7s · 20961 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    we noticed our competitors are showing up in google AI overviews but we're not. what do we need to change?
+    [90moutput:[0m  This is a common challenge. Google AI Overviews (AIO) don't just recycle the traditional "Top 10" organic results; in fact, studies show only about **15% of AIO sources overlap** with standard organi…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#6[0m [31mFAIL[0m [90m—[0m Suggests monitoring approach
+         [90mevidence:[0m No monitoring approach suggested
+    19.5s · 21275 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    How do I make sure our SaaS product shows up in AI search results? We're a project management tool and we keep getting left out of ChatGPT and Perplexity recommendations when people ask about project…
+    [90moutput:[0m  To get your project management SaaS cited by ChatGPT and Perplexity when users ask for recommendations, you need to shift from "ranking on page 1" to "becoming the most extractable, authoritative sou…
+    [90masserts:[0m [31m✗ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Applies three pillars framework (Structure, Authority, Presence)
+         [90mevidence:[0m No explicit three pillars framework applied.
+      [31m#2[0m [31mFAIL[0m [90m—[0m Runs AI Visibility Audit across platforms
+         [90mevidence:[0m Manual audit steps suggested, no automated run
+    19.5s · 21284 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    What kind of content gets cited most by AI systems? We want to create content specifically optimized for AI search.
+    [90moutput:[0m  Based on the latest research (including the Princeton GEO study and data from platforms like Perplexity, ChatGPT, and Google AI Overviews), **not all content is created equal** when it comes to AI ci…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    30.7s · 21501 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Our organic search traffic has dropped 30% this quarter. Can you do a full SEO audit to figure out what's going on?
+    [90moutput:[0m  I can certainly help you investigate this traffic drop. However, based on your request for a **full SEO audit** to diagnose a traffic decline, I need to switch to the **`seo-audit`** skill rather tha…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m
+    8.9s · 20379 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="ai-seo"> <description>When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,…
+    [90muser:[0m    Can you audit our website for AI search readiness? We want to know how visible we are across ChatGPT, Perplexity, Google AI Overviews, and other AI platforms.
+    [90moutput:[0m  I can certainly help you audit your website for AI search readiness. To provide a meaningful analysis of your visibility across ChatGPT, Perplexity, Google AI Overviews, and other platforms, I need t…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Runs full AI Visibility Audit
+         [90mevidence:[0m Model asks for info instead of running audit.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Checks content extractability
+         [90mevidence:[0m Asks for URL to check robots.txt, not content.
+      [31m#6[0m [31mFAIL[0m [90m—[0m Provides findings organized by pillar
+         [90mevidence:[0m Model asks for info, no findings yet.
+      [31m#7[0m [31mFAIL[0m [90m—[0m Provides prioritized action plan
+         [90mevidence:[0m Promises plan after receiving info
+    10.5s · 20559 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 82.1%[0m  [90m· 17.28s avg · 20993 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-30/benchmark.json[0m
+{
+  "passed": 27,
+  "failed": 7,
+  "skills": [
+    {
+      "skill": "ai-seo",
+      "slug": "ai-seo",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7941176470588235,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-30/benchmark.json"
+    }
+  ],
+  "iteration": 30,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-30",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-30/report/index.html"
+}
