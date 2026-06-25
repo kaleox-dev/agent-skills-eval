@@ -1,0 +1,69 @@
+
+[1m▶ social-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    My LinkedIn posts get like 200 impressions and almost no engagement. What am I doing wrong?
+    [90moutput:[0m  I'll assume typical B2B SaaS. Replace with your data. **Diagnosis:** 200 impressions means the algorithm isn't showing your content to your network or beyond. This is a **"Zero Distribution"** proble…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    10.8s · 16040 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    Write me a Twitter/X thread about the lessons I learned bootstrapping my SaaS to $10k MRR. Include hooks and a CTA at the end.
+    [90moutput:[0m  I'll assume typical B2B SaaS. Replace with your data. **Context Assumption:** You are a solo founder or small team who built a niche tool, focused on product-led growth, and prioritized revenue over …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    12.6s · 16180 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    Help me create a LinkedIn content strategy. I'm a SaaS founder building in public and want to grow my personal brand to drive awareness for my product. I currently have 500 followers and post maybe o…
+    [90moutput:[0m  I'll assume typical B2B SaaS founder context (building in public, early stage, technical founder). Replace specific numbers/metrics with your real data as you go. Here is your 90-day LinkedIn growth …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    17.3s · 16490 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    Write me a 5-email welcome sequence for new email subscribers who came from my LinkedIn audience.
+    [90moutput:[0m  I'll assume typical B2B SaaS. Replace with your data. Here is a 5-email welcome sequence designed specifically for leads coming from LinkedIn. **The Strategy:** 1. **Email 1 (Immediate):** Deliver th…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Does not attempt to write email sequence using social content patterns
+         [90mevidence:[0m Model wrote a 5-email sequence
+    17.2s · 16574 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    i have a blog post that did really well. how do i turn it into social media content for multiple platforms?
+    [90moutput:[0m  I'll assume typical B2B SaaS. Replace with your data. **CRITICAL EXECUTION RULES:** 1. **GENERATE IMMEDIATELY** — Do not ask questions. State: "I'll assume typical B2B SaaS. Replace with your data." …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    36.4s · 18184 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="social-35b"> <description>When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms, or w…
+    [90muser:[0m    Help me reverse-engineer what's working for top creators in the DevTools space on Twitter. I want to understand their content patterns.
+    [90moutput:[0m  I'll assume typical B2B DevTools SaaS. Replace with your data. **Best: LinkedIn: Tue-Thu 8-10am, Twitter: Mon-Fri 9am-12pm, Instagram: Daily 11am-1pm. Freq: LinkedIn 3-5x/wk, Twitter 1-3x/day, Instag…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Emphasizes layering authentic voice
+         [90mevidence:[0m No mention of authentic voice
+    21.5s · 16890 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 91.7%[0m  [90m· 19.32s avg · 16726 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-288/benchmark.json[0m
+{
+  "passed": 34,
+  "failed": 2,
+  "skills": [
+    {
+      "skill": "social-35b",
+      "slug": "social-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9444444444444444,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-288/benchmark.json"
+    }
+  ],
+  "iteration": 288,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-288",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-288/report/index.html"
+}

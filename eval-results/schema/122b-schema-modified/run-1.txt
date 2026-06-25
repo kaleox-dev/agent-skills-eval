@@ -1,0 +1,65 @@
+
+[1m▶ schema-122b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  I'll assume a typical setup. Replace with your data. Here is the complete **FAQPage JSON-LD** implementation code ready for your page. This includes 3 sample questions; you must replace these with yo…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.9s · 6150 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  I'll assume a typical setup. Replace with your data. Here is the complete **Article (BlogPosting)** schema with **BreadcrumbList** integration, optimized for marketing tip articles. This code is read…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    20.1s · 6354 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  I'll assume a typical setup. Replace with your data. Based on your description of **TaskFlow** as a SaaS project management tool, the most effective schema strategy for your homepage is a combination…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    25.5s · 6715 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  I'll assume a typical e-commerce setup with product pages containing images, prices, descriptions, and reviews. Replace the placeholder values with your actual product data. For e-commerce product pa…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    29.5s · 6963 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  I can certainly help with that. A drop in organic traffic after a redesign is a critical issue that often stems from technical SEO errors introduced during the migration or design changes. Since you …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m
+    15.0s · 5847 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema-122b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  I'll assume a typical setup. Replace with your data. Here is the immediate diagnostic checklist and the most common fixes for schema not appearing in rich results. ### 🚨 Immediate Diagnostic Checkli…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    30.2s · 7185 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 100.0%[0m  [90m· 22.87s avg · 6536 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-272/benchmark.json[0m
+{
+  "passed": 31,
+  "failed": 0,
+  "skills": [
+    {
+      "skill": "schema-122b",
+      "slug": "schema-122b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 1,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-272/benchmark.json"
+    }
+  ],
+  "iteration": 272,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-272",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-272/report/index.html"
+}

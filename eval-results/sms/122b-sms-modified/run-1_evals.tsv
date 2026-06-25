@@ -1,0 +1,44 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	1	PASS			1	1	iteration-283
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	2	PASS			1	1	iteration-283
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	3	PASS			1	1	iteration-283
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	4	PASS			1	1	iteration-283
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	5	PASS			1	1	iteration-283
+sms-122b	eval-1	with_skill	FAIL	24.3s	13845	8999	4845	6	PASS			1	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	1	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	2	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	3	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	4	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	5	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	6	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	7	PASS			2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	8	FAIL	Mentions exclusion rules	No exclusion rules mentioned	2	1	iteration-283
+sms-122b	eval-2	with_skill	FAIL	20.8s	13619	8852	4766	9	FAIL	Mentions UTM tagging or attribution	No mention of UTM or attribution found.	2	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	1	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	2	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	3	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	4	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	5	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	6	PASS			3	1	iteration-283
+sms-122b	eval-3	with_skill	FAIL	9.4s	12821	8333	4487	7	PASS			3	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	1	PASS			4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	2	FAIL	Cites healthy benchmark (<2% opt-out per send, <0.5% promotional)	Model cites <0.5% monthly, not promotional	4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	3	PASS			4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	4	PASS			4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	5	PASS			4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	6	PASS			4	1	iteration-283
+sms-122b	eval-4	with_skill	FAIL	15.7s	13284	8634	4649	7	PASS			4	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	No question asked about type	5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	2	PASS			5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	3	FAIL	Calculates time-to-send for 100K volume	No calculation provided	5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	4	FAIL	Mentions quiet hour considerations	No mention of quiet hours found.	5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	5	PASS			5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	6	PASS			5	1	iteration-283
+sms-122b	eval-5	with_skill	FAIL	18.9s	13376	8694	4681	7	FAIL	Mentions A2P sample text alignment requirement	No mention of text alignment requirements.	5	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	1	PASS			6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	2	PASS			6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	3	PASS			6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	4	PASS			6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	5	PASS			6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	6	FAIL	Recommends previewing segment count	No mention of previewing segment count	6	1	iteration-283
+sms-122b	eval-6	with_skill	FAIL	13.0s	12967	8428	4538	7	PASS			6	1	iteration-283

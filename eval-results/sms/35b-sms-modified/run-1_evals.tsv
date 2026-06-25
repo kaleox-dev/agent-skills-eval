@@ -1,0 +1,44 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	1	PASS			1	1	iteration-284
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	2	PASS			1	1	iteration-284
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	3	PASS			1	1	iteration-284
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	4	FAIL	Mentions replenishment for skincare specifically	No mention of replenishment found.	1	1	iteration-284
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	5	PASS			1	1	iteration-284
+sms-35b	eval-1	with_skill	FAIL	24.0s	14000	9100	4900	6	FAIL	Mentions per-send cost economics	No mention of per-send costs or economics	1	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	1	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	2	FAIL	Send 1 at 30 min, Send 2 at 4 hours, Send 3 at 24 hours	Model suggests 1h, 12-24h, 48h	2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	3	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	4	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	5	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	6	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	7	PASS			2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	8	FAIL	Mentions exclusion rules	No exclusion rules mentioned	2	1	iteration-284
+sms-35b	eval-2	with_skill	FAIL	19.3s	13642	8867	4774	9	FAIL	Mentions UTM tagging or attribution	No mention of UTM or attribution found.	2	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	1	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	2	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	3	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	4	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	5	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	6	PASS			3	1	iteration-284
+sms-35b	eval-3	with_skill	FAIL	7.2s	12662	8230	4431	7	PASS			3	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	1	PASS			4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	2	PASS			4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	3	PASS			4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	4	FAIL	Recommends segmentation by engagement	No mention of engagement segmentation	4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	5	PASS			4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	6	PASS			4	1	iteration-284
+sms-35b	eval-4	with_skill	FAIL	13.6s	13236	8603	4632	7	PASS			4	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	1	FAIL	Asks about phone number type (10DLC vs toll-free vs short code)	Model states types, does not ask.	5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	2	PASS			5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	3	FAIL	Calculates time-to-send for 100K volume	No calculation provided	5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	4	FAIL	Mentions quiet hour considerations	No mention of quiet hours in output	5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	5	PASS			5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	6	PASS			5	1	iteration-284
+sms-35b	eval-5	with_skill	FAIL	17.2s	13241	8606	4634	7	FAIL	Mentions A2P sample text alignment requirement	No mention of sample text alignment	5	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	1	PASS			6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	2	PASS			6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	3	PASS			6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	4	PASS			6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	5	FAIL	Mentions accented characters / curly quotes also trigger UCS-2	Model only discusses emojis triggering UCS-2, not accented chars.	6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	6	FAIL	Recommends previewing segment count	Model suggests auditing segment count, not previewing it.	6	1	iteration-284
+sms-35b	eval-6	with_skill	FAIL	13.4s	12829	8338	4490	7	PASS			6	1	iteration-284

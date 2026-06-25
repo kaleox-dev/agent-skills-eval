@@ -1,0 +1,65 @@
+
+[1m▶ revops-122b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.5-122B-A10B-FP8  judge=Qwen/Qwen3.5-122B-A10B-FP8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    our pipeline is a mess. deals sit in stages forever and we don't know what's actually going to close. how do we fix this?
+    [90moutput:[0m  I'll assume a typical B2B SaaS RevOps setup. Replace with your data. Your pipeline issues (stale deals, poor forecast accuracy) are classic symptoms of undefined exit criteria, missing automation, an…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    20.6s · 14873 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    Set up lead scoring for us. We want to prioritize which leads sales should call first. We sell enterprise software ($50k+ ACV).
+    [90moutput:[0m  I'll assume a typical B2B SaaS RevOps setup for an enterprise software company ($50k+ ACV). Replace with your specific data. ### **Lead Scoring Model: Enterprise Sales-Led** **Strategy:** Since your …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    24.7s · 15145 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    What RevOps metrics should we be tracking? We want to build a dashboard for our leadership team.
+    [90moutput:[0m  I'll assume a typical B2B SaaS RevOps setup. Replace with your data. To build an effective leadership dashboard, you need to move beyond vanity metrics (like "total leads") and focus on **efficiency,…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    28.3s · 15362 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    Can you help me write cold outreach emails to prospects in our pipeline?
+    [90moutput:[0m  I cannot help with cold outreach emails using the **RevOps** skill, as that skill is specifically designed for **revenue operations, lead lifecycle management, and marketing-to-sales handoff processe…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m
+    4.7s · 13437 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    Help me set up our lead lifecycle stages. We're a B2B SaaS company selling to mid-market. We use HubSpot as our CRM and have marketing and sales teams that aren't aligned on lead definitions.
+    [90moutput:[0m  I'll assume a typical B2B SaaS RevOps setup for a mid-market company. Replace with your data. Here is your complete **Lead Lifecycle & Handoff Framework** designed to align Marketing and Sales, built…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    31.7s · 15549 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="revops-122b"> <description>When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,'…
+    [90muser:[0m    Our CRM data is a disaster. Duplicate records, missing fields, inconsistent naming. How do we clean it up and keep it clean?
+    [90moutput:[0m  I'll assume a typical B2B SaaS RevOps setup. Replace with your data. Here is your **CRM Data Hygiene & Maintenance Plan** to stop the bleeding and build a sustainable system. ### 1. Immediate Cleanup…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m
+    27.6s · 15292 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 100.0%[0m  [90m· 22.93s avg · 14943 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-263/benchmark.json[0m
+{
+  "passed": 35,
+  "failed": 0,
+  "skills": [
+    {
+      "skill": "revops-122b",
+      "slug": "revops-122b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 1,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-263/benchmark.json"
+    }
+  ],
+  "iteration": 263,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-263",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-263/report/index.html"
+}

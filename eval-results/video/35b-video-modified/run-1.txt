@@ -1,0 +1,87 @@
+
+[1m▶ video-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
+    [90moutput:[0m  I'll assume typical marketing video. Replace with your data. For a SaaS homepage demo, the fastest and highest-converting approach is **Programmatic Video (Remotion or Hyperframes)** combined with **…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
+    8.5s · 6919 tokens · [32mPASS[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
+    [90moutput:[0m  I'll assume typical marketing video. Replace with your data. For a **10-second generic scene** like "person typing in a coffee shop," you need **AI Video Generation** (not AI Avatars or Programmatic …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Follows Subject + Action + Camera + Style + Mood pattern
+         [90mevidence:[0m Output is tool advice, not a prompt.
+      [31m#4[0m [31mFAIL[0m [90m—[0m Warns about common prompt mistakes
+         [90mevidence:[0m No warnings about prompt mistakes found.
+      [31m#5[0m [31mFAIL[0m [90m—[0m Notes Sora reliability caveats
+         [90mevidence:[0m No mention of Sora or reliability caveats
+    6.3s · 6742 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
+    [90moutput:[0m  I'll assume typical webinar repurposing workflow. Replace with your data if you have specific clips in mind. Here is the most efficient workflow to turn a 60-minute webinar into high-performing socia…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Specifies aspect ratios per platform
+         [90mevidence:[0m Mentions 9:16 for TikTok/Reels/Shorts only
+    10.6s · 7088 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  I'll assume typical marketing video. Replace with your data. For **weekly product updates** at 60 seconds where you don’t want to be on camera, here is the optimal setup for **scale, consistency, and…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Mentions custom avatars option
+         [90mevidence:[0m No mention of custom avatars
+      [31m#6[0m [31mFAIL[0m [90m—[0m Warns about authenticity tradeoff
+         [90mevidence:[0m No warning about authenticity found in output.
+    14.7s · 7371 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
+    [90moutput:[0m  I'll assume typical marketing video needs. Replace with your data. **Decision Summary:** - **Choose Hyperframes if:** You want AI/LLMs to generate the code easily, you need simple CSS animations, you…
+    [90masserts:[0m [31m✗ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#1[0m [31mFAIL[0m [90m—[0m Compares the two with the When to Pick Which table
+         [90mevidence:[0m No table with that name found
+    10.1s · 6879 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="video-35b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' …
+    [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
+    [90moutput:[0m  I'll assume typical marketing video. Replace with your data. To produce **50 personalized intro videos** mentioning specific company names and pain points, the most efficient and scalable approach is…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [31m✗ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Names HeyGen MCP server
+         [90mevidence:[0m Mentions HeyGen API but does not name MCP server
+      [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
+         [90mevidence:[0m No mention of manual testing in output
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
+         [90mevidence:[0m No mention of tracking or ROI metrics
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions captions
+         [90mevidence:[0m No mention of captions found.
+    21.7s · 7937 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 67.2%[0m  [90m· 11.99s avg · 7156 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-292/benchmark.json[0m
+{
+  "passed": 21,
+  "failed": 11,
+  "skills": [
+    {
+      "skill": "video-35b",
+      "slug": "video-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.65625,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-292/benchmark.json"
+    }
+  ],
+  "iteration": 292,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-292",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-292/report/index.html"
+}

@@ -1,0 +1,69 @@
+
+[1m▶ schema-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    add schema to our blog posts. we publish articles about marketing tips.
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. Here is the complete **Article** and **BreadcrumbList** JSON-LD schema for your marketing blog posts. Code: ```json { "@context": "https://schema.or…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    13.1s · 5886 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    Add schema markup to our SaaS product's homepage. We're a project management tool called TaskFlow. We need Organization schema and any other relevant types.
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. For a SaaS product homepage, you need **Organization** schema for the company identity and **SoftwareApplication** schema for the product itself. Th…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.6s · 5988 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    We're an e-commerce site selling physical products. What schema markup do we need for our product pages?
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. For an e-commerce site selling physical products, the most critical schema type is **Product**. This enables rich results like **Star Ratings**, **P…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#4[0m [31mFAIL[0m [90m—[0m Includes BreadcrumbList
+         [90mevidence:[0m No BreadcrumbList found in output
+    19.1s · 6273 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    We have a FAQ page with 20 questions about our product. How do I add FAQ schema to get the rich results in Google?
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. Below is the complete FAQPage JSON-LD implementation for a product page with 20 questions. This will enable FAQ rich results in Google Search, poten…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    30.6s · 7243 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    Our organic search traffic dropped after a site redesign. Can you do a technical SEO audit?
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. A site redesign is a common cause of traffic drops, often due to URL changes, missing content, or technical errors. While I am specialized in **Sche…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m
+    14.7s · 5842 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="schema-35b"> <description>When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data,…
+    [90muser:[0m    We added schema markup to our site but it's not showing rich results in Google. Can you help debug?
+    [90moutput:[0m  I'll assume typical setup. Replace with your data. Since you mentioned "not showing rich results," this is usually due to **Errors** (invalid markup) or **Warnings/Missed Opportunities** (valid but i…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Checks for common schema errors
+         [90mevidence:[0m Model provides debugging steps, not schema validation
+    18.1s · 6103 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 94.4%[0m  [90m· 18.37s avg · 6223 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-273/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 2,
+  "skills": [
+    {
+      "skill": "schema-35b",
+      "slug": "schema-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9354838709677419,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-273/benchmark.json"
+    }
+  ],
+  "iteration": 273,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-273",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-273/report/index.html"
+}
