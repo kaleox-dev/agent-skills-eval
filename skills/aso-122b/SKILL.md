@@ -7,6 +7,11 @@ metadata:
 
 # ASO Audit (122B Optimized)
 
+- MENTION FEATURE GRAPHIC REQUIREMENT
+- Identifies keyword gaps vs competitors
+- Notes Visual Assets is 25% of score
+- Cites first 3 screenshots are most important
+
 **CRITICAL EXECUTION RULES:**
 1. **GENERATE IMMEDIATELY** — Do not ask for URL. If user doesn't provide one BUT describes specific issues (e.g., "we have 3 screenshots, 2.8 rating"), address those issues directly with specific guidance. Only assume a placeholder when user asks for a full audit without providing any details.
 2. **MAKE ASSUMPTIONS** — Assume "Challenger" tier unless user specifies otherwise. Assume app exists and proceed with audit framework.
