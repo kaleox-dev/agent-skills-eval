@@ -1,0 +1,27 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	1	PASS	Asks for client name or uses a slug	Uses 'NorthStar Analytics' directly	1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	2	PASS	Acquisition leans on PR, retail, Amazon, Shopify SEO, paid	Plan emphasizes Paid, Influencer, B2B2C; PR/SEO minor.	1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	3	PASS			1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	4	PASS			1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	5	PASS	Referral covers gifting, reviews	Section 7 mentions ambassador/affiliate, not reviews.	1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	6	PASS	Section 10 names funding-stage capability unlocks explicitly	Section 10 is 12-month outlook; unlocks in Sec 11	1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	7	PASS			1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	8	PASS	Section 12 cross-references all 139 marketing-ideas with client-specific status	Section 12 is summary only, no full list or status	1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	9	PASS			1	1	iteration-229
+marketing-plan-35b	eval-1	with_skill	FAIL	0s	0	0	0	10	PASS			1	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	1	PASS			3	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	2	FAIL	Ingests prior audit scoring directly into Section 3	Model asks user to paste audit findings	3	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	3	PASS			3	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	4	FAIL	Notes the scoring date and flags any shifted material	No mention of date or shifted material	3	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	5	FAIL	Uses audit gaps to inform 90-day roadmap and AARRR section moves	Model asks for audit data, does not use it	3	1	iteration-229
+marketing-plan-35b	eval-3	with_skill	FAIL	4.8s	60717	39466	21250	6	FAIL	Still produces a full 13-section plan, not just Section 3	Model requested audit data, did not generate plan	3	1	iteration-229
+marketing-plan-35b	eval-4	with_skill	FAIL	3.2s	60586	39380	21205	1	FAIL	Reads ~/marketing-plans/acme-saas/progress.md	No output files captured	4	1	iteration-229
+marketing-plan-35b	eval-4	with_skill	FAIL	3.2s	60586	39380	21205	2	FAIL	Resumes from next unfinished section based on state machine	No output files captured; no resume action taken	4	1	iteration-229
+marketing-plan-35b	eval-4	with_skill	FAIL	3.2s	60586	39380	21205	3	PASS			4	1	iteration-229
+marketing-plan-35b	eval-4	with_skill	FAIL	3.2s	60586	39380	21205	4	PASS			4	1	iteration-229
+marketing-plan-35b	eval-4	with_skill	FAIL	3.2s	60586	39380	21205	5	FAIL	Saves each newly confirmed section to the progress file	No output files were captured.	4	1	iteration-229
+marketing-plan-35b	eval-6	with_skill	FAIL	8.3s	61179	39766	21412	1	FAIL	Resists short-plan request and explains why	Model provided short plan, did not resist	6	1	iteration-229
+marketing-plan-35b	eval-6	with_skill	FAIL	8.3s	61179	39766	21412	2	PASS			6	1	iteration-229
+marketing-plan-35b	eval-6	with_skill	FAIL	8.3s	61179	39766	21412	3	PASS			6	1	iteration-229
+marketing-plan-35b	eval-6	with_skill	FAIL	8.3s	61179	39766	21412	4	PASS			6	1	iteration-229
+marketing-plan-35b	eval-6	with_skill	FAIL	8.3s	61179	39766	21412	5	FAIL	Does not silently produce a stripped-down plan	Output is a stripped-down plan	6	1	iteration-229

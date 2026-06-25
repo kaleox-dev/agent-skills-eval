@@ -1,0 +1,27 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	1	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	2	FAIL	Walks through INIT phase with structured intake	No structured intake or INIT phase shown.	2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	3	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	4	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	5	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	6	FAIL	Section 10 names funding-stage capability unlocks explicitly	Section 10 lacks explicit capability unlocks table	2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	7	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	8	FAIL	Section 12 cross-references all 139 marketing-ideas with client-specific status	Section 12 lists only ~20 ideas, not all 139.	2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	9	PASS			2	1	iteration-228
+marketing-plan-122b	eval-2	with_skill	FAIL	0s	0	0	0	10	PASS			2	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	1	PASS			3	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	2	FAIL	Ingests prior audit scoring directly into Section 3	Model asks user to paste audit scores	3	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	3	PASS			3	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	4	PASS			3	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	5	FAIL	Uses audit gaps to inform 90-day roadmap and AARRR section moves	Model asked for audit input instead of using it.	3	1	iteration-228
+marketing-plan-122b	eval-3	with_skill	FAIL	7.0s	61007	39654	21352	6	FAIL	Still produces a full 13-section plan, not just Section 3	Model asks for details before generating plan	3	1	iteration-228
+marketing-plan-122b	eval-4	with_skill	FAIL	7.3s	61029	39668	21360	1	FAIL	Reads ~/marketing-plans/acme-saas/progress.md	No existing plan found.	4	1	iteration-228
+marketing-plan-122b	eval-4	with_skill	FAIL	7.3s	61029	39668	21360	2	FAIL	Resumes from next unfinished section based on state machine	No existing plan found.	4	1	iteration-228
+marketing-plan-122b	eval-4	with_skill	FAIL	7.3s	61029	39668	21360	3	PASS			4	1	iteration-228
+marketing-plan-122b	eval-4	with_skill	FAIL	7.3s	61029	39668	21360	4	PASS			4	1	iteration-228
+marketing-plan-122b	eval-4	with_skill	FAIL	7.3s	61029	39668	21360	5	FAIL	Saves each newly confirmed section to the progress file	No output files were captured.	4	1	iteration-228
+marketing-plan-122b	eval-6	with_skill	FAIL	4.5s	61042	39677	21364	1	PASS			6	1	iteration-228
+marketing-plan-122b	eval-6	with_skill	FAIL	4.5s	61042	39677	21364	2	PASS			6	1	iteration-228
+marketing-plan-122b	eval-6	with_skill	FAIL	4.5s	61042	39677	21364	3	PASS			6	1	iteration-228
+marketing-plan-122b	eval-6	with_skill	FAIL	4.5s	61042	39677	21364	4	PASS			6	1	iteration-228
+marketing-plan-122b	eval-6	with_skill	FAIL	4.5s	61042	39677	21364	5	PASS			6	1	iteration-228

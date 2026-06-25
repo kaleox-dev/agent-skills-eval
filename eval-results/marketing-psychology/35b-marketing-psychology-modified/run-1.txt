@@ -1,0 +1,69 @@
+
+[1m▶ marketing-psychology-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    what psychological principles should I use to write better marketing copy?
+    [90moutput:[0m  To write marketing copy that converts, you need to move beyond "writing well" and start **psychologically engineering the reader's decision**. Great copy doesn’t just inform; it bypasses resistance, …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    18.3s · 6756 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    Explain the scarcity principle and how to use it ethically in SaaS marketing without being manipulative.
+    [90moutput:[0m  The **Scarcity Principle** (often called the Scarcity/Urgency Heuristic in marketing psychology) is the psychological phenomenon where people place a higher value on an object, opportunity, or resour…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Provides legitimate SaaS applications
+         [90mevidence:[0m Discusses marketing tactics, not apps
+    17.0s · 6667 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    How can I use psychology to increase conversions on our pricing page? We sell a B2B SaaS tool with three tiers ($29, $79, $199/month).
+    [90moutput:[0m  To increase conversions on a B2B SaaS pricing page with tiers at $29, $79, and $199, we need to leverage **Price Relativity**, **Loss Aversion**, and **Anchoring**. Based on your price points, here i…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    18.8s · 6812 tokens · [32mPASS[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    I'm designing an onboarding flow and want to use behavioral psychology to increase activation. What models should I apply?
+    [90moutput:[0m  To design an onboarding flow that drives activation using behavioral psychology, you need to reduce cognitive load, increase perceived value, and leverage the user’s momentum. Here are the specific p…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    21.2s · 6901 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    Help me run an A/B test on which psychological principle works better for our CTA — scarcity vs social proof.
+    [90moutput:[0m  To design a rigorous A/B test comparing **Scarcity** vs. **Social Proof**, we must isolate the psychological trigger while controlling for other variables. Based on your request, I will apply the **A…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Does not attempt full test design using psychology patterns
+         [90mevidence:[0m Model provides full test design with psychology patterns.
+    15.1s · 6484 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="marketing-psychology-35b"> <description>When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychol…
+    [90muser:[0m    What's the psychology behind why free trials work better than freemium for some products?
+    [90moutput:[0m  The effectiveness of free trials over freemium models (or vice versa) is driven by distinct psychological mechanisms. It’s not that one is universally "better"; rather, they trigger different mental …
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    16.7s · 6577 tokens · [32mPASS[0m
+
+  [1msummary[0m  [36mwith_skill 91.7%[0m  [90m· 17.84s avg · 6700 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-236/benchmark.json[0m
+{
+  "passed": 30,
+  "failed": 2,
+  "skills": [
+    {
+      "skill": "marketing-psychology-35b",
+      "slug": "marketing-psychology-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.9375,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-236/benchmark.json"
+    }
+  ],
+  "iteration": 236,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-236",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-236/report/index.html"
+}

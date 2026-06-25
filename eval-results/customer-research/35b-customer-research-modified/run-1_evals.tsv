@@ -1,0 +1,50 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+customer-research-35b	eval-1	with_skill	FAIL	7.2s	8417	5471	2945	1	PASS			1	1	iteration-203
+customer-research-35b	eval-1	with_skill	FAIL	7.2s	8417	5471	2945	2	PASS			1	1	iteration-203
+customer-research-35b	eval-1	with_skill	FAIL	7.2s	8417	5471	2945	3	FAIL	Suggests organizing quotes by theme	Model asks for goals, no output	1	1	iteration-203
+customer-research-35b	eval-1	with_skill	FAIL	7.2s	8417	5471	2945	4	PASS			1	1	iteration-203
+customer-research-35b	eval-1	with_skill	FAIL	7.2s	8417	5471	2945	5	PASS			1	1	iteration-203
+customer-research-35b	eval-2	with_skill	FAIL	10.3s	8710	5661	3048	1	PASS			2	1	iteration-203
+customer-research-35b	eval-2	with_skill	FAIL	10.3s	8710	5661	3048	2	PASS			2	1	iteration-203
+customer-research-35b	eval-2	with_skill	FAIL	10.3s	8710	5661	3048	3	PASS			2	1	iteration-203
+customer-research-35b	eval-2	with_skill	FAIL	10.3s	8710	5661	3048	4	PASS			2	1	iteration-203
+customer-research-35b	eval-3	with_skill	FAIL	20.7s	9567	6218	3348	1	PASS			3	1	iteration-203
+customer-research-35b	eval-3	with_skill	FAIL	20.7s	9567	6218	3348	2	PASS			3	1	iteration-203
+customer-research-35b	eval-3	with_skill	FAIL	20.7s	9567	6218	3348	3	PASS			3	1	iteration-203
+customer-research-35b	eval-3	with_skill	FAIL	20.7s	9567	6218	3348	4	FAIL	Plans to extract verbatim quotes and pain themes	No verbatim quotes extracted; only hypotheticals	3	1	iteration-203
+customer-research-35b	eval-3	with_skill	FAIL	20.7s	9567	6218	3348	5	PASS			3	1	iteration-203
+customer-research-35b	eval-4	with_skill	FAIL	14.5s	9032	5870	3161	1	PASS			4	1	iteration-203
+customer-research-35b	eval-4	with_skill	FAIL	14.5s	9032	5870	3161	2	PASS			4	1	iteration-203
+customer-research-35b	eval-4	with_skill	FAIL	14.5s	9032	5870	3161	3	PASS			4	1	iteration-203
+customer-research-35b	eval-4	with_skill	FAIL	14.5s	9032	5870	3161	4	PASS			4	1	iteration-203
+customer-research-35b	eval-4	with_skill	FAIL	14.5s	9032	5870	3161	5	PASS			4	1	iteration-203
+customer-research-35b	eval-5	with_skill	FAIL	14.2s	8902	5786	3115	1	PASS			5	1	iteration-203
+customer-research-35b	eval-5	with_skill	FAIL	14.2s	8902	5786	3115	2	PASS			5	1	iteration-203
+customer-research-35b	eval-5	with_skill	FAIL	14.2s	8902	5786	3115	3	PASS			5	1	iteration-203
+customer-research-35b	eval-5	with_skill	FAIL	14.2s	8902	5786	3115	4	FAIL	Asks about the goal — product improvement, messaging, or something else	Model provides analysis, does not ask	5	1	iteration-203
+customer-research-35b	eval-6	with_skill	FAIL	10.9s	8673	5637	3035	1	PASS			6	1	iteration-203
+customer-research-35b	eval-6	with_skill	FAIL	10.9s	8673	5637	3035	2	PASS			6	1	iteration-203
+customer-research-35b	eval-6	with_skill	FAIL	10.9s	8673	5637	3035	3	PASS			6	1	iteration-203
+customer-research-35b	eval-6	with_skill	FAIL	10.9s	8673	5637	3035	4	PASS			6	1	iteration-203
+customer-research-35b	eval-7	with_skill	FAIL	19.3s	9316	6055	3260	1	FAIL	Asks about target ICP segment within HR	Model assumes ICP, does not ask	7	1	iteration-203
+customer-research-35b	eval-7	with_skill	FAIL	19.3s	9316	6055	3260	2	PASS			7	1	iteration-203
+customer-research-35b	eval-7	with_skill	FAIL	19.3s	9316	6055	3260	3	PASS			7	1	iteration-203
+customer-research-35b	eval-7	with_skill	FAIL	19.3s	9316	6055	3260	4	PASS			7	1	iteration-203
+customer-research-35b	eval-8	with_skill	FAIL	14.0s	8929	5803	3125	1	PASS			8	1	iteration-203
+customer-research-35b	eval-8	with_skill	FAIL	14.0s	8929	5803	3125	2	PASS			8	1	iteration-203
+customer-research-35b	eval-8	with_skill	FAIL	14.0s	8929	5803	3125	3	PASS			8	1	iteration-203
+customer-research-35b	eval-8	with_skill	FAIL	14.0s	8929	5803	3125	4	FAIL	Asks if win/loss interview data is also available	Model asks about qualitative data but not win/loss interviews	8	1	iteration-203
+customer-research-35b	eval-9	with_skill	FAIL	18.4s	9321	6058	3262	1	FAIL	Mentions specific relevant communities (r/devops, Hacker News, LinkedIn, Discord)	Missing LinkedIn mention in output	9	1	iteration-203
+customer-research-35b	eval-9	with_skill	FAIL	18.4s	9321	6058	3262	2	PASS			9	1	iteration-203
+customer-research-35b	eval-9	with_skill	FAIL	18.4s	9321	6058	3262	3	PASS			9	1	iteration-203
+customer-research-35b	eval-10	with_skill	FAIL	5.7s	8325	5411	2913	1	FAIL	Extracts the VOC language and themes first before jumping to copy	No data provided; no extraction performed	10	1	iteration-203
+customer-research-35b	eval-10	with_skill	FAIL	5.7s	8325	5411	2913	2	FAIL	Identifies the highest-signal quotes for messaging	No data provided to identify quotes	10	1	iteration-203
+customer-research-35b	eval-10	with_skill	FAIL	5.7s	8325	5411	2913	3	PASS			10	1	iteration-203
+customer-research-35b	eval-11	with_skill	FAIL	20.1s	9575	6223	3351	1	PASS			11	1	iteration-203
+customer-research-35b	eval-11	with_skill	FAIL	20.1s	9575	6223	3351	2	PASS			11	1	iteration-203
+customer-research-35b	eval-11	with_skill	FAIL	20.1s	9575	6223	3351	3	PASS			11	1	iteration-203
+customer-research-35b	eval-11	with_skill	FAIL	20.1s	9575	6223	3351	4	PASS			11	1	iteration-203
+customer-research-35b	eval-12	with_skill	FAIL	13.9s	8969	5829	3139	1	PASS			12	1	iteration-203
+customer-research-35b	eval-12	with_skill	FAIL	13.9s	8969	5829	3139	2	PASS			12	1	iteration-203
+customer-research-35b	eval-12	with_skill	FAIL	13.9s	8969	5829	3139	3	PASS			12	1	iteration-203
+customer-research-35b	eval-12	with_skill	FAIL	13.9s	8969	5829	3139	4	PASS			12	1	iteration-203
