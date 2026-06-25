@@ -5,69 +5,67 @@
   [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
     [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
     [90muser:[0m    I want to generate a 10-second clip of a person typing on a laptop in a coffee shop for our landing page. Which AI tool?
-    [90moutput:[0m  I'll assume a typical marketing video. Replace with your data. For a **10-second B-roll clip** of a person typing in a coffee shop, you need **AI Video Generation** (not an avatar or screen recording…
+    [90moutput:[0m  I'll assume a typical marketing video. Replace with your data. For a **10-second B-roll clip** of a person typing in a coffee shop, **Runway Gen-4** or **Veo 3** are your best choices. ### Recommende…
     [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
-    10.5s · 7066 tokens · [32mPASS[0m
-
-  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
-    [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
-    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
-    [90moutput:[0m  I'll assume a typical marketing video. Replace with your data. For scalable weekly product updates without being on camera, the **AI Avatar + Programmatic Overlay** approach is the industry standard …
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
-    13.3s · 7259 tokens · [32mPASS[0m
+    10.9s · 7351 tokens · [32mPASS[0m
 
   [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
     [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
     [90muser:[0m    We just did a 60-minute webinar. How do we get short clips out of it for social?
-    [90moutput:[0m  I'll assume a typical marketing webinar. Replace with your data. To turn your 60-minute webinar into high-performing social clips, you need an **Editing & Repurposing Workflow**. Do not manually scru…
-    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
-      [31m#2[0m [31mFAIL[0m [90m—[0m Names Descript, Opus Clip, CapCut in sequence
-         [90mevidence:[0m Model lists: Opus Clip, Descript, CapCut
-    13.3s · 7250 tokens · [31mFAIL[0m
+    [90moutput:[0m  I'll assume a typical marketing webinar. Replace with your specific platform needs. To turn a 60-minute webinar into high-performing social clips, follow this **Repurposing Workflow**: ### 1. The Wor…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m
+      [31m#5[0m [31mFAIL[0m [90m—[0m Mentions hooking in first 3 seconds
+         [90mevidence:[0m Start the clip in the middle of the sentence
+    10.8s · 7334 tokens · [31mFAIL[0m
 
   [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
     [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
     [90muser:[0m    We need a 2-minute product demo video for our SaaS homepage. What's the fastest way to produce it?
-    [90moutput:[0m  I'll assume a typical SaaS product demo. Replace with your specific product data. **Fastest Production Strategy: The Hybrid AI Approach** To produce a high-quality 2-minute demo in under 24 hours wit…
+    [90moutput:[0m  I'll assume a typical SaaS product demo. Replace with your specific product details. **Fastest Production Strategy: Hybrid AI Approach** To produce a 2-minute demo in under 24 hours without a film cr…
     [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m
-    18.9s · 7544 tokens · [32mPASS[0m
+    16.1s · 7640 tokens · [32mPASS[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
+    [90muser:[0m    We want to make weekly product update videos. About 60 seconds each. Don't want to be on camera. Recommend a setup.
+    [90moutput:[0m  I'll assume a typical product update video. Replace with your specific product details. For weekly, scalable product updates without being on camera, I recommend an **AI Avatar + Programmatic Overlay…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    18.9s · 7788 tokens · [32mPASS[0m
 
   [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
     [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
     [90muser:[0m    We need to generate 50 personalized intro videos for sales outreach. Each one mentions a different company name and pain point.
-    [90moutput:[0m  I'll assume a typical sales outreach video. Replace with your data. For scalable video: **Use AI avatars (HeyGen, Synthesia)**. Benefits: No camera/mic needed, consistent brand voice, 10x faster. Exa…
+    [90moutput:[0m  I'll assume a typical sales outreach video. Replace with your specific pain points and company list. For scalable personalized video at this volume (50+), **do not film manually**. Use an **AI Avatar…
     [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [31m✗ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m
       [31m#4[0m [31mFAIL[0m [90m—[0m Recommends testing 5 manually first
-         [90mevidence:[0m No mention of testing 5 manually
+         [90mevidence:[0m do not film manually
       [31m#5[0m [31mFAIL[0m [90m—[0m Mentions reply tracking / ROI
          [90mevidence:[0m No mention of reply tracking or ROI
-    13.4s · 7231 tokens · [31mFAIL[0m
+    15.0s · 7594 tokens · [31mFAIL[0m
 
   [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
     [90msystem:[0m  <skill name="video-122b"> <description>When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,'…
     [90muser:[0m    Should I use Hyperframes or Remotion for programmatic video?
-    [90moutput:[0m  I'll assume a typical marketing video use case (e.g., product updates, personalized outreach, or templated social clips). Replace with your specific constraints if needed. ### **Quick Recommendation*…
-    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m
-      [31m#6[0m [31mFAIL[0m [90m—[0m Asks about stack or animation needs
-         [90mevidence:[0m No question asked about needs.
-    13.9s · 7314 tokens · [31mFAIL[0m
+    [90moutput:[0m  **I'll assume a typical marketing video. Replace with your data.** The choice between **Hyperframes** and **Remotion** depends on your team's technical stack and the complexity of your animations. He…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    14.7s · 7611 tokens · [32mPASS[0m
 
-  [1msummary[0m  [36mwith_skill 88.3%[0m  [90m· 13.88s avg · 7277 tok avg[0m
-  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-291/benchmark.json[0m
+  [1msummary[0m  [36mwith_skill 91.1%[0m  [90m· 14.38s avg · 7553 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-293/benchmark.json[0m
 {
-  "passed": 28,
-  "failed": 4,
+  "passed": 29,
+  "failed": 3,
   "skills": [
     {
       "skill": "video-122b",
       "slug": "video-122b",
       "relPath": "",
       "evals": 6,
-      "passRate": 0.875,
-      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-291/benchmark.json"
+      "passRate": 0.90625,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-293/benchmark.json"
     }
   ],
-  "iteration": 291,
-  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-291",
-  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-291/report/index.html"
+  "iteration": 293,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-293",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-293/report/index.html"
 }
