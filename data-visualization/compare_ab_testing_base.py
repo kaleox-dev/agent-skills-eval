@@ -46,11 +46,14 @@ def main():
             std_devs.append(np.std(rates))
     
     # Create the bar chart
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(8, 6))
     
     colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A']
-    bars = ax.bar(models, averages, color=colors, yerr=std_devs, 
-                  capsize=5, edgecolor='black', linewidth=1.2)
+    x_positions = np.arange(len(models))
+    bars = ax.bar(x_positions, averages, color=colors, yerr=std_devs, 
+                  capsize=5, edgecolor='black', linewidth=1.2, width=0.5)
+    ax.set_xticks(x_positions)
+    ax.set_xticklabels(models)
     
     # Add value labels on top of bars
     for bar, avg in zip(bars, averages):
