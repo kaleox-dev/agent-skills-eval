@@ -1,0 +1,50 @@
+Skill	Eval	Mode	Overall Result	Time	Total Tokens	Input Tokens	Output Tokens	Assertion #	Assertion Status	Assertion Name	Evidence	Run	Iteration	Workspace_Iteration
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	1	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	2	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	3	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	4	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	5	FAIL	Sources 2-3x candidates before qualifying	Model generated simulated list, not 2-3x sources	1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	6	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	7	PASS			1	1	iteration-256
+prospecting-122b	eval-1	with_skill	FAIL	29.8s	15547	10105	5441	8	PASS			1	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	1	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	2	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	3	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	4	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	5	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	6	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	7	PASS			2	1	iteration-256
+prospecting-122b	eval-2	with_skill	FAIL	21.1s	15021	9763	5257	8	PASS			2	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	1	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	2	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	3	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	4	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	5	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	6	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	7	FAIL	Notes CMO hires often only on LinkedIn	Model lists Crunchbase, Apollo, ZoomInfo, Google Alerts	3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	8	PASS			3	1	iteration-256
+prospecting-122b	eval-3	with_skill	FAIL	27.2s	15421	10023	5397	9	PASS			3	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	1	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	2	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	3	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	4	FAIL	Mentions trade show exhibitor lists	No mention of trade show exhibitor lists	4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	5	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	6	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	7	PASS			4	1	iteration-256
+prospecting-122b	eval-4	with_skill	FAIL	38.9s	15940	10361	5579	8	PASS			4	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	1	PASS			5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	2	FAIL	Asks about business category if not specified	Model assumed 'Local SMB' without asking.	5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	3	FAIL	Defaults radius to 20km	No mention of radius or 20km	5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	4	FAIL	Runs browser research workflow	Model states: 'I cannot browse live Google Maps'	5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	5	FAIL	Applies 4-tier website status classification	Uses 'No Site', 'Social Only', 'Weak Site'	5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	6	PASS			5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	7	PASS			5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	8	PASS			5	1	iteration-256
+prospecting-122b	eval-5	with_skill	FAIL	34.3s	15487	10066	5420	9	PASS			5	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	1	PASS			6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	2	FAIL	Explains email_state values (ok, email_invalid, risky, unknown, accept_all)	Missing 'unknown' and 'accept_all' states	6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	3	PASS			6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	4	PASS			6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	5	PASS			6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	6	FAIL	Mentions Truelist MCP server for agent workflows	Mentions Truelist as a validation tool, not MCP server	6	1	iteration-256
+prospecting-122b	eval-6	with_skill	FAIL	15.5s	14437	9384	5052	7	FAIL	Mentions cold email reputation is hard to recover	No mention of recovery difficulty found.	6	1	iteration-256

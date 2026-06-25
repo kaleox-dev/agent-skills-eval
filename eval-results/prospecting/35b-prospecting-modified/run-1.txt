@@ -1,0 +1,85 @@
+
+[1m▶ prospecting-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    I run a marketing agency. Find me 25 mid-market manufacturers in the Midwest US who recently hired a new CMO.
+    [90moutput:[0m  This is **General B2B** prospecting (Industrial/Manufacturing). **I'll assume B2B Manufacturing. Replace with your specific sub-industry (e.g., packaging, metal fabrication) if you have one.** ### 1.…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m  [32m✓ 9[0m
+      [31m#8[0m [31mFAIL[0m [90m—[0m Outputs B2B-branch chat table
+         [90mevidence:[0m No table outputted, only strategy
+    14.8s · 14475 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    We sell to industrial distributors. Build a list of 25 prospects.
+    [90moutput:[0m  I'll assume B2B. Replace with your specific ICP if different. **Branch:** General B2B (Industrial Distribution is a specific vertical within B2B, distinct from SaaS and Local SMB). **ICP (with NAICS)…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#8[0m [31mFAIL[0m [90m—[0m Notes ICP fit precision over volume
+         [90mevidence:[0m Model lists large firms like Grainger (10k+), violating 50-500 ICP
+    22.9s · 15089 tokens · [31mFAIL[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    We're a B2B SaaS selling RevOps tooling at $30K ACV. Build me a list of 25 prospects.
+    [90moutput:[0m  I'll assume B2B SaaS targeting mid-market to Enterprise. Replace with your specific ICP if different. ### 1. Branch Identification **Branch:** B2B SaaS (Enterprise/Mid-Market Focus). **ICP Example:**…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [31m✗ 8[0m
+      [31m#8[0m [31mFAIL[0m [90m—[0m Includes top 3-5 outreach targets with rationale
+         [90mevidence:[0m Targets are placeholders, not real companies.
+    31.8s · 15807 tokens · [31mFAIL[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    Find me 25 SaaS companies that just raised a Series B in the last 60 days and use HubSpot.
+    [90moutput:[0m  I'll assume B2B SaaS. Replace with your ICP if this doesn't match your ideal customer profile. **Branch:** B2B SaaS Prospecting **ICP:** 1. **NAICS:** 511210 (Software Publishers) or 541511 (Custom C…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m  [32m✓ 8[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Outputs signal column showing round + date
+         [90mevidence:[0m Signal column shows round + days ago, not date
+    32.3s · 15836 tokens · [31mFAIL[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    I have a list of 200 prospect emails from Apollo. How do I know which ones are deliverable before I start outreach?
+    [90moutput:[0m  To verify the deliverability of 200 emails before you spend reputation capital on them, you need to run them through an **email validation service**. Apollo’s data is good (~60–80% accuracy), but it …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [31m✗ 6[0m  [31m✗ 7[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Explains email_state values (ok, email_invalid, risky, unknown, accept_all)
+         [90mevidence:[0m Mentions risky/accept_all but not all specified values
+      [31m#6[0m [31mFAIL[0m [90m—[0m Mentions Truelist MCP server for agent workflows
+         [90mevidence:[0m Mentions Truelist, not MCP server
+      [31m#7[0m [31mFAIL[0m [90m—[0m Mentions cold email reputation is hard to recover
+         [90mevidence:[0m No mention of recovery difficulty
+    11.3s · 13947 tokens · [31mFAIL[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="prospecting-35b"> <description>When the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Also use whe…
+    [90muser:[0m    I build websites for local businesses. Find me 15 prospects near Austin, TX who don't have a website.
+    [90moutput:[0m  This is **Local SMB** prospecting. Example: "Local businesses in Austin, TX." **ICP:** (1) Industry: Local Services (Salons, Contractors, Gyms, Clinics, etc.), (2) Size: 1–10 employees (Owner-operate…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [31m✗ 5[0m  [32m✓ 6[0m  [32m✓ 7[0m  [32m✓ 8[0m  [31m✗ 9[0m
+      [31m#3[0m [31mFAIL[0m [90m—[0m Defaults radius to 20km
+         [90mevidence:[0m Model uses 15-mile radius
+      [31m#5[0m [31mFAIL[0m [90m—[0m Applies 4-tier website status classification
+         [90mevidence:[0m Uses 3 tiers: Hot, Warm, Cold
+      [31m#9[0m [31mFAIL[0m [90m—[0m Warns against bulk-scraping Google Maps
+         [90mevidence:[0m Model states 'No bulk scraping was performed'
+    29.4s · 15531 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 79.2%[0m  [90m· 23.76s avg · 15114 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-257/benchmark.json[0m
+{
+  "passed": 39,
+  "failed": 10,
+  "skills": [
+    {
+      "skill": "prospecting-35b",
+      "slug": "prospecting-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.7959183673469388,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-257/benchmark.json"
+    }
+  ],
+  "iteration": 257,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-257",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-257/report/index.html"
+}

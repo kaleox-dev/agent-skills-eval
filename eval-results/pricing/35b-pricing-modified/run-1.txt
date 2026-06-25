@@ -1,0 +1,73 @@
+
+[1m▶ pricing-35b[0m  [90m[0m
+  [90m6 evals  target=Qwen/Qwen3.6-35B-A3B-fp8  judge=Qwen/Qwen3.6-35B-A3B-fp8  modes=with_skill[0m
+
+  [1m#2 eval-2[0m  [36m[with_skill][0m  [90m[2][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    We want to raise our prices by 30%. We've been at $29/month for 2 years and we've added a lot of features. How do we do this without losing customers?
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. You are in a strong position to raise prices: you’ve been around for 2 years, have added significant features, and your customers have likely integra…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m  [31m✗ 7[0m
+      [31m#7[0m [31mFAIL[0m [90m—[0m Notes some churn is expected
+         [90mevidence:[0m Model claims near-zero churn, contradicting assertion.
+    15.1s · 6627 tokens · [31mFAIL[0m
+
+  [1m#4 eval-4[0m  [36m[with_skill][0m  [90m[4][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    We have a Basic ($19), Pro ($49), and Enterprise (custom) plan. The Pro plan gets 70% of signups. Should we add a plan between Pro and Enterprise?
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. You are in the **"Good-Better-Best"** sweet spot, but you are likely leaving significant **ARPU (Average Revenue Per User)** on the table. If 70% of …
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [31m✗ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Analyzes current tier performance
+         [90mevidence:[0m No analysis of current tier performance
+      [31m#3[0m [31mFAIL[0m [90m—[0m Evaluates whether 4th tier addresses real gap
+         [90mevidence:[0m Model assumes SaaS, does not evaluate specific gap
+    14.4s · 6587 tokens · [31mFAIL[0m
+
+  [1m#3 eval-3[0m  [36m[with_skill][0m  [90m[3][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    how do we figure out what people will actually pay? we're launching a new product and have no idea what to charge.
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. To figure out what people will actually pay, you must move away from guessing and toward **empirical measurement**. You cannot rely on "cost-plus" pr…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    18.2s · 6794 tokens · [32mPASS[0m
+
+  [1m#1 eval-1[0m  [36m[with_skill][0m  [90m[1][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    Help me figure out pricing for our new SaaS product. It's a customer support platform for e-commerce stores. We're not sure whether to charge per agent, per ticket, or flat rate. Currently thinking $…
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. Here is your pricing strategy framework based on the **Good-Better-Best** model and **3 Pricing Axes** for a B2B SaaS product. ### 1. The Three Prici…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m  [32m✓ 6[0m
+    21.2s · 6996 tokens · [32mPASS[0m
+
+  [1m#5 eval-5[0m  [36m[with_skill][0m  [90m[5][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    What pricing psychology tactics should we use on our pricing page? We want the $79 plan to be the most popular.
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. To make the **$79 plan (Better/Pro)** the most popular choice, you need to leverage specific psychological triggers that guide users toward the "swee…
+    [90masserts:[0m [32m✓ 1[0m  [32m✓ 2[0m  [32m✓ 3[0m  [32m✓ 4[0m  [32m✓ 5[0m
+    15.6s · 6601 tokens · [32mPASS[0m
+
+  [1m#6 eval-6[0m  [36m[with_skill][0m  [90m[6][0m
+    [90msystem:[0m  <skill name="pricing-35b"> <description>When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' '…
+    [90muser:[0m    Our pricing page conversion rate is only 1.5%. Can you review the page and suggest improvements?
+    [90moutput:[0m  I'll assume typical SaaS. Replace with your data. A 1.5% conversion rate on a pricing page is generally considered low for SaaS (benchmarks vary, but 2-5% is common for well-optimized pages, dependin…
+    [90masserts:[0m [32m✓ 1[0m  [31m✗ 2[0m  [32m✓ 3[0m
+      [31m#2[0m [31mFAIL[0m [90m—[0m Explains that pricing is about pricing decisions
+         [90mevidence:[0m Model gives UX tips, not decision theory
+    18.8s · 6902 tokens · [31mFAIL[0m
+
+  [1msummary[0m  [36mwith_skill 86.5%[0m  [90m· 17.22s avg · 6751 tok avg[0m
+  [90mbenchmark: /home/lily/agent-skills-eval/agent-skills-workspace/iteration-249/benchmark.json[0m
+{
+  "passed": 29,
+  "failed": 4,
+  "skills": [
+    {
+      "skill": "pricing-35b",
+      "slug": "pricing-35b",
+      "relPath": "",
+      "evals": 6,
+      "passRate": 0.8787878787878788,
+      "benchmarkPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-249/benchmark.json"
+    }
+  ],
+  "iteration": 249,
+  "workspaceRoot": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-249",
+  "reportPath": "/home/lily/agent-skills-eval/agent-skills-workspace/iteration-249/report/index.html"
+}
